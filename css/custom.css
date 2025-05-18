@@ -1,0 +1,116 @@
+/* Custom Header Gradient */
+.md-header {
+  background: linear-gradient(90deg,
+    #2b0052 0%,
+    #360067 15%,
+    #450086 35%,
+    #5a00ad 55%,
+    #7200dc 75%,
+    #8200fa 100%);
+}
+
+/* Link Styling */
+a {
+  color: #8200fa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Typography Tweaks */
+h1 {
+  font-size: 2.5em;
+}
+
+/* Code Block Improvements */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+pre code.language-json {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+code, pre {
+  overflow-x: auto;
+}
+
+/* Primary Button Styling */
+.primary-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4a148c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: #6a1b9a;
+}
+
+/* GitHub Icon: Always White & Visible */
+.md-header__source a.md-source {
+  opacity: 1 !important;
+  color: #ffffff !important;
+}
+
+/* GitHub Icon in Dark Mode */
+[data-md-color-scheme="slate"] .md-header__source a.md-source {
+  color: #ffffff !important;
+}
+
+/* FontAwesome GitHub fallback (if needed) */
+.md-header-nav .md-nav__link[href*="github.com"] i.fab {
+  color: #ffffff !important;
+}
+
+/* Active nav link styling */
+.md-nav__link--active {
+  font-weight: bold !important;
+  color: #450086 !important; /* Highlight color */
+  text-decoration: underline;
+}
+
+/* Force hover color on nav links */
+.md-nav__link:hover,
+.md-nav__link:focus {
+  font-weight: bold !important;
+  color: #7200dc !important;  /* Your desired hover color */
+  text-decoration: underline;
+}
+
+/* Standardise table width site-wide */
+.md-typeset table {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  table-layout: fixed;
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+
+/* Ensure table cells wrap properly and look clean */
+.md-typeset table th,
+.md-typeset table td {
+  word-wrap: break-word;
+  word-break: break-word;
+  padding: 0.6em;
+  vertical-align: top;
+}
+
+/* Optional: make headers bold and improve spacing */
+.md-typeset table th {
+  font-weight: 600;
+  background-color: #f9f9f9;
+}
+

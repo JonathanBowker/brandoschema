@@ -1,0 +1,408 @@
+{
+    "name": "brando®",
+    "type": "folder",
+    "children": [
+        {
+            "name": "hasVerbalIdentity",
+            "definition": "Encodes how the brand speaks and behaves in written and conversational form — across all channels, including LLMs, assistants, and web content.",
+            "type": "folder",
+            "children": [
+                {
+                    "name": "toneOfVoice",
+                    "definition": "Emotional texture of brand voice. Guides the tone and mood used in all brand communications.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#toneOfVoice"
+                },
+                {
+                    "name": "dialogueStyle",
+                    "definition": "Preferred conversational approach the brand uses when interacting with its audience.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#dialogueStyle"
+                },
+                {
+                    "name": "writingStyle",
+                    "definition": "The specific manner in which the brand's written content is crafted, including grammar, punctuation, and sentence structure.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#writingStyle"
+                },
+                {
+                    "name": "namingConvention",
+                    "definition": "Standardized rules and guidelines the brand follows for naming products, services, and other entities.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#namingConvention"
+                },
+                {
+                    "name": "personaCard",
+                    "definition": "A detailed profile representing the brand's archetype, including attributes, behaviors, and communication preferences.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#personaCard"
+                },
+                {
+                    "name": "approvedTerms",
+                    "definition": "A curated list of words and phrases that are sanctioned for use in brand communications.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#approvedTerms"
+                },
+                {
+                    "name": "prohibitedTerms",
+                    "definition": "A list of words and phrases that are discouraged or forbidden in brand communications to maintain brand integrity.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#prohibitedTerms"
+                },
+                {
+                    "name": "keyMessages",
+                    "definition": "Core statements that encapsulate the brand's primary value propositions and messaging priorities.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#keyMessages"
+                },
+                {
+                    "name": "taglines",
+                    "definition": "Short, memorable phrases that capture the essence of the brand and are used consistently across marketing materials.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#taglines"
+                },
+                {
+                    "name": "promptScaffold",
+                    "definition": "Structured templates or frameworks designed to guide AI in generating brand-consistent content.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#promptScaffold"
+                },
+                {
+                    "name": "mustDos",
+                    "definition": "Essential practices and guidelines that must be followed to ensure brand consistency in communications.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#mustDos"
+                },
+                {
+                    "name": "mustNotDos",
+                    "definition": "Practices and behaviors that are prohibited to prevent misrepresentation or dilution of the brand.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#mustNotDos"
+                }
+            ]
+        },
+        {
+            "name": "hasVisualIdentity",
+            "definition": "Encodes the brand’s visual language in a machine-readable format — enabling consistency across generative media, UI frameworks, assistants, and visual rendering engines.",
+            "type": "folder",
+            "children": [
+                {
+                    "name": "brandName",
+                    "definition": "The official name of the brand as it should appear in all communications.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#brandName"
+                },
+                {
+                    "name": "logo",
+                    "definition": "The primary visual symbol representing the brand, including variations and usage guidelines.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#logo"
+                },
+                {
+                    "name": "colourPalette",
+                    "definition": "The set of primary and secondary colors that represent the brand's visual identity.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#colourPalette"
+                },
+                {
+                    "name": "typography",
+                    "definition": "The specific fonts and typographic styles used in brand communications.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#typography"
+                },
+                {
+                    "name": "iconography",
+                    "definition": "The style and usage of icons that represent the brand's services or features.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#iconography"
+                },
+                {
+                    "name": "imageryStyle",
+                    "definition": "The guidelines for photographic and illustrative content that align with the brand's aesthetic.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#imageryStyle"
+                },
+                {
+                    "name": "motionRule",
+                    "definition": "The principles governing animation and motion design elements in brand materials.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#motionRule"
+                },
+                {
+                    "name": "visualToken",
+                    "definition": "Reusable design elements such as colors, typography, and spacing that ensure consistency.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#visualToken"
+                },
+                {
+                    "name": "visualUsageGuidelines",
+                    "definition": "Comprehensive rules and best practices for applying visual elements across various media.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#visualUsageGuidelines"
+                },
+                {
+                    "name": "visualReferenceLink",
+                    "definition": "A link to external resources or documents that provide visual references for the brand.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#visualReferenceLink"
+                }
+            ]
+        },
+        {
+            "name": "hasAudioIdentity",
+            "definition": "Encodes the brand’s sonic expression in a structured, machine-readable format — enabling consistent brand presence across speech synthesis, voice agents, virtual assistants, and generative audio platforms.",
+            "type": "folder",
+            "children": [
+                {
+                    "name": "audioLogo",
+                    "definition": "A short, distinctive sound or musical phrase that represents the brand.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#audioLogo"
+                },
+                {
+                    "name": "voiceSignature",
+                    "definition": "The unique vocal characteristics and style that embody the brand's persona.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#voiceSignature"
+                },
+                {
+                    "name": "pronunciationGuides",
+                    "definition": "Instructions on how to correctly pronounce brand-specific terms and names.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#pronunciationGuides"
+                },
+                {
+                    "name": "audioCue",
+                    "definition": "Specific sounds used to signal actions or transitions in brand communications.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#audioCue"
+                },
+                {
+                    "name": "speechStyle",
+                    "definition": "The manner and tone of spoken communication that aligns with the brand's identity.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#speechStyle"
+                },
+                {
+                    "name": "audioReferenceLink",
+                    "definition": "A link to audio samples or references that exemplify the brand's audio identity.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#audioReferenceLink"
+                },
+                {
+                    "name": "audioUsageGuidelines",
+                    "definition": "Guidelines outlining the appropriate use of audio elements in brand materials.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#audioUsageGuidelines"
+                }
+            ]
+        },
+        {
+            "name": "hasPositioning",
+            "definition": "Encodes the strategic intent, values, audience targeting, and narrative structure of the brand — providing clarity for AI agents, assistants, and retrieval systems to understand and represent brand meaning with context.",
+            "type": "folder",
+            "children": [
+                {
+                    "name": "missionStatement",
+                    "definition": "Why the brand exists — its deeper purpose beyond commercial objectives.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#missionStatement"
+                },
+                {
+                    "name": "visionStatement",
+                    "definition": "The long-term aspiration of the brand — the future it seeks to help create.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#visionStatement"
+                },
+                {
+                    "name": "coreValues",
+                    "definition": "The ethical principles and beliefs that guide the brand’s decisions and actions.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#coreValues"
+                },
+                {
+                    "name": "brandPromise",
+                    "definition": "The core commitment the brand consistently makes to its audience.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#brandPromise"
+                },
+                {
+                    "name": "audiencePersona",
+                    "definition": "Structured profiles representing the brand’s ideal customer types or user segments.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#audiencePersona"
+                },
+                {
+                    "name": "marketPosition",
+                    "definition": "The brand’s stance and differentiation in its competitive landscape or category.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#marketPosition"
+                },
+                {
+                    "name": "brandNarrative",
+                    "definition": "The origin story, journey, and meaningful arc that defines the brand’s identity and message.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#brandNarrative"
+                },
+                {
+                    "name": "competitorContext",
+                    "definition": "An outline of how the brand compares to and differentiates itself from key competitors.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#competitorContext"
+                }
+            ]
+        },
+        {
+            "name": "hasGovernance",
+            "definition": "Defines brand guardrails, refusal strategies, and regulatory alignment for safe deployment in AI environments — ensuring the brand is represented ethically, legally, and intentionally in all LLM-enabled contexts.",
+            "type": "folder",
+            "children": [
+                {
+                    "name": "guardRails",
+                    "definition": "Behavioural boundaries and brand safety limits (e.g. no political bias, no humour, no parody).",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#guardRails"
+                },
+                {
+                    "name": "refusalStrategies",
+                    "definition": "Rules and fallback strategies for AI when refusing to answer or acting outside brand scope.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#refusalStrategies"
+                },
+                {
+                    "name": "complianceTags",
+                    "definition": "Tags that denote legal, regulatory, or domain-specific compliance categories (e.g. GDPR, ABPI).",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#complianceTags"
+                },
+                {
+                    "name": "reviewWorkflow",
+                    "definition": "Human-in-the-loop approval workflows for moderating or escalating brand-sensitive content.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#reviewWorkflow"
+                },
+                {
+                    "name": "updatePolicy",
+                    "definition": "Rules defining who can update brand data, how updates are managed, and how versioning is handled.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#updatePolicy"
+                },
+                {
+                    "name": "visibilityScore",
+                    "definition": "An AI discoverability scale indicating the intended level of brand visibility in LLM outputs.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#visibilityScore"
+                },
+                {
+                    "name": "retrievableInLLM",
+                    "definition": "Flag indicating whether a piece of brand data should be included in LLM memory or embeddings.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#retrievableInLLM"
+                },
+                {
+                    "name": "embeddingQuality",
+                    "definition": "Score representing clarity, accuracy, and reliability of content for LLM retrieval and semantic use.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#embeddingQuality"
+                },
+                {
+                    "name": "riskScenarios",
+                    "definition": "Known risks and edge cases (e.g. impersonation, satire, misinformation) to monitor or mitigate.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#riskScenarios"
+                }
+            ]
+        },
+        {
+            "name": "hasAssets",
+            "definition": "Encodes reusable digital resources — from brand files to LLM-ready features, FAQs, and service definitions — so that AI systems can render and reason with your brand consistently across platforms.",
+            "type": "folder",
+            "children": [
+                {
+                    "name": "logoAsset",
+                    "definition": "File links to approved logo assets (e.g. SVG, PNG, EPS), including variants for light, dark, and monochrome use.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#logoAsset"
+                },
+                {
+                    "name": "fontAsset",
+                    "definition": "Downloadable font files used in the brand’s typographic identity (e.g. OTF, TTF, web fonts).",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#fontAsset"
+                },
+                {
+                    "name": "imageLibrary",
+                    "definition": "Approved stock photography, illustrations, or branded visual assets for use in AI outputs or design tools.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#imageLibrary"
+                },
+                {
+                    "name": "videoAsset",
+                    "definition": "Links to approved brand videos, reels, explainers, and animations that express visual identity.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#videoAsset"
+                },
+                {
+                    "name": "designSystemLink",
+                    "definition": "URL to the brand’s design system (e.g. Figma, Storybook, Framer), which governs UI component styles.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#designSystemLink"
+                },
+                {
+                    "name": "templateLibrary",
+                    "definition": "Approved templates for documents, presentations, social graphics (e.g. Notion, Canva, PPT).",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#templateLibrary"
+                },
+                {
+                    "name": "guidelinesPDF",
+                    "definition": "Downloadable PDF brand guidelines or manuals covering identity rules, usage, and tone standards.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#guidelinesPDF"
+                },
+                {
+                    "name": "assetRepository",
+                    "definition": "Centralised digital asset management system (DAM) or shared drive where assets are stored and versioned.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#assetRepository"
+                },
+                {
+                    "name": "accessPolicy",
+                    "definition": "Permissions, roles, or credentials required to access, download, or modify brand assets.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#accessPolicy"
+                },
+                {
+                    "name": "personaAsset",
+                    "definition": "Files or JSON objects representing brand personas used in tuning AI models or assistants.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#personaAsset"
+                },
+                {
+                    "name": "qaAsset",
+                    "definition": "Structured Q&A pairs or FAQ data (in `FAQPage` format) for AI retrieval, grounding, or chat responses.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#qaAsset"
+                },
+                {
+                    "name": "productAsset",
+                    "definition": "Structured product metadata using `schema:Product`, including descriptions, links, and specifications.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#productAsset"
+                },
+                {
+                    "name": "serviceAsset",
+                    "definition": "Structured service metadata using `schema:Service`, including scope, provider, and features.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#sserviceAsset"
+                },
+                {
+                    "name": "featuresAsset",
+                    "definition": "Highlightable features or attributes in `schema:PropertyValue` format for use in AI and LLM outputs.",
+                    "type": "url",
+                    "url": "https://brandoschema.com/bdv-terms/#featuresAsset"
+                }
+            ]
+        }
+    ]
+}
