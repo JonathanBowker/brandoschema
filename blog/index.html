@@ -834,6 +834,16 @@
 <!-- The `mkdocs-blogging-plugin` will auto-populate recent blog posts here -->
 
 <p>To contribute a post, open a pull request or get in touch via <a href="mailto:ops@advancedanalytica.co.uk">ops@advancedanalytica.co.uk</a>.</p>
+<hr />
+<p>title: Brando Blog
+description: Insights, updates, and best practices for brand governance in the AI Web.</p>
+<hr />
+<h1 id="brando-blog_1">📰 Brando Blog</h1>
+<p>Welcome to the Brando Schema Blog — your hub for updates, use cases, and AI-native brand strategy insights.</p>
+<h2 id="latest-posts_1">Latest Posts</h2>
+<p _="%" endfor="endfor">{% for post in blog_posts %}
+- <a href="{{ post.url }}">{{ post.title }}</a> – <em>{{ post.date }}</em></p>
+<hr />
 
 
 
