@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: mkdocs-copy-well-known
+Version: 0.1
+Summary: MkDocs plugin to copy .well-known files to output
+Author: Jonathan Bowker
+Requires-Dist: mkdocs>=1.4
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary

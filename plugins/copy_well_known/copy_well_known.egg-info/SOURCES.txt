@@ -1,0 +1,9 @@
+pyproject.toml
+copy_well_known/__init__.py
+copy_well_known/plugin.py
+copy_well_known.egg-info/PKG-INFO
+copy_well_known.egg-info/SOURCES.txt
+copy_well_known.egg-info/dependency_links.txt
+copy_well_known.egg-info/entry_points.txt
+copy_well_known.egg-info/requires.txt
+copy_well_known.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+# robots.txt for brandoschema.com
+User-agent: *
+Disallow:
+
+Sitemap: https://brandoschema.com/sitemap.xml

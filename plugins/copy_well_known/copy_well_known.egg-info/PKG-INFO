@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: copy-well-known
+Version: 0.1
+Summary: Custom MkDocs plugin to copy .well-known directory after build
+Author-email: Jonathan Bowker <you@example.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: mkdocs

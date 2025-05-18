@@ -1,0 +1,91 @@
+site_name: Brando Schema
+site_description: Brando BDV is the world’s first Brand Definition Vocabulary for structuring brand identity, tone, and integrity in the AI Web.
+site_author: Jonathan Bowker
+site_url: https://brandoschema.com
+repo_url: https://github.com/JonathanBowker/brandoschema
+repo_name: GitHub
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/images/logo.webp
+  favicon: assets/images/favicon.svg
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - content.code.copy
+    - header.autohide
+    - content.headings.anchor
+  icons:
+    - material: true
+    - fontawesome: true
+    - octicons: true
+  language: en
+
+plugins:
+  - search
+  - tags
+  - copy-well-known
+
+extra:
+  custom_domain: brandoschema.com
+  include:
+    - data/brando-schema.json
+  meta_defaults:
+    keywords: brando, brand definition language, bdl, brand schema, ai brand safety, structured branding, LLM prompts, AI web, semantic brand metadata, tone of voice schema
+    og_title: Brando – The Brand Definition Language for the AI Web
+    og_description: Brando is a machine-readable Brand Definition Language (BDL) that protects and structures brand identity in the AI era.
+    og_url: https://brandoschema.com/bdl/
+    og_image: https://brandoschema.com/assets/images/brando-og-image.png
+    twitter_card: summary_large_image
+    twitter_title: Brando – Brand Definition Language (BDL)
+    twitter_description: Structure your brand identity, tone, and values for intelligent agents and LLMs with Brando BDL.
+    twitter_image: https://brandoschema.com/assets/images/brando-og-image.png
+
+extra_css:
+  - css/custom.css
+  - css/styles.css
+
+extra_javascript:
+  - js/smooth-scroll.js   # (keep this if you need it)
+  - https://d3js.org/d3.v7.min.js
+  - js/linked_map.js
+  
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.tasklist
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tilde
+  - pymdownx.magiclink
+  - pymdownx.inlinehilite
+  - pymdownx.extra
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Brando Schema: 
+    - Classes: bdv-classes/index.md
+    - Terms: bdv-terms/index.md
+  - Using Brando: how-to-use.md
+  - Workshops:
+    - AI Optimisation: optimisation-workshop.md
+  - Brando License: licensing.md 
+  - About Us: 
+    - Advanced Analytica: about.md  
+    - Terms of Service: terms-of-service.md

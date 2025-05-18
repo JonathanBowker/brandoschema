@@ -1,0 +1,93 @@
+{
+  "@context": {
+    "@version": 1.1,
+    
+    "brando": "https://brandoschema.com/vocab/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Brand": "brando:BrandObject",
+
+    "name": {
+      "@id": "https://schema.org/name",
+      "@type": "xsd:string"
+    },
+    "description": {
+      "@id": "https://schema.org/description",
+      "@type": "xsd:string"
+    },
+
+    ## VERBAL IDENTITY (1.1)
+    "toneOfVoice": { "@id": "brando:toneOfVoice", "@type": "xsd:string" },
+    "dialogueStyle": { "@id": "brando:dialogueStyle", "@type": "xsd:string" },
+    "writingStyle": { "@id": "brando:writingStyle", "@type": "xsd:string" },
+    "namingConvention": { "@id": "brando:namingConvention", "@type": "xsd:string" },
+    "brandPersona": { "@id": "brando:brandPersona", "@type": "@json" },
+    "approvedTerms": { "@id": "brando:approvedTerms", "@container": "@set" },
+    "prohibitedTerms": { "@id": "brando:prohibitedTerms", "@container": "@set" },
+    "keyMessage": { "@id": "brando:keyMessage", "@type": "xsd:string" },
+    "taglines": { "@id": "brando:taglines", "@container": "@set" },
+    "promptScaffold": { "@id": "brando:promptScaffold", "@type": "@json" },
+    "mustDo": { "@id": "brando:mustDo", "@type": "@json" },
+    "mustNotDo": { "@id": "brando:mustNotDo", "@type": "@json" },
+
+    ## VISUAL IDENTITY (1.2)
+    "logo": { "@id": "brando:logo", "@type": "@id" },
+    "colourPalette": { "@id": "brando:colourPalette", "@type": "@json" },
+    "typography": { "@id": "brando:typography", "@type": "@json" },
+    "iconography": { "@id": "brando:iconography", "@type": "@json" },
+    "imageryStyle": { "@id": "brando:imageryStyle", "@type": "@json" },
+    "motionRule": { "@id": "brando:motionRule", "@type": "@json" },
+    "visualToken": { "@id": "brando:visualToken", "@type": "xsd:string" },
+    "visualUsageGuideline": { "@id": "brando:visualUsageGuideline", "@type": "xsd:string" },
+    "visualReferenceLink": { "@id": "brando:visualReferenceLink", "@type": "@id" },
+
+    ## AUDIO IDENTITY (1.3)
+    "audioLogo": { "@id": "brando:audioLogo", "@type": "@id" },
+    "voiceSignature": { "@id": "brando:voiceSignature", "@type": "@json" },
+    "pronunciationGuide": { "@id": "brando:pronunciationGuide", "@type": "@json" },
+    "audioCue": { "@id": "brando:audioCue", "@type": "@json" },
+    "speechStyle": { "@id": "brando:speechStyle", "@type": "xsd:string" },
+    "audioReferenceLink": { "@id": "brando:audioReferenceLink", "@type": "@id" },
+    "audioUsageGuideline": { "@id": "brando:audioUsageGuideline", "@type": "xsd:string" },
+
+    ## POSITIONING (1.4)
+    "missionStatement": { "@id": "brando:missionStatement", "@type": "xsd:string" },
+    "visionStatement": { "@id": "brando:visionStatement", "@type": "xsd:string" },
+    "coreValues": { "@id": "brando:coreValues", "@container": "@set" },
+    "brandPromise": { "@id": "brando:brandPromise", "@type": "xsd:string" },
+    "audiencePersona": { "@id": "brando:audiencePersona", "@type": "@json" },
+    "marketPosition": { "@id": "brando:marketPosition", "@type": "xsd:string" },
+    "brandNarrative": { "@id": "brando:brandNarrative", "@type": "xsd:string" },
+    "competitorContext": { "@id": "brando:competitorContext", "@type": "@json" },
+    "domainContext": { "@id": "brando:domainContext", "@type": "@json" },
+
+    ## GOVERNANCE (1.5)
+    "guardRails": { "@id": "brando:guardRails", "@type": "@json" },
+    "refusalStrategies": { "@id": "brando:refusalStrategies", "@type": "@json" },
+    "complianceTags": { "@id": "brando:complianceTags", "@type": "@json" },
+    "reviewWorkflow": { "@id": "brando:reviewWorkflow", "@type": "@json" },
+    "updatePolicy": { "@id": "brando:updatePolicy", "@type": "@json" },
+    "visibilityRating": { "@id": "brando:visibilityRating", "@type": "xsd:string" },
+    "retrievableInLLM": { "@id": "brando:retrievableInLLM", "@type": "xsd:boolean" },
+    "embeddingQuality": { "@id": "brando:embeddingQuality", "@type": "xsd:string" },
+    "riskScenarios": { "@id": "brando:riskScenarios", "@type": "@json" },
+
+    ## ASSETS (1.6)
+    "logoAsset": { "@id": "brando:logoAsset", "@type": "@id" },
+    "fontAsset": { "@id": "brando:fontAsset", "@type": "@id" },
+    "imageLibrary": { "@id": "brando:imageLibrary", "@type": "@id" },
+    "videoAsset": { "@id": "brando:videoAsset", "@type": "@id" },
+    "designSystemLink": { "@id": "brando:designSystemLink", "@type": "@id" },
+    "templateLibrary": { "@id": "brando:templateLibrary", "@type": "@id" },
+    "guidelinesPDF": { "@id": "brando:guidelinesPDF", "@type": "@id" },
+    "assetRepository": { "@id": "brando:assetRepository", "@type": "@id" },
+    "personaAsset": { "@id": "brando:personaAsset", "@type": "@id" },
+    "accessPolicy": { "@id": "brando:accessPolicy", "@type": "@id" },
+    "qaAsset": { "@id": "brando:qaAsset", "@type": "@id" },
+    "productAsset": { "@id": "brando:productAsset", "@type": "@id" },
+    "serviceAsset": { "@id": "brando:serviceAsset", "@type": "@id" },
+    "featuresAsset": { "@id": "brando:featuresAsset", "@type": "@id" },
+    "datasetAsset": { "@id": "brando:datasetAsset", "@type": "@id" },
+    "knowledgeAsset": { "@id": "brando:knowledgeAsset", "@type": "@id" }
+  }
+}

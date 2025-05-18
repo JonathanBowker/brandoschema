@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+copy-well-known = mkdocs_copy_well_known.plugin:CopyWellKnownPlugin
