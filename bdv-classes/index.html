@@ -1713,9 +1713,11 @@ Encodes the strategic intent, values, audience targeting, and narrative structur
 <span class="p">}</span>
 </code></pre></div>
 <hr />
+<p>Certainly! Here’s an <strong>updated version</strong> of section <strong>1.6 Assets</strong> that incorporates the Qwiki Dialogue Flow and similar interactive assets as a <strong>distinct, referenceable class</strong>—while keeping all the best-practice clarity and BDV style you’re building. (See bolded rows for additions.)</p>
+<hr />
 <h3 id="16-assets">1.6 Assets</h3>
 <p><strong>Core Class: (<code>brando:hasAssets</code>)</strong></p>
-<p>Encodes reusable digital resources — from brand files to LLM-ready features, AI-agents, FAQs, and service definitions — so that AI systems can render and reason with your brand consistently across platforms.</p>
+<p>Encodes reusable digital resources—from brand files to LLM-ready features, AI-agents, FAQs, dialogue flows, and service definitions—so that AI systems can render and reason with your brand consistently across platforms.</p>
 <table>
 <thead>
 <tr>
@@ -1815,134 +1817,54 @@ Encodes the strategic intent, values, audience targeting, and narrative structur
 <td style="text-align: left;"><nobr><code>brando:multiAgentAIAsset</code></nobr></td>
 <td style="text-align: left;">Links or references to configurations, models, or orchestrations used by <strong>multi-agent AI systems</strong> associated with the brand</td>
 </tr>
+<tr>
+<td style="text-align: left;"><strong>1.6.19</strong></td>
+<td style="text-align: left;"><nobr><strong><code>brando:qwikiDialogueFlow</code></strong></nobr></td>
+<td style="text-align: left;"><strong>Canonical Qwiki Dialogue Flows, conversational journeys, or synthetic customer scripts for AI/LLM integration</strong></td>
+</tr>
 </tbody>
 </table>
-<p><strong>Example: JSON-LD for Asset Policy</strong>
-<div class="highlight"><pre><span></span><code>{
-  &quot;@context&quot;: {
-    &quot;schema&quot;: &quot;https://schema.org/&quot;,
-    &quot;brando&quot;: &quot;https://brandoschema.com/bdv-terms/#&quot;
-  },
-  &quot;@type&quot;: &quot;schema:Brand&quot;,
-  &quot;name&quot;: &quot;ExampleBrand&quot;,
-  &quot;url&quot;: &quot;https://www.examplebrand.com/&quot;,
-  &quot;logo&quot;: &quot;https://www.examplebrand.com/assets/logo.svg&quot;,
-  &quot;brando:hasAssets&quot;: {
-    &quot;@type&quot;: &quot;brando:Assets&quot;,
-    &quot;brando:logoAsset&quot;: [
-      &quot;https://www.examplebrand.com/assets/logo-primary.svg&quot;,
-      &quot;https://www.examplebrand.com/assets/logo-mono.svg&quot;
-    ],
-    &quot;brando:fontAsset&quot;: [
-      &quot;https://www.examplebrand.com/assets/fonts/ExampleSans-Regular.woff2&quot;,
-      &quot;https://www.examplebrand.com/assets/fonts/ExampleSans-Bold.woff2&quot;
-    ],
-    &quot;brando:imageLibrary&quot;: &quot;https://dam.examplebrand.com/images/&quot;,
-    &quot;brando:videoAsset&quot;: [
-      &quot;https://www.examplebrand.com/videos/intro.mp4&quot;,
-      &quot;https://www.examplebrand.com/videos/brand-story.mp4&quot;
-    ],
-    &quot;brando:designSystemLink&quot;: &quot;https://www.figma.com/file/ExampleBrand/Main-Design-System&quot;,
-    &quot;brando:templateLibrary&quot;: [
-      &quot;https://www.canva.com/examplebrand/templates&quot;,
-      &quot;https://notion.so/examplebrand/templates&quot;
-    ],
-    &quot;brando:guidelinesPDF&quot;: [
-      &quot;https://www.examplebrand.com/docs/brand-guidelines.pdf&quot;,
-      &quot;https://www.examplebrand.com/docs/tone-of-voice.pdf&quot;
-    ],
-    &quot;brando:assetRepository&quot;: &quot;https://assets.examplebrand.com/brand-assets&quot;,
-    &quot;brando:personaAsset&quot;: [
-      &quot;https://www.examplebrand.com/personas/marketing-manager.json&quot;,
-      &quot;https://www.examplebrand.com/personas/customer-support.json&quot;
-    ],
-    &quot;brando:accessPolicy&quot;: {
-      &quot;editors&quot;: [&quot;design@examplebrand.com&quot;, &quot;legal@examplebrand.com&quot;],
-      &quot;viewers&quot;: [&quot;agency@examplebrand.com&quot;, &quot;ai@examplebrand.com&quot;],
-      &quot;policyNote&quot;: &quot;External access is limited to view-only in /public folder.&quot;
-    },
-    &quot;brando:qaAsset&quot;: [
-      {
-        &quot;@type&quot;: &quot;schema:Question&quot;,
-        &quot;name&quot;: &quot;What is ExampleBrand&#39;s core mission?&quot;,
-        &quot;acceptedAnswer&quot;: {
-          &quot;@type&quot;: &quot;schema:Answer&quot;,
-          &quot;text&quot;: &quot;To empower businesses with clear and accessible AI-powered brand solutions.&quot;
-        }
-      },
-      {
-        &quot;@type&quot;: &quot;schema:Question&quot;,
-        &quot;name&quot;: &quot;How does ExampleBrand ensure brand consistency?&quot;,
-        &quot;acceptedAnswer&quot;: {
-          &quot;@type&quot;: &quot;schema:Answer&quot;,
-          &quot;text&quot;: &quot;Through centralized asset management, tone controls, and AI guardrails.&quot;
-        }
-      }
-    ],
-    &quot;brando:productAsset&quot;: [
-      {
-        &quot;@type&quot;: &quot;schema:Product&quot;,
-        &quot;name&quot;: &quot;ExampleBrand AI Toolkit&quot;,
-        &quot;description&quot;: &quot;A set of AI-ready brand controls and governance modules.&quot;,
-        &quot;sku&quot;: &quot;EB-AI-001&quot;,
-        &quot;url&quot;: &quot;https://www.examplebrand.com/products/ai-toolkit&quot;
-      }
-    ],
-    &quot;brando:serviceAsset&quot;: [
-      {
-        &quot;@type&quot;: &quot;schema:Service&quot;,
-        &quot;name&quot;: &quot;Brand Governance Audit&quot;,
-        &quot;description&quot;: &quot;Assessment and advisory service for AI brand compliance.&quot;,
-        &quot;provider&quot;: {
-          &quot;@type&quot;: &quot;schema:Organization&quot;,
-          &quot;name&quot;: &quot;ExampleBrand Consulting&quot;,
-          &quot;url&quot;: &quot;https://www.examplebrand.com/&quot;
-        }
-      }
-    ],
-    &quot;brando:featuresAsset&quot;: [
-      {
-        &quot;@type&quot;: &quot;schema:PropertyValue&quot;,
-        &quot;name&quot;: &quot;AI Compliance Layer&quot;,
-        &quot;value&quot;: &quot;Enables real-time brand compliance checks within AI outputs.&quot;
-      },
-      {
-        &quot;@type&quot;: &quot;schema:PropertyValue&quot;,
-        &quot;name&quot;: &quot;Visual Identity Enforcement&quot;,
-        &quot;value&quot;: &quot;Automates logo, color, and typography adherence in generative media.&quot;
-      }
-    ],
-    &quot;brando:datasetAsset&quot;: [
-      &quot;https://datasets.examplebrand.com/brand-language-v1.json&quot;,
-      &quot;https://datasets.examplebrand.com/image-assets-v2.json&quot;
-    ],
-    &quot;brando:knowledgeAsset&quot;: [
-      &quot;https://knowledge.examplebrand.com/brand-strategy.jsonld&quot;
-    ],
-    &quot;brando:singleAgentAIAsset&quot;: [
-      &quot;https://ai.examplebrand.com/models/single-agent-config.yaml&quot;,
-      &quot;https://ai.examplebrand.com/scripts/single-agent-inference.py&quot;
-    ],
-    &quot;brando:multiAgentAIAsset&quot;: [
-      &quot;https://ai.examplebrand.com/orchestrations/multi-agent-workflow.json&quot;,
-      &quot;https://ai.examplebrand.com/models/multi-agent-ensemble-v1.tar.gz&quot;
-    ]
-  }
-}
-</code></pre></div></p>
-<h2 id="usage">Usage</h2>
+<hr />
+<p><strong>Example: JSON-LD for Asset Policy (with Qwiki Dialogue Flow)</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;brando&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://brandoschema.com/bdv-terms/#&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:Brand&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ExampleBrand&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.examplebrand.com/&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;logo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.examplebrand.com/assets/logo.svg&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:hasAssets&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Assets&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;brando:logoAsset&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;https://www.examplebrand.com/assets/logo-primary.svg&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;brando:qwikiDialogueFlow&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;https://qwiki.examplebrand.com/journeys/school-shoe-purchase.json&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;https://qwiki.examplebrand.com/insurance/claim-dialogue-flow.json&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">    </span><span class="c1">// ... (other assets as previously listed)</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="usage"><strong>Usage</strong></h2>
 <p><em>Brando BDV is designed to be embedded in JSON-LD, RDFa, or used within semantic layers of AI and content delivery platforms. It is intended for use by:</em></p>
 <ul>
-<li>Brand strategists and marketing teams  </li>
-<li>AI developers and prompt engineers  </li>
-<li>Compliance and governance professionals  </li>
-<li>Semantic web and knowledge graph architects  </li>
+<li>Brand strategists and marketing teams</li>
+<li>AI developers and prompt engineers</li>
+<li>Compliance and governance professionals</li>
+<li>Semantic web and knowledge graph architects</li>
 </ul>
-<h2 id="references">References</h2>
+<hr />
+<h2 id="references"><strong>References</strong></h2>
 <ul>
-<li>Schema.org: <a href="https://schema.org/Brand">https://schema.org/Brand</a>  </li>
-<li>EU AI Act and AI governance frameworks  </li>
+<li>Schema.org: <a href="https://schema.org/Brand">https://schema.org/Brand</a></li>
+<li>Brando Schema: <a href="https://brandoschema.com/">https://brandoschema.com/</a></li>
+<li>EU AI Act and AI governance frameworks</li>
 </ul>
+<hr />
 
 
 
