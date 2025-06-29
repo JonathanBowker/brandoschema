@@ -27,7 +27,7 @@
                 },
                 {
                     "name": "namingConvention",
-                    "definition": "Standardized rules and guidelines the brand follows for naming products, services, and other entities.",
+                    "definition": "Standardised rules and guidelines the brand follows for naming products, services, and other entities.",
                     "type": "url",
                     "url": "https://brandoschema.com/bdv-vocabulary/#namingConvention"
                 },
@@ -38,13 +38,13 @@
                     "url": "https://brandoschema.com/bdv-vocabulary/#personaCard"
                 },
                 {
-                    "name": "approvedTerms",
+                    "name": "approvedTerm",
                     "definition": "A curated list of words and phrases that are sanctioned for use in brand communications.",
                     "type": "url",
-                    "url": "https://brandoschema.com/bdv-vocabulary/#approvedTerms"
+                    "url": "https://brandoschema.com/bdv-vocabulary/#approvedTerm"
                 },
                 {
-                    "name": "prohibitedTerms",
+                    "name": "prohibitedTerm",
                     "definition": "A list of words and phrases that are discouraged or forbidden in brand communications to maintain brand integrity.",
                     "type": "url",
                     "url": "https://brandoschema.com/bdv-vocabulary/#prohibitedTerms"
