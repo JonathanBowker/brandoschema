@@ -111,8 +111,8 @@ code, pre {
 }
 
 /* --- Button Group/Row for Card Layouts --- */
-.card-buttons, .button-row {
-  display: flex !important;
+.card-buttons {
+  display: flex;
   gap: 1rem;
   margin-top: 1.2rem;
   flex-wrap: wrap;
