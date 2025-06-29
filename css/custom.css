@@ -231,9 +231,52 @@ h1 {
   background-color: #f9f9f9;
 }
 
-/* If you want to hide the default Material top nav/header, do: */
-/* .md-header { display: none !important; } */
 
 
-/* Keep all your previous custom styles below (no changes needed for buttons, modals, tables, etc) */
-/* ... your other CSS from above ... */
+/* --------------------------------------------
+   Lead Form
+--------------------------------------------- */
+.lead-form {
+  background: #f6f0ff;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  box-shadow: 0 2px 16px rgba(90,0,173,0.05);
+}
+.lead-form label {
+  display: block;
+  margin-bottom: 1.1rem;
+  color: #360067;
+  font-weight: 500;
+  font-size: 1.09rem;
+}
+.lead-form input,
+.lead-form textarea {
+  width: 100%;
+  padding: 0.7em 1em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  background: #fff;
+  color: #250045;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border 0.18s;
+}
+.lead-form input:focus,
+.lead-form textarea:focus {
+  border-color: #7200dc;
+  outline: 2px solid #5a00ad44;
+}
+.lead-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+.lead-form button.button {
+  margin-top: 1rem;
+  width: 100%;
+  /* Keeps using your .button.primary style */
+}
