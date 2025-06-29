@@ -33,7 +33,7 @@ h1 {
    Button Styles (BRAND BUTTONS)
 --------------------------------------------- */
 .button {
-  display: inline-flex;            /* Changed for better alignment */
+  display: inline-flex;            
   align-items: center;
   justify-content: center;
   font-family: inherit;
@@ -51,11 +51,22 @@ h1 {
   transition: background 0.18s, color 0.18s;
   line-height: 1.2;
   outline: none;
-  margin: 0;                       /* Remove any default margin */
+  margin: 0;        
   width: auto !important;
   max-width: 100%;
+  /* Prevent inherited display:block or width:100% */
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
+/* Remove default button styling on some browsers */
+.button:active,
+.button:focus {
+  outline: 2px solid #5a00ad;
+  outline-offset: 2px;
+}
+
+/* Primary and Secondary Buttons */
 .button.primary {
   background: #360067;
   color: #fff !important;
@@ -95,22 +106,24 @@ h1 {
 
 /* --- Button Group/Row for Card Layouts --- */
 .card-buttons {
-  display: flex !important;         /* Ensure flex applies */
-  flex-direction: row !important;   /* Force horizontal unless on mobile */
+  display: flex !important;
+  flex-direction: row !important;
   gap: 1rem;
   margin-top: 1.2rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
+  padding: 0 !important;
 }
 
-/* Optional: Remove default focus outline for buttons, add custom */
-.button:focus {
-  outline: 2px solid #5a00ad;
-  outline-offset: 2px;
+/* Defensive: remove unwanted margins on direct children */
+.card-buttons > * {
+  margin: 0 !important;
 }
 
-/* Prevent vertical stacking unless screen is tiny */
+/* Prevent vertical stacking unless on small screens */
 @media (max-width: 480px) {
   .card-buttons, .button-row {
     flex-direction: column !important;
@@ -118,6 +131,7 @@ h1 {
     align-items: stretch;
   }
 }
+
 
 /* --------------------------------------------
    Modal Styles (Full-Page, Animated)
@@ -216,3 +230,10 @@ h1 {
   font-weight: 600;
   background-color: #f9f9f9;
 }
+
+/* If you want to hide the default Material top nav/header, do: */
+/* .md-header { display: none !important; } */
+
+
+/* Keep all your previous custom styles below (no changes needed for buttons, modals, tables, etc) */
+/* ... your other CSS from above ... */

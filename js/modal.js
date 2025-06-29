@@ -1,4 +1,3 @@
-// Open modal with fade-in
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('[data-modal-target]').forEach(function (btn) {
     btn.addEventListener('click', function (e) {
@@ -7,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
       let modal = document.querySelector(target);
       if (modal) {
         modal.classList.add('show');
-        modal.setAttribute('tabindex', '-1'); // Only if needed
+        modal.setAttribute('tabindex', '-1');
+        modal.setAttribute('aria-hidden', 'false'); // Optional, for a11y
         modal.focus();
       }
     });
@@ -18,14 +18,20 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.addEventListener('click', function (e) {
       e.stopPropagation();
       let modal = btn.closest('.modal');
-      if (modal) modal.classList.remove('show');
+      if (modal) {
+        modal.classList.remove('show');
+        modal.setAttribute('aria-hidden', 'true'); // Optional, for a11y
+      }
     });
   });
 
   // Close modal on backdrop click
   document.querySelectorAll('.modal').forEach(function (modal) {
     modal.addEventListener('click', function (e) {
-      if (e.target === modal) modal.classList.remove('show');
+      if (e.target === modal) {
+        modal.classList.remove('show');
+        modal.setAttribute('aria-hidden', 'true'); // Optional, for a11y
+      }
     });
   });
 
@@ -34,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.key === 'Escape') {
       document.querySelectorAll('.modal.show').forEach(function (modal) {
         modal.classList.remove('show');
+        modal.setAttribute('aria-hidden', 'true'); // Optional, for a11y
       });
     }
   });
