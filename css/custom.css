@@ -63,14 +63,19 @@ code, pre {
   padding: 0.85em 2.1em;
   font-size: 1.13rem;
   white-space: nowrap;  /* keeps the text on one line */
-  transition: background 0.18s;
+  transition: background 0.18s, color 0.18s;
+  line-height: 1.2;
+  outline: none;
+  margin: 0;
 }
 
+/* Primary and Secondary Buttons */
 .button.primary {
   background: #5a00ad;
   color: #fff !important;
 }
-.button.primary:hover {
+.button.primary:hover,
+.button.primary:focus {
   background: #7200dc;
 }
 
@@ -78,38 +83,45 @@ code, pre {
   background: #e8e8ff;
   color: #5a00ad !important;
 }
-.button.secondary:hover {
+.button.secondary:hover,
+.button.secondary:focus {
   background: #dad4ff;
   color: #360067 !important;
 }
 
-/* Size modifiers */
+/* --- Size Modifiers --- */
 .button.small {
   font-size: 0.97rem;
-  padding: 0.5em 1.2em;
-  min-width: 75px;
+  padding: 0.48em 1.18em;
+  min-width: 80px;
 }
-
-
 .button.medium {
   font-size: 1.08rem;
-  padding: 0.78em 1.7em;
+  padding: 0.7em 1.7em;
   min-width: 110px;
 }
-
 .button.large {
   font-size: 1.18rem;
-  padding: 1.1em 2.8em;
+  padding: 1.05em 2.5em;
   min-width: 140px;
 }
 
-/* Button group styling */
-.card-buttons {
+/* --- Button Group/Row for Card Layouts --- */
+.card-buttons, .button-row {
   display: flex;
   gap: 1rem;
   margin-top: 1.2rem;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
 }
+
+/* Optional: Remove default focus outline for buttons, add custom */
+.button:focus {
+  outline: 2px solid #5a00ad;
+  outline-offset: 2px;
+}
+
 
 
 /* --------------------------------------------
