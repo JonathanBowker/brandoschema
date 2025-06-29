@@ -7,29 +7,29 @@ document.addEventListener('DOMContentLoaded', function () {
       let modal = document.querySelector(target);
       if (modal) {
         modal.classList.add('show');
-        // Trap focus inside modal (optional accessibility)
-        modal.setAttribute('tabindex', '-1');
+        modal.setAttribute('tabindex', '-1'); // Only if needed
         modal.focus();
       }
     });
   });
 
-  // Close modals on close button click
+  // Close modal on close button
   document.querySelectorAll('.btn-close').forEach(function (btn) {
-    btn.addEventListener('click', function () {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
       let modal = btn.closest('.modal');
       if (modal) modal.classList.remove('show');
     });
   });
 
-  // Close modals when clicking on the overlay background
+  // Close modal on backdrop click
   document.querySelectorAll('.modal').forEach(function (modal) {
     modal.addEventListener('click', function (e) {
       if (e.target === modal) modal.classList.remove('show');
     });
   });
 
-  // Optional: Close modal on escape key
+  // Close on Escape key
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
       document.querySelectorAll('.modal.show').forEach(function (modal) {
