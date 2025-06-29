@@ -1,55 +1,40 @@
-// Modal open logic
-document.addEventListener('DOMContentLoaded', function() {
-  // Open modal on button click
-  document.querySelectorAll('[data-modal-target]').forEach(function(btn) {
-    btn.addEventListener('click', function(e) {
+// Open modal with fade-in
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[data-modal-target]').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
       e.preventDefault();
-      const modalId = btn.getAttribute('data-modal-target');
-      const modal = document.querySelector(modalId);
+      let target = btn.getAttribute('data-modal-target');
+      let modal = document.querySelector(target);
       if (modal) {
         modal.classList.add('show');
-        document.body.style.overflow = 'hidden'; // Prevent background scroll
+        // Trap focus inside modal (optional accessibility)
+        modal.setAttribute('tabindex', '-1');
+        modal.focus();
       }
     });
   });
 
-  // Close modal when clicking the backdrop
-  document.querySelectorAll('.modal').forEach(function(modal) {
-    modal.addEventListener('click', function(e) {
-      if (e.target === modal) {
-        modal.classList.remove('show');
-        document.body.style.overflow = '';
-      }
-    });
-  });
-
-  // Close modal on any .btn-close
-  document.querySelectorAll('.btn-close').forEach(function(btn) {
-    btn.addEventListener('click', function() {
+  // Close modals on close button click
+  document.querySelectorAll('.btn-close').forEach(function (btn) {
+    btn.addEventListener('click', function () {
       let modal = btn.closest('.modal');
-      if (modal) {
-        modal.classList.remove('show');
-        document.body.style.overflow = '';
-      }
+      if (modal) modal.classList.remove('show');
     });
   });
 
-  // Close modal on Esc key
-  document.addEventListener('keydown', function(e) {
-    if (e.key === "Escape") {
-      document.querySelectorAll('.modal.show').forEach(function(modal) {
+  // Close modals when clicking on the overlay background
+  document.querySelectorAll('.modal').forEach(function (modal) {
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) modal.classList.remove('show');
+    });
+  });
+
+  // Optional: Close modal on escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal.show').forEach(function (modal) {
         modal.classList.remove('show');
-        document.body.style.overflow = '';
       });
     }
   });
 });
-
-// For use in HTML inline
-function closeModal(modalId) {
-  var modal = document.getElementById(modalId);
-  if (modal) {
-    modal.classList.remove('show');
-    document.body.style.overflow = '';
-  }
-}
