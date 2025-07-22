@@ -288,47 +288,5 @@ h1 {
   background: #222;
   color: #fafafa;
   padding: 2.5em 0 1em 0;
-  font-size: 50 em;  /* larger font */
+  font-size: 5em;  /* larger font */
 }
-
-.footer-menu {
-  display: flex;
-  justify-content: center;
-  gap: 3em;
-  max-width: 1100px;
-  margin: 0 auto 1.5em auto;
-  flex-wrap: wrap;
-  text-align: left;
-}
-
-.footer-menu div {
-  min-width: 160px;
-}
-
-.footer-menu strong {
-  font-size: 1.1em;
-  letter-spacing: 0.5px;
-}
-
-.custom-footer a {
-  color: #80bfff;
-  text-decoration: none;
-  display: block;
-  margin: 0.4em 0;
-  font-size: 1em;
-}
-
-.custom-footer a:hover {
-  text-decoration: underline;
-}
-
-.footer-copyright {
-  text-align: center;
-  color: #bdbdbd;
-  font-size: 4.0em;
-  margin-top: 0.5em;
-  padding-top: 1em;
-  border-top: 1px solid #444;
-  opacity: 0.95;
-}
-
