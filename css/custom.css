@@ -287,6 +287,17 @@ h1 {
 .custom-footer {
   background: #222;
   color: #fafafa;
-  padding: 2.5em 0 1em 0;
-  font-size: 5em;  /* larger font */
+  text-align: center;
+  padding: 2em 0;
+  font-size: 1.5em;  /* Larger font size */
+}
+
+.custom-footer a {
+  color: #80bfff;
+  font-size: 1.5em;  /* Match link size to footer text */
+  text-decoration: none;
+}
+
+.custom-footer a:hover {
+  text-decoration: underline;
 }
