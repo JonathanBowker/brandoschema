@@ -287,9 +287,48 @@ h1 {
 .custom-footer {
   background: #222;
   color: #fafafa;
-  text-align: center;
-  padding: 1em 0;
+  padding: 2.5em 0 1em 0;
+  font-size: 1.17em;  /* larger font */
 }
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  max-width: 1100px;
+  margin: 0 auto 1.5em auto;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.footer-menu div {
+  min-width: 160px;
+}
+
+.footer-menu strong {
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
+
 .custom-footer a {
   color: #80bfff;
+  text-decoration: none;
+  display: block;
+  margin: 0.4em 0;
+  font-size: 1em;
 }
+
+.custom-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: #bdbdbd;
+  font-size: 0.98em;
+  margin-top: 0.5em;
+  padding-top: 1em;
+  border-top: 1px solid #444;
+  opacity: 0.95;
+}
+
