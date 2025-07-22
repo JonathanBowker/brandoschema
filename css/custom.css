@@ -288,7 +288,7 @@ h1 {
   background: #222;
   color: #fafafa;
   padding: 2.5em 0 1em 0;
-  font-size: 1.17em;  /* larger font */
+  font-size: 50 em;  /* larger font */
 }
 
 .footer-menu {
