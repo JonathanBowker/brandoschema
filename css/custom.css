@@ -280,3 +280,13 @@ h1 {
   width: 100%;
   /* Keeps using your .button.primary style */
 }
+
+.custom-footer {
+  background: #222;
+  color: #fafafa;
+  text-align: center;
+  padding: 1em 0;
+}
+.custom-footer a {
+  color: #80bfff;
+}
