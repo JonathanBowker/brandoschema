@@ -281,6 +281,9 @@ h1 {
   /* Keeps using your .button.primary style */
 }
 
+/* --------------------------------------------
+   Footer Customisation
+--------------------------------------------- */
 .custom-footer {
   background: #222;
   color: #fafafa;
