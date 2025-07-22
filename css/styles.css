@@ -47,3 +47,17 @@
 .tooltip a:hover {
     text-decoration: underline;
 }
+
+/* --------------------------------------------
+   Footer Customisation
+--------------------------------------------- */
+.custom-footer {
+  background: #222;
+  color: #fafafa;
+  text-align: center;
+  padding: 1em 0;
+}
+.custom-footer a {
+  color: #80bfff;
+}
+
