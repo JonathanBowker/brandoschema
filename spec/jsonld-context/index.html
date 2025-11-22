@@ -4029,13 +4029,11 @@ For most Brando deployments (Brand OS + LLMs + APIs), use the <strong>slim insta
 <ul>
 <li>
 <p>Treat <code>@id</code> as the <strong>canonical identifier</strong> for each:</p>
-</li>
-<li>
-<p><code>brando:Brand</code></p>
-</li>
+<ul>
+<li><code>brando:Brand</code></li>
 <li><code>brando:Context</code></li>
-<li>
-<p>token, policy, category, campaign, automation rule.</p>
+<li>token, policy, category, campaign, automation rule.</li>
+</ul>
 </li>
 <li>
 <p>Keep them stable across deployments and environments where possible.</p>
@@ -4047,11 +4045,11 @@ For most Brando deployments (Brand OS + LLMs + APIs), use the <strong>slim insta
 <ul>
 <li>
 <p>A Brand Knowledge Graph is typically represented as a JSON-LD document with:</p>
-</li>
-<li>
-<p>a single <code>@context</code>,</p>
-</li>
+<ul>
+<li>a single <code>@context</code>,</li>
 <li>a single <code>@graph</code> containing multiple nodes.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -4094,10 +4092,8 @@ For most Brando deployments (Brand OS + LLMs + APIs), use the <strong>slim insta
 <ul>
 <li>
 <p>is itself a <strong>JSON-LD document</strong> with:</p>
-</li>
-<li>
-<p>the vocabulary <code>@context</code> (prefixes, including <code>brando</code>),</p>
-</li>
+<ul>
+<li>the vocabulary <code>@context</code> (prefixes, including <code>brando</code>),</li>
 <li>
 <p>an <code>@graph</code> of:</p>
 <ul>
@@ -4107,15 +4103,17 @@ For most Brando deployments (Brand OS + LLMs + APIs), use the <strong>slim insta
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <p>Your instance data:</p>
 <ul>
 <li>
 <p><strong>imports the semantics</strong>, not the whole file:</p>
-</li>
-<li>
-<p>you don’t embed the vocab’s <code>@graph</code>,</p>
-</li>
+<ul>
+<li>you don’t embed the vocab’s <code>@graph</code>,</li>
 <li>you just <strong>use</strong> the IRIs it defines under the <code>brando</code> namespace.</li>
+</ul>
+</li>
 </ul>
 <p>In other words:</p>
 <ul>
