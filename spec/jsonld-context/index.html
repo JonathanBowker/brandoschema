@@ -4026,25 +4026,31 @@ For most Brando deployments (Brand OS + LLMs + APIs), use the <strong>slim insta
 <ol>
 <li>
 <p><strong>Use stable <code>@id</code> URIs</strong></p>
-</li>
+<ul>
 <li>
 <p>Treat <code>@id</code> as the <strong>canonical identifier</strong> for each:</p>
-<ul>
-<li><code>brando:Brand</code></li>
+</li>
+<li>
+<p><code>brando:Brand</code></p>
+</li>
 <li><code>brando:Context</code></li>
-<li>token, policy, category, campaign, automation rule.</li>
-</ul>
+<li>
+<p>token, policy, category, campaign, automation rule.</p>
 </li>
 <li>
 <p>Keep them stable across deployments and environments where possible.</p>
 </li>
-<li>
-<p><strong>Use <code>@graph</code> for multi-node documents</strong></p>
+</ul>
 </li>
 <li>
-<p>A Brand Knowledge Graph is typically represented as a JSON-LD document with:</p>
+<p><strong>Use <code>@graph</code> for multi-node documents</strong></p>
 <ul>
-<li>a single <code>@context</code>,</li>
+<li>
+<p>A Brand Knowledge Graph is typically represented as a JSON-LD document with:</p>
+</li>
+<li>
+<p>a single <code>@context</code>,</p>
+</li>
 <li>a single <code>@graph</code> containing multiple nodes.</li>
 </ul>
 </li>
