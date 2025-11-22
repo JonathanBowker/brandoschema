@@ -1,0 +1,4570 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Brand Oracle (Brando) is an AI-native, governance-ready schema and ontology for brands. It defines JSON-LD classes and properties for brand identity, expression, governance, and product categorisation so LLMs, agents, and multimodal systems can behave in on-brand, compliant ways.">
+      
+      
+        <meta name="author" content="Advanced Analytica">
+      
+      
+        <link rel="canonical" href="https://brandoschema.com/">
+      
+      
+      
+        <link rel="next" href="getting-started/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+  <title>
+    
+      Brand Oracle (Brando) Schema Vocabulary v1.3
+    
+  </title>
+
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="css/custom.css">
+    
+      <link rel="stylesheet" href="css/styles.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-3N8RPPP7CD"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-3N8RPPP7CD",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-3N8RPPP7CD",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  
+
+  <!-- Google Tag Manager -->
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+  j.src='https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXXX';
+  f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  
+    <meta name="description" content="Brand Oracle (Brando) is an AI-native, governance-ready schema and ontology for brands. It defines JSON-LD classes and properties for brand identity, expression, governance, and product categorisation so LLMs, agents, and multimodal systems can behave in on-brand, compliant ways.">
+    <meta name="author" content="Advanced Analytica">
+    <meta name="keywords" content="Brand Oracle, Brando, Brando Schema, brand ontology, brand schema, open standard, Brand Operating System, AI brand operations, AI brand governance, brand knowledge graph, AI-native brand identity, structured brand metadata, brand semantics, verbal identity schema, visual identity schema, audio identity schema, brand compliance AI, intelligent brand indexing, AI brand risk management, brand guidelines for AI, LLM brand safety, AI brand discovery, brand architecture, house of brands">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Brand Oracle (Brando) Schema Vocabulary v1.3">
+    <meta property="og:description" content="Brando is an AI-native schema and ontology that structures brand identity, tokens, and policies so LLMs, agents, and multimodal systems can behave in on-brand, compliant ways.">
+    <meta property="og:url" content="https://brandoschema.com/">
+    <meta property="og:image" content="/assets/images/4x/brando@4x.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brand Oracle (Brando) – Schema Vocabulary v1.3">
+    <meta name="twitter:description" content="An open, Schema.org-compatible vocabulary for brand identity, expression, governance, and product categorisation, designed for AI-native Brand Operating Systems.">
+    <meta name="twitter:image" content="/assets/images/4x/brando@4x.webp">
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#brand-oracle-brando-schema-vocabulary-v13" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Brando Schema – Brando" class="md-header__button md-logo" aria-label="Brando Schema – Brando" data-md-component="logo">
+      
+  <img src="assets/images/4x/masthead_logo@4x.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Brando Schema – Brando
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Brand Oracle (Brando) Schema Vocabulary v1.3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/JonathanBowker/brandoschema" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Brando Schema – Brando" class="md-nav__button md-logo" aria-label="Brando Schema – Brando" data-md-component="logo">
+      
+  <img src="assets/images/4x/masthead_logo@4x.png" alt="logo">
+
+    </a>
+    Brando Schema – Brando
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/JonathanBowker/brandoschema" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-brand-oracle-brando" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Brand Oracle (Brando)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-documentation-covers" class="md-nav__link">
+    <span class="md-ellipsis">
+      What this documentation covers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structured-governance-and-ai-manageable-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structured Governance and AI-manageable design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Structured Governance and AI-manageable design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-ai-has-to-help-manage-the-brand-knowledge-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why AI has to help manage the Brand Knowledge Graph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-concepts-and-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core concepts and classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core concepts and classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#high-level-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-level relationships
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#canonical-form-and-implementation-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Canonical form and implementation profiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-minimal-brand-context-in-json-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: minimal brand + context in JSON-LD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brando-in-a-brand-operating-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brando in a Brand Operating System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classification-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classification alignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versioning-and-licensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versioning and licensing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stewardship-and-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stewardship and support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Next steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-support-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Support Services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting-started-jsonld/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quickstart (JSON-LD)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting-started-yaml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quickstart (YAML)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Schema
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Schema
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Types
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Types
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Types Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="types/brand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Brand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="types/context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Context
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="types/brand-expression-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:BrandExpressionToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="types/verbal-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:VerbalToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="types/visual-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:VisualToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="types/audio-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:AudioToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="types/policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="types/branded-category/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:BrandedCategory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="types/campaign/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Campaign
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="types/automation-rule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:AutomationRule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Properties
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Properties
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Properties Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/appliesTo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:appliesTo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/appliesToGTIN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:appliesToGTIN
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/appliesToProduct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:appliesToProduct
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/approvedTerms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:approvedTerms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/assetPreview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:assetPreview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/assetURL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:assetURL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/audiencePersona/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:audiencePersona
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/audienceSegment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:audienceSegment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/audioCue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:audioCue
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/audioLogo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:audioLogo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/audioReferenceLink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:audioReferenceLink
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/audioUsageGuidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:audioUsageGuidelines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/automationAction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:automationAction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/brandArchitectureRole/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:brandArchitectureRole
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/brandName/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:brandName
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/brandNarrative/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:brandNarrative
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/brandPromise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:brandPromise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/campaignName/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:campaignName
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/campaignTheme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:campaignTheme
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/categoryApprovedTerms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:categoryApprovedTerms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/categoryClass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:categoryClass
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/categoryDepartment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:categoryDepartment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/categoryItemType/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:categoryItemType
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/categoryProhibitedTerms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:categoryProhibitedTerms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/colourPalette/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:colourPalette
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/competitorContext/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:competitorContext
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/complianceTags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:complianceTags
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/coreValues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:coreValues
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/dataSource/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:dataSource
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/dialogueStyle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:dialogueStyle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/domainContext/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:domainContext
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/downloadableFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:downloadableFile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/effectiveDuring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:effectiveDuring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/embeddingQuality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:embeddingQuality
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/enforcementLevel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:enforcementLevel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/externalSystem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:externalSystem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/externalSystemId/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:externalSystemId
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/googleProductCategoryId/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:googleProductCategoryId
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/governanceModel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:governanceModel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/gpcCategoryCode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:gpcCategoryCode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/gpcCategoryDescription/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:gpcCategoryDescription
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/guardRails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:guardRails
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/hasAutomationRule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:hasAutomationRule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/hasCampaign/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:hasCampaign
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/hasContext/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:hasContext
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/hasPolicy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:hasPolicy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/hasProductCategory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:hasProductCategory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/imageryStyles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:imageryStyles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/inheritsPolicies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:inheritsPolicies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/inheritsTokens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:inheritsTokens
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/keyMessages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:keyMessages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/logo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:logo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/marketPosition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:marketPosition
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/missionStatement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:missionStatement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/monitoredMetric/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:monitoredMetric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/motionRules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:motionRules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/mustDos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:mustDos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/mustNotDos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:mustNotDos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/namingConvention/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:namingConvention
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/personaCard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:personaCard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/priority/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:priority
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/productCategoryName/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:productCategoryName
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/prohibitedTerms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:prohibitedTerms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/promptScaffold/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:promptScaffold
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/pronunciationGuide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:pronunciationGuide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/refusalStrategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:refusalStrategies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/retrievableInLLM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:retrievableInLLM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/reviewWorkflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:reviewWorkflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/riskScenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:riskScenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/riskTag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:riskTag
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/schedulingRule.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:schedulingRule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/speechStyle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:speechStyle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/supportingFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:supportingFile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/tagline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:tagline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/temporaryOverrides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:temporaryOverrides
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/toneOfVoice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:toneOfVoice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/triggerType/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:triggerType
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/typography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:typography
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/unspscCode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:unspscCode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/updatePolicy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:updatePolicy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/usesAudioToken/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:usesAudioToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/usesVerbalToken/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:usesVerbalToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/usesVisualToken/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:usesVisualToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/visibilityRating/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:visibilityRating
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/visionStatement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:visionStatement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/visualReferenceLink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:visualReferenceLink
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/visualToken/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:visualToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/visualUsageGuidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:visualUsageGuidelines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/voiceSignature/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:voiceSignature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="properties/writingStyle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:writingStyle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="architecture/brand-os/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brand Operating System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="architecture/runtime-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Runtime Integration (LLMs, MCP, APIs)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="architecture/brand-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brand portfolios & architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Specification
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Specification
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="spec/jsonld-context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JSON-LD context
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="spec/yaml-profile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    YAML schema profile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="spec/typescript-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeScript types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="examples/minimal-brand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Minimal brand graph
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="examples/house-of-brands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    House of brands example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="examples/chatbot-runtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chatbot + Brando runtime flow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how-to-use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Brando
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="optimisation-workshop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI Optimisation Workshop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Analytica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="partner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Partner Ecosystem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="use-brando-trademark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brando Trademark
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="terms-of-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Terms of Service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-brand-oracle-brando" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Brand Oracle (Brando)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-documentation-covers" class="md-nav__link">
+    <span class="md-ellipsis">
+      What this documentation covers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structured-governance-and-ai-manageable-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structured Governance and AI-manageable design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Structured Governance and AI-manageable design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-ai-has-to-help-manage-the-brand-knowledge-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why AI has to help manage the Brand Knowledge Graph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-concepts-and-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core concepts and classes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core concepts and classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#high-level-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      High-level relationships
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#canonical-form-and-implementation-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Canonical form and implementation profiles
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-minimal-brand-context-in-json-ld" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: minimal brand + context in JSON-LD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brando-in-a-brand-operating-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brando in a Brand Operating System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classification-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classification alignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versioning-and-licensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versioning and licensing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stewardship-and-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stewardship and support
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next steps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Next steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai-support-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Support Services
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="brand-oracle-brando-schema-vocabulary-v13"><strong>Brand Oracle (Brando) Schema Vocabulary v1.3</strong></h1>
+<blockquote>
+<p><strong>Brando</strong> is a Schema.org compatible vocabulary for brand identity, expression, governance, and product categorisation – designed for LLMs, agents, and multimodal systems.</p>
+</blockquote>
+<p><img src="https://brandoschema.com/assets/images/4x/brando@4x.webp" alt="Brando Schema: AI-native vocabulary for brands" style="width: 100%; max-width: 960px; display: block; margin: 2rem auto;" /></p>
+<p>This site documents the <strong>Brando Schema Vocabulary v1.3</strong>:</p>
+<ul>
+<li>the <strong>JSON-LD vocabulary</strong> under the <code>brando:</code> namespace,</li>
+<li>the <strong>YAML profile</strong> for configuration and ops,</li>
+<li>and reference <strong>integration patterns</strong> for Brand Operating Systems (Brand OS), RAG pipelines, and agent runtimes.</li>
+</ul>
+<p>Brando repurposes Schema.org style JSON-LD from a <strong>descriptive SEO layer</strong> into a <strong>prescriptive control layer</strong> for generative and agentic AI, so you can tell models:</p>
+<ul>
+<li><strong>who</strong> the brand is,</li>
+<li><strong>how</strong> it should look, sound, and behave,</li>
+<li>and <strong>what</strong> is allowed, required, or forbidden in different contexts.</li>
+</ul>
+<hr />
+<h2 id="what-is-brand-oracle-brando">What is Brand Oracle (Brando)?</h2>
+<p><strong>Brand Oracle (Brando)</strong> is:</p>
+<ul>
+<li>a <strong>schema and ontology</strong> (JSON-LD, Schema.org–style) for brands,</li>
+<li>a <strong>vocabulary</strong> of classes and properties focused on brand identity, expression, governance, and integrations,</li>
+<li>and a <strong>taxonomy layer</strong> for brand/product categories aligned with GS1, UNSPSC, and Google Product Taxonomy.</li>
+</ul>
+<p>The vocabulary is defined as a Linked Data ontology under:</p>
+<ul>
+<li><strong>Namespace:</strong> <code>https://brandoschema.com/</code>  </li>
+<li><strong>Preferred prefix:</strong> <code>brando</code></li>
+</ul>
+<p>It:</p>
+<ul>
+<li>extends <code>schema:Brand</code> and <code>schema:Intangible</code>,</li>
+<li>is published in <strong>JSON-LD</strong> as the canonical form,</li>
+<li>and is profiled for <strong>YAML</strong> configuration and <strong>TypeScript</strong> types.</li>
+</ul>
+<p>You can:</p>
+<ul>
+<li>embed Brando JSON-LD in public sites for AI and web discovery,</li>
+<li>manage Brando YAML in repositories as configuration for a <strong>Brand Operating System (Brand OS)</strong>,</li>
+<li>or load Brando instances into a <strong>Brand Knowledge Graph</strong> that serves multiple runtimes.</li>
+</ul>
+<p>The ontology header describes the vocabulary as:</p>
+<blockquote>
+<p><em>Core classes and properties for the Brand Oracle (Brando) schema and ontology, designed to constrain generative, search, agent, and multimodal outputs to on-brand, compliant behaviour.</em></p>
+</blockquote>
+<hr />
+<h2 id="what-this-documentation-covers">What this documentation covers</h2>
+<p>Use the navigation, or jump directly into:</p>
+<ul>
+<li><strong><a href="getting-started/">Getting started</a></strong> – motivation, core ideas, and how to adopt Brando incrementally.</li>
+<li><strong><a href="getting-started-jsonld/">Quickstart (JSON-LD)</a></strong> – minimal JSON-LD examples for a brand, context, and policies.</li>
+<li><strong><a href="getting-started-yaml/">Quickstart (YAML)</a></strong> – YAML profile for teams that treat Brando as configuration.</li>
+<li><strong><a href="types/">Types reference</a></strong> – definitions of <code>brando:Brand</code>, <code>brando:Context</code>, expression tokens, policies, campaigns, and rules.</li>
+<li><strong><a href="properties/">Properties reference</a></strong> – domains, ranges, and usage notes for all <code>brando:</code> properties.</li>
+<li><strong><a href="architecture/brand-os/">Brand Operating System</a></strong> – how Brando underpins a Brand OS and Brand Knowledge Graph.</li>
+<li><strong><a href="architecture/runtime-integration/">Runtime integration (LLMs, MCP, APIs)</a></strong> – how to use Brando at inference time.</li>
+<li><strong><a href="spec/jsonld-context/">JSON-LD context</a></strong> and <strong><a href="spec/yaml-profile/">YAML profile</a></strong> – implementation details and constraints.</li>
+<li><strong><a href="examples/minimal-brand/">Examples</a></strong> – worked examples for brands, portfolios, and runtime flows.</li>
+</ul>
+<hr />
+<h2 id="structured-governance-and-ai-manageable-design">Structured Governance and AI-manageable design</h2>
+<p>Traditional brand governance is built around <strong>static, human-only artefacts</strong>:</p>
+<ul>
+<li>PDF guidelines and slide decks,</li>
+<li>brand portals and DAM folders,</li>
+<li>unstructured “system prompts” and playbooks for AI.</li>
+</ul>
+<p>These do not translate cleanly into <strong>probabilistic systems</strong> like LLMs and agents.</p>
+<p>Brando applies <strong>Structured Governance</strong>:</p>
+<ul>
+<li>reusing <strong>Semantic Web patterns</strong> (JSON-LD, Schema.org, GS1),</li>
+<li>modelling <strong>brand intent, rules, and tokens as data</strong> (not prose),</li>
+<li>and using that data as a <strong>control layer</strong> that AI runtimes can load, combine, and enforce.</li>
+</ul>
+<p>Foundation models are heavily trained on Schema.org-style JSON-LD.<br />
+Brando reuses this structure so that models can interpret <code>brando:</code> classes and properties <strong>zero-shot</strong>, without custom training.</p>
+<h3 id="why-ai-has-to-help-manage-the-brand-knowledge-graph">Why AI has to help manage the Brand Knowledge Graph</h3>
+<p>A Brando-based <strong>Brand Knowledge Graph</strong> is intended to be <strong>living</strong>:</p>
+<ul>
+<li>brands, products, and portfolios change,</li>
+<li>channels and surfaces proliferate,</li>
+<li>policies evolve with regulation and risk.</li>
+</ul>
+<p>At any meaningful scale – multiple brands, markets, campaigns, and channels – <strong>maintaining this graph purely by hand becomes prohibitively hard</strong>:</p>
+<ul>
+<li>too many contexts (<code>brando:Context</code>) to keep in sync,</li>
+<li>too many tokens (<code>brando:VerbalToken</code>, <code>brando:VisualToken</code>, <code>brando:AudioToken</code>) to update,</li>
+<li>too many policies (<code>brando:Policy</code>, <code>brando:AutomationRule</code>) to refactor as requirements change.</li>
+</ul>
+<p>Brando is therefore <strong>AI-manageable by design</strong>:</p>
+<ul>
+<li>the vocabulary is compact, with clear domains and ranges, so agents can <strong>propose changes</strong> (e.g. new contexts, updated tokens) in JSON-LD or YAML;</li>
+<li>LLMs can generate <strong>schema-conformant Brando data</strong> zero-shot because the structure mirrors Schema.org and linked data patterns;</li>
+<li>properties like <code>brando:reviewWorkflow</code>, <code>brando:enforcementLevel</code>, and <code>brando:riskTag</code> support <strong>human-in-the-loop governance</strong>, not bypass it.</li>
+</ul>
+<p>In practice:</p>
+<blockquote>
+<p>People define intent and governance.<br />
+<strong>AI does the mechanical work</strong> of keeping the Brand Knowledge Graph up to date, under auditable human control.</p>
+</blockquote>
+<hr />
+<h2 id="core-concepts-and-classes">Core concepts and classes</h2>
+<p>Brando v1.3 defines ten core classes under the <code>brando:</code> namespace:</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Informal purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>brando:Brand</code></td>
+<td>Core brand identity node extended with governance, architecture, and AI-ready semantics.</td>
+</tr>
+<tr>
+<td><code>brando:Context</code></td>
+<td>Activation context describing audience, channel, jurisdiction, and operational conditions.</td>
+</tr>
+<tr>
+<td><code>brando:BrandExpressionToken</code></td>
+<td>Abstract superclass for reusable expression tokens across verbal, visual, and audio modalities.</td>
+</tr>
+<tr>
+<td><code>brando:VerbalToken</code></td>
+<td>Reusable configuration of the brand’s voice, language, and behavioural prompt rules.</td>
+</tr>
+<tr>
+<td><code>brando:VisualToken</code></td>
+<td>Reusable configuration of visual system: logo, colour, typography, imagery, and motion.</td>
+</tr>
+<tr>
+<td><code>brando:AudioToken</code></td>
+<td>Reusable configuration of sonic identity: voice, sonic logos, and audio cues.</td>
+</tr>
+<tr>
+<td><code>brando:Policy</code></td>
+<td>Governance node for guard rails, refusals, compliance tags, and retrieval visibility.</td>
+</tr>
+<tr>
+<td><code>brando:BrandedCategory</code></td>
+<td>Brand-specific product/service category aligned with GS1, UNSPSC, and Google Product Taxonomy.</td>
+</tr>
+<tr>
+<td><code>brando:Campaign</code></td>
+<td>Time-bound campaign that may temporarily adjust brand rules.</td>
+</tr>
+<tr>
+<td><code>brando:AutomationRule</code></td>
+<td>Automated governance rule reacting to metrics or events to adjust brand behaviour.</td>
+</tr>
+</tbody>
+</table>
+<p>All Brando classes ultimately extend <code>schema:Intangible</code>, and <code>brando:Brand</code> additionally extends <code>schema:Brand</code> (and is related to <code>gs1:Brand</code>).</p>
+<h3 id="high-level-relationships">High-level relationships</h3>
+<p>Key structural properties include:</p>
+<ul>
+<li>
+<p><code>brando:hasContext</code><br />
+  – <code>brando:Brand → brando:Context</code> (activation contexts in which the brand operates)</p>
+</li>
+<li>
+<p><code>brando:usesVerbalToken</code> / <code>brando:usesVisualToken</code> / <code>brando:usesAudioToken</code><br />
+  – <code>brando:Brand</code> or <code>brando:Context →</code> expression tokens for different modalities</p>
+</li>
+<li>
+<p><code>brando:hasPolicy</code> / <code>brando:hasAutomationRule</code><br />
+  – attach governance and automation to brands and contexts</p>
+</li>
+<li>
+<p><code>brando:hasProductCategory</code><br />
+  – <code>brando:Brand → brando:BrandedCategory</code> nodes with GS1/UNSPSC/Google mappings</p>
+</li>
+</ul>
+<p>See <strong><a href="types/">Types reference</a></strong> and <strong><a href="properties/">Properties reference</a></strong> for normative definitions (domains, ranges, comments).</p>
+<hr />
+<h2 id="canonical-form-and-implementation-profiles">Canonical form and implementation profiles</h2>
+<p>Brando is <strong>JSON-LD–first</strong>:</p>
+<ul>
+<li>the JSON-LD vocabulary defines all <strong>classes</strong>, <strong>properties</strong>, and <strong>metadata</strong> (publisher, license, version info);</li>
+<li>implementations are encouraged to <strong>publish JSON-LD</strong> on the public web where possible.</li>
+</ul>
+<p>Two implementation profiles are documented:</p>
+<ol>
+<li><strong>JSON-LD profile</strong></li>
+</ol>
+<p>For:</p>
+<ul>
+<li>public publication on brand domains,</li>
+<li>ingest into knowledge-graph platforms,</li>
+<li>direct consumption by AI runtimes.</li>
+</ul>
+<p>See:</p>
+<ul>
+<li><strong><a href="spec/jsonld-context/">JSON-LD context</a></strong>  </li>
+<li>
+<p><strong><a href="getting-started-jsonld/">Quickstart (JSON-LD)</a></strong></p>
+</li>
+<li>
+<p><strong>YAML profile</strong></p>
+</li>
+</ul>
+<p>Same semantics, represented as YAML, suitable for:</p>
+<ul>
+<li>configuration repositories,</li>
+<li>CI/CD pipelines,</li>
+<li>infrastructure-as-brand setups.</li>
+</ul>
+<p>See:</p>
+<ul>
+<li><strong><a href="spec/yaml-profile/">YAML profile</a></strong>  </li>
+<li><strong><a href="getting-started-yaml/">Quickstart (YAML)</a></strong></li>
+</ul>
+<p>A <strong>TypeScript model</strong> is provided as a <strong>non-normative</strong> convenience layer for strongly-typed implementations<br />
+(see <strong><a href="spec/typescript-model/">TypeScript types</a></strong>).</p>
+<hr />
+<h2 id="example-minimal-brand-context-in-json-ld">Example: minimal brand + context in JSON-LD</h2>
+<p>The example below shows a small Brando graph using canonical JSON-LD:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;brando&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://brandoschema.com/&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Brand&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar Bank&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:missionStatement&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Financial clarity with absolute trust.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:coreValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Clarity over complexity&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Do the right thing&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Long-term alignment with customers&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:hasContext&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/context/retail-chatbot&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Context&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;brando:audienceSegment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Retail banking customers&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;brando:domainContext&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{\&quot;channel\&quot;:\&quot;chatbot\&quot;,\&quot;jurisdiction\&quot;:\&quot;UK\&quot;,\&quot;productLine\&quot;:\&quot;current-accounts\&quot;}&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:usesVerbalToken&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;calm, empathetic, and precise&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;brando:approvedTerms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;interest rate&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;fees&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;savings goals&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;brando:prohibitedTerms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;guaranteed returns&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;get rich quick&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:hasPolicy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/policies/regulated-claims&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Policy&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;brando:enforcementLevel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;brando:riskTag&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;financial-regulation&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;consumer-protection&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;brando:refusalStrategies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;Decline to provide personalised investment advice.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="s2">&quot;Redirect to a human advisor for complex suitability questions.&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The same structure can be authored as YAML using the <strong>Brando YAML profile</strong>, then emitted as JSON-LD at build or deployment time.</p>
+<hr />
+<h2 id="brando-in-a-brand-operating-system">Brando in a Brand Operating System</h2>
+<p>Brando is designed to act as the <strong>data and ontology layer</strong> for a Brand Operating System:</p>
+<p><strong>Identity &amp; architecture</strong></p>
+<p>Model house-of-brands, branded houses, and hybrids with multiple <code>brando:Brand</code> nodes and properties such as:</p>
+<ul>
+<li><code>brando:brandArchitectureRole</code></li>
+<li><code>brando:inheritsPolicies</code></li>
+<li><code>brando:inheritsTokens</code></li>
+</ul>
+<p><strong>Context-aware behaviour</strong></p>
+<p>Use <code>brando:Context</code> to represent channels, audiences, regulatory regimes, and operational conditions that change how the brand behaves.</p>
+<p><strong>Multimodal expression tokens</strong></p>
+<p>Attach <code>brando:VerbalToken</code>, <code>brando:VisualToken</code>, and <code>brando:AudioToken</code> to brands and contexts using:</p>
+<ul>
+<li><code>brando:usesVerbalToken</code></li>
+<li><code>brando:usesVisualToken</code></li>
+<li><code>brando:usesAudioToken</code></li>
+</ul>
+<p><strong>Governance and lifecycle</strong></p>
+<p>Encode rules and risk in <code>brando:Policy</code> and <code>brando:AutomationRule</code> with:</p>
+<ul>
+<li><code>brando:enforcementLevel</code> (e.g. <code>"mandatory"</code>, <code>"advisory"</code>, <code>"conditional"</code>),</li>
+<li><code>brando:riskTag</code>,</li>
+<li><code>brando:reviewWorkflow</code>,</li>
+<li>plus temporal metadata (<code>dcterms:created</code>, <code>dcterms:modified</code>, optionally <code>schema:validFrom</code> / <code>schema:validThrough</code> in instance data).</li>
+</ul>
+<p><strong>Runtime automation and integrations</strong></p>
+<p>Use:</p>
+<ul>
+<li><code>brando:AutomationRule</code>, <code>brando:triggerType</code>, <code>brando:automationAction</code>, <code>brando:schedulingRule</code> for automated checks and behaviours;</li>
+<li><code>brando:externalSystem</code> and <code>brando:externalSystemId</code> to connect Brando nodes to platforms such as Adobe GenStudio, Meta Ads Manager, Figma, or internal CMSs;</li>
+<li><code>brando:downloadableFile</code> and <code>brando:supportingFile</code> to point AI systems at the right assets in a DAM or Brand OS.</li>
+</ul>
+<p>For architecture and runtime patterns, see:</p>
+<ul>
+<li><strong><a href="architecture/brand-os/">Brand Operating System</a></strong></li>
+<li><strong><a href="architecture/runtime-integration/">Runtime Integration (LLMs, MCP, APIs)</a></strong></li>
+<li><strong><a href="examples/chatbot-runtime/">Chatbot + Brando runtime flow</a></strong></li>
+</ul>
+<hr />
+<h2 id="classification-alignment">Classification alignment</h2>
+<p><code>brando:BrandedCategory</code> nodes provide a bridge between a brand’s own taxonomy and external standards.</p>
+<p>Relevant properties include:</p>
+<ul>
+<li>
+<p><code>brando:gpcCategoryCode</code> / <code>brando:gpcCategoryDescription</code>
+  – GS1 Global Product Classification (GPC),</p>
+</li>
+<li>
+<p><code>brando:unspscCode</code>
+  – UNSPSC category identifiers,</p>
+</li>
+<li>
+<p><code>brando:googleProductCategoryId</code>
+  – Google Product Taxonomy identifiers.</p>
+</li>
+</ul>
+<p>This lets you:</p>
+<ul>
+<li>keep <strong>brand-facing labels</strong> and semantics in your own language,</li>
+<li>while exposing machine-readable hooks to <strong>GS1 / UNSPSC / Google</strong> for commerce, ads, and marketplaces.</li>
+</ul>
+<p>See also <strong><a href="architecture/brand-architecture/">Brand portfolios &amp; architecture</a></strong> for portfolio- and category-level modelling patterns.</p>
+<hr />
+<h2 id="versioning-and-licensing">Versioning and licensing</h2>
+<p>From the vocabulary header (<code>owl:Ontology</code>):</p>
+<ul>
+<li><strong>Title:</strong> <code>Brando Schema Vocabulary v1.3</code></li>
+<li><strong>Namespace (prefix):</strong> <code>brando: → https://brandoschema.com/</code></li>
+<li><strong>Ontology version info:</strong> <code>owl:versionInfo = "1.4"</code></li>
+<li><strong>Created:</strong> <code>dcterms:created = "2025-11-22"</code></li>
+<li><strong>Modified:</strong> <code>dcterms:modified = "2025-11-22"</code></li>
+<li><strong>Publisher:</strong> <code>Advanced Analytica</code></li>
+<li><strong>License:</strong> <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> via <code>cc:license</code></li>
+</ul>
+<p>Implementations should treat:</p>
+<ul>
+<li>the <strong>JSON-LD vocabulary file</strong> and</li>
+<li>this <strong>documentation set</strong></li>
+</ul>
+<p>as the <strong>normative reference</strong> for Brando Schema Vocabulary v1.3.</p>
+<p>Any “future ideas” or experimental patterns mentioned in the docs are explicitly labelled as:</p>
+<ul>
+<li><strong>non-normative guidance</strong>, or</li>
+<li><strong>potential future extensions</strong>, or</li>
+<li><strong>profile-level recommendations</strong>,</li>
+</ul>
+<p>and are <strong>not</strong> part of the core v1.3 vocabulary.</p>
+<hr />
+<h2 id="stewardship-and-support">Stewardship and support</h2>
+<p>Brando is initially stewarded by <strong>Advanced Analytica</strong>.</p>
+<p>The intent is to:</p>
+<ul>
+<li>keep the <strong>core vocabulary stable and minimal</strong>,</li>
+<li>allow organisations and platforms to define <strong>extensions</strong> for their own needs,</li>
+<li>and evolve the spec in collaboration with brands, agencies, and technology providers.</li>
+</ul>
+<p>For information about stewardship, trademark usage, and terms, see:</p>
+<ul>
+<li><strong><a href="about/">Advanced Analytica</a></strong></li>
+<li><strong><a href="use-brando-trademark/">Brando Trademark</a></strong></li>
+<li><strong><a href="terms-of-service/">Terms of Service</a></strong></li>
+</ul>
+<hr />
+<h2 id="next-steps">Next steps</h2>
+<p>If you are evaluating or implementing Brando:</p>
+<ol>
+<li>
+<p><strong>Read the overview</strong>
+   → <a href="getting-started/">Getting started</a></p>
+</li>
+<li>
+<p><strong>Clone a minimal example</strong>
+   → <a href="examples/minimal-brand/">Minimal brand graph</a></p>
+</li>
+<li>
+<p><strong>Choose your primary representation</strong>
+   → <a href="getting-started-jsonld/">Quickstart (JSON-LD)</a> or <a href="getting-started-yaml/">Quickstart (YAML)</a></p>
+</li>
+<li>
+<p><strong>Model your first brand and context</strong></p>
+<ul>
+<li><code>brando:Brand</code></li>
+<li><code>brando:Context</code></li>
+<li><code>brando:VerbalToken</code></li>
+<li><code>brando:Policy</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Plan your Brand OS integration</strong>
+   → <a href="architecture/brand-os/">Brand Operating System</a> and <a href="architecture/runtime-integration/">Runtime Integration</a></p>
+</li>
+</ol>
+<p>From there, extend into portfolios, campaigns, automation rules, and classification alignment – all grounded in the same Brando vocabulary and managed as a <strong>living, AI-assisted Brand Knowledge Graph</strong>.</p>
+<hr />
+<h3 id="ai-support-services">AI Support Services</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+
+  <div style="flex: 1 1 calc(50% - 1rem); border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h3>Discovery & Alignment</h3>
+    <p>Understand your brand’s ambitions, stakeholders, and digital maturity. Align objectives and define how the Brand Ontology Schema and AI can create value for your organisation.</p>
+    <div class="card-buttons">
+      <a href="#" class="button secondary small" data-modal-target="#discoveryModal">Read More</a>
+      <a href="#" class="button primary small" data-modal-target="#talk">Talk to Us</a>
+    </div>
+  </div>
+
+  <div style="flex: 1 1 calc(50% - 1rem); border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h3>Brand Audit & Mapping</h3>
+    <p>Catalogue all brand assets and meanings. Map verbal, visual, audio, and strategic elements for readiness and completeness in digital and AI environments.</p>
+    <div class="card-buttons">
+      <a href="#" class="button secondary small" data-modal-target="#auditModal">Read More</a>
+      <a href="#" class="button primary small" data-modal-target="#talk">Talk to Us</a>
+    </div>
+  </div>
+
+  <div style="flex: 1 1 calc(50% - 1rem); border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h3>Schema Design & Knowledge Graph Planning</h3>
+    <p>Structure your brand’s meaning with the Brand Ontology Schema. Design a knowledge graph that connects all brand elements—ready for machine understanding and Brand OS integration.</p>
+    <div class="card-buttons">
+      <a href="#" class="button secondary small" data-modal-target="#schemaModal">Read More</a>
+      <a href="#" class="button primary small" data-modal-target="#talk">Talk to Us</a>
+    </div>
+  </div>
+
+  <div style="flex: 1 1 calc(50% - 1rem); border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h3>Data Modelling & Implementation</h3>
+    <p>Build, validate, and deploy machine-readable, AI-optimised brand datasets using the Brand Ontology Schema. Stand up your central brand knowledge graph and connect it to your platforms.</p>
+    <div class="card-buttons">
+      <a href="#" class="button secondary small" data-modal-target="#modellingModal">Read More</a>
+      <a href="#" class="button primary small" data-modal-target="#talk">Talk to Us</a>
+    </div>
+  </div>
+
+  <div style="flex: 1 1 calc(50% - 1rem); border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h3>Rollout & Enablement</h3>
+    <p>Integrate your structured brand data across websites, digital assistants, and AI channels. Train teams and set up governance for sustainable Brand OS management.</p>
+    <div class="card-buttons">
+      <a href="#" class="button secondary small" data-modal-target="#rolloutModal">Read More</a>
+      <a href="#" class="button primary small" data-modal-target="#talk">Talk to Us</a>
+    </div>
+  </div>
+
+  <div style="flex: 1 1 calc(50% - 1rem); border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h3>Continuous Improvement</h3>
+    <p>Monitor, benchmark, and refine your brand ontology and knowledge graph as markets, strategies, and AI capabilities evolve.</p>
+    <div class="card-buttons">
+      <a href="#" class="button secondary small" data-modal-target="#improvementModal">Read More</a>
+      <a href="#" class="button primary small" data-modal-target="#talk">Talk to Us</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Discovery & Alignment Modal -->
+<div class="modal" id="discoveryModal" tabindex="-1" style="position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); z-index:1000;">
+  <div style="background:#fff; margin:5% auto; padding:2rem; max-width:600px; border-radius:8px; position:relative;">
+    <button class="btn-close" style="position:absolute; top:1rem; right:1rem; border:none; background:none; font-size:1.5rem;">&times;</button>
+    <h2>Discovery & Alignment</h2>
+    <p>
+      Align your brand, business, and AI strategy from day one. Our Discovery & Alignment service helps you bring the right people together, clarify your goals, and assess your readiness for AI- and Brand OS–driven change.
+    </p>
+    <ul>
+      <li>Unite stakeholders & set shared priorities</li>
+      <li>Assess current data & AI maturity</li>
+      <li>Clarify business and brand objectives</li>
+      <li>Spot key opportunities and risks</li>
+      <li>Map a practical roadmap for Brand Ontology Schema adoption</li>
+    </ul>
+    <p>
+      Move quickly from aspiration to action with our facilitated discovery workshops.
+    </p>
+  </div>
+</div>
+
+<!-- Brand Audit & Mapping Modal -->
+<div class="modal" id="auditModal" tabindex="-1" style="position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); z-index:1000;">
+  <div style="background:#fff; margin:5% auto; padding:2rem; max-width:600px; border-radius:8px; position:relative;">
+    <button class="btn-close" style="position:absolute; top:1rem; right:1rem; border:none; background:none; font-size:1.5rem;">&times;</button>
+    <h2>Brand Audit & Mapping</h2>
+    <p>
+      Our Brand Audit & Mapping service catalogues all aspects of your brand, from assets to strategy, providing a clear picture of your current position and readiness for AI transformation.
+    </p>
+    <ul>
+      <li>Comprehensive inventory of visual, verbal, and audio brand assets</li>
+      <li>Mapping key brand elements into the Brand Ontology Schema</li>
+      <li>Assessing consistency and compliance across platforms and touchpoints</li>
+      <li>Identifying gaps, risks, and untapped opportunities in your brand architecture</li>
+      <li>Creating a strategic brand asset map to guide your Brand OS roadmap</li>
+    </ul>
+    <p>
+      This mapping lays the groundwork for an actionable, future-proof brand strategy.
+    </p>
+  </div>
+</div>
+
+<!-- Schema Design & Knowledge Graph Planning Modal -->
+<div class="modal" id="schemaModal" tabindex="-1" style="position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); z-index:1000;">
+  <div style="background:#fff; margin:5% auto; padding:2rem; max-width:600px; border-radius:8px; position:relative;">
+    <button class="btn-close" style="position:absolute; top:1rem; right:1rem; border:none; background:none; font-size:1.5rem;">&times;</button>
+    <h2>Schema Design & Knowledge Graph Planning</h2>
+    <p>
+      Structuring your brand’s meaning for AI and digital environments begins here. We work with you to design the Brand Ontology Schema profile and plan a knowledge graph that connects and organises all key brand elements.
+    </p>
+    <ul>
+      <li>Development of a semantic schema tailored to your brand’s structure and goals</li>
+      <li>Design of a knowledge graph that models relationships across assets, messaging, and strategy</li>
+      <li>Alignment with industry standards (e.g., Schema.org, Brand Ontology Schema)</li>
+      <li>Definition of canonical entities, attributes, and connections</li>
+      <li>Clear documentation and governance recommendations for future-proofing</li>
+    </ul>
+    <p>
+      The result is a foundation for machine understanding and scalable Brand OS management.
+    </p>
+  </div>
+</div>
+
+<!-- Data Modelling & Implementation Modal -->
+<div class="modal" id="modellingModal" tabindex="-1" style="position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); z-index:1000;">
+  <div style="background:#fff; margin:5% auto; padding:2rem; max-width:600px; border-radius:8px; position:relative;">
+    <button class="btn-close" style="position:absolute; top:1rem; right:1rem; border:none; background:none; font-size:1.5rem;">&times;</button>
+    <h2>Data Modelling & Implementation</h2>
+    <p>
+      We build and deploy your brand’s knowledge graph and semantic models, ensuring seamless integration with digital platforms and AI systems.
+    </p>
+    <ul>
+      <li>Transforming brand assets and data into Brand Ontology Schema–compliant formats</li>
+      <li>Implementing your custom schema and knowledge graph</li>
+      <li>Integrating with CMS, websites, and digital channels</li>
+      <li>Quality assurance and validation for data completeness and correctness</li>
+      <li>Guidance and documentation for ongoing maintenance</li>
+    </ul>
+    <p>
+      This stage enables AI-driven discovery, governance, and the full benefits of structured brand data.
+    </p>
+  </div>
+</div>
+
+<!-- Rollout & Enablement Modal -->
+<div class="modal" id="rolloutModal" tabindex="-1" style="position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); z-index:1000;">
+  <div style="background:#fff; margin:5% auto; padding:2rem; max-width:600px; border-radius:8px; position:relative;">
+    <button class="btn-close" style="position:absolute; top:1rem; right:1rem; border:none; background:none; font-size:1.5rem;">&times;</button>
+    <h2>Rollout & Enablement</h2>
+    <p>
+      We support you in deploying your structured brand data across all platforms, channels, and touchpoints, while building your team’s capability to sustain and grow your Brand Operating System.
+    </p>
+    <ul>
+      <li>Activation of brand data across web, search, assistants, and AI channels</li>
+      <li>Training and enablement for marketing, content, and IT teams</li>
+      <li>Implementation of governance frameworks for brand data stewardship</li>
+      <li>Support for integrating structured data into workflows and campaigns</li>
+      <li>Ongoing troubleshooting and optimisation post-launch</li>
+    </ul>
+    <p>
+      This phase ensures your investment in structured brand data delivers long-term value and adaptability.
+    </p>
+  </div>
+</div>
+
+<!-- Continuous Improvement Modal -->
+<div class="modal" id="improvementModal" tabindex="-1" style="position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); z-index:1000;">
+  <div style="background:#fff; margin:5% auto; padding:2rem; max-width:600px; border-radius:8px; position:relative;">
+    <button class="btn-close" style="position:absolute; top:1rem; right:1rem; border:none; background:none; font-size:1.5rem;">&times;</button>
+    <h2>Continuous Improvement</h2>
+    <p>
+      With your Brand Ontology Schema and knowledge graph live, we help you monitor, refine, and evolve them to stay ahead of changing technologies, channels, and customer expectations.
+    </p>
+    <ul>
+      <li>Ongoing benchmarking and analysis of your brand’s digital and AI visibility</li>
+      <li>Regular audits for schema accuracy, compliance, and completeness</li>
+      <li>Recommendations for optimisation as AI, search, and digital standards evolve</li>
+      <li>Support for updating and expanding your brand’s knowledge graph</li>
+      <li>Strategic guidance on emerging technologies and market opportunities</li>
+    </ul>
+    <p>
+      Continuous improvement ensures your brand remains discoverable, trusted, and ahead of the curve in an AI-first world.
+    </p>
+  </div>
+</div>
+
+<!-- Talk to Us Modal -->
+<div class="modal fade bg-white" id="talk" tabindex="-1" role="dialog" aria-hidden="true" style="position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.3); z-index:1000;">
+  <div class="modal-dialog" style="max-width: 80vw; position: relative;">
+    <div class="modal-content bg-white text-dark"
+      style="border: none; box-shadow: none; border-radius: 0; position: relative;">
+      <button class="btn-close" style="position:absolute; top:1rem; right:1rem; border:none; background:none; font-size:1.5rem;">&times;</button>
+      <div class="modal-header">
+        <h2>Talk to Us</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Typeform Embed -->
+        <div data-tf-live="01JF4TXRZV12FSXM9XW8J9A9VF"></div>
+        <script src="https://embed.typeform.com/next/embed.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer>
+  <div class="custom-footer">
+    <strong>© 2025 Advanced Analytica Ltd </strong> &middot; All rights reserved. Unauthorised use is strictly prohibited. <strong>Brando<sup>®</sup></strong> is a registered trademark of Advanced Analytica.
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "header.autohide", "content.headings.anchor", "navigation.expand", "content.code.wrap"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="js/smooth-scroll.js"></script>
+      
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+      
+        <script src="js/linked_map.js"></script>
+      
+        <script src="data/brando-schema.json"></script>
+      
+        <script src="js/modal.js"></script>
+      
+    
+  </body>
+</html>

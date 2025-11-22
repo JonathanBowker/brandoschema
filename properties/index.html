@@ -1,0 +1,4647 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Overview of the core properties in the Brand Oracle (Brando) schema vocabulary v1.3, grouped by function and linked to the main class patterns.">
+      
+      
+        <meta name="author" content="Jonathan Bowker">
+      
+      
+        <link rel="canonical" href="https://brandoschema.com/properties/">
+      
+      
+        <link rel="prev" href="../types/automation-rule/">
+      
+      
+        <link rel="next" href="appliesTo/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+  <title>
+    
+      Brando Properties Overview
+    
+  </title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+      <link rel="stylesheet" href="../css/styles.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-3N8RPPP7CD"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-3N8RPPP7CD",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-3N8RPPP7CD",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  
+
+  <!-- Google Tag Manager -->
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+  j.src='https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXXX';
+  f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  
+    <meta name="description" content="Overview of the core properties in the Brand Oracle (Brando) schema vocabulary v1.3, grouped by function and linked to the main class patterns.">
+    <meta name="author" content="Jonathan Bowker">
+    <meta name="keywords" content="">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Brando Properties Overview">
+    <meta property="og:description" content="Overview of the core properties in the Brand Oracle (Brando) schema vocabulary v1.3, grouped by function and linked to the main class patterns.">
+    <meta property="og:url" content="https://brandoschema.com/properties/">
+    <meta property="og:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brando Properties Overview">
+    <meta name="twitter:description" content="Overview of the core properties in the Brand Oracle (Brando) schema vocabulary v1.3, grouped by function and linked to the main class patterns.">
+    <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#brando-properties-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Brando Schema – Brando" class="md-header__button md-logo" aria-label="Brando Schema – Brando" data-md-component="logo">
+      
+  <img src="../assets/images/4x/masthead_logo@4x.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Brando Schema – Brando
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Brando Properties Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/JonathanBowker/brandoschema" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Brando Schema – Brando" class="md-nav__button md-logo" aria-label="Brando Schema – Brando" data-md-component="logo">
+      
+  <img src="../assets/images/4x/masthead_logo@4x.png" alt="logo">
+
+    </a>
+    Brando Schema – Brando
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/JonathanBowker/brandoschema" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started-jsonld/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quickstart (JSON-LD)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started-yaml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quickstart (YAML)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Schema
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Schema
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Types
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Types
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Types Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/brand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Brand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Context
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/brand-expression-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:BrandExpressionToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/verbal-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:VerbalToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/visual-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:VisualToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/audio-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:AudioToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/branded-category/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:BrandedCategory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/campaign/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Campaign
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/automation-rule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:AutomationRule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Properties
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Properties
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Properties Index
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Properties Index
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-how-to-read-brando-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. How to read Brando properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-high-level-property-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. High-level property groups
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-identity-narrative-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Identity &amp; narrative properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-audience-context-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Audience &amp; context properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-verbal-expression-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Verbal expression properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-visual-expression-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Visual expression properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-audio-expression-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Audio expression properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-governance-risk-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Governance &amp; risk properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-automation-metrics-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Automation &amp; metrics properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-classification-product-alignment-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Classification &amp; product alignment properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-files-integration-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Files &amp; integration properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-lifecycle-campaign-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Lifecycle &amp; campaign properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-putting-properties-together-at-runtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Putting properties together at runtime
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-where-to-go-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Where to go next
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="appliesTo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:appliesTo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="appliesToGTIN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:appliesToGTIN
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="appliesToProduct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:appliesToProduct
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="approvedTerms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:approvedTerms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="assetPreview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:assetPreview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="assetURL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:assetURL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="audiencePersona/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:audiencePersona
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="audienceSegment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:audienceSegment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="audioCue/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:audioCue
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="audioLogo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:audioLogo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="audioReferenceLink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:audioReferenceLink
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="audioUsageGuidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:audioUsageGuidelines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="automationAction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:automationAction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brandArchitectureRole/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:brandArchitectureRole
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brandName/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:brandName
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brandNarrative/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:brandNarrative
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="brandPromise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:brandPromise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="campaignName/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:campaignName
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="campaignTheme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:campaignTheme
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="categoryApprovedTerms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:categoryApprovedTerms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="categoryClass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:categoryClass
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="categoryDepartment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:categoryDepartment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="categoryItemType/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:categoryItemType
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="categoryProhibitedTerms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:categoryProhibitedTerms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="colourPalette/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:colourPalette
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="competitorContext/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:competitorContext
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="complianceTags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:complianceTags
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="coreValues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:coreValues
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dataSource/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:dataSource
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dialogueStyle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:dialogueStyle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="domainContext/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:domainContext
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="downloadableFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:downloadableFile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="effectiveDuring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:effectiveDuring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="embeddingQuality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:embeddingQuality
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enforcementLevel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:enforcementLevel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="externalSystem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:externalSystem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="externalSystemId/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:externalSystemId
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="googleProductCategoryId/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:googleProductCategoryId
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="governanceModel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:governanceModel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gpcCategoryCode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:gpcCategoryCode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gpcCategoryDescription/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:gpcCategoryDescription
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guardRails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:guardRails
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hasAutomationRule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:hasAutomationRule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hasCampaign/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:hasCampaign
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hasContext/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:hasContext
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hasPolicy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:hasPolicy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="hasProductCategory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:hasProductCategory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="imageryStyles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:imageryStyles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="inheritsPolicies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:inheritsPolicies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="inheritsTokens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:inheritsTokens
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="keyMessages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:keyMessages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="logo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:logo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="marketPosition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:marketPosition
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="missionStatement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:missionStatement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="monitoredMetric/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:monitoredMetric
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="motionRules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:motionRules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mustDos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:mustDos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mustNotDos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:mustNotDos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="namingConvention/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:namingConvention
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="personaCard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:personaCard
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="priority/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:priority
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="productCategoryName/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:productCategoryName
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="prohibitedTerms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:prohibitedTerms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="promptScaffold/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:promptScaffold
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="pronunciationGuide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:pronunciationGuide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="refusalStrategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:refusalStrategies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="retrievableInLLM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:retrievableInLLM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="reviewWorkflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:reviewWorkflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="riskScenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:riskScenarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="riskTag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:riskTag
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="schedulingRule.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:schedulingRule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="speechStyle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:speechStyle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="supportingFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:supportingFile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tagline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:tagline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="temporaryOverrides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:temporaryOverrides
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="toneOfVoice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:toneOfVoice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="triggerType/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:triggerType
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="typography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:typography
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="unspscCode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:unspscCode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="updatePolicy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:updatePolicy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="usesAudioToken/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:usesAudioToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="usesVerbalToken/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:usesVerbalToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="usesVisualToken/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:usesVisualToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="visibilityRating/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:visibilityRating
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="visionStatement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:visionStatement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="visualReferenceLink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:visualReferenceLink
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="visualToken/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:visualToken
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="visualUsageGuidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:visualUsageGuidelines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="voiceSignature/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:voiceSignature
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="writingStyle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:writingStyle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/brand-os/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brand Operating System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/runtime-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Runtime Integration (LLMs, MCP, APIs)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/brand-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brand portfolios & architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Specification
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Specification
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spec/jsonld-context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JSON-LD context
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spec/yaml-profile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    YAML schema profile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spec/typescript-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeScript types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/minimal-brand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Minimal brand graph
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/house-of-brands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    House of brands example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/chatbot-runtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chatbot + Brando runtime flow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Brando
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optimisation-workshop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI Optimisation Workshop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Analytica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../partner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Partner Ecosystem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-brando-trademark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brando Trademark
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terms-of-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Terms of Service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-how-to-read-brando-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. How to read Brando properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-high-level-property-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. High-level property groups
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-identity-narrative-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Identity &amp; narrative properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-audience-context-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Audience &amp; context properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-verbal-expression-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Verbal expression properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-visual-expression-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Visual expression properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-audio-expression-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Audio expression properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-governance-risk-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Governance &amp; risk properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-automation-metrics-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Automation &amp; metrics properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-classification-product-alignment-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Classification &amp; product alignment properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-files-integration-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Files &amp; integration properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-lifecycle-campaign-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Lifecycle &amp; campaign properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-putting-properties-together-at-runtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Putting properties together at runtime
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-where-to-go-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Where to go next
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="brando-properties-overview">Brando properties overview</h1>
+<p>The Brando Schema Vocabulary defines <strong>properties</strong> (predicates) that attach meaning to:</p>
+<ul>
+<li><code>brando:Brand</code></li>
+<li><code>brando:Context</code></li>
+<li><code>brando:BrandExpressionToken</code> and its subclasses (<code>VerbalToken</code>, <code>VisualToken</code>, <code>AudioToken</code>)</li>
+<li><code>brando:Policy</code></li>
+<li><code>brando:BrandedCategory</code></li>
+<li><code>brando:Campaign</code></li>
+<li><code>brando:AutomationRule</code></li>
+</ul>
+<p>This page:</p>
+<ul>
+<li>groups Brando properties by <strong>function</strong>,</li>
+<li>explains how <strong>domain</strong> and <strong>range</strong> work,</li>
+<li>and shows how properties combine to form a <strong>Brand Knowledge Graph</strong>.</li>
+</ul>
+<p>For per-property details (domain, range, examples), use the property pages under <strong>Schema → Properties</strong> in the navigation.</p>
+<hr />
+<h2 id="1-how-to-read-brando-properties">1. How to read Brando properties</h2>
+<p>Every property in the vocabulary is defined as:</p>
+<ul>
+<li>an <strong>IRI</strong> (e.g. <code>brando:toneOfVoice</code>),</li>
+<li>a <strong>type</strong>:<ul>
+<li><code>owl:DatatypeProperty</code> (links a node to a literal value like text or numbers), or</li>
+<li><code>owl:ObjectProperty</code> (links a node to another node),</li>
+</ul>
+</li>
+<li>a <strong>domain</strong> (which classes it applies to),</li>
+<li>a <strong>range</strong> (what kind of value it points to),</li>
+<li>an <strong><code>rdfs:comment</code></strong> (normative description in English).</li>
+</ul>
+<p>Example (verbal identity):</p>
+<ul>
+<li><code>brando:toneOfVoice</code><ul>
+<li>Type: <code>owl:DatatypeProperty</code></li>
+<li>Domain: <code>brando:VerbalToken</code></li>
+<li>Range: <code>xsd:string</code></li>
+<li>Comment: “Emotional texture and attitude of the brand's voice in this token.”</li>
+</ul>
+</li>
+</ul>
+<p>In JSON-LD:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Calm, empathetic, precise. Explain trade-offs clearly.&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="2-high-level-property-groups">2. High-level property groups</h2>
+<p>For implementation and modelling, it is useful to think of Brando properties in functional groups:</p>
+<ol>
+<li><strong>Identity &amp; narrative</strong> – who the brand is.</li>
+<li><strong>Audience &amp; context</strong> – who it is speaking to, and where.</li>
+<li><strong>Verbal expression</strong> – how it speaks.</li>
+<li><strong>Visual expression</strong> – how it looks.</li>
+<li><strong>Audio expression</strong> – how it sounds.</li>
+<li><strong>Governance &amp; risk</strong> – policies and guard rails.</li>
+<li><strong>Automation &amp; metrics</strong> – rules that react to signals.</li>
+<li><strong>Classification &amp; product alignment</strong> – GS1/UNSPSC/Google taxonomy.</li>
+<li><strong>Files &amp; integration</strong> – DAM, Brand OS, and external tools.</li>
+<li><strong>Lifecycle &amp; process</strong> – enforcement level, review workflows.</li>
+</ol>
+<p>The sections below summarise each group and highlight key properties.</p>
+<hr />
+<h2 id="3-identity-narrative-properties">3. Identity &amp; narrative properties</h2>
+<p><strong>Primary domain:</strong> <code>brando:Brand</code>
+<strong>Purpose:</strong> capture brand strategy and positioning in machine-readable form.</p>
+<p>Representative properties:</p>
+<ul>
+<li>
+<p><code>brando:missionStatement</code>
+  Core purpose and day-to-day reason for existing.</p>
+</li>
+<li>
+<p><code>brando:visionStatement</code>
+  Aspirational future state the brand is working toward.</p>
+</li>
+<li>
+<p><code>brando:coreValues</code>
+  Foundational principles and beliefs that guide decisions.</p>
+</li>
+<li>
+<p><code>brando:brandPromise</code>
+  Core commitment or experience the brand guarantees to deliver.</p>
+</li>
+<li>
+<p><code>brando:brandNarrative</code>
+  Longer-form story describing origin, evolution, and purpose.</p>
+</li>
+<li>
+<p><code>brando:marketPosition</code>
+  How the brand positions itself relative to alternatives.</p>
+</li>
+<li>
+<p><code>brando:competitorContext</code>
+  Summary of competitors, adjacent solutions, and differentiation.</p>
+</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Brand&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar Bank&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:missionStatement&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Financial clarity with absolute trust.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:visionStatement&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Help people feel in control of their financial future.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:coreValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Clarity over complexity&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Do the right thing&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Long-term alignment with customers&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:brandPromise&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;We will always explain the trade-offs clearly before you decide.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:marketPosition&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Digital-first bank for risk-aware customers.&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="4-audience-context-properties">4. Audience &amp; context properties</h2>
+<p><strong>Primary domain:</strong> <code>brando:Context</code> (some also used on <code>brando:Policy</code>, <code>brando:AutomationRule</code>)
+<strong>Purpose:</strong> describe <strong>who</strong>, <strong>where</strong>, and <strong>under what conditions</strong> the brand is active.</p>
+<p>Key properties:</p>
+<ul>
+<li>
+<p><code>brando:audienceSegment</code>
+  Strategic grouping of individuals who share relevant needs or characteristics.</p>
+</li>
+<li>
+<p><code>brando:audiencePersona</code>
+  Persona-style archetypes (“Everyday saver”, “Enterprise buyer”).</p>
+</li>
+<li>
+<p><code>brando:domainContext</code>
+  Structured JSON-as-string describing channel, surface, region, etc.</p>
+</li>
+<li>
+<p><code>brando:appliesTo</code>
+  Optional scope for which products, personas, channels this node applies to.</p>
+</li>
+<li>
+<p><code>brando:effectiveDuring</code>
+  Time window or schedule as JSON-as-string.</p>
+</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/context/retail-chatbot&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Context&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:audienceSegment&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Retail banking customers&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Prospects researching savings accounts&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:audiencePersona&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Everyday saver&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:domainContext&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;channel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;chatbot&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;surface&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;public-website&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;region&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;UK&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:effectiveDuring&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;validFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-01-01&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;validThrough&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:appliesTo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Savings accounts; current accounts&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="5-verbal-expression-properties">5. Verbal expression properties</h2>
+<p><strong>Primary domain:</strong> <code>brando:VerbalToken</code>
+<strong>Purpose:</strong> define <strong>how the brand speaks</strong> (tone, style, vocabulary).</p>
+<p>Core properties:</p>
+<ul>
+<li>
+<p><code>brando:toneOfVoice</code>
+  Emotional texture and attitude of the voice.</p>
+</li>
+<li>
+<p><code>brando:dialogueStyle</code>
+  Conversational patterns, person/pronoun usage, pacing.</p>
+</li>
+<li>
+<p><code>brando:writingStyle</code>
+  Grammar, sentence structure, formality.</p>
+</li>
+<li>
+<p><code>brando:namingConvention</code>
+  How products, features, dates, etc. are named and formatted.</p>
+</li>
+<li>
+<p><code>brando:personaCard</code>
+  Humanised brand-as-person description.</p>
+</li>
+</ul>
+<p>Vocabulary and messaging:</p>
+<ul>
+<li>
+<p><code>brando:approvedTerms</code>
+  Words and phrases encouraged in this token.</p>
+</li>
+<li>
+<p><code>brando:prohibitedTerms</code>
+  Words and phrases that must not be used.</p>
+</li>
+<li>
+<p><code>brando:keyMessages</code>
+  Core value propositions and recurring ideas.</p>
+</li>
+<li>
+<p><code>brando:tagline</code>
+  Primary tagline plus variants.</p>
+</li>
+</ul>
+<p>Behavioural rules and scaffolds:</p>
+<ul>
+<li>
+<p><code>brando:promptScaffold</code>
+  Reusable instruction block or template for priming LLMs.</p>
+</li>
+<li>
+<p><code>brando:mustDos</code>
+  Required behaviours.</p>
+</li>
+<li>
+<p><code>brando:mustNotDos</code>
+  Banned behaviours or constructions.</p>
+</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reassuring and efficient. Focus on clear next steps.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:dialogueStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Use second person, acknowledge emotion, then move to options.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:writingStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Short paragraphs, concrete steps, minimal jargon.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:approvedTerms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;interest rate&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;fees&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;savings goals&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:prohibitedTerms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;get rich quick&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;guaranteed returns&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:keyMessages&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;We explain your options clearly before you decide.&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:promptScaffold&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;You are Northstar Bank&#39;s support assistant for UK retail customers...&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:mustDos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Confirm understanding of the user&#39;s question before answering.&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:mustNotDos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Do not speculate about regulatory outcomes.&quot;</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="6-visual-expression-properties">6. Visual expression properties</h2>
+<p><strong>Primary domain:</strong> <code>brando:VisualToken</code>
+<strong>Purpose:</strong> define <strong>how the brand looks</strong> (logos, colours, typography, imagery, motion).</p>
+<p>Key properties:</p>
+<ul>
+<li>
+<p><code>brando:brandName</code>
+  How the brand name should appear in visual treatments.</p>
+</li>
+<li>
+<p><code>brando:logo</code>
+  Canonical URL for the primary logo asset or set.</p>
+</li>
+<li>
+<p><code>brando:colourPalette</code>
+  Colour system, often encoded as JSON-as-string (roles and values).</p>
+</li>
+<li>
+<p><code>brando:typography</code>
+  Typography system, often JSON-as-string (families, weights, sizes).</p>
+</li>
+<li>
+<p><code>brando:visualToken</code>
+  Design tokens such as spacing, radius, elevation (JSON-as-string).</p>
+</li>
+<li>
+<p><code>brando:imageryStyles</code>
+  Photography/illustration style and composition guidance.</p>
+</li>
+<li>
+<p><code>brando:motionRules</code>
+  Principles for animation and transitions.</p>
+</li>
+<li>
+<p><code>brando:visualUsageGuidelines</code>
+  Do’s and don’ts for applying the visual system.</p>
+</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/visual/master&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VisualToken&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:brandName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:logo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/brand/logo.svg&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:colourPalette&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;primary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#4B3CFA&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;secondary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#11A39D&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;neutral-100&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;#FFFFFF&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:typography&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;heading&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Inter&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;body&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Inter&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;mono&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Roboto Mono&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:imageryStyles&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Natural light, real people, candid moments. Avoid generic stock imagery.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:visualUsageGuidelines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Do not distort or recolour the primary logo.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Use the primary colour only for key actions.&quot;</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="7-audio-expression-properties">7. Audio expression properties</h2>
+<p><strong>Primary domain:</strong> <code>brando:AudioToken</code>
+<strong>Purpose:</strong> define <strong>how the brand sounds</strong> (voice, sonic logo, audio cues).</p>
+<p>Key properties:</p>
+<ul>
+<li>
+<p><code>brando:audioLogo</code>
+  URI of sonic logo or audio mark.</p>
+</li>
+<li>
+<p><code>brando:voiceSignature</code>
+  Voice profile description (accent, timbre, energy).</p>
+</li>
+<li>
+<p><code>brando:pronunciationGuide</code>
+  Pronunciation notes for brand and key terms.</p>
+</li>
+<li>
+<p><code>brando:speechStyle</code>
+  Rhythm, pacing, pausing, expressiveness.</p>
+</li>
+<li>
+<p><code>brando:audioCue</code>
+  Short sound cues used as confirmations, alerts, or transitions.</p>
+</li>
+<li>
+<p><code>brando:audioUsageGuidelines</code>
+  Rules for when and how audio is used.</p>
+</li>
+<li>
+<p><code>brando:audioReferenceLink</code>
+  URL to audio libraries or sonic style guides.</p>
+</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/audio/master&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:AudioToken&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:audioLogo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/audio/northstar-sonic-logo.mp3&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:voiceSignature&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Warm, mid-range UK English voice with calm, reassuring delivery.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:speechStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Moderate pace, clear articulation, brief pauses before key amounts or dates.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:audioCue&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;success: soft ascending chime&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;error: short descending tone&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:audioUsageGuidelines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Do not autoplay audio with sound on.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Ensure all audio cues have visual equivalents for accessibility.&quot;</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="8-governance-risk-properties">8. Governance &amp; risk properties</h2>
+<p><strong>Primary domain:</strong> <code>brando:Policy</code>
+<strong>Also used on:</strong> some other nodes where governance is relevant.
+<strong>Purpose:</strong> encode guard rails, risk, and retrieval rules.</p>
+<p>Core policy properties:</p>
+<ul>
+<li>
+<p><code>brando:guardRails</code>
+  Non-negotiable boundaries AI systems must not cross.</p>
+</li>
+<li>
+<p><code>brando:mustDos</code> / <code>brando:mustNotDos</code>
+  Required and forbidden behaviours.</p>
+</li>
+<li>
+<p><code>brando:refusalStrategies</code>
+  Patterns for declining or redirecting unsafe/out-of-scope requests.</p>
+</li>
+<li>
+<p><code>brando:riskScenarios</code>
+  Known edge cases that require caution.</p>
+</li>
+<li>
+<p><code>brando:complianceTags</code>
+  Tags for regimes such as GDPR, HIPAA, FCA.</p>
+</li>
+<li>
+<p><code>brando:riskTag</code>
+  Lightweight risk domain tags (“brand-safety”, “financial-regulation”).</p>
+</li>
+<li>
+<p><code>brando:enforcementLevel</code>
+  Strength of the policy (“mandatory”, “advisory”, “conditional”, etc.).</p>
+</li>
+<li>
+<p><code>brando:visibilityRating</code>
+  Qualitative indicator of how visible this policy should be to AI systems.</p>
+</li>
+<li>
+<p><code>brando:retrievableInLLM</code>
+  Boolean flag indicating whether the policy may be indexed or retrieved in LLM/RAG flows.</p>
+</li>
+<li>
+<p><code>brando:embeddingQuality</code>
+  Assessment of how well the content performs in vector search.</p>
+</li>
+</ul>
+<p>Process / lifecycle:</p>
+<ul>
+<li>
+<p><code>brando:reviewWorkflow</code>
+  Description of human/automated review steps.</p>
+</li>
+<li>
+<p><code>brando:updatePolicy</code>
+  How often, and in what way, the policy is updated.</p>
+</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/policies/regulated-claims-uk&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Policy&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:enforcementLevel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:riskTag&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;financial-regulation&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;consumer-protection&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:guardRails&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Do not promise guaranteed investment returns.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Do not provide personalised investment advice.&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:refusalStrategies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Explain that you cannot provide personalised investment advice.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Offer to connect the user with a regulated advisor.&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:complianceTags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;FCA&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;UK-financial-promotions&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:retrievableInLLM&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:reviewWorkflow&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Compliance team reviews this policy monthly and after any regulatory change.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:updatePolicy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Update within 30 days of new FCA guidance affecting retail promotions.&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="9-automation-metrics-properties">9. Automation &amp; metrics properties</h2>
+<p><strong>Primary domain:</strong> <code>brando:AutomationRule</code>
+<strong>Purpose:</strong> describe conditions and actions for automated governance.</p>
+<p>Core automation properties:</p>
+<ul>
+<li>
+<p><code>brando:triggerType</code>
+  Type of event or condition that activates the rule.</p>
+</li>
+<li>
+<p><code>brando:monitoredMetric</code>
+  JSON-as-string describing metric, thresholds, operators.</p>
+</li>
+<li>
+<p><code>brando:dataSource</code>
+  API endpoint or data source providing signals.</p>
+</li>
+<li>
+<p><code>brando:automationAction</code>
+  JSON-as-string describing the actions to take when conditions are met.</p>
+</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/automation/rag-high-risk-monitor&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:AutomationRule&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:triggerType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;metric-threshold&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:monitoredMetric&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;unsafe_output_rate&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;threshold&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.05</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;operator&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&gt;&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;window&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;7d&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:dataSource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://monitoring.example.com/api/metrics/unsafe_output_rate&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:automationAction&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;actionType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;increase_enforcement&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;targetPolicies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;https://example.com/brand/northstar/policies/global-brand-safety&quot;</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;newLevel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;notify&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="s2">&quot;risk-team@northstar.example&quot;</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:enforcementLevel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:riskTag&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;brand-safety&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;llm-guardrails&quot;</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="10-classification-product-alignment-properties">10. Classification &amp; product alignment properties</h2>
+<p><strong>Primary domain:</strong> <code>brando:BrandedCategory</code>
+<strong>Also used in:</strong> some policy/product-scoping flows.
+<strong>Purpose:</strong> align brand categories with GS1, UNSPSC, Google Product Taxonomy.</p>
+<p>Core category properties:</p>
+<ul>
+<li>
+<p><code>brando:productCategoryName</code>
+  Brand-facing category label.</p>
+</li>
+<li>
+<p><code>brando:categoryDepartment</code>
+  Department-level category inside the brand.</p>
+</li>
+<li>
+<p><code>brando:categoryClass</code>
+  Class-level category.</p>
+</li>
+<li>
+<p><code>brando:categoryItemType</code>
+  Specific item type.</p>
+</li>
+</ul>
+<p>Classification alignment:</p>
+<ul>
+<li>
+<p><code>brando:gpcCategoryCode</code>
+  GS1 GPC brick code.</p>
+</li>
+<li>
+<p><code>brando:gpcCategoryDescription</code>
+  Human-readable GS1 GPC description.</p>
+</li>
+<li>
+<p><code>brando:unspscCode</code>
+  UNSPSC code.</p>
+</li>
+<li>
+<p><code>brando:googleProductCategoryId</code>
+  Google Product Taxonomy identifier.</p>
+</li>
+</ul>
+<p>Product-level scoping:</p>
+<ul>
+<li>
+<p><code>brando:appliesToGTIN</code>
+  GTIN(s) for which this category or policy applies.</p>
+</li>
+<li>
+<p><code>brando:appliesToProduct</code>
+  Links to <code>gs1:Product</code> nodes.</p>
+</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/categories/savings-accounts&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:BrandedCategory&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:productCategoryName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Savings accounts&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:categoryDepartment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Banking&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:categoryClass&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Deposit accounts&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:categoryItemType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Savings accounts&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:gpcCategoryCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;43191500&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:gpcCategoryDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Savings and investment accounts (example only)&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:unspscCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;84131500&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:googleProductCategoryId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Finance &gt; Banking Services&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:appliesToGTIN&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;12345678901234&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;12345678905678&quot;</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="11-files-integration-properties">11. Files &amp; integration properties</h2>
+<p><strong>Domains:</strong> <code>brando:Brand</code>, <code>brando:Context</code>, <code>brando:BrandExpressionToken</code>, <code>brando:Policy</code>, <code>brando:BrandedCategory</code>, <code>brando:Campaign</code>, <code>brando:AutomationRule</code>
+<strong>Purpose:</strong> connect Brando nodes to actual assets and external systems.</p>
+<p>Asset properties:</p>
+<ul>
+<li>
+<p><code>brando:downloadableFile</code> (object, range: <code>schema:MediaObject</code>)
+  Links to canonical, production-ready assets (e.g. logo packs, guidelines).</p>
+</li>
+<li>
+<p><code>brando:supportingFile</code> (object, range: <code>schema:MediaObject</code>)
+  Links to secondary or supporting assets.</p>
+</li>
+<li>
+<p><code>brando:assetURL</code> (literal)
+  Canonical URL for a primary asset (usually at <code>BrandExpressionToken</code> level).</p>
+</li>
+<li>
+<p><code>brando:assetPreview</code> (literal)
+  Preview-friendly URL for UI thumbnails/short clips.</p>
+</li>
+</ul>
+<p>Integration properties:</p>
+<ul>
+<li>
+<p><code>brando:externalSystem</code> (object, range: <code>schema:SoftwareApplication</code>)
+  Which tool or platform this node is mapped to.</p>
+</li>
+<li>
+<p><code>brando:externalSystemId</code> (literal)
+  Identifier of the corresponding object in that system.</p>
+</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Brand&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar Bank&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:downloadableFile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/brand/core-guidelines.pdf&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:MediaObject&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar Brand Core Guidelines (PDF)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;schema:contentUrl&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/brand/core-guidelines.pdf&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:externalSystem&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/integrations/adobe-genstudio&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:externalSystemId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;northstar_brand_master&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="12-lifecycle-campaign-properties">12. Lifecycle &amp; campaign properties</h2>
+<p><strong>Domains:</strong> <code>brando:Campaign</code>, <code>brando:Context</code>, <code>brando:Policy</code>
+<strong>Purpose:</strong> model time-bounded overlays and lifecycle.</p>
+<p>Core campaign properties:</p>
+<ul>
+<li>
+<p><code>brando:campaignName</code>
+  Human-readable campaign name.</p>
+</li>
+<li>
+<p><code>brando:campaignTheme</code>
+  Central message/creative theme.</p>
+</li>
+</ul>
+<p>Time-bounding / lifecycle:</p>
+<ul>
+<li><code>brando:effectiveDuring</code>
+  JSON-as-string time window or schedule.</li>
+</ul>
+<p>In practice, you often combine:</p>
+<ul>
+<li><code>brando:effectiveDuring</code> (Brando)</li>
+<li><code>schema:startDate</code> / <code>schema:endDate</code> (Schema.org Event semantics on <code>brando:Campaign</code>)</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/campaigns/summer-savings-2025&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Campaign&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:campaignName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Summer Savings 2025&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:campaignTheme&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Make your summer money go further without adding risk.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:effectiveDuring&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;validFrom&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-06-01&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;validThrough&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-08-31&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;schema:startDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-06-01&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:endDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-08-31&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="13-putting-properties-together-at-runtime">13. Putting properties together at runtime</h2>
+<p>At runtime, a Brand OS typically:</p>
+<ol>
+<li>Resolves a <code>brando:Brand</code> node.</li>
+<li>Selects a relevant <code>brando:Context</code>.</li>
+<li>
+<p>Walks:</p>
+<ul>
+<li><code>brando:usesVerbalToken</code> / <code>usesVisualToken</code> / <code>usesAudioToken</code>,</li>
+<li><code>brando:hasPolicy</code>,</li>
+<li><code>brando:hasAutomationRule</code>,</li>
+<li><code>brando:hasProductCategory</code> (if a product is in scope),</li>
+<li><code>brando:hasCampaign</code> (if within a campaign window).</li>
+<li>
+<p>Reads properties on those nodes to:</p>
+</li>
+<li>
+<p>construct prompts and system messages,</p>
+</li>
+<li>apply guard rails and risk rules,</li>
+<li>set up visual and audio tokens,</li>
+<li>integrate with DAM/Brand OS and external tools.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="14-where-to-go-next">14. Where to go next</h2>
+<ul>
+<li>
+<p>For class-level structure:</p>
+<ul>
+<li><a href="../types/">Brando types overview</a></li>
+</ul>
+</li>
+<li>
+<p>For property-level details:</p>
+<ul>
+<li>Use the individual pages under <strong>Schema → Properties</strong> in the navigation
+(for example, <a href="toneOfVoice/"><code>brando:toneOfVoice</code></a>, <a href="guardRails/"><code>brando:guardRails</code></a>, etc.).</li>
+</ul>
+</li>
+<li>
+<p>For concrete patterns and end-to-end flows:</p>
+<ul>
+<li><a href="../getting-started-jsonld/">Quickstart (JSON-LD)</a></li>
+<li><a href="../getting-started-yaml/">Quickstart (YAML)</a></li>
+<li><a href="../architecture/runtime-integration/">Runtime Integration (LLMs, MCP, APIs)</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer>
+  <div class="custom-footer">
+    <strong>© 2025 Advanced Analytica Ltd </strong> &middot; All rights reserved. Unauthorised use is strictly prohibited. <strong>Brando<sup>®</sup></strong> is a registered trademark of Advanced Analytica.
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "header.autohide", "content.headings.anchor", "navigation.expand", "content.code.wrap"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../js/smooth-scroll.js"></script>
+      
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+      
+        <script src="../js/linked_map.js"></script>
+      
+        <script src="../data/brando-schema.json"></script>
+      
+        <script src="../js/modal.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,49 @@
+/* General style for SVG elements */
+.node circle {
+    fill: #ffffff;
+    stroke: #450086;
+    stroke-width: 3px;
+}
+
+.node text {
+    font: 12px sans-serif;
+    fill: black;
+    pointer-events: none; /* Disable text selection */
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: absolute;
+    text-align: left;
+    width: auto;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    pointer-events: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+/* Node hover style */
+.node:hover circle {
+    fill: rgb(208, 176, 222);
+    cursor: pointer;
+}
+
+/* Tooltip link styling */
+.tooltip a {
+    text-decoration: none;
+    color: hsl(267, 100%, 50%);
+}
+
+.tooltip a:hover {
+    text-decoration: underline;
+}
