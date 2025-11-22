@@ -301,3 +301,9 @@ h1 {
 .custom-footer a:hover {
   text-decoration: underline;
 }
+
+/* Wrap long lines in fenced code blocks */
+.md-typeset pre > code {
+  white-space: pre-wrap;    /* allow wrapping */
+  word-break: break-word;   /* break long tokens if needed */
+}
