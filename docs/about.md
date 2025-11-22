@@ -95,9 +95,10 @@ Our vision is to power the next generation of decision-making through trusted da
 
 ## Licensing
 
-The Brando Brand Definition Vocabulary (BDV) is a **proprietary framework** developed and maintained by **Advanced Analytica Ltd**.
+The Brando Brand Definition Vocabulary (BDV) is a **open source framework** developed and maintained by **Advanced Analytica Ltd**.
 
-Unauthorised reproduction, redistribution, or commercial use is prohibited without explicit written permission. To request licensing or integration rights, please contact **ops@advancedanalytica.co.uk**.
+Brando BDV is made available for public use under an open-source license.
+For commercial use, redistribution, or integration into proprietary solutions, please contact **ops@advancedanalytica.co.uk** to discuss licensing or partnership opportunities.
 
 **© 2024–2025 Advanced Analytica Ltd. All rights reserved.**
 
@@ -105,5 +106,5 @@ Unauthorised reproduction, redistribution, or commercial use is prohibited witho
 
 **Jonny Bowker** is the managing director at Advanced Analytica, creator of Brando, a Law Society of Scotland Accredited expert in AI systems, data protection and ethics, knowledge management an data governance. He helps organisations align their digital presence with intelligent systems, AI search infrastructure, and compliance requirements.
 
-- LinkedIn: [jonathanbowker](https://www.linkedin.com/in/jbbowker/)  
-- GitHub: [jonathanbowker](https://github.com/jonathanbowker)
+- LinkedIn: [Jonny Bowker](https://www.linkedin.com/in/jbbowker/)  
+- GitHub: [Jonny Bowker](https://github.com/jonathanbowker)

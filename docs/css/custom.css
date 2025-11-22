@@ -1,4 +1,6 @@
-/* Custom Header Gradient */
+/* --------------------------------------------
+   Custom Header Gradient
+--------------------------------------------- */
 .md-header {
   background: linear-gradient(90deg,
     #2b0052 0%,
@@ -9,73 +11,190 @@
     #8200fa 100%);
 }
 
-/* Link Styling */
+/* --------------------------------------------
+   Link Styling
+--------------------------------------------- */
 a {
   color: #8200fa;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
-/* Typography Tweaks */
+/* --------------------------------------------
+   Typography Tweaks
+--------------------------------------------- */
 h1 {
   font-size: 2.5em;
 }
 
-/* Code Block Improvements */
-pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  overflow-wrap: anywhere;
-}
-
-pre code.language-json {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  overflow-wrap: anywhere;
-}
-
-code, pre {
-  overflow-x: auto;
-}
-
-/* Primary Button Styling */
-.primary-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4a148c;
-  color: white;
+/* --------------------------------------------
+   Button Styles (BRAND BUTTONS)
+--------------------------------------------- */
+.button {
+  display: inline-flex;            
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
   text-align: center;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(90,0,173,0.06);
+  min-width: 90px;
+  padding: 0.55em 1.25em;
+  font-size: 1.07rem;
+  white-space: nowrap;
+  transition: background 0.18s, color 0.18s;
+  line-height: 1.2;
+  outline: none;
+  margin: 0;        
+  width: auto !important;
+  max-width: 100%;
+  /* Prevent inherited display:block or width:100% */
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
-.primary-button:hover {
-  background-color: #6a1b9a;
+/* Remove default button styling on some browsers */
+.button:active,
+.button:focus {
+  outline: 2px solid #5a00ad;
+  outline-offset: 2px;
 }
 
-/* GitHub Icon: Always White & Visible */
-.md-header__source a.md-source {
-  opacity: 1 !important;
-  color: #ffffff !important;
+/* Primary and Secondary Buttons */
+.button.primary {
+  background: #360067;
+  color: #fff !important;
+}
+.button.primary:hover,
+.button.primary:focus {
+  background: #5a00ad;
+  color: #fff !important;
 }
 
-/* GitHub Icon in Dark Mode */
-[data-md-color-scheme="slate"] .md-header__source a.md-source {
-  color: #ffffff !important;
+.button.secondary {
+  background: #e8e8ff;
+  color: #5a00ad !important;
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  background: #dad4ff;
+  color: #360067 !important;
 }
 
-/* FontAwesome GitHub fallback (if needed) */
-.md-header-nav .md-nav__link[href*="github.com"] i.fab {
-  color: #ffffff !important;
+/* --- Size Modifiers --- */
+.button.small {
+  font-size: 0.97rem;
+  padding: 0.39em 1em;
+  min-width: 80px;
+}
+.button.medium {
+  font-size: 1.08rem;
+  padding: 0.62em 1.6em;
+  min-width: 110px;
+}
+.button.large {
+  font-size: 1.15rem;
+  padding: 0.95em 2.2em;
+  min-width: 135px;
 }
 
-/* Active nav link styling */
+/* --- Button Group/Row for Card Layouts --- */
+.card-buttons {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 !important;
+}
+
+/* Defensive: remove unwanted margins on direct children */
+.card-buttons > * {
+  margin: 0 !important;
+}
+
+/* Prevent vertical stacking unless on small screens */
+@media (max-width: 480px) {
+  .card-buttons, .button-row {
+    flex-direction: column !important;
+    gap: 0.7rem;
+    align-items: stretch;
+  }
+}
+
+
+/* --------------------------------------------
+   Modal Styles (Full-Page, Animated)
+--------------------------------------------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(32, 0, 64, 0.85);
+  transition: opacity 0.4s cubic-bezier(.4,0,.2,1);
+  opacity: 0;
+  pointer-events: none;
+}
+.modal.show {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  animation: fadeInModal 0.5s cubic-bezier(.4,0,.2,1);
+}
+@keyframes fadeInModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.modal-content {
+  background: #fff;
+  color: #250045;
+  margin: 3vh auto;
+  border-radius: 20px;
+  max-width: 700px;
+  min-width: 320px;
+  width: 94vw;
+  min-height: 60vh;
+  padding: 2.8rem 2.2rem 2rem 2.2rem;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(64,0,128,0.17), 0 2px 8px rgba(32,0,64,0.08);
+  animation: modalZoom 0.44s cubic-bezier(.4,0,.2,1);
+}
+@keyframes modalZoom {
+  from { transform: scale(0.98) translateY(32px); opacity: 0.7; }
+  to   { transform: scale(1) translateY(0); opacity: 1; }
+}
+.btn-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  color: #4a148c;
+  cursor: pointer;
+  transition: color 0.2s;
+  font-weight: bold;
+}
+.btn-close:hover {
+  color: #d500f9;
+}
+
+/* --------------------------------------------
+   Active nav link styling
+--------------------------------------------- */
 .md-nav__link--active {
   font-weight: bold !important;
   color: #450086 !important; /* Highlight color */
@@ -86,20 +205,20 @@ code, pre {
 .md-nav__link:hover,
 .md-nav__link:focus {
   font-weight: bold !important;
-  color: #7200dc !important;  /* Your desired hover color */
+  color: #7200dc !important;
   text-decoration: underline;
 }
 
-/* Standardise table width site-wide */
+/* --------------------------------------------
+   Table Styling
+--------------------------------------------- */
 .md-typeset table {
   width: 100%;
-  max-width: 800px; /* Adjust as needed */
+  max-width: 800px;
   table-layout: fixed;
   margin: 1em auto;
   border-collapse: collapse;
 }
-
-/* Ensure table cells wrap properly and look clean */
 .md-typeset table th,
 .md-typeset table td {
   word-wrap: break-word;
@@ -107,10 +226,84 @@ code, pre {
   padding: 0.6em;
   vertical-align: top;
 }
-
-/* Optional: make headers bold and improve spacing */
 .md-typeset table th {
   font-weight: 600;
   background-color: #f9f9f9;
 }
 
+
+
+/* --------------------------------------------
+   Lead Form
+--------------------------------------------- */
+.lead-form {
+  background: #f6f0ff;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  box-shadow: 0 2px 16px rgba(90,0,173,0.05);
+}
+.lead-form label {
+  display: block;
+  margin-bottom: 1.1rem;
+  color: #360067;
+  font-weight: 500;
+  font-size: 1.09rem;
+}
+.lead-form input,
+.lead-form textarea {
+  width: 100%;
+  padding: 0.7em 1em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  background: #fff;
+  color: #250045;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border 0.18s;
+}
+.lead-form input:focus,
+.lead-form textarea:focus {
+  border-color: #7200dc;
+  outline: 2px solid #5a00ad44;
+}
+.lead-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+.lead-form button.button {
+  margin-top: 1rem;
+  width: 100%;
+  /* Keeps using your .button.primary style */
+}
+
+/* --------------------------------------------
+   Footer Customisation
+--------------------------------------------- */
+.custom-footer {
+  background: #222;
+  color: #fafafa;
+  text-align: center;
+  padding: 1.5em 0;
+  font-size: 1.5em;  /* Larger font size */
+}
+
+.custom-footer a {
+  color: #8200fa;
+  font-size: 1.5em;  /* Match link size to footer text */
+  text-decoration: none;
+}
+
+.custom-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Wrap long lines in fenced code blocks */
+.md-typeset pre > code {
+  white-space: pre-wrap;    /* allow wrapping */
+  word-break: break-word;   /* break long tokens if needed */
+}

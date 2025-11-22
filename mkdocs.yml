@@ -1,5 +1,5 @@
-site_name: Brando Schema
-site_description: Brando BDV is the world’s first Brand Definition Vocabulary for structuring brand identity, tone, and integrity in the AI Web.
+site_name: Brando Schema – Brando
+site_description: Brando (Brand Oracle) is the AI-native, governance-ready data standard for Brand Operating Systems, AI discoverability, and operational brand governance.
 site_author: Jonathan Bowker
 site_url: https://brandoschema.com
 repo_url: https://github.com/JonathanBowker/brandoschema
@@ -8,7 +8,7 @@ repo_name: GitHub
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/images/logo.webp
+  logo: assets/images/4x/masthead_logo@4x.png
   favicon: assets/images/favicon.svg
   palette:
     - scheme: default
@@ -30,6 +30,8 @@ theme:
     - content.code.copy
     - header.autohide
     - content.headings.anchor
+    - navigation.expand
+    - content.code.wrap
   icons:
     - material: true
     - fontawesome: true
@@ -42,18 +44,23 @@ plugins:
   - copy-well-known
 
 extra:
+  analytics:
+    provider: google
+    property: G-3N8RPPP7CD
+  static_dirs:
+    - types/data
   custom_domain: brandoschema.com
   include:
     - data/brando-schema.json
   meta_defaults:
-    keywords: brando, brand definition language, bdl, brand schema, ai brand safety, structured branding, LLM prompts, AI web, semantic brand metadata, tone of voice schema
-    og_title: Brando – The Brand Definition Language for the AI Web
-    og_description: Brando is a machine-readable Brand Definition Language (BDL) that protects and structures brand identity in the AI era.
-    og_url: https://brandoschema.com/bdl/
+    keywords: brand ontology schema, brando, brand operating system, brand knowledge graph, brand semantics, AI brand safety, structured branding, LLM prompts, AI web, semantic brand metadata, tone of voice schema
+    og_title: Brand Ontology Schema – The Data Standard for AI-Native Brand Operating Systems
+    og_description: Brand Ontology Schema (Brando) is a machine-readable data layer that structures brand identity, tokens, and policies for AI runtimes, agents, and search.
+    og_url: https://brandoschema.com/
     og_image: https://brandoschema.com/assets/images/brando-og-image.png
     twitter_card: summary_large_image
-    twitter_title: Brando – Brand Definition Language (BDL)
-    twitter_description: Structure your brand identity, tone, and values for intelligent agents and LLMs with Brando BDL.
+    twitter_title: Brand Ontology Schema – The Data Layer for AI Brand Operations
+    twitter_description: Structure your brand identity, tone, and values for intelligent agents and LLMs with Brando.
     twitter_image: https://brandoschema.com/assets/images/brando-og-image.png
 
 extra_css:
@@ -61,10 +68,12 @@ extra_css:
   - css/styles.css
 
 extra_javascript:
-  - js/smooth-scroll.js   # (keep this if you need it)
+  - js/smooth-scroll.js
   - https://d3js.org/d3.v7.min.js
   - js/linked_map.js
-  
+  - data/brando-schema.json
+  - js/modal.js
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -79,13 +88,143 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Brando Schema: 
-    - Classes: bdv-classes/index.md
-    - Terms: bdv-terms/index.md
-  - Using Brando: how-to-use.md
-  - Workshops:
-    - AI Optimisation: optimisation-workshop.md
-  - Brando License: licensing.md 
-  - About Us: 
-    - Advanced Analytica: about.md  
-    - Terms of Service: terms-of-service.md
+
+  - Getting started:
+      - Overview: getting-started.md
+      - Quickstart (JSON-LD): getting-started-jsonld.md
+      - Quickstart (YAML): getting-started-yaml.md
+
+  - Schema:
+      - Types:
+          - Types Index: types/index.md
+          - brando:Brand: types/brand.md
+          - brando:Context: types/context.md
+          - brando:BrandExpressionToken: types/brand-expression-token.md
+          - brando:VerbalToken: types/verbal-token.md
+          - brando:VisualToken: types/visual-token.md
+          - brando:AudioToken: types/audio-token.md
+          - brando:Policy: types/policy.md
+          - brando:BrandedCategory: types/branded-category.md
+          - brando:Campaign: types/campaign.md
+          - brando:AutomationRule: types/automation-rule.md
+
+      - Properties:
+          - Properties Index: properties/index.md
+
+          # All properties from Brando vocab v1.3, alphabetical
+          - brando:appliesTo: properties/appliesTo.md
+          - brando:appliesToGTIN: properties/appliesToGTIN.md
+          - brando:appliesToProduct: properties/appliesToProduct.md
+          - brando:approvedTerms: properties/approvedTerms.md
+          - brando:assetPreview: properties/assetPreview.md
+          - brando:assetURL: properties/assetURL.md
+          - brando:audiencePersona: properties/audiencePersona.md
+          - brando:audienceSegment: properties/audienceSegment.md
+          - brando:audioCue: properties/audioCue.md
+          - brando:audioLogo: properties/audioLogo.md
+          - brando:audioReferenceLink: properties/audioReferenceLink.md
+          - brando:audioUsageGuidelines: properties/audioUsageGuidelines.md
+          - brando:automationAction: properties/automationAction.md
+          - brando:brandArchitectureRole: properties/brandArchitectureRole.md
+          - brando:brandName: properties/brandName.md
+          - brando:brandNarrative: properties/brandNarrative.md
+          - brando:brandPromise: properties/brandPromise.md
+          - brando:campaignName: properties/campaignName.md
+          - brando:campaignTheme: properties/campaignTheme.md
+          - brando:categoryApprovedTerms: properties/categoryApprovedTerms.md
+          - brando:categoryClass: properties/categoryClass.md
+          - brando:categoryDepartment: properties/categoryDepartment.md
+          - brando:categoryItemType: properties/categoryItemType.md
+          - brando:categoryProhibitedTerms: properties/categoryProhibitedTerms.md
+          - brando:colourPalette: properties/colourPalette.md
+          - brando:competitorContext: properties/competitorContext.md
+          - brando:complianceTags: properties/complianceTags.md
+          - brando:coreValues: properties/coreValues.md
+          - brando:dataSource: properties/dataSource.md
+          - brando:dialogueStyle: properties/dialogueStyle.md
+          - brando:domainContext: properties/domainContext.md
+          - brando:downloadableFile: properties/downloadableFile.md
+          - brando:effectiveDuring: properties/effectiveDuring.md
+          - brando:embeddingQuality: properties/embeddingQuality.md
+          - brando:enforcementLevel: properties/enforcementLevel.md
+          - brando:externalSystem: properties/externalSystem.md
+          - brando:externalSystemId: properties/externalSystemId.md
+          - brando:googleProductCategoryId: properties/googleProductCategoryId.md
+          - brando:governanceModel: properties/governanceModel.md
+          - brando:gpcCategoryCode: properties/gpcCategoryCode.md
+          - brando:gpcCategoryDescription: properties/gpcCategoryDescription.md
+          - brando:guardRails: properties/guardRails.md
+          - brando:hasAutomationRule: properties/hasAutomationRule.md
+          - brando:hasCampaign: properties/hasCampaign.md
+          - brando:hasContext: properties/hasContext.md
+          - brando:hasPolicy: properties/hasPolicy.md
+          - brando:hasProductCategory: properties/hasProductCategory.md
+          - brando:imageryStyles: properties/imageryStyles.md
+          - brando:inheritsPolicies: properties/inheritsPolicies.md
+          - brando:inheritsTokens: properties/inheritsTokens.md
+          - brando:keyMessages: properties/keyMessages.md
+          - brando:logo: properties/logo.md
+          - brando:marketPosition: properties/marketPosition.md
+          - brando:missionStatement: properties/missionStatement.md
+          - brando:monitoredMetric: properties/monitoredMetric.md
+          - brando:motionRules: properties/motionRules.md
+          - brando:mustDos: properties/mustDos.md
+          - brando:mustNotDos: properties/mustNotDos.md
+          - brando:namingConvention: properties/namingConvention.md
+          - brando:personaCard: properties/personaCard.md
+          - brando:priority: properties/priority.md
+          - brando:productCategoryName: properties/productCategoryName.md
+          - brando:prohibitedTerms: properties/prohibitedTerms.md
+          - brando:promptScaffold: properties/promptScaffold.md
+          - brando:pronunciationGuide: properties/pronunciationGuide.md
+          - brando:refusalStrategies: properties/refusalStrategies.md
+          - brando:retrievableInLLM: properties/retrievableInLLM.md
+          - brando:reviewWorkflow: properties/reviewWorkflow.md
+          - brando:riskScenarios: properties/riskScenarios.md
+          - brando:riskTag: properties/riskTag.md
+          - brando:schedulingRule: properties/schedulingRule.md
+          - brando:speechStyle: properties/speechStyle.md
+          - brando:supportingFile: properties/supportingFile.md
+          - brando:tagline: properties/tagline.md
+          - brando:temporaryOverrides: properties/temporaryOverrides.md
+          - brando:toneOfVoice: properties/toneOfVoice.md
+          - brando:triggerType: properties/triggerType.md
+          - brando:typography: properties/typography.md
+          - brando:unspscCode: properties/unspscCode.md
+          - brando:updatePolicy: properties/updatePolicy.md
+          - brando:usesAudioToken: properties/usesAudioToken.md
+          - brando:usesVerbalToken: properties/usesVerbalToken.md
+          - brando:usesVisualToken: properties/usesVisualToken.md
+          - brando:visibilityRating: properties/visibilityRating.md
+          - brando:visionStatement: properties/visionStatement.md
+          - brando:visualReferenceLink: properties/visualReferenceLink.md
+          - brando:visualToken: properties/visualToken.md
+          - brando:visualUsageGuidelines: properties/visualUsageGuidelines.md
+          - brando:voiceSignature: properties/voiceSignature.md
+          - brando:writingStyle: properties/writingStyle.md
+
+  - Architecture:
+      - Brand Operating System: architecture/brand-os.md
+      - Runtime Integration (LLMs, MCP, APIs): architecture/runtime-integration.md
+      - Brand portfolios & architecture: architecture/brand-architecture.md
+
+  - Specification:
+      - JSON-LD context: spec/jsonld-context.md
+      - YAML schema profile: spec/yaml-profile.md
+      - TypeScript types: spec/typescript-model.md
+
+  - Examples:
+      - Minimal brand graph: examples/minimal-brand.md
+      - House of brands example: examples/house-of-brands.md
+      - Chatbot + Brando runtime flow: examples/chatbot-runtime.md
+
+  - Guides:
+      - Using Brando: how-to-use.md
+      - AI Optimisation Workshop: optimisation-workshop.md
+      - FAQs: faq.md
+
+  - About:
+      - Advanced Analytica: advanced-analytica.md
+      - Partner Ecosystem: partner.md
+      - Brando Trademark: use-brando-trademark.md
+      - Terms of Service: terms-of-service.md

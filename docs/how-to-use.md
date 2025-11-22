@@ -1,189 +1,414 @@
 ---
-title: How to Use Brando BDV – Embed Brand Metadata for AI Systems
-description: Learn how to implement Brando Schema’s Brand Definition Vocabulary (BDV) across your website, CMS, and LLM prompts—ensuring structured, AI-compliant branding with JSON-LD, .well-known files, and metadata best practices.
-keywords:
-  - Brando Schema
-  - BDV implementation
-  - brand metadata
-  - AI control policy
-  - JSON-LD brand vocab
-  - .well-known AI policy
-  - LLM prompt scaffolds
-  - CMS structured data
-  - AI brand safety
-  - metadata for AI systems
-
-author: Advanced Analytica
-
-# Open Graph metadata
-og_title: How to Use Brando BDV – Brand Metadata for AI & Web Integration
-og_description: Step-by-step instructions for deploying Brando Schema metadata using HTML, CMS tools, and AI prompt strategies—including .well-known hosting and brand governance tips.
-og_type: website
-og_url: https://brandoschema.com/how-to-use-bdv
-og_image: https://brandoschema.com/assets/logos/0.5x/Brando_9@0.5x.png
-
-# Twitter Card metadata
-twitter_card: summary_large_image
-twitter_title: How to Structure Your Brand for AI – Brando BDV Guide
-twitter_description: See how to embed brand-safe metadata with Brando BDV in your HTML, CMS, and AI systems—including .well-known policies and LLM prompt scaffolds.
-twitter_image: https://brandoschema.com/assets/logos/0.5x/Brando_9@0.5x.png
+title: Using Brando
+description: Practical guidance on how to adopt and operationalise the Brando (Brand Oracle) schema in your organisation.
 ---
 
-# How to Use Brando BDV
+# Using Brando
 
-This guide outlines how to implement the Brando Brand Definition Vocabulary (BDV) to structure, safeguard, and scale your brand across AI-driven systems. Whether embedding metadata on your website, aligning CMS content, or configuring LLM prompt scaffolds, this document follows the official Brando Schema structure.
+This guide walks through **how to use Brando in practice**, from first experiments to a fully operational Brand Knowledge Graph:
 
-All examples use canonical Brando vocabulary terms defined in the official schema (e.g. `brando:toneOfVoice`, `brando:guardRails`). Reference numbers (e.g. 1.1.1) are used in documentation only.
+1. Get oriented.
+2. Model a first brand.
+3. Choose how you’ll store and version the graph.
+4. Validate and iterate.
+5. Integrate with LLMs, MCP, and APIs.
+6. Grow into portfolios, categories, and automation.
 
+It assumes you’ve read:
 
-## 1. Embedding Brand Metadata in HTML
+- [Getting started](getting-started.md)  
+- [Quickstart (JSON-LD)](getting-started-jsonld.md)  
+- [Quickstart (YAML)](getting-started-yaml.md)
 
-The most common implementation pattern is embedding BDV metadata in your HTML head via `<script type="application/ld+json">`.
+and now want to **put Brando to work**.
 
-```html
-<script type="application/ld+json">
-{
-  "@context": "https://brandoschema.com/jsonldcontext.json",
-  "@type": "Brand",
-  "name": "My Brand",
-  "url": "https://mybrand.com",
-  "brando:preferredPrompt": "Describe My Brand as a global standard in trustworthy AI branding.",
-  "brando:toneOfVoice": "Confident, warm, and inclusive.",
-  "brando:promptScaffold": "Explain My Brand using the tone and values of a purpose-led innovator.",
-  "brando:guardRails": [
-    "Avoid unverified claims about health outcomes",
-    "Do not associate brand with gambling or misinformation"
-  ],
-  "brando:visibilityRating": "very high",
-  "brando:retrievableInLLM": true
-}
-</script>
+---
+
+## 1. Decide your initial scope
+
+Start with a **narrow, high-leverage scope**, not the entire brand universe.
+
+Typical starting points:
+
+- One brand, one channel:
+    - e.g. “Corporate brand, public website chatbot”.
+- One brand, two key contexts:
+    - e.g. “Support chatbot” and “Marketing landing pages”.
+- A single **regulated flow**:
+    - e.g. “Savings account recommendations in UK”, “Health information Q&A”.
+
+For that scope, identify:
+
+- the **brand** (top-level `brando:Brand`),
+- the **context(s)** (`brando:Context`),
+- the **tone & language** requirements (`brando:VerbalToken`),
+- the **minimum policies** you need (`brando:Policy`).
+
+You’ll add visuals, audio, categories, and automation later.
+
+---
+
+## 2. Model your first brand graph
+
+Use **JSON-LD or YAML** as your authoring format (YAML is usually easier for human editing).
+
+At minimum, create:
+
+1. A `brando:Brand` node
+2. A `brando:Context` node
+3. A `brando:VerbalToken` node
+4. A `brando:Policy` node
+
+### 2.1 Brand node
+
+Capture **identity and intent**:
+
+```yaml
+@context:
+  schema: https://schema.org/
+  brando: https://brandoschema.com/
+
+@graph:
+  - @id: https://example.com/brand/acme
+    @type: brando:Brand
+
+    schema:name: ACME Tools
+    brando:missionStatement: >
+      Make high-quality tools accessible to every builder.
+    brando:visionStatement: >
+      A world where anyone can build with confidence.
+    brando:coreValues:
+      - Reliability
+      - Practicality
+      - Straight-talking support
 ```
 
+### 2.2 Context node
 
-## 2. Publishing an AI Control Policy File
+Capture **where and for whom** behaviour changes:
 
-To enable full traceability and AI-safe branding, publish a canonical `ai-control-policy.json` on your domain. The recommended location is:
+```yaml
+  - @id: https://example.com/brand/acme/context/support-chat
+    @type: brando:Context
 
-```
-https://yourbrand.com/.well-known/ai-control-policy.json
-```
+    brando:audienceSegment:
+      - Existing customers seeking product support
+    brando:audiencePersona:
+      - Hands-on builder
+    brando:domainContext: >
+      {"channel":"chat","surface":"support-portal","region":"global"}
 
-This follows web standards for machine-readable metadata (similar to `security.txt`, `robots.txt`, `ai-plugin.json`).
-
-### Example `ai-control-policy.json`
-```json
-{
-  "@context": "https://brandoschema.com/jsonldcontext.json",
-  "@type": "Brand",
-  "name": "My Brand",
-  "url": "https://mybrand.com",
-  "brando:toneOfVoice": "Empathetic and precise",
-  "brando:taglines": "Design for trust.",
-  "brando:mustNotDo": ["Do not exaggerate claims.", "Avoid legal interpretations."],
-  "brando:guardRails": ["Do not represent My Brand as a government agency"],
-  "brando:visibilityRating": "high",
-  "brando:retrievableInLLM": true,
-  "brando:embeddingQuality": "good",
-  "brando:riskScenarios": ["LLMs trained on outdated brand language"]
-}
+    brando:usesVerbalToken:
+      @id: https://example.com/brand/acme/tokens/verbal/support
 ```
 
-### Deployment Tips
+### 2.3 VerbalToken node
 
-- Host it at `.well-known/` on your domain:
-  - `https://mybrand.com/.well-known/ai-control-policy.json`
+Capture **tone, style, and vocabulary**:
 
-- Link from your site `<head>`:
-```html
-<link rel="alternate" type="application/ld+json" href="https://mybrand.com/.well-known/ai-control-policy.json">
+```yaml
+  - @id: https://example.com/brand/acme/tokens/verbal/support
+    @type: brando:VerbalToken
+
+    brando:toneOfVoice: >
+      Straightforward, encouraging, and practical.
+    brando:dialogueStyle: >
+      Talk to the user like a colleague on the job site.
+    brando:writingStyle: >
+      Short, direct sentences. Concrete instructions first; theory later.
+
+    brando:approvedTerms:
+      - heavy-duty
+      - reliable
+      - safety first
+
+    brando:prohibitedTerms:
+      - indestructible
+      - lifetime-guaranteed for anything
+
+    brando:mustDos:
+      - Offer a clear next step or action in every answer.
+
+    brando:mustNotDos:
+      - Mock or belittle the user’s level of expertise.
 ```
 
-- Declare in `robots.txt`:
-```
-User-agent: *
-Allow: /
-AI-Control-Policy: https://mybrand.com/.well-known/ai-control-policy.json
-```
+### 2.4 Policy node
 
-- Add to `sitemap.xml`:
-```xml
-<url>
-  <loc>https://mybrand.com/.well-known/ai-control-policy.json</loc>
-  <changefreq>weekly</changefreq>
-  <priority>0.8</priority>
-</url>
-```
+Capture **guard rails and refusal patterns**:
 
-## 3. Integrating with CMS & Component-Level Metadata
+```yaml
+  - @id: https://example.com/brand/acme/policies/basic-brand-safety
+    @type: brando:Policy
 
-Brando metadata can be embedded per page, product, or component inside modern CMS platforms.
+    brando:enforcementLevel: mandatory
+    brando:riskTag:
+      - brand-safety
 
-### Example Component Metadata
-```json
-{
-  "@type": "Brand",
-  "name": "My Brand",
-  "brando:toneOfVoice": "Bold and helpful",
-  "brando:namingConvention": "CamelCase for product names; sentence case for UI copy",
-  "brando:audiencePersona": {
-    "name": "Mental Health Campaign Persona",
-    "attributes": ["young adult", "non-clinical", "UK-based"]
-  },
-  "brando:guardRails": {
-    "visualRestrictions": ["Avoid overly clinical or sterile imagery"]
-  }
-}
+    brando:guardRails:
+      - Do not make claims about capabilities that are not documented.
+      - Do not provide safety-critical advice without including an appropriate caution.
+
+    brando:refusalStrategies:
+      - >
+        If the user asks for unsafe modifications, explain why it is unsafe
+        and suggest a safer alternative.
+
+    brando:retrievableInLLM: true
 ```
 
-### Tips:
-- Build a "Brando Metadata" block in your CMS schema
-- Store identity and governance defaults globally; override locally for campaigns
-- Enforce validation on `brando:guardRails` and `brando:requiresHumanEscalation`
+Link it from the brand:
 
-
-## 4. Using BDV Metadata in LLM Prompting
-
-Use Brando terms to guide system, user, or assistant prompts.
-
-### Example: Prompt scaffold
-```json
-{
-  "brando:promptScaffold": "Summarise My Brand as a leader in privacy-respecting innovation using clear, trustworthy language."
-}
+```yaml
+  - @id: https://example.com/brand/acme
+    @type: brando:Brand
+    # ...
+    brando:hasContext:
+      @id: https://example.com/brand/acme/context/support-chat
+    brando:usesVerbalToken:
+      @id: https://example.com/brand/acme/tokens/verbal/support
+    brando:hasPolicy:
+      @id: https://example.com/brand/acme/policies/basic-brand-safety
 ```
 
-This term can be injected dynamically into:
-- Prompt orchestration chains
-- Agent personas
-- Retrieval-augmented generation systems
+Now you have a **minimal working Brand Knowledge Graph**.
 
-## 5. Monitoring, Updating & Governance
+---
 
-Ongoing governance is critical to ensure brand safety and explainability in AI systems.
+## 3. Choose where this lives
 
-- Use `brando:updatePolicy` to declare refresh intervals
-- Use `brando:reviewWorkflow` for human sign-off steps
-- Track compliance via `brando:retrievableInLLM`
-- Update `brando:visibilityRating` quarterly
-- Host your current policy at `.well-known/ai-control-policy.json` for discoverability
+You need a **single source of truth**.
+
+Common options:
+
+* **Git repo**
+
+    * YAML or JSON-LD files under `brands/<brand>/...`
+    * Reviewed via PRs
+    * Ideal for early pilots.
+
+* **Graph database / triple store**
+
+    * Store the JSON-LD as RDF/graph.
+    * Useful when you already have a knowledge-graph stack.
+
+* **Document store**
+
+    * JSON-LD documents per brand.
+    * A simpler option if you don’t need full graph DB features yet.
+
+Non-normative suggestion:
+
+* Start with Git-managed YAML → generate JSON-LD as a build artefact.
+* Once stable, mirror into a graph store if your infra supports it.
+
+---
+
+## 4. Validate and iterate
+
+Before wiring into production:
+
+1. **Schema validation**
+
+   * Check that:
+
+    * each node has a valid `@type`,
+    * properties are used on appropriate domains,
+    * required properties are present (e.g. `schema:name` on `brando:Brand`).
+   
+   * You can use:
+
+    * JSON Schema or similar for structural checks,
+    * custom scripts to enforce your own usage rules.
+
+2. **Brand review**
+
+    * Have brand/marketing teams review:
+
+        * tone of voice text,
+        * approved/prohibited terms,
+        * guard rails and refusal strategies.
+   
+   * Treat this as a **living extension** of your brand guidelines.
+
+3. **Prompt simulation**
+
+    * Build a simple script or notebook that:
+
+        * loads the Brando graph,
+        * generates a system prompt,
+        * runs a few test questions through your LLM,
+        * lets humans review the outputs vs the Brando rules.
+
+Use this loop to refine `VerbalToken`, `Policy`, and `Context` contents.
+
+---
+
+## 5. Integrate with your chatbot / LLM
+
+The basic integration pattern:
+
+1. **At request time**, your backend receives:
+
+    * a `brandId` (`brando:Brand` `@id`),
+    * a `contextId` (`brando:Context` `@id`), or enough info to resolve one.
+
+2. **Brand OS / middleware**:
+
+    * loads Brand + Context + Tokens + Policies from the Brando graph,
+    * constructs a `RuntimeBrandConfig` (see [Runtime Integration](architecture/runtime-integration.md)),
+    * builds a **system prompt** and policy configuration for your LLM.
+
+3. **LLM adapter**:
+
+    * prepends the system prompt,
+    * optionally applies output checks using Brando `Policy` and `VerbalToken` data,
+    * logs which Brando nodes were used.
+
+If you’re using MCP or a shared tools layer, you can expose this as:
+
+* `get_brand_config(brandId, contextId)`
+* `list_policies(brandId)`
+* `get_prompt_scaffold(brandId, contextId)`
+
+so any AI client can call into your Brand OS.
+
+---
+
+## 6. Add other modalities and structure
+
+Once text is working, extend:
+
+### 6.1 Visual identity
+
+Add `brando:VisualToken` nodes for:
+
+* colour palette (`brando:colourPalette` as JSON string),
+* typography (`brando:typography`),
+* design tokens (`brando:visualToken`),
+* logo and imagery rules (`brando:visualUsageGuidelines`, `brando:visualReferenceLink`).
+
+Link them:
+
+```yaml
+brando:usesVisualToken:
+  @id: https://example.com/brand/acme/tokens/visual/master
+```
+
+These can drive:
+
+* design systems,
+* generative image tools,
+* theming for UI.
+
+### 6.2 Audio identity
+
+Add `brando:AudioToken` nodes for:
+
+* sonic logos,
+* voice signature,
+* pronunciation guide,
+* audio usage guidelines.
+
+Link with `brando:usesAudioToken`.
+
+### 6.3 Product categories
+
+Define `brando:BrandedCategory` nodes for key categories and link to:
+
+* GS1 / UNSPSC / Google Product Taxonomy via:
+
+    * `brando:gpcCategoryCode`
+    * `brando:unspscCode`
+    * `brando:googleProductCategoryId`
+
+Then link from `Brand` via `brando:hasProductCategory`.
+
+This enables **category-aware** prompts and RAG filters.
+
+---
+
+## 7. Introduce governance & automation
+
+As you mature:
+
+### 7.1 Governance detail
+
+Use policy-level properties:
+
+* `brando:enforcementLevel` – e.g. `"mandatory"`, `"advisory"`, `"conditional"`.
+* `brando:riskTag` – e.g. `"brand-safety"`, `"financial-regulation"`.
+* `brando:refusalStrategies`, `brando:riskScenarios` – for explainability and training.
+* `brando:reviewWorkflow`, `brando:updatePolicy` – for lifecycle management.
+* `brando:retrievableInLLM` – to control what enters high-trust RAG or prompt corpora.
+
+### 7.2 Automation rules
+
+Add `brando:AutomationRule` nodes to tie **metrics to behaviour**:
+
+* triggers (`brando:triggerType`),
+* metrics (`brando:monitoredMetric` JSON string),
+* sources (`brando:dataSource`),
+* actions (`brando:automationAction` JSON string).
+
+Your Brand OS can then:
+
+* detect rising unsafe output rates,
+* tighten enforcement levels or add extra checks,
+* notify governance teams automatically.
+
+---
+
+## 8. Common adoption patterns
+
+Typical sequence organisations follow:
+
+1. **Pilot (single brand, single use case)**
+
+    * Minimal Brand + Context + VerbalToken + Policy.
+    * YAML in Git; manual review; small-scale LLM integration.
+
+2. **Operational rollout for text**
+
+    * Multiple contexts per brand (support, marketing, sales).
+    * Richer policies and refusal patterns.
+    * Brand OS service/API introduced.
+
+3. **Portfolio & categories**
+
+    * Multiple `brando:Brand` nodes (house-of-brands, regional variants).
+    * `BrandedCategory` plus GS1/UNSPSC/Google alignment.
+
+4. **Multi-modal and automation**
+
+    * Visual and audio tokens.
+    * Automation rules driven by safety/quality metrics.
+    * Integration with observability and risk platforms.
+
+Brando vocab v1.3 is designed to support **each stage** without forcing you to adopt everything at once.
+
+---
+
+## 9. Where to look next
+
+* **Concepts & Types**
+
+    * [`brando:Brand`](types/brand.md)
+    * [`brando:Context`](types/context.md)
+    * [`brando:VerbalToken`](types/verbal-token.md)
+    * [`brando:Policy`](types/policy.md)
+
+* **Specification**
+
+    * [JSON-LD context](spec/jsonld-context.md)
+    * [YAML schema profile](spec/yaml-profile.md)
+    * [TypeScript types](spec/typescript-model.md)
+
+* **Architecture & Examples**
+
+    * [Brand Operating System architecture](architecture/brand-os.md)
+    * [Runtime Integration (LLMs, MCP, APIs)](architecture/runtime-integration.md)
+    * [Minimal brand graph](examples/minimal-brand.md)
+    * [Chatbot + Brando runtime flow](examples/chatbot-runtime.md)
 
 
-## Best Practices Checklist
-
- - Publish `ai-control-policy.json` to `.well-known/` on your domain  
- - Use official Brando term names (e.g. `brando:toneOfVoice`, not numeric codes)  
- - Separate tone (`brando:toneOfVoice`) from prompt scaffolding (`brando:promptScaffold`)  
- - Keep `brando:guardRails` current and risk-aware  
- - Align marketing and legal teams around `brando:guardRails` and `brando:requiresHumanEscalation`
-
-
-<!-- ## See Also
-
-- [Brando Vocabulary Reference](vocabulary.md)  
-- [AI Control Policy Guide](ai-control-policy.md)  
-- [Examples](examples.md)  
-- [Validator Tools](tools.md)  
-- [About Brando](about.md)
-
--->
