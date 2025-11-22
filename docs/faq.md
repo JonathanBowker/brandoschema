@@ -303,7 +303,7 @@ This allows you to:
 * keep **brand language** about categories,
 * while maintaining **machine alignment** with GS1 / UNSPSC / Google Product Taxonomy.
 
-See: [Classification alignment](classification-alignment.md) (if present in your nav) and the [`brando:BrandedCategory`](types/branded-category.md) reference.
+See: [`brando:BrandedCategory`](types/branded-category.md) reference.
 
 ---
 
