@@ -182,7 +182,6 @@ nav:
           - brando:reviewWorkflow: properties/reviewWorkflow.md
           - brando:riskScenarios: properties/riskScenarios.md
           - brando:riskTag: properties/riskTag.md
-          - brando:schedulingRule: properties/schedulingRule.md
           - brando:speechStyle: properties/speechStyle.md
           - brando:supportingFile: properties/supportingFile.md
           - brando:tagline: properties/tagline.md
