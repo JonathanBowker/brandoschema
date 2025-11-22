@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/vocab/"
+  },
+  "@type": "brando:VerbalIdentity",
+  "schema:name": "Icelandair Tone of Voice and Writing Standards",
+  "schema:description": "Guidelines describing Icelandair's conversational, clear, and adaptable brand tone and writing style across customer journeys.",
+  "brando:toneOfVoice": "Warm, empathetic, solution-oriented, conversational, reassuring, occasionally witty.",
+  "brando:dialogueStyle": "Human-first, authority with friendliness, adaptable to emotional context, adjusting tone to different stages of the customer journey.",
+  "brando:writingStyle": "Simple, clear, easy to read. Mix of short and long sentences. Active voice preferred. US spelling conventions unless local rules apply. Sentence case over title case (except for product names).",
+  "brando:namingConvention": "Refer to the company as 'we' instead of 'Icelandair' in messaging. Sign off communications as 'Best wishes, The Icelandair team'.",
+  "brando:personaCard": "Experienced, welcoming guide — an expert insider sharing Iceland's spirit. Professional but personable, emotionally intelligent, and respectful of cultural differences.",
+  "brando:approvedTerms": [
+    "spirit of Iceland",
+    "welcoming travelers",
+    "solution-oriented",
+    "community-driven"
+  ],
+  "brando:prohibitedTerms": [
+    "dark humor",
+    "corporate jargon in customer-facing copy",
+    "excessive formality (unless culturally appropriate)"
+  ],
+  "brando:keyMessage": "Icelandair brings the spirit of Iceland to the world through a pioneering, responsible, and customer-centric approach.",
+  "brando:taglines": [
+    "Bringing the spirit of Iceland to the world",
+    "Welcoming you with Icelandic warmth"
+  ],
+  "brando:promptScaffold": "Write as if you are an expert Icelandair team member. Be warm, clear, solution-oriented. Adjust tone depending on journey stage: playful for inspiration, matter-of-fact for booking, kind and helpful when solving problems. Always consider cultural nuances and clarity for non-native English speakers.",
+  "brando:mustDo": [
+    "Use sentence case except for product names.",
+    "Mix short and long sentences for natural flow.",
+    "Prioritise clarity for non-native English speakers.",
+    "Adapt tone based on emotional state of the customer (before booking, after booking, during disruptions).",
+    "Celebrate achievements internally with light-hearted tone.",
+    "Respect regional language and formality norms during translation."
+  ],
+  "brando:mustNotDo": [
+    "Do not use overly formal or robotic language unless required by local convention.",
+    "Avoid corporate cliches or excessive jargon externally.",
+    "Do not mock customers or use humour at others’ expense.",
+    "Avoid ambiguous or unnecessarily complex messaging in support contexts."
+  ]
+}

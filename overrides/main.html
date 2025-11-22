@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block htmltitle %}
+  <title>
+    {% if page and page.meta.title %}
+      {{ page.meta.title }}
+    {% else %}
+      {{ config.site_name }}
+    {% endif %}
+  </title>
+{% endblock %}
+
+{% block extrahead %}
+  {{ super() }}
+
+  <!-- Google Tag Manager -->
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+  j.src='https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXXX';
+  f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  {% if page %}
+    <meta name="description" content="{{ page.meta.description | default(config.site_description) }}">
+    <meta name="author" content="{{ page.meta.author | default(config.site_author) }}">
+    <meta name="keywords" content="{{ page.meta.keywords | join(', ') | default(config.extra.meta_defaults.keywords) }}">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="{{ page.meta.og_type | default('website') }}">
+    <meta property="og:title" content="{{ page.meta.og_title | default(page.meta.title) | default(config.extra.meta_defaults.og_title) }}">
+    <meta property="og:description" content="{{ page.meta.og_description | default(page.meta.description) | default(config.extra.meta_defaults.og_description) }}">
+    <meta property="og:url" content="{{ page.meta.og_url | default(page.canonical_url) | default(config.extra.meta_defaults.og_url) }}">
+    <meta property="og:image" content="{{ page.meta.og_image | default(config.extra.meta_defaults.og_image) }}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="{{ page.meta.twitter_card | default(config.extra.meta_defaults.twitter_card) }}">
+    <meta name="twitter:title" content="{{ page.meta.twitter_title | default(page.meta.title) | default(config.extra.meta_defaults.twitter_title) }}">
+    <meta name="twitter:description" content="{{ page.meta.twitter_description | default(page.meta.description) | default(config.extra.meta_defaults.twitter_description) }}">
+    <meta name="twitter:image" content="{{ page.meta.twitter_image | default(config.extra.meta_defaults.twitter_image) }}">
+  {% else %}
+    <meta name="description" content="{{ config.site_description }}">
+    <meta name="author" content="{{ config.site_author }}">
+  {% endif %}
+{% endblock %}

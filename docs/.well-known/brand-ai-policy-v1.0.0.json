@@ -1,0 +1,166 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/vocab/brando#"
+  },
+  "@type": "schema:Brand",
+  "schema:name": "Brando",
+  "schema:url": "https://brandoschema.com",
+  "schema:logo": "https://brandoschema.com/assets/logo.svg",
+  
+  "brando:hasVerbalIdentity": {
+    "@type": "brando:VerbalIdentity",
+    "brando:toneOfVoice": "Experienced, humble, plain British English, non-promotional",
+    "brando:dialogueStyle": "First-person, inclusive, emotionally intelligent, avoids second-person in longform",
+    "brando:writingStyle": "Short sentences, clear structure, avoids jargon, uses British spelling",
+    "brando:namingConvention": "Use 'AI assistant', not 'chatbot'; use DD-MM-YYYY; capitalise product names",
+    "brando:personaCard": "Confident mentor with precision, clarity, and compassion",
+    "brando:approvedTerms": [
+      "AI-native", "identity", "governance", "schema", "framework", "guidelines"
+    ],
+    "brando:prohibitedTerms": [
+      "amazing", "cheap", "mind-blowing", "wow", "ultimate"
+    ],
+    "brando:keyMessage": "Brando is the AI-native schema for brand governance, alignment, and representation",
+    "brando:taglines": [
+      "Wisdom to System",
+      "From Brand Guidelines to Machine Governance"
+    ],
+    "brando:promptScaffold": "Respond using plain British English. Apply brand tone. Avoid overstatement. Cite schema links if relevant.",
+    "brando:mustDo": [
+      "Always use first-person plural",
+      "Use structured bullet points when listing",
+      "Always refer to Brando as a registered schema framework"
+    ],
+    "brando:mustNotDo": [
+      "Never use hyperbole",
+      "Avoid second-person in structured responses",
+      "Do not make claims about the brand's popularity"
+    ]
+  },
+
+  "brando:hasVisualIdentity": {
+    "@type": "brando:VisualIdentity",
+    "brando:logo": {
+      "primary": "https://brandoschema.com/assets/logo.svg",
+      "responsive": "https://brandoschema.com/assets/logo-responsive.svg"
+    },
+    "brando:colourPalette": {
+      "primary": ["#450086", "#7200dc", "#8200fa"],
+      "accessibility": ["#000000", "#ffffff"]
+    },
+    "brando:typography": {
+      "fontFamily": "Inter",
+      "weights": ["Regular", "Bold"],
+      "sizeRules": "16px body, 32px headline"
+    },
+    "brando:iconography": "Minimal, geometric, monochrome",
+    "brando:imageryStyle": "Flat design, purple accents, no photographic backgrounds",
+    "brando:motionRule": "Soft fades, no spinning or bounce",
+    "brando:visualToken": {
+      "spacing": "8-16-24",
+      "borderRadius": "12px",
+      "shadow": "Subtle elevation only"
+    },
+    "brando:visualUsageGuideline": [
+      "Do not distort the logo",
+      "Avoid text over complex backgrounds",
+      "Always respect clear space rules"
+    ],
+    "brando:visualReferenceLink": [
+      "https://brandoschema.com/guidelines/visual"
+    ]
+  },
+
+  "brando:hasAudioIdentity": {
+    "@type": "brando:AudioIdentity",
+    "brando:audioLogo": "https://brandoschema.com/assets/audio/sonic-logo.mp3",
+    "brando:voiceSignature": {
+      "gender": "neutral",
+      "tone": "assured, informative, warm",
+      "accent": "British RP",
+      "pacing": "medium"
+    },
+    "brando:pronunciationGuide": [
+      {"term": "Brando", "phonetic": "bran-doh"},
+      {"term": "Schema", "phonetic": "skee-muh"}
+    ],
+    "brando:audioCue": [
+      "https://brandoschema.com/assets/audio/prompt-start.mp3",
+      "https://brandoschema.com/assets/audio/prompt-end.mp3"
+    ],
+    "brando:speechStyle": "Measured, clear pauses, no vocal fry or excitement peaks",
+    "brando:audioUsageGuideline": [
+      "Do not remix or alter the sonic logo",
+      "Only use voice synthesis with verified voice model",
+      "Avoid whimsical or overly emotional tone"
+    ],
+    "brando:audioReferenceLink": [
+      "https://brandoschema.com/guidelines/audio"
+    ]
+  },
+
+  "brando:hasPositioning": {
+    "@type": "brando:Positioning",
+    "brando:missionStatement": "To bring structure, safety, and consistency to how brands operate in AI environments",
+    "brando:visionStatement": "A world where every brand is safely represented in every system, by design",
+    "brando:coreValues": [
+      "Clarity", "Integrity", "Precision", "Open Standards"
+    ],
+    "brando:brandPromise": "We give brands control in the age of generative AI",
+    "brando:audiencePersona": [
+      "Brand Strategist", "AI Governance Lead", "Digital Transformation Director"
+    ],
+    "brando:marketPosition": "First AI-native brand control schema for LLMs, APIs, and plugins",
+    "brando:brandNarrative": "Born out of necessity, Brando is the schema to bridge human identity and machine logic",
+    "brando:competitorContext": "Unlike guidelines stored in PDFs, Brando is a machine-actionable governance layer"
+  },
+
+  "brando:hasGovernance": {
+    "@type": "brando:Governance",
+    "brando:guardRails": [
+      "Do not allow brand to be used in political satire or parody",
+      "Avoid representation in open-ended speculative questions"
+    ],
+    "brando:refusalStrategies": [
+      "If the brand is used outside defined parameters, respond with default safe fallback message",
+      "Defer to human operator when edge cases or unknown contexts arise"
+    ],
+    "brando:complianceTags": ["ABPI", "OGL-UK", "EU AI Act"],
+    "brando:reviewWorkflow": "All schema changes require two-party review and versioning log",
+    "brando:updatePolicy": "Quarterly updates, with emergency patching for factual or legal accuracy",
+    "brando:visibilityScore": "very high",
+    "brando:retrievableInLLM": true,
+    "brando:embeddingQuality": "high",
+    "brando:riskScenarios": [
+      "used in satire",
+      "referenced in political commentary",
+      "triggered via ambiguous brand-related prompt"
+    ]
+  },
+
+  "brando:hasAssets": {
+    "@type": "brando:Assets",
+    "brando:logoAsset": [
+      "https://brandoschema.com/assets/logo.svg",
+      "https://brandoschema.com/assets/logo-mono.svg"
+    ],
+    "brando:fontAsset": [
+      "https://brandoschema.com/assets/fonts/Lazzer-Medium.woff2"
+    ],
+    "brando:imageLibrary": "https://brandoschema.com/assets/images/",
+    "brando:videoAsset": [
+      "https://brandoschema.com/assets/overview-video.mp4"
+    ],
+    "brando:designSystemLink": "https://www.figma.com/file/brando-design-kit",
+    "brando:templateLibrary": "https://notion.so/brando-template-library",
+    "brando:guidelinesPDF": "https://brandoschema.com/files/brand-guidelines.pdf",
+    "brando:assetRepository": "https://brandoschema.com/assets/",
+    "brando:personaAsset": "https://brandoschema.com/personas.json",
+    "brando:accessPolicy": "Assets are available under a Commercial License",
+    "brando:qaAsset": "https://brandoschema.com/qaAsset",
+    "brando:productAsset": "https://brandoschema.com/products.json",
+    "brando:serviceAsset": "https://brandoschema.com/services.json",
+    "brando:featuresAsset": "https://brandoschema.com/features.json"
+  }
+}
