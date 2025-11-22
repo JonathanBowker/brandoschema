@@ -3914,18 +3914,22 @@ The TypeScript types in this page are <strong>non-normative</strong>. They are a
 <h2 id="1-modelling-strategies">1. Modelling strategies</h2>
 <p>There are two main ways to represent Brando JSON-LD in TypeScript:</p>
 <ol>
-<li><strong>Raw JSON-LD types</strong>  </li>
+<li>
+<p><strong>Raw JSON-LD types</strong>  </p>
+<ul>
 <li>Keys like <code>"@id"</code> and <code>"brando:missionStatement"</code> appear literally.</li>
 <li>Directly matches the on-the-wire JSON-LD structure.</li>
-<li>
-<p>Best for generic tooling, loaders, and validators.</p>
+<li>Best for generic tooling, loaders, and validators.</li>
+</ul>
 </li>
 <li>
 <p><strong>Domain model types</strong>  </p>
-</li>
+<ul>
 <li>Map JSON-LD keys to more idiomatic field names (e.g. <code>id</code>, <code>type</code>, <code>missionStatement</code>).</li>
 <li>Convert IRI-like keys (<code>"brando:toneOfVoice"</code>) into camelCase properties.</li>
 <li>Best for application logic and runtime code.</li>
+</ul>
+</li>
 </ol>
 <p>You can use both:</p>
 <ul>
