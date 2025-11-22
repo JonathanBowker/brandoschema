@@ -4033,8 +4033,10 @@ For most Brando deployments (Brand OS + LLMs + APIs), use the <strong>slim insta
 <li><code>brando:Brand</code></li>
 <li><code>brando:Context</code></li>
 <li>token, policy, category, campaign, automation rule.</li>
-<li>Keep them stable across deployments and environments where possible.</li>
 </ul>
+</li>
+<li>
+<p>Keep them stable across deployments and environments where possible.</p>
 </li>
 <li>
 <p><strong>Use <code>@graph</code> for multi-node documents</strong></p>
@@ -4048,12 +4050,12 @@ For most Brando deployments (Brand OS + LLMs + APIs), use the <strong>slim insta
 </li>
 <li>
 <p><strong>Use the same prefixes consistently</strong></p>
-</li>
-<li>
-<p>Always map <code>schema</code> to <code>https://schema.org/</code>.</p>
-</li>
+<ul>
+<li>Always map <code>schema</code> to <code>https://schema.org/</code>.</li>
 <li>Always map <code>brando</code> to <code>https://brandoschema.com/</code>.</li>
 <li>If you need GS1, always map <code>gs1</code> to <code>https://ref.gs1.org/voc/</code>.</li>
+</ul>
+</li>
 </ol>
 <p>Example multi-node document:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
