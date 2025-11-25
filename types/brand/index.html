@@ -698,6 +698,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#example-yaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example (YAML)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     <span class="md-ellipsis">
       See also
@@ -3787,6 +3796,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#example-yaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example (YAML)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     <span class="md-ellipsis">
       See also
@@ -3969,68 +3987,64 @@
 <span class="w">    </span><span class="p">]</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
-<span class="err">````</span>
+</code></pre></div>
+<hr />
+<h2 id="example-yaml">Example (YAML)</h2>
+<div class="highlight"><pre><span></span><code><span class="nt">@context</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://schema.org/</span>
+<span class="w">  </span><span class="nt">brando</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://brandoschema.com/</span>
 
-<span class="mi">---</span>
+<span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/northstar</span>
+<span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:Brand</span>
 
-<span class="err">##</span><span class="w"> </span><span class="err">Example</span><span class="w"> </span><span class="err">(YAML)</span>
+<span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Northstar</span>
+<span class="nt">brando:missionStatement</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Financial clarity with absolute trust.</span>
+<span class="nt">brando:coreValues</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Clarity over complexity</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Do the right thing</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Long-term alignment with customers</span>
 
-<span class="err">```yaml</span>
-<span class="err">@co</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span><span class="p">:</span>
-<span class="w">  </span><span class="err">schema</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//schema.org/</span>
-<span class="w">  </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//brandoschema.com/</span>
+<span class="nt">brando:usesVerbalToken</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/northstar/tokens/verbal/default</span>
+<span class="w">  </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:VerbalToken</span>
+<span class="w">  </span><span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Northstar – default voice</span>
 
-<span class="err">@id</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//example.com/brand/northstar</span>
-<span class="err">@</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span><span class="w"> </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Bra</span><span class="kc">n</span><span class="err">d</span>
+<span class="nt">brando:usesVisualToken</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/northstar/tokens/visual/default</span>
+<span class="w">  </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:VisualToken</span>
+<span class="w">  </span><span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Northstar – core visual system</span>
 
-<span class="err">schema</span><span class="p">:</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">Nor</span><span class="kc">t</span><span class="err">hs</span><span class="kc">tar</span>
-<span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">missio</span><span class="kc">n</span><span class="err">S</span><span class="kc">tate</span><span class="err">me</span><span class="kc">nt</span><span class="p">:</span><span class="w"> </span><span class="err">Fi</span><span class="kc">nan</span><span class="err">cial</span><span class="w"> </span><span class="err">clari</span><span class="kc">t</span><span class="err">y</span><span class="w"> </span><span class="err">wi</span><span class="kc">t</span><span class="err">h</span><span class="w"> </span><span class="err">absolu</span><span class="kc">te</span><span class="w"> </span><span class="kc">trust</span><span class="err">.</span>
-<span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">coreValues</span><span class="p">:</span>
-<span class="w">  </span><span class="mi">-</span><span class="w"> </span><span class="err">Clari</span><span class="kc">t</span><span class="err">y</span><span class="w"> </span><span class="err">over</span><span class="w"> </span><span class="err">complexi</span><span class="kc">t</span><span class="err">y</span>
-<span class="w">  </span><span class="mi">-</span><span class="w"> </span><span class="err">Do</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">righ</span><span class="kc">t</span><span class="w"> </span><span class="kc">t</span><span class="err">hi</span><span class="kc">n</span><span class="err">g</span>
-<span class="w">  </span><span class="mi">-</span><span class="w"> </span><span class="err">Lo</span><span class="kc">n</span><span class="err">g</span><span class="mi">-</span><span class="kc">ter</span><span class="err">m</span><span class="w"> </span><span class="err">alig</span><span class="kc">n</span><span class="err">me</span><span class="kc">nt</span><span class="w"> </span><span class="err">wi</span><span class="kc">t</span><span class="err">h</span><span class="w"> </span><span class="err">cus</span><span class="kc">t</span><span class="err">omers</span>
+<span class="nt">brando:hasContext</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/northstar/context/retail-chatbot</span>
+<span class="w">    </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:Context</span>
+<span class="w">    </span><span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Retail banking chatbot – UK</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/northstar/context/web-product-pages</span>
+<span class="w">    </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:Context</span>
+<span class="w">    </span><span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Public product detail pages</span>
 
-<span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">usesVerbalToke</span><span class="kc">n</span><span class="p">:</span>
-<span class="w">  </span><span class="err">@id</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//example.com/brand/northstar/tokens/verbal/default</span>
-<span class="w">  </span><span class="err">@</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span><span class="w"> </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">VerbalToke</span><span class="kc">n</span>
-<span class="w">  </span><span class="err">schema</span><span class="p">:</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">Nor</span><span class="kc">t</span><span class="err">hs</span><span class="kc">tar</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="err">de</span><span class="kc">fault</span><span class="w"> </span><span class="err">voice</span>
+<span class="nt">brando:hasProductCategory</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/northstar/category/current-accounts</span>
+<span class="w">  </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:BrandedCategory</span>
+<span class="w">  </span><span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Current Accounts</span>
 
-<span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">usesVisualToke</span><span class="kc">n</span><span class="p">:</span>
-<span class="w">  </span><span class="err">@id</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//example.com/brand/northstar/tokens/visual/default</span>
-<span class="w">  </span><span class="err">@</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span><span class="w"> </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">VisualToke</span><span class="kc">n</span>
-<span class="w">  </span><span class="err">schema</span><span class="p">:</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">Nor</span><span class="kc">t</span><span class="err">hs</span><span class="kc">tar</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="err">core</span><span class="w"> </span><span class="err">visual</span><span class="w"> </span><span class="err">sys</span><span class="kc">te</span><span class="err">m</span>
+<span class="nt">brando:hasProductItem</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/product-item/northstar/current-account/standard</span>
+<span class="w">    </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:ProductItem</span>
+<span class="w">    </span><span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Northstar Standard Current Account</span>
+<span class="w">    </span><span class="nt">schema:sku</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NS-CA-STD-001</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/product-item/northstar/current-account/premium</span>
+<span class="w">    </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:ProductItem</span>
+<span class="w">    </span><span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Northstar Premium Current Account</span>
+<span class="w">    </span><span class="nt">schema:sku</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NS-CA-PRM-001</span>
 
-<span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">hasCo</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span><span class="p">:</span>
-<span class="w">  </span><span class="mi">-</span><span class="w"> </span><span class="err">@id</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//example.com/brand/northstar/context/retail-chatbot</span>
-<span class="w">    </span><span class="err">@</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span><span class="w"> </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Co</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span>
-<span class="w">    </span><span class="err">schema</span><span class="p">:</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">Re</span><span class="kc">ta</span><span class="err">il</span><span class="w"> </span><span class="err">ba</span><span class="kc">n</span><span class="err">ki</span><span class="kc">n</span><span class="err">g</span><span class="w"> </span><span class="err">cha</span><span class="kc">t</span><span class="err">bo</span><span class="kc">t</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="err">UK</span>
-<span class="w">  </span><span class="mi">-</span><span class="w"> </span><span class="err">@id</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//example.com/brand/northstar/context/web-product-pages</span>
-<span class="w">    </span><span class="err">@</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span><span class="w"> </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Co</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span>
-<span class="w">    </span><span class="err">schema</span><span class="p">:</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">Public</span><span class="w"> </span><span class="err">produc</span><span class="kc">t</span><span class="w"> </span><span class="err">de</span><span class="kc">ta</span><span class="err">il</span><span class="w"> </span><span class="err">pages</span>
-
-<span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">hasProduc</span><span class="kc">t</span><span class="err">Ca</span><span class="kc">te</span><span class="err">gory</span><span class="p">:</span>
-<span class="w">  </span><span class="err">@id</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//example.com/brand/northstar/category/current-accounts</span>
-<span class="w">  </span><span class="err">@</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span><span class="w"> </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Bra</span><span class="kc">n</span><span class="err">dedCa</span><span class="kc">te</span><span class="err">gory</span>
-<span class="w">  </span><span class="err">schema</span><span class="p">:</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">Curre</span><span class="kc">nt</span><span class="w"> </span><span class="err">Accou</span><span class="kc">nts</span>
-
-<span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">hasProduc</span><span class="kc">t</span><span class="err">I</span><span class="kc">te</span><span class="err">m</span><span class="p">:</span>
-<span class="w">  </span><span class="mi">-</span><span class="w"> </span><span class="err">@id</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//example.com/product-item/northstar/current-account/standard</span>
-<span class="w">    </span><span class="err">@</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span><span class="w"> </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Produc</span><span class="kc">t</span><span class="err">I</span><span class="kc">te</span><span class="err">m</span>
-<span class="w">    </span><span class="err">schema</span><span class="p">:</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">Nor</span><span class="kc">t</span><span class="err">hs</span><span class="kc">tar</span><span class="w"> </span><span class="err">S</span><span class="kc">tan</span><span class="err">dard</span><span class="w"> </span><span class="err">Curre</span><span class="kc">nt</span><span class="w"> </span><span class="err">Accou</span><span class="kc">nt</span>
-<span class="w">    </span><span class="err">schema</span><span class="p">:</span><span class="err">sku</span><span class="p">:</span><span class="w"> </span><span class="err">NS</span><span class="mi">-</span><span class="err">CA</span><span class="mi">-</span><span class="err">STD</span><span class="mi">-001</span>
-<span class="w">  </span><span class="mi">-</span><span class="w"> </span><span class="err">@id</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//example.com/product-item/northstar/current-account/premium</span>
-<span class="w">    </span><span class="err">@</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span><span class="w"> </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Produc</span><span class="kc">t</span><span class="err">I</span><span class="kc">te</span><span class="err">m</span>
-<span class="w">    </span><span class="err">schema</span><span class="p">:</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">Nor</span><span class="kc">t</span><span class="err">hs</span><span class="kc">tar</span><span class="w"> </span><span class="err">Premium</span><span class="w"> </span><span class="err">Curre</span><span class="kc">nt</span><span class="w"> </span><span class="err">Accou</span><span class="kc">nt</span>
-<span class="w">    </span><span class="err">schema</span><span class="p">:</span><span class="err">sku</span><span class="p">:</span><span class="w"> </span><span class="err">NS</span><span class="mi">-</span><span class="err">CA</span><span class="mi">-</span><span class="err">PRM</span><span class="mi">-001</span>
-
-<span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">hasPolicy</span><span class="p">:</span>
-<span class="w">  </span><span class="err">@id</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//example.com/brand/northstar/policies/regulated-claims</span>
-<span class="w">  </span><span class="err">@</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span><span class="w"> </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Policy</span>
-<span class="w">  </span><span class="err">schema</span><span class="p">:</span><span class="kc">na</span><span class="err">me</span><span class="p">:</span><span class="w"> </span><span class="err">Regula</span><span class="kc">te</span><span class="err">d</span><span class="w"> </span><span class="kc">f</span><span class="err">i</span><span class="kc">nan</span><span class="err">cial</span><span class="w"> </span><span class="err">claims</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="err">global</span>
-<span class="w">  </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">e</span><span class="kc">nf</span><span class="err">orceme</span><span class="kc">nt</span><span class="err">Level</span><span class="p">:</span><span class="w"> </span><span class="err">ma</span><span class="kc">n</span><span class="err">da</span><span class="kc">t</span><span class="err">ory</span>
-<span class="w">  </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">riskTag</span><span class="p">:</span>
-<span class="w">    </span><span class="mi">-</span><span class="w"> </span><span class="kc">f</span><span class="err">i</span><span class="kc">nan</span><span class="err">cial</span><span class="mi">-</span><span class="err">regula</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span>
-<span class="w">    </span><span class="mi">-</span><span class="w"> </span><span class="err">co</span><span class="kc">nsu</span><span class="err">mer</span><span class="mi">-</span><span class="err">pro</span><span class="kc">te</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span>
+<span class="nt">brando:hasPolicy</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/northstar/policies/regulated-claims</span>
+<span class="w">  </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:Policy</span>
+<span class="w">  </span><span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Regulated financial claims – global</span>
+<span class="w">  </span><span class="nt">brando:enforcementLevel</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mandatory</span>
+<span class="w">  </span><span class="nt">brando:riskTag</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">financial-regulation</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">consumer-protection</span>
 </code></pre></div>
 <hr />
 <h2 id="see-also">See also</h2>
