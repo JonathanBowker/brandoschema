@@ -1,0 +1,282 @@
+{
+  "@context": {
+    "brando": "https://brandoschema.com/",
+    "schema": "https://schema.org/",
+    "gs1": "https://ref.gs1.org/voc/"
+  },
+  "@graph": [
+    {
+      "@id": "brando:brand/icelandair",
+      "@type": "brando:Brand",
+      "schema:name": "Icelandair",
+      "schema:url": "https://www.icelandair.com/",
+      "schema:description": "Flag carrier airline of Iceland connecting North America and Europe via Keflavík, bringing the spirit of Iceland to the world.",
+      "schema:foundingDate": "1937-06-03",
+      "brando:missionStatement": "Pioneering at heart, our mission is to bring the spirit of Iceland to the world and make air travel to, from, via and within Iceland simple, welcoming and responsible.",
+      "brando:visionStatement": "To be the preferred way to experience Iceland and the North Atlantic, combining reliability, warmth and the unique Icelandic spirit across every journey.",
+      "brando:coreValues": "Pioneering spirit, passion, responsibility, simplicity.",
+      "brando:brandPromise": "We bring the spirit of Iceland to the world with warm, human service and dependable travel across the North Atlantic.",
+      "brando:marketPosition": "Flag carrier of Iceland and North Atlantic connector offering one-stop transatlantic flights and Iceland stopovers.",
+      "brando:brandNarrative": "Icelandair traces its roots back to 1937, when Flugfélag Akureyrar was founded in northern Iceland. Over more than eight decades it has grown into Iceland's flag carrier and a North Atlantic connector, using Iceland's geography and spirit to bridge continents via Keflavík while inviting travellers to experience the country itself.",
+      "brando:competitorContext": "Competes with other transatlantic and Nordic carriers offering routes between Europe, Iceland and North America. Differentiates through the Icelandic stopover concept, Iceland-focused experiences, nature-inspired visual identity and a warm, human tone of voice that reflects Icelandic culture.",
+      "brando:brandArchitectureRole": "master brand for passenger air travel under Icelandair Group.",
+      "brando:governanceModel": "Centralised brand governance operated by Icelandair brand and marketing teams, with clear guidelines for internal teams and agency partners.",
+      "brando:usesVerbalToken": {
+        "@id": "brando:verbal/icelandair/core"
+      },
+      "brando:usesVisualToken": {
+        "@id": "brando:visual/icelandair/core"
+      },
+      "brando:usesAudioToken": {
+        "@id": "brando:audio/icelandair/core"
+      },
+      "brando:hasContext": [
+        { "@id": "brando:context/icelandair/global-consumer" },
+        { "@id": "brando:context/icelandair/internal" }
+      ],
+      "brando:hasPolicy": [
+        { "@id": "brando:policy/icelandair/tone-and-style" },
+        { "@id": "brando:policy/icelandair/visual-consistency" },
+        { "@id": "brando:policy/icelandair/localisation" }
+      ],
+      "brando:hasProductCategory": {
+        "@id": "brando:category/icelandair/air-travel"
+      },
+      "brando:hasAutomationRule": {
+        "@id": "brando:automation/icelandair/special-offer-tone"
+      },
+      "brando:downloadableFile": {
+        "@id": "brando:media/icelandair/brand-guidelines"
+      },
+      "brando:externalSystem": {
+        "@id": "brando:software/brandpad"
+      },
+      "brando:externalSystemId": "brandpad:icelandair",
+      "schema:citation": ""
+    },
+    {
+      "@id": "brando:context/icelandair/global-consumer",
+      "@type": "brando:Context",
+      "schema:name": "Icelandair global consumer travel communications",
+      "brando:audienceSegment": "Leisure and business travellers considering or booking flights to, from, via and within Iceland.",
+      "brando:audiencePersona": "International traveller who values reliable North Atlantic connections, a warm human tone and the chance to experience Iceland along the way.",
+      "brando:domainContext": {
+        "audience": "Global leisure and business travellers to, from, via and within Iceland",
+        "channels": "website, booking flow, mobile app, email, SMS, social, digital video, online display, OOH, print",
+        "regions": "global",
+        "primaryHub": "Keflavík International Airport",
+        "languages": "en, is, de, fr, fi, da, sv, no",
+        "funnelStages": "awareness, consideration, purchase, pre-trip, in-trip, post-trip",
+        "regulatory": "aviation-safety, GDPR"
+      },
+      "brando:usesVerbalToken": { "@id": "brando:verbal/icelandair/core" },
+      "brando:usesVisualToken": { "@id": "brando:visual/icelandair/core" },
+      "brando:usesAudioToken": { "@id": "brando:audio/icelandair/core" },
+      "brando:hasPolicy": [
+        { "@id": "brando:policy/icelandair/tone-and-style" },
+        { "@id": "brando:policy/icelandair/visual-consistency" },
+        { "@id": "brando:policy/icelandair/localisation" }
+      ]
+    },
+    {
+      "@id": "brando:context/icelandair/internal",
+      "@type": "brando:Context",
+      "schema:name": "Icelandair internal communications",
+      "brando:audienceSegment": "Icelandair employees and internal stakeholders.",
+      "brando:audiencePersona": "Colleagues working across operations, cabin crew, ground staff and corporate teams.",
+      "brando:domainContext": {
+        "audience": "Internal employees and partners",
+        "channels": "intranet, internal email, presentations, town halls, internal documents",
+        "regions": "Iceland and global network",
+        "languages": "is, en",
+        "notes": "Internal communications can be more celebratory and light-hearted while still following the core brand tone of voice and visual standards."
+      },
+      "brando:usesVerbalToken": { "@id": "brando:verbal/icelandair/core" },
+      "brando:usesVisualToken": { "@id": "brando:visual/icelandair/core" }
+    },
+    {
+      "@id": "brando:verbal/icelandair/core",
+      "@type": "brando:VerbalToken",
+      "schema:name": "Icelandair core tone of voice",
+      "brando:toneOfVoice": "Warm, empathetic, conversational and human. Interesting, trustworthy and reassuring, with wit and light-heartedness when appropriate. Can-do and solution-oriented, never robotic or condescending.",
+      "brando:dialogueStyle": "Write as if speaking to another human. Use \"we\" for Icelandair and \"you\" for the customer. Adjust tone by journey phase: inspiring and playful before booking; clear and matter-of-fact in purchase flows; informative and excited pre-flight; calm, humble and kind in support or disruption situations.",
+      "brando:writingStyle": "Simple, clear and concise. Use active voice by default, with contractions like \"we're\" and \"you'll\". Mix short and long sentences for natural rhythm. Use US spelling as the default while following local conventions for markets such as the UK, Ireland, France and Germany. Structure copy with short paragraphs, subheadings and bullet points for scan-friendly layouts.",
+      "brando:namingConvention": "Refer to the airline as \"we\" in running copy and sign off as \"Best wishes, The Icelandair team\". Use official product names in Title Case where required, while keeping general headings and body copy in sentence case.",
+      "brando:personaCard": "Imagine a knowledgeable Icelandic host who is practical and calm, yet curious and upbeat. They are an expert insider on travel to, from, via and within Iceland, keen to help you have a great experience and genuinely interested in your feedback.",
+      "brando:approvedTerms": "spirit of Iceland; North Atlantic; warm and welcoming; simple and clear; expert insider; can-do; responsibility; sustainability; inclusive Icelandic mindset.",
+      "brando:prohibitedTerms": "dark humour; jokes at the expense of customers, communities or cultures; exaggerated claims such as \"the best in the world\" without proof; exclusionary phrases like \"we're Icelandic and proud of it\" that centre nationality rather than inclusive Icelandic spirit.",
+      "brando:keyMessages": "We bring the spirit of Iceland to the world. We make travel to, from, via and within Iceland simple and reassuring. We care for travellers of all ages and aim to make every journey comfortable, safe and memorable. Our brand is rooted in Icelandic nature, culture and inclusive values.",
+      "brando:tagline": "Bring the spirit of Iceland to the world.",
+      "brando:promptScaffold": "As Icelandair, speak in a warm, conversational and human tone. Be clear, concise and solution-oriented. Adjust your tone to the customer journey (inspire before booking, be precise and straightforward in purchase flows, be informative and reassuring around travel updates, and be humble, empathetic and constructive when delivering bad news). Write in US English by default, adapting spelling and formality for the local market.",
+      "brando:mustDos": "Always prioritise clarity for non-native English speakers. State concrete actions behind claims (for example what we do for sustainability or families). Make next steps and calls-to-action explicit. Consider where the reader is in their journey and match tone to their likely emotional state.",
+      "brando:mustNotDos": "Do not be overly formal, robotic or corporate. Do not use in-jokes, opaque wordplay or culturally narrow references that travellers may not understand. Do not downplay disruptions or avoid acknowledging mistakes. Never use humour to make fun of travellers, coworkers or partner brands.",
+      "brando:assetURL": "urn:placeholder:brand/icelandair/verbal-core",
+      "brando:assetPreview": "urn:placeholder:brand/icelandair/verbal-core/preview",
+      "brando:downloadableFile": {
+        "@id": "brando:media/icelandair/brand-guidelines"
+      }
+    },
+    {
+      "@id": "brando:visual/icelandair/core",
+      "@type": "brando:VisualToken",
+      "brando:brandName": "Icelandair",
+      "schema:name": "Icelandair core visual identity",
+      "brando:logo": "urn:placeholder:brand/icelandair/logo-primary",
+      "brando:visualReferenceLink": "https://brandpad.io/icelandair/",
+      "brando:colourPalette": "Primary colors: Midnight Blue (#001b71, RGB 0, 27, 113) as the signature brand color, Snow White (#fbfbfb, RGB 251, 251, 251) and Basalt Grey (#303030, RGB 48, 48, 48). Secondary colors: Fiery Magenta (#FF47B3), Crisp Blue (#54C0E8), Boreal Blue (#91F5E1), Volcanic Green (#50E68C), Golden Yellow (#FFDA00), Arctic Lilac (#BE00FF). Always lead with Midnight Blue and use secondary colors as accents only. Never combine Arctic Lilac on Midnight Blue, or Midnight Blue on Arctic Lilac.",
+      "brando:typography": "Primary typeface: Icelandair Loft (custom sans-serif inspired by Icelandic nature) for all digital and print applications. Alternative typeface: Arial only for documents in environments that cannot use Icelandair Loft (e.g. Google Docs, MS Office tools); never use Arial in professionally designed materials. Use the specified weights and hierarchy for headings, subheads, body copy, pricing and bilingual layouts.",
+      "brando:visualToken": "Brand stripes derived from cabin and flight crew uniforms act as a fifth element used for headlines and calls-to-action. Typically use two stripes for text, with three for longer copy. Stripes tags use Fiery Magenta for Icelandair, Crisp Blue for Icelandair Cargo and Volcanic Green for Icelandair VITA. Digital and print grid systems define light and regular contours, with a safe-space area dedicated to imagery.",
+      "brando:imageryStyles": "Imagery features happy travellers and staff at the airport, in service settings and in Saga Lounge, emphasising comfort, warmth and calm before flights. Destination and nature photography reflects Icelandic landscapes, light and colours inspired by the aurora, sea, glaciers and volcanic terrain. Shots should feel genuine, inclusive and contemporary, never staged or overly corporate.",
+      "brando:motionRules": "In video, keep logo size modest and consistent on end slates, place watermarks in the upper right, and use Icelandair Loft for titles, lower thirds and subtitles with strong contrast and subtle drop shadows. Motion should be smooth and confident rather than flashy, supporting legibility of type and the feeling of calm, reliable travel.",
+      "brando:visualUsageGuidelines": "Always use the full logo (monogram plus wordmark) as the first choice for representing the brand. The Midnight Blue logo is primary; Snow White on Midnight Blue is secondary, with black as a fallback when required for contrast. Do not alter, redraw, stretch, recolor or add to the logo or monogram. Use the monogram alone only in approved contexts such as livery and certain social avatars with marketing team approval. Respect logo exclusion zones, minimum sizes and placement rules (top-right or centred end slates). Apply the colour palette and stripes layouts as documented, never placing stripes inside protected imagery safe space and never using the secondary palette for stripes.",
+      "brando:assetURL": "urn:placeholder:brand/icelandair/visual-core",
+      "brando:assetPreview": "urn:placeholder:brand/icelandair/visual-core/preview",
+      "brando:downloadableFile": [
+        { "@id": "brando:media/icelandair/logo-primary" },
+        { "@id": "brando:media/icelandair/brand-guidelines" }
+      ]
+    },
+    {
+      "@id": "brando:audio/icelandair/core",
+      "@type": "brando:AudioToken",
+      "schema:name": "Icelandair core audio and voice",
+      "brando:audioLogo": "urn:placeholder:brand/icelandair/audio-logo",
+      "brando:voiceSignature": "Warm, clear and confident voice with a subtle Icelandic flavour when appropriate. Pace is measured and calm, with slight uplift and energy when inspiring travel, and a slower, softer delivery when explaining important information or disruptions.",
+      "brando:pronunciationGuide": "Icelandair: \"ICE-land-air\" (stress on the first syllable; \"ICE\" as in \"iceberg\").",
+      "brando:speechStyle": "Conversational and human, mirroring the written tone of voice. Use contractions and natural phrasing. Enunciate clearly for non-native speakers. Maintain friendly authority without sounding strict or overly formal.",
+      "brando:audioCue": "Use short, gentle and modern audio cues for confirmations and transitions in digital experiences and videos, avoiding harsh or overly playful sounds that could clash with the calm, dependable brand feeling.",
+      "brando:audioUsageGuidelines": "Use branded audio elements to support recognition at the beginning or end of videos, in key app or web flows and in physical environments where appropriate. Do not overuse sound or set volume levels that compete with speech or disturb travellers.",
+      "brando:audioReferenceLink": "urn:placeholder:brand/icelandair/audio-reference",
+      "brando:assetURL": "urn:placeholder:brand/icelandair/audio-core",
+      "brando:assetPreview": "urn:placeholder:brand/icelandair/audio-core/preview"
+    },
+    {
+      "@id": "brando:policy/icelandair/tone-and-style",
+      "@type": "brando:Policy",
+      "schema:name": "Icelandair tone of voice and writing policy",
+      "brando:guardRails": "Maintain a warm, human, conversational tone that is clear and concise. Avoid dark or offensive humour and never make fun of people. Do not use overly formal, corporate or robotic language. Always prioritise clarity for non-native speakers and avoid wordplay that is difficult to translate or understand.",
+      "brando:refusalStrategies": "If a request would require discriminatory, offensive, unsafe or excessively informal content that conflicts with Icelandair's tone, politely decline and explain that it is out of brand scope, then suggest an inclusive, helpful alternative formulation.",
+      "brando:riskScenarios": "Humour about safety or turbulence; jokes at the expense of passengers, cultures or nationalities; claims that overpromise outcomes or misrepresent operational information; communications during flight disruptions or service failures where tone must be especially humble, kind and solution-focused.",
+      "brando:complianceTags": "brand-safety, tone-of-voice",
+      "brando:reviewWorkflow": "Core templates and high-reach campaigns are reviewed by brand and marketing. Service-critical and disruption messaging is reviewed with operations and customer care. Sensitive topics or regulated claims are reviewed with legal and compliance as needed.",
+      "brando:updatePolicy": "Review at least annually or when brand positioning, regulatory requirements or major incidents change expectations of tone.",
+      "brando:priority": 90,
+      "brando:visibilityRating": "high",
+      "brando:retrievableInLLM": true,
+      "brando:embeddingQuality": "high",
+      "brando:appliesTo": {
+        "brandId": "brando:brand/icelandair",
+        "contexts": "brando:context/icelandair/global-consumer, brando:context/icelandair/internal",
+        "channels": "website, booking flow, mobile app, email, SMS, social, digital video, OOH, print, support",
+        "languages": "en, is, de, fr, fi, da, sv, no"
+      },
+      "brando:enforcementLevel": "mandatory",
+      "brando:riskTag": ["brand-safety", "tone", "platform-policy"]
+    },
+    {
+      "@id": "brando:policy/icelandair/visual-consistency",
+      "@type": "brando:Policy",
+      "schema:name": "Icelandair visual identity and asset usage policy",
+      "brando:guardRails": "Do not alter, redraw, stretch, recolor or add to the Icelandair logo, monogram or symbol. Use Midnight Blue as the primary brand colour, with Snow White and Basalt Grey as supporting colours. Use the secondary palette only as accents and never apply Arctic Lilac on Midnight Blue or Midnight Blue on Arctic Lilac. Respect logo exclusion zones, minimum sizes, stripe layouts, grid systems and imagery safe spaces.",
+      "brando:refusalStrategies": "If asked to create visual treatments that distort the logo, misuse colours or ignore grid and safe-space rules, refuse the request and propose on-brand alternatives that follow the documented standards.",
+      "brando:riskScenarios": "Co-branded layouts where partner logos compete with the Icelandair brand; social avatars or special occasion logos that tempt non-standard colour combinations; special offer layouts that overuse secondary colours; user-generated or agency work created without access to the Brandpad guidelines.",
+      "brando:complianceTags": "brand-safety, visual-identity",
+      "brando:reviewWorkflow": "New logo lockups, co-branded layouts and major visual system changes are reviewed by the central brand design team. High-visibility campaigns undergo creative review against the grid, stripes and colour rules.",
+      "brando:updatePolicy": "Update when visual identity elements, colour palette or grid systems are revised.",
+      "brando:priority": 85,
+      "brando:visibilityRating": "high",
+      "brando:retrievableInLLM": true,
+      "brando:embeddingQuality": "high",
+      "brando:appliesTo": {
+        "brandId": "brando:brand/icelandair",
+        "contexts": "brando:context/icelandair/global-consumer",
+        "channels": "digital video, online display, website, mobile app, OOH, print, social",
+        "assets": "logos, monograms, stripes, grid layouts, colour palette"
+      },
+      "brando:enforcementLevel": "mandatory",
+      "brando:riskTag": ["brand-safety", "visual-identity"]
+    },
+    {
+      "@id": "brando:policy/icelandair/localisation",
+      "@type": "brando:Policy",
+      "schema:name": "Icelandair localisation and language policy",
+      "brando:guardRails": "Translations should stay true to the original meaning but adapt to local language norms. Do not translate word-for-word in ways that feel robotic or unnatural. For languages such as French and German, use formal forms of address where culturally expected. Ensure clarity even if this means repeating or adding words.",
+      "brando:refusalStrategies": "If requested to use slang, idioms or informal address that would be inappropriate for a given language or market, explain the issue and provide a culturally suitable alternative that still feels friendly and conversational.",
+      "brando:riskScenarios": "Literal translations that lose warmth or clarity; inappropriate informality in markets that expect formal address; promises or claims that become stronger or misleading in translation; failure to provide dual units (metric and imperial) for temperature, distance and measurements in English copy.",
+      "brando:complianceTags": "localisation, language, customer-experience",
+      "brando:reviewWorkflow": "Key markets and languages are reviewed by native-speaking copywriters or localisation partners familiar with Icelandair's tone of voice. High-impact campaigns and safety-related messages receive additional review.",
+      "brando:updatePolicy": "Review when entering new markets, adding new languages or updating the global tone-of-voice guidelines.",
+      "brando:priority": 80,
+      "brando:visibilityRating": "medium",
+      "brando:retrievableInLLM": true,
+      "brando:embeddingQuality": "high",
+      "brando:appliesTo": {
+        "brandId": "brando:brand/icelandair",
+        "contexts": "brando:context/icelandair/global-consumer",
+        "languages": "all non-English markets and all localised variants of English",
+        "notes": "Includes guidance about dual units for distance, weight and temperature in English."
+      },
+      "brando:enforcementLevel": "mandatory",
+      "brando:riskTag": ["tone", "localisation"]
+    },
+    {
+      "@id": "brando:category/icelandair/air-travel",
+      "@type": "brando:BrandedCategory",
+      "brando:productCategoryName": "Passenger air travel and Iceland stopover experiences",
+      "brando:categoryDepartment": "Travel and transportation",
+      "brando:categoryClass": "Passenger air transportation",
+      "brando:categoryItemType": "Scheduled commercial flights, stopovers and related passenger travel services operated and marketed by Icelandair.",
+      "brando:categoryApprovedTerms": "flight; journey; connection; stopover; transatlantic; North Atlantic; Saga Lounge; Iceland experience; comfort; reliability.",
+      "brando:categoryProhibitedTerms": "budget airline; low-cost at any cost; unsafe; risky; wording that guarantees uncontrollable natural phenomena such as \"guaranteed Northern Lights\".",
+      "brando:unspscCode": "78111502"
+    },
+    {
+      "@id": "brando:automation/icelandair/special-offer-tone",
+      "@type": "brando:AutomationRule",
+      "schema:name": "Special offer layout tone automation",
+      "brando:triggerType": "template-or-metadata-flag",
+      "brando:monitoredMetric": {
+        "name": "special-offer-layout",
+        "type": "flag",
+        "condition": "template or CMS metadata field indicating a special offer layout is set to true"
+      },
+      "brando:dataSource": "urn:placeholder:brand/icelandair/cms-or-ad-server",
+      "brando:automationAction": {
+        "action": "adjust-tone",
+        "targetVerbalToken": "brando:verbal/icelandair/core",
+        "note": "Use a slightly more promotional tone for special offer layouts while remaining clear, honest and empathetic, and while fully disclosing key offer conditions."
+      },
+      "brando:appliesTo": {
+        "brandId": "brando:brand/icelandair",
+        "contexts": "brando:context/icelandair/global-consumer",
+        "channels": "website, booking flow, email, digital video, online display",
+        "layouts": "special-offers contour and related grid variants"
+      },
+      "brando:enforcementLevel": "conditional",
+      "brando:riskTag": ["tone", "offer-compliance"]
+    },
+    {
+      "@id": "brando:media/icelandair/brand-guidelines",
+      "@type": "schema:MediaObject",
+      "schema:name": "Icelandair brand identity standards (Brandpad)",
+      "schema:description": "Living Icelandair brand identity, tone of voice and visual standards hosted on Brandpad.",
+      "schema:contentUrl": "https://brandpad.io/icelandair/",
+      "schema:fileFormat": "text/html"
+    },
+    {
+      "@id": "brando:media/icelandair/logo-primary",
+      "@type": "schema:MediaObject",
+      "schema:name": "Icelandair primary logo artwork",
+      "schema:description": "Primary Midnight Blue Icelandair logo combining monogram and wordmark for use across digital and print.",
+      "schema:contentUrl": "urn:placeholder:brand/icelandair/logo-primary",
+      "schema:fileFormat": "image/svg+xml"
+    },
+    {
+      "@id": "brando:software/brandpad",
+      "@type": "schema:SoftwareApplication",
+      "schema:name": "Brandpad",
+      "schema:url": "https://brandpad.io/",
+      "schema:applicationCategory": "Brand management and guidelines platform"
+    }
+  ]
+}

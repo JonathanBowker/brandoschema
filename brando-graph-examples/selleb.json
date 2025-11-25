@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "brando": "https://brandoschema.com/",
+    "schema": "https://schema.org/",
+    "gs1": "https://ref.gs1.org/voc/"
+  },
+  "@graph": [
+    {
+      "@id": "brando:brand/selleb",
+      "@type": "brando:Brand",
+      "schema:name": "Selleb",
+      "brando:mission": "To turn cultural status into a game — drop. bid. win. own.",
+      "brando:vision": "A world where owning is being known, and culture is currency.",
+      "brando:values": [
+        "Magnetic authenticity",
+        "Cult-status culture",
+        "Bold. Unfiltered. Game-on."
+      ],
+      "brando:positioning": "The interactive world-building resale experience for the cultural early-adopter.",
+      "brando:narrative": "Selleb is not just a resale platform — it’s the yard where status is won. It’s the next level for those who don’t scroll past.",
+      "brando:governance": {
+        "governanceModel": "Brand team sets tone and assets, guidelines maintained by internal creative & legal review."
+      },
+      "brando:hasContext": ["brando:context/selleb/uk-digital"],
+      "brando:usesVerbalToken": ["brando:verbaltoken/selleb-tone"],
+      "brando:usesVisualToken": ["brando:visualtoken/selleb-wordmark"],
+      "brando:hasProductCategory": ["brando:category/selleb-resale-drops"]
+    },
+    {
+      "@id": "brando:context/selleb/uk-digital",
+      "@type": "brando:Context",
+      "brando:domainContext": "{\"channel\":\"digital\",\"region\":\"UK\",\"audience\":\"cultural early-adopter\",\"useCase\":\"resale-drops\"}",
+      "brando:effectiveDuring": "{\"start\":\"2025-01-01\",\"timezone\":\"Europe/London\"}"
+    },
+    {
+      "@id": "brando:verbaltoken/selleb-tone",
+      "@type": "brando:VerbalToken",
+      "schema:name": "Selleb Tone of Voice",
+      "brando:tokenStyle": {
+        "tone":"Chill, Magnetic, Punchy, Extra",
+        "mustDo":["Be concise and bold","Use colloquial authentic language","Keep a little mystery"],
+        "mustNotDo":["Write like Gen Z forced slang","Be bland or try-hard","Over-explain"]
+      },
+      "brando:keyMessages": [
+        "Win what you can't have.",
+        "Own the moment.",
+        "Drop. Bid. Win. Own."
+      ]
+    },
+    {
+      "@id": "brando:visualtoken/selleb-wordmark",
+      "@type": "brando:VisualToken",
+      "schema:name": "Selleb Wordmark & Identity",
+      "brando:logo": "urn:placeholder:brand/selleb/logo-primary",
+      "brando:visualReferenceLink": "https://brandpad.io/selleb/",
+      "brando:tokenStyle": {
+        "colours":["#000000","#FFFFFF","dynamic gradient"],
+        "typography":["Bull-5 Custom","Bull-5 Regular","Unica 77 LL Regular"],
+        "imageryStyle":"scrappy collage, abstract backgrounds, high contrast",
+        "mustDo":["Maintain clear space equal to distance between L and E in 'Selleb'","Use full wordmark where legibility is key"],
+        "mustNotDo":["Distort the wordmark","Apply outlines or effects","Break the wordmark apart"]
+      }
+    },
+    {
+      "@id": "brando:category/selleb-resale-drops",
+      "@type": "brando:BrandedCategory",
+      "schema:name": "Resale Drops",
+      "brando:externalCategoryMapping": {
+        "gs1:ProductCategoryCode":"ResaleFashion",
+        "schema:itemCategory":"ResaleDropExperience"
+      }
+    }
+  ]
+}

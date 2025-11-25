@@ -1,0 +1,2693 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "vann": "http://purl.org/vocab/vann/",
+    "voaf": "http://purl.org/vocommons/voaf#",
+    "cc": "http://creativecommons.org/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "gs1": "https://ref.gs1.org/voc/"
+  },
+  "@graph": [
+    {
+      "@id": "brando:",
+      "@type": [
+        "owl:Ontology",
+        "voaf:Vocabulary"
+      ],
+      "dcterms:title": {
+        "@language": "en",
+        "@value": "Brando Schema Vocabulary v1.3"
+      },
+      "schema:license": "data:text/html;charset=UTF-8,<p><strong>Brando Schema (Brando) Vocabulary – Licensing &amp; Warranty Notice</strong></p><p>Brando Schema is maintained by Advanced Analytica and is made available under the Apache License, Version 2.0 (the \"License\"). You may not use this file except in compliance with the License. You may obtain a copy of the License at <a href=\"http://www.apache.org/licenses/LICENSE-2.0\" target=\"_blank\">http://www.apache.org/licenses/LICENSE-2.0</a>.</p><p>Unless required by applicable law or agreed in writing, this vocabulary is distributed on an \"AS IS\" basis, without warranties or conditions of any kind, either express or implied. See the License for the specific language governing permissions and limitations.</p><p>Brando® is a trademark of Advanced Analytica. All other trademarks are the property of their respective owners.</p><p>&copy; 2025 Advanced Analytica. All rights reserved.</p>",
+      "dc:contributors": "Jonny Bowker; Advanced Analytica team",
+      "dc:creator": {
+        "@id": "https://brandoschema.com/"
+      },
+      "dcterms:description": {
+        "@language": "en",
+        "@value": "Core classes and properties for the Brand Oracle (Brando) schema and ontology, an open, vendor-neutral vocabulary for AI-native Structured Governance of brands, lifecycle metadata, and integration with external tools and platforms. Brando repurposes Schema.org–style JSON-LD from a descriptive SEO layer into a prescriptive control layer that defines how a brand behaves in generative and agentic AI, protecting its identity across contexts and verbal/visual/audio tokens via machine-readable policies. The vocabulary extends schema:Brand, aligns with the GS1 Web Vocabulary and other product classification standards (e.g. UNSPSC, Google Product Taxonomy), and is designed to be published as a Brand Knowledge Graph that interoperates with existing DAM/CMS ecosystems and constrains LLM, agent, and multimodal outputs to on-brand, compliant behaviour."
+      },
+      "dcterms:creator": {
+        "@language": "en",
+        "@value": "Jonny Bowker"
+      },
+      "dcterms:publisher": {
+        "@language": "en",
+        "@value": "Advanced Analytica"
+      },
+      "cc:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "vann:preferredNamespacePrefix": "brando",
+      "vann:preferredNamespaceUri": "https://brandoschema.com/",
+      "owl:versionInfo": "1.4",
+      "dcterms:created": "2025-11-22",
+      "dcterms:modified": "2025-11-22"
+    },
+    {
+      "@id": "brando:BrandExpressionToken",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Brand Expression Token"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Brand Expression Token"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Abstract superclass for reusable brand expression tokens across verbal, visual, and audio modalities."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      }
+    },
+    {
+      "@id": "brando:Brand",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Brand"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Brand"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Core brand identity node extended with governance, architecture, and AI-ready semantics."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:subClassOf": {
+        "@id": "schema:Brand"
+      },
+      "skos:relatedMatch": {
+        "@id": "gs1:Brand"
+      },
+      "rdfs:seeAlso": {
+        "@id": "gs1:Brand"
+      }
+    },
+    {
+      "@id": "brando:Context",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Context"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Context"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Activation context describing audience, channel, jurisdiction, and operational conditions for brand behaviour."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      }
+    },
+    {
+      "@id": "brando:VerbalToken",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Verbal Token"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Verbal Token"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Reusable configuration of the brand's voice, language, and behavioural prompt rules."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "brando:BrandExpressionToken"
+        },
+        {
+          "@id": "schema:Intangible"
+        }
+      ]
+    },
+    {
+      "@id": "brando:VisualToken",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Visual Token"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Visual Token"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Reusable configuration of the brand's visual system: logo, colour, typography, imagery, and motion."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "brando:BrandExpressionToken"
+        },
+        {
+          "@id": "schema:Intangible"
+        }
+      ]
+    },
+    {
+      "@id": "brando:AudioToken",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Audio Token"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Audio Token"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Reusable configuration of the brand's sonic identity across voice, sonic logos, and audio cues."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "brando:BrandExpressionToken"
+        },
+        {
+          "@id": "schema:Intangible"
+        }
+      ]
+    },
+    {
+      "@id": "brando:Policy",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Policy"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Policy"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Governance node encoding guard rails, refusals, compliance tags, and retrieval visibility."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      }
+    },
+    {
+      "@id": "brando:BrandedCategory",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Branded Category"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Branded Category"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Product or service category overlaid with brand-specific language, constraints, and hierarchy. May be aligned to GS1 Global Product Classification (GPC) and other standards such as UNSPSC and Google Product Taxonomy."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "rdfs:seeAlso": [
+        {
+          "@id": "gs1:Product"
+        },
+        {
+          "@id": "gs1:AdditionalProductClassificationDetails"
+        }
+      ]
+    },
+    {
+      "@id": "brando:Campaign",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Campaign"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Campaign"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Time-bound marketing or communications campaign that may temporarily adjust brand rules."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:subClassOf": {
+        "@id": "schema:Event"
+      }
+    },
+    {
+      "@id": "brando:AutomationRule",
+      "@type": "owl:Class",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Automation Rule"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Automation Rule"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Automated governance rule that reacts to monitored metrics or events to adjust brand behaviour."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      }
+    },
+    {
+      "@id": "brando:hasContext",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Has Context"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Has Context"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Links a brand to one or more activation contexts in which it operates."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "brando:Context"
+      }
+    },
+    {
+      "@id": "brando:usesVerbalToken",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Uses Verbal Token"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Uses Verbal Token"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Attaches a verbal expression token defining how the brand speaks in this scope."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:Brand"
+        },
+        {
+          "@id": "brando:Context"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "brando:VerbalToken"
+      }
+    },
+    {
+      "@id": "brando:usesVisualToken",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Uses Visual Token"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Uses Visual Token"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Attaches a visual expression token defining how the brand looks in this scope."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:Brand"
+        },
+        {
+          "@id": "brando:Context"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "brando:VisualToken"
+      }
+    },
+    {
+      "@id": "brando:usesAudioToken",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Uses Audio Token"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Uses Audio Token"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Attaches an audio expression token defining how the brand sounds in this scope."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:Brand"
+        },
+        {
+          "@id": "brando:Context"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "brando:AudioToken"
+      }
+    },
+    {
+      "@id": "brando:hasPolicy",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Has Policy"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Has Policy"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Attaches governance, safety, and compliance policies to a brand or context."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:Brand"
+        },
+        {
+          "@id": "brando:Context"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "brando:Policy"
+      }
+    },
+    {
+      "@id": "brando:hasProductCategory",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Has Product Category"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Has Product Category"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Links a brand to its branded product or service category taxonomy nodes."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "brando:BrandedCategory"
+      }
+    },
+    {
+      "@id": "brando:hasCampaign",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Has Campaign"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Has Campaign"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Links a brand to time-bound campaigns that may temporarily adjust rules and tokens."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "brando:Campaign"
+      }
+    },
+    {
+      "@id": "brando:hasAutomationRule",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Has Automation Rule"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Has Automation Rule"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Links a brand to automated governance rules and triggers."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "brando:AutomationRule"
+      }
+    },
+    {
+      "@id": "brando:missionStatement",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Mission Statement"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Mission Statement"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The brand's core purpose and day-to-day reason for existing."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:visionStatement",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Vision Statement"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Vision Statement"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The aspirational future state the brand is working toward."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:coreValues",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Core Values"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Core Values"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Foundational principles and beliefs that guide brand decisions and behaviours."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:brandPromise",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Brand Promise"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Brand Promise"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The core commitment or experience the brand guarantees to deliver."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:marketPosition",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Market Position"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Market Position"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "How the brand positions itself in its category relative to alternatives and peers."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:brandNarrative",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Brand Narrative"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Brand Narrative"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Longer-form narrative that explains the brand's origin, evolution, and purpose."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:competitorContext",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Competitor Context"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Competitor Context"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Summary of competitors, adjacent solutions, and how the brand differentiates."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:inheritsPolicies",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Inherits Policies"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Inherits Policies"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Indicates whether a sub-brand inherits governance policies from its parent brand."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "xsd:boolean"
+      }
+    },
+    {
+      "@id": "brando:inheritsTokens",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Inherits Tokens"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Inherits Tokens"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Structured definition of which expression tokens (verbal, visual, audio) are inherited and how."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:brandArchitectureRole",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Brand Architecture Role"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Brand Architecture Role"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The role this brand plays in the broader brand architecture (e.g. master brand, endorsed brand, sub-brand)."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:governanceModel",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Governance Model"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Governance Model"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Description of how the brand is governed (e.g. centralised, federated, hybrid) for decision-making and approvals."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Brand"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:audienceSegment",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Audience Segment"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Audience Segment"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Strategic grouping of individuals who share needs or characteristics relevant to this context."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Context"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:audiencePersona",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Audience Persona"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Audience Persona"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Persona-style archetypes representing typical users in this context."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Context"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:domainContext",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Domain Context"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Domain Context"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Operational, legal, channel, regional, and use-case conditions encoded as a structured JSON payload."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Context"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:effectiveDuring",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Effective During"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Effective During"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Time window or schedule when this context, campaign, or policy is active, expressed as a structured JSON value."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:Context"
+        },
+        {
+          "@id": "brando:Campaign"
+        },
+        {
+          "@id": "brando:Policy"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:appliesTo",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Applies To"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Applies To"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Optional scoping for which products, categories, personas, or channels this node applies to."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:Context"
+        },
+        {
+          "@id": "brando:Policy"
+        },
+        {
+          "@id": "brando:AutomationRule"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:toneOfVoice",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Tone of Voice"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Tone of Voice"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Emotional texture and attitude of the brand's voice in this token."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VerbalToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:dialogueStyle",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Dialogue Style"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Dialogue Style"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Guidance on conversational patterns, pacing, and pronoun usage."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VerbalToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:writingStyle",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Writing Style"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Writing Style"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Preferences for grammar, sentence structure, and clarity."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VerbalToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:namingConvention",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Naming Convention"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Naming Convention"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Rules for how products, features, dates, and other entities are named and formatted."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VerbalToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:personaCard",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Persona Card"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Persona Card"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Humanised brand-as-a-person description used to guide tone and behaviour."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VerbalToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:approvedTerms",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Approved Terms"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Approved Terms"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Words and phrases that are encouraged in this verbal token."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VerbalToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:prohibitedTerms",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Prohibited Terms"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Prohibited Terms"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Words and phrases that must not be used in this verbal token."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VerbalToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:keyMessages",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Key Messages"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Key Messages"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Core value propositions and ideas that should recur across outputs."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VerbalToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:tagline",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Tagline"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Tagline"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Primary tagline plus any sanctioned variants for this verbal token."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VerbalToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:promptScaffold",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Prompt Scaffold"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Prompt Scaffold"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Reusable instruction block or template for priming language models."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VerbalToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:mustDos",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Must-dos"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Must-dos"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Required behaviours and inclusions this verbal token must follow."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VerbalToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:mustNotDos",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Must-not-dos"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Must-not-dos"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Behaviours and constructions this verbal token must never produce."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VerbalToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:assetURL",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Asset URL"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Asset URL"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Canonical source URL for an asset associated with this expression token (e.g. avatar, badge, waveform)."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:BrandExpressionToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:anyURI"
+      }
+    },
+    {
+      "@id": "brando:assetPreview",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Asset Preview"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Asset Preview"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Preview-friendly URL or data reference for displaying this token's associated asset."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:BrandExpressionToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:anyURI"
+      }
+    },
+    {
+      "@id": "brando:brandName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Brand Name (Visual)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Brand Name (Visual)"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Display name of the brand as it should appear in visual treatments."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VisualToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "skos:relatedMatch": {
+        "@id": "gs1:brandName"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "schema:name"
+      }
+    },
+    {
+      "@id": "brando:logo",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Logo"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Logo"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Canonical reference URL to the primary logo asset or logo set."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VisualToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:anyURI"
+      }
+    },
+    {
+      "@id": "brando:visualReferenceLink",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Visual Reference Link"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Visual Reference Link"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "URL pointing to full visual identity guidelines or design system documentation."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VisualToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:anyURI"
+      }
+    },
+    {
+      "@id": "brando:colourPalette",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Colour Palette"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Colour Palette"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Structured description of the brand's colour system, including roles and values."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VisualToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:typography",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Typography"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Typography"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Typographic system including font families, weights, sizes, and hierarchy."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VisualToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:visualToken",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Visual Design Tokens"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Visual Design Tokens"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Core design tokens such as spacing, radius, and elevation."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VisualToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:imageryStyles",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Imagery Styles"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Imagery Styles"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Guidance on photography, illustration, and composition style."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VisualToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:motionRules",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Motion Rules"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Motion Rules"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Principles for animation, transitions, and micro-interactions."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VisualToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:visualUsageGuidelines",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Visual Usage Guidelines"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Visual Usage Guidelines"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Do's and don'ts for applying logos, colours, typography, and imagery."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:VisualToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:audioLogo",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Audio Logo"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Audio Logo"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "URI pointing to the brand's sonic logo or audio mark."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:AudioToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:anyURI"
+      }
+    },
+    {
+      "@id": "brando:voiceSignature",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Voice Signature"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Voice Signature"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Description of the desired voice profile for TTS or voice agents."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:AudioToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:pronunciationGuide",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Pronunciation Guide"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Pronunciation Guide"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Standardised pronunciation notes (e.g. IPA or phonetic spelling) for brand names and key terms."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:AudioToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:speechStyle",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Speech Style"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Speech Style"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Guidance on rhythm, pacing, pausing, and expressiveness for spoken output."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:AudioToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:audioCue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Audio Cue"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Audio Cue"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Definitions of short sound cues used as confirmations, alerts, or transitions."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:AudioToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:audioUsageGuidelines",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Audio Usage Guidelines"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Audio Usage Guidelines"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Do's and don'ts for when and how branded audio should be used."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:AudioToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:audioReferenceLink",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Audio Reference Link"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Audio Reference Link"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "URL pointing to canonical audio repositories or style guides."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:AudioToken"
+      },
+      "rdfs:range": {
+        "@id": "xsd:anyURI"
+      }
+    },
+    {
+      "@id": "brando:guardRails",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Guard Rails"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Guard Rails"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Non-negotiable boundaries that AI systems must not cross."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Policy"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:refusalStrategies",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Refusal Strategies"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Refusal Strategies"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Preferred patterns for declining or redirecting unsafe or out-of-scope requests."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Policy"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:riskScenarios",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Risk Scenarios"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Risk Scenarios"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Known edge cases and misuse patterns requiring caution or escalation."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Policy"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:complianceTags",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Compliance Tags"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Compliance Tags"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Regulatory or legal tags such as GDPR, HIPAA, or FCA."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Policy"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:reviewWorkflow",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Review Workflow"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Review Workflow"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Description of human and/or automated steps for reviewing content and policy changes."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Policy"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:updatePolicy",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Update Policy"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Update Policy"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Rules for how often, by whom, and under what process policies are updated."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Policy"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:priority",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Priority"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Priority"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Governance precedence for this policy when multiple rules could apply."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Policy"
+      },
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "brando:visibilityRating",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Visibility Rating"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Visibility Rating"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Qualitative indicator of how easily this policy should be discoverable by AI systems."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Policy"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:retrievableInLLM",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Retrievable in LLM"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Retrievable in LLM"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Boolean flag indicating whether this policy may be indexed or retrieved by language models."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Policy"
+      },
+      "rdfs:range": {
+        "@id": "xsd:boolean"
+      }
+    },
+    {
+      "@id": "brando:embeddingQuality",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Embedding Quality"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Embedding Quality"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Qualitative or scored assessment of how well this content performs in vector search or RAG."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Policy"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:productCategoryName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Product Category Name"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Product Category Name"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Name of a product or service category with associated brand tokens and rules."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:BrandedCategory"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:categoryDepartment",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Category Department"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Category Department"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Department-level categorisation within a product category."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:BrandedCategory"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:categoryClass",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Category Class"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Category Class"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Class-level categorisation within a department."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:BrandedCategory"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:categoryItemType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Category Item Type"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Category Item Type"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Specific item type within a category class."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:BrandedCategory"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:categoryApprovedTerms",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Category Approved Terms"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Category Approved Terms"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Terms encouraged for this category, layered on top of brand-level approved terms."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:BrandedCategory"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:categoryProhibitedTerms",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Category Prohibited Terms"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Category Prohibited Terms"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Terms prohibited for this category, layered on top of brand-level prohibited terms."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:BrandedCategory"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:campaignName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Campaign Name"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Campaign Name"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Human-readable name of a marketing or communications campaign."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Campaign"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:campaignTheme",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Campaign Theme"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Campaign Theme"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Central message or creative theme for the campaign."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Campaign"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:temporaryOverrides",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Temporary Overrides"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Temporary Overrides"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Structured JSON describing temporary modifications to brand rules during this campaign."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:Campaign"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:triggerType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Trigger Type"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Trigger Type"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Type of event or condition that activates this automation rule."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:AutomationRule"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:monitoredMetric",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Monitored Metric"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Monitored Metric"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Structured JSON describing the metric being monitored, thresholds, and operators."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:AutomationRule"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:dataSource",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Data Source"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Data Source"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "API endpoint or data source providing metrics or signals."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:AutomationRule"
+      },
+      "rdfs:range": {
+        "@id": "xsd:anyURI"
+      }
+    },
+    {
+      "@id": "brando:automationAction",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Automation Action"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Automation Action"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Structured JSON describing actions taken when trigger conditions are met."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:AutomationRule"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:gpcCategoryCode",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "GPC Category Code"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "GPC Category Code"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "GS1 Global Product Classification (GPC) brick code associated with this branded category."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:BrandedCategory"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "gs1:gpcCategoryCode"
+      }
+    },
+    {
+      "@id": "brando:gpcCategoryDescription",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "GPC Category Description"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "GPC Category Description"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Human-readable description of the GS1 Global Product Classification (GPC) brick associated with this branded category."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:BrandedCategory"
+      },
+      "rdfs:range": {
+        "@id": "rdf:langString"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "gs1:gpcCategoryDescription"
+      }
+    },
+    {
+      "@id": "brando:appliesToGTIN",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Applies To GTIN"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Applies To GTIN"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "GTIN(s) for which this branded category or policy is applicable."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:BrandedCategory"
+        },
+        {
+          "@id": "brando:Policy"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "gs1:gtin"
+      }
+    },
+    {
+      "@id": "brando:appliesToProduct",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Applies To GS1 Product"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Applies To GS1 Product"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Links a branded category or policy to one or more GS1 Product nodes."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:BrandedCategory"
+        },
+        {
+          "@id": "brando:Policy"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "gs1:Product"
+      }
+    },
+    {
+      "@id": "brando:unspscCode",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "UNSPSC Code"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "UNSPSC Code"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "UNSPSC (United Nations Standard Products and Services Code) associated with this branded category or product grouping. Used to align brand-defined categories with procurement and B2B classification schemes."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:BrandedCategory"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "rdfs:seeAlso": {
+        "@id": "https://www.unspsc.org/"
+      }
+    },
+    {
+      "@id": "brando:googleProductCategoryId",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Google Product Category ID"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Google Product Category ID"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Google Product Taxonomy category identifier associated with this branded category, typically used for shopping feeds, SEO, and retail media. Enables alignment between brand-level categories and Google Merchant Center classification."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": {
+        "@id": "brando:BrandedCategory"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "rdfs:seeAlso": {
+        "@id": "https://support.google.com/merchants/answer/6324436"
+      }
+    },
+    {
+      "@id": "brando:downloadableFile",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Downloadable File"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Downloadable File"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Links a brand, token, context, campaign, or policy node to one or more canonical downloadable file assets (e.g. master logo packs, current guideline PDFs) represented as schema:MediaObject. Intended as a stable pointer to the most up-to-date creative files exposed by the Brand OS or DAM."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:Brand"
+        },
+        {
+          "@id": "brando:Context"
+        },
+        {
+          "@id": "brando:VisualToken"
+        },
+        {
+          "@id": "brando:VerbalToken"
+        },
+        {
+          "@id": "brando:AudioToken"
+        },
+        {
+          "@id": "brando:Policy"
+        },
+        {
+          "@id": "brando:Campaign"
+        },
+        {
+          "@id": "brando:BrandedCategory"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "schema:MediaObject"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "schema:associatedMedia"
+      }
+    },
+    {
+      "@id": "brando:supportingFile",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Supporting File"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Supporting File"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Links a brand, token, context, campaign, or policy node to non-canonical supporting creative files (e.g. templates, mockups, working documents, previous guideline versions) represented as schema:MediaObject. These files are helpful for production but are not the primary source-of-truth asset."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:Brand"
+        },
+        {
+          "@id": "brando:Context"
+        },
+        {
+          "@id": "brando:VisualToken"
+        },
+        {
+          "@id": "brando:VerbalToken"
+        },
+        {
+          "@id": "brando:AudioToken"
+        },
+        {
+          "@id": "brando:Policy"
+        },
+        {
+          "@id": "brando:Campaign"
+        },
+        {
+          "@id": "brando:BrandedCategory"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "schema:MediaObject"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "schema:associatedMedia"
+      }
+    },
+    {
+      "@id": "brando:externalSystem",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "External System"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "External System"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Links a brand, context, policy, campaign, or automation rule to the external tool or platform (e.g. Adobe GenStudio, Meta Ads Manager, Figma, CMS) that executes or consumes the corresponding brand rules. Typically points to a schema:SoftwareApplication node that describes the integration target."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:Brand"
+        },
+        {
+          "@id": "brando:Context"
+        },
+        {
+          "@id": "brando:Policy"
+        },
+        {
+          "@id": "brando:Campaign"
+        },
+        {
+          "@id": "brando:AutomationRule"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "schema:SoftwareApplication"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "schema:isRelatedTo"
+      },
+      "dcterms:created": "2025-11-22"
+    },
+    {
+      "@id": "brando:externalSystemId",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "External System ID"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "External System ID"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Identifier for the corresponding object in an external tool or platform (e.g. brand, workspace, guideline set, ad account, or project ID). Used by Brand OS plugins to bind Brando Brand/Context/Policy/Campaign nodes to concrete entities in systems such as Adobe GenStudio, Meta Ads Manager, Figma, or internal CMSs."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:Brand"
+        },
+        {
+          "@id": "brando:Context"
+        },
+        {
+          "@id": "brando:Policy"
+        },
+        {
+          "@id": "brando:Campaign"
+        },
+        {
+          "@id": "brando:AutomationRule"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "schema:identifier"
+      },
+      "dcterms:created": "2025-11-22"
+    },
+    {
+      "@id": "brando:enforcementLevel",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Enforcement Level"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Enforcement Level"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Indicates how strongly a policy or automation rule must be applied at runtime. Typical values include 'mandatory', 'advisory', and 'conditional' and may be extended by implementations."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:Policy"
+        },
+        {
+          "@id": "brando:AutomationRule"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "brando:riskTag",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Risk Tag"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Risk Tag"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "One or more lightweight tags describing the primary risk domains addressed by a policy or automation rule (e.g. 'regulatory', 'tone', 'brand-safety', 'platform-policy'). Intended for querying, reporting, and governance dashboards."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "brando:"
+      },
+      "rdfs:domain": [
+        {
+          "@id": "brando:Policy"
+        },
+        {
+          "@id": "brando:AutomationRule"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    }
+  ]
+}

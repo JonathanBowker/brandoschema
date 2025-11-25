@@ -1,0 +1,200 @@
+{
+  "@context": {
+    "brando": "https://brandoschema.com/",
+    "schema": "https://schema.org/",
+    "gs1": "https://ref.gs1.org/voc/"
+  },
+  "@graph": [
+    {
+      "@id": "brando:brand/target",
+      "@type": ["brando:Brand", "schema:Brand"],
+      "schema:name": "Target",
+      "schema:alternateName": "Target Corporation",
+      "schema:url": "https://www.target.com/",
+      "schema:description": "U.S.-based mass retail brand known for its Bullseye logo, Target Red visual identity and the \"Expect More. Pay Less.\" tagline, spanning stores, ecommerce and owned brands.",
+      "brando:missionStatement": "Deliver a joyful, easy shopping experience where guests can expect more value, design and service while paying less.",
+      "brando:visionStatement": "To be the preferred one-stop destination for everyday essentials and affordable style, online and in stores.",
+      "brando:coreValues": "Guest-obsessed; inclusive; joyful; design-forward; value-driven; community-minded.",
+      "brando:brandPromise": "Make everyday life easier and more joyful by combining elevated design, convenient experiences and compelling prices under the promise \"Expect More. Pay Less.\"",
+      "brando:marketPosition": "Multi-category big-box retailer with an emphasis on curated, design-led owned brands and a distinct, highly recognizable visual identity built around the Bullseye logo and Target Red.",
+      "brando:brandNarrative": "Target uses a simple, iconic Bullseye symbol, a proprietary Helvetica for Target typeface and a consistent red-and-white system to create an instantly recognizable, cohesive experience across advertising, stores, event partnerships and digital channels.",
+      "brando:competitorContext": "Competes with other mass retailers, warehouse clubs, grocery chains and ecommerce marketplaces by pairing everyday value and convenience with a more design-forward, joyful brand experience.",
+      "brando:inheritsPolicies": true,
+      "brando:inheritsTokens": "Target master brand defines core visual and verbal tokens that sub-brands and owned labels inherit, unless superseded by category- or brand-specific guidance.",
+      "brando:hasContext": [
+        { "@id": "brando:context/target/us-master-retail" },
+        { "@id": "brando:context/target/us-event-branding" }
+      ],
+      "brando:usesVerbalToken": [
+        { "@id": "brando:verbal-token/target/master" }
+      ],
+      "brando:usesVisualToken": [
+        { "@id": "brando:visual-token/target/bullseye-core" }
+      ],
+      "brando:hasPolicy": [
+        { "@id": "brando:policy/target/brand-elements-core" }
+      ],
+      "brando:hasProductCategory": [
+        { "@id": "brando:category/target/multi-category-retail" }
+      ],
+      "brando:downloadableFile": [
+        { "@id": "brando:media/target/brand-elements-guidelines" }
+      ]
+    },
+    {
+      "@id": "brando:context/target/us-master-retail",
+      "@type": "brando:Context",
+      "schema:name": "Target – US retail & ecommerce master context",
+      "brando:audienceSegment": "Guests across U.S. households, from value-conscious families to style-seeking young adults and professionals.",
+      "brando:audiencePersona": "Shoppers looking for a convenient one-stop destination where they can pick up everyday essentials, seasonal items and on-trend style, while feeling good about the experience and price.",
+      "brando:domainContext": {
+        "channels": ["target.com", "Target stores", "Target app"],
+        "surfaces": ["homepage", "category-landing", "PLP", "PDP", "email", "social", "site-search", "in-store-signage"],
+        "regions": ["US"],
+        "languages": ["en-US", "es-US"],
+        "primaryUseCases": ["browsing", "consideration", "purchase", "order-pickup", "same-day-delivery"],
+        "regulatory": ["US retail and advertising standards"],
+        "notes": "Evergreen, default activation context for Target master brand across owned retail and ecommerce surfaces."
+      },
+      "brando:usesVerbalToken": [
+        { "@id": "brando:verbal-token/target/master" }
+      ],
+      "brando:usesVisualToken": [
+        { "@id": "brando:visual-token/target/bullseye-core" }
+      ],
+      "brando:downloadableFile": [
+        { "@id": "brando:media/target/brand-elements-guidelines" }
+      ]
+    },
+    {
+      "@id": "brando:context/target/us-event-branding",
+      "@type": "brando:Context",
+      "schema:name": "Target – US event branding and sponsorship context",
+      "brando:audienceSegment": "Spectators and viewers of sponsored events such as sports, entertainment and community activations.",
+      "brando:audiencePersona": "Fans engaging with live events and broadcasts where Target appears as a sponsor or partner, often in visually busy environments that rely on strong Target Red Bullseye repetition for recognition.",
+      "brando:domainContext": {
+        "channels": ["in-venue-signage", "arena-digital-ribbon", "broadcast-graphics", "event-backdrops"],
+        "surfaces": ["LED-ribbon", "courtside-signage", "scoreboard-rings", "step-and-repeat", "field-boards"],
+        "regions": ["US"],
+        "languages": ["en-US"],
+        "primaryUseCases": ["sponsorship-branding", "co-branding", "event-activation"],
+        "regulatory": ["US advertising standards", "league and event branding rules"],
+        "notes": "Use Target Red prominently and apply repeating Bullseye spacing rules (2x between logos, x from edges) to separate branding from surrounding visuals."
+      },
+      "brando:usesVisualToken": [
+        { "@id": "brando:visual-token/target/bullseye-core" }
+      ],
+      "brando:downloadableFile": [
+        { "@id": "brando:media/target/brand-elements-guidelines" }
+      ]
+    },
+    {
+      "@id": "brando:verbal-token/target/master",
+      "@type": "brando:VerbalToken",
+      "schema:name": "Target – Master Verbal Token",
+      "brando:toneOfVoice": "Upbeat, confident and guest-focused, balancing playful energy with clarity. The voice should feel joyful and inviting while still direct and simple.",
+      "brando:dialogueStyle": "Speaks in a friendly, conversational tone, often addressing the guest as \"you\" and using short, declarative sentences or paired statements, especially when using the tagline.",
+      "brando:writingStyle": "Use clear, benefit-led copy with concise headlines and straightforward language. When using the tagline, set \"Expect More. Pay Less.\" as a united pair, with both parts present and visually connected.",
+      "brando:namingConvention": "Keep names and headlines short, punchy and easy to read. Use sentence case in most applications, pairing the Bullseye Design and Helvetica for Target type for a cohesive look.",
+      "brando:personaCard": "Target sounds like a neighbor who loves good design and great deals: warm, optimistic, a bit witty, and always focused on making life easier for the guest.",
+      "brando:approvedTerms": "\"Expect More. Pay Less.\"; \"Cuenta Con Más. Paga Menos.\"; guests; deals; value; joyful; easy; simple; Target Run.",
+      "brando:prohibitedTerms": "Out-of-date wordmarks such as standalone all-caps TARGET, vertical or horizontal TARGET wordmarks without the Bullseye, or SuperTarget as a current trademark-led term.",
+      "brando:keyMessages": "1) Guests can expect more from Target in design, value and experience. 2) They will pay less than expected for that elevated experience. 3) The Bullseye and red-and-white system unify every touchpoint of the brand.",
+      "brando:tagline": "\"Expect More. Pay Less.\" (English) and \"Cuenta Con Más. Paga Menos.\" (Spanish), always used as two linked statements, never split or altered.",
+      "brando:promptScaffold": "You are writing as Target. Use an upbeat, guest-focused voice that is clear and concise. When you reference the brand tagline, use the full paired statement \"Expect More. Pay Less.\" (or \"Cuenta Con Más. Paga Menos.\" in Spanish). Do not change the wording, add commas, or use only one half of the tagline.",
+      "brando:mustDos": "Use the tagline as a united pair of statements. Typeset it in Helvetica for Target Bold in design outputs, and ensure it stands out from body copy when embedded in longer text.",
+      "brando:mustNotDos": "Do not insert a comma between \"Expect More\" and \"Pay Less\"; do not change the relative size or weight of the two parts; do not combine \"Pay Less\" into a single word like \"Payless\"; do not use either half of the tagline alone as a trademark or tagline; and do not set it in a non-Helvetica for Target typeface in brand design work.",
+      "brando:assetURL": "urn:placeholder:brand/target/verbal-guidelines",
+      "brando:assetPreview": "urn:placeholder:brand/target/verbal-preview"
+    },
+    {
+      "@id": "brando:visual-token/target/bullseye-core",
+      "@type": "brando:VisualToken",
+      "schema:name": "Target – Core Bullseye Visual Token",
+      "brando:brandName": "Target",
+      "brando:logo": "urn:placeholder:brand/target/logo-bullseye-primary",
+      "brando:visualReferenceLink": "urn:placeholder:brand/target/visual-system",
+      "brando:colourPalette": {
+        "primary": "Target Red",
+        "specs": {
+          "pantone": "PMS 186",
+          "cmyk": "C 4 M 100 Y 85 K 6",
+          "rgb": "R 204 G 0 B 0",
+          "hex": "#cc0000"
+        },
+        "usageNotes": "Target Red is the official color of the Bullseye Design; CMYK, RGB and HEX breakdowns are tuned per process rather than direct conversions."
+      },
+      "brando:typography": "Helvetica for Target is the custom corporate typeface, based on Helvetica Neue and designed to complement the curved edges of the Bullseye. Use it in a range of weights, with specific tracking and leading practices for readability.",
+      "brando:visualToken": {
+        "logoGeometry": {
+          "outerRing": "width x",
+          "innerSpace": "width x (transparent to background)",
+          "centerCircle": "width 2x",
+          "notes": "Outer ring and center circle are always the same color; inner space is empty."
+        },
+        "clearSpace": "Minimum clear space equal to the thickness of the outer ring (x) on all sides.",
+        "allowedColors": ["Target Red", "black", "white"],
+        "maxCropping": "No more than 50% of the Bullseye may be cropped; at least half of the center circle must remain visible.",
+        "fileFormats": ["AI", "JPG", "EPS"]
+      },
+      "brando:imageryStyles": "Use the Bullseye Design as a bold, simple symbol in layouts, pairing it with clean photography and ample white space. In event and sponsorship settings, repeat the Bullseye along ribbons or backdrops with consistent spacing to stand out in busy environments.",
+      "brando:motionRules": "In video, the Bullseye should be visually centered and sized to half the width of the shortest side of the frame, with an accompanying legal line along the bottom edge in the language of the execution.",
+      "brando:visualUsageGuidelines": "Only use approved Bullseye logo files. Do not recolor, distort, outline, fill with images, split, add effects, or turn the Bullseye into an object (like a wheel or eye). Nothing may touch or connect to the Bullseye. Cropping is limited, and any cropped execution must also include a full Bullseye in the same communication.",
+      "brando:assetURL": "urn:placeholder:brand/target/bullseye-asset-pack",
+      "brando:assetPreview": "urn:placeholder:brand/target/bullseye-preview"
+    },
+    {
+      "@id": "brando:policy/target/brand-elements-core",
+      "@type": "brando:Policy",
+      "schema:name": "Target – Brand Elements & Visual Identity Policy",
+      "brando:guardRails": "Enforce correct use of the Bullseye Design, Target Red, Helvetica for Target, wordmarks and tagline. Only Target Red (PMS 186), black or white may be used for the Bullseye. Follow strict rules on clear space, cropping, misuse and event co-branding. Use the \"Expect More. Pay Less.\" tagline only in its approved paired form and in Helvetica for Target Bold. Custom team logos require approval as custom wordmarks.",
+      "brando:refusalStrategies": "If asked to recolor, distort or repurpose the Bullseye; invent unapproved wordmarks; alter or partially use the tagline; or ignore spacing and copyright rules, decline the request and explain that Target brand elements must follow the official guidelines. Offer compliant alternatives instead.",
+      "brando:riskScenarios": "Examples include: (1) using the Bullseye as a letter or punctuation; (2) filling the Bullseye with photographs or patterns; (3) pairing the Bullseye with outdated all-caps TARGET or SuperTarget wordmarks; (4) splitting or combining parts of the tagline; (5) omitting the legal line in video executions; (6) creating custom logos for internal teams without approval.",
+      "brando:complianceTags": "visual-identity; logo-usage; tagline; copyright; sponsorship; typography",
+      "brando:reviewWorkflow": "Target Marketing reserves the right to approve, limit, deny or remove any use of brand elements. Custom wordmarks must be requested through Target Marketing leadership with details of audience, usage locations and duration.",
+      "brando:updatePolicy": "Reflects the April 30, 2024 Target Brand Elements & Guidelines document; review when that guideline is updated.",
+      "brando:priority": 100,
+      "brando:visibilityRating": "high",
+      "brando:retrievableInLLM": true,
+      "brando:embeddingQuality": "primary",
+      "brando:enforcementLevel": "mandatory",
+      "brando:riskTag": "brand-identity",
+      "brando:effectiveDuring": {
+        "start": "2024-04-30",
+        "timezone": "America/Chicago",
+        "status": "active"
+      },
+      "brando:appliesTo": {
+        "brandId": "brando:brand/target",
+        "scope": "visual-identity",
+        "objects": ["Bullseye Design", "Target Properties wordmark", "Target tagline", "custom wordmarks"],
+        "channels": ["print", "OOH", "in-store", "digital", "video", "event-branding"]
+      },
+      "brando:downloadableFile": [
+        { "@id": "brando:media/target/brand-elements-guidelines" }
+      ]
+    },
+    {
+      "@id": "brando:category/target/multi-category-retail",
+      "@type": "brando:BrandedCategory",
+      "schema:name": "Target – Multi-category Retail Assortment",
+      "brando:productCategoryName": "Mass multi-category retail (big-box store)",
+      "brando:categoryDepartment": "Storewide – essentials, grocery, home, apparel, beauty, electronics, toys and more.",
+      "brando:categoryClass": "Combination of everyday essentials and discretionary categories under a unified Target master brand and portfolio of owned labels.",
+      "brando:categoryItemType": "Store and online assortment including grocery, household essentials, home decor, furniture, apparel and accessories, beauty and personal care, baby, seasonal, toys, electronics and more.",
+      "brando:categoryApprovedTerms": "Target Run; same-day delivery; Drive Up; Order Pickup; everyday low prices; deals.",
+      "brando:categoryProhibitedTerms": "Warehouse club; dollar store; outlet store; SuperTarget as a current classification.",
+      "brando:downloadableFile": [
+        { "@id": "brando:media/target/brand-elements-guidelines" }
+      ]
+    },
+    {
+      "@id": "brando:media/target/brand-elements-guidelines",
+      "@type": "schema:MediaObject",
+      "schema:name": "Target Brand Elements & Guidelines (April 30, 2024)",
+      "schema:description": "Master visual identity guide covering the Bullseye Design, Target Red color, Helvetica for Target typography, wordmarks, tagline usage, event branding, video usage and copyright lines.",
+      "schema:contentUrl": "urn:placeholder:brand/target/guidelines/brand-elements-2024-04-30",
+      "schema:fileFormat": "application/pdf"
+    }
+  ]
+}

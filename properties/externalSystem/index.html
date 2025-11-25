@@ -125,7 +125,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#brandoexternalsystem" class="md-skip">
+        <a href="#brandoexternalsystemid" class="md-skip">
           Skip to content
         </a>
       
@@ -1702,9 +1702,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#thing-intangible-multiple-types-externalsystem-brandobrand-brandocontext-brandopolicy-brandocampaign-brandoautomationrule" class="md-nav__link">
+  <a href="#thing-intangible-multiple-types-externalsystemid-brandobrand-brandocontext-brandopolicy-brandocampaign-brandoautomationrule-brandoproductitem" class="md-nav__link">
     <span class="md-ellipsis">
-      Thing &gt; Intangible &gt; Multiple types :: externalSystem (brando:Brand, brando:Context, brando:Policy, brando:Campaign, brando:AutomationRule)
+      Thing &gt; Intangible &gt; Multiple types :: externalSystemId (brando:Brand, brando:Context, brando:Policy, brando:Campaign, brando:AutomationRule, brando:ProductItem)
     </span>
   </a>
   
@@ -3637,9 +3637,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#thing-intangible-multiple-types-externalsystem-brandobrand-brandocontext-brandopolicy-brandocampaign-brandoautomationrule" class="md-nav__link">
+  <a href="#thing-intangible-multiple-types-externalsystemid-brandobrand-brandocontext-brandopolicy-brandocampaign-brandoautomationrule-brandoproductitem" class="md-nav__link">
     <span class="md-ellipsis">
-      Thing &gt; Intangible &gt; Multiple types :: externalSystem (brando:Brand, brando:Context, brando:Policy, brando:Campaign, brando:AutomationRule)
+      Thing &gt; Intangible &gt; Multiple types :: externalSystemId (brando:Brand, brando:Context, brando:Policy, brando:Campaign, brando:AutomationRule, brando:ProductItem)
     </span>
   </a>
   
@@ -3718,21 +3718,37 @@
   
 
 
-<h1 id="brandoexternalsystem"><code>brando:externalSystem</code></h1>
-<p><em>A Brando Property</em><br />
+<p>Gotcha, no vendor shout-outs. Here’s a scrubbed and updated version with fully generic examples you can paste over the <code>brando:externalSystemId</code> docs:</p>
+<hr />
+<h1 id="brandoexternalsystemid"><code>brando:externalSystemId</code></h1>
+<p><em>A Brando Property</em>
 <em>Defined in the brando section.</em></p>
 <hr />
-<h2 id="thing-intangible-multiple-types-externalsystem-brandobrand-brandocontext-brandopolicy-brandocampaign-brandoautomationrule">Thing &gt; Intangible &gt; Multiple types :: externalSystem (brando:Brand, brando:Context, brando:Policy, brando:Campaign, brando:AutomationRule)</h2>
-<p><strong>Canonical URL:</strong> <code>https://brandoschema.com/properties/externalSystem</code><br />
+<h2 id="thing-intangible-multiple-types-externalsystemid-brandobrand-brandocontext-brandopolicy-brandocampaign-brandoautomationrule-brandoproductitem">Thing &gt; Intangible &gt; Multiple types :: externalSystemId (brando:Brand, brando:Context, brando:Policy, brando:Campaign, brando:AutomationRule, brando:ProductItem)</h2>
+<p><strong>Canonical URL:</strong> <code>https://brandoschema.com/properties/externalSystemId</code>
 <strong>Check for open issues.</strong></p>
 <hr />
 <h2 id="description">Description</h2>
-<p>Links a brand, context, policy, campaign, or automation rule to the external tool or platform (e.g. Adobe GenStudio, Meta Ads Manager, Figma, CMS) that executes or consumes the corresponding brand rules. Typically points to a schema:SoftwareApplication node that describes the integration target.</p>
+<p>System-specific identifier for the corresponding object in an external tool or platform (for example a brand record, workspace, guideline set, ad account, product record, or project ID).</p>
+<p><code>brando:externalSystemId</code> is used by Brand OS plugins and integrations to bind Brando nodes (such as <code>brando:Brand</code>, <code>brando:Context</code>, <code>brando:Policy</code>, <code>brando:Campaign</code>, <code>brando:AutomationRule</code>, or <code>brando:ProductItem</code>) to concrete entities in systems like retail product catalogues, CMSs, DAMs, ad platforms, design tools, or internal marketing systems.</p>
+<p>This property does <strong>not</strong> need to be globally unique on its own; values are typically scoped to a specific system. A common pattern is to use a simple prefix convention:</p>
+<div class="highlight"><pre><span></span><code>systemKey:nativeId
+</code></pre></div>
+<p>Examples:</p>
+<ul>
+<li><code>retail-catalog:12345</code> – product ID in a retail catalogue</li>
+<li><code>ad-platform:act_987654321</code> – advertising account ID</li>
+<li><code>design-tool:file_ABC123</code> – design file ID</li>
+<li><code>cms:brand_001</code> – brand node in a CMS</li>
+<li><code>pim:SKU-8888</code> – product identifier in a PIM</li>
+</ul>
+<p>If a node participates in multiple systems, <code>brando:externalSystemId</code> may be repeated with one value per system.</p>
+<p>For linking to the external application itself (rather than an object identifier within it), use <a href="./"><code>brando:externalSystem</code></a> pointing to a <code>schema:SoftwareApplication</code> node.</p>
 <hr />
 <h2 id="values-expected-to-be-one-of-these-types">Values expected to be one of these types</h2>
 <ul>
-<li><strong>schema:SoftwareApplication</strong></li>
-<li><strong>List of schema:SoftwareApplication values</strong></li>
+<li><strong>Text</strong></li>
+<li><strong>List of Text values</strong></li>
 </ul>
 <hr />
 <h2 id="used-on-these-types">Used on these types</h2>
@@ -3742,6 +3758,7 @@
 <li><a href="../../types/policy/">brando:Policy</a></li>
 <li><a href="../../types/campaign/">brando:Campaign</a></li>
 <li><a href="../../types/automation-rule/">brando:AutomationRule</a></li>
+<li><a href="../types/product-item.md">brando:ProductItem</a></li>
 </ul>
 <hr />
 <h2 id="example-json-ld">Example (JSON-LD)</h2>
@@ -3750,12 +3767,18 @@
 <span class="w">    </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org/&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;brando&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://brandoschema.com/&quot;</span>
 <span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://brandoschema.com/brand/example&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Brand&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Example Brand&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:externalSystem&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/example&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:SoftwareApplication&quot;</span>
-<span class="w">  </span><span class="p">}</span>
+<span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://apps.example.com/brand-os&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:SoftwareApplication&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brand Management Platform&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:externalSystemId&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;brand-platform:workspace_abc123&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;cms:brand_001&quot;</span>
+<span class="w">  </span><span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -3764,14 +3787,22 @@
 <span class="w">  </span><span class="nt">schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://schema.org/</span>
 <span class="w">  </span><span class="nt">brando</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://brandoschema.com/</span>
 
+<span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://brandoschema.com/brand/example</span>
 <span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:Brand</span>
 <span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Example Brand</span>
 
-<span class="nt">brando:externalSystem</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="s">&#39;@id&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&#39;https://example.com/example&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;@type&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&#39;schema:SoftwareApplication&#39;</span><span class="p p-Indicator">}</span>
+<span class="nt">brando:externalSystem</span><span class="p">:</span>
+<span class="w">  </span><span class="s">&#39;@id&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://apps.example.com/brand-os</span>
+<span class="w">  </span><span class="s">&#39;@type&#39;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">schema:SoftwareApplication</span>
+<span class="w">  </span><span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Brand Management Platform</span>
+
+<span class="nt">brando:externalSystemId</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;brand-platform:workspace_abc123&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;cms:brand_001&quot;</span>
 </code></pre></div>
 <hr />
 <h2 id="acknowledgements">Acknowledgements</h2>
-<p>This element is based on the work of <strong>Advanced Analytica</strong>.<br />
+<p>This element is based on the work of <strong>Advanced Analytica</strong>.
 Many Type and Property definitions are inspired by extensive analysis of brand guidelines, governance systems, and AI content-safety practices.</p>
 
 
