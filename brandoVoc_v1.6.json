@@ -29,7 +29,7 @@
       "dc:creator": "Advanced Analytica Ltd",
       "dcterms:description": {
         "@language": "en",
-        "@value": "Core classes and properties for the Brand Oracle (Brando) schema and ontology, an open, vendor-neutral vocabulary for AI-native Structured Governance of brands, lifecycle metadata, and integration with external tools and platforms. Brando repurposes Schema.org–style JSON-LD from a descriptive SEO layer into a prescriptive control layer that defines how a brand behaves in generative and agentic AI, protecting its identity across contexts and verbal/visual/audio tokens via machine-readable policies. The vocabulary extends schema:Brand, aligns with the GS1 Web Vocabulary and other product classification standards (e.g. UNSPSC, Google Product Taxonomy), and is designed to be published as a Brand Knowledge Graph that interoperates with existing DAM/CMS ecosystems and constrains LLM, agent, and multimodal outputs to on-brand, compliant behaviour."
+        "@value": "Core classes and properties for the Brand Oracle (Brando) vocabulary and ontology. Brando repurposes Schema.org–style JSON- LD (Schema Markup) from a descriptive SEO layer into an AI-native control layer for LLM and agent behaviour, enabling brands to express identity, expression tokens, and governance as linked data. The vocabulary extends schema:Brand, aligns with GS1 and other product classification standards, and is designed to drive Brand Knowledge Graphs and Brand Operating Systems."
       },
       "dcterms:creator": {
         "@language": "en",

@@ -1,0 +1,1296 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "vann": "http://purl.org/vocab/vann/",
+    "voaf": "http://purl.org/vocommons/voaf#",
+    "cc": "http://creativecommons.org/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "gs1": "https://ref.gs1.org/voc/",
+    "risko": "https://risko.global/vocab#"
+  },
+  "@id": "https://risko.global/vocab",
+  "@type": [
+    "owl:Ontology",
+    "voaf:Vocabulary"
+  ],
+  "dcterms:title": "Risko: Integrity Risk Vocabulary v1.2",
+  "dcterms:description": "Risko v1.2: A vocabulary for modelling organisational integrity, country/sector/political risk, counterparties, controls, incidents, investigations, enforcement actions, and scenario-based overrides. This version standardises risk ratings on a 1\u20135 scale (1 = Very Low, 5 = Very High).",
+  "dcterms:creator": "YOUR_ORG_NAME",
+  "dcterms:license": "https://creativecommons.org/licenses/by/4.0/",
+  "vann:preferredNamespacePrefix": "risko",
+  "vann:preferredNamespaceUri": "https://risko.global/vocab#",
+  "@graph": [
+    {
+      "@id": "risko:Entity",
+      "@type": "owl:Class",
+      "rdfs:label": "Risko Entity",
+      "rdfs:comment": "Base class for all integrity-risk-related resources.",
+      "rdfs:subClassOf": {
+        "@id": "schema:Thing"
+      }
+    },
+    {
+      "@id": "risko:Organization",
+      "@type": "owl:Class",
+      "rdfs:label": "Organization",
+      "rdfs:comment": "An organization whose integrity risk position is being assessed.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ]
+    },
+    {
+      "@id": "risko:OrgUnit",
+      "@type": "owl:Class",
+      "rdfs:label": "Organizational Unit",
+      "rdfs:comment": "A business unit or subsidiary within an integrity-scoped organization.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ]
+    },
+    {
+      "@id": "risko:Counterparty",
+      "@type": "owl:Class",
+      "rdfs:label": "Counterparty",
+      "rdfs:comment": "Any external party (supplier, agent, distributor, JV partner, service provider) that can carry integrity risk.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Organization"
+        }
+      ]
+    },
+    {
+      "@id": "risko:Person",
+      "@type": "owl:Class",
+      "rdfs:label": "Person",
+      "rdfs:comment": "A natural person relevant to the integrity risk position (employee, director, owner, official).",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Person"
+        }
+      ]
+    },
+    {
+      "@id": "risko:PEP",
+      "@type": "owl:Class",
+      "rdfs:label": "Politically Exposed Person",
+      "rdfs:comment": "A person holding or having held a prominent public function and treated as a politically exposed person.",
+      "rdfs:subClassOf": {
+        "@id": "risko:Person"
+      }
+    },
+    {
+      "@id": "risko:Role",
+      "@type": "owl:Class",
+      "rdfs:label": "Role",
+      "rdfs:comment": "A role played by a person in an organization or counterparty that is relevant for integrity risk.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Role"
+        }
+      ]
+    },
+    {
+      "@id": "risko:Jurisdiction",
+      "@type": "owl:Class",
+      "rdfs:label": "Jurisdiction",
+      "rdfs:comment": "A country or administrative area with a distinct legal and political regime.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:AdministrativeArea"
+        }
+      ]
+    },
+    {
+      "@id": "risko:Sector",
+      "@type": "owl:Class",
+      "rdfs:label": "Sector",
+      "rdfs:comment": "An industry or sector classification relevant for integrity risk analysis.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "skos:Concept"
+        }
+      ]
+    },
+    {
+      "@id": "risko:Location",
+      "@type": "owl:Class",
+      "rdfs:label": "Location",
+      "rdfs:comment": "A physical location such as a site, office, plant, or project location.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Place"
+        }
+      ]
+    },
+    {
+      "@id": "risko:TimePeriod",
+      "@type": "owl:Class",
+      "rdfs:label": "Time Period",
+      "rdfs:comment": "A bounded time period such as a fiscal year, quarter, or assessment window.",
+      "rdfs:subClassOf": {
+        "@id": "risko:Entity"
+      }
+    },
+    {
+      "@id": "risko:RiskDimension",
+      "@type": "owl:Class",
+      "rdfs:label": "Risk Dimension",
+      "rdfs:comment": "A dimension of risk (e.g. corruption, sanctions, fraud, political violence) that can be measured.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "skos:Concept"
+        }
+      ]
+    },
+    {
+      "@id": "risko:RiskIndicator",
+      "@type": "owl:Class",
+      "rdfs:label": "Risk Indicator",
+      "rdfs:comment": "A measured indicator for a specific risk dimension, such as a score or rating.",
+      "rdfs:subClassOf": {
+        "@id": "risko:Entity"
+      }
+    },
+    {
+      "@id": "risko:RiskProfile",
+      "@type": "owl:Class",
+      "rdfs:label": "Risk Profile",
+      "rdfs:comment": "A collection of risk indicators and ratings describing the risk position for a given context.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Intangible"
+        }
+      ]
+    },
+    {
+      "@id": "risko:CountryRiskProfile",
+      "@type": "owl:Class",
+      "rdfs:label": "Country Risk Profile",
+      "rdfs:comment": "Risk profile for a specific jurisdiction (country or region).",
+      "rdfs:subClassOf": {
+        "@id": "risko:RiskProfile"
+      }
+    },
+    {
+      "@id": "risko:SectorRiskProfile",
+      "@type": "owl:Class",
+      "rdfs:label": "Sector Risk Profile",
+      "rdfs:comment": "Risk profile for a specific sector, optionally in a given jurisdiction.",
+      "rdfs:subClassOf": {
+        "@id": "risko:RiskProfile"
+      }
+    },
+    {
+      "@id": "risko:PoliticalRiskProfile",
+      "@type": "owl:Class",
+      "rdfs:label": "Political Risk Profile",
+      "rdfs:comment": "Risk profile capturing political risk at country, sector, organization, or counterparty level.",
+      "rdfs:subClassOf": {
+        "@id": "risko:RiskProfile"
+      }
+    },
+    {
+      "@id": "risko:Risk",
+      "@type": "owl:Class",
+      "rdfs:label": "Integrity Risk",
+      "rdfs:comment": "A specific integrity risk such as bribery, fraud, sanctions, conflicts of interest, human rights, or data privacy.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Intangible"
+        }
+      ]
+    },
+    {
+      "@id": "risko:RiskFactor",
+      "@type": "owl:Class",
+      "rdfs:label": "Risk Factor",
+      "rdfs:comment": "A factor that drives or contributes to a specific integrity risk.",
+      "rdfs:subClassOf": {
+        "@id": "risko:Entity"
+      }
+    },
+    {
+      "@id": "risko:RiskScore",
+      "@type": "owl:Class",
+      "rdfs:label": "Risk Score",
+      "rdfs:comment": "A numeric or categorical score assigned to a risk using the canonical 1\u20135 scale (1 = Very Low, 5 = Very High).",
+      "rdfs:subClassOf": {
+        "@id": "risko:Entity"
+      }
+    },
+    {
+      "@id": "risko:RiskAssessment",
+      "@type": "owl:Class",
+      "rdfs:label": "Risk Assessment",
+      "rdfs:comment": "An assessment of integrity risks for a given organization, unit, or counterparty.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Action"
+        }
+      ]
+    },
+    {
+      "@id": "risko:Policy",
+      "@type": "owl:Class",
+      "rdfs:label": "Integrity Policy",
+      "rdfs:comment": "A policy addressing one or more integrity risk categories (e.g. anti-bribery, sanctions, fraud).",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:CreativeWork"
+        }
+      ]
+    },
+    {
+      "@id": "risko:Control",
+      "@type": "owl:Class",
+      "rdfs:label": "Integrity Control",
+      "rdfs:comment": "A specific control designed to prevent, detect, or correct integrity risks.",
+      "rdfs:subClassOf": {
+        "@id": "risko:Entity"
+      }
+    },
+    {
+      "@id": "risko:AssuranceActivity",
+      "@type": "owl:Class",
+      "rdfs:label": "Assurance Activity",
+      "rdfs:comment": "An internal or external assurance activity such as an audit, review, or certification.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Action"
+        }
+      ]
+    },
+    {
+      "@id": "risko:Incident",
+      "@type": "owl:Class",
+      "rdfs:label": "Integrity Incident",
+      "rdfs:comment": "An alleged or confirmed integrity breach such as bribery, fraud, misreporting, harassment, or sanctions violation.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Event"
+        }
+      ]
+    },
+    {
+      "@id": "risko:WhistleblowingReport",
+      "@type": "owl:Class",
+      "rdfs:label": "Whistleblowing Report",
+      "rdfs:comment": "A report raising concerns about suspected integrity issues.",
+      "rdfs:subClassOf": {
+        "@id": "risko:Entity"
+      }
+    },
+    {
+      "@id": "risko:Investigation",
+      "@type": "owl:Class",
+      "rdfs:label": "Investigation",
+      "rdfs:comment": "A forensic or compliance investigation into one or more incidents.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Action"
+        }
+      ]
+    },
+    {
+      "@id": "risko:CorrectiveAction",
+      "@type": "owl:Class",
+      "rdfs:label": "Corrective Action",
+      "rdfs:comment": "A remediation or improvement action taken in response to identified integrity issues.",
+      "rdfs:subClassOf": {
+        "@id": "risko:Entity"
+      }
+    },
+    {
+      "@id": "risko:EnforcementAction",
+      "@type": "owl:Class",
+      "rdfs:label": "Enforcement Action",
+      "rdfs:comment": "An action by a regulator, prosecutor, or court in response to integrity breaches (fine, settlement, debarment, etc.).",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:Event"
+        }
+      ]
+    },
+    {
+      "@id": "risko:EvidenceItem",
+      "@type": "owl:Class",
+      "rdfs:label": "Evidence Item",
+      "rdfs:comment": "A document or artefact used as evidence in risk assessments, incidents, or investigations.",
+      "rdfs:subClassOf": [
+        {
+          "@id": "risko:Entity"
+        },
+        {
+          "@id": "schema:CreativeWork"
+        }
+      ]
+    },
+    {
+      "@id": "risko:RiskDataSource",
+      "@type": "owl:Class",
+      "rdfs:label": "Risk Data Source",
+      "rdfs:comment": "A source of risk-relevant data such as external ratings, internal models, or regulator data.",
+      "rdfs:subClassOf": {
+        "@id": "risko:Entity"
+      }
+    },
+    {
+      "@id": "risko:Scenario",
+      "@type": "owl:Class",
+      "rdfs:label": "Scenario",
+      "rdfs:comment": "A specific contextual situation (country, sector, time, trigger) in which risk and control behaviour may differ.",
+      "rdfs:subClassOf": {
+        "@id": "risko:Entity"
+      }
+    },
+    {
+      "@id": "risko:ScenarioOverride",
+      "@type": "owl:Class",
+      "rdfs:label": "Scenario Override",
+      "rdfs:comment": "An override that adjusts risk profiles, risks, policies or controls when a given scenario applies.",
+      "rdfs:subClassOf": {
+        "@id": "risko:Entity"
+      }
+    },
+    {
+      "@id": "risko:RiskRatingScale_1to5",
+      "@type": "skos:ConceptScheme",
+      "rdfs:label": "Risko 1\u20135 Risk Rating Scale",
+      "rdfs:comment": "Canonical risk rating scale for Risko: 1 = Very Low, 2 = Low, 3 = Moderate, 4 = High, 5 = Very High."
+    },
+    {
+      "@id": "risko:RiskRating_1",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "risko:RiskRatingScale_1to5"
+      },
+      "skos:prefLabel": "Very Low",
+      "skos:notation": "1"
+    },
+    {
+      "@id": "risko:RiskRating_2",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "risko:RiskRatingScale_1to5"
+      },
+      "skos:prefLabel": "Low",
+      "skos:notation": "2"
+    },
+    {
+      "@id": "risko:RiskRating_3",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "risko:RiskRatingScale_1to5"
+      },
+      "skos:prefLabel": "Moderate",
+      "skos:notation": "3"
+    },
+    {
+      "@id": "risko:RiskRating_4",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "risko:RiskRatingScale_1to5"
+      },
+      "skos:prefLabel": "High",
+      "skos:notation": "4"
+    },
+    {
+      "@id": "risko:RiskRating_5",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "risko:RiskRatingScale_1to5"
+      },
+      "skos:prefLabel": "Very High",
+      "skos:notation": "5"
+    },
+    {
+      "@id": "risko:identifier",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "Identifier",
+      "rdfs:comment": "Local identifier for the resource.",
+      "rdfs:domain": {
+        "@id": "risko:Entity"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:externalId",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "External ID",
+      "rdfs:comment": "Identifier from an external system (GRC tool, ERP, case system).",
+      "rdfs:domain": {
+        "@id": "risko:Entity"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:status",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "Status",
+      "rdfs:comment": "Lifecycle status of the resource (Active, Inactive, Draft, Closed, etc.).",
+      "rdfs:domain": {
+        "@id": "risko:Entity"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:createdAt",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "Created At",
+      "rdfs:comment": "Creation timestamp.",
+      "rdfs:domain": {
+        "@id": "risko:Entity"
+      },
+      "rdfs:range": {
+        "@id": "xsd:dateTime"
+      }
+    },
+    {
+      "@id": "risko:updatedAt",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "Updated At",
+      "rdfs:comment": "Last update timestamp.",
+      "rdfs:domain": {
+        "@id": "risko:Entity"
+      },
+      "rdfs:range": {
+        "@id": "xsd:dateTime"
+      }
+    },
+    {
+      "@id": "risko:hasOrgUnit",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "has organizational unit",
+      "rdfs:comment": "Links an organization to a subordinate organizational unit.",
+      "rdfs:domain": {
+        "@id": "risko:Organization"
+      },
+      "rdfs:range": {
+        "@id": "risko:OrgUnit"
+      }
+    },
+    {
+      "@id": "risko:partOfOrganization",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "part of organization",
+      "rdfs:comment": "Indicates that an organizational unit is part of an organization.",
+      "rdfs:domain": {
+        "@id": "risko:OrgUnit"
+      },
+      "rdfs:range": {
+        "@id": "risko:Organization"
+      }
+    },
+    {
+      "@id": "risko:operatesInJurisdiction",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "operates in jurisdiction",
+      "rdfs:comment": "Jurisdictions in which the organization operates.",
+      "rdfs:domain": {
+        "@id": "risko:Organization"
+      },
+      "rdfs:range": {
+        "@id": "risko:Jurisdiction"
+      }
+    },
+    {
+      "@id": "risko:activeInSector",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "active in sector",
+      "rdfs:comment": "Sectors in which the organization is active.",
+      "rdfs:domain": {
+        "@id": "risko:Organization"
+      },
+      "rdfs:range": {
+        "@id": "risko:Sector"
+      }
+    },
+    {
+      "@id": "risko:hasCounterparty",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "has counterparty",
+      "rdfs:comment": "Counterparties associated with the organization.",
+      "rdfs:domain": {
+        "@id": "risko:Organization"
+      },
+      "rdfs:range": {
+        "@id": "risko:Counterparty"
+      }
+    },
+    {
+      "@id": "risko:counterpartyOf",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "counterparty of",
+      "rdfs:comment": "Organization for which this entity acts as a counterparty.",
+      "rdfs:domain": {
+        "@id": "risko:Counterparty"
+      },
+      "rdfs:range": {
+        "@id": "risko:Organization"
+      }
+    },
+    {
+      "@id": "risko:counterpartyType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "counterparty type",
+      "rdfs:comment": "Type of counterparty (Supplier, Agent, Distributor, JV Partner, Service Provider).",
+      "rdfs:domain": {
+        "@id": "risko:Counterparty"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:locatedInJurisdiction",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "located in jurisdiction",
+      "rdfs:comment": "Jurisdiction in which the counterparty is located.",
+      "rdfs:domain": {
+        "@id": "risko:Counterparty"
+      },
+      "rdfs:range": {
+        "@id": "risko:Jurisdiction"
+      }
+    },
+    {
+      "@id": "risko:hasRole",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "has role",
+      "rdfs:comment": "Roles held by this person.",
+      "rdfs:domain": {
+        "@id": "risko:Person"
+      },
+      "rdfs:range": {
+        "@id": "risko:Role"
+      }
+    },
+    {
+      "@id": "risko:roleHolder",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "role holder",
+      "rdfs:comment": "Person holding this role.",
+      "rdfs:domain": {
+        "@id": "risko:Role"
+      },
+      "rdfs:range": {
+        "@id": "risko:Person"
+      }
+    },
+    {
+      "@id": "risko:roleInOrganization",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "role in organization",
+      "rdfs:comment": "Organization in which this role is held.",
+      "rdfs:domain": {
+        "@id": "risko:Role"
+      },
+      "rdfs:range": {
+        "@id": "risko:Organization"
+      }
+    },
+    {
+      "@id": "risko:roleType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "role type",
+      "rdfs:comment": "Role type label (e.g. BoardMember, CountryManager, ThirdPartyAgent).",
+      "rdfs:domain": {
+        "@id": "risko:Role"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:isPEP",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "is PEP",
+      "rdfs:comment": "Boolean flag indicating whether the person is considered a politically exposed person.",
+      "rdfs:domain": {
+        "@id": "risko:Person"
+      },
+      "rdfs:range": {
+        "@id": "xsd:boolean"
+      }
+    },
+    {
+      "@id": "risko:isoCountryCode",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "ISO country code",
+      "rdfs:comment": "ISO 3166 country code for a jurisdiction.",
+      "rdfs:domain": {
+        "@id": "risko:Jurisdiction"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:hasCountryRiskProfile",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "has country risk profile",
+      "rdfs:comment": "Country risk profiles defined for this jurisdiction.",
+      "rdfs:domain": {
+        "@id": "risko:Jurisdiction"
+      },
+      "rdfs:range": {
+        "@id": "risko:CountryRiskProfile"
+      }
+    },
+    {
+      "@id": "risko:hasSectorRiskProfile",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "has sector risk profile",
+      "rdfs:comment": "Sector risk profiles defined for this sector.",
+      "rdfs:domain": {
+        "@id": "risko:Sector"
+      },
+      "rdfs:range": {
+        "@id": "risko:SectorRiskProfile"
+      }
+    },
+    {
+      "@id": "risko:dimensionCode",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "dimension code",
+      "rdfs:comment": "Code identifying the risk dimension.",
+      "rdfs:domain": {
+        "@id": "risko:RiskDimension"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:forDimension",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "for dimension",
+      "rdfs:comment": "Dimension that this risk indicator measures.",
+      "rdfs:domain": {
+        "@id": "risko:RiskIndicator"
+      },
+      "rdfs:range": {
+        "@id": "risko:RiskDimension"
+      }
+    },
+    {
+      "@id": "risko:value",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "indicator value",
+      "rdfs:comment": "Value of a risk indicator (numeric or categorical encoded as string).",
+      "rdfs:domain": {
+        "@id": "risko:RiskIndicator"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:scale",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "scale",
+      "rdfs:comment": "Description of the indicator scale (e.g. 0\u2013100, 1\u20135, Low/Medium/High).",
+      "rdfs:domain": {
+        "@id": "risko:RiskIndicator"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:overallRiskRating",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "overall risk rating",
+      "rdfs:comment": "Overall risk rating label (Very Low, Low, Moderate, High, Very High).",
+      "rdfs:domain": {
+        "@id": "risko:RiskProfile"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:overallRiskScore",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "overall risk score",
+      "rdfs:comment": "Overall risk score using the canonical 1\u20135 scale (1 = Very Low, 5 = Very High).",
+      "rdfs:domain": {
+        "@id": "risko:RiskProfile"
+      },
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "risko:hasRiskIndicator",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "has risk indicator",
+      "rdfs:comment": "Risk indicators contributing to this risk profile.",
+      "rdfs:domain": {
+        "@id": "risko:RiskProfile"
+      },
+      "rdfs:range": {
+        "@id": "risko:RiskIndicator"
+      }
+    },
+    {
+      "@id": "risko:forJurisdiction",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "for jurisdiction",
+      "rdfs:comment": "Jurisdiction for which this country risk profile is defined.",
+      "rdfs:domain": {
+        "@id": "risko:CountryRiskProfile"
+      },
+      "rdfs:range": {
+        "@id": "risko:Jurisdiction"
+      }
+    },
+    {
+      "@id": "risko:forSector",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "for sector",
+      "rdfs:comment": "Sector for which this sector risk profile is defined.",
+      "rdfs:domain": {
+        "@id": "risko:SectorRiskProfile"
+      },
+      "rdfs:range": {
+        "@id": "risko:Sector"
+      }
+    },
+    {
+      "@id": "risko:riskCategory",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "risk category",
+      "rdfs:comment": "High-level risk category (Bribery, Fraud, Sanctions, etc.).",
+      "rdfs:domain": {
+        "@id": "risko:Risk"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:riskDescription",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "risk description",
+      "rdfs:comment": "Description of the risk.",
+      "rdfs:domain": {
+        "@id": "risko:Risk"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:hasRiskFactor",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "has risk factor",
+      "rdfs:comment": "Risk factors contributing to this risk.",
+      "rdfs:domain": {
+        "@id": "risko:Risk"
+      },
+      "rdfs:range": {
+        "@id": "risko:RiskFactor"
+      }
+    },
+    {
+      "@id": "risko:hasRiskScore",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "has risk score",
+      "rdfs:comment": "Risk scores assigned to this risk.",
+      "rdfs:domain": {
+        "@id": "risko:Risk"
+      },
+      "rdfs:range": {
+        "@id": "risko:RiskScore"
+      }
+    },
+    {
+      "@id": "risko:scoreValue",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "score value",
+      "rdfs:comment": "Numeric score on the canonical 1\u20135 scale (1 = Very Low, 5 = Very High).",
+      "rdfs:domain": {
+        "@id": "risko:RiskScore"
+      },
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "risko:scoreLabel",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "score label",
+      "rdfs:comment": "Label for the score value (Very Low, Low, Moderate, High, Very High).",
+      "rdfs:domain": {
+        "@id": "risko:RiskScore"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:usesRatingConcept",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "uses rating concept",
+      "rdfs:comment": "Optional link to the corresponding SKOS concept in the RiskRatingScale_1to5 scheme.",
+      "rdfs:domain": {
+        "@id": "risko:RiskScore"
+      },
+      "rdfs:range": {
+        "@id": "skos:Concept"
+      }
+    },
+    {
+      "@id": "risko:assessedEntity",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "assessed entity",
+      "rdfs:comment": "Entity (organization, unit, counterparty) that this assessment covers.",
+      "rdfs:domain": {
+        "@id": "risko:RiskAssessment"
+      },
+      "rdfs:range": {
+        "@id": "risko:Entity"
+      }
+    },
+    {
+      "@id": "risko:assessmentDate",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "assessment date",
+      "rdfs:comment": "Date of the risk assessment.",
+      "rdfs:domain": {
+        "@id": "risko:RiskAssessment"
+      },
+      "rdfs:range": {
+        "@id": "xsd:date"
+      }
+    },
+    {
+      "@id": "risko:policyType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "policy type",
+      "rdfs:comment": "Policy type (AntiBribery, Sanctions, ConflictsOfInterest, Fraud, etc.).",
+      "rdfs:domain": {
+        "@id": "risko:Policy"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:coversRiskCategory",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "covers risk category",
+      "rdfs:comment": "Risk categories this policy addresses.",
+      "rdfs:domain": {
+        "@id": "risko:Policy"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:controlType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "control type",
+      "rdfs:comment": "Control type (Preventive, Detective, Corrective).",
+      "rdfs:domain": {
+        "@id": "risko:Control"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:mitigatesRisk",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "mitigates risk",
+      "rdfs:comment": "Risks that this control helps to mitigate.",
+      "rdfs:domain": {
+        "@id": "risko:Control"
+      },
+      "rdfs:range": {
+        "@id": "risko:Risk"
+      }
+    },
+    {
+      "@id": "risko:incidentType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "incident type",
+      "rdfs:comment": "Type of incident (AllegedBribery, Fraud, Misreporting, Harassment, etc.).",
+      "rdfs:domain": {
+        "@id": "risko:Incident"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:incidentDate",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "incident date",
+      "rdfs:comment": "Date on which the incident occurred or was first known.",
+      "rdfs:domain": {
+        "@id": "risko:Incident"
+      },
+      "rdfs:range": {
+        "@id": "xsd:date"
+      }
+    },
+    {
+      "@id": "risko:incidentStatus",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "incident status",
+      "rdfs:comment": "Status of the incident (Reported, UnderInvestigation, Substantiated, NotSubstantiated, Closed).",
+      "rdfs:domain": {
+        "@id": "risko:Incident"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:investigatesIncident",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "investigates incident",
+      "rdfs:comment": "Incident that this investigation relates to.",
+      "rdfs:domain": {
+        "@id": "risko:Investigation"
+      },
+      "rdfs:range": {
+        "@id": "risko:Incident"
+      }
+    },
+    {
+      "@id": "risko:investigationOutcome",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "investigation outcome",
+      "rdfs:comment": "Outcome of the investigation (Substantiated, NotSubstantiated, etc.).",
+      "rdfs:domain": {
+        "@id": "risko:Investigation"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:enforcementAuthority",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "enforcement authority",
+      "rdfs:comment": "Regulator, prosecutor, or court that took this enforcement action.",
+      "rdfs:domain": {
+        "@id": "risko:EnforcementAction"
+      },
+      "rdfs:range": {
+        "@id": "schema:Organization"
+      }
+    },
+    {
+      "@id": "risko:actionType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "action type",
+      "rdfs:comment": "Type of enforcement action (Fine, Settlement, Debarment, etc.).",
+      "rdfs:domain": {
+        "@id": "risko:EnforcementAction"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:penaltyAmount",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "penalty amount",
+      "rdfs:comment": "Monetary penalty amount associated with this enforcement action.",
+      "rdfs:domain": {
+        "@id": "risko:EnforcementAction"
+      },
+      "rdfs:range": {
+        "@id": "xsd:decimal"
+      }
+    },
+    {
+      "@id": "risko:evidenceType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "evidence type",
+      "rdfs:comment": "Type of evidence (Document, Email, LogExport, InterviewNote, MediaArticle, CourtDocument).",
+      "rdfs:domain": {
+        "@id": "risko:EvidenceItem"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:sourceName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "source name",
+      "rdfs:comment": "Name of the risk data source.",
+      "rdfs:domain": {
+        "@id": "risko:RiskDataSource"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:scenarioName",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "scenario name",
+      "rdfs:comment": "Human-readable name for the scenario.",
+      "rdfs:domain": {
+        "@id": "risko:Scenario"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:scenarioDescription",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "scenario description",
+      "rdfs:comment": "Natural-language description of the scenario.",
+      "rdfs:domain": {
+        "@id": "risko:Scenario"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:scenarioType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "scenario type",
+      "rdfs:comment": "Type of scenario (MarketEntry, Crisis, ElectionCycle, PostEnforcement, HighGrowthPush, etc.).",
+      "rdfs:domain": {
+        "@id": "risko:Scenario"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:scenarioJurisdiction",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "scenario jurisdiction",
+      "rdfs:comment": "Jurisdictions to which the scenario applies.",
+      "rdfs:domain": {
+        "@id": "risko:Scenario"
+      },
+      "rdfs:range": {
+        "@id": "risko:Jurisdiction"
+      }
+    },
+    {
+      "@id": "risko:scenarioSector",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "scenario sector",
+      "rdfs:comment": "Sectors to which the scenario applies.",
+      "rdfs:domain": {
+        "@id": "risko:Scenario"
+      },
+      "rdfs:range": {
+        "@id": "risko:Sector"
+      }
+    },
+    {
+      "@id": "risko:scenarioOrganization",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "scenario organization",
+      "rdfs:comment": "Organizations to which the scenario applies.",
+      "rdfs:domain": {
+        "@id": "risko:Scenario"
+      },
+      "rdfs:range": {
+        "@id": "risko:Organization"
+      }
+    },
+    {
+      "@id": "risko:scenarioTimePeriod",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "scenario time period",
+      "rdfs:comment": "Time period during which the scenario applies.",
+      "rdfs:domain": {
+        "@id": "risko:Scenario"
+      },
+      "rdfs:range": {
+        "@id": "risko:TimePeriod"
+      }
+    },
+    {
+      "@id": "risko:scenarioTrigger",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "scenario trigger",
+      "rdfs:comment": "Trigger event or condition for the scenario (election, conflict, major tender, etc.).",
+      "rdfs:domain": {
+        "@id": "risko:Scenario"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:forScenario",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "for scenario",
+      "rdfs:comment": "Scenario for which this override is defined.",
+      "rdfs:domain": {
+        "@id": "risko:ScenarioOverride"
+      },
+      "rdfs:range": {
+        "@id": "risko:Scenario"
+      }
+    },
+    {
+      "@id": "risko:overrideTarget",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": "override target",
+      "rdfs:comment": "Resource being overridden (risk profile, risk, policy, control, indicator).",
+      "rdfs:domain": {
+        "@id": "risko:ScenarioOverride"
+      },
+      "rdfs:range": {
+        "@id": "risko:Entity"
+      }
+    },
+    {
+      "@id": "risko:overrideType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "override type",
+      "rdfs:comment": "Nature of the override (Tighten, Relax, AddControl, SuspendActivity, RequireEnhancedDueDiligence, etc.).",
+      "rdfs:domain": {
+        "@id": "risko:ScenarioOverride"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:overrideDetails",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "override details",
+      "rdfs:comment": "Natural-language description of what is being overridden and how.",
+      "rdfs:domain": {
+        "@id": "risko:ScenarioOverride"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "risko:overrideEffectiveFrom",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "override effective from",
+      "rdfs:comment": "Date on which this override becomes effective.",
+      "rdfs:domain": {
+        "@id": "risko:ScenarioOverride"
+      },
+      "rdfs:range": {
+        "@id": "xsd:date"
+      }
+    },
+    {
+      "@id": "risko:overrideEffectiveTo",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "override effective to",
+      "rdfs:comment": "Date on which this override ceases to be effective.",
+      "rdfs:domain": {
+        "@id": "risko:ScenarioOverride"
+      },
+      "rdfs:range": {
+        "@id": "xsd:date"
+      }
+    },
+    {
+      "@id": "risko:overridePriority",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "override priority",
+      "rdfs:comment": "Priority used to resolve conflicts when multiple overrides apply.",
+      "rdfs:domain": {
+        "@id": "risko:ScenarioOverride"
+      },
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "risko:overrideJustification",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": "override justification",
+      "rdfs:comment": "Rationale for the override (regulatory expectation, board mandate, risk committee decision, etc.).",
+      "rdfs:domain": {
+        "@id": "risko:ScenarioOverride"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    }
+  ]
+}
