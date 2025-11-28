@@ -26,10 +26,10 @@
         { "@id": "brando:context/target/us-event-branding" }
       ],
       "brando:usesVerbal": [
-        { "@id": "brando:verbal-token/target/master" }
+        { "@id": "Brando:VerbalIdentity-token/target/master" }
       ],
       "brando:usesVisual": [
-        { "@id": "brando:visual-token/target/bullseye-core" }
+        { "@id": "Brando:VisualIdentity-token/target/bullseye-core" }
       ],
       "brando:hasPolicy": [
         { "@id": "brando:policy/target/brand-elements-core" }
@@ -57,10 +57,10 @@
         "notes": "Evergreen, default activation context for Target master brand across owned retail and ecommerce surfaces."
       },
       "brando:usesVerbal": [
-        { "@id": "brando:verbal-token/target/master" }
+        { "@id": "Brando:VerbalIdentity-token/target/master" }
       ],
       "brando:usesVisual": [
-        { "@id": "brando:visual-token/target/bullseye-core" }
+        { "@id": "Brando:VisualIdentity-token/target/bullseye-core" }
       ],
       "brando:downloadableFile": [
         { "@id": "brando:media/target/brand-elements-guidelines" }
@@ -82,15 +82,15 @@
         "notes": "Use Target Red prominently and apply repeating Bullseye spacing rules (2x between logos, x from edges) to separate branding from surrounding visuals."
       },
       "brando:usesVisual": [
-        { "@id": "brando:visual-token/target/bullseye-core" }
+        { "@id": "Brando:VisualIdentity-token/target/bullseye-core" }
       ],
       "brando:downloadableFile": [
         { "@id": "brando:media/target/brand-elements-guidelines" }
       ]
     },
     {
-      "@id": "brando:verbal-token/target/master",
-      "@type": "brando:Verbal",
+      "@id": "Brando:VerbalIdentity-token/target/master",
+      "@type": "Brando:VerbalIdentity",
       "schema:name": "Target – Master Verbal Token",
       "brando:toneOfVoice": "Upbeat, confident and guest-focused, balancing playful energy with clarity. The voice should feel joyful and inviting while still direct and simple.",
       "brando:dialogueStyle": "Speaks in a friendly, conversational tone, often addressing the guest as \"you\" and using short, declarative sentences or paired statements, especially when using the tagline.",
@@ -108,12 +108,12 @@
       "brando:assetPreview": "urn:placeholder:brand/target/verbal-preview"
     },
     {
-      "@id": "brando:visual-token/target/bullseye-core",
-      "@type": "brando:Visual",
+      "@id": "Brando:VisualIdentity-token/target/bullseye-core",
+      "@type": "Brando:VisualIdentity",
       "schema:name": "Target – Core Bullseye Visual Token",
       "brando:brandName": "Target",
       "brando:logo": "urn:placeholder:brand/target/logo-bullseye-primary",
-      "brando:visualReferenceLink": "urn:placeholder:brand/target/visual-system",
+      "Brando:VisualIdentityReferenceLink": "urn:placeholder:brand/target/visual-system",
       "brando:colourPalette": {
         "primary": "Target Red",
         "specs": {
@@ -125,7 +125,7 @@
         "usageNotes": "Target Red is the official color of the Bullseye Design; CMYK, RGB and HEX breakdowns are tuned per process rather than direct conversions."
       },
       "brando:typography": "Helvetica for Target is the custom corporate typeface, based on Helvetica Neue and designed to complement the curved edges of the Bullseye. Use it in a range of weights, with specific tracking and leading practices for readability.",
-      "brando:Visual": {
+      "Brando:VisualIdentity": {
         "logoGeometry": {
           "outerRing": "width x",
           "innerSpace": "width x (transparent to background)",
@@ -139,7 +139,7 @@
       },
       "brando:imageryStyles": "Use the Bullseye Design as a bold, simple symbol in layouts, pairing it with clean photography and ample white space. In event and sponsorship settings, repeat the Bullseye along ribbons or backdrops with consistent spacing to stand out in busy environments.",
       "brando:motionRules": "In video, the Bullseye should be visually centered and sized to half the width of the shortest side of the frame, with an accompanying legal line along the bottom edge in the language of the execution.",
-      "brando:visualUsageGuidelines": "Only use approved Bullseye logo files. Do not recolor, distort, outline, fill with images, split, add effects, or turn the Bullseye into an object (like a wheel or eye). Nothing may touch or connect to the Bullseye. Cropping is limited, and any cropped execution must also include a full Bullseye in the same communication.",
+      "Brando:VisualIdentityUsageGuidelines": "Only use approved Bullseye logo files. Do not recolor, distort, outline, fill with images, split, add effects, or turn the Bullseye into an object (like a wheel or eye). Nothing may touch or connect to the Bullseye. Cropping is limited, and any cropped execution must also include a full Bullseye in the same communication.",
       "brando:assetURL": "urn:placeholder:brand/target/bullseye-asset-pack",
       "brando:assetPreview": "urn:placeholder:brand/target/bullseye-preview"
     },

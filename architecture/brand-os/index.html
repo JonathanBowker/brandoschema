@@ -713,7 +713,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Verbal
+    brando:VerbalIdentity
     
   </span>
   
@@ -736,7 +736,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Visual
+    brando:VisualIdentity
     
   </span>
   
@@ -759,7 +759,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Audio
+    brando:AudioIdentity
     
   </span>
   
@@ -3854,7 +3854,7 @@
 <ul>
 <li><code>brando:Brand</code> – core identity and defaults</li>
 <li><code>brando:Context</code> – situational modifiers (channel, audience, region, goal)</li>
-<li><code>brando:Verbal</code> / <code>Visual</code> / <code>Audio</code> – expression tokens by modality</li>
+<li><code>Brando:VerbalIdentity</code> / <code>Visual</code> / <code>Audio</code> – expression tokens by modality</li>
 <li><code>brando:Policy</code> – governance and guard rails</li>
 <li><code>brando:BrandedCategory</code> – product/category alignment and vocabulary</li>
 <li><code>brando:Campaign</code> – time-bound overlays</li>
@@ -3954,15 +3954,15 @@
 <td>Situation where behaviour changes (channel, audience, task, jurisdiction)</td>
 </tr>
 <tr>
-<td><code>brando:Verbal</code></td>
+<td><code>Brando:VerbalIdentity</code></td>
 <td>Voice/tone/vocabulary presets</td>
 </tr>
 <tr>
-<td><code>brando:Visual</code></td>
+<td><code>Brando:VisualIdentity</code></td>
 <td>Visual system / design tokens</td>
 </tr>
 <tr>
-<td><code>brando:Audio</code></td>
+<td><code>Brando:AudioIdentity</code></td>
 <td>Sonic identity</td>
 </tr>
 <tr>
@@ -4208,7 +4208,7 @@
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/visual/master&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Visual&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VisualIdentity&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:assetURL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/visual/master-token.json&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:downloadableFile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/visual/master-kit.zip&quot;</span><span class="p">,</span>

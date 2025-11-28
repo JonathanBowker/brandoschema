@@ -839,7 +839,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Verbal
+    brando:VerbalIdentity
     
   </span>
   
@@ -862,7 +862,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Visual
+    brando:VisualIdentity
     
   </span>
   
@@ -885,7 +885,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Audio
+    brando:AudioIdentity
     
   </span>
   
@@ -3861,7 +3861,7 @@
 <ul>
 <li>one <code>brando:Brand</code>,</li>
 <li>one <code>brando:Context</code>,</li>
-<li>one <code>brando:Verbal</code>,</li>
+<li>one <code>Brando:VerbalIdentity</code>,</li>
 <li>one <code>brando:Policy</code>.</li>
 </ul>
 <p>You can embed this in a <code>&lt;script type="application/ld+json"&gt;</code> tag on a page, or return it via an API.</p>
@@ -3905,7 +3905,7 @@
 
 <span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VerbalIdentity&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Calm, empathetic, precise. Explain options in simple language without being patronising.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:approvedTerms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="s2">&quot;interest rate&quot;</span><span class="p">,</span>
@@ -3952,7 +3952,7 @@
 <p>Follow:</p>
 <ul>
 <li><code>brando:hasContext</code> → <code>brando:Context</code> for the current channel,</li>
-<li><code>brando:usesVerbal</code> → <code>brando:Verbal</code>,</li>
+<li><code>brando:usesVerbal</code> → <code>Brando:VerbalIdentity</code>,</li>
 <li><code>brando:hasPolicy</code> → <code>brando:Policy</code>.</li>
 </ul>
 </li>
@@ -4095,7 +4095,7 @@
 <p>Once you have a minimal JSON-LD graph working, you can incrementally add:</p>
 <ul>
 <li>more <code>brando:Context</code> nodes for key channels,</li>
-<li><code>brando:Visual</code> and <code>brando:Audio</code> for multimodal expression,</li>
+<li><code>Brando:VisualIdentity</code> and <code>Brando:AudioIdentity</code> for multimodal expression,</li>
 <li>additional <code>brando:Policy</code> and <code>brando:AutomationRule</code> nodes for deeper governance.</li>
 </ul>
 

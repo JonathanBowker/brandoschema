@@ -713,7 +713,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Verbal
+    brando:VerbalIdentity
     
   </span>
   
@@ -736,7 +736,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Visual
+    brando:VisualIdentity
     
   </span>
   
@@ -759,7 +759,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Audio
+    brando:AudioIdentity
     
   </span>
   
@@ -3890,7 +3890,7 @@
 <li>A user asks a question in a support chatbot.</li>
 <li>The chatbot’s backend:<ul>
 <li>resolves the relevant <code>brando:Brand</code> and <code>brando:Context</code>,</li>
-<li>gathers <code>brando:Verbal</code> and <code>brando:Policy</code> nodes,</li>
+<li>gathers <code>Brando:VerbalIdentity</code> and <code>brando:Policy</code> nodes,</li>
 <li>optionally evaluates <code>brando:AutomationRule</code> nodes,</li>
 <li>builds a <strong>runtime configuration</strong> for the LLM.</li>
 </ul>
@@ -3950,7 +3950,7 @@
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VerbalIdentity&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reassuring and efficient. Focus on clear next steps.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:dialogueStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Use second person; acknowledge emotion, then move to options.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:writingStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Short paragraphs, concrete steps, minimal jargon.&quot;</span><span class="p">,</span>
@@ -4014,7 +4014,7 @@
 <ol>
 <li>Load the <code>brando:Brand</code> node.</li>
 <li>Load the <code>brando:Context</code> node.</li>
-<li>Follow <code>brando:usesVerbal</code> to the relevant <code>brando:Verbal</code>.</li>
+<li>Follow <code>brando:usesVerbal</code> to the relevant <code>Brando:VerbalIdentity</code>.</li>
 <li>Follow <code>brando:hasPolicy</code> to <code>brando:Policy</code> nodes.</li>
 </ol>
 <p>Conceptual TypeScript:</p>

@@ -713,7 +713,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Verbal
+    brando:VerbalIdentity
     
   </span>
   
@@ -736,7 +736,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Visual
+    brando:VisualIdentity
     
   </span>
   
@@ -759,7 +759,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Audio
+    brando:AudioIdentity
     
   </span>
   
@@ -4037,9 +4037,9 @@ The TypeScript types in this page are <strong>non-normative</strong>. They are a
 <div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">BrandoType</span><span class="w"> </span><span class="o">=</span>
 <span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Brand&quot;</span>
 <span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Context&quot;</span>
-<span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span>
-<span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Visual&quot;</span>
-<span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Audio&quot;</span>
+<span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;Brando:VerbalIdentity&quot;</span>
+<span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;Brando:VisualIdentity&quot;</span>
+<span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;Brando:AudioIdentity&quot;</span>
 <span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Policy&quot;</span>
 <span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:BrandedCategory&quot;</span>
 <span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Campaign&quot;</span>
@@ -4142,7 +4142,7 @@ In the raw model, property names with colons (e.g. <code>"brando:toneOfVoice"</c
 <span class="p">}</span>
 
 <span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">Verbal</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">BrandoBaseDomain</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Brando:VerbalIdentity&quot;</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">toneOfVoice?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">dialogueStyle?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">writingStyle?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
@@ -4158,7 +4158,7 @@ In the raw model, property names with colons (e.g. <code>"brando:toneOfVoice"</c
 <span class="p">}</span>
 
 <span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">Visual</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">BrandoBaseDomain</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;brando:Visual&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Brando:VisualIdentity&quot;</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">brandName?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">logo?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">colourPalette?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w">   </span><span class="c1">// JSON string</span>
@@ -4170,7 +4170,7 @@ In the raw model, property names with colons (e.g. <code>"brando:toneOfVoice"</c
 <span class="p">}</span>
 
 <span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">Audio</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">BrandoBaseDomain</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;brando:Audio&quot;</span><span class="p">;</span>
+<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Brando:AudioIdentity&quot;</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">audioLogo?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">voiceSignature?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">pronunciationGuide?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>

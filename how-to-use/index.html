@@ -713,7 +713,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Verbal
+    brando:VerbalIdentity
     
   </span>
   
@@ -736,7 +736,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Visual
+    brando:VisualIdentity
     
   </span>
   
@@ -759,7 +759,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Audio
+    brando:AudioIdentity
     
   </span>
   
@@ -4061,7 +4061,7 @@
 <ul>
 <li>the <strong>brand</strong> (top-level <code>brando:Brand</code>),</li>
 <li>the <strong>context(s)</strong> (<code>brando:Context</code>),</li>
-<li>the <strong>tone &amp; language</strong> requirements (<code>brando:Verbal</code>),</li>
+<li>the <strong>tone &amp; language</strong> requirements (<code>Brando:VerbalIdentity</code>),</li>
 <li>the <strong>minimum policies</strong> you need (<code>brando:Policy</code>).</li>
 </ul>
 <p>You’ll add visuals, audio, categories, and automation later.</p>
@@ -4072,7 +4072,7 @@
 <ol>
 <li>A <code>brando:Brand</code> node</li>
 <li>A <code>brando:Context</code> node</li>
-<li>A <code>brando:Verbal</code> node</li>
+<li>A <code>Brando:VerbalIdentity</code> node</li>
 <li>A <code>brando:Policy</code> node</li>
 </ol>
 <h3 id="21-brand-node">2.1 Brand node</h3>
@@ -4113,7 +4113,7 @@
 <h3 id="23-verbal-node">2.3 Verbal node</h3>
 <p>Capture <strong>tone, style, and vocabulary</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/acme/tokens/verbal/support</span>
-<span class="w">    </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:Verbal</span>
+<span class="w">    </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Brando:VerbalIdentity</span>
 
 <span class="w">    </span><span class="nt">brando:toneOfVoice</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">&gt;</span>
 <span class="w">      </span><span class="no">Straightforward, encouraging, and practical.</span>
@@ -4295,12 +4295,12 @@
 <h2 id="6-add-other-modalities-and-structure">6. Add other modalities and structure</h2>
 <p>Once text is working, extend:</p>
 <h3 id="61-visual-identity">6.1 Visual identity</h3>
-<p>Add <code>brando:Visual</code> nodes for:</p>
+<p>Add <code>Brando:VisualIdentity</code> nodes for:</p>
 <ul>
 <li>colour palette (<code>brando:colourPalette</code> as JSON string),</li>
 <li>typography (<code>brando:typography</code>),</li>
-<li>design tokens (<code>brando:Visual</code>),</li>
-<li>logo and imagery rules (<code>brando:visualUsageGuidelines</code>, <code>brando:visualReferenceLink</code>).</li>
+<li>design tokens (<code>Brando:VisualIdentity</code>),</li>
+<li>logo and imagery rules (<code>Brando:VisualIdentityUsageGuidelines</code>, <code>Brando:VisualIdentityReferenceLink</code>).</li>
 </ul>
 <p>Link them:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">brando:usesVisual</span><span class="p">:</span>
@@ -4313,7 +4313,7 @@
 <li>theming for UI.</li>
 </ul>
 <h3 id="62-audio-identity">6.2 Audio identity</h3>
-<p>Add <code>brando:Audio</code> nodes for:</p>
+<p>Add <code>Brando:AudioIdentity</code> nodes for:</p>
 <ul>
 <li>sonic logos,</li>
 <li>voice signature,</li>
@@ -4405,7 +4405,7 @@
 <ul>
 <li><a href="../types/brand/"><code>brando:Brand</code></a></li>
 <li><a href="../types/context/"><code>brando:Context</code></a></li>
-<li><a href="../types/verbal-token/"><code>brando:Verbal</code></a></li>
+<li><a href="../types/verbal-token/"><code>Brando:VerbalIdentity</code></a></li>
 <li><a href="../types/policy/"><code>brando:Policy</code></a></li>
 </ul>
 </li>

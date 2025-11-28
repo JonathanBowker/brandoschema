@@ -122,7 +122,7 @@
       }
     },
     {
-      "@id": "brando:Verbal",
+      "@id": "Brando:VerbalIdentity",
       "@type": "owl:Class",
       "rdfs:label": {
         "@language": "en",
@@ -149,7 +149,7 @@
       ]
     },
     {
-      "@id": "brando:Visual",
+      "@id": "Brando:VisualIdentity",
       "@type": "owl:Class",
       "rdfs:label": {
         "@language": "en",
@@ -176,7 +176,7 @@
       ]
     },
     {
-      "@id": "brando:Audio",
+      "@id": "Brando:AudioIdentity",
       "@type": "owl:Class",
       "rdfs:label": {
         "@language": "en",
@@ -350,7 +350,7 @@
         }
       ],
       "rdfs:range": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       }
     },
     {
@@ -380,7 +380,7 @@
         }
       ],
       "rdfs:range": {
-        "@id": "brando:Visual"
+        "@id": "Brando:VisualIdentity"
       }
     },
     {
@@ -410,7 +410,7 @@
         }
       ],
       "rdfs:range": {
-        "@id": "brando:Audio"
+        "@id": "Brando:AudioIdentity"
       }
     },
     {
@@ -953,7 +953,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -978,7 +978,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1003,7 +1003,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1028,7 +1028,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1053,7 +1053,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1078,7 +1078,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1103,7 +1103,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1128,7 +1128,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1153,7 +1153,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1178,7 +1178,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1203,7 +1203,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1228,7 +1228,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Verbal"
+        "@id": "Brando:VerbalIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1303,7 +1303,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Visual"
+        "@id": "Brando:VisualIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1334,14 +1334,14 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Visual"
+        "@id": "Brando:VisualIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:anyURI"
       }
     },
     {
-      "@id": "brando:visualReferenceLink",
+      "@id": "Brando:VisualIdentityReferenceLink",
       "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
@@ -1359,7 +1359,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Visual"
+        "@id": "Brando:VisualIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:anyURI"
@@ -1384,7 +1384,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Visual"
+        "@id": "Brando:VisualIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1409,14 +1409,14 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Visual"
+        "@id": "Brando:VisualIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
       }
     },
     {
-      "@id": "brando:Visual",
+      "@id": "Brando:VisualIdentity",
       "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
@@ -1434,7 +1434,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Visual"
+        "@id": "Brando:VisualIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1459,7 +1459,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Visual"
+        "@id": "Brando:VisualIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1484,14 +1484,14 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Visual"
+        "@id": "Brando:VisualIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
       }
     },
     {
-      "@id": "brando:visualUsageGuidelines",
+      "@id": "Brando:VisualIdentityUsageGuidelines",
       "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
@@ -1509,14 +1509,14 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Visual"
+        "@id": "Brando:VisualIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
       }
     },
     {
-      "@id": "brando:audioLogo",
+      "@id": "Brando:AudioIdentityLogo",
       "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
@@ -1534,7 +1534,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Audio"
+        "@id": "Brando:AudioIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:anyURI"
@@ -1559,7 +1559,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Audio"
+        "@id": "Brando:AudioIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1584,7 +1584,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Audio"
+        "@id": "Brando:AudioIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
@@ -1609,14 +1609,14 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Audio"
+        "@id": "Brando:AudioIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
       }
     },
     {
-      "@id": "brando:audioCue",
+      "@id": "Brando:AudioIdentityCue",
       "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
@@ -1634,14 +1634,14 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Audio"
+        "@id": "Brando:AudioIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
       }
     },
     {
-      "@id": "brando:audioUsageGuidelines",
+      "@id": "Brando:AudioIdentityUsageGuidelines",
       "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
@@ -1659,14 +1659,14 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Audio"
+        "@id": "Brando:AudioIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:string"
       }
     },
     {
-      "@id": "brando:audioReferenceLink",
+      "@id": "Brando:AudioIdentityReferenceLink",
       "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
@@ -1684,7 +1684,7 @@
         "@id": "brando:"
       },
       "rdfs:domain": {
-        "@id": "brando:Audio"
+        "@id": "Brando:AudioIdentity"
       },
       "rdfs:range": {
         "@id": "xsd:anyURI"
@@ -2466,13 +2466,13 @@
           "@id": "brando:Context"
         },
         {
-          "@id": "brando:Visual"
+          "@id": "Brando:VisualIdentity"
         },
         {
-          "@id": "brando:Verbal"
+          "@id": "Brando:VerbalIdentity"
         },
         {
-          "@id": "brando:Audio"
+          "@id": "Brando:AudioIdentity"
         },
         {
           "@id": "brando:Policy"
@@ -2517,13 +2517,13 @@
           "@id": "brando:Context"
         },
         {
-          "@id": "brando:Visual"
+          "@id": "Brando:VisualIdentity"
         },
         {
-          "@id": "brando:Verbal"
+          "@id": "Brando:VerbalIdentity"
         },
         {
-          "@id": "brando:Audio"
+          "@id": "Brando:AudioIdentity"
         },
         {
           "@id": "brando:Policy"

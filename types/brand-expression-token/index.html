@@ -866,7 +866,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Verbal
+    brando:VerbalIdentity
     
   </span>
   
@@ -889,7 +889,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Visual
+    brando:VisualIdentity
     
   </span>
   
@@ -912,7 +912,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Audio
+    brando:AudioIdentity
     
   </span>
   
@@ -3900,9 +3900,9 @@
 </ul>
 <p><code>brando:BrandExpression</code> is an <strong>abstract superclass</strong> for all expression tokens in Brando:</p>
 <ul>
-<li><code>brando:Verbal</code></li>
-<li><code>brando:Visual</code></li>
-<li><code>brando:Audio</code></li>
+<li><code>Brando:VerbalIdentity</code></li>
+<li><code>Brando:VisualIdentity</code></li>
+<li><code>Brando:AudioIdentity</code></li>
 </ul>
 <p>It provides a <strong>shared conceptual and structural basis</strong> for anything that represents <em>how the brand is expressed</em> (rather than <em>what the brand is</em>).</p>
 <p>You will almost always instantiate one of the <strong>concrete subclasses</strong> (<code>Verbal</code>, <code>Visual</code>, <code>Audio</code>) rather than <code>BrandExpression</code> directly.</p>
@@ -3927,9 +3927,9 @@
 <h3 id="subclasses">Subclasses</h3>
 <p>The following classes are explicitly declared as subclasses of <code>brando:BrandExpression</code>:</p>
 <ul>
-<li><code>brando:Verbal</code></li>
-<li><code>brando:Visual</code></li>
-<li><code>brando:Audio</code></li>
+<li><code>Brando:VerbalIdentity</code></li>
+<li><code>Brando:VisualIdentity</code></li>
+<li><code>Brando:AudioIdentity</code></li>
 </ul>
 <p>All three also subclass <code>schema:Intangible</code>, via their own <code>rdfs:subClassOf</code> relations.</p>
 <h3 id="inbound-links-via-subclasses">Inbound links (via subclasses)</h3>
@@ -3938,9 +3938,9 @@
 <li>
 <p><code>brando:Brand</code> and <code>brando:Context</code> using:</p>
 <ul>
-<li><code>brando:usesVerbal</code> → <code>brando:Verbal</code></li>
-<li><code>brando:usesVisual</code> → <code>brando:Visual</code></li>
-<li><code>brando:usesAudio</code> → <code>brando:Audio</code></li>
+<li><code>brando:usesVerbal</code> → <code>Brando:VerbalIdentity</code></li>
+<li><code>brando:usesVisual</code> → <code>Brando:VisualIdentity</code></li>
+<li><code>brando:usesAudio</code> → <code>Brando:AudioIdentity</code></li>
 </ul>
 </li>
 </ul>
@@ -3976,7 +3976,7 @@
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/visual/master&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Visual&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VisualIdentity&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:assetURL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/visuals/master-tile.png&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -4010,7 +4010,7 @@
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/audio/master&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Audio&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:AudioIdentity&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:assetURL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/audio/northstar-sonic-logo-full.wav&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:assetPreview&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/audio/northstar-sonic-logo-preview.mp3&quot;</span>
 <span class="p">}</span>
@@ -4027,17 +4027,17 @@
 <span class="w">  </span><span class="nd">&quot;@graph&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VerbalIdentity&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:assetPreview&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/voice/verbal-default-card.png&quot;</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/visual/master&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Visual&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VisualIdentity&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:assetPreview&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/visuals/master-preview.png&quot;</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/audio/master&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Audio&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:AudioIdentity&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:assetPreview&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/audio/sonic-logo-preview.mp3&quot;</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -4063,9 +4063,9 @@
 <li>
 <p>Use concrete types:</p>
 <ul>
-<li><code>brando:Verbal</code> for voice/tone/text rules,</li>
-<li><code>brando:Visual</code> for visual identity and design tokens,</li>
-<li><code>brando:Audio</code> for sonic identity and cues.</li>
+<li><code>Brando:VerbalIdentity</code> for voice/tone/text rules,</li>
+<li><code>Brando:VisualIdentity</code> for visual identity and design tokens,</li>
+<li><code>Brando:AudioIdentity</code> for sonic identity and cues.</li>
 </ul>
 </li>
 </ul>
@@ -4082,9 +4082,9 @@
 <li>
 <p><strong>Concrete subclasses</strong></p>
 <ul>
-<li><a href="../verbal-token/"><code>brando:Verbal</code></a></li>
-<li><a href="../visual-token/"><code>brando:Visual</code></a></li>
-<li><a href="../audio-token/"><code>brando:Audio</code></a></li>
+<li><a href="../verbal-token/"><code>Brando:VerbalIdentity</code></a></li>
+<li><a href="../visual-token/"><code>Brando:VisualIdentity</code></a></li>
+<li><a href="../audio-token/"><code>Brando:AudioIdentity</code></a></li>
 </ul>
 </li>
 <li>

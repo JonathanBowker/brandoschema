@@ -893,7 +893,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Verbal
+    brando:VerbalIdentity
     
   </span>
   
@@ -916,7 +916,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Visual
+    brando:VisualIdentity
     
   </span>
   
@@ -939,7 +939,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Audio
+    brando:AudioIdentity
     
   </span>
   
@@ -3964,9 +3964,9 @@ If you want to jump straight to templates, see:</p>
 <p><strong>Brand expression</strong><br />
   Reusable tokens for:</p>
 <ul>
-<li><strong>verbal</strong> (<code>brando:Verbal</code>) – tone, vocabulary, phrasing rules;</li>
-<li><strong>visual</strong> (<code>brando:Visual</code>) – colour, typography, logo, imagery, motion;</li>
-<li><strong>audio</strong> (<code>brando:Audio</code>) – voice, sonic logos, cues, usage rules.</li>
+<li><strong>verbal</strong> (<code>Brando:VerbalIdentity</code>) – tone, vocabulary, phrasing rules;</li>
+<li><strong>visual</strong> (<code>Brando:VisualIdentity</code>) – colour, typography, logo, imagery, motion;</li>
+<li><strong>audio</strong> (<code>Brando:AudioIdentity</code>) – voice, sonic logos, cues, usage rules.</li>
 </ul>
 </li>
 <li>
@@ -3990,9 +3990,9 @@ If you want to jump straight to templates, see:</p>
 <p>A minimal Brando setup is a <strong>graph of linked nodes</strong>:</p>
 <div class="highlight"><pre><span></span><code>brando:Brand
   ├─ brando:hasContext → brando:Context
-  ├─ brando:usesVerbal → brando:Verbal
-  ├─ brando:usesVisual → brando:Visual
-  ├─ brando:usesAudio → brando:Audio
+  ├─ brando:usesVerbal → Brando:VerbalIdentity
+  ├─ brando:usesVisual → Brando:VisualIdentity
+  ├─ brando:usesAudio → Brando:AudioIdentity
   ├─ brando:hasPolicy → brando:Policy
   └─ brando:hasProductCategory → brando:BrandedCategory
 </code></pre></div>
@@ -4022,7 +4022,7 @@ If you want to jump straight to templates, see:</p>
 <p>At portfolio scale, <strong>maintaining this graph purely by hand becomes prohibitively hard</strong>:</p>
 <ul>
 <li>many <code>brando:Context</code> nodes to keep aligned,</li>
-<li>many tokens (<code>brando:Verbal</code>, <code>brando:Visual</code>, <code>brando:Audio</code>) to update,</li>
+<li>many tokens (<code>Brando:VerbalIdentity</code>, <code>Brando:VisualIdentity</code>, <code>Brando:AudioIdentity</code>) to update,</li>
 <li>many <code>brando:Policy</code> and <code>brando:AutomationRule</code> nodes to refactor.</li>
 </ul>
 <p>Brando is therefore <strong>AI-manageable by design</strong>:</p>
@@ -4073,7 +4073,7 @@ If you want to jump straight to templates, see:</p>
 <ol>
 <li>One <code>brando:Brand</code></li>
 <li>One <code>brando:Context</code></li>
-<li>One <code>brando:Verbal</code></li>
+<li>One <code>Brando:VerbalIdentity</code></li>
 <li>One <code>brando:Policy</code></li>
 </ol>
 <h3 id="step-1-create-a-brand-node">Step 1 – Create a Brand node</h3>
@@ -4139,7 +4139,7 @@ If you want to jump straight to templates, see:</p>
 Internally you may resolve contexts by ID and load them via an API or graph store; the JSON-LD above shows inline linking for clarity.</p>
 </blockquote>
 <h3 id="step-3-define-a-verbal">Step 3 – Define a Verbal</h3>
-<p>A <code>brando:Verbal</code> encodes <strong>how the brand speaks</strong> in a reusable way.</p>
+<p>A <code>Brando:VerbalIdentity</code> encodes <strong>how the brand speaks</strong> in a reusable way.</p>
 <p>Recommended starting fields:</p>
 <ul>
 <li><code>brando:toneOfVoice</code> – free-text description of tone.</li>
@@ -4151,7 +4151,7 @@ Internally you may resolve contexts by ID and load them via an API or graph stor
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VerbalIdentity&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Calm, empathetic, precise. Explain options in simple language without being patronising.&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:approvedTerms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;interest rate&quot;</span><span class="p">,</span>
@@ -4312,7 +4312,7 @@ Internally you may resolve contexts by ID and load them via an API or graph stor
 </li>
 <li>
 <p><strong>Separate default vs specialised tokens</strong>
-   Use multiple <code>brando:Verbal</code>, <code>brando:Visual</code>, and <code>brando:Audio</code> nodes with clear IDs (e.g. <code>/tokens/verbal/default</code>, <code>/tokens/verbal/support</code>).</p>
+   Use multiple <code>Brando:VerbalIdentity</code>, <code>Brando:VisualIdentity</code>, and <code>Brando:AudioIdentity</code> nodes with clear IDs (e.g. <code>/tokens/verbal/default</code>, <code>/tokens/verbal/support</code>).</p>
 </li>
 <li>
 <p><strong>Introduce enforcement levels and automation rules</strong>

@@ -22,8 +22,8 @@
         "governanceModel": "Brand team sets tone and assets, guidelines maintained by internal creative & legal review."
       },
       "brando:hasContext": ["brando:context/selleb/uk-digital"],
-      "brando:usesVerbal": ["brando:Verbal/selleb-tone"],
-      "brando:usesVisual": ["brando:Visual/selleb-wordmark"],
+      "brando:usesVerbal": ["Brando:VerbalIdentity/selleb-tone"],
+      "brando:usesVisual": ["Brando:VisualIdentity/selleb-wordmark"],
       "brando:hasProductCategory": ["brando:category/selleb-resale-drops"]
     },
     {
@@ -33,8 +33,8 @@
       "brando:effectiveDuring": "{\"start\":\"2025-01-01\",\"timezone\":\"Europe/London\"}"
     },
     {
-      "@id": "brando:Verbal/selleb-tone",
-      "@type": "brando:Verbal",
+      "@id": "Brando:VerbalIdentity/selleb-tone",
+      "@type": "Brando:VerbalIdentity",
       "schema:name": "Selleb Tone of Voice",
       "brando:tokenStyle": {
         "tone":"Chill, Magnetic, Punchy, Extra",
@@ -48,11 +48,11 @@
       ]
     },
     {
-      "@id": "brando:Visual/selleb-wordmark",
-      "@type": "brando:Visual",
+      "@id": "Brando:VisualIdentity/selleb-wordmark",
+      "@type": "Brando:VisualIdentity",
       "schema:name": "Selleb Wordmark & Identity",
       "brando:logo": "urn:placeholder:brand/selleb/logo-primary",
-      "brando:visualReferenceLink": "https://brandpad.io/selleb/",
+      "Brando:VisualIdentityReferenceLink": "https://brandpad.io/selleb/",
       "brando:tokenStyle": {
         "colours":["#000000","#FFFFFF","dynamic gradient"],
         "typography":["Bull-5 Custom","Bull-5 Regular","Unica 77 LL Regular"],

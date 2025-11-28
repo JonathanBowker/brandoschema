@@ -713,7 +713,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Verbal
+    brando:VerbalIdentity
     
   </span>
   
@@ -736,7 +736,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Visual
+    brando:VisualIdentity
     
   </span>
   
@@ -759,7 +759,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Audio
+    brando:AudioIdentity
     
   </span>
   
@@ -3950,7 +3950,7 @@
 <ul>
 <li><code>brando:toneOfVoice</code><ul>
 <li>Type: <code>owl:DatatypeProperty</code></li>
-<li>Domain: <code>brando:Verbal</code></li>
+<li>Domain: <code>Brando:VerbalIdentity</code></li>
 <li>Range: <code>xsd:string</code></li>
 <li>Comment: “Emotional texture and attitude of the brand's voice in this token.”</li>
 </ul>
@@ -3959,7 +3959,7 @@
 <p>In JSON-LD:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VerbalIdentity&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Calm, empathetic, precise. Explain trade-offs clearly.&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -4082,7 +4082,7 @@
 </code></pre></div>
 <hr />
 <h2 id="5-verbal-expression-properties">5. Verbal expression properties</h2>
-<p><strong>Primary domain:</strong> <code>brando:Verbal</code>
+<p><strong>Primary domain:</strong> <code>Brando:VerbalIdentity</code>
 <strong>Purpose:</strong> define <strong>how the brand speaks</strong> (tone, style, vocabulary).</p>
 <p>Core properties:</p>
 <ul>
@@ -4144,7 +4144,7 @@
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VerbalIdentity&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reassuring and efficient. Focus on clear next steps.&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:dialogueStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Use second person, acknowledge emotion, then move to options.&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:writingStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Short paragraphs, concrete steps, minimal jargon.&quot;</span><span class="p">,</span>
@@ -4171,7 +4171,7 @@
 </code></pre></div>
 <hr />
 <h2 id="6-visual-expression-properties">6. Visual expression properties</h2>
-<p><strong>Primary domain:</strong> <code>brando:Visual</code>
+<p><strong>Primary domain:</strong> <code>Brando:VisualIdentity</code>
 <strong>Purpose:</strong> define <strong>how the brand looks</strong> (logos, colours, typography, imagery, motion).</p>
 <p>Key properties:</p>
 <ul>
@@ -4192,7 +4192,7 @@
   Typography system, often JSON-as-string (families, weights, sizes).</p>
 </li>
 <li>
-<p><code>brando:Visual</code>
+<p><code>Brando:VisualIdentity</code>
   Design tokens such as spacing, radius, elevation (JSON-as-string).</p>
 </li>
 <li>
@@ -4204,14 +4204,14 @@
   Principles for animation and transitions.</p>
 </li>
 <li>
-<p><code>brando:visualUsageGuidelines</code>
+<p><code>Brando:VisualIdentityUsageGuidelines</code>
   Do’s and don’ts for applying the visual system.</p>
 </li>
 </ul>
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/visual/master&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Visual&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VisualIdentity&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:brandName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:logo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/brand/logo.svg&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:colourPalette&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -4225,7 +4225,7 @@
 <span class="w">    </span><span class="nt">&quot;mono&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Roboto Mono&quot;</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;brando:imageryStyles&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Natural light, real people, candid moments. Avoid generic stock imagery.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;brando:visualUsageGuidelines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nt">&quot;Brando:VisualIdentityUsageGuidelines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;Do not distort or recolour the primary logo.&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="s2">&quot;Use the primary colour only for key actions.&quot;</span>
 <span class="w">  </span><span class="p">]</span>
@@ -4233,12 +4233,12 @@
 </code></pre></div>
 <hr />
 <h2 id="7-audio-expression-properties">7. Audio expression properties</h2>
-<p><strong>Primary domain:</strong> <code>brando:Audio</code>
+<p><strong>Primary domain:</strong> <code>Brando:AudioIdentity</code>
 <strong>Purpose:</strong> define <strong>how the brand sounds</strong> (voice, sonic logo, audio cues).</p>
 <p>Key properties:</p>
 <ul>
 <li>
-<p><code>brando:audioLogo</code>
+<p><code>Brando:AudioIdentityLogo</code>
   URI of sonic logo or audio mark.</p>
 </li>
 <li>
@@ -4254,30 +4254,30 @@
   Rhythm, pacing, pausing, expressiveness.</p>
 </li>
 <li>
-<p><code>brando:audioCue</code>
+<p><code>Brando:AudioIdentityCue</code>
   Short sound cues used as confirmations, alerts, or transitions.</p>
 </li>
 <li>
-<p><code>brando:audioUsageGuidelines</code>
+<p><code>Brando:AudioIdentityUsageGuidelines</code>
   Rules for when and how audio is used.</p>
 </li>
 <li>
-<p><code>brando:audioReferenceLink</code>
+<p><code>Brando:AudioIdentityReferenceLink</code>
   URL to audio libraries or sonic style guides.</p>
 </li>
 </ul>
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/audio/master&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Audio&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;brando:audioLogo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/audio/northstar-sonic-logo.mp3&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:AudioIdentity&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;Brando:AudioIdentityLogo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/audio/northstar-sonic-logo.mp3&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:voiceSignature&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Warm, mid-range UK English voice with calm, reassuring delivery.&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:speechStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Moderate pace, clear articulation, brief pauses before key amounts or dates.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;brando:audioCue&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nt">&quot;Brando:AudioIdentityCue&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;success: soft ascending chime&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="s2">&quot;error: short descending tone&quot;</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;brando:audioUsageGuidelines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nt">&quot;Brando:AudioIdentityUsageGuidelines&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;Do not autoplay audio with sound on.&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="s2">&quot;Ensure all audio cues have visual equivalents for accessibility.&quot;</span>
 <span class="w">  </span><span class="p">]</span>

@@ -718,27 +718,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-brandoverbal" class="md-nav__link">
+  <a href="#22-brandoverbalidentity" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2 brando:Verbal
+      2.2 Brando:VerbalIdentity
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-brandovisual" class="md-nav__link">
+  <a href="#23-brandovisualidentity" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3 brando:Visual
+      2.3 Brando:VisualIdentity
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#24-brandoaudio" class="md-nav__link">
+  <a href="#24-brandoaudioidentity" class="md-nav__link">
     <span class="md-ellipsis">
-      2.4 brando:Audio
+      2.4 Brando:AudioIdentity
     </span>
   </a>
   
@@ -938,7 +938,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Verbal
+    brando:VerbalIdentity
     
   </span>
   
@@ -961,7 +961,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Visual
+    brando:VisualIdentity
     
   </span>
   
@@ -984,7 +984,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Audio
+    brando:AudioIdentity
     
   </span>
   
@@ -3879,27 +3879,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-brandoverbal" class="md-nav__link">
+  <a href="#22-brandoverbalidentity" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2 brando:Verbal
+      2.2 Brando:VerbalIdentity
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-brandovisual" class="md-nav__link">
+  <a href="#23-brandovisualidentity" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3 brando:Visual
+      2.3 Brando:VisualIdentity
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#24-brandoaudio" class="md-nav__link">
+  <a href="#24-brandoaudioidentity" class="md-nav__link">
     <span class="md-ellipsis">
-      2.4 brando:Audio
+      2.4 Brando:AudioIdentity
     </span>
   </a>
   
@@ -4108,9 +4108,9 @@ For detailed, per-class reference, see the dedicated pages under <strong>Schema 
 </blockquote>
 <p>This is an <strong>abstract</strong> class. You typically don’t instantiate it directly. Instead, you use one of its concrete subclasses:</p>
 <ul>
-<li><code>brando:Verbal</code></li>
-<li><code>brando:Visual</code></li>
-<li><code>brando:Audio</code></li>
+<li><code>Brando:VerbalIdentity</code></li>
+<li><code>Brando:VisualIdentity</code></li>
+<li><code>Brando:AudioIdentity</code></li>
 </ul>
 <p>Use it conceptually to understand that all tokens share similar patterns:</p>
 <ul>
@@ -4122,14 +4122,14 @@ For detailed, per-class reference, see the dedicated pages under <strong>Schema 
 </ul>
 <p>See: <strong><a href="brand-expression-token/"><code>brando:BrandExpression</code> type reference</a></strong></p>
 <hr />
-<h3 id="22-brandoverbal">2.2 <code>brando:Verbal</code></h3>
-<p><strong>IRI:</strong> <code>brando:Verbal</code><br />
+<h3 id="22-brandoverbalidentity">2.2 <code>Brando:VerbalIdentity</code></h3>
+<p><strong>IRI:</strong> <code>Brando:VerbalIdentity</code><br />
 <strong>Superclass:</strong> <code>brando:BrandExpression</code>  </p>
 <p><strong>Comment (summary):</strong>  </p>
 <blockquote>
 <p>Reusable configuration of the brand’s voice, language, and behavioural prompt rules.</p>
 </blockquote>
-<p>A <code>brando:Verbal</code> defines <strong>how the brand speaks</strong>. It is designed to be:</p>
+<p>A <code>Brando:VerbalIdentity</code> defines <strong>how the brand speaks</strong>. It is designed to be:</p>
 <ul>
 <li><strong>Reusable</strong> across contexts (e.g. “default voice”, “support voice”),</li>
 <li>read by <strong>LLMs and agents</strong> to shape prompts and sampling behaviour.</li>
@@ -4145,18 +4145,18 @@ For detailed, per-class reference, see the dedicated pages under <strong>Schema 
 </ul>
 <p>Linking properties:</p>
 <ul>
-<li><code>brando:usesVerbal</code> (domain: <code>brando:Brand</code> or <code>brando:Context</code>, range: <code>brando:Verbal</code>).</li>
+<li><code>brando:usesVerbal</code> (domain: <code>brando:Brand</code> or <code>brando:Context</code>, range: <code>Brando:VerbalIdentity</code>).</li>
 </ul>
-<p>See: <strong><a href="verbal-token/"><code>brando:Verbal</code> type reference</a></strong></p>
+<p>See: <strong><a href="verbal-token/"><code>Brando:VerbalIdentity</code> type reference</a></strong></p>
 <hr />
-<h3 id="23-brandovisual">2.3 <code>brando:Visual</code></h3>
-<p><strong>IRI:</strong> <code>brando:Visual</code><br />
+<h3 id="23-brandovisualidentity">2.3 <code>Brando:VisualIdentity</code></h3>
+<p><strong>IRI:</strong> <code>Brando:VisualIdentity</code><br />
 <strong>Superclass:</strong> <code>brando:BrandExpression</code>  </p>
 <p><strong>Comment (summary):</strong>  </p>
 <blockquote>
 <p>Reusable configuration of the brand’s visual system: logo, colour, typography, imagery, and motion.</p>
 </blockquote>
-<p>A <code>brando:Visual</code> defines <strong>how the brand looks</strong> in a structured way that can be mapped to:</p>
+<p>A <code>Brando:VisualIdentity</code> defines <strong>how the brand looks</strong> in a structured way that can be mapped to:</p>
 <ul>
 <li>design systems,</li>
 <li>UI theming,</li>
@@ -4169,35 +4169,35 @@ For detailed, per-class reference, see the dedicated pages under <strong>Schema 
 <li><code>brando:typography</code> – type system description.</li>
 <li><code>brando:imageryStyles</code> – photography/illustration guidance.</li>
 <li><code>brando:motionRules</code> – animation / motion design rules.</li>
-<li><code>brando:visualReferenceLink</code> – links to Figma, brand portals, etc.</li>
-<li><code>brando:visualUsageGuidelines</code> – usage notes.</li>
+<li><code>Brando:VisualIdentityReferenceLink</code> – links to Figma, brand portals, etc.</li>
+<li><code>Brando:VisualIdentityUsageGuidelines</code> – usage notes.</li>
 </ul>
 <p>Linking property:</p>
 <ul>
-<li><code>brando:usesVisual</code> (domain: <code>brando:Brand</code> or <code>brando:Context</code>, range: <code>brando:Visual</code>).</li>
+<li><code>brando:usesVisual</code> (domain: <code>brando:Brand</code> or <code>brando:Context</code>, range: <code>Brando:VisualIdentity</code>).</li>
 </ul>
-<p>See: <strong><a href="visual-token/"><code>brando:Visual</code> type reference</a></strong></p>
+<p>See: <strong><a href="visual-token/"><code>Brando:VisualIdentity</code> type reference</a></strong></p>
 <hr />
-<h3 id="24-brandoaudio">2.4 <code>brando:Audio</code></h3>
-<p><strong>IRI:</strong> <code>brando:Audio</code><br />
+<h3 id="24-brandoaudioidentity">2.4 <code>Brando:AudioIdentity</code></h3>
+<p><strong>IRI:</strong> <code>Brando:AudioIdentity</code><br />
 <strong>Superclass:</strong> <code>brando:BrandExpression</code>  </p>
 <p><strong>Comment (summary):</strong>  </p>
 <blockquote>
 <p>Reusable configuration of the brand’s sonic identity across voice, sonic logos, and audio cues.</p>
 </blockquote>
-<p>An <code>brando:Audio</code> encodes <strong>sonic identity</strong>:</p>
+<p>An <code>Brando:AudioIdentity</code> encodes <strong>sonic identity</strong>:</p>
 <ul>
-<li><code>brando:audioLogo</code> – sonic logos or stings.</li>
-<li><code>brando:audioCue</code> – UX/UI sounds, notifications.</li>
-<li><code>brando:audioReferenceLink</code> – reference tracks or libraries.</li>
-<li><code>brando:audioUsageGuidelines</code> – where and how audio should be used.</li>
+<li><code>Brando:AudioIdentityLogo</code> – sonic logos or stings.</li>
+<li><code>Brando:AudioIdentityCue</code> – UX/UI sounds, notifications.</li>
+<li><code>Brando:AudioIdentityReferenceLink</code> – reference tracks or libraries.</li>
+<li><code>Brando:AudioIdentityUsageGuidelines</code> – where and how audio should be used.</li>
 <li>Overlaps with <code>brando:voiceSignature</code>, <code>brando:pronunciationGuide</code> when voice is involved.</li>
 </ul>
 <p>Linking property:</p>
 <ul>
-<li><code>brando:usesAudio</code> (domain: <code>brando:Brand</code> or <code>brando:Context</code>, range: <code>brando:Audio</code>).</li>
+<li><code>brando:usesAudio</code> (domain: <code>brando:Brand</code> or <code>brando:Context</code>, range: <code>Brando:AudioIdentity</code>).</li>
 </ul>
-<p>See: <strong><a href="audio-token/"><code>brando:Audio</code> type reference</a></strong></p>
+<p>See: <strong><a href="audio-token/"><code>Brando:AudioIdentity</code> type reference</a></strong></p>
 <hr />
 <h2 id="3-governance-types">3. Governance types</h2>
 <h3 id="31-brandopolicy">3.1 <code>brando:Policy</code></h3>
@@ -4337,17 +4337,17 @@ For detailed, per-class reference, see the dedicated pages under <strong>Schema 
     ├── schema:Brand
     │   └── brando:Brand
     │       ├── brando:hasContext ──────────► brando:Context
-    │       ├── brando:usesVerbal ─────► brando:Verbal
-    │       ├── brando:usesVisual ─────► brando:Visual
-    │       ├── brando:usesAudio ──────► brando:Audio
+    │       ├── brando:usesVerbal ─────► Brando:VerbalIdentity
+    │       ├── brando:usesVisual ─────► Brando:VisualIdentity
+    │       ├── brando:usesAudio ──────► Brando:AudioIdentity
     │       ├── brando:hasPolicy ───────────► brando:Policy
     │       ├── brando:hasAutomationRule ───► brando:AutomationRule
     │       └── brando:hasProductCategory ──► brando:BrandedCategory
     │
     ├── brando:BrandExpression
-    │   ├── brando:Verbal
-    │   ├── brando:Visual
-    │   └── brando:Audio
+    │   ├── Brando:VerbalIdentity
+    │   ├── Brando:VisualIdentity
+    │   └── Brando:AudioIdentity
     │
     ├── brando:Policy
     ├── brando:BrandedCategory
@@ -4395,7 +4395,7 @@ A small example (JSON-LD) to show the main types in play:
     },
     {
       &quot;@id&quot;: &quot;https://example.com/brand/northstar/tokens/verbal/default&quot;,
-      &quot;@type&quot;: &quot;brando:Verbal&quot;
+      &quot;@type&quot;: &quot;Brando:VerbalIdentity&quot;
     },
     {
       &quot;@id&quot;: &quot;https://example.com/brand/northstar/policies/regulated-claims&quot;,
@@ -4413,9 +4413,9 @@ A small example (JSON-LD) to show the main types in play:
 <li><a href="brand/"><code>brando:Brand</code></a></li>
 <li><a href="context/"><code>brando:Context</code></a></li>
 <li><a href="brand-expression-token/"><code>brando:BrandExpression</code></a></li>
-<li><a href="verbal-token/"><code>brando:Verbal</code></a></li>
-<li><a href="visual-token/"><code>brando:Visual</code></a></li>
-<li><a href="audio-token/"><code>brando:Audio</code></a></li>
+<li><a href="verbal-token/"><code>Brando:VerbalIdentity</code></a></li>
+<li><a href="visual-token/"><code>Brando:VisualIdentity</code></a></li>
+<li><a href="audio-token/"><code>Brando:AudioIdentity</code></a></li>
 <li><a href="policy/"><code>brando:Policy</code></a></li>
 <li><a href="branded-category/"><code>brando:BrandedCategory</code></a></li>
 <li><a href="campaign/"><code>brando:Campaign</code></a></li>

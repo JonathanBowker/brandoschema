@@ -927,7 +927,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Verbal
+    brando:VerbalIdentity
     
   </span>
   
@@ -950,7 +950,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Visual
+    brando:VisualIdentity
     
   </span>
   
@@ -973,7 +973,7 @@
   
   
   <span class="md-ellipsis">
-    brando:Audio
+    brando:AudioIdentity
     
   </span>
   
@@ -4126,7 +4126,7 @@ Brando reuses this structure so that models can interpret <code>brando:</code> c
 <p>At any meaningful scale – multiple brands, markets, campaigns, and channels – <strong>maintaining this graph purely by hand becomes prohibitively hard</strong>:</p>
 <ul>
 <li>too many contexts (<code>brando:Context</code>) to keep in sync,</li>
-<li>too many tokens (<code>brando:Verbal</code>, <code>brando:Visual</code>, <code>brando:Audio</code>) to update,</li>
+<li>too many tokens (<code>Brando:VerbalIdentity</code>, <code>Brando:VisualIdentity</code>, <code>Brando:AudioIdentity</code>) to update,</li>
 <li>too many policies (<code>brando:Policy</code>, <code>brando:AutomationRule</code>) to refactor as requirements change.</li>
 </ul>
 <p>Brando is therefore <strong>AI-manageable by design</strong>:</p>
@@ -4165,15 +4165,15 @@ Brando reuses this structure so that models can interpret <code>brando:</code> c
 <td>Abstract superclass for reusable expression tokens across verbal, visual, and audio modalities.</td>
 </tr>
 <tr>
-<td><code>brando:Verbal</code></td>
+<td><code>Brando:VerbalIdentity</code></td>
 <td>Reusable configuration of the brand’s voice, language, and behavioural prompt rules.</td>
 </tr>
 <tr>
-<td><code>brando:Visual</code></td>
+<td><code>Brando:VisualIdentity</code></td>
 <td>Reusable configuration of visual system: logo, colour, typography, imagery, and motion.</td>
 </tr>
 <tr>
-<td><code>brando:Audio</code></td>
+<td><code>Brando:AudioIdentity</code></td>
 <td>Reusable configuration of sonic identity: voice, sonic logos, and audio cues.</td>
 </tr>
 <tr>
@@ -4281,7 +4281,7 @@ Brando reuses this structure so that models can interpret <code>brando:</code> c
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;brando:usesVerbal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VerbalIdentity&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;calm, empathetic, and precise&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;brando:approvedTerms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">      </span><span class="s2">&quot;interest rate&quot;</span><span class="p">,</span>
@@ -4336,7 +4336,7 @@ Brando reuses this structure so that models can interpret <code>brando:</code> c
 
 <span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">usesVerbal</span><span class="p">:</span>
 <span class="w">  </span><span class="err">@id</span><span class="p">:</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//example.com/brand/northstar/tokens/verbal/default</span>
-<span class="w">  </span><span class="err">@</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span><span class="w"> </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Verbal</span>
+<span class="w">  </span><span class="err">@</span><span class="kc">t</span><span class="err">ype</span><span class="p">:</span><span class="w"> </span><span class="err">Bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">VerbalIde</span><span class="kc">nt</span><span class="err">i</span><span class="kc">t</span><span class="err">y</span>
 <span class="w">  </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="kc">t</span><span class="err">o</span><span class="kc">ne</span><span class="err">O</span><span class="kc">f</span><span class="err">Voice</span><span class="p">:</span><span class="w"> </span><span class="err">calm</span><span class="p">,</span><span class="w"> </span><span class="err">empa</span><span class="kc">t</span><span class="err">he</span><span class="kc">t</span><span class="err">ic</span><span class="p">,</span><span class="w"> </span><span class="err">a</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">precise</span>
 <span class="w">  </span><span class="err">bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">approvedTerms</span><span class="p">:</span>
 <span class="w">    </span><span class="mi">-</span><span class="w"> </span><span class="err">i</span><span class="kc">nterest</span><span class="w"> </span><span class="err">ra</span><span class="kc">te</span>
@@ -4370,7 +4370,7 @@ Brando reuses this structure so that models can interpret <code>brando:</code> c
 <p><strong>Context-aware behaviour</strong></p>
 <p>Use <code>brando:Context</code> to represent channels, audiences, regulatory regimes, and operational conditions that change how the brand behaves.</p>
 <p><strong>Multimodal expression tokens</strong></p>
-<p>Attach <code>brando:Verbal</code>, <code>brando:Visual</code>, and <code>brando:Audio</code> to brands and contexts using:</p>
+<p>Attach <code>Brando:VerbalIdentity</code>, <code>Brando:VisualIdentity</code>, and <code>Brando:AudioIdentity</code> to brands and contexts using:</p>
 <ul>
 <li><code>brando:usesVerbal</code></li>
 <li><code>brando:usesVisual</code></li>
@@ -4540,7 +4540,7 @@ Brando reuses this structure so that models can interpret <code>brando:</code> c
 <ul>
 <li><code>brando:Brand</code></li>
 <li><code>brando:Context</code></li>
-<li><code>brando:Verbal</code></li>
+<li><code>Brando:VerbalIdentity</code></li>
 <li><code>brando:Policy</code></li>
 </ul>
 </li>
