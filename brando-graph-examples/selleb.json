@@ -22,8 +22,8 @@
         "governanceModel": "Brand team sets tone and assets, guidelines maintained by internal creative & legal review."
       },
       "brando:hasContext": ["brando:context/selleb/uk-digital"],
-      "brando:usesVerbalToken": ["brando:verbaltoken/selleb-tone"],
-      "brando:usesVisualToken": ["brando:visualtoken/selleb-wordmark"],
+      "brando:usesVerbal": ["brando:Verbal/selleb-tone"],
+      "brando:usesVisual": ["brando:Visual/selleb-wordmark"],
       "brando:hasProductCategory": ["brando:category/selleb-resale-drops"]
     },
     {
@@ -33,8 +33,8 @@
       "brando:effectiveDuring": "{\"start\":\"2025-01-01\",\"timezone\":\"Europe/London\"}"
     },
     {
-      "@id": "brando:verbaltoken/selleb-tone",
-      "@type": "brando:VerbalToken",
+      "@id": "brando:Verbal/selleb-tone",
+      "@type": "brando:Verbal",
       "schema:name": "Selleb Tone of Voice",
       "brando:tokenStyle": {
         "tone":"Chill, Magnetic, Punchy, Extra",
@@ -48,8 +48,8 @@
       ]
     },
     {
-      "@id": "brando:visualtoken/selleb-wordmark",
-      "@type": "brando:VisualToken",
+      "@id": "brando:Visual/selleb-wordmark",
+      "@type": "brando:Visual",
       "schema:name": "Selleb Wordmark & Identity",
       "brando:logo": "urn:placeholder:brand/selleb/logo-primary",
       "brando:visualReferenceLink": "https://brandpad.io/selleb/",

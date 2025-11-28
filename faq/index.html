@@ -3919,7 +3919,7 @@
 <hr />
 <h2 id="1-what-is-brando-in-one-sentence">1. What is Brando in one sentence?</h2>
 <p><strong>Brando (Brand Oracle)</strong> is a <strong>JSON-LD vocabulary and schema</strong> for modelling brand identity, expression, and governance in a way that <strong>LLMs, agents, and AI tools can consume as a control layer</strong>, not just as SEO metadata.</p>
-<p>It defines types like <code>brando:Brand</code>, <code>brando:Context</code>, <code>brando:VerbalToken</code>, <code>brando:Policy</code>, etc., and a set of properties that together form a <strong>Brand Knowledge Graph</strong>.</p>
+<p>It defines types like <code>brando:Brand</code>, <code>brando:Context</code>, <code>brando:Verbal</code>, <code>brando:Policy</code>, etc., and a set of properties that together form a <strong>Brand Knowledge Graph</strong>.</p>
 <p>See: <a href="../getting-started/">Getting started</a></p>
 <hr />
 <h2 id="2-how-is-brando-different-from-schemaorg">2. How is Brando different from Schema.org?</h2>
@@ -3934,7 +3934,7 @@ Brando primarily describes <strong>how a brand behaves</strong> in AI systems.</
 </blockquote>
 <p>Key differences:</p>
 <ul>
-<li>Behavioural types (<code>brando:VerbalToken</code>, <code>brando:VisualToken</code>, <code>brando:AudioToken</code>, <code>brando:Policy</code>, <code>brando:AutomationRule</code>).</li>
+<li>Behavioural types (<code>brando:Verbal</code>, <code>brando:Visual</code>, <code>brando:Audio</code>, <code>brando:Policy</code>, <code>brando:AutomationRule</code>).</li>
 <li>Governance concepts (enforcement levels, risk tags, retrievability for LLMs).</li>
 <li>Explicit runtime integration patterns (contexts, external systems, automation rules).</li>
 </ul>
@@ -3996,7 +3996,7 @@ Brando primarily describes <strong>how a brand behaves</strong> in AI systems.</
 <p>Brando only requires that:</p>
 <ul>
 <li>you keep a <strong>consistent <code>@id</code> scheme</strong>,</li>
-<li>you can resolve linked nodes (<code>brando:hasContext</code>, <code>brando:usesVerbalToken</code>, etc.),</li>
+<li>you can resolve linked nodes (<code>brando:hasContext</code>, <code>brando:usesVerbal</code>, etc.),</li>
 <li>you can serve a Brand Knowledge Graph to whatever runtime you have.</li>
 </ul>
 <p>See:</p>
@@ -4075,7 +4075,7 @@ Brando primarily describes <strong>how a brand behaves</strong> in AI systems.</
 <ul>
 <li><code>brando:Brand</code>,</li>
 <li><code>brando:Context</code>,</li>
-<li><code>brando:VerbalToken</code> / <code>VisualToken</code> / <code>AudioToken</code>,</li>
+<li><code>brando:Verbal</code> / <code>Visual</code> / <code>Audio</code>,</li>
 <li><code>brando:Policy</code>,</li>
 <li><code>brando:BrandedCategory</code>,</li>
 <li><code>brando:Campaign</code>,</li>
@@ -4086,7 +4086,7 @@ Brando primarily describes <strong>how a brand behaves</strong> in AI systems.</
 <p>linked by their relationships:</p>
 <ul>
 <li><code>brando:hasContext</code>,</li>
-<li><code>brando:usesVerbalToken</code>,</li>
+<li><code>brando:usesVerbal</code>,</li>
 <li><code>brando:hasPolicy</code>,</li>
 <li><code>brando:hasProductCategory</code>,</li>
 <li><code>brando:hasCampaign</code>,</li>
@@ -4126,9 +4126,9 @@ Brando primarily describes <strong>how a brand behaves</strong> in AI systems.</
 <div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">RuntimeBrandConfig</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">brand</span><span class="o">:</span><span class="w"> </span><span class="kt">Brand</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">context</span><span class="o">:</span><span class="w"> </span><span class="kt">Context</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">verbalTokens</span><span class="o">:</span><span class="w"> </span><span class="kt">VerbalToken</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">visualTokens</span><span class="o">:</span><span class="w"> </span><span class="kt">VisualToken</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">audioTokens</span><span class="o">:</span><span class="w"> </span><span class="kt">AudioToken</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Verbals</span><span class="o">:</span><span class="w"> </span><span class="kt">Verbal</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Visuals</span><span class="o">:</span><span class="w"> </span><span class="kt">Visual</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Audios</span><span class="o">:</span><span class="w"> </span><span class="kt">Audio</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">policies</span><span class="o">:</span><span class="w"> </span><span class="kt">Policy</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">campaigns</span><span class="o">:</span><span class="w"> </span><span class="kt">Campaign</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">automationRules</span><span class="o">:</span><span class="w"> </span><span class="kt">AutomationRule</span><span class="p">[];</span>
@@ -4164,15 +4164,15 @@ Brando primarily describes <strong>how a brand behaves</strong> in AI systems.</
 <ul>
 <li><code>brando:Brand</code></li>
 <li><code>brando:Context</code></li>
-<li><code>brando:VerbalToken</code></li>
+<li><code>brando:Verbal</code></li>
 <li><code>brando:Policy</code></li>
 </ul>
 </li>
 <li>
 <p>Add later as needed:</p>
 <ul>
-<li>Visual identity → <code>brando:VisualToken</code></li>
-<li>Audio identity → <code>brando:AudioToken</code></li>
+<li>Visual identity → <code>brando:Visual</code></li>
+<li>Audio identity → <code>brando:Audio</code></li>
 <li>Product structure → <code>brando:BrandedCategory</code></li>
 <li>Campaign overlays → <code>brando:Campaign</code></li>
 <li>Automation → <code>brando:AutomationRule</code></li>

@@ -4056,7 +4056,7 @@
 <p>load associated:</p>
 <ul>
 <li><code>brando:Context</code>,</li>
-<li><code>brando:VerbalToken</code> / <code>VisualToken</code> / <code>AudioToken</code>,</li>
+<li><code>brando:Verbal</code> / <code>Visual</code> / <code>Audio</code>,</li>
 <li><code>brando:Policy</code>,</li>
 <li><code>brando:BrandedCategory</code>,</li>
 <li><code>brando:Campaign</code>,</li>
@@ -4071,9 +4071,9 @@
 <div class="highlight"><pre><span></span><code><span class="w">   </span><span class="err">i</span><span class="kc">nterfa</span><span class="err">ce</span><span class="w"> </span><span class="err">Ru</span><span class="kc">nt</span><span class="err">imeBra</span><span class="kc">n</span><span class="err">dCo</span><span class="kc">nf</span><span class="err">ig</span><span class="w"> </span><span class="p">{</span>
 <span class="w">     </span><span class="err">bra</span><span class="kc">n</span><span class="err">d</span><span class="p">:</span><span class="w"> </span><span class="err">Bra</span><span class="kc">n</span><span class="err">d;</span>
 <span class="w">     </span><span class="err">co</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span><span class="p">:</span><span class="w"> </span><span class="err">Co</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span><span class="err">;</span>
-<span class="w">     </span><span class="err">verbalToke</span><span class="kc">ns</span><span class="p">:</span><span class="w"> </span><span class="err">VerbalToke</span><span class="kc">n</span><span class="p">[]</span><span class="err">;</span>
-<span class="w">     </span><span class="err">visualToke</span><span class="kc">ns</span><span class="p">:</span><span class="w"> </span><span class="err">VisualToke</span><span class="kc">n</span><span class="p">[]</span><span class="err">;</span>
-<span class="w">     </span><span class="err">audioToke</span><span class="kc">ns</span><span class="p">:</span><span class="w"> </span><span class="err">AudioToke</span><span class="kc">n</span><span class="p">[]</span><span class="err">;</span>
+<span class="w">     </span><span class="err">Verbals</span><span class="p">:</span><span class="w"> </span><span class="err">Verbal</span><span class="p">[]</span><span class="err">;</span>
+<span class="w">     </span><span class="err">Visuals</span><span class="p">:</span><span class="w"> </span><span class="err">Visual</span><span class="p">[]</span><span class="err">;</span>
+<span class="w">     </span><span class="err">Audios</span><span class="p">:</span><span class="w"> </span><span class="err">Audio</span><span class="p">[]</span><span class="err">;</span>
 <span class="w">     </span><span class="err">policies</span><span class="p">:</span><span class="w"> </span><span class="err">Policy</span><span class="p">[]</span><span class="err">;</span>
 <span class="w">     </span><span class="err">campaig</span><span class="kc">ns</span><span class="p">:</span><span class="w"> </span><span class="err">Campaig</span><span class="kc">n</span><span class="p">[]</span><span class="err">;</span>
 <span class="w">     </span><span class="err">ca</span><span class="kc">te</span><span class="err">gories</span><span class="p">:</span><span class="w"> </span><span class="err">Bra</span><span class="kc">n</span><span class="err">dedCa</span><span class="kc">te</span><span class="err">gory</span><span class="p">[]</span><span class="err">;</span>
@@ -4185,13 +4185,13 @@ You must follow these constraints strictly.
 <span class="w">        </span><span class="nt">&quot;surface&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;public-website&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="nt">&quot;region&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;UK&quot;</span>
 <span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;brando:usesVerbalToken&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;brando:usesVerbal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reassuring and efficient. Focus on clear next steps.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:dialogueStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Use second person, acknowledge emotion, then move to options.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:writingStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Short paragraphs, concrete steps, minimal jargon.&quot;</span><span class="p">,</span>
@@ -4229,7 +4229,7 @@ You must follow these constraints strictly.
 <ol>
 <li>Loads this graph.</li>
 <li>Resolves the relevant Brand + Context.</li>
-<li>Collects the VerbalToken and Policy nodes.</li>
+<li>Collects the Verbal and Policy nodes.</li>
 <li>Builds a system prompt or configuration object for the LLM API.</li>
 </ol>
 <hr />

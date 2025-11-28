@@ -3890,7 +3890,7 @@
 <li>A user asks a question in a support chatbot.</li>
 <li>The chatbot’s backend:<ul>
 <li>resolves the relevant <code>brando:Brand</code> and <code>brando:Context</code>,</li>
-<li>gathers <code>brando:VerbalToken</code> and <code>brando:Policy</code> nodes,</li>
+<li>gathers <code>brando:Verbal</code> and <code>brando:Policy</code> nodes,</li>
 <li>optionally evaluates <code>brando:AutomationRule</code> nodes,</li>
 <li>builds a <strong>runtime configuration</strong> for the LLM.</li>
 </ul>
@@ -3944,13 +3944,13 @@
 <span class="w">        </span><span class="nt">&quot;surface&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;public-website&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="nt">&quot;region&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;UK&quot;</span>
 <span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;brando:usesVerbalToken&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;brando:usesVerbal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reassuring and efficient. Focus on clear next steps.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:dialogueStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Use second person; acknowledge emotion, then move to options.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:writingStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Short paragraphs, concrete steps, minimal jargon.&quot;</span><span class="p">,</span>
@@ -4014,14 +4014,14 @@
 <ol>
 <li>Load the <code>brando:Brand</code> node.</li>
 <li>Load the <code>brando:Context</code> node.</li>
-<li>Follow <code>brando:usesVerbalToken</code> to the relevant <code>brando:VerbalToken</code>.</li>
+<li>Follow <code>brando:usesVerbal</code> to the relevant <code>brando:Verbal</code>.</li>
 <li>Follow <code>brando:hasPolicy</code> to <code>brando:Policy</code> nodes.</li>
 </ol>
 <p>Conceptual TypeScript:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">brand</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getNode</span><span class="p">(</span><span class="s2">&quot;https://example.com/brand/northstar&quot;</span><span class="p">);</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">context</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getNode</span><span class="p">(</span><span class="s2">&quot;https://example.com/brand/northstar/context/retail-chatbot&quot;</span><span class="p">);</span>
 
-<span class="kd">const</span><span class="w"> </span><span class="nx">verbalToken</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">resolveLinkedNode</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;brando:usesVerbalToken&quot;</span><span class="p">);</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">Verbal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">resolveLinkedNode</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;brando:usesVerbal&quot;</span><span class="p">);</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">policies</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">resolveLinkedNodes</span><span class="p">(</span><span class="nx">brand</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;brando:hasPolicy&quot;</span><span class="p">);</span>
 </code></pre></div>
 <h3 id="23-assemble-a-runtime-configuration">2.3 Assemble a runtime configuration</h3>
@@ -4046,7 +4046,7 @@
 <span class="w">    </span><span class="p">],</span>
 <span class="w">    </span><span class="nx">persona</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Everyday saver&quot;</span>
 <span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nx">verbalToken</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">Verbal</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nx">toneOfVoice</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Reassuring and efficient. Focus on clear next steps.&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nx">dialogueStyle</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Use second person; acknowledge emotion, then move to options.&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nx">writingStyle</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Short paragraphs, concrete steps, minimal jargon.&quot;</span><span class="p">,</span>
@@ -4150,7 +4150,7 @@ A next step is to review our savings products page and, if you’d like personal
 <span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">evaluateResponse</span><span class="p">({</span>
 <span class="w">  </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="kt">modelOutput</span><span class="p">,</span>
 <span class="w">  </span><span class="nx">policies</span><span class="o">:</span><span class="w"> </span><span class="kt">runtimeConfig.policies</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">verbalToken</span><span class="o">:</span><span class="w"> </span><span class="kt">runtimeConfig.verbalToken</span>
+<span class="w">  </span><span class="nx">Verbal</span><span class="o">:</span><span class="w"> </span><span class="kt">runtimeConfig.Verbal</span>
 <span class="p">});</span>
 
 <span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">result</span><span class="p">.</span><span class="nx">compliant</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>

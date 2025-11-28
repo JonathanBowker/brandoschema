@@ -3477,9 +3477,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-verbaltoken-node" class="md-nav__link">
+  <a href="#23-verbal-node" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3 VerbalToken node
+      2.3 Verbal node
     </span>
   </a>
   
@@ -3861,9 +3861,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-verbaltoken-node" class="md-nav__link">
+  <a href="#23-verbal-node" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3 VerbalToken node
+      2.3 Verbal node
     </span>
   </a>
   
@@ -4061,7 +4061,7 @@
 <ul>
 <li>the <strong>brand</strong> (top-level <code>brando:Brand</code>),</li>
 <li>the <strong>context(s)</strong> (<code>brando:Context</code>),</li>
-<li>the <strong>tone &amp; language</strong> requirements (<code>brando:VerbalToken</code>),</li>
+<li>the <strong>tone &amp; language</strong> requirements (<code>brando:Verbal</code>),</li>
 <li>the <strong>minimum policies</strong> you need (<code>brando:Policy</code>).</li>
 </ul>
 <p>You’ll add visuals, audio, categories, and automation later.</p>
@@ -4072,7 +4072,7 @@
 <ol>
 <li>A <code>brando:Brand</code> node</li>
 <li>A <code>brando:Context</code> node</li>
-<li>A <code>brando:VerbalToken</code> node</li>
+<li>A <code>brando:Verbal</code> node</li>
 <li>A <code>brando:Policy</code> node</li>
 </ol>
 <h3 id="21-brand-node">2.1 Brand node</h3>
@@ -4107,13 +4107,13 @@
 <span class="w">    </span><span class="nt">brando:domainContext</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">&gt;</span>
 <span class="w">      </span><span class="no">{&quot;channel&quot;:&quot;chat&quot;,&quot;surface&quot;:&quot;support-portal&quot;,&quot;region&quot;:&quot;global&quot;}</span>
 
-<span class="w">    </span><span class="nt">brando:usesVerbalToken</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">brando:usesVerbal</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/acme/tokens/verbal/support</span>
 </code></pre></div>
-<h3 id="23-verbaltoken-node">2.3 VerbalToken node</h3>
+<h3 id="23-verbal-node">2.3 Verbal node</h3>
 <p>Capture <strong>tone, style, and vocabulary</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/acme/tokens/verbal/support</span>
-<span class="w">    </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:VerbalToken</span>
+<span class="w">    </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:Verbal</span>
 
 <span class="w">    </span><span class="nt">brando:toneOfVoice</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">&gt;</span>
 <span class="w">      </span><span class="no">Straightforward, encouraging, and practical.</span>
@@ -4163,7 +4163,7 @@
 <span class="w">    </span><span class="c1"># ...</span>
 <span class="w">    </span><span class="nt">brando:hasContext</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/acme/context/support-chat</span>
-<span class="w">    </span><span class="nt">brando:usesVerbalToken</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">brando:usesVerbal</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/acme/tokens/verbal/support</span>
 <span class="w">    </span><span class="nt">brando:hasPolicy</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/acme/policies/basic-brand-safety</span>
@@ -4255,7 +4255,7 @@
 </ul>
 </li>
 </ol>
-<p>Use this loop to refine <code>VerbalToken</code>, <code>Policy</code>, and <code>Context</code> contents.</p>
+<p>Use this loop to refine <code>Verbal</code>, <code>Policy</code>, and <code>Context</code> contents.</p>
 <hr />
 <h2 id="5-integrate-with-your-chatbot-llm">5. Integrate with your chatbot / LLM</h2>
 <p>The basic integration pattern:</p>
@@ -4279,7 +4279,7 @@
 <p><strong>LLM adapter</strong>:</p>
 <ul>
 <li>prepends the system prompt,</li>
-<li>optionally applies output checks using Brando <code>Policy</code> and <code>VerbalToken</code> data,</li>
+<li>optionally applies output checks using Brando <code>Policy</code> and <code>Verbal</code> data,</li>
 <li>logs which Brando nodes were used.</li>
 </ul>
 </li>
@@ -4295,15 +4295,15 @@
 <h2 id="6-add-other-modalities-and-structure">6. Add other modalities and structure</h2>
 <p>Once text is working, extend:</p>
 <h3 id="61-visual-identity">6.1 Visual identity</h3>
-<p>Add <code>brando:VisualToken</code> nodes for:</p>
+<p>Add <code>brando:Visual</code> nodes for:</p>
 <ul>
 <li>colour palette (<code>brando:colourPalette</code> as JSON string),</li>
 <li>typography (<code>brando:typography</code>),</li>
-<li>design tokens (<code>brando:visualToken</code>),</li>
+<li>design tokens (<code>brando:Visual</code>),</li>
 <li>logo and imagery rules (<code>brando:visualUsageGuidelines</code>, <code>brando:visualReferenceLink</code>).</li>
 </ul>
 <p>Link them:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">brando:usesVisualToken</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="nt">brando:usesVisual</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/acme/tokens/visual/master</span>
 </code></pre></div>
 <p>These can drive:</p>
@@ -4313,14 +4313,14 @@
 <li>theming for UI.</li>
 </ul>
 <h3 id="62-audio-identity">6.2 Audio identity</h3>
-<p>Add <code>brando:AudioToken</code> nodes for:</p>
+<p>Add <code>brando:Audio</code> nodes for:</p>
 <ul>
 <li>sonic logos,</li>
 <li>voice signature,</li>
 <li>pronunciation guide,</li>
 <li>audio usage guidelines.</li>
 </ul>
-<p>Link with <code>brando:usesAudioToken</code>.</p>
+<p>Link with <code>brando:usesAudio</code>.</p>
 <h3 id="63-product-categories">6.3 Product categories</h3>
 <p>Define <code>brando:BrandedCategory</code> nodes for key categories and link to:</p>
 <ul>
@@ -4368,7 +4368,7 @@
 <li>
 <p><strong>Pilot (single brand, single use case)</strong></p>
 <ul>
-<li>Minimal Brand + Context + VerbalToken + Policy.</li>
+<li>Minimal Brand + Context + Verbal + Policy.</li>
 <li>YAML in Git; manual review; small-scale LLM integration.</li>
 </ul>
 </li>
@@ -4405,7 +4405,7 @@
 <ul>
 <li><a href="../types/brand/"><code>brando:Brand</code></a></li>
 <li><a href="../types/context/"><code>brando:Context</code></a></li>
-<li><a href="../types/verbal-token/"><code>brando:VerbalToken</code></a></li>
+<li><a href="../types/verbal-token/"><code>brando:Verbal</code></a></li>
 <li><a href="../types/policy/"><code>brando:Policy</code></a></li>
 </ul>
 </li>

@@ -4037,9 +4037,9 @@ The TypeScript types in this page are <strong>non-normative</strong>. They are a
 <div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">BrandoType</span><span class="w"> </span><span class="o">=</span>
 <span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Brand&quot;</span>
 <span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Context&quot;</span>
-<span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span>
-<span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:VisualToken&quot;</span>
-<span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:AudioToken&quot;</span>
+<span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span>
+<span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Visual&quot;</span>
+<span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Audio&quot;</span>
 <span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Policy&quot;</span>
 <span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:BrandedCategory&quot;</span>
 <span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;brando:Campaign&quot;</span>
@@ -4060,9 +4060,9 @@ The TypeScript types in this page are <strong>non-normative</strong>. They are a
 <span class="w">  </span><span class="s2">&quot;brando:marketPosition&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="s2">&quot;brando:competitorContext&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="s2">&quot;brando:hasContext&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
-<span class="w">  </span><span class="s2">&quot;brando:usesVerbalToken&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
-<span class="w">  </span><span class="s2">&quot;brando:usesVisualToken&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
-<span class="w">  </span><span class="s2">&quot;brando:usesAudioToken&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
+<span class="w">  </span><span class="s2">&quot;brando:usesVerbal&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
+<span class="w">  </span><span class="s2">&quot;brando:usesVisual&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
+<span class="w">  </span><span class="s2">&quot;brando:usesAudio&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
 <span class="w">  </span><span class="s2">&quot;brando:hasPolicy&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
 <span class="w">  </span><span class="s2">&quot;brando:hasProductCategory&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
 <span class="w">  </span><span class="s2">&quot;brando:hasCampaign&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
@@ -4077,9 +4077,9 @@ The TypeScript types in this page are <strong>non-normative</strong>. They are a
 <span class="w">  </span><span class="s2">&quot;brando:domainContext&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="s2">&quot;brando:effectiveDuring&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="s2">&quot;brando:appliesTo&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
-<span class="w">  </span><span class="s2">&quot;brando:usesVerbalToken&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
-<span class="w">  </span><span class="s2">&quot;brando:usesVisualToken&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
-<span class="w">  </span><span class="s2">&quot;brando:usesAudioToken&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
+<span class="w">  </span><span class="s2">&quot;brando:usesVerbal&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
+<span class="w">  </span><span class="s2">&quot;brando:usesVisual&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
+<span class="w">  </span><span class="s2">&quot;brando:usesAudio&quot;</span><span class="nx">?</span><span class="o">:</span><span class="w"> </span><span class="kt">JsonLdNode</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">JsonLdNode</span><span class="p">[];</span>
 <span class="p">}</span>
 </code></pre></div>
 <blockquote>
@@ -4120,9 +4120,9 @@ In the raw model, property names with colons (e.g. <code>"brando:toneOfVoice"</c
 <span class="w">  </span><span class="nx">competitorContext?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 
 <span class="w">  </span><span class="nx">contexts?</span><span class="o">:</span><span class="w"> </span><span class="kt">Context</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">verbalTokens?</span><span class="o">:</span><span class="w"> </span><span class="kt">VerbalToken</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">visualTokens?</span><span class="o">:</span><span class="w"> </span><span class="kt">VisualToken</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">audioTokens?</span><span class="o">:</span><span class="w"> </span><span class="kt">AudioToken</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Verbals?</span><span class="o">:</span><span class="w"> </span><span class="kt">Verbal</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Visuals?</span><span class="o">:</span><span class="w"> </span><span class="kt">Visual</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Audios?</span><span class="o">:</span><span class="w"> </span><span class="kt">Audio</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">policies?</span><span class="o">:</span><span class="w"> </span><span class="kt">Policy</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">categories?</span><span class="o">:</span><span class="w"> </span><span class="kt">BrandedCategory</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">campaigns?</span><span class="o">:</span><span class="w"> </span><span class="kt">Campaign</span><span class="p">[];</span>
@@ -4136,13 +4136,13 @@ In the raw model, property names with colons (e.g. <code>"brando:toneOfVoice"</c
 <span class="w">  </span><span class="nx">domainContext?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="c1">// JSON string describing channel/surface/region</span>
 <span class="w">  </span><span class="nx">effectiveDuring?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="c1">// JSON string for time window</span>
 <span class="w">  </span><span class="nx">appliesTo?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">verbalTokens?</span><span class="o">:</span><span class="w"> </span><span class="kt">VerbalToken</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">visualTokens?</span><span class="o">:</span><span class="w"> </span><span class="kt">VisualToken</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">audioTokens?</span><span class="o">:</span><span class="w"> </span><span class="kt">AudioToken</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Verbals?</span><span class="o">:</span><span class="w"> </span><span class="kt">Verbal</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Visuals?</span><span class="o">:</span><span class="w"> </span><span class="kt">Visual</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Audios?</span><span class="o">:</span><span class="w"> </span><span class="kt">Audio</span><span class="p">[];</span>
 <span class="p">}</span>
 
-<span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">VerbalToken</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">BrandoBaseDomain</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">;</span>
+<span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">Verbal</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">BrandoBaseDomain</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">toneOfVoice?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">dialogueStyle?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">writingStyle?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
@@ -4157,20 +4157,20 @@ In the raw model, property names with colons (e.g. <code>"brando:toneOfVoice"</c
 <span class="w">  </span><span class="nx">mustNotDos?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">[];</span>
 <span class="p">}</span>
 
-<span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">VisualToken</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">BrandoBaseDomain</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;brando:VisualToken&quot;</span><span class="p">;</span>
+<span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">Visual</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">BrandoBaseDomain</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;brando:Visual&quot;</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">brandName?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">logo?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">colourPalette?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w">   </span><span class="c1">// JSON string</span>
 <span class="w">  </span><span class="nx">typography?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w">      </span><span class="c1">// JSON string</span>
-<span class="w">  </span><span class="nx">visualToken?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w">     </span><span class="c1">// JSON string for design tokens</span>
+<span class="w">  </span><span class="nx">Visual?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w">     </span><span class="c1">// JSON string for design tokens</span>
 <span class="w">  </span><span class="nx">imageryStyles?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">motionRules?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">visualUsageGuidelines?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kt">string</span><span class="p">[];</span>
 <span class="p">}</span>
 
-<span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">AudioToken</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">BrandoBaseDomain</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;brando:AudioToken&quot;</span><span class="p">;</span>
+<span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">Audio</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">BrandoBaseDomain</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;brando:Audio&quot;</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">audioLogo?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">voiceSignature?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">pronunciationGuide?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
@@ -4246,7 +4246,7 @@ In the raw model, property names with colons (e.g. <code>"brando:toneOfVoice"</c
 <span class="k">import</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">Brand</span><span class="p">,</span>
 <span class="w">  </span><span class="nx">Context</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">VerbalToken</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">Verbal</span><span class="p">,</span>
 <span class="w">  </span><span class="nx">Policy</span>
 <span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;./brando-domain&quot;</span><span class="p">;</span>
 
@@ -4271,9 +4271,9 @@ In the raw model, property names with colons (e.g. <code>"brando:toneOfVoice"</c
 <span class="w">    </span><span class="nx">competitorContext</span><span class="o">:</span><span class="w"> </span><span class="kt">node</span><span class="p">[</span><span class="s2">&quot;brando:competitorContext&quot;</span><span class="p">]</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">undefined</span><span class="p">,</span>
 <span class="w">    </span><span class="c1">// Relationship fields can be wired later by graph assembly</span>
 <span class="w">    </span><span class="nx">contexts</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
-<span class="w">    </span><span class="nx">verbalTokens</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
-<span class="w">    </span><span class="nx">visualTokens</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
-<span class="w">    </span><span class="nx">audioTokens</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">    </span><span class="nx">Verbals</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">    </span><span class="nx">Visuals</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">    </span><span class="nx">Audios</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
 <span class="w">    </span><span class="nx">policies</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
 <span class="w">    </span><span class="nx">categories</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
 <span class="w">    </span><span class="nx">campaigns</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
@@ -4297,15 +4297,15 @@ In the raw model, property names with colons (e.g. <code>"brando:toneOfVoice"</c
 <li>Parse the JSON-LD document into a list of <code>JsonLdNode</code>s.</li>
 <li>Index them by <code>@id</code>.</li>
 <li>Map each node into domain types.</li>
-<li>Resolve relationships via ID references (<code>brando:hasContext</code>, <code>brando:usesVerbalToken</code>, etc.).</li>
+<li>Resolve relationships via ID references (<code>brando:hasContext</code>, <code>brando:usesVerbal</code>, etc.).</li>
 </ol>
 <p>This is <strong>implementation-specific</strong> and not mandated by the vocabulary, but a typical pattern looks like:</p>
 <div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">BrandGraph</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">brand</span><span class="o">:</span><span class="w"> </span><span class="kt">Brand</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">contexts</span><span class="o">:</span><span class="w"> </span><span class="kt">Context</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">verbalTokens</span><span class="o">:</span><span class="w"> </span><span class="kt">VerbalToken</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">visualTokens</span><span class="o">:</span><span class="w"> </span><span class="kt">VisualToken</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">audioTokens</span><span class="o">:</span><span class="w"> </span><span class="kt">AudioToken</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Verbals</span><span class="o">:</span><span class="w"> </span><span class="kt">Verbal</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Visuals</span><span class="o">:</span><span class="w"> </span><span class="kt">Visual</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Audios</span><span class="o">:</span><span class="w"> </span><span class="kt">Audio</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">policies</span><span class="o">:</span><span class="w"> </span><span class="kt">Policy</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">categories</span><span class="o">:</span><span class="w"> </span><span class="kt">BrandedCategory</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">campaigns</span><span class="o">:</span><span class="w"> </span><span class="kt">Campaign</span><span class="p">[];</span>
@@ -4324,17 +4324,17 @@ In the raw model, property names with colons (e.g. <code>"brando:toneOfVoice"</c
 <div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kd">interface</span><span class="w"> </span><span class="nx">PromptConfig</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">brand</span><span class="o">:</span><span class="w"> </span><span class="kt">Brand</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">context</span><span class="o">:</span><span class="w"> </span><span class="kt">Context</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">verbalTokens</span><span class="o">:</span><span class="w"> </span><span class="kt">VerbalToken</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">visualTokens?</span><span class="o">:</span><span class="w"> </span><span class="kt">VisualToken</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">audioTokens?</span><span class="o">:</span><span class="w"> </span><span class="kt">AudioToken</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Verbals</span><span class="o">:</span><span class="w"> </span><span class="kt">Verbal</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Visuals?</span><span class="o">:</span><span class="w"> </span><span class="kt">Visual</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">Audios?</span><span class="o">:</span><span class="w"> </span><span class="kt">Audio</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">policies</span><span class="o">:</span><span class="w"> </span><span class="kt">Policy</span><span class="p">[];</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Your runtime can then have a strongly typed function like:</p>
 <div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">buildSystemPrompt</span><span class="p">(</span><span class="nx">config</span><span class="o">:</span><span class="w"> </span><span class="kt">PromptConfig</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">brand</span><span class="p">,</span><span class="w"> </span><span class="nx">context</span><span class="p">,</span><span class="w"> </span><span class="nx">verbalTokens</span><span class="p">,</span><span class="w"> </span><span class="nx">policies</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">config</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">brand</span><span class="p">,</span><span class="w"> </span><span class="nx">context</span><span class="p">,</span><span class="w"> </span><span class="nx">Verbals</span><span class="p">,</span><span class="w"> </span><span class="nx">policies</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">config</span><span class="p">;</span>
 
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">tone</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">verbalTokens</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">tone</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Verbals</span>
 <span class="w">    </span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">v</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">v</span><span class="p">.</span><span class="nx">toneOfVoice</span><span class="p">)</span>
 <span class="w">    </span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nb">Boolean</span><span class="p">)</span>
 <span class="w">    </span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;\n&quot;</span><span class="p">);</span>

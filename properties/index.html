@@ -3919,7 +3919,7 @@
 <ul>
 <li><code>brando:Brand</code></li>
 <li><code>brando:Context</code></li>
-<li><code>brando:BrandExpressionToken</code> and its subclasses (<code>VerbalToken</code>, <code>VisualToken</code>, <code>AudioToken</code>)</li>
+<li><code>brando:BrandExpression</code> and its subclasses (<code>Verbal</code>, <code>Visual</code>, <code>Audio</code>)</li>
 <li><code>brando:Policy</code></li>
 <li><code>brando:BrandedCategory</code></li>
 <li><code>brando:Campaign</code></li>
@@ -3950,7 +3950,7 @@
 <ul>
 <li><code>brando:toneOfVoice</code><ul>
 <li>Type: <code>owl:DatatypeProperty</code></li>
-<li>Domain: <code>brando:VerbalToken</code></li>
+<li>Domain: <code>brando:Verbal</code></li>
 <li>Range: <code>xsd:string</code></li>
 <li>Comment: “Emotional texture and attitude of the brand's voice in this token.”</li>
 </ul>
@@ -3959,7 +3959,7 @@
 <p>In JSON-LD:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Calm, empathetic, precise. Explain trade-offs clearly.&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -4082,7 +4082,7 @@
 </code></pre></div>
 <hr />
 <h2 id="5-verbal-expression-properties">5. Verbal expression properties</h2>
-<p><strong>Primary domain:</strong> <code>brando:VerbalToken</code>
+<p><strong>Primary domain:</strong> <code>brando:Verbal</code>
 <strong>Purpose:</strong> define <strong>how the brand speaks</strong> (tone, style, vocabulary).</p>
 <p>Core properties:</p>
 <ul>
@@ -4144,7 +4144,7 @@
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reassuring and efficient. Focus on clear next steps.&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:dialogueStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Use second person, acknowledge emotion, then move to options.&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:writingStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Short paragraphs, concrete steps, minimal jargon.&quot;</span><span class="p">,</span>
@@ -4171,7 +4171,7 @@
 </code></pre></div>
 <hr />
 <h2 id="6-visual-expression-properties">6. Visual expression properties</h2>
-<p><strong>Primary domain:</strong> <code>brando:VisualToken</code>
+<p><strong>Primary domain:</strong> <code>brando:Visual</code>
 <strong>Purpose:</strong> define <strong>how the brand looks</strong> (logos, colours, typography, imagery, motion).</p>
 <p>Key properties:</p>
 <ul>
@@ -4192,7 +4192,7 @@
   Typography system, often JSON-as-string (families, weights, sizes).</p>
 </li>
 <li>
-<p><code>brando:visualToken</code>
+<p><code>brando:Visual</code>
   Design tokens such as spacing, radius, elevation (JSON-as-string).</p>
 </li>
 <li>
@@ -4211,7 +4211,7 @@
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/visual/master&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VisualToken&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Visual&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:brandName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:logo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/brand/logo.svg&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:colourPalette&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -4233,7 +4233,7 @@
 </code></pre></div>
 <hr />
 <h2 id="7-audio-expression-properties">7. Audio expression properties</h2>
-<p><strong>Primary domain:</strong> <code>brando:AudioToken</code>
+<p><strong>Primary domain:</strong> <code>brando:Audio</code>
 <strong>Purpose:</strong> define <strong>how the brand sounds</strong> (voice, sonic logo, audio cues).</p>
 <p>Key properties:</p>
 <ul>
@@ -4269,7 +4269,7 @@
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/audio/master&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:AudioToken&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Audio&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:audioLogo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/audio/northstar-sonic-logo.mp3&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:voiceSignature&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Warm, mid-range UK English voice with calm, reassuring delivery.&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:speechStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Moderate pace, clear articulation, brief pauses before key amounts or dates.&quot;</span><span class="p">,</span>
@@ -4494,7 +4494,7 @@
 </code></pre></div>
 <hr />
 <h2 id="11-files-integration-properties">11. Files &amp; integration properties</h2>
-<p><strong>Domains:</strong> <code>brando:Brand</code>, <code>brando:Context</code>, <code>brando:BrandExpressionToken</code>, <code>brando:Policy</code>, <code>brando:BrandedCategory</code>, <code>brando:Campaign</code>, <code>brando:AutomationRule</code>
+<p><strong>Domains:</strong> <code>brando:Brand</code>, <code>brando:Context</code>, <code>brando:BrandExpression</code>, <code>brando:Policy</code>, <code>brando:BrandedCategory</code>, <code>brando:Campaign</code>, <code>brando:AutomationRule</code>
 <strong>Purpose:</strong> connect Brando nodes to actual assets and external systems.</p>
 <p>Asset properties:</p>
 <ul>
@@ -4508,7 +4508,7 @@
 </li>
 <li>
 <p><code>brando:assetURL</code> (literal)
-  Canonical URL for a primary asset (usually at <code>BrandExpressionToken</code> level).</p>
+  Canonical URL for a primary asset (usually at <code>BrandExpression</code> level).</p>
 </li>
 <li>
 <p><code>brando:assetPreview</code> (literal)
@@ -4591,7 +4591,7 @@
 <li>
 <p>Walks:</p>
 <ul>
-<li><code>brando:usesVerbalToken</code> / <code>usesVisualToken</code> / <code>usesAudioToken</code>,</li>
+<li><code>brando:usesVerbal</code> / <code>usesVisual</code> / <code>usesAudio</code>,</li>
 <li><code>brando:hasPolicy</code>,</li>
 <li><code>brando:hasAutomationRule</code>,</li>
 <li><code>brando:hasProductCategory</code> (if a product is in scope),</li>

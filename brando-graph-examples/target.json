@@ -25,10 +25,10 @@
         { "@id": "brando:context/target/us-master-retail" },
         { "@id": "brando:context/target/us-event-branding" }
       ],
-      "brando:usesVerbalToken": [
+      "brando:usesVerbal": [
         { "@id": "brando:verbal-token/target/master" }
       ],
-      "brando:usesVisualToken": [
+      "brando:usesVisual": [
         { "@id": "brando:visual-token/target/bullseye-core" }
       ],
       "brando:hasPolicy": [
@@ -56,10 +56,10 @@
         "regulatory": ["US retail and advertising standards"],
         "notes": "Evergreen, default activation context for Target master brand across owned retail and ecommerce surfaces."
       },
-      "brando:usesVerbalToken": [
+      "brando:usesVerbal": [
         { "@id": "brando:verbal-token/target/master" }
       ],
-      "brando:usesVisualToken": [
+      "brando:usesVisual": [
         { "@id": "brando:visual-token/target/bullseye-core" }
       ],
       "brando:downloadableFile": [
@@ -81,7 +81,7 @@
         "regulatory": ["US advertising standards", "league and event branding rules"],
         "notes": "Use Target Red prominently and apply repeating Bullseye spacing rules (2x between logos, x from edges) to separate branding from surrounding visuals."
       },
-      "brando:usesVisualToken": [
+      "brando:usesVisual": [
         { "@id": "brando:visual-token/target/bullseye-core" }
       ],
       "brando:downloadableFile": [
@@ -90,7 +90,7 @@
     },
     {
       "@id": "brando:verbal-token/target/master",
-      "@type": "brando:VerbalToken",
+      "@type": "brando:Verbal",
       "schema:name": "Target – Master Verbal Token",
       "brando:toneOfVoice": "Upbeat, confident and guest-focused, balancing playful energy with clarity. The voice should feel joyful and inviting while still direct and simple.",
       "brando:dialogueStyle": "Speaks in a friendly, conversational tone, often addressing the guest as \"you\" and using short, declarative sentences or paired statements, especially when using the tagline.",
@@ -109,7 +109,7 @@
     },
     {
       "@id": "brando:visual-token/target/bullseye-core",
-      "@type": "brando:VisualToken",
+      "@type": "brando:Visual",
       "schema:name": "Target – Core Bullseye Visual Token",
       "brando:brandName": "Target",
       "brando:logo": "urn:placeholder:brand/target/logo-bullseye-primary",
@@ -125,7 +125,7 @@
         "usageNotes": "Target Red is the official color of the Bullseye Design; CMYK, RGB and HEX breakdowns are tuned per process rather than direct conversions."
       },
       "brando:typography": "Helvetica for Target is the custom corporate typeface, based on Helvetica Neue and designed to complement the curved edges of the Bullseye. Use it in a range of weights, with specific tracking and leading practices for readability.",
-      "brando:visualToken": {
+      "brando:Visual": {
         "logoGeometry": {
           "outerRing": "width x",
           "innerSpace": "width x (transparent to background)",

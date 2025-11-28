@@ -21,13 +21,13 @@
       "brando:competitorContext": "Competes with other transatlantic and Nordic carriers offering routes between Europe, Iceland and North America. Differentiates through the Icelandic stopover concept, Iceland-focused experiences, nature-inspired visual identity and a warm, human tone of voice that reflects Icelandic culture.",
       "brando:brandArchitectureRole": "master brand for passenger air travel under Icelandair Group.",
       "brando:governanceModel": "Centralised brand governance operated by Icelandair brand and marketing teams, with clear guidelines for internal teams and agency partners.",
-      "brando:usesVerbalToken": {
+      "brando:usesVerbal": {
         "@id": "brando:verbal/icelandair/core"
       },
-      "brando:usesVisualToken": {
+      "brando:usesVisual": {
         "@id": "brando:visual/icelandair/core"
       },
-      "brando:usesAudioToken": {
+      "brando:usesAudio": {
         "@id": "brando:audio/icelandair/core"
       },
       "brando:hasContext": [
@@ -69,9 +69,9 @@
         "funnelStages": "awareness, consideration, purchase, pre-trip, in-trip, post-trip",
         "regulatory": "aviation-safety, GDPR"
       },
-      "brando:usesVerbalToken": { "@id": "brando:verbal/icelandair/core" },
-      "brando:usesVisualToken": { "@id": "brando:visual/icelandair/core" },
-      "brando:usesAudioToken": { "@id": "brando:audio/icelandair/core" },
+      "brando:usesVerbal": { "@id": "brando:verbal/icelandair/core" },
+      "brando:usesVisual": { "@id": "brando:visual/icelandair/core" },
+      "brando:usesAudio": { "@id": "brando:audio/icelandair/core" },
       "brando:hasPolicy": [
         { "@id": "brando:policy/icelandair/tone-and-style" },
         { "@id": "brando:policy/icelandair/visual-consistency" },
@@ -91,12 +91,12 @@
         "languages": "is, en",
         "notes": "Internal communications can be more celebratory and light-hearted while still following the core brand tone of voice and visual standards."
       },
-      "brando:usesVerbalToken": { "@id": "brando:verbal/icelandair/core" },
-      "brando:usesVisualToken": { "@id": "brando:visual/icelandair/core" }
+      "brando:usesVerbal": { "@id": "brando:verbal/icelandair/core" },
+      "brando:usesVisual": { "@id": "brando:visual/icelandair/core" }
     },
     {
       "@id": "brando:verbal/icelandair/core",
-      "@type": "brando:VerbalToken",
+      "@type": "brando:Verbal",
       "schema:name": "Icelandair core tone of voice",
       "brando:toneOfVoice": "Warm, empathetic, conversational and human. Interesting, trustworthy and reassuring, with wit and light-heartedness when appropriate. Can-do and solution-oriented, never robotic or condescending.",
       "brando:dialogueStyle": "Write as if speaking to another human. Use \"we\" for Icelandair and \"you\" for the customer. Adjust tone by journey phase: inspiring and playful before booking; clear and matter-of-fact in purchase flows; informative and excited pre-flight; calm, humble and kind in support or disruption situations.",
@@ -118,14 +118,14 @@
     },
     {
       "@id": "brando:visual/icelandair/core",
-      "@type": "brando:VisualToken",
+      "@type": "brando:Visual",
       "brando:brandName": "Icelandair",
       "schema:name": "Icelandair core visual identity",
       "brando:logo": "urn:placeholder:brand/icelandair/logo-primary",
       "brando:visualReferenceLink": "https://brandpad.io/icelandair/",
       "brando:colourPalette": "Primary colors: Midnight Blue (#001b71, RGB 0, 27, 113) as the signature brand color, Snow White (#fbfbfb, RGB 251, 251, 251) and Basalt Grey (#303030, RGB 48, 48, 48). Secondary colors: Fiery Magenta (#FF47B3), Crisp Blue (#54C0E8), Boreal Blue (#91F5E1), Volcanic Green (#50E68C), Golden Yellow (#FFDA00), Arctic Lilac (#BE00FF). Always lead with Midnight Blue and use secondary colors as accents only. Never combine Arctic Lilac on Midnight Blue, or Midnight Blue on Arctic Lilac.",
       "brando:typography": "Primary typeface: Icelandair Loft (custom sans-serif inspired by Icelandic nature) for all digital and print applications. Alternative typeface: Arial only for documents in environments that cannot use Icelandair Loft (e.g. Google Docs, MS Office tools); never use Arial in professionally designed materials. Use the specified weights and hierarchy for headings, subheads, body copy, pricing and bilingual layouts.",
-      "brando:visualToken": "Brand stripes derived from cabin and flight crew uniforms act as a fifth element used for headlines and calls-to-action. Typically use two stripes for text, with three for longer copy. Stripes tags use Fiery Magenta for Icelandair, Crisp Blue for Icelandair Cargo and Volcanic Green for Icelandair VITA. Digital and print grid systems define light and regular contours, with a safe-space area dedicated to imagery.",
+      "brando:Visual": "Brand stripes derived from cabin and flight crew uniforms act as a fifth element used for headlines and calls-to-action. Typically use two stripes for text, with three for longer copy. Stripes tags use Fiery Magenta for Icelandair, Crisp Blue for Icelandair Cargo and Volcanic Green for Icelandair VITA. Digital and print grid systems define light and regular contours, with a safe-space area dedicated to imagery.",
       "brando:imageryStyles": "Imagery features happy travellers and staff at the airport, in service settings and in Saga Lounge, emphasising comfort, warmth and calm before flights. Destination and nature photography reflects Icelandic landscapes, light and colours inspired by the aurora, sea, glaciers and volcanic terrain. Shots should feel genuine, inclusive and contemporary, never staged or overly corporate.",
       "brando:motionRules": "In video, keep logo size modest and consistent on end slates, place watermarks in the upper right, and use Icelandair Loft for titles, lower thirds and subtitles with strong contrast and subtle drop shadows. Motion should be smooth and confident rather than flashy, supporting legibility of type and the feeling of calm, reliable travel.",
       "brando:visualUsageGuidelines": "Always use the full logo (monogram plus wordmark) as the first choice for representing the brand. The Midnight Blue logo is primary; Snow White on Midnight Blue is secondary, with black as a fallback when required for contrast. Do not alter, redraw, stretch, recolor or add to the logo or monogram. Use the monogram alone only in approved contexts such as livery and certain social avatars with marketing team approval. Respect logo exclusion zones, minimum sizes and placement rules (top-right or centred end slates). Apply the colour palette and stripes layouts as documented, never placing stripes inside protected imagery safe space and never using the secondary palette for stripes.",
@@ -138,7 +138,7 @@
     },
     {
       "@id": "brando:audio/icelandair/core",
-      "@type": "brando:AudioToken",
+      "@type": "brando:Audio",
       "schema:name": "Icelandair core audio and voice",
       "brando:audioLogo": "urn:placeholder:brand/icelandair/audio-logo",
       "brando:voiceSignature": "Warm, clear and confident voice with a subtle Icelandic flavour when appropriate. Pace is measured and calm, with slight uplift and energy when inspiring travel, and a slower, softer delivery when explaining important information or disruptions.",
@@ -243,7 +243,7 @@
       "brando:dataSource": "urn:placeholder:brand/icelandair/cms-or-ad-server",
       "brando:automationAction": {
         "action": "adjust-tone",
-        "targetVerbalToken": "brando:verbal/icelandair/core",
+        "targetVerbal": "brando:verbal/icelandair/core",
         "note": "Use a slightly more promotional tone for special offer layouts while remaining clear, honest and empathetic, and while fully disclosing key offer conditions."
       },
       "brando:appliesTo": {

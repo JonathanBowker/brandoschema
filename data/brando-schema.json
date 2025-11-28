@@ -129,10 +129,10 @@
                     "url": "https://brandoschema.com/bdv-terms/#motionRule"
                 },
                 {
-                    "name": "visualToken",
+                    "name": "Visual",
                     "definition": "Reusable design elements such as colors, typography, and spacing that ensure consistency.",
                     "type": "url",
-                    "url": "https://brandoschema.com/bdv-terms/#visualToken"
+                    "url": "https://brandoschema.com/bdv-terms/#Visual"
                 },
                 {
                     "name": "visualUsageGuidelines",

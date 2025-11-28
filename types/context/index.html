@@ -3928,7 +3928,7 @@
 <ul>
 <li>audience descriptors (<code>brando:audienceSegment</code>, <code>brando:audiencePersona</code>),</li>
 <li>operational conditions (<code>brando:domainContext</code>, <code>brando:effectiveDuring</code>, <code>brando:appliesTo</code>),</li>
-<li>attached tokens (<code>brando:usesVerbalToken</code>, <code>brando:usesVisualToken</code>, <code>brando:usesAudioToken</code>),</li>
+<li>attached tokens (<code>brando:usesVerbal</code>, <code>brando:usesVisual</code>, <code>brando:usesAudio</code>),</li>
 <li>attached governance (<code>brando:hasPolicy</code> and possibly <code>brando:hasAutomationRule</code>).</li>
 </ul>
 <p>Your Brand OS or AI middleware normally:</p>
@@ -3961,26 +3961,26 @@
 <p>Contexts share many of the same links as brands:</p>
 <ul>
 <li>
-<p><strong><code>brando:usesVerbalToken</code></strong></p>
+<p><strong><code>brando:usesVerbal</code></strong></p>
 <ul>
 <li><strong>Domain:</strong> <code>brando:Brand</code>, <code>brando:Context</code></li>
-<li><strong>Range:</strong> <code>brando:VerbalToken</code></li>
+<li><strong>Range:</strong> <code>brando:Verbal</code></li>
 <li><strong>Comment:</strong> “Attaches a verbal expression token defining how the brand speaks in this scope.”</li>
 </ul>
 </li>
 <li>
-<p><strong><code>brando:usesVisualToken</code></strong></p>
+<p><strong><code>brando:usesVisual</code></strong></p>
 <ul>
 <li><strong>Domain:</strong> <code>brando:Brand</code>, <code>brando:Context</code></li>
-<li><strong>Range:</strong> <code>brando:VisualToken</code></li>
+<li><strong>Range:</strong> <code>brando:Visual</code></li>
 <li><strong>Comment:</strong> “Attaches a visual expression token defining how the brand looks in this scope.”</li>
 </ul>
 </li>
 <li>
-<p><strong><code>brando:usesAudioToken</code></strong></p>
+<p><strong><code>brando:usesAudio</code></strong></p>
 <ul>
 <li><strong>Domain:</strong> <code>brando:Brand</code>, <code>brando:Context</code></li>
-<li><strong>Range:</strong> <code>brando:AudioToken</code></li>
+<li><strong>Range:</strong> <code>brando:Audio</code></li>
 <li><strong>Comment:</strong> “Attaches an audio expression token defining how the brand sounds in this scope.”</li>
 </ul>
 </li>
@@ -4208,7 +4208,7 @@
 <span class="w">      </span><span class="nt">&quot;brando:hasContext&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/context/retail-chatbot&quot;</span>
 <span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;brando:usesVerbalToken&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;brando:usesVerbal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span>
 <span class="w">      </span><span class="p">},</span>
 <span class="w">      </span><span class="nt">&quot;brando:hasPolicy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -4234,7 +4234,7 @@
 <span class="w">        </span><span class="nt">&quot;validThrough&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
 <span class="w">      </span><span class="p">},</span>
 <span class="w">      </span><span class="nt">&quot;brando:appliesTo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Savings accounts; current accounts&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:usesVerbalToken&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;brando:usesVerbal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span>
 <span class="w">      </span><span class="p">},</span>
 <span class="w">      </span><span class="nt">&quot;brando:hasPolicy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
@@ -4243,12 +4243,12 @@
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Calm, empathetic, precise.&quot;</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reassuring and efficient. Focus on clear next steps.&quot;</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -4306,9 +4306,9 @@
 <p><strong>Related types</strong></p>
 <ul>
 <li><a href="../brand/"><code>brando:Brand</code></a></li>
-<li><a href="../verbal-token/"><code>brando:VerbalToken</code></a></li>
-<li><a href="../visual-token/"><code>brando:VisualToken</code></a></li>
-<li><a href="../audio-token/"><code>brando:AudioToken</code></a></li>
+<li><a href="../verbal-token/"><code>brando:Verbal</code></a></li>
+<li><a href="../visual-token/"><code>brando:Visual</code></a></li>
+<li><a href="../audio-token/"><code>brando:Audio</code></a></li>
 <li><a href="../policy/"><code>brando:Policy</code></a></li>
 <li><a href="../automation-rule/"><code>brando:AutomationRule</code></a></li>
 </ul>

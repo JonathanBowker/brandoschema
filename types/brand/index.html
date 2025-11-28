@@ -3960,9 +3960,9 @@
 </ul>
 <h3 id="expression-tokens">Expression tokens</h3>
 <ul>
-<li><code>brando:usesVerbalToken</code> – default verbal identity (tone, voice, behaviours).</li>
-<li><code>brando:usesVisualToken</code> – default visual identity (logo, colour, typography, imagery).</li>
-<li><code>brando:usesAudioToken</code> – default audio identity (voice, sonic logos, cues).</li>
+<li><code>brando:usesVerbal</code> – default verbal identity (tone, voice, behaviours).</li>
+<li><code>brando:usesVisual</code> – default visual identity (logo, colour, typography, imagery).</li>
+<li><code>brando:usesAudio</code> – default audio identity (voice, sonic logos, cues).</li>
 </ul>
 <p>These can be overridden or specialised at <code>brando:Context</code>, <code>brando:BrandedCategory</code>, and <code>brando:ProductItem</code> levels.</p>
 <h3 id="contexts-governance">Contexts &amp; governance</h3>
@@ -4000,15 +4000,15 @@
 <span class="w">    </span><span class="s2">&quot;Long-term alignment with customers&quot;</span>
 <span class="w">  </span><span class="p">],</span>
 
-<span class="w">  </span><span class="nt">&quot;brando:usesVerbalToken&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;brando:usesVerbal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Verbal&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar – default voice&quot;</span>
 <span class="w">  </span><span class="p">},</span>
 
-<span class="w">  </span><span class="nt">&quot;brando:usesVisualToken&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;brando:usesVisual&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/visual/default&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VisualToken&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Visual&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar – core visual system&quot;</span>
 <span class="w">  </span><span class="p">},</span>
 
@@ -4074,14 +4074,14 @@
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Do the right thing</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Long-term alignment with customers</span>
 
-<span class="nt">brando:usesVerbalToken</span><span class="p">:</span>
+<span class="nt">brando:usesVerbal</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/northstar/tokens/verbal/default</span>
-<span class="w">  </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:VerbalToken</span>
+<span class="w">  </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:Verbal</span>
 <span class="w">  </span><span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Northstar – default voice</span>
 
-<span class="nt">brando:usesVisualToken</span><span class="p">:</span>
+<span class="nt">brando:usesVisual</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">@id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.com/brand/northstar/tokens/visual/default</span>
-<span class="w">  </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:VisualToken</span>
+<span class="w">  </span><span class="nt">@type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">brando:Visual</span>
 <span class="w">  </span><span class="nt">schema:name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Northstar – core visual system</span>
 
 <span class="nt">brando:hasContext</span><span class="p">:</span>
@@ -4134,9 +4134,9 @@
 <li>
 <p><a href="../context/"><code>brando:Context</code></a></p>
 </li>
-<li><a href="../verbal-token/"><code>brando:VerbalToken</code></a></li>
-<li><a href="../visual-token/"><code>brando:VisualToken</code></a></li>
-<li><a href="../audio-token/"><code>brando:AudioToken</code></a></li>
+<li><a href="../verbal-token/"><code>brando:Verbal</code></a></li>
+<li><a href="../visual-token/"><code>brando:Visual</code></a></li>
+<li><a href="../audio-token/"><code>brando:Audio</code></a></li>
 <li><a href="../policy/"><code>brando:Policy</code></a></li>
 <li><a href="../branded-category/"><code>brando:BrandedCategory</code></a></li>
 <li><a href="product-item.md"><code>brando:ProductItem</code></a></li>

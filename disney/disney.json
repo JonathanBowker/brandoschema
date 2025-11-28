@@ -17,14 +17,14 @@
             "brando:brandPromise": "To help UK & Ireland travel partners inspire guests with the magic of Disney Destinations while ensuring all executions remain on-brand, compliant and true to Disney stories.",
             "brando:competitorContext": "Competes with other family holiday providers, theme parks and cruise brands, but differentiates through iconic characters, immersive storytelling, multiple intellectual property universes (Disney, Pixar, AVATAR, MARVEL, Star Wars\u2122) and tightly governed use of brand assets.",
             "brando:inheritsPolicies": true,
-            "brando:inheritsTokens": "{"verbalTokenInheritance":"All contexts inherit the master Disney Destinations UK & Ireland verbal token, with additional rules layered for social, franchise IP and legal nomenclature.","visualTokenInheritance":"All contexts inherit the master visual token, with destination-specific logo treatments and size rules for Disneyland\u00ae Paris, Walt Disney World Resort in Florida and Disney Cruise Line."}",
+            "brando:inheritsTokens": "{"VerbalInheritance":"All contexts inherit the master Disney Destinations UK & Ireland verbal token, with additional rules layered for social, franchise IP and legal nomenclature.","VisualInheritance":"All contexts inherit the master visual token, with destination-specific logo treatments and size rules for Disneyland\u00ae Paris, Walt Disney World Resort in Florida and Disney Cruise Line."}",
             "brando:hasContext": [
                 "brando:context/disney-destinations-ukie/partner-all",
                 "brando:context/disney-destinations-ukie/social-digital"
             ],
-            "brando:usesVerbalToken": "brando:verbal-token/disney-destinations-ukie/core",
-            "brando:usesVisualToken": "brando:visual-token/disney-destinations-ukie/core",
-            "brando:usesAudioToken": "brando:audio-token/disney-destinations-ukie/core",
+            "brando:usesVerbal": "brando:verbal-token/disney-destinations-ukie/core",
+            "brando:usesVisual": "brando:visual-token/disney-destinations-ukie/core",
+            "brando:usesAudio": "brando:audio-token/disney-destinations-ukie/core",
             "brando:hasPolicy": [
                 "brando:policy/disney-destinations-ukie/approvals",
                 "brando:policy/disney-destinations-ukie/characters",
@@ -65,8 +65,8 @@
                 "brando:policy/disney-destinations-ukie/other-franchises",
                 "brando:policy/disney-destinations-ukie/digital-properties-nomenclature"
             ],
-            "brando:usesVerbalToken": "brando:verbal-token/disney-destinations-ukie/core",
-            "brando:usesVisualToken": "brando:visual-token/disney-destinations-ukie/core"
+            "brando:usesVerbal": "brando:verbal-token/disney-destinations-ukie/core",
+            "brando:usesVisual": "brando:visual-token/disney-destinations-ukie/core"
         },
         {
             "@id": "brando:context/disney-destinations-ukie/social-digital",
@@ -85,13 +85,13 @@
                 "brando:policy/disney-destinations-ukie/imagery",
                 "brando:policy/disney-destinations-ukie/other-franchises"
             ],
-            "brando:usesVerbalToken": "brando:verbal-token/disney-destinations-ukie/core",
-            "brando:usesVisualToken": "brando:visual-token/disney-destinations-ukie/core",
-            "brando:usesAudioToken": "brando:audio-token/disney-destinations-ukie/core"
+            "brando:usesVerbal": "brando:verbal-token/disney-destinations-ukie/core",
+            "brando:usesVisual": "brando:visual-token/disney-destinations-ukie/core",
+            "brando:usesAudio": "brando:audio-token/disney-destinations-ukie/core"
         },
         {
             "@id": "brando:verbal-token/disney-destinations-ukie/core",
-            "@type": "brando:VerbalToken",
+            "@type": "brando:Verbal",
             "schema:name": "Disney Destinations UK & Ireland \u2013 core verbal identity",
             "brando:toneOfVoice": "Warm, family-friendly, imaginative and optimistic, celebrating magic and unforgettable memories while sounding clear, trustworthy and professional. The tone should show the breadth and scope of Disney experiences without sounding like a hard sell or using characters themselves as sales people. ",
             "brando:dialogueStyle": "Speak directly to families, couples and friends in second person, focusing on experiences and feelings rather than discounts. Conversation should feel enthusiastic but measured, never pushy; partner brands remain clearly identified as the seller, with Disney positioned as the destination. Avoid slang that undermines the timeless quality of Disney stories.",
@@ -110,14 +110,14 @@
         },
         {
             "@id": "brando:visual-token/disney-destinations-ukie/core",
-            "@type": "brando:VisualToken",
+            "@type": "brando:Visual",
             "schema:name": "Disney Destinations UK & Ireland \u2013 core visual identity",
             "brando:brandName": "Disney Destinations",
             "brando:logo": "urn:placeholder:brand/disney-destinations-ukie/logo-set",
             "brando:visualReferenceLink": "urn:placeholder:brand/disney-destinations-ukie/visual-guidelines",
             "brando:colourPalette": "Destination logos use their own canonical colours: silver for the primary Disneyland\u00ae Paris logo on photographic or coloured backgrounds; \u201cTower Blue\u201d as the preferred Walt Disney World Resort logo colour; and navy as the preferred colour for the stacked Disney Cruise Line logo, with white or black versions available for contrast-critical applications. ",
             "brando:typography": "Partners must use their own standard fonts; the \u2018Walt\u2019 script font may only appear inside supplied logos and must never be used as running text or recreated. Logos must always be reproduced in their original format with no font substitution, adaptation or distortion. ",
-            "brando:visualToken": "Logos should usually sit on solid backgrounds for clarity; when using full colour destination logos, choose a light solid background or the approved reversed versions for dark backgrounds. Always maintain minimum sizes (generally 25mm wide) and protection space around each logo as defined in the brand book. The Disney logo on partner advertising should be approximately 25% smaller than the partner logo, and should not be repeated on the same page, with minor exceptions for Disney-provided templates. ",
+            "brando:Visual": "Logos should usually sit on solid backgrounds for clarity; when using full colour destination logos, choose a light solid background or the approved reversed versions for dark backgrounds. Always maintain minimum sizes (generally 25mm wide) and protection space around each logo as defined in the brand book. The Disney logo on partner advertising should be approximately 25% smaller than the partner logo, and should not be repeated on the same page, with minor exceptions for Disney-provided templates. ",
             "brando:imageryStyles": "Use only official Disney-approved photography, logos and graphics from Disney MagiKit. Show characters in-park or on-board and in the correct story world; avoid over-using character imagery and aim for a balance between park, ship and character photography that captures real guest moments. Do not place text or graphics over characters or key properties such as castles and ships; do not create photo montages or distort images; crop only with prior agreement and never cut off key elements such as Mickey\u2019s ears, castles, ships or merchandise focal points. ",
             "brando:motionRules": "Digital images must be crisp, un-stretched and free of pixelation; leaderboards and skyscrapers must respect original proportions. For on-screen usage, prefer simple compositions with strong foreground focus and high contrast. Cropping of castles or characters in web banners requires prior approval. ",
             "brando:visualUsageGuidelines": "The three-circle Mickey icon may be used as a decorative brand motif or bullet for informational, non-sales text, and can be resized, rotated and appear in any colour or fill, but must not be used with sales or promotional messaging or as a holding shape for offers. Never combine the Mickey icon with AVATAR, MARVEL or Star Wars\u2122 content. Use official Disney maps at a size where labels remain legible and never alter or montage them. Use Disney-supplied pixie dust sparingly, only alongside Disney IP and never for offers or in contexts such as AVATAR, MARVEL, Star Wars\u2122, Toy Story or The Twilight Zone\u00ae. AI-generated Disney imagery or AI modifications to Disney images are not permitted. ",
@@ -126,7 +126,7 @@
         },
         {
             "@id": "brando:audio-token/disney-destinations-ukie/core",
-            "@type": "brando:AudioToken",
+            "@type": "brando:Audio",
             "schema:name": "Disney Destinations UK & Ireland \u2013 audio & music governance",
             "brando:audioLogo": "urn:placeholder:brand/disney-destinations-ukie/audio-logo",
             "brando:voiceSignature": "Friendly, enthusiastic narrator with clear UK English diction, medium pace and a warm, inclusive tone, avoiding impersonation of any Disney character voices.",
