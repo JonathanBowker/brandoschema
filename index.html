@@ -4077,16 +4077,25 @@
 <hr />
 <h2 id="what-is-brando">What is Brando?</h2>
 <p><strong>Schema.org</strong> defines what things <em>are</em> — the entities in your world:
-products, brands, audiences, articles, places, actions.
-It’s the ontology of existence, the inventory of nouns.</p>
-<p><strong>Brando</strong> defines how those things <em>behave</em> — tone, style, sound, constraints,
-approved language, forbidden moves, contextual adjustments.
-It’s the grammar of brand behaviour: the verbs, the adverbs, the rules.</p>
-<p><strong>Brando</strong> is:</p>
+products, brands, audiences, articles, places, actions.<br />
+It is primarily a <strong>descriptive vocabulary</strong>: it helps machines recognise and index entities.</p>
+<p><strong>GS1 Web Vocabulary</strong> extends this descriptive layer for commerce:
+trade items, locations, parties, logistics, and supply chain attributes.</p>
+<p><strong>Brando</strong> sits one layer up as a <strong>Brand Directive Vocabulary (BDV)</strong>:</p>
+<ul>
+<li>where Schema.org and GS1 describe <strong>facts about things</strong>,</li>
+<li>Brando BDV encodes <strong>how the brand expects systems to behave</strong> around those things.</li>
+</ul>
+<p>In other words:</p>
+<ul>
+<li>Schema.org / GS1 → <em>descriptive layer</em> (“what this product/brand is”).  </li>
+<li>Brando BDV → <em>directive layer</em> (“how any AI or agent must speak and act about it”).</li>
+</ul>
+<p>Brando is:</p>
 <ul>
 <li>a <strong>linked data vocabulary and ontology</strong> for brands (JSON-LD, Schema.org extension),</li>
-<li>a <strong>set of classes and properties</strong> that describe identity, expression, governance, and integration,</li>
-<li>and a <strong>taxonomy layer</strong> for brand and product categories aligned with GS1, UNSPSC, and Google Product Taxonomy.</li>
+<li>a <strong>Brand Directive Vocabulary (BDV)</strong> that encodes tone, language, constraints, guard rails, and automation rules,</li>
+<li>and a <strong>taxonomy / control layer</strong> for brand and product categories aligned with GS1, UNSPSC, and Google Product Taxonomy.</li>
 </ul>
 <p>Brando lives at:</p>
 <ul>
@@ -4096,7 +4105,7 @@ It’s the grammar of brand behaviour: the verbs, the adverbs, the rules.</p>
 <p>It:</p>
 <ul>
 <li>extends <code>schema:Brand</code> and <code>schema:Intangible</code>,</li>
-<li>aligns cleanly with GS1 Web Vocabulary concepts for products and brands,</li>
+<li>aligns cleanly with <strong>GS1 Web Vocabulary</strong> for products, brands, GTINs and GLNs,</li>
 <li>is published canonically in <strong>JSON-LD</strong>,</li>
 <li>and is profiled for <strong>YAML</strong> configuration and <strong>TypeScript</strong> types.</li>
 </ul>
@@ -4105,11 +4114,12 @@ It’s the grammar of brand behaviour: the verbs, the adverbs, the rules.</p>
 <li>embed Brando JSON-LD in public sites for AI and web discovery,</li>
 <li>manage Brando YAML in repositories as configuration for a <strong>Brand Operating System (Brand OS)</strong>,</li>
 <li>or load Brando instances into a <strong>Brand Knowledge Graph</strong> that powers multiple runtimes,</li>
-<li>and, with the right runtime architecture, execute Brando instances as <strong>Machine-Actionable Policy Graphs</strong> that govern how AI systems behave.</li>
+<li>and, with the right runtime architecture, execute Brando instances as <strong>Machine-Actionable Policy Graphs</strong> that direct how AI systems behave.</li>
 </ul>
-<p>The ontology header describes Brando as:</p>
+<p>Internally, we talk about Brando as:</p>
 <blockquote>
-<p><em>Core classes and properties for the Brand Oracle (Brando) schema and ontology, designed to constrain and guide generative, search, agent, and multimodal systems toward on-brand, compliant behaviour.</em></p>
+<p><strong>Brando BDV</strong> – a Brand Directive Vocabulary that tells AI systems not just <em>what</em> a product or brand is,<br />
+but <em>how they are allowed to talk, reason, and act</em> in relation to it.</p>
 </blockquote>
 <hr />
 <h2 id="brando-in-practice-from-vocabulary-to-policy-graph">Brando in practice: from vocabulary to Policy Graph</h2>
