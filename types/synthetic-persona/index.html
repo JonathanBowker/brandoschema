@@ -4937,7 +4937,7 @@ Identity properties describe the <strong>“profile card”</strong> of the pers
 <tr>
 <td><strong>supportsModality</strong></td>
 <td>Text</td>
-<td>text, image, audio, multi.</td>
+<td>Supported modalities (e.g. “text”, “structured-data”).</td>
 </tr>
 </tbody>
 </table>
@@ -4997,27 +4997,27 @@ Identity properties describe the <strong>“profile card”</strong> of the pers
 <tbody>
 <tr>
 <td><strong>relatedPersona</strong></td>
-<td>SyntheticPersona</td>
+<td>brando:SyntheticPersona</td>
 <td>Persona with related function.</td>
 </tr>
 <tr>
 <td><strong>fallbackPersona</strong></td>
-<td>SyntheticPersona</td>
+<td>brando:SyntheticPersona</td>
 <td>Persona to use if this one cannot respond.</td>
 </tr>
 <tr>
 <td><strong>replacesPersona</strong></td>
-<td>SyntheticPersona</td>
+<td>brando:SyntheticPersona</td>
 <td>Persona replaced by this one.</td>
 </tr>
 <tr>
 <td><strong>isReplacementFor</strong></td>
-<td>SyntheticPersona</td>
+<td>brando:SyntheticPersona</td>
 <td>Inverse.</td>
 </tr>
 <tr>
 <td><strong>worksAlongside</strong></td>
-<td>SyntheticPersona</td>
+<td>brando:SyntheticPersona</td>
 <td>For multi-agent orchestration.</td>
 </tr>
 </tbody>
@@ -5287,8 +5287,7 @@ Identity properties describe the <strong>“profile card”</strong> of the pers
 <span class="w">      </span><span class="nt">&quot;termSubstitutionRules&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Always say &#39;Policy Graph&#39;, never &#39;knowledge graph&#39;.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;claimVerbConstraints&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Use &#39;enable&#39; or &#39;support&#39;, never &#39;guarantee&#39;.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;quantifierConstraints&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Avoid absolutes (&#39;always&#39;, &#39;never&#39;).&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;regulatoryPhraseRestrictions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;No</span>
-<span class="s2"> legal or performance guarantees.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;regulatoryPhraseRestrictions&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;No legal or performance guarantees.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;lexicalPolicyRef&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/policy/global-lexical-policy&quot;</span><span class="p">,</span>
 
 <span class="w">      </span><span class="cm">/* 8. Behavioural Governance */</span>
