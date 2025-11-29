@@ -727,9 +727,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-brandovisualidentity" class="md-nav__link">
+  <a href="#23-brandovisual" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3 Brando:VisualIdentity
+      2.3 brando:Visual
     </span>
   </a>
   
@@ -3934,9 +3934,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-brandovisualidentity" class="md-nav__link">
+  <a href="#23-brandovisual" class="md-nav__link">
     <span class="md-ellipsis">
-      2.3 Brando:VisualIdentity
+      2.3 brando:Visual
     </span>
   </a>
   
@@ -4155,7 +4155,7 @@ For detailed, per-class reference, see the dedicated pages under <strong>Schema 
 <p>This is an <strong>abstract</strong> class. You typically don’t instantiate it directly. Instead, you use one of its concrete subclasses:</p>
 <ul>
 <li><code>Brando:VerbalIdentity</code></li>
-<li><code>Brando:VisualIdentity</code></li>
+<li><code>brando:Visual</code></li>
 <li><code>Brando:AudioIdentity</code></li>
 </ul>
 <p>Use it conceptually to understand that all tokens share similar patterns:</p>
@@ -4195,14 +4195,14 @@ For detailed, per-class reference, see the dedicated pages under <strong>Schema 
 </ul>
 <p>See: <strong><a href="verbal-token/"><code>Brando:VerbalIdentity</code> type reference</a></strong></p>
 <hr />
-<h3 id="23-brandovisualidentity">2.3 <code>Brando:VisualIdentity</code></h3>
-<p><strong>IRI:</strong> <code>Brando:VisualIdentity</code><br />
+<h3 id="23-brandovisual">2.3 <code>brando:Visual</code></h3>
+<p><strong>IRI:</strong> <code>brando:Visual</code><br />
 <strong>Superclass:</strong> <code>brando:BrandExpression</code>  </p>
 <p><strong>Comment (summary):</strong>  </p>
 <blockquote>
 <p>Reusable configuration of the brand’s visual system: logo, colour, typography, imagery, and motion.</p>
 </blockquote>
-<p>A <code>Brando:VisualIdentity</code> defines <strong>how the brand looks</strong> in a structured way that can be mapped to:</p>
+<p>A <code>brando:Visual</code> defines <strong>how the brand looks</strong> in a structured way that can be mapped to:</p>
 <ul>
 <li>design systems,</li>
 <li>UI theming,</li>
@@ -4215,14 +4215,14 @@ For detailed, per-class reference, see the dedicated pages under <strong>Schema 
 <li><code>brando:typography</code> – type system description.</li>
 <li><code>brando:imageryStyles</code> – photography/illustration guidance.</li>
 <li><code>brando:motionRules</code> – animation / motion design rules.</li>
-<li><code>Brando:VisualIdentityReferenceLink</code> – links to Figma, brand portals, etc.</li>
-<li><code>Brando:VisualIdentityUsageGuidelines</code> – usage notes.</li>
+<li><code>brando:visualReferenceLink</code> – links to Figma, brand portals, etc.</li>
+<li><code>brando:visualUsageGuidelines</code> – usage notes.</li>
 </ul>
 <p>Linking property:</p>
 <ul>
-<li><code>brando:usesVisual</code> (domain: <code>brando:Brand</code> or <code>brando:Context</code>, range: <code>Brando:VisualIdentity</code>).</li>
+<li><code>brando:usesVisual</code> (domain: <code>brando:Brand</code> or <code>brando:Context</code>, range: <code>brando:Visual</code>).</li>
 </ul>
-<p>See: <strong><a href="visual-token/"><code>Brando:VisualIdentity</code> type reference</a></strong></p>
+<p>See: <strong><a href="visual-token/"><code>brando:Visual</code> type reference</a></strong></p>
 <hr />
 <h3 id="24-brandoaudioidentity">2.4 <code>Brando:AudioIdentity</code></h3>
 <p><strong>IRI:</strong> <code>Brando:AudioIdentity</code><br />
@@ -4384,7 +4384,7 @@ For detailed, per-class reference, see the dedicated pages under <strong>Schema 
     │   └── brando:Brand
     │       ├── brando:hasContext ──────────► brando:Context
     │       ├── brando:usesVerbal ─────► Brando:VerbalIdentity
-    │       ├── brando:usesVisual ─────► Brando:VisualIdentity
+    │       ├── brando:usesVisual ─────► brando:Visual
     │       ├── brando:usesAudio ──────► Brando:AudioIdentity
     │       ├── brando:hasPolicy ───────────► brando:Policy
     │       ├── brando:hasAutomationRule ───► brando:AutomationRule
@@ -4392,7 +4392,7 @@ For detailed, per-class reference, see the dedicated pages under <strong>Schema 
     │
     ├── brando:BrandExpression
     │   ├── Brando:VerbalIdentity
-    │   ├── Brando:VisualIdentity
+    │   ├── brando:Visual
     │   └── Brando:AudioIdentity
     │
     ├── brando:Policy
@@ -4460,7 +4460,7 @@ A small example (JSON-LD) to show the main types in play:
 <li><a href="context/"><code>brando:Context</code></a></li>
 <li><a href="brand-expression-token/"><code>brando:BrandExpression</code></a></li>
 <li><a href="verbal-token/"><code>Brando:VerbalIdentity</code></a></li>
-<li><a href="visual-token/"><code>Brando:VisualIdentity</code></a></li>
+<li><a href="visual-token/"><code>brando:Visual</code></a></li>
 <li><a href="audio-token/"><code>Brando:AudioIdentity</code></a></li>
 <li><a href="policy/"><code>brando:Policy</code></a></li>
 <li><a href="branded-category/"><code>brando:BrandedCategory</code></a></li>
