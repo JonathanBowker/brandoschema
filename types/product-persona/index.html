@@ -970,6 +970,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#productpersona-as-an-operative-layer-over-gs1-schemaorg" class="md-nav__link">
+    <span class="md-ellipsis">
+      ProductPersona as an operative layer over GS1 + Schema.org
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#inbound-from-product-brand" class="md-nav__link">
     <span class="md-ellipsis">
       Inbound: from Product / Brand
@@ -3953,6 +3962,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#productpersona-as-an-operative-layer-over-gs1-schemaorg" class="md-nav__link">
+    <span class="md-ellipsis">
+      ProductPersona as an operative layer over GS1 + Schema.org
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#inbound-from-product-brand" class="md-nav__link">
     <span class="md-ellipsis">
       Inbound: from Product / Brand
@@ -4143,66 +4161,83 @@
 </ul>
 <blockquote>
 <p><strong>rdfs:comment</strong><br />
-<em>A ProductPersona defines a governed AI identity for a product or product line. It acts as a semantic bridge between GS1-based product data (e.g. GTIN JSON-LD) and Brando’s Brand Directive Vocabulary. It specifies what the product is, which canonical claims are allowed, how the tone flexes by channel, and which evidence sources the AI must rely on — enabling non-hallucinated, on-brand product content generation.</em></p>
+<em>A <code>brando:ProductPersona</code> defines a governed AI identity for a product or product line. It acts as a semantic bridge between GS1-based product data (e.g. GTIN JSON-LD) and Brando’s Brand Directive Vocabulary. It specifies what the product is, which canonical claims are allowed, how the tone flexes by channel, and which evidence sources the AI must rely on — enabling non-hallucinated, on-brand product content generation.</em></p>
 </blockquote>
 <hr />
 <h2 id="term-definition"><strong>Term definition</strong></h2>
 <ul>
-<li><strong>IRI:</strong> <code>brando:ProductPersona</code></li>
-<li><strong>Type:</strong> <code>owl:Class</code></li>
-<li><strong>Superclass:</strong> <code>schema:Intangible</code></li>
-<li><strong>Defined in:</strong> Brando Schema Vocabulary v1.4</li>
+<li><strong>IRI:</strong> <code>brando:ProductPersona</code>  </li>
+<li><strong>Type:</strong> <code>owl:Class</code>  </li>
+<li><strong>Superclass:</strong> <code>schema:Intangible</code>  </li>
+<li><strong>Defined in:</strong> Brando Schema Vocabulary v1.4  </li>
 </ul>
 <p>A <code>brando:ProductPersona</code> is a <strong>structured, governance-ready product identity layer</strong> designed for use by:</p>
 <ul>
-<li>product copy generators,</li>
-<li>ecommerce and PDP assistants,</li>
-<li>support/chat agents answering product questions,</li>
-<li>in-store associate copilots,</li>
-<li>post-purchase and troubleshooting assistants.</li>
+<li>product copy generators,  </li>
+<li>ecommerce and PDP assistants,  </li>
+<li>support/chat agents answering product questions,  </li>
+<li>in-store associate copilots,  </li>
+<li>post-purchase and troubleshooting assistants.  </li>
 </ul>
 <p>It determines <strong>how the AI talks about a product</strong>, which facts it may use, and which claims are disallowed.</p>
-<p>It is the <strong>product-level semantic identity</strong> within a Brand Operating System.</p>
+<p>Within a Brand Operating System, it is the <strong>product-level semantic identity layer</strong>, sitting on top of <strong>Schema.org / GS1 descriptive data</strong> and under the <strong>Brand Directive Vocabulary (BDV)</strong>.</p>
 <hr />
 <h2 id="relationship-summary"><strong>Relationship Summary</strong></h2>
+<h3 id="productpersona-as-an-operative-layer-over-gs1-schemaorg">ProductPersona as an operative layer over GS1 + Schema.org</h3>
+<p>A <code>brando:ProductPersona</code> is typically anchored to <strong>one or more concrete product nodes</strong>:</p>
+<ul>
+<li><code>schema:Product</code> (web-facing product description),  </li>
+<li><code>gs1:Product</code> with <code>gs1:gtin</code> (GS1 Web Vocabulary trade item),  </li>
+<li>
+<p>plus related <strong>brand</strong> and <strong>organization</strong> nodes:</p>
+</li>
+<li>
+<p><code>schema:Brand</code>  </p>
+</li>
+<li><code>schema:Organization</code></li>
+</ul>
+<p>The descriptive product graph (Schema.org + GS1) answers <strong>“what is this product?”</strong><br />
+<code>brando:ProductPersona</code> answers <strong>“if an AI talks about this product, how must it behave?”</strong></p>
 <h3 id="inbound-from-product-brand"><strong>Inbound: from Product / Brand</strong></h3>
 <h4 id="brandohasproductpersona-recommended"><strong><code>brando:hasProductPersona</code> (recommended)</strong></h4>
 <p>Links a concrete product (or product family) to its governed persona.</p>
 <ul>
-<li><strong>Type:</strong> ObjectProperty  </li>
+<li><strong>Type:</strong> <code>owl:ObjectProperty</code>  </li>
 <li><strong>Domain:</strong> <code>schema:Product</code> (or <code>gs1:Product</code>)  </li>
 <li><strong>Range:</strong> <code>brando:ProductPersona</code>  </li>
 <li><strong>rdfs:comment:</strong> Connects a product GTIN / GLN instance to the AI persona that is allowed to speak for it.</li>
 </ul>
+<p>This lets each product (or SKU family) declare <strong>its canonical AI voice</strong>.</p>
 <hr />
 <h3 id="inbound-from-brandobrand"><strong>Inbound: from <code>brando:Brand</code></strong></h3>
 <h4 id="brandohassyntheticpersona-brandohasproductpersona"><strong><code>brando:hasSyntheticPersona</code> / <code>brando:hasProductPersona</code></strong></h4>
+<p>A <code>brando:Brand</code> may reference:</p>
 <ul>
-<li>A <code>brando:Brand</code> may reference:</li>
-<li>brand-level personas: <code>brando:SyntheticPersona</code></li>
+<li>brand-level personas: <code>brando:SyntheticPersona</code>  </li>
 <li>product-level personas: <code>brando:ProductPersona</code>  </li>
 </ul>
-<p>This lets a brand express <strong>portfolio-wide governance</strong>: corporate voice + product voices.</p>
+<p>Together, these support <strong>portfolio-wide governance</strong>: corporate voice + product voices, expressed as governed personas.</p>
 <hr />
 <h3 id="outbound-relationships-anchor-governance"><strong>Outbound Relationships (anchor &amp; governance)</strong></h3>
 <p>A <code>brando:ProductPersona</code> typically references:</p>
 <ul>
-<li><strong><code>schema:Product</code></strong> — the product described.</li>
-<li><strong><code>schema:Brand</code> / <code>schema:Organization</code></strong> — brand/owner.</li>
+<li><strong><code>schema:Product</code> / <code>gs1:Product</code></strong> — the product(s) described.  </li>
+<li><strong><code>schema:Brand</code> / <code>schema:Organization</code></strong> — visible brand and accountable owner.  </li>
 <li><strong>GS1 identifiers</strong> via Brando properties:</li>
-<li><code>brando:appliesToGTIN</code> → GTIN(s) covered</li>
-<li><code>brando:appliesToProduct</code> → product URI(s) covered</li>
+<li><code>brando:appliesToGTIN</code> → GTIN(s) covered,  </li>
+<li><code>brando:appliesToProduct</code> → product JSON-LD URI(s) covered.  </li>
 <li><strong>Brando BDV objects</strong>:</li>
-<li><code>brando:VerbalIdentity</code>, <code>brando:VisualIdentity</code>, <code>brando:AudioIdentity</code></li>
+<li><code>brando:VerbalIdentity</code>, <code>brando:VisualIdentity</code>, <code>brando:AudioIdentity</code>.  </li>
 <li><strong>Policies</strong>:</li>
-<li><code>brando:Policy</code> nodes for lexical, claim, and safety constraints.</li>
+<li><code>brando:Policy</code> nodes for lexical, claim, and safety constraints.  </li>
 <li><strong>Contexts</strong>:</li>
-<li><code>brando:Context</code> nodes describing channel/region situations.</li>
+<li><code>brando:Context</code> nodes describing channel / region / journey situations.</li>
 </ul>
+<p>In many implementations, a ProductPersona is also treated as a <strong>profiled SyntheticPersona</strong>, specialised around <code>schema:Product</code> and <code>gs1:gtin</code> – but in the core vocabulary it is a dedicated class for product-anchored personas.</p>
 <hr />
 <h2 id="1-identity-properties"><strong>1. Identity Properties</strong></h2>
 <blockquote>
-<p>Product persona “profile card”</p>
+<p>Product persona “profile card”.</p>
 </blockquote>
 <table>
 <thead>
@@ -4251,11 +4286,11 @@
 </tbody>
 </table>
 <p><strong>Usage notes:</strong><br />
-These fields describe the persona itself, not the underlying product data.</p>
+These fields describe the <strong>persona itself</strong>, not the underlying product master data.</p>
 <hr />
 <h2 id="2-product-anchor-gs1-linkage"><strong>2. Product Anchor &amp; GS1 Linkage</strong></h2>
 <blockquote>
-<p>Where the persona “lands” in GS1 / schema.org product space.</p>
+<p>Where the persona “lands” in GS1 / Schema.org product space.</p>
 </blockquote>
 <table>
 <thead>
@@ -4279,7 +4314,7 @@ These fields describe the persona itself, not the underlying product data.</p>
 <tr>
 <td><strong>appliesToProduct</strong></td>
 <td>URL</td>
-<td>Product graph / JSON-LD URI(s) covered by this persona (e.g. <code>{gtin}.jsonld</code>).</td>
+<td>Product graph / JSON-LD URI(s) covered (e.g. <code>{gtin}.jsonld</code>).</td>
 </tr>
 <tr>
 <td><strong>gs1DigitalLink</strong></td>
@@ -4289,7 +4324,7 @@ These fields describe the persona itself, not the underlying product data.</p>
 <tr>
 <td><strong>productScope</strong></td>
 <td>Text</td>
-<td>“single-sku”, “variant-family”, “range-family”, etc.</td>
+<td>Scope label (e.g. “single-sku”, “variant-family”, “range-family”).</td>
 </tr>
 <tr>
 <td><strong>variantDimension</strong></td>
@@ -4304,7 +4339,7 @@ These fields describe the persona itself, not the underlying product data.</p>
 <tr>
 <td><strong>evidencePriorityRule</strong></td>
 <td>Text</td>
-<td>Rules for which source wins if attributes conflict (e.g. “DPP &gt; masterData &gt; local overrides”).</td>
+<td>How to resolve conflicts between sources (e.g. “DPP &gt; masterData &gt; local overrides”).</td>
 </tr>
 </tbody>
 </table>
@@ -4342,7 +4377,7 @@ These fields describe the persona itself, not the underlying product data.</p>
 <tr>
 <td><strong>categoryDepartment</strong></td>
 <td>Text</td>
-<td>Department classification (e.g. from Target’s hierarchy).</td>
+<td>Department classification (e.g. from a retailer’s hierarchy).</td>
 </tr>
 <tr>
 <td><strong>categoryClass</strong></td>
@@ -4357,12 +4392,12 @@ These fields describe the persona itself, not the underlying product data.</p>
 <tr>
 <td><strong>gpcCategoryCode</strong></td>
 <td>Text</td>
-<td>GS1 GPC code aligned to GS1 master data.</td>
+<td>GS1 GPC category code aligned to GS1 master data.</td>
 </tr>
 <tr>
 <td><strong>gpcCategoryDescription</strong></td>
 <td>Text</td>
-<td>Human label for GPC code.</td>
+<td>Human label for the GS1 GPC code.</td>
 </tr>
 <tr>
 <td><strong>unspscCode</strong></td>
@@ -4372,7 +4407,7 @@ These fields describe the persona itself, not the underlying product data.</p>
 <tr>
 <td><strong>brandArchitectureRole</strong></td>
 <td>Text</td>
-<td>“masterbrand”, “endorsed”, “sub-brand”, “private label”, etc.</td>
+<td>Role in brand architecture (“masterbrand”, “endorsed”, etc.).</td>
 </tr>
 </tbody>
 </table>
@@ -4403,12 +4438,12 @@ These fields describe the persona itself, not the underlying product data.</p>
 <tr>
 <td><strong>useCaseScope</strong></td>
 <td>Text</td>
-<td>E.g. “PDP copy”, “Q&amp;A assistant”, “after-sales troubleshooting”.</td>
+<td>Use-case labels (e.g. “PDP copy”, “Q&amp;A assistant”, “after-sales support”).</td>
 </tr>
 <tr>
 <td><strong>channelScope</strong></td>
 <td>Text, URL</td>
-<td>“web PDP”, “mobile app”, “store kiosk”, “support chat”, “search ads”.</td>
+<td>Channels: “web PDP”, “mobile app”, “store kiosk”, “support chat”, “ads”.</td>
 </tr>
 <tr>
 <td><strong>contextGraph</strong></td>
@@ -4418,7 +4453,7 @@ These fields describe the persona itself, not the underlying product data.</p>
 <tr>
 <td><strong>riskProfile</strong></td>
 <td>Text</td>
-<td>“low-risk FMCG”, “regulated healthcare”, “children’s product”, etc.</td>
+<td>Risk description (“low-risk FMCG”, “regulated healthcare”, “kids product”).</td>
 </tr>
 </tbody>
 </table>
@@ -4449,7 +4484,7 @@ These fields describe the persona itself, not the underlying product data.</p>
 <tr>
 <td><strong>toneOfVoice</strong></td>
 <td>Text</td>
-<td>Tone description (“warm-reassuring”, “technical-neutral”).</td>
+<td>Tone description (“clear, factual, family-friendly”, etc.).</td>
 </tr>
 <tr>
 <td><strong>writingStyle</strong></td>
@@ -4464,7 +4499,7 @@ These fields describe the persona itself, not the underlying product data.</p>
 <tr>
 <td><strong>keyMessages</strong></td>
 <td>Text</td>
-<td>Approved, canonical product messaging statements.</td>
+<td>Approved canonical product messaging statements.</td>
 </tr>
 <tr>
 <td><strong>mustDos</strong></td>
@@ -4479,7 +4514,7 @@ These fields describe the persona itself, not the underlying product data.</p>
 <tr>
 <td><strong>tagline</strong></td>
 <td>Text</td>
-<td>Optional tagline / line(s) to reuse.</td>
+<td>Optional tagline / reusable line.</td>
 </tr>
 <tr>
 <td><strong>usesVerbalToken</strong></td>
@@ -4489,7 +4524,7 @@ These fields describe the persona itself, not the underlying product data.</p>
 </tbody>
 </table>
 <p><strong>Usage notes:</strong><br />
-This is where the <strong>Brand Directive Vocabulary (BDV)</strong> is applied: product tone, phrasing patterns, approved descriptors, and category-specific tokens.</p>
+This is where the <strong>Brand Directive Vocabulary (BDV)</strong> is applied: tone, phrasing patterns, approved descriptors, and category-specific tokens.</p>
 <hr />
 <h2 id="6-claim-safety-regulatory-governance"><strong>6. Claim, Safety &amp; Regulatory Governance</strong></h2>
 <blockquote>
@@ -4507,12 +4542,12 @@ This is where the <strong>Brand Directive Vocabulary (BDV)</strong> is applied: 
 <tr>
 <td><strong>claimBoundary</strong></td>
 <td>Text</td>
-<td>Overall description of what claims are allowed.</td>
+<td>Overall description of what kinds of claims are allowed.</td>
 </tr>
 <tr>
 <td><strong>prohibitedClaims</strong></td>
 <td>Text</td>
-<td>Concrete examples of disallowed claims (e.g. performance, health).</td>
+<td>Concrete examples of disallowed claims (e.g. health or performance claims).</td>
 </tr>
 <tr>
 <td><strong>evidenceRequiredForClaim</strong></td>
@@ -4527,7 +4562,7 @@ This is where the <strong>Brand Directive Vocabulary (BDV)</strong> is applied: 
 <tr>
 <td><strong>riskTag</strong></td>
 <td>Text, URL</td>
-<td>Risk category tags (e.g. “children”, “health-claims”).</td>
+<td>Risk category tags (e.g. “food”, “nutrition-claims”, “children”).</td>
 </tr>
 <tr>
 <td><strong>guardRails</strong></td>
@@ -4559,7 +4594,7 @@ This is where the <strong>Brand Directive Vocabulary (BDV)</strong> is applied: 
 <hr />
 <h2 id="7-data-sources-master-data-alignment"><strong>7. Data Sources &amp; Master Data Alignment</strong></h2>
 <blockquote>
-<p>How the persona connects to the wider data estate (Target + GS1).</p>
+<p>How the persona connects to the wider data estate (GS1 + internal systems).</p>
 </blockquote>
 <table>
 <thead>
@@ -4573,12 +4608,12 @@ This is where the <strong>Brand Directive Vocabulary (BDV)</strong> is applied: 
 <tr>
 <td><strong>dataSource</strong></td>
 <td>Text, URL</td>
-<td>Description of connected data sources (“GS1 masterData”, “PIP”, etc.).</td>
+<td>Connected data sources (“GS1 masterData”, “Item Master”, “SmartLabel”).</td>
 </tr>
 <tr>
 <td><strong>externalSystem</strong></td>
 <td>Text, URL</td>
-<td>System identifier (e.g. “Target Item Master”, “GS1 US Data Hub”).</td>
+<td>System identifier (e.g. “GS1 US Data Hub”, “Retail Item Master”).</td>
 </tr>
 <tr>
 <td><strong>externalSystemId</strong></td>
@@ -4588,7 +4623,7 @@ This is where the <strong>Brand Directive Vocabulary (BDV)</strong> is applied: 
 <tr>
 <td><strong>masterDataPriority</strong></td>
 <td>Text</td>
-<td>Rules defining precedence between systems.</td>
+<td>(Optional) Precedence rules between systems.</td>
 </tr>
 <tr>
 <td><strong>retrievableInLLM</strong></td>
@@ -4670,7 +4705,7 @@ This is where the <strong>Brand Directive Vocabulary (BDV)</strong> is applied: 
 <tr>
 <td><strong>owner</strong></td>
 <td>Person, Organization</td>
-<td>Business owner (e.g. category team).</td>
+<td>Business owner (e.g. category or brand team).</td>
 </tr>
 <tr>
 <td><strong>maintainer</strong></td>
@@ -4680,7 +4715,7 @@ This is where the <strong>Brand Directive Vocabulary (BDV)</strong> is applied: 
 <tr>
 <td><strong>governanceModel</strong></td>
 <td>Text</td>
-<td>Governance notes (“brand + data duo”).</td>
+<td>Governance notes (“brand + data duo”, etc.).</td>
 </tr>
 <tr>
 <td><strong>dateCreated</strong></td>
@@ -4700,7 +4735,7 @@ This is where the <strong>Brand Directive Vocabulary (BDV)</strong> is applied: 
 <tr>
 <td><strong>visibilityRating</strong></td>
 <td>Text</td>
-<td>Visibility (“internal-only”, “enterprise”).</td>
+<td>Visibility (“internal-only”, “enterprise”, etc.).</td>
 </tr>
 <tr>
 <td><strong>isTestPersona</strong></td>
@@ -4711,194 +4746,193 @@ This is where the <strong>Brand Directive Vocabulary (BDV)</strong> is applied: 
 </table>
 <hr />
 <h2 id="json-ld-example-product-gs1-productpersona"><strong>JSON-LD EXAMPLE (Product + GS1 + ProductPersona)</strong></h2>
-<p>```jsonld
-{
-  "@context": {
-    "schema": "<a href="https://schema.org/">https://schema.org/</a>",
-    "brando": "<a href="https://brandoschema.com/">https://brandoschema.com/</a>",
-    "gs1": "<a href="https://ref.gs1.org/voc/">https://ref.gs1.org/voc/</a>"
-  },
-  "@graph": [</p>
-<pre><code>/* ---------------------------------------------------------
- * 1. PRODUCT (GS1 + schema.org)
- * --------------------------------------------------------- */
-{
-  "@id": "https://example.com/product/00012345600012",
-  "@type": [
-    "schema:Product",
-    "gs1:Product"
-  ],
-  "schema:name": "Target Brand Example Cereal 500g",
-  "schema:brand": "https://example.com/brand/target",
-  "gs1:gtin": "00012345600012",
-  "gs1:productIdentifier": "00012345600012",
-  "gs1:gpcCategoryCode": "10000251",
-  "schema:category": "Breakfast cereals",
-  "schema:description": "Fortified whole-grain cereal suitable for everyday family breakfasts.",
-  "schema:sku": "TGT-EXAMPLE-CEREAL-500G",
-  "brando:hasProductPersona": "https://example.com/product-persona/gtin-00012345600012"
-},
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;brando&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://brandoschema.com/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;gs1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://ref.gs1.org/voc/&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nd">&quot;@graph&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 
-/* ---------------------------------------------------------
- * 2. BRAND
- * --------------------------------------------------------- */
-{
-  "@id": "https://example.com/brand/target",
-  "@type": "schema:Brand",
-  "schema:name": "Target",
-  "schema:url": "https://www.target.com/"
-},
+<span class="w">    </span><span class="cm">/* ---------------------------------------------------------</span>
+<span class="cm">     * 1. PRODUCT (GS1 + schema.org)</span>
+<span class="cm">     * --------------------------------------------------------- */</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/product/00012345600012&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;schema:Product&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;gs1:Product&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Target Brand Example Cereal 500g&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;schema:brand&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/target&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;gs1:gtin&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00012345600012&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;gs1:productIdentifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00012345600012&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;gs1:gpcCategoryCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10000251&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;schema:category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Breakfast cereals&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;schema:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Fortified whole-grain cereal suitable for everyday family breakfasts.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;schema:sku&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TGT-EXAMPLE-CEREAL-500G&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:hasProductPersona&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/product-persona/gtin-00012345600012&quot;</span>
+<span class="w">    </span><span class="p">},</span>
 
-/* ---------------------------------------------------------
- * 3. PRODUCT PERSONA
- * --------------------------------------------------------- */
-{
-  "@id": "https://example.com/product-persona/gtin-00012345600012",
-  "@type": "brando:ProductPersona",
+<span class="w">    </span><span class="cm">/* ---------------------------------------------------------</span>
+<span class="cm">     * 2. BRAND</span>
+<span class="cm">     * --------------------------------------------------------- */</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/target&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:Brand&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Target&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;schema:url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.target.com/&quot;</span>
+<span class="w">    </span><span class="p">},</span>
 
-  /* 1. Identity */
-  "name": "Example Cereal PDP Persona",
-  "alternateName": "Example Cereal Product Voice (US PDP)",
-  "description": "Governed PDP and Q&amp;A persona for Example Cereal 500g, aligned with Target brand and GS1 master data.",
-  "identifier": "persona-product-00012345600012-v1",
-  "url": "https://example.com/docs/product-personas/gtin-00012345600012",
-  "disambiguatingDescription": "US English, consumer-facing product persona for GTIN 00012345600012.",
+<span class="w">    </span><span class="cm">/* ---------------------------------------------------------</span>
+<span class="cm">     * 3. PRODUCT PERSONA</span>
+<span class="cm">     * --------------------------------------------------------- */</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/product-persona/gtin-00012345600012&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:ProductPersona&quot;</span><span class="p">,</span>
 
-  /* 2. Product Anchor &amp; GS1 Linkage */
-  "representsProduct": "https://example.com/product/00012345600012",
-  "appliesToGTIN": "00012345600012",
-  "appliesToProduct": "https://data.example.com/gs1/00012345600012.jsonld",
-  "gs1DigitalLink": "https://id.gs1.org/01/00012345600012",
-  "productScope": "single-sku",
-  "variantDimension": [
-    "packageSize"
-  ],
-  "evidenceSource": [
-    "https://data.example.com/gs1/00012345600012.jsonld",
-    "https://smartlabel.example.com/00012345600012"
-  ],
-  "evidencePriorityRule": "Use GS1 masterData as primary truth; SmartLabel as secondary; never invent attributes.",
+<span class="w">      </span><span class="cm">/* 1. Identity */</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Example Cereal PDP Persona&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;alternateName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Example Cereal Product Voice (US PDP)&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Governed PDP and Q&amp;A persona for Example Cereal 500g, aligned with Target brand and GS1 master data.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;identifier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;persona-product-00012345600012-v1&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/docs/product-personas/gtin-00012345600012&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;disambiguatingDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;US English, consumer-facing product persona for GTIN 00012345600012.&quot;</span><span class="p">,</span>
 
-  /* 3. Brand &amp; Category Relationships */
-  "brand": "https://example.com/brand/target",
-  "worksFor": "https://example.com/brand/target",
-  "productCategoryName": "Breakfast cereals",
-  "categoryDepartment": "Grocery",
-  "categoryClass": "Cereals",
-  "gpcCategoryCode": "10000251",
-  "gpcCategoryDescription": "Ready-to-eat cereal products.",
+<span class="w">      </span><span class="cm">/* 2. Product Anchor &amp; GS1 Linkage */</span>
+<span class="w">      </span><span class="nt">&quot;representsProduct&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/product/00012345600012&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;appliesToGTIN&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00012345600012&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;appliesToProduct&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://data.example.com/gs1/00012345600012.jsonld&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;gs1DigitalLink&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://id.gs1.org/01/00012345600012&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;productScope&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;single-sku&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;variantDimension&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;packageSize&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;evidenceSource&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;https://data.example.com/gs1/00012345600012.jsonld&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;https://smartlabel.example.com/00012345600012&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;evidencePriorityRule&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Use GS1 masterData as primary truth; SmartLabel as secondary; never invent attributes.&quot;</span><span class="p">,</span>
 
-  /* 4. Audience, Use Cases &amp; Channel */
-  "personaArchetype": "product-guide",
-  "intendedAudience": [
-    "Everyday shoppers comparing breakfast options",
-    "Parents looking for simple family cereals"
-  ],
-  "useCaseScope": [
-    "PDP copy generation",
-    "On-site Q&amp;A about ingredients, allergens, nutrition",
-    "Post-purchase usage tips"
-  ],
-  "channelScope": [
-    "web PDP",
-    "mobile PDP",
-    "support-chat"
-  ],
-  "contextGraph": [
-    "https://example.com/context/global-web",
-    "https://example.com/context/support-chat-en"
-  ],
+<span class="w">      </span><span class="cm">/* 3. Brand &amp; Category Relationships */</span>
+<span class="w">      </span><span class="nt">&quot;brand&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/target&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;worksFor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/target&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;productCategoryName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Breakfast cereals&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;categoryDepartment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Grocery&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;categoryClass&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Cereals&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;gpcCategoryCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10000251&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;gpcCategoryDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ready-to-eat cereal products.&quot;</span><span class="p">,</span>
 
-  /* 5. Language, Tone &amp; Expression */
-  "knowsLanguage": "en",
-  "defaultLanguage": "en-US",
-  "toneOfVoice": "clear, factual, family-friendly, non-sensational",
-  "writingStyle": "short PDP sentences and structured FAQs.",
-  "keyMessages": [
-    "Whole-grain cereal for everyday family breakfasts.",
-    "Fortified with key vitamins and minerals as listed on the pack.",
-    "Portion guidance and ingredients always match the packaging and GS1 data."
-  ],
-  "mustDos": [
-    "Always base nutritional and ingredient statements on GS1 and packaging data.",
-    "Include allergens clearly when asked.",
-    "Encourage checking local packaging for the most current information."
-  ],
-  "mustNotDos": [
-    "Do not promise health outcomes or weight-loss effects.",
-    "Do not infer dietary suitability without explicit evidence (e.g. gluten-free)."
-  ],
-  "usesVerbalToken": [
-    "https://example.com/verbal/target-grocery-tone",
-    "https://example.com/verbal/target-family-friendly-phrases"
-  ],
+<span class="w">      </span><span class="cm">/* 4. Audience, Use Cases &amp; Channel */</span>
+<span class="w">      </span><span class="nt">&quot;personaArchetype&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;product-guide&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;intendedAudience&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;Everyday shoppers comparing breakfast options&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Parents looking for simple family cereals&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;useCaseScope&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;PDP copy generation&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;On-site Q&amp;A about ingredients, allergens, nutrition&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Post-purchase usage tips&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;channelScope&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;web PDP&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;mobile PDP&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;support-chat&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;contextGraph&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;https://example.com/context/global-web&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;https://example.com/context/support-chat-en&quot;</span>
+<span class="w">      </span><span class="p">],</span>
 
-  /* 6. Claim, Safety &amp; Regulatory Governance */
-  "claimBoundary": "May describe features and composition, not health outcomes or medical claims.",
-  "prohibitedClaims": [
-    "Cures or prevents any disease.",
-    "Guarantees weight loss or long-term health outcomes."
-  ],
-  "evidenceRequiredForClaim": "Only state nutritional and ingredient facts if present in GS1 or approved Target item master.",
-  "regulatoryRegion": [
-    "US"
-  ],
-  "riskTag": [
-    "food",
-    "nutrition-claims"
-  ],
-  "guardRails": [
-    "No hallucinated ingredients or nutritional values.",
-    "No absolute health or performance guarantees.",
-    "Always defer to packaging and GS1 data when in doubt."
-  ],
-  "refusalStrategies": "If requested claims are not supported by data, explain that only label-backed, GS1-aligned information can be provided.",
-  "inheritsPolicies": [
-    "https://example.com/policy/global-tone-policy",
-    "https://example.com/policy/global-lexical-policy",
-    "https://example.com/policy/brand-safety-core"
-  ],
-  "governingPolicyGraph": "https://example.com/policy-graph/food-category-governance",
+<span class="w">      </span><span class="cm">/* 5. Language, Tone &amp; Expression */</span>
+<span class="w">      </span><span class="nt">&quot;knowsLanguage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;defaultLanguage&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;clear, factual, family-friendly, non-sensational&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;writingStyle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;short PDP sentences and structured FAQs.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;keyMessages&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;Whole-grain cereal for everyday family breakfasts.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Fortified with key vitamins and minerals as listed on the pack.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Portion guidance and ingredients always match the packaging and GS1 data.&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;mustDos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;Always base nutritional and ingredient statements on GS1 and packaging data.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Include allergens clearly when asked.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Encourage checking local packaging for the most current information.&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;mustNotDos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;Do not promise health outcomes or weight-loss effects.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Do not infer dietary suitability without explicit evidence (e.g. gluten-free).&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;usesVerbalToken&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;https://example.com/verbal/target-grocery-tone&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;https://example.com/verbal/target-family-friendly-phrases&quot;</span>
+<span class="w">      </span><span class="p">],</span>
 
-  /* 7. Data Sources &amp; Master Data Alignment */
-  "dataSource": [
-    "GS1 masterData",
-    "Target Item Master",
-    "SmartLabel"
-  ],
-  "externalSystem": [
-    "https://datahub.gs1us.org/",
-    "https://data.target.com/item-master"
-  ],
-  "externalSystemId": [
-    "GS1US:00012345600012",
-    "TGT-ITEM:123456"
-  ],
-  "retrievableInLLM": true,
+<span class="w">      </span><span class="cm">/* 6. Claim, Safety &amp; Regulatory Governance */</span>
+<span class="w">      </span><span class="nt">&quot;claimBoundary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;May describe features and composition, not health outcomes or medical claims.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;prohibitedClaims&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;Cures or prevents any disease.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Guarantees weight loss or long-term health outcomes.&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;evidenceRequiredForClaim&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Only state nutritional and ingredient facts if present in GS1 or approved Target item master.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;regulatoryRegion&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;US&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;riskTag&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;food&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;nutrition-claims&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;guardRails&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;No hallucinated ingredients or nutritional values.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;No absolute health or performance guarantees.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Always defer to packaging and GS1 data when in doubt.&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;refusalStrategies&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;If requested claims are not supported by data, explain that only label-backed, GS1-aligned information can be provided.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;inheritsPolicies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;https://example.com/policy/global-tone-policy&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;https://example.com/policy/global-lexical-policy&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;https://example.com/policy/brand-safety-core&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;governingPolicyGraph&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/policy-graph/food-category-governance&quot;</span><span class="p">,</span>
 
-  /* 8. Prompting, Runtime &amp; Tools */
-  "promptScaffold": "You are the governed product persona for GTIN 00012345600012. Use only GS1 and Target item master data as truth. Generate short, factual, family-friendly descriptions and answers. Do not make health or performance claims.",
-  "personaCard": "Example cereal PDP persona for US web and app channels.",
-  "activationCondition": "Activate when product context includes GTIN 00012345600012 or product URI https://example.com/product/00012345600012.",
-  "integrationScope": [
-    "PDP generator",
-    "guest-facing Q&amp;A",
-    "associate support tools"
-  ],
+<span class="w">      </span><span class="cm">/* 7. Data Sources &amp; Master Data Alignment */</span>
+<span class="w">      </span><span class="nt">&quot;dataSource&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;GS1 masterData&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Target Item Master&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;SmartLabel&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;externalSystem&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;https://datahub.gs1us.org/&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;https://data.target.com/item-master&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;externalSystemId&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;GS1US:00012345600012&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;TGT-ITEM:123456&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;retrievableInLLM&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 
-  /* 9. Lifecycle &amp; Governance */
-  "owner": "https://example.com/team/grocery-category-owner",
-  "maintainer": "https://example.com/team/brand-governance",
-  "governanceModel": "Joint ownership: grocery category + brand governance + data quality teams.",
-  "dateCreated": "2025-10-01",
-  "dateModified": "2025-11-01",
-  "reviewCycle": "P90D",
-  "isTestPersona": false
-}
-</code></pre>
-<p>]
-}
-````</p>
+<span class="w">      </span><span class="cm">/* 8. Prompting, Runtime &amp; Tools */</span>
+<span class="w">      </span><span class="nt">&quot;promptScaffold&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;You are the governed product persona for GTIN 00012345600012. Use only GS1 and Target item master data as truth. Generate short, factual, family-friendly descriptions and answers. Do not make health or performance claims.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;personaCard&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Example cereal PDP persona for US web and app channels.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;activationCondition&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Activate when product context includes GTIN 00012345600012 or product URI https://example.com/product/00012345600012.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;integrationScope&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;PDP generator&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;guest-facing Q&amp;A&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;associate support tools&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+
+<span class="w">      </span><span class="cm">/* 9. Lifecycle &amp; Governance */</span>
+<span class="w">      </span><span class="nt">&quot;owner&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/team/grocery-category-owner&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;maintainer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/team/brand-governance&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;governanceModel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Joint ownership: grocery category + brand governance + data quality teams.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;dateCreated&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-01&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;dateModified&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-11-01&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;reviewCycle&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;P90D&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;isTestPersona&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
 <hr />
 <h2 id="related-documentation"><strong>Related documentation</strong></h2>
 <ul>
