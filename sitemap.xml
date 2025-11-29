@@ -361,6 +361,14 @@
          <lastmod>2025-11-29</lastmod>
     </url>
     <url>
+         <loc>https://brandoschema.com/properties/hasProductPersona/</loc>
+         <lastmod>2025-11-29</lastmod>
+    </url>
+    <url>
+         <loc>https://brandoschema.com/properties/hasSyntheticPersona/</loc>
+         <lastmod>2025-11-29</lastmod>
+    </url>
+    <url>
          <loc>https://brandoschema.com/properties/imageryStyles/</loc>
          <lastmod>2025-11-29</lastmod>
     </url>
