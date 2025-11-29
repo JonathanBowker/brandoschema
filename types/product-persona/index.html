@@ -4225,10 +4225,8 @@
 <li><strong><code>schema:Brand</code> / <code>schema:Organization</code></strong> — visible brand and accountable owner.  </li>
 <li>
 <p><strong>GS1 identifiers</strong> via Brando properties:</p>
-</li>
-<li>
-<p><code>brando:appliesToGTIN</code> → GTIN(s) covered,  </p>
-</li>
+<ul>
+<li><code>brando:appliesToGTIN</code> → GTIN(s) covered,  </li>
 <li><code>brando:appliesToProduct</code> → product JSON-LD URI(s) covered.  </li>
 <li>
 <p><strong>Brando BDV objects</strong>:</p>
@@ -4247,6 +4245,8 @@
 </li>
 <li>
 <p><code>brando:Context</code> nodes describing channel / region / journey situations.</p>
+</li>
+</ul>
 </li>
 </ul>
 <p>In many implementations, a ProductPersona is also treated as a <strong>profiled SyntheticPersona</strong>, specialised around <code>schema:Product</code> and <code>gs1:gtin</code> – but in the core vocabulary it is a dedicated class for product-anchored personas.</p>
