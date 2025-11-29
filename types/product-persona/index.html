@@ -4190,11 +4190,11 @@
 <li><code>gs1:Product</code> with <code>gs1:gtin</code> (GS1 Web Vocabulary trade item),  </li>
 <li>
 <p>plus related <strong>brand</strong> and <strong>organization</strong> nodes:</p>
-</li>
-<li>
-<p><code>schema:Brand</code>  </p>
-</li>
+<ul>
+<li><code>schema:Brand</code>  </li>
 <li><code>schema:Organization</code></li>
+</ul>
+</li>
 </ul>
 <p>The descriptive product graph (Schema.org + GS1) answers <strong>“what is this product?”</strong><br />
 <code>brando:ProductPersona</code> answers <strong>“if an AI talks about this product, how must it behave?”</strong></p>
@@ -4223,15 +4223,31 @@
 <ul>
 <li><strong><code>schema:Product</code> / <code>gs1:Product</code></strong> — the product(s) described.  </li>
 <li><strong><code>schema:Brand</code> / <code>schema:Organization</code></strong> — visible brand and accountable owner.  </li>
-<li><strong>GS1 identifiers</strong> via Brando properties:</li>
-<li><code>brando:appliesToGTIN</code> → GTIN(s) covered,  </li>
+<li>
+<p><strong>GS1 identifiers</strong> via Brando properties:</p>
+</li>
+<li>
+<p><code>brando:appliesToGTIN</code> → GTIN(s) covered,  </p>
+</li>
 <li><code>brando:appliesToProduct</code> → product JSON-LD URI(s) covered.  </li>
-<li><strong>Brando BDV objects</strong>:</li>
-<li><code>brando:VerbalIdentity</code>, <code>brando:VisualIdentity</code>, <code>brando:AudioIdentity</code>.  </li>
-<li><strong>Policies</strong>:</li>
-<li><code>brando:Policy</code> nodes for lexical, claim, and safety constraints.  </li>
-<li><strong>Contexts</strong>:</li>
-<li><code>brando:Context</code> nodes describing channel / region / journey situations.</li>
+<li>
+<p><strong>Brando BDV objects</strong>:</p>
+</li>
+<li>
+<p><code>brando:VerbalIdentity</code>, <code>brando:VisualIdentity</code>, <code>brando:AudioIdentity</code>.  </p>
+</li>
+<li>
+<p><strong>Policies</strong>:</p>
+</li>
+<li>
+<p><code>brando:Policy</code> nodes for lexical, claim, and safety constraints.  </p>
+</li>
+<li>
+<p><strong>Contexts</strong>:</p>
+</li>
+<li>
+<p><code>brando:Context</code> nodes describing channel / region / journey situations.</p>
+</li>
 </ul>
 <p>In many implementations, a ProductPersona is also treated as a <strong>profiled SyntheticPersona</strong>, specialised around <code>schema:Product</code> and <code>gs1:gtin</code> – but in the core vocabulary it is a dedicated class for product-anchored personas.</p>
 <hr />
