@@ -102,8 +102,8 @@
       "brando:keyMessages": "1) Guests can expect more from Target in design, value and experience. 2) They will pay less than expected for that elevated experience. 3) The Bullseye and red-and-white system unify every touchpoint of the brand.",
       "brando:tagline": "\"Expect More. Pay Less.\" (English) and \"Cuenta Con Más. Paga Menos.\" (Spanish), always used as two linked statements, never split or altered.",
       "brando:promptScaffold": "You are writing as Target. Use an upbeat, guest-focused voice that is clear and concise. When you reference the brand tagline, use the full paired statement \"Expect More. Pay Less.\" (or \"Cuenta Con Más. Paga Menos.\" in Spanish). Do not change the wording, add commas, or use only one half of the tagline.",
-      "brando:mustDos": "Use the tagline as a united pair of statements. Typeset it in Helvetica for Target Bold in design outputs, and ensure it stands out from body copy when embedded in longer text.",
-      "brando:mustNotDos": "Do not insert a comma between \"Expect More\" and \"Pay Less\"; do not change the relative size or weight of the two parts; do not combine \"Pay Less\" into a single word like \"Payless\"; do not use either half of the tagline alone as a trademark or tagline; and do not set it in a non-Helvetica for Target typeface in brand design work.",
+      "brando:mustDo": "Use the tagline as a united pair of statements. Typeset it in Helvetica for Target Bold in design outputs, and ensure it stands out from body copy when embedded in longer text.",
+      "brando:mustNotDo": "Do not insert a comma between \"Expect More\" and \"Pay Less\"; do not change the relative size or weight of the two parts; do not combine \"Pay Less\" into a single word like \"Payless\"; do not use either half of the tagline alone as a trademark or tagline; and do not set it in a non-Helvetica for Target typeface in brand design work.",
       "brando:assetURL": "urn:placeholder:brand/target/verbal-guidelines",
       "brando:assetPreview": "urn:placeholder:brand/target/verbal-preview"
     },

@@ -2377,7 +2377,7 @@ Internally you may resolve contexts by ID and load them via an API or graph stor
 <li><code>brando:enforcementLevel</code> – <code>"mandatory"</code>, <code>"advisory"</code>, or <code>"conditional"</code> (values are non-normative strings, but these are suggested).</li>
 <li><code>brando:riskTag</code> – tags for the type of risk (e.g. <code>"financial-regulation"</code>).</li>
 <li><code>brando:refusalStrategies</code> – how AI should refuse or redirect.</li>
-<li><code>brando:mustDos</code> / <code>brando:mustNotDos</code> – explicit behaviours.</li>
+<li><code>brando:mustDo</code> / <code>brando:mustNotDo</code> – explicit behaviours.</li>
 <li><code>brando:reviewWorkflow</code> – description of human/automated review.</li>
 <li><code>brando:retrievableInLLM</code> – whether the policy can be indexed/retrieved by LLMs.</li>
 </ul>
@@ -2390,7 +2390,7 @@ Internally you may resolve contexts by ID and load them via an API or graph stor
 <span class="w">    </span><span class="s2">&quot;financial-regulation&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="s2">&quot;consumer-protection&quot;</span>
 <span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;brando:mustNotDos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nt">&quot;brando:mustNotDo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="s2">&quot;Do not recommend specific products as &#39;best&#39; without disclaimers.&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="s2">&quot;Do not provide personalised investment advice.&quot;</span>
 <span class="w">  </span><span class="p">],</span>
@@ -2469,7 +2469,7 @@ Internally you may resolve contexts by ID and load them via an API or graph stor
 <p><strong>Compile prompts and configuration</strong></p>
 <ul>
 <li>Use <code>brando:toneOfVoice</code>, <code>brando:approvedTerms</code>, <code>brando:prohibitedTerms</code>, and <code>brando:promptScaffold</code> to construct system prompts or style instructions.</li>
-<li>Use <code>brando:mustDos</code>, <code>brando:mustNotDos</code>, <code>brando:refusalStrategies</code>, and <code>brando:enforcementLevel</code> to drive pre- and post-generation checks.</li>
+<li>Use <code>brando:mustDo</code>, <code>brando:mustNotDo</code>, <code>brando:refusalStrategies</code>, and <code>brando:enforcementLevel</code> to drive pre- and post-generation checks.</li>
 </ul>
 </li>
 <li>

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A structured workshop format for turning brand guidelines into a Brando-powered Brand Knowledge Graph and runtime configuration.">
+        <meta name="description" content="A structured workshop format for turning brand guidelines into a Brando-powered Brand Policy Graph and runtime configuration.">
       
       
         <meta name="author" content="Jonathan Bowker">
@@ -27,7 +27,7 @@
     
   <title>
     
-      AI Optimisation Workshop
+      Brando Workshop
     
   </title>
 
@@ -88,21 +88,21 @@
   <!-- End Google Tag Manager -->
 
   
-    <meta name="description" content="A structured workshop format for turning brand guidelines into a Brando-powered Brand Knowledge Graph and runtime configuration.">
+    <meta name="description" content="A structured workshop format for turning brand guidelines into a Brando-powered Brand Policy Graph and runtime configuration.">
     <meta name="author" content="Jonathan Bowker">
     <meta name="keywords" content="">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="AI Optimisation Workshop">
-    <meta property="og:description" content="A structured workshop format for turning brand guidelines into a Brando-powered Brand Knowledge Graph and runtime configuration.">
+    <meta property="og:title" content="Brando Workshop">
+    <meta property="og:description" content="A structured workshop format for turning brand guidelines into a Brando-powered Brand Policy Graph and runtime configuration.">
     <meta property="og:url" content="https://brandoschema.com/brando-workshop/">
     <meta property="og:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AI Optimisation Workshop">
-    <meta name="twitter:description" content="A structured workshop format for turning brand guidelines into a Brando-powered Brand Knowledge Graph and runtime configuration.">
+    <meta name="twitter:title" content="Brando Workshop">
+    <meta name="twitter:description" content="A structured workshop format for turning brand guidelines into a Brando-powered Brand Policy Graph and runtime configuration.">
     <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
   
 
@@ -125,7 +125,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ai-optimisation-workshop" class="md-skip">
+        <a href="#brando-workshop" class="md-skip">
           Skip to content
         </a>
       
@@ -160,7 +160,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AI Optimisation Workshop
+              Brando Workshop
             
           </span>
         </div>
@@ -2081,11 +2081,11 @@
   
 
 
-<h1 id="ai-optimisation-workshop">AI Optimisation Workshop</h1>
-<p>The <strong>AI Optimisation Workshop</strong> is a structured format for:</p>
+<h1 id="brando-workshop">Brando Workshop</h1>
+<p>The <strong>Brando Workshop</strong> is a structured format for:</p>
 <ul>
 <li>taking existing brand guidelines, tone-of-voice docs, and policies,</li>
-<li>mapping them into <strong>Brando vocab v1.3</strong>,</li>
+<li>mapping them into <strong>Brando Vocab v1.3</strong>,</li>
 <li>and validating how they behave in <strong>LLMs, agents, and other AI runtimes</strong>.</li>
 </ul>
 <p>This page describes the workshop in implementation terms so you can:</p>
@@ -2100,10 +2100,10 @@ The canonical definitions of classes and properties live in the Brando JSON-LD v
 </blockquote>
 <hr />
 <h2 id="1-objectives">1. Objectives</h2>
-<p>By the end of an AI Optimisation Workshop you should have:</p>
+<p>By the end of an Brando Workshop you should have:</p>
 <ol>
 <li>
-<p>A <strong>minimal Brand Knowledge Graph</strong> for at least one brand:</p>
+<p>A <strong>minimal Brand Policy Graph</strong> for at least one brand:</p>
 <ul>
 <li><code>brando:Brand</code></li>
 <li><code>brando:Context</code> (1–3)</li>
@@ -2172,7 +2172,7 @@ The canonical definitions of classes and properties live in the Brando JSON-LD v
 <li>Technical context:<ul>
 <li>Target AI stack (LLM vendor / infra).</li>
 <li>Existing chatbots / assistants / flows.</li>
-<li>Where the Brand Knowledge Graph will live (Git, graph DB, etc.).</li>
+<li>Where the Brand Policy Graph will live (Git, graph DB, etc.).</li>
 </ul>
 </li>
 </ul>
@@ -2234,7 +2234,7 @@ The canonical definitions of classes and properties live in the Brando JSON-LD v
 </ul>
 <hr />
 <h3 id="phase-2-verbal-tokens-verbal">Phase 2 – Verbal tokens (Verbal)</h3>
-<p><strong>Goal:</strong> turn tone-of-voice and language rules into <strong>machine-readable tokens</strong>.</p>
+<p><strong>Goal:</strong> turn tone-of-voice and language rules into <strong>machine-actionable tokens</strong>.</p>
 <p>Activities:</p>
 <ol>
 <li>
@@ -2254,8 +2254,8 @@ The canonical definitions of classes and properties live in the Brando JSON-LD v
 <li><code>brando:writingStyle</code></li>
 <li><code>brando:approvedTerms</code></li>
 <li><code>brando:prohibitedTerms</code></li>
-<li><code>brando:mustDos</code></li>
-<li><code>brando:mustNotDos</code></li>
+<li><code>brando:mustDo</code></li>
+<li><code>brando:mustNotDo</code></li>
 <li><code>brando:tagline</code>, <code>brando:keyMessages</code> (if needed)</li>
 </ul>
 </li>
@@ -2286,10 +2286,10 @@ The canonical definitions of classes and properties live in the Brando JSON-LD v
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">get rich quick</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">guaranteed returns</span>
 
-<span class="nt">brando:mustDos</span><span class="p">:</span>
+<span class="nt">brando:mustDo</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Offer at least one clear next step in each answer.</span>
 
-<span class="nt">brando:mustNotDos</span><span class="p">:</span>
+<span class="nt">brando:mustNotDo</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Minimise or dismiss user concerns.</span>
 </code></pre></div>
 <hr />

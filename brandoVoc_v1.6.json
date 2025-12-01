@@ -1203,7 +1203,7 @@
       }
     },
     {
-      "@id": "brando:mustDos",
+      "@id": "brando:mustDo",
       "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
@@ -1228,7 +1228,7 @@
       }
     },
     {
-      "@id": "brando:mustNotDos",
+      "@id": "brando:mustNotDo",
       "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
