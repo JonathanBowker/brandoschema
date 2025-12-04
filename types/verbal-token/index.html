@@ -2089,13 +2089,13 @@
 <li>a <code>brando:Brand</code>, and/or</li>
 <li>a <code>brando:Context</code>,</li>
 </ul>
-<p>via <code>brando:usesVerbal</code>. Your Brand OS or AI middleware then reads the token and turns it into prompts, system messages, and constraints.</p>
+<p>via <code>brando:usesVerbalIdentity</code>. Your Brand OS or AI middleware then reads the token and turns it into prompts, system messages, and constraints.</p>
 <hr />
 <h2 id="relationships">Relationships</h2>
 <h3 id="inbound-where-verbals-are-used">Inbound: where Verbals are used</h3>
 <p>Verbals are attached from brands and contexts via:</p>
 <ul>
-<li><strong><code>brando:usesVerbal</code></strong><ul>
+<li><strong><code>brando:usesVerbalIdentity</code></strong><ul>
 <li><strong>Type:</strong> <code>owl:ObjectProperty</code></li>
 <li><strong>Domain:</strong> <code>brando:Brand</code>, <code>brando:Context</code></li>
 <li><strong>Range:</strong> <code>Brando:VerbalIdentity</code></li>
@@ -2108,7 +2108,7 @@
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Brand&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar Bank&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;brando:usesVerbal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;brando:usesVerbalIdentity&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
@@ -2117,7 +2117,7 @@
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/context/retail-chatbot&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Context&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;brando:usesVerbal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;brando:usesVerbalIdentity&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
@@ -2407,7 +2407,7 @@
 <span class="w">      </span><span class="nt">&quot;brando:hasContext&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/context/retail-chatbot&quot;</span>
 <span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;brando:usesVerbal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;brando:usesVerbalIdentity&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
@@ -2420,7 +2420,7 @@
 <span class="w">        </span><span class="nt">&quot;surface&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;public-website&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="nt">&quot;region&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;UK&quot;</span>
 <span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;brando:usesVerbal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;brando:usesVerbalIdentity&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
