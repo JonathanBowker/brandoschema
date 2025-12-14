@@ -408,9 +408,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#why-ai-has-to-help-manage-the-brand-policy-graph" class="md-nav__link">
+  <a href="#why-ai-has-to-help-manage-the-brand-knowledge-graph" class="md-nav__link">
     <span class="md-ellipsis">
-      Why AI has to help manage the Brand Policy Graph
+      Why AI has to help manage the Brand Knowledge Graph
     </span>
   </a>
   
@@ -2062,9 +2062,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#why-ai-has-to-help-manage-the-brand-policy-graph" class="md-nav__link">
+  <a href="#why-ai-has-to-help-manage-the-brand-knowledge-graph" class="md-nav__link">
     <span class="md-ellipsis">
-      Why AI has to help manage the Brand Policy Graph
+      Why AI has to help manage the Brand Knowledge Graph
     </span>
   </a>
   
@@ -2259,11 +2259,11 @@ trade items, locations, parties, logistics, and supply chain attributes.</p>
 <ul>
 <li>embed Brando JSON-LD in public sites for AI and web discovery,</li>
 <li>manage Brando YAML in repositories as configuration for a <strong>Brand Operating System (Brand OS)</strong>, or </li>
-<li>load a Brando <strong>Brando Policy Graph</strong> at runtime to direct how AI systems on how behave.</li>
+<li>load a Brando <strong>Brand Knowledge Graph</strong> at runtime to direct how AI systems on how behave.</li>
 </ul>
 <p>Internally, we talk about Brando as:</p>
 <blockquote>
-<p><strong>Brando BDV</strong> – the Brand Directive Vocabulary that tells AI systems <em>what</em> a product or brand is, and
+<p><strong>Brando BDV</strong> – the Brand Definition Vocabulary that tells AI systems <em>what</em> a product or brand is, and
 <em>how they are allowed to talk, reason, and act</em> in relation to it.</p>
 </blockquote>
 <hr />
@@ -2291,7 +2291,7 @@ trade items, locations, parties, logistics, and supply chain attributes.</p>
 <p>Advanced Analytica’s <strong>Brando Implementation Service</strong> uses this vocabulary to:</p>
 <ul>
 <li>map brand strategy and governance into Brando classes,</li>
-<li>author JSON-LD / YAML Policy Graphs and BDV instances,</li>
+<li>author JSON-LD / YAML Knowledge Graphs and BDV instances,</li>
 <li>and deploy them as a live AI-native Brand OS.</li>
 </ul>
 <p>For implementation details, see:</p>
@@ -2315,16 +2315,15 @@ trade items, locations, parties, logistics, and supply chain attributes.</p>
 <li>modelling <strong>brand intent, rules, personas, and tokens as data</strong> (not prose),</li>
 <li>and using that data as a <strong>control layer</strong> that AI runtimes can load, combine, and enforce.</li>
 </ul>
-<p>Foundation models are heavily trained on JSON-LD and Schema.org–style structures.<br />
-Brando reuses this structure so that models can interpret <code>brando:</code> classes and properties <strong>zero-shot</strong>, without custom training.</p>
-<h3 id="why-ai-has-to-help-manage-the-brand-policy-graph">Why AI has to help manage the Brand Policy Graph</h3>
-<p>A Brando-based <strong>Brand Policy Graph</strong> is intended to be <strong>living</strong>:</p>
+<p>Foundation models are heavily trained on JSON-LD and Schema.org structures. Brando reuses this structure so that langauge models can interpret <code>brando:</code> types and properties without custom training.</p>
+<h3 id="why-ai-has-to-help-manage-the-brand-knowledge-graph">Why AI has to help manage the Brand Knowledge Graph</h3>
+<p>A Brando-based <strong>Brand Knowledge Graph</strong> is intended to be <strong>live</strong> structure so that:</p>
 <ul>
-<li>brands, products, and portfolios change,</li>
-<li>channels and surfaces proliferate,</li>
-<li>policies evolve with regulation and risk.</li>
+<li>brands, products, and portfolios <em>can</em> change,</li>
+<li>channels and surfaces <em>can</em> proliferate,</li>
+<li>policies <em>can</em> evolve with regulation and risk.</li>
 </ul>
-<p>At any meaningful scale – multiple brands, markets, campaigns, and channels – <strong>maintaining this graph purely by hand becomes prohibitively hard</strong>:</p>
+<p>At any meaningful scale – multiple brands, markets, campaigns, and channels – <strong>maintaining this graph purely by hand becomes prohibitively complex and difficult</strong>:</p>
 <ul>
 <li>too many contexts (<code>brando:Context</code>) to keep in sync,</li>
 <li>too many tokens (<code>Brando:VerbalIdentity</code>, <code>Brando:VisualIdentity</code>, <code>Brando:AudioIdentity</code>) to update,</li>
@@ -2340,9 +2339,9 @@ Brando reuses this structure so that models can interpret <code>brando:</code> c
 <p>In practice:</p>
 <blockquote>
 <p>People define intent and governance.<br />
-<strong>AI does the mechanical work</strong> of keeping the Brand Policy Graph up to date, under auditable human control.</p>
+<strong>AI does the mechanical work</strong> of keeping the Brand Knowledge Graph up to date, under auditable human control.</p>
 </blockquote>
-<p>Advanced Analytica designs and iterates Brando with this AI-manageable governance model in mind, treating the vocabulary as a long-term, evolving asset for brands.</p>
+<p>Advanced Analytica designs and iterates Brando systems with this AI-manageable governance model in mind, treating the vocabulary as a long-term, evolving asset for brands.</p>
 <hr />
 <h2 id="core-concepts-and-classes">Core concepts and classes</h2>
 <p>Brando v1.3 defines <strong>twelve core classes</strong> under the <code>brando:</code> namespace:</p>
@@ -2763,7 +2762,7 @@ Brando reuses this structure so that models can interpret <code>brando:</code> c
 <ul>
 <li>→ <a href="architecture/brand-os/">Brand Operating System</a> and <a href="architecture/runtime-integration/">Runtime Integration</a></li>
 </ul>
-<p>From there, extend into portfolios, campaigns, product personas, automation rules, and classification alignment – all grounded in the same Brando vocabulary and managed as a <strong>living, AI-assisted Brand Policy Graph</strong>.</p>
+<p>From there, extend into portfolios, campaigns, product personas, automation rules, and classification alignment – all grounded in the same Brando vocabulary and managed as a <strong>living, AI-assisted Brand Knowledge Graph</strong>.</p>
 <hr />
 <!-- Talk to Us Modal -->
 
