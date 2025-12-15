@@ -1,0 +1,2515 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Reference for the brando:ImpactAssessment class in the Brand Oracle (Brando) schema vocabulary v1.3.">
+      
+      
+        <meta name="author" content="Jonathan Bowker">
+      
+      
+        <link rel="canonical" href="https://brandoschema.com/types/impact-assessment/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+  <title>
+    
+      brando:ImpactAssessment
+    
+  </title>
+
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+      <link rel="stylesheet" href="../../css/styles.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-3N8RPPP7CD"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-3N8RPPP7CD",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-3N8RPPP7CD",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  
+
+  <!-- Google Tag Manager -->
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+  j.src='https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXXX';
+  f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  
+    <meta name="description" content="Reference for the brando:ImpactAssessment class in the Brand Oracle (Brando) schema vocabulary v1.3.">
+    <meta name="author" content="Jonathan Bowker">
+    <meta name="keywords" content="">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="brando:ImpactAssessment">
+    <meta property="og:description" content="Reference for the brando:ImpactAssessment class in the Brand Oracle (Brando) schema vocabulary v1.3.">
+    <meta property="og:url" content="https://brandoschema.com/types/impact-assessment/">
+    <meta property="og:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="brando:ImpactAssessment">
+    <meta name="twitter:description" content="Reference for the brando:ImpactAssessment class in the Brand Oracle (Brando) schema vocabulary v1.3.">
+    <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#brandoimpactassessment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Brando – Brand-as-Code" class="md-header__button md-logo" aria-label="Brando – Brand-as-Code" data-md-component="logo">
+      
+  <img src="../../assets/images/4x/masthead_logo@4x.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Brando – Brand-as-Code
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              brando:ImpactAssessment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/JonathanBowker/brandoschema" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Brando – Brand-as-Code" class="md-nav__button md-logo" aria-label="Brando – Brand-as-Code" data-md-component="logo">
+      
+  <img src="../../assets/images/4x/masthead_logo@4x.png" alt="logo">
+
+    </a>
+    Brando – Brand-as-Code
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/JonathanBowker/brandoschema" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Getting started
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started-jsonld/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quickstart (JSON-LD)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started-yaml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quickstart (YAML)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Brando Solutions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Brando Solutions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../brando-workshop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brando Workshop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../brando-implementation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brando Implementation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Schema Types
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Schema Types
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Core brand & context
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Core brand & context
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../brand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Brand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Context
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Brand structure
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Brand structure
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branded-category/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:BrandedCategory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../campaign/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Campaign
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Expression & identity
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Expression & identity
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../brand-expression-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:BrandExpression
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../verbal-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:VerbalIdentity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:VisualIdentity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-token/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:AudioIdentity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Governance
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Governance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Policy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Personas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            Personas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../synthetic-persona/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:SyntheticPersona
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product-persona/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:ProductPersona
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Runtime & orchestration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            Runtime & orchestration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../brand-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:BrandModel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prompt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:Prompt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation-rule/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    brando:AutomationRule
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/brand-os/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brand Operating System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/runtime-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Runtime Integration (LLMs, MCP, APIs)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/brand-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brand portfolios & architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Specification
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Specification
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spec/jsonld-context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JSON-LD context
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spec/yaml-profile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    YAML schema profile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spec/typescript-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TypeScript types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/minimal-brand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Minimal brand graph
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/house-of-brands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    House of brands example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/chatbot-runtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chatbot + Brando runtime flow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Using Brando
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Analytica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../partner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Partner Ecosystem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use-brando-trademark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brando Trademark
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terms-of-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Terms of Service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#term-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Term definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intended-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intended usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relationships
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inbound" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inbound
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-risks-impacts-and-harms" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Risks, impacts, and harms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-mitigations-controls-and-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Mitigations, controls, and decisions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-lifecycle-timing-and-alignment-with-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Lifecycle, timing, and alignment with standards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-files-and-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Files and documentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-brand-context-model-impact-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Brand + Context + Model + Impact Assessment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related documentation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="brandoimpactassessment"><code>brando:ImpactAssessment</code></h1>
+<p>AI brand impact assessment record aligned with emerging AI governance standards (e.g. ISO/IEC 42005), capturing purpose, scope, risks, mitigations, and decisions for an AI system, use case, or model.</p>
+<blockquote>
+<p><strong>rdfs:comment</strong><br />
+<em>An assessment of the brand, ethical, and regulatory impact of an AI system, use case, or model, including risks, mitigations, and governance decisions, aligned with AI impact assessment practices such as ISO/IEC 42005.</em></p>
+</blockquote>
+<hr />
+<h2 id="term-definition">Term definition</h2>
+<ul>
+<li><strong>IRI:</strong> <code>brando:ImpactAssessment</code>  </li>
+<li><strong>Type:</strong> <code>owl:Class</code>  </li>
+<li><strong>Superclass:</strong> <code>schema:Action</code>, <code>schema:CreativeWork</code>  </li>
+<li><strong>Defined in:</strong> <code>brando:</code> (Brando Schema Vocabulary v1.3)</li>
+</ul>
+<p><code>brando:ImpactAssessment</code> is the <strong>core impact &amp; risk node</strong> in Brando. It represents a <strong>first-class assessment object</strong> that:</p>
+<ul>
+<li>links to the <strong>brand</strong>, <strong>context</strong>, and <strong>AI artefacts</strong> (models, prompts, automations) being assessed,</li>
+<li>describes <strong>intended use</strong>, <strong>risks</strong>, <strong>impacts</strong>, and <strong>mitigations</strong>,</li>
+<li>records <strong>governance outcomes</strong> (e.g. approved, rejected, pilot-only).</li>
+</ul>
+<p>It is designed to align with AI impact assessment flows such as <strong>ISO/IEC 42005</strong>, while remaining light enough to be used operationally inside a Brand Brain.</p>
+<hr />
+<h2 id="intended-usage">Intended usage</h2>
+<p>Use <code>brando:ImpactAssessment</code> whenever you need to <strong>formally record how an AI use case or configuration has been evaluated</strong> from a brand, ethical, regulatory, or customer-trust perspective.</p>
+<p>Common patterns:</p>
+<ul>
+<li><strong>Pre-deployment assessment</strong></li>
+<li>New assistant, tool, or feature using generative AI.</li>
+<li>New prompt flows or agents that can act on behalf of the brand.</li>
+<li><strong>Material change assessment</strong></li>
+<li>Model upgrade, new data source, new high-risk channel (e.g. wealth, healthcare, youth).</li>
+<li><strong>Periodic / portfolio review</strong></li>
+<li>Quarterly re-assessment of high-impact use cases.</li>
+<li>The Brand Brain’s “AI inventory” view: each use case has an attached impact assessment.</li>
+</ul>
+<p>In a typical flow:</p>
+<ol>
+<li>A team defines a <code>brando:Brand</code>, <code>brando:Context</code>, and relevant runtime artefacts:</li>
+<li><code>brando:BrandModel</code>, <code>brando:Prompt</code>, <code>brando:AutomationRule</code>.</li>
+<li>They create a <code>brando:ImpactAssessment</code> instance linked to those nodes.</li>
+<li>The assessment captures:</li>
+<li>purpose, user groups, channels, jurisdictions;</li>
+<li>potential harms and brand risks;</li>
+<li>mitigations (policies, controls, guard rails) and residual risk.</li>
+<li>A governance body (e.g. brand, legal, risk) records a <strong>decision</strong> (approve, reject, pilot) and a <strong>rationale</strong>.</li>
+<li>Runtimes and dashboards query <code>brando:ImpactAssessment</code> to determine:</li>
+<li>whether a given use case is <strong>approved</strong>,</li>
+<li>under what <strong>conditions</strong>, and</li>
+<li>when it must be <strong>re-reviewed</strong>.</li>
+</ol>
+<hr />
+<h2 id="relationships">Relationships</h2>
+<h3 id="inbound">Inbound</h3>
+<p>Impact assessments are usually reached from:</p>
+<ul>
+<li><strong><code>brando:hasImpactAssessment</code></strong>  </li>
+<li><strong>Domain:</strong> <code>brando:Brand</code>, <code>brando:Context</code>, <code>brando:BrandModel</code>, <code>brando:AutomationRule</code>  </li>
+<li><strong>Range:</strong> <code>brando:ImpactAssessment</code>  </li>
+<li><strong>Comment (summary):</strong> Links a brand, context, model, or automation rule to one or more recorded AI impact assessments.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/models/wealth-assistant-v1&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:BrandModel&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar Wealth Assistant v1&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:hasImpactAssessment&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/assessments/wealth-assistant-v1-initial&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="err">````</span>
+
+<span class="err">Impac</span><span class="kc">t</span><span class="w"> </span><span class="err">assessme</span><span class="kc">nts</span><span class="w"> </span><span class="err">will</span><span class="w"> </span><span class="err">o</span><span class="kc">ften</span><span class="w"> </span><span class="err">also</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">li</span><span class="kc">n</span><span class="err">ked</span><span class="w"> </span><span class="err">**via</span><span class="w"> </span><span class="err">gover</span><span class="kc">nan</span><span class="err">ce</span><span class="w"> </span><span class="err">s</span><span class="kc">tru</span><span class="err">c</span><span class="kc">tures</span><span class="err">**</span><span class="p">,</span><span class="w"> </span><span class="kc">f</span><span class="err">or</span><span class="w"> </span><span class="err">example</span><span class="p">:</span>
+
+<span class="err">*</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">li</span><span class="kc">n</span><span class="err">kedPolicy`</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Policy`</span>
+<span class="err">*</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">gover</span><span class="kc">nan</span><span class="err">ceDecisio</span><span class="kc">n</span><span class="err">`</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="err">(</span><span class="kc">future</span><span class="err">)</span><span class="w"> </span><span class="err">gover</span><span class="kc">nan</span><span class="err">ce</span><span class="w"> </span><span class="err">decisio</span><span class="kc">n</span><span class="w"> </span><span class="kc">n</span><span class="err">ode</span>
+
+<span class="err">These</span><span class="w"> </span><span class="err">proper</span><span class="kc">t</span><span class="err">ies</span><span class="w"> </span><span class="err">have</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Impac</span><span class="kc">t</span><span class="err">Assessme</span><span class="kc">nt</span><span class="err">`</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="w"> </span><span class="kc">t</span><span class="err">heir</span><span class="w"> </span><span class="err">domai</span><span class="kc">n</span><span class="w"> </span><span class="err">a</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">allow</span><span class="w"> </span><span class="err">you</span><span class="w"> </span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">joi</span><span class="kc">n</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">assessme</span><span class="kc">nt</span><span class="w"> </span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">wider</span><span class="w"> </span><span class="err">Bra</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">Brai</span><span class="kc">n</span><span class="w"> </span><span class="err">gover</span><span class="kc">nan</span><span class="err">ce</span><span class="w"> </span><span class="err">graph.</span>
+
+<span class="mi">---</span>
+
+<span class="err">##</span><span class="w"> </span><span class="err">Key</span><span class="w"> </span><span class="err">proper</span><span class="kc">t</span><span class="err">ies</span><span class="w"> </span><span class="err">(domai</span><span class="kc">n</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="err">cludes</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Impac</span><span class="kc">t</span><span class="err">Assessme</span><span class="kc">nt</span><span class="err">`)</span>
+
+<span class="err">Below</span><span class="w"> </span><span class="err">are</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">mai</span><span class="kc">n</span><span class="w"> </span><span class="err">proper</span><span class="kc">t</span><span class="err">ies</span><span class="w"> </span><span class="err">i</span><span class="kc">nten</span><span class="err">ded</span><span class="w"> </span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">used</span><span class="w"> </span><span class="err">wi</span><span class="kc">t</span><span class="err">h</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Impac</span><span class="kc">t</span><span class="err">Assessme</span><span class="kc">nt</span><span class="err">`.</span><span class="w"> </span><span class="err">They</span><span class="w"> </span><span class="err">ca</span><span class="kc">n</span><span class="w"> </span><span class="err">also</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">reused</span><span class="w"> </span><span class="err">o</span><span class="kc">n</span><span class="w"> </span><span class="err">o</span><span class="kc">t</span><span class="err">her</span><span class="w"> </span><span class="err">gover</span><span class="kc">nan</span><span class="err">ce</span><span class="w"> </span><span class="err">classes</span><span class="w"> </span><span class="err">where</span><span class="w"> </span><span class="err">appropria</span><span class="kc">te</span><span class="p">,</span><span class="w"> </span><span class="err">bu</span><span class="kc">t</span><span class="w"> </span><span class="err">are</span><span class="w"> </span><span class="err">described</span><span class="w"> </span><span class="err">here</span><span class="w"> </span><span class="kc">fr</span><span class="err">om</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">**impac</span><span class="kc">t</span><span class="w"> </span><span class="err">assessme</span><span class="kc">nt</span><span class="err">**</span><span class="w"> </span><span class="err">perspec</span><span class="kc">t</span><span class="err">ive.</span>
+
+<span class="mi">---</span>
+
+<span class="err">###</span><span class="w"> </span><span class="mf">1.</span><span class="w"> </span><span class="err">Scope</span><span class="w"> </span><span class="err">a</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">subjec</span><span class="kc">t</span><span class="w"> </span><span class="err">o</span><span class="kc">f</span><span class="w"> </span><span class="err">assessme</span><span class="kc">nt</span>
+
+<span class="err">|</span><span class="w"> </span><span class="err">Proper</span><span class="kc">t</span><span class="err">y</span><span class="w"> </span><span class="err">IRI</span><span class="w">                    </span><span class="err">|</span><span class="w"> </span><span class="err">Ra</span><span class="kc">n</span><span class="err">ge</span><span class="w">                   </span><span class="err">|</span><span class="w"> </span><span class="err">Type</span><span class="w">                   </span><span class="err">|</span><span class="w"> </span><span class="err">Comme</span><span class="kc">nt</span><span class="w"> </span><span class="err">(summary)</span><span class="w">                                                                                  </span><span class="err">|</span>
+<span class="err">|</span><span class="w"> </span><span class="mi">-------------------------------</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="mi">-----------------------</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="mi">----------------------</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="mi">--------------------------------------------------------------------------------------------------</span><span class="w"> </span><span class="err">|</span>
+<span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">assessesBra</span><span class="kc">n</span><span class="err">d`</span><span class="w">          </span><span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Bra</span><span class="kc">n</span><span class="err">d`</span><span class="w">          </span><span class="err">|</span><span class="w"> </span><span class="err">`owl</span><span class="p">:</span><span class="err">Objec</span><span class="kc">t</span><span class="err">Proper</span><span class="kc">t</span><span class="err">y`</span><span class="w">   </span><span class="err">|</span><span class="w"> </span><span class="err">Bra</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">whose</span><span class="w"> </span><span class="err">repu</span><span class="kc">tat</span><span class="err">io</span><span class="kc">n</span><span class="p">,</span><span class="w"> </span><span class="kc">trust</span><span class="p">,</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="err">equi</span><span class="kc">t</span><span class="err">y</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">impac</span><span class="kc">te</span><span class="err">d</span><span class="w"> </span><span class="err">by</span><span class="w"> </span><span class="kc">t</span><span class="err">his</span><span class="w"> </span><span class="err">AI</span><span class="w"> </span><span class="err">sys</span><span class="kc">te</span><span class="err">m</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="err">use</span><span class="w"> </span><span class="err">case.</span><span class="w">                </span><span class="err">|</span>
+<span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">assessesCo</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span><span class="err">`</span><span class="w">        </span><span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Co</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span><span class="err">`</span><span class="w">        </span><span class="err">|</span><span class="w"> </span><span class="err">`owl</span><span class="p">:</span><span class="err">Objec</span><span class="kc">t</span><span class="err">Proper</span><span class="kc">t</span><span class="err">y`</span><span class="w">   </span><span class="err">|</span><span class="w"> </span><span class="err">Speci</span><span class="kc">f</span><span class="err">ic</span><span class="w"> </span><span class="err">co</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span><span class="w"> </span><span class="err">(cha</span><span class="kc">nnel</span><span class="p">,</span><span class="w"> </span><span class="err">audie</span><span class="kc">n</span><span class="err">ce</span><span class="p">,</span><span class="w"> </span><span class="err">regio</span><span class="kc">n</span><span class="err">)</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="w"> </span><span class="err">which</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">AI</span><span class="w"> </span><span class="err">behaviour</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">evalua</span><span class="kc">te</span><span class="err">d.</span><span class="w">               </span><span class="err">|</span>
+<span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">assessesModel`</span><span class="w">          </span><span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Bra</span><span class="kc">n</span><span class="err">dModel`</span><span class="w">     </span><span class="err">|</span><span class="w"> </span><span class="err">`owl</span><span class="p">:</span><span class="err">Objec</span><span class="kc">t</span><span class="err">Proper</span><span class="kc">t</span><span class="err">y`</span><span class="w">   </span><span class="err">|</span><span class="w"> </span><span class="err">Bra</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">model</span><span class="p">,</span><span class="w"> </span><span class="err">age</span><span class="kc">nt</span><span class="p">,</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="err">AI</span><span class="w"> </span><span class="err">sys</span><span class="kc">te</span><span class="err">m</span><span class="w"> </span><span class="kc">t</span><span class="err">ha</span><span class="kc">t</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">primary</span><span class="w"> </span><span class="err">subjec</span><span class="kc">t</span><span class="w"> </span><span class="err">o</span><span class="kc">f</span><span class="w"> </span><span class="kc">t</span><span class="err">his</span><span class="w"> </span><span class="err">assessme</span><span class="kc">nt</span><span class="err">.</span><span class="w">                   </span><span class="err">|</span>
+<span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">assessesPromp</span><span class="kc">t</span><span class="err">`</span><span class="w">         </span><span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Promp</span><span class="kc">t</span><span class="err">`</span><span class="w">         </span><span class="err">|</span><span class="w"> </span><span class="err">`owl</span><span class="p">:</span><span class="err">Objec</span><span class="kc">t</span><span class="err">Proper</span><span class="kc">t</span><span class="err">y`</span><span class="w">   </span><span class="err">|</span><span class="w"> </span><span class="err">Promp</span><span class="kc">t</span><span class="p">,</span><span class="w"> </span><span class="err">work</span><span class="kc">fl</span><span class="err">ow</span><span class="p">,</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="err">orches</span><span class="kc">trat</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span><span class="err">pa</span><span class="kc">ttern</span><span class="w"> </span><span class="err">bei</span><span class="kc">n</span><span class="err">g</span><span class="w"> </span><span class="err">assessed</span><span class="w"> </span><span class="err">(e.g.</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">par</span><span class="kc">t</span><span class="err">icular</span><span class="w"> </span><span class="err">ru</span><span class="kc">n</span><span class="err">book</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="kc">fl</span><span class="err">ow).</span><span class="w">     </span><span class="err">|</span>
+<span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">assessesAu</span><span class="kc">t</span><span class="err">oma</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">Rule`</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Au</span><span class="kc">t</span><span class="err">oma</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">Rule`</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">`owl</span><span class="p">:</span><span class="err">Objec</span><span class="kc">t</span><span class="err">Proper</span><span class="kc">t</span><span class="err">y`</span><span class="w">   </span><span class="err">|</span><span class="w"> </span><span class="err">Au</span><span class="kc">t</span><span class="err">oma</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="err">rou</span><span class="kc">t</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="w"> </span><span class="err">rule</span><span class="w"> </span><span class="err">whose</span><span class="w"> </span><span class="err">impac</span><span class="kc">t</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">bei</span><span class="kc">n</span><span class="err">g</span><span class="w"> </span><span class="err">assessed</span><span class="w"> </span><span class="err">(e.g.</span><span class="w"> </span><span class="err">au</span><span class="kc">t</span><span class="err">o</span><span class="mi">-</span><span class="err">se</span><span class="kc">n</span><span class="err">d</span><span class="p">,</span><span class="w"> </span><span class="err">au</span><span class="kc">t</span><span class="err">o</span><span class="mf">-e</span><span class="err">scala</span><span class="kc">te</span><span class="err">).</span><span class="w">         </span><span class="err">|</span>
+<span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">assessme</span><span class="kc">nt</span><span class="err">Scope`</span><span class="w">        </span><span class="err">|</span><span class="w"> </span><span class="err">`xsd</span><span class="p">:</span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g`</span><span class="w">            </span><span class="err">|</span><span class="w"> </span><span class="err">`owl</span><span class="p">:</span><span class="err">Da</span><span class="kc">tat</span><span class="err">ypeProper</span><span class="kc">t</span><span class="err">y`</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">Free</span><span class="mi">-</span><span class="kc">te</span><span class="err">x</span><span class="kc">t</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="err">JSON</span><span class="mf">-e</span><span class="kc">n</span><span class="err">coded</span><span class="w"> </span><span class="err">descrip</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span><span class="err">o</span><span class="kc">f</span><span class="w"> </span><span class="err">scope</span><span class="w"> </span><span class="err">(use</span><span class="w"> </span><span class="err">case</span><span class="w"> </span><span class="err">bou</span><span class="kc">n</span><span class="err">dary</span><span class="p">,</span><span class="w"> </span><span class="err">cha</span><span class="kc">nnels</span><span class="p">,</span><span class="w"> </span><span class="err">jurisdic</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="p">,</span><span class="w"> </span><span class="err">e</span><span class="kc">t</span><span class="err">c.).</span><span class="w"> </span><span class="err">|</span>
+<span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">assessme</span><span class="kc">nt</span><span class="err">UseCaseId`</span><span class="w">    </span><span class="err">|</span><span class="w"> </span><span class="err">`xsd</span><span class="p">:</span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g`</span><span class="w">            </span><span class="err">|</span><span class="w"> </span><span class="err">`owl</span><span class="p">:</span><span class="err">Da</span><span class="kc">tat</span><span class="err">ypeProper</span><span class="kc">t</span><span class="err">y`</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">S</span><span class="kc">ta</span><span class="err">ble</span><span class="w"> </span><span class="err">ide</span><span class="kc">nt</span><span class="err">i</span><span class="kc">f</span><span class="err">ier</span><span class="w"> </span><span class="kc">f</span><span class="err">or</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">use</span><span class="w"> </span><span class="err">case</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="w"> </span><span class="err">i</span><span class="kc">nternal</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="err">ve</span><span class="kc">nt</span><span class="err">ories</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="err">regis</span><span class="kc">ters</span><span class="err">.</span><span class="w">                           </span><span class="err">|</span>
+<span class="err">|</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">assessme</span><span class="kc">nt</span><span class="err">Phase`</span><span class="w">        </span><span class="err">|</span><span class="w"> </span><span class="err">`xsd</span><span class="p">:</span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g`</span><span class="w">            </span><span class="err">|</span><span class="w"> </span><span class="err">`owl</span><span class="p">:</span><span class="err">Da</span><span class="kc">tat</span><span class="err">ypeProper</span><span class="kc">t</span><span class="err">y`</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">S</span><span class="kc">ta</span><span class="err">ge</span><span class="w"> </span><span class="err">o</span><span class="kc">f</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">li</span><span class="kc">fe</span><span class="err">cycle</span><span class="w"> </span><span class="err">(e.g.</span><span class="w"> </span><span class="err">“desig</span><span class="kc">n</span><span class="err">”</span><span class="p">,</span><span class="w"> </span><span class="err">“pilo</span><span class="kc">t</span><span class="err">”</span><span class="p">,</span><span class="w"> </span><span class="err">“produc</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">”</span><span class="p">,</span><span class="w"> </span><span class="err">“re</span><span class="kc">tr</span><span class="err">ospec</span><span class="kc">t</span><span class="err">ive”).</span><span class="w">                    </span><span class="err">|</span>
+
+<span class="err">**Usage</span><span class="w"> </span><span class="kc">n</span><span class="err">o</span><span class="kc">tes</span><span class="w"> </span><span class="err">(</span><span class="kc">n</span><span class="err">o</span><span class="kc">n</span><span class="mi">-</span><span class="kc">n</span><span class="err">orma</span><span class="kc">t</span><span class="err">ive)</span><span class="p">:</span><span class="err">**</span>
+
+<span class="err">*</span><span class="w"> </span><span class="err">`assessesBra</span><span class="kc">n</span><span class="err">d`</span><span class="p">,</span><span class="w"> </span><span class="err">`assessesCo</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span><span class="err">`</span><span class="p">,</span><span class="w"> </span><span class="err">a</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">`assessesModel`</span><span class="w"> </span><span class="err">are</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">**primary</span><span class="w"> </span><span class="err">a</span><span class="kc">n</span><span class="err">chors**</span><span class="w"> </span><span class="err">used</span><span class="w"> </span><span class="kc">f</span><span class="err">or</span><span class="w"> </span><span class="err">queries</span><span class="w"> </span><span class="err">like</span><span class="p">:</span>
+
+<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">“show</span><span class="w"> </span><span class="err">all</span><span class="w"> </span><span class="err">approved</span><span class="w"> </span><span class="err">use</span><span class="w"> </span><span class="err">cases</span><span class="w"> </span><span class="kc">f</span><span class="err">or</span><span class="w"> </span><span class="err">Bra</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">X</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="w"> </span><span class="err">Regio</span><span class="kc">n</span><span class="w"> </span><span class="err">Y”</span>
+<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">“lis</span><span class="kc">t</span><span class="w"> </span><span class="err">impac</span><span class="kc">t</span><span class="w"> </span><span class="err">assessme</span><span class="kc">nts</span><span class="w"> </span><span class="kc">f</span><span class="err">or</span><span class="w"> </span><span class="kc">t</span><span class="err">his</span><span class="w"> </span><span class="err">model.”</span>
+<span class="err">*</span><span class="w"> </span><span class="err">`assessme</span><span class="kc">nt</span><span class="err">Scope`</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">delibera</span><span class="kc">tel</span><span class="err">y</span><span class="w"> </span><span class="kc">fle</span><span class="err">xible.</span><span class="w"> </span><span class="err">Commo</span><span class="kc">n</span><span class="w"> </span><span class="err">pa</span><span class="kc">tterns</span><span class="p">:</span>
+
+<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">simple</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">:</span><span class="w"> </span><span class="err">`</span><span class="s2">&quot;Retail wealth advisory chatbot for UK and EU&quot;</span><span class="err">`</span>
+<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">JSON</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">:</span><span class="w"> </span><span class="err">`</span><span class="p">{</span><span class="nt">&quot;channels&quot;</span><span class="p">:[</span><span class="s2">&quot;mobile app&quot;</span><span class="p">,</span><span class="s2">&quot;web&quot;</span><span class="p">],</span><span class="nt">&quot;jurisdictions&quot;</span><span class="p">:[</span><span class="s2">&quot;UK&quot;</span><span class="p">,</span><span class="s2">&quot;DE&quot;</span><span class="p">],</span><span class="nt">&quot;audiences&quot;</span><span class="p">:[</span><span class="s2">&quot;retail-high-net-worth&quot;</span><span class="p">]}</span><span class="err">`.</span>
+<span class="err">*</span><span class="w"> </span><span class="err">`assessme</span><span class="kc">nt</span><span class="err">UseCaseId`</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">use</span><span class="kc">ful</span><span class="w"> </span><span class="kc">f</span><span class="err">or</span><span class="w"> </span><span class="err">co</span><span class="kc">nne</span><span class="err">c</span><span class="kc">t</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">graph</span><span class="w"> </span><span class="kc">t</span><span class="err">o</span><span class="p">:</span>
+
+<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">i</span><span class="kc">nternal</span><span class="w"> </span><span class="err">AI</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="err">ve</span><span class="kc">nt</span><span class="err">ory</span><span class="w"> </span><span class="err">spreadshee</span><span class="kc">ts</span><span class="p">,</span>
+<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">risk</span><span class="w"> </span><span class="err">regis</span><span class="kc">ters</span><span class="p">,</span>
+<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">JPMC’s</span><span class="w"> </span><span class="err">i</span><span class="kc">nternal</span><span class="w"> </span><span class="err">LLM</span><span class="w"> </span><span class="err">Sui</span><span class="kc">te</span><span class="w"> </span><span class="err">/</span><span class="w"> </span><span class="err">AI</span><span class="w"> </span><span class="err">regis</span><span class="kc">tr</span><span class="err">y.</span>
+
+<span class="err">Example</span><span class="p">:</span>
+
+<span class="err">```jso</span><span class="kc">nl</span><span class="err">d</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/assessments/wealth-assistant-v1-initial&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:ImpactAssessment&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:assessesBrand&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:assessesContext&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/context/wealth-chat&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:assessesModel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/models/wealth-assistant-v1&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:assessmentUseCaseId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSB-WEALTH-CHAT-001&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:assessmentPhase&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;design&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="2-risks-impacts-and-harms">2. Risks, impacts, and harms</h3>
+<table>
+<thead>
+<tr>
+<th>Property IRI</th>
+<th>Range</th>
+<th>Type</th>
+<th>Comment (summary)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>brando:impactSummary</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Short human-readable summary of the overall brand, customer, and regulatory impact.</td>
+</tr>
+<tr>
+<td><code>brando:impactAreas</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>List or JSON string describing impacted dimensions (e.g. “brand trust”, “vulnerable customers”, “ESG”).</td>
+</tr>
+<tr>
+<td><code>brando:harmScenarios</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Example scenarios where the use case could cause harm or unacceptable outcomes.</td>
+</tr>
+<tr>
+<td><code>brando:riskRating</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Overall risk/impact rating for the use case (e.g. “Low”, “Medium”, “High”, “VeryHigh”).</td>
+</tr>
+<tr>
+<td><code>brando:residualRiskRating</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Risk rating <strong>after</strong> mitigations and controls are applied.</td>
+</tr>
+<tr>
+<td><code>brando:riskFactors</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Key factors that drive risk up or down (e.g. audience sensitivity, autonomy level, data sensitivity).</td>
+</tr>
+<tr>
+<td><code>brando:affectedPersonas</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Product/synthetic personas most affected by this use case (free text or references encoded as strings).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Usage notes (non-normative):</strong></p>
+<ul>
+<li><code>impactAreas</code>, <code>harmScenarios</code>, and <code>riskFactors</code> work well as <strong>JSON arrays</strong> stored as strings, e.g.:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="p">[</span>
+<span class="w">  </span><span class="s2">&quot;Potential mis-selling of complex financial products&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;Over-reliance on AI responses during market stress&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="s2">&quot;Disproportionate impact on vulnerable or less literate customers&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+<ul>
+<li>
+<p><code>riskRating</code> and <code>residualRiskRating</code> can be aligned to:</p>
+</li>
+<li>
+<p>internal risk scales (e.g. <code>L</code>, <code>M</code>, <code>H</code>), or</p>
+</li>
+<li>a 1–5 style scale if harmonised with a wider risk vocabulary.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/assessments/wealth-assistant-v1-initial&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:ImpactAssessment&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:impactSummary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;High customer-impact, high brand-sensitivity use case for retail wealth advice. Medium residual risk with mitigations.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:impactAreas&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;brand-trust&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;customer-outcomes&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;regulatory-exposure&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:harmScenarios&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Customer interprets general guidance as personalised investment advice.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Assistant encourages unsuitable risk profiles during market volatility.&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:riskRating&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;High&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:residualRiskRating&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Medium&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:riskFactors&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Retail, non-professional investors&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Complex financial instruments&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;High reliance on natural-language explanations&quot;</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="3-mitigations-controls-and-decisions">3. Mitigations, controls, and decisions</h3>
+<table>
+<thead>
+<tr>
+<th>Property IRI</th>
+<th>Range</th>
+<th>Type</th>
+<th>Comment (summary)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>brando:linkedPolicy</code></td>
+<td><code>brando:Policy</code></td>
+<td><code>owl:ObjectProperty</code></td>
+<td>Policies that govern this use case (brand, legal, conduct, regional, product-specific).</td>
+</tr>
+<tr>
+<td><code>brando:requiredMitigation</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Mitigations or controls required before or during deployment (guard rails, escalation, human-in-the-loop).</td>
+</tr>
+<tr>
+<td><code>brando:mitigationStatus</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Status of mitigations (e.g. “planned”, “in-progress”, “implemented”, “not-feasible”).</td>
+</tr>
+<tr>
+<td><code>brando:decisionStatus</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Governance decision outcome for the use case (e.g. “approved”, “approved-with-conditions”, “rejected”, “pilot”).</td>
+</tr>
+<tr>
+<td><code>brando:decisionRationale</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Human-readable rationale explaining why the decision was taken, trade-offs, and assumptions.</td>
+</tr>
+<tr>
+<td><code>brando:reviewedByRole</code></td>
+<td><code>schema:Role</code></td>
+<td><code>owl:ObjectProperty</code></td>
+<td>Role (team or governance function) responsible for the assessment and decision (e.g. Brand, Legal, Risk).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Usage notes (non-normative):</strong></p>
+<ul>
+<li><code>linkedPolicy</code> is the glue between <strong>impact assessments</strong> and <strong>machine-readable policies</strong> (<code>brando:Policy</code>) used at runtime.</li>
+<li><code>requiredMitigation</code> is often easiest as a list of bullet-style strings; it can also hold JSON describing more structured actions.</li>
+<li>
+<p><code>decisionStatus</code> is free-form but benefits from a constrained vocabulary in practice, e.g.:</p>
+</li>
+<li>
+<p><code>"approved"</code>, <code>"approved-with-conditions"</code>, <code>"pilot-only"</code>, <code>"rejected"</code>, <code>"needs-more-information"</code>.</p>
+</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/assessments/wealth-assistant-v1-initial&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:ImpactAssessment&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:linkedPolicy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/policies/global-brand-safety&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/policies/regulated-claims-uk&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:requiredMitigation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Enforce refusal strategies for personalised investment advice.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Route high-risk conversations to human advisors after 2 follow-up questions.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Log and monitor conversations mentioning vulnerable customers for QA review.&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:mitigationStatus&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;in-progress&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:decisionStatus&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;approved-with-conditions&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:decisionRationale&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;High potential customer impact; approved subject to strict guard rails and human escalation in high-risk cases.&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="4-lifecycle-timing-and-alignment-with-standards">4. Lifecycle, timing, and alignment with standards</h3>
+<table>
+<thead>
+<tr>
+<th>Property IRI</th>
+<th>Range</th>
+<th>Type</th>
+<th>Comment (summary)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>brando:assessmentDate</code></td>
+<td><code>xsd:date</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Date when the core impact assessment was completed or approved.</td>
+</tr>
+<tr>
+<td><code>brando:nextReviewDue</code></td>
+<td><code>xsd:date</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Date by which the assessment should be reviewed or renewed.</td>
+</tr>
+<tr>
+<td><code>brando:assessmentOwnerRole</code></td>
+<td><code>schema:Role</code></td>
+<td><code>owl:ObjectProperty</code></td>
+<td>Role accountable for maintaining this assessment over time (e.g. “Head of Brand Strategy”).</td>
+</tr>
+<tr>
+<td><code>brando:assessmentMethod</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Short description of the method/framework used (e.g. “ISO/IEC 42005-style AI impact assessment”).</td>
+</tr>
+<tr>
+<td><code>brando:externalSystemId</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Identifier for this assessment in external governance tools or AI registries.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Usage notes (non-normative):</strong></p>
+<ul>
+<li><code>assessmentMethod</code> is where you can make <strong>standards alignment explicit</strong>, e.g.:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;assessmentMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Aligned with ISO/IEC 42005 impact assessment structure for AI systems.&quot;</span>
+</code></pre></div>
+<ul>
+<li>
+<p><code>nextReviewDue</code> supports operational hygiene:</p>
+</li>
+<li>
+<p>dashboards can show which assessments are “stale”,</p>
+</li>
+<li>agents can automatically flag use cases due for re-assessment (e.g. after a model change).</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/assessments/wealth-assistant-v1-initial&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:ImpactAssessment&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:assessmentDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-03-15&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:nextReviewDue&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-09-15&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:assessmentMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ISO/IEC 42005-aligned AI brand impact assessment template&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:externalSystemId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AIREG-NSB-001&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="5-files-and-documentation">5. Files and documentation</h3>
+<p>As with <code>brando:Policy</code>, these shared properties are often used to attach <strong>artefacts</strong> to impact assessments:</p>
+<table>
+<thead>
+<tr>
+<th>Property IRI</th>
+<th>Range</th>
+<th>Type</th>
+<th>Comment (summary)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>brando:downloadableFile</code></td>
+<td><code>schema:MediaObject</code></td>
+<td><code>owl:ObjectProperty</code></td>
+<td>Links an impact assessment to the current canonical assessment document (e.g. PDF, doc, structured template export).</td>
+</tr>
+<tr>
+<td><code>brando:supportingFile</code></td>
+<td><code>schema:MediaObject</code></td>
+<td><code>owl:ObjectProperty</code></td>
+<td>Links to supporting materials such as risk analyses, user research, or design artefacts.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/assessments/wealth-assistant-v1-initial&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:ImpactAssessment&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:downloadableFile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/impact/wealth-assistant-v1-initial.pdf&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:MediaObject&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AI Brand Impact Assessment – Wealth Assistant v1 (PDF)&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:supportingFile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/research/wealth-persona-research-2025.pdf&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:MediaObject&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Wealth Customer Persona Research 2025&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="example-brand-context-model-impact-assessment">Example: Brand + Context + Model + Impact Assessment</h2>
+<p>A combined example showing how <code>brando:ImpactAssessment</code> connects the <strong>Brand Brain</strong> governance objects:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;brando&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://brandoschema.com/&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nd">&quot;@graph&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Brand&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar Bank&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:hasContext&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/context/wealth-chat&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;brando:hasPolicy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/policies/global-brand-safety&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/context/wealth-chat&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Context&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:audienceSegment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Retail wealth customers&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:domainContext&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;channel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;chat&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;surface&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mobile-app&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;region&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;UK&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;brando:hasPolicy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/policies/regulated-claims-uk&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/models/wealth-assistant-v1&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:BrandModel&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Wealth Assistant v1&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:hasImpactAssessment&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/assessments/wealth-assistant-v1-initial&quot;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/assessments/wealth-assistant-v1-initial&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:ImpactAssessment&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:assessesBrand&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;brando:assessesContext&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/context/wealth-chat&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;brando:assessesModel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/models/wealth-assistant-v1&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;brando:assessmentUseCaseId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSB-WEALTH-CHAT-001&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:assessmentPhase&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;design&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:impactSummary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;High-impact wealth advisory chatbot; approved with strict guard rails and escalation.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:impactAreas&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;brand-trust&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;customer-outcomes&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;regulatory-exposure&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;brando:harmScenarios&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;Customer interprets generic explanations as personalised advice.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Assistant downplays risks in volatile markets.&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;brando:riskRating&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;High&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:residualRiskRating&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Medium&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:linkedPolicy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/policies/global-brand-safety&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/policies/regulated-claims-uk&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;brando:requiredMitigation&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;Hard refusal on personalised investment advice.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Escalate to human advisor for complex or vulnerable-customer situations.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Monitor conversation samples weekly for mis-selling risks.&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;brando:decisionStatus&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;approved-with-conditions&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:decisionRationale&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Residual risk acceptable with additional guard rails and human oversight.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:assessmentMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ISO/IEC 42005-aligned AI brand impact assessment&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:assessmentDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-03-15&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:nextReviewDue&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-09-15&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:retrievableInLLM&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Runtime pattern (non-normative):</strong></p>
+<ol>
+<li>Resolve current <code>brando:Brand</code>, <code>brando:Context</code>, and <code>brando:BrandModel</code>.</li>
+<li>Lookup associated <code>brando:ImpactAssessment</code> nodes.</li>
+<li>
+<p>Filter to:</p>
+</li>
+<li>
+<p><code>decisionStatus</code> ∈ approved/approved-with-conditions</p>
+</li>
+<li><code>assessmentDate</code> and <code>nextReviewDue</code> still valid.</li>
+<li>Use <code>linkedPolicy</code> to pull the precise <code>brando:Policy</code> guard rails.</li>
+<li>
+<p>Surface <code>impactSummary</code>, <code>impactAreas</code>, and <code>requiredMitigation</code> in:</p>
+</li>
+<li>
+<p>internal dashboards,</p>
+</li>
+<li>change-control workflows,</li>
+<li>AI runtime safety layers.</li>
+</ol>
+<hr />
+<h2 id="related-documentation">Related documentation</h2>
+<ul>
+<li>
+<p><strong>Concepts / overview</strong></p>
+</li>
+<li>
+<p><a href="../">Brando types overview</a></p>
+</li>
+<li>
+<p><a href="../../getting-started/">Getting started</a></p>
+</li>
+<li>
+<p><strong>Related types</strong></p>
+</li>
+<li>
+<p><a href="../brand/"><code>brando:Brand</code></a></p>
+</li>
+<li><a href="../context/"><code>brando:Context</code></a></li>
+<li><a href="../policy/"><code>brando:Policy</code></a></li>
+<li><a href="../brand-model/"><code>brando:BrandModel</code></a></li>
+<li>
+<p><a href="../automation-rule/"><code>brando:AutomationRule</code></a></p>
+</li>
+<li>
+<p><strong>Properties index</strong></p>
+</li>
+<li>
+<p><a href="../../properties/">Properties overview</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer>
+  <div class="custom-footer">
+    <strong>© 2025 Advanced Analytica Ltd </strong>. All rights reserved. Unauthorised use is strictly prohibited. <strong>Brando<sup>®</sup></strong> V1.3 | 28-11-2025 is a registered trademark of Advanced Analytica Ltd.  
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "header.autohide", "content.headings.anchor", "navigation.expand", "content.code.wrap"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../js/smooth-scroll.js"></script>
+      
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+      
+        <script src="../../js/linked_map.js"></script>
+      
+        <script src="../../data/brando-schema.json"></script>
+      
+        <script src="../../js/modal.js"></script>
+      
+    
+  </body>
+</html>
