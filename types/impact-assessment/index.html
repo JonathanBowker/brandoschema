@@ -1081,9 +1081,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-files-and-documentation" class="md-nav__link">
+  <a href="#5-value-outcomes-and-measurement" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Files and documentation
+      5. Value, outcomes, and measurement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-files-and-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Files and documentation
     </span>
   </a>
   
@@ -2018,9 +2027,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-files-and-documentation" class="md-nav__link">
+  <a href="#5-value-outcomes-and-measurement" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Files and documentation
+      5. Value, outcomes, and measurement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-files-and-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Files and documentation
     </span>
   </a>
   
@@ -2069,10 +2087,10 @@
 
 
 <h1 id="brandoimpactassessment"><code>brando:ImpactAssessment</code></h1>
-<p>AI brand impact assessment record aligned with <strong>enterprise AI governance</strong> and <strong>emerging AI impact assessment practices</strong> (e.g. <a href="https://www.iso.org/standard/42005">ISO/IEC 42005</a>). It captures purpose, scope, brand and customer risks, mitigations, and decisions for an AI system, use case, or model <strong>from a brand, communications, and CX perspective</strong>.</p>
+<p>AI brand impact assessment record aligned with <strong>enterprise AI governance</strong> and <strong>emerging AI impact assessment practices</strong> (e.g. <a href="https://www.iso.org/standard/42005">ISO/IEC 42005</a>). It captures purpose, scope, brand and customer risks, mitigations, <strong>expected and observed value</strong>, and decisions for an AI system, use case, or model <strong>from a brand, communications, and CX perspective</strong>.</p>
 <blockquote>
 <p><strong>rdfs:comment</strong><br />
-<em>An assessment of the brand, customer, and regulatory impact of an AI system, use case, or model, including risks, mitigations, and governance decisions. Designed to *<strong>complement</strong></em> enterprise AI, privacy, and model risk frameworks, and align with impact assessment practices such as ISO/IEC 42005.*</p>
+<em>An assessment of the brand, customer, and regulatory impact of an AI system, use case, or model, including risks, mitigations, governance decisions, and value outcomes. Designed to *<strong>complement</strong></em> enterprise AI, privacy, and model risk frameworks, and align with impact assessment practices such as ISO/IEC 42005.*</p>
 </blockquote>
 <hr />
 <h2 id="term-definition">Term definition</h2>
@@ -2082,27 +2100,28 @@
 <li><strong>Superclass:</strong> <code>schema:Action</code>, <code>schema:CreativeWork</code>  </li>
 <li><strong>Defined in:</strong> <code>brando:</code> (Brando Schema Vocabulary v1.3)</li>
 </ul>
-<p><code>brando:ImpactAssessment</code> is the <strong>core brand-focused impact &amp; risk node</strong> in Brando. It represents a <strong>first-class assessment object</strong> that:</p>
+<p><code>brando:ImpactAssessment</code> is the <strong>core brand-focused impact, risk, and value node</strong> in Brando. It represents a <strong>first-class assessment object</strong> that:</p>
 <ul>
 <li>links to the <strong>brand</strong>, <strong>context</strong>, and <strong>AI artefacts</strong> (models, prompts, automations) being assessed,</li>
-<li>describes <strong>intended use</strong>, <strong>brand and customer impacts</strong>, <strong>risks</strong>, and <strong>mitigations</strong>,</li>
+<li>describes <strong>intended use</strong>, <strong>brand and customer impacts</strong>, <strong>risks</strong>, <strong>value hypotheses</strong>, and <strong>mitigations</strong>,</li>
 <li>records <strong>governance outcomes</strong> (e.g. approved, rejected, pilot-only),</li>
-<li>can reference or sit alongside <strong>enterprise AI / privacy / model risk assessments</strong> maintained elsewhere.</li>
+<li>can reference or sit alongside <strong>enterprise AI / privacy / model risk assessments</strong> maintained elsewhere,</li>
+<li>provides a <strong>measurement spine</strong> for tracking <strong>success metrics and value over time</strong> for anything integrated with the Brand Oracle.</li>
 </ul>
-<p>It is designed to align structurally with AI impact assessment flows such as <strong>ISO/IEC 42005</strong>, while remaining light enough to be used operationally inside a Brand Oracle, with a focus on <strong>how AI touches the brand</strong> rather than the entirety of enterprise AI governance.</p>
+<p>It is designed to align structurally with AI impact assessment flows such as <strong>ISO/IEC 42005</strong>, while remaining light enough to be used operationally inside a Brand Oracle, with a focus on <strong>how AI touches the brand and what value it creates</strong> rather than the entirety of enterprise AI governance.</p>
 <hr />
 <h2 id="intended-usage">Intended usage</h2>
-<p>Use <code>brando:ImpactAssessment</code> whenever you need to <strong>formally record how an AI use case or configuration has been evaluated from a brand, customer, communications, and regulatory-signal perspective.</strong></p>
+<p>Use <code>brando:ImpactAssessment</code> whenever you need to <strong>formally record how an AI use case or configuration has been evaluated from a brand, customer, communications, and regulatory-signal perspective, including how success will be measured.</strong></p>
 <p>Common patterns:</p>
 <ul>
-<li><strong>Pre-deployment brand impact assessment</strong></li>
+<li><strong>Pre-deployment brand impact &amp; value assessment</strong></li>
 <li>New assistant, tool, or feature using generative AI in a branded surface.</li>
 <li>New prompt flows or agents that can speak or act on behalf of the brand.</li>
 <li><strong>Material change assessment</strong></li>
 <li>Model upgrade, new data source, new high-risk channel (e.g. wealth, healthcare, youth, public social).</li>
 <li><strong>Periodic / portfolio review</strong></li>
 <li>Quarterly re-assessment of high-impact, high-visibility use cases.</li>
-<li>The Brand Brain’s “AI inventory” view: each live use case has an attached brand impact assessment.</li>
+<li>The Brand Brain’s “AI inventory” view: each live use case has an attached brand impact &amp; value assessment.</li>
 </ul>
 <p>This class is <strong>not</strong> intended to replace:</p>
 <ul>
@@ -2114,6 +2133,8 @@
 <ul>
 <li>Is this use case on-brand?</li>
 <li>What could it do to trust, tone, and customer outcomes?</li>
+<li>What <strong>value</strong> do we expect it to create?</li>
+<li>How will we <strong>measure</strong> that value as it evolves?</li>
 <li>Under what conditions is it allowed to run?</li>
 </ul>
 <p>In a typical flow:</p>
@@ -2124,11 +2145,13 @@
 <li>The assessment captures:</li>
 <li>purpose, user groups, channels, jurisdictions;</li>
 <li>potential <strong>brand &amp; customer harms</strong> and <strong>regulatory exposure as it shows up in comms</strong>;</li>
+<li><strong>success criteria, metrics, and expected outcomes</strong>;</li>
 <li>mitigations (policies, controls, guard rails) and residual risk.</li>
 <li>A governance body (e.g. Brand, Legal, Risk, Compliance) records a <strong>decision</strong> (approve, reject, pilot-only) and a <strong>rationale</strong>.</li>
 <li>Runtimes and dashboards query <code>brando:ImpactAssessment</code> to determine:</li>
 <li>whether a given use case is <strong>approved</strong>,</li>
-<li>under what <strong>conditions</strong>, and</li>
+<li>under what <strong>conditions</strong>,</li>
+<li>how it is <strong>performing against its success metrics</strong>, and</li>
 <li>when it must be <strong>re-reviewed</strong>.</li>
 </ol>
 <hr />
@@ -2476,7 +2499,114 @@
 <span class="p">}</span>
 </code></pre></div>
 <hr />
-<h3 id="5-files-and-documentation">5. Files and documentation</h3>
+<h3 id="5-value-outcomes-and-measurement">5. Value, outcomes, and measurement</h3>
+<table>
+<thead>
+<tr>
+<th>Property IRI</th>
+<th>Range</th>
+<th>Type</th>
+<th>Comment (summary)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>brando:successCriteria</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Definition of success in brand, CX, or commercial terms (e.g. “reduce review time by 30% while maintaining NPS”).</td>
+</tr>
+<tr>
+<td><code>brando:expectedOutcomes</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Expected qualitative and quantitative outcomes versus baseline.</td>
+</tr>
+<tr>
+<td><code>brando:measurementPlan</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Description of how success will be measured (metrics, data sources, cadence, owners).</td>
+</tr>
+<tr>
+<td><code>brando:keyMetrics</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>List or JSON string of key metrics tracked for this use case (e.g. AHT, brand consistency score, CSAT, revenue).</td>
+</tr>
+<tr>
+<td><code>brando:baselineSnapshot</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Baseline metrics or conditions before deployment (typically a JSON string or structured summary).</td>
+</tr>
+<tr>
+<td><code>brando:observedOutcomes</code></td>
+<td><code>xsd:string</code></td>
+<td><code>owl:DatatypeProperty</code></td>
+<td>Observed qualitative and quantitative impact after deployment / review cycles.</td>
+</tr>
+<tr>
+<td><code>brando:telemetrySource</code></td>
+<td><code>schema:SoftwareApplication</code></td>
+<td><code>owl:ObjectProperty</code></td>
+<td>Analytics or BI systems feeding measurements into this assessment (e.g. call centre BI, CMS logs, web analytics).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Usage notes (non-normative):</strong></p>
+<ul>
+<li>
+<p>These properties turn <code>brando:ImpactAssessment</code> into a <strong>closed loop</strong>: not just “is it safe?” but “is it working and how well?”.</p>
+</li>
+<li>
+<p><code>successCriteria</code> should read like a contract between brand, product, and governance, e.g.:</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>Automate 25% of routine wealth queries while maintaining or improving brand trust and complaint rates.
+</code></pre></div>
+<ul>
+<li><code>keyMetrics</code>, <code>baselineSnapshot</code>, and <code>observedOutcomes</code> typically contain <strong>JSON strings</strong>, e.g.:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;avg_handling_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">520</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;complaint_rate_mis-selling&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.8</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brand_consistency_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">72</span>
+<span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><code>telemetrySource</code> helps wire the assessment to real data platforms, so dashboards and agents can automatically pull metrics.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/assessments/wealth-assistant-v1-initial&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:ImpactAssessment&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:successCriteria&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;Automate at least 25% of routine wealth queries.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Maintain or improve brand trust and mis-selling complaint rates vs baseline.&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:expectedOutcomes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;20–30% reduction in average handling time for routine wealth queries.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;Improved perceived clarity of communications in post-interaction surveys.&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:measurementPlan&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Compare AHT, escalation rates, complaint rates, CSAT, and brand consistency for wealth chat before/after rollout over 90 days.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:keyMetrics&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s2">&quot;avg_handling_time&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;complaint_rate_mis-selling&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;wealth_chat_csat&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="s2">&quot;brand_consistency_score&quot;</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;brando:baselineSnapshot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{\&quot;avg_handling_time\&quot;:520,\&quot;complaint_rate_mis-selling\&quot;:0.8,\&quot;brand_consistency_score\&quot;:72}&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:observedOutcomes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{\&quot;avg_handling_time\&quot;:410,\&quot;complaint_rate_mis-selling\&quot;:0.7,\&quot;brand_consistency_score\&quot;:79}&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:telemetrySource&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/systems/contact-centre-bi&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:SoftwareApplication&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Contact Centre BI&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="6-files-and-documentation">6. Files and documentation</h3>
 <p>As with <code>brando:Policy</code>, these shared properties are often used to attach <strong>artefacts</strong> to impact assessments:</p>
 <table>
 <thead>
@@ -2509,7 +2639,7 @@
 <span class="w">  </span><span class="nt">&quot;brando:downloadableFile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/impact/wealth-assistant-v1-initial.pdf&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:MediaObject&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AI Brand Impact Assessment – Wealth Assistant v1 (PDF)&quot;</span>
+<span class="w">    </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AI Brand Impact &amp; Value Assessment – Wealth Assistant v1 (PDF)&quot;</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;brando:supportingFile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
@@ -2522,7 +2652,7 @@
 </code></pre></div>
 <hr />
 <h2 id="example-brand-context-model-impact-assessment">Example: Brand + Context + Model + Impact Assessment</h2>
-<p>A combined example showing how <code>brando:ImpactAssessment</code> connects the <strong>Brand Brain</strong> governance objects and can coexist with enterprise AI governance:</p>
+<p>A combined example showing how <code>brando:ImpactAssessment</code> connects the <strong>Brand Brain</strong> governance objects, coexists with enterprise AI governance, and tracks value over time:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org/&quot;</span><span class="p">,</span>
@@ -2569,7 +2699,7 @@
 <span class="w">      </span><span class="nt">&quot;brando:assessesModel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/models/wealth-assistant-v1&quot;</span><span class="w"> </span><span class="p">},</span>
 <span class="w">      </span><span class="nt">&quot;brando:assessmentUseCaseId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSB-WEALTH-CHAT-001&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:assessmentPhase&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;design&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:impactSummary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;High-impact wealth advisory chatbot; approved with strict brand and conduct guard rails and human escalation.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:impactSummary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;High-impact wealth advisory chatbot; approved with strict brand and conduct guard rails, human escalation, and clear success metrics.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:impactAreas&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="s2">&quot;brand-trust&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="s2">&quot;customer-outcomes&quot;</span><span class="p">,</span>
@@ -2591,11 +2721,35 @@
 <span class="w">        </span><span class="s2">&quot;Monitor conversation samples weekly for mis-selling risks.&quot;</span>
 <span class="w">      </span><span class="p">],</span>
 <span class="w">      </span><span class="nt">&quot;brando:decisionStatus&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;approved-with-conditions&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:decisionRationale&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Residual brand and customer risk acceptable with guard rails and human-in-the-loop oversight.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:decisionRationale&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Residual brand and customer risk acceptable with guard rails, human-in-the-loop oversight, and active monitoring of success metrics.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:assessmentMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ISO/IEC 42005-aligned AI brand impact assessment layered on top of enterprise AI model risk review.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:assessmentDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-03-15&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:nextReviewDue&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-09-15&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:externalSystemId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AIREG-NSB-001&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:successCriteria&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;Automate at least 25% of routine wealth queries.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Maintain or improve wealth-chat CSAT and brand trust scores.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;No increase in mis-selling or suitability complaint rates.&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;brando:expectedOutcomes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;20–30% reduction in AHT for routine wealth queries.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;Improved perceived clarity and reassurance during market volatility.&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;brando:measurementPlan&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Track AHT, escalation rate, complaint rate, CSAT, and brand consistency for wealth chat in monthly governance reviews over the first 90 days.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:keyMetrics&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;avg_handling_time&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;escalation_rate&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;complaint_rate_mis-selling&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;wealth_chat_csat&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;brand_consistency_score&quot;</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;brando:baselineSnapshot&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{\&quot;avg_handling_time\&quot;:520,\&quot;complaint_rate_mis-selling\&quot;:0.8,\&quot;wealth_chat_csat\&quot;:4.2,\&quot;brand_consistency_score\&quot;:72}&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:observedOutcomes&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{\&quot;avg_handling_time\&quot;:410,\&quot;complaint_rate_mis-selling\&quot;:0.7,\&quot;wealth_chat_csat\&quot;:4.5,\&quot;brand_consistency_score\&quot;:79}&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:telemetrySource&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/systems/contact-centre-bi&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:SoftwareApplication&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Contact Centre BI&quot;</span>
+<span class="w">      </span><span class="p">},</span>
 <span class="w">      </span><span class="nt">&quot;brando:retrievableInLLM&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -2613,7 +2767,7 @@
 <p>Filter to:</p>
 </li>
 <li>
-<p><code>decisionStatus</code> ∈ approved/approved-with-conditions</p>
+<p><code>decisionStatus</code> ∈ approved / approved-with-conditions</p>
 </li>
 <li>
 <p><code>assessmentDate</code> and <code>nextReviewDue</code> still valid.</p>
@@ -2622,16 +2776,18 @@
 <p>Use <code>linkedPolicy</code> to pull the precise <code>brando:Policy</code> guard rails.</p>
 </li>
 <li>
+<p>Use <code>successCriteria</code>, <code>keyMetrics</code>, <code>baselineSnapshot</code>, and <code>observedOutcomes</code> to:</p>
+</li>
+<li>
+<p>populate dashboards for <strong>value tracking</strong>,</p>
+</li>
+<li>drive alerts when value drifts or metrics degrade,</li>
+<li>
+<p>inform re-assessments.</p>
+</li>
+<li>
 <p>Use <code>externalSystemId</code> / <code>assessmentMethod</code> to show how this use case maps into wider <strong>enterprise AI governance</strong>.</p>
 </li>
-<li>
-<p>Surface <code>impactSummary</code>, <code>impactAreas</code>, and <code>requiredMitigation</code> in:</p>
-</li>
-<li>
-<p>internal dashboards,</p>
-</li>
-<li>change-control workflows,</li>
-<li>AI runtime safety layers.</li>
 </ol>
 <hr />
 <h2 id="related-documentation">Related documentation</h2>
