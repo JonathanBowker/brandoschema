@@ -1045,9 +1045,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-inbound" class="md-nav__link">
+  <a href="#inbound" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Inbound
+      Inbound
     </span>
   </a>
   
@@ -1991,9 +1991,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-inbound" class="md-nav__link">
+  <a href="#inbound" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Inbound
+      Inbound
     </span>
   </a>
   
@@ -2090,7 +2090,7 @@
 <p>AI brand impact assessment record aligned with <strong>enterprise AI governance</strong> and <strong>emerging AI impact assessment practices</strong> (e.g. <a href="https://www.iso.org/standard/42005">ISO/IEC 42005</a>). It captures purpose, scope, brand and customer risks, mitigations, <strong>expected and observed value</strong>, and decisions for an AI system, use case, or model <strong>from a brand, communications, and CX perspective</strong>.</p>
 <blockquote>
 <p><strong>rdfs:comment</strong><br />
-<em>An assessment of the brand, customer, and regulatory impact of an AI system, use case, or model, including risks, mitigations, governance decisions, and value outcomes. Designed to *<strong>complement</strong></em> enterprise AI, privacy, and model risk frameworks, and align with impact assessment practices such as ISO/IEC 42005.*</p>
+<em>An assessment of the brand, customer, and regulatory impact of an AI system, use case, or model, including risks, mitigations, governance decisions, and value outcomes. Designed to</em> <strong><em>complement</em></strong> <em>enterprise AI, privacy, and model risk frameworks, and align with impact assessment practices such as ISO/IEC 42005.</em></p>
 </blockquote>
 <hr />
 <h2 id="term-definition">Term definition</h2>
@@ -2156,7 +2156,7 @@
 </ol>
 <hr />
 <h2 id="relationships">Relationships</h2>
-<h3 id="1-inbound">1. Inbound</h3>
+<h3 id="inbound">Inbound</h3>
 <p>Impact assessments are usually reached from:</p>
 <ul>
 <li><strong><code>brando:hasImpactAssessment</code></strong>  </li>
@@ -2757,24 +2757,16 @@
 </code></pre></div>
 <p><strong>Runtime pattern (non-normative):</strong></p>
 <ol>
-<li>
-<p>Resolve current <code>brando:Brand</code>, <code>brando:Context</code>, and <code>brando:BrandModel</code>.</p>
-</li>
-<li>
-<p>Lookup associated <code>brando:ImpactAssessment</code> nodes.</p>
-</li>
+<li>Resolve current <code>brando:Brand</code>, <code>brando:Context</code>, and <code>brando:BrandModel</code>.</li>
+<li>Lookup associated <code>brando:ImpactAssessment</code> nodes.</li>
 <li>
 <p>Filter to:</p>
 </li>
 <li>
-<p><code>decisionStatus</code> ∈ approved / approved-with-conditions</p>
+<p><code>decisionStatus</code> ∈ <code>approved</code>, <code>approved-with-conditions</code></p>
 </li>
-<li>
-<p><code>assessmentDate</code> and <code>nextReviewDue</code> still valid.</p>
-</li>
-<li>
-<p>Use <code>linkedPolicy</code> to pull the precise <code>brando:Policy</code> guard rails.</p>
-</li>
+<li><code>assessmentDate</code> and <code>nextReviewDue</code> still valid.</li>
+<li>Use <code>linkedPolicy</code> to pull the precise <code>brando:Policy</code> guard rails.</li>
 <li>
 <p>Use <code>successCriteria</code>, <code>keyMetrics</code>, <code>baselineSnapshot</code>, and <code>observedOutcomes</code> to:</p>
 </li>
@@ -2782,12 +2774,8 @@
 <p>populate dashboards for <strong>value tracking</strong>,</p>
 </li>
 <li>drive alerts when value drifts or metrics degrade,</li>
-<li>
-<p>inform re-assessments.</p>
-</li>
-<li>
-<p>Use <code>externalSystemId</code> / <code>assessmentMethod</code> to show how this use case maps into wider <strong>enterprise AI governance</strong>.</p>
-</li>
+<li>inform re-assessments.</li>
+<li>Use <code>externalSystemId</code> / <code>assessmentMethod</code> to show how this use case maps into wider <strong>enterprise AI governance</strong>.</li>
 </ol>
 <hr />
 <h2 id="related-documentation">Related documentation</h2>
