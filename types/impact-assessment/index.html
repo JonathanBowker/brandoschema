@@ -2201,10 +2201,8 @@
 <ol>
 <li>
 <p>A team defines a <code>brando:Brand</code>, <code>brando:Context</code>, and relevant runtime artefacts:</p>
-</li>
-<li>
-<p><code>brando:BrandModel</code>, <code>brando:Prompt</code>, <code>brando:AutomationRule</code>.</p>
-</li>
+<ul>
+<li><code>brando:BrandModel</code>, <code>brando:Prompt</code>, <code>brando:AutomationRule</code>.</li>
 <li>They create a <code>brando:ImpactAssessment</code> instance linked to those nodes.</li>
 <li>
 <p>The assessment captures:</p>
@@ -2225,16 +2223,22 @@
 <li>under what <strong>conditions</strong>,</li>
 <li>how it is <strong>performing against its success metrics</strong>, and</li>
 <li>when it must be <strong>re-reviewed</strong>.</li>
+</ul>
+</li>
 </ol>
 <hr />
 <h2 id="relationships">Relationships</h2>
 <h3 id="inbound">Inbound</h3>
 <p>Impact assessments are usually reached from:</p>
 <ul>
-<li><strong><code>brando:hasImpactAssessment</code></strong>  </li>
+<li>
+<p><strong><code>brando:hasImpactAssessment</code></strong>  </p>
+<ul>
 <li><strong>Domain:</strong> <code>brando:Brand</code>, <code>brando:Context</code>, <code>brando:BrandModel</code>, <code>brando:AutomationRule</code>  </li>
 <li><strong>Range:</strong> <code>brando:ImpactAssessment</code>  </li>
 <li><strong>Comment (summary):</strong> Links a brand, context, model, or automation rule to one or more recorded AI impact assessments.</li>
+</ul>
+</li>
 </ul>
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
