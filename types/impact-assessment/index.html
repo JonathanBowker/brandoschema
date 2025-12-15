@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Reference for the brando:ImpactAssessment class in the Brand Oracle (Brando) schema vocabulary v1.3.">
+        <meta name="description" content="Reference for the brando:ImpactAssessment class in the Brand Oracle (Brando) schema vocabulary v1.3. Focused on AI brand impact, aligned with enterprise AI governance and ISO/IEC 42005-style impact assessments.">
       
       
         <meta name="author" content="Jonathan Bowker">
@@ -88,21 +88,21 @@
   <!-- End Google Tag Manager -->
 
   
-    <meta name="description" content="Reference for the brando:ImpactAssessment class in the Brand Oracle (Brando) schema vocabulary v1.3.">
+    <meta name="description" content="Reference for the brando:ImpactAssessment class in the Brand Oracle (Brando) schema vocabulary v1.3. Focused on AI brand impact, aligned with enterprise AI governance and ISO/IEC 42005-style impact assessments.">
     <meta name="author" content="Jonathan Bowker">
     <meta name="keywords" content="">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="brando:ImpactAssessment">
-    <meta property="og:description" content="Reference for the brando:ImpactAssessment class in the Brand Oracle (Brando) schema vocabulary v1.3.">
+    <meta property="og:description" content="Reference for the brando:ImpactAssessment class in the Brand Oracle (Brando) schema vocabulary v1.3. Focused on AI brand impact, aligned with enterprise AI governance and ISO/IEC 42005-style impact assessments.">
     <meta property="og:url" content="https://brandoschema.com/types/impact-assessment/">
     <meta property="og:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="brando:ImpactAssessment">
-    <meta name="twitter:description" content="Reference for the brando:ImpactAssessment class in the Brand Oracle (Brando) schema vocabulary v1.3.">
+    <meta name="twitter:description" content="Reference for the brando:ImpactAssessment class in the Brand Oracle (Brando) schema vocabulary v1.3. Focused on AI brand impact, aligned with enterprise AI governance and ISO/IEC 42005-style impact assessments.">
     <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
   
 
@@ -2069,10 +2069,10 @@
 
 
 <h1 id="brandoimpactassessment"><code>brando:ImpactAssessment</code></h1>
-<p>AI brand impact assessment record aligned with emerging AI governance standards (e.g. ISO/IEC 42005), capturing purpose, scope, risks, mitigations, and decisions for an AI system, use case, or model.</p>
+<p>AI brand impact assessment record aligned with <strong>enterprise AI governance</strong> and <strong>emerging AI impact assessment practices</strong> (e.g. ISO/IEC 42005). It captures purpose, scope, brand and customer risks, mitigations, and decisions for an AI system, use case, or model <strong>from a brand, communications, and CX perspective</strong>.</p>
 <blockquote>
 <p><strong>rdfs:comment</strong><br />
-<em>An assessment of the brand, ethical, and regulatory impact of an AI system, use case, or model, including risks, mitigations, and governance decisions, aligned with AI impact assessment practices such as ISO/IEC 42005.</em></p>
+<em>An assessment of the brand, customer, and regulatory impact of an AI system, use case, or model, including risks, mitigations, and governance decisions. Designed to *<strong>complement</strong></em> enterprise AI, privacy, and model risk frameworks, and align with impact assessment practices such as ISO/IEC 42005.*</p>
 </blockquote>
 <hr />
 <h2 id="term-definition">Term definition</h2>
@@ -2082,26 +2082,39 @@
 <li><strong>Superclass:</strong> <code>schema:Action</code>, <code>schema:CreativeWork</code>  </li>
 <li><strong>Defined in:</strong> <code>brando:</code> (Brando Schema Vocabulary v1.3)</li>
 </ul>
-<p><code>brando:ImpactAssessment</code> is the <strong>core impact &amp; risk node</strong> in Brando. It represents a <strong>first-class assessment object</strong> that:</p>
+<p><code>brando:ImpactAssessment</code> is the <strong>core brand-focused impact &amp; risk node</strong> in Brando. It represents a <strong>first-class assessment object</strong> that:</p>
 <ul>
 <li>links to the <strong>brand</strong>, <strong>context</strong>, and <strong>AI artefacts</strong> (models, prompts, automations) being assessed,</li>
-<li>describes <strong>intended use</strong>, <strong>risks</strong>, <strong>impacts</strong>, and <strong>mitigations</strong>,</li>
-<li>records <strong>governance outcomes</strong> (e.g. approved, rejected, pilot-only).</li>
+<li>describes <strong>intended use</strong>, <strong>brand and customer impacts</strong>, <strong>risks</strong>, and <strong>mitigations</strong>,</li>
+<li>records <strong>governance outcomes</strong> (e.g. approved, rejected, pilot-only),</li>
+<li>can reference or sit alongside <strong>enterprise AI / privacy / model risk assessments</strong> maintained elsewhere.</li>
 </ul>
-<p>It is designed to align with AI impact assessment flows such as <strong>ISO/IEC 42005</strong>, while remaining light enough to be used operationally inside a Brand Brain.</p>
+<p>It is designed to align structurally with AI impact assessment flows such as <strong>ISO/IEC 42005</strong>, while remaining light enough to be used operationally inside a Brand Oracle, with a focus on <strong>how AI touches the brand</strong> rather than the entirety of enterprise AI governance.</p>
 <hr />
 <h2 id="intended-usage">Intended usage</h2>
-<p>Use <code>brando:ImpactAssessment</code> whenever you need to <strong>formally record how an AI use case or configuration has been evaluated</strong> from a brand, ethical, regulatory, or customer-trust perspective.</p>
+<p>Use <code>brando:ImpactAssessment</code> whenever you need to <strong>formally record how an AI use case or configuration has been evaluated from a brand, customer, communications, and regulatory-signal perspective.</strong></p>
 <p>Common patterns:</p>
 <ul>
-<li><strong>Pre-deployment assessment</strong></li>
-<li>New assistant, tool, or feature using generative AI.</li>
-<li>New prompt flows or agents that can act on behalf of the brand.</li>
+<li><strong>Pre-deployment brand impact assessment</strong></li>
+<li>New assistant, tool, or feature using generative AI in a branded surface.</li>
+<li>New prompt flows or agents that can speak or act on behalf of the brand.</li>
 <li><strong>Material change assessment</strong></li>
-<li>Model upgrade, new data source, new high-risk channel (e.g. wealth, healthcare, youth).</li>
+<li>Model upgrade, new data source, new high-risk channel (e.g. wealth, healthcare, youth, public social).</li>
 <li><strong>Periodic / portfolio review</strong></li>
-<li>Quarterly re-assessment of high-impact use cases.</li>
-<li>The Brand Brain’s “AI inventory” view: each use case has an attached impact assessment.</li>
+<li>Quarterly re-assessment of high-impact, high-visibility use cases.</li>
+<li>The Brand Brain’s “AI inventory” view: each live use case has an attached brand impact assessment.</li>
+</ul>
+<p>This class is <strong>not</strong> intended to replace:</p>
+<ul>
+<li>enterprise AI ethics / responsible AI processes,</li>
+<li>privacy / data protection impact assessments,</li>
+<li>model risk governance or security assessments.</li>
+</ul>
+<p>Instead, it <strong>links to and references</strong> those where relevant (e.g. via <code>brando:linkedPolicy</code>, <code>brando:externalSystemId</code>, or tags), while providing a <strong>brand-governance front door</strong>:</p>
+<ul>
+<li>Is this use case on-brand?</li>
+<li>What could it do to trust, tone, and customer outcomes?</li>
+<li>Under what conditions is it allowed to run?</li>
 </ul>
 <p>In a typical flow:</p>
 <ol>
@@ -2110,9 +2123,9 @@
 <li>They create a <code>brando:ImpactAssessment</code> instance linked to those nodes.</li>
 <li>The assessment captures:</li>
 <li>purpose, user groups, channels, jurisdictions;</li>
-<li>potential harms and brand risks;</li>
+<li>potential <strong>brand &amp; customer harms</strong> and <strong>regulatory exposure as it shows up in comms</strong>;</li>
 <li>mitigations (policies, controls, guard rails) and residual risk.</li>
-<li>A governance body (e.g. brand, legal, risk) records a <strong>decision</strong> (approve, reject, pilot) and a <strong>rationale</strong>.</li>
+<li>A governance body (e.g. Brand, Legal, Risk, Compliance) records a <strong>decision</strong> (approve, reject, pilot-only) and a <strong>rationale</strong>.</li>
 <li>Runtimes and dashboards query <code>brando:ImpactAssessment</code> to determine:</li>
 <li>whether a given use case is <strong>approved</strong>,</li>
 <li>under what <strong>conditions</strong>, and</li>
@@ -2142,9 +2155,9 @@
 <span class="err">Impac</span><span class="kc">t</span><span class="w"> </span><span class="err">assessme</span><span class="kc">nts</span><span class="w"> </span><span class="err">will</span><span class="w"> </span><span class="err">o</span><span class="kc">ften</span><span class="w"> </span><span class="err">also</span><span class="w"> </span><span class="err">be</span><span class="w"> </span><span class="err">li</span><span class="kc">n</span><span class="err">ked</span><span class="w"> </span><span class="err">**via</span><span class="w"> </span><span class="err">gover</span><span class="kc">nan</span><span class="err">ce</span><span class="w"> </span><span class="err">s</span><span class="kc">tru</span><span class="err">c</span><span class="kc">tures</span><span class="err">**</span><span class="p">,</span><span class="w"> </span><span class="kc">f</span><span class="err">or</span><span class="w"> </span><span class="err">example</span><span class="p">:</span>
 
 <span class="err">*</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">li</span><span class="kc">n</span><span class="err">kedPolicy`</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Policy`</span>
-<span class="err">*</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">gover</span><span class="kc">nan</span><span class="err">ceDecisio</span><span class="kc">n</span><span class="err">`</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="err">(</span><span class="kc">future</span><span class="err">)</span><span class="w"> </span><span class="err">gover</span><span class="kc">nan</span><span class="err">ce</span><span class="w"> </span><span class="err">decisio</span><span class="kc">n</span><span class="w"> </span><span class="kc">n</span><span class="err">ode</span>
+<span class="err">*</span><span class="w"> </span><span class="kc">future</span><span class="w"> </span><span class="err">gover</span><span class="kc">nan</span><span class="err">ce</span><span class="w"> </span><span class="kc">t</span><span class="err">ypes</span><span class="w"> </span><span class="err">such</span><span class="w"> </span><span class="err">as</span><span class="w"> </span><span class="err">a</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Gover</span><span class="kc">nan</span><span class="err">ceModel`</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="err">gover</span><span class="kc">nan</span><span class="err">ce</span><span class="mi">-</span><span class="err">decisio</span><span class="kc">n</span><span class="w"> </span><span class="kc">n</span><span class="err">ode</span>
 
-<span class="err">These</span><span class="w"> </span><span class="err">proper</span><span class="kc">t</span><span class="err">ies</span><span class="w"> </span><span class="err">have</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Impac</span><span class="kc">t</span><span class="err">Assessme</span><span class="kc">nt</span><span class="err">`</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="w"> </span><span class="kc">t</span><span class="err">heir</span><span class="w"> </span><span class="err">domai</span><span class="kc">n</span><span class="w"> </span><span class="err">a</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">allow</span><span class="w"> </span><span class="err">you</span><span class="w"> </span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">joi</span><span class="kc">n</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">assessme</span><span class="kc">nt</span><span class="w"> </span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">wider</span><span class="w"> </span><span class="err">Bra</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">Brai</span><span class="kc">n</span><span class="w"> </span><span class="err">gover</span><span class="kc">nan</span><span class="err">ce</span><span class="w"> </span><span class="err">graph.</span>
+<span class="err">These</span><span class="w"> </span><span class="err">proper</span><span class="kc">t</span><span class="err">ies</span><span class="w"> </span><span class="err">have</span><span class="w"> </span><span class="err">`bra</span><span class="kc">n</span><span class="err">do</span><span class="p">:</span><span class="err">Impac</span><span class="kc">t</span><span class="err">Assessme</span><span class="kc">nt</span><span class="err">`</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="w"> </span><span class="kc">t</span><span class="err">heir</span><span class="w"> </span><span class="err">domai</span><span class="kc">n</span><span class="w"> </span><span class="err">a</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">allow</span><span class="w"> </span><span class="err">you</span><span class="w"> </span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">joi</span><span class="kc">n</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">assessme</span><span class="kc">nt</span><span class="w"> </span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">wider</span><span class="w"> </span><span class="err">**Bra</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">Brai</span><span class="kc">n</span><span class="w"> </span><span class="err">gover</span><span class="kc">nan</span><span class="err">ce</span><span class="w"> </span><span class="err">graph**</span><span class="w"> </span><span class="err">a</span><span class="kc">n</span><span class="err">d</span><span class="p">,</span><span class="w"> </span><span class="err">via</span><span class="w"> </span><span class="err">ex</span><span class="kc">ternal</span><span class="w"> </span><span class="err">IDs</span><span class="p">,</span><span class="w"> </span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">**e</span><span class="kc">nter</span><span class="err">prise</span><span class="w"> </span><span class="err">AI</span><span class="w"> </span><span class="err">gover</span><span class="kc">nan</span><span class="err">ce</span><span class="w"> </span><span class="err">regis</span><span class="kc">ters</span><span class="err">**.</span>
 
 <span class="mi">---</span>
 
@@ -2171,17 +2184,27 @@
 
 <span class="err">*</span><span class="w"> </span><span class="err">`assessesBra</span><span class="kc">n</span><span class="err">d`</span><span class="p">,</span><span class="w"> </span><span class="err">`assessesCo</span><span class="kc">nte</span><span class="err">x</span><span class="kc">t</span><span class="err">`</span><span class="p">,</span><span class="w"> </span><span class="err">a</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">`assessesModel`</span><span class="w"> </span><span class="err">are</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">**primary</span><span class="w"> </span><span class="err">a</span><span class="kc">n</span><span class="err">chors**</span><span class="w"> </span><span class="err">used</span><span class="w"> </span><span class="kc">f</span><span class="err">or</span><span class="w"> </span><span class="err">queries</span><span class="w"> </span><span class="err">like</span><span class="p">:</span>
 
-<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">“show</span><span class="w"> </span><span class="err">all</span><span class="w"> </span><span class="err">approved</span><span class="w"> </span><span class="err">use</span><span class="w"> </span><span class="err">cases</span><span class="w"> </span><span class="kc">f</span><span class="err">or</span><span class="w"> </span><span class="err">Bra</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">X</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="w"> </span><span class="err">Regio</span><span class="kc">n</span><span class="w"> </span><span class="err">Y”</span>
+<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">“show</span><span class="w"> </span><span class="err">all</span><span class="w"> </span><span class="err">approved</span><span class="w"> </span><span class="err">AI</span><span class="w"> </span><span class="err">use</span><span class="w"> </span><span class="err">cases</span><span class="w"> </span><span class="kc">f</span><span class="err">or</span><span class="w"> </span><span class="err">Bra</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">X</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="w"> </span><span class="err">Regio</span><span class="kc">n</span><span class="w"> </span><span class="err">Y”</span>
 <span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">“lis</span><span class="kc">t</span><span class="w"> </span><span class="err">impac</span><span class="kc">t</span><span class="w"> </span><span class="err">assessme</span><span class="kc">nts</span><span class="w"> </span><span class="kc">f</span><span class="err">or</span><span class="w"> </span><span class="kc">t</span><span class="err">his</span><span class="w"> </span><span class="err">model.”</span>
+
 <span class="err">*</span><span class="w"> </span><span class="err">`assessme</span><span class="kc">nt</span><span class="err">Scope`</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">delibera</span><span class="kc">tel</span><span class="err">y</span><span class="w"> </span><span class="kc">fle</span><span class="err">xible.</span><span class="w"> </span><span class="err">Commo</span><span class="kc">n</span><span class="w"> </span><span class="err">pa</span><span class="kc">tterns</span><span class="p">:</span>
 
-<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">simple</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">:</span><span class="w"> </span><span class="err">`</span><span class="s2">&quot;Retail wealth advisory chatbot for UK and EU&quot;</span><span class="err">`</span>
-<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">JSON</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">:</span><span class="w"> </span><span class="err">`</span><span class="p">{</span><span class="nt">&quot;channels&quot;</span><span class="p">:[</span><span class="s2">&quot;mobile app&quot;</span><span class="p">,</span><span class="s2">&quot;web&quot;</span><span class="p">],</span><span class="nt">&quot;jurisdictions&quot;</span><span class="p">:[</span><span class="s2">&quot;UK&quot;</span><span class="p">,</span><span class="s2">&quot;DE&quot;</span><span class="p">],</span><span class="nt">&quot;audiences&quot;</span><span class="p">:[</span><span class="s2">&quot;retail-high-net-worth&quot;</span><span class="p">]}</span><span class="err">`.</span>
+<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">simple</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">:</span><span class="w"> </span><span class="err">`</span><span class="s2">&quot;Retail wealth advisory chatbot for UK and EU&quot;</span><span class="err">`</span><span class="p">,</span><span class="w"> </span><span class="err">or</span>
+<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">JSON</span><span class="w"> </span><span class="err">s</span><span class="kc">tr</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="p">:</span>
+
+<span class="w">    </span><span class="err">```jso</span><span class="kc">n</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;channels&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;mobile app&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;web&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;jurisdictions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;UK&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DE&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;audiences&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;retail-high-net-worth&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="err">```</span>
+
 <span class="err">*</span><span class="w"> </span><span class="err">`assessme</span><span class="kc">nt</span><span class="err">UseCaseId`</span><span class="w"> </span><span class="err">is</span><span class="w"> </span><span class="err">use</span><span class="kc">ful</span><span class="w"> </span><span class="kc">f</span><span class="err">or</span><span class="w"> </span><span class="err">co</span><span class="kc">nne</span><span class="err">c</span><span class="kc">t</span><span class="err">i</span><span class="kc">n</span><span class="err">g</span><span class="w"> </span><span class="kc">t</span><span class="err">he</span><span class="w"> </span><span class="err">graph</span><span class="w"> </span><span class="kc">t</span><span class="err">o</span><span class="p">:</span>
 
-<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">i</span><span class="kc">nternal</span><span class="w"> </span><span class="err">AI</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="err">ve</span><span class="kc">nt</span><span class="err">ory</span><span class="w"> </span><span class="err">spreadshee</span><span class="kc">ts</span><span class="p">,</span>
+<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">i</span><span class="kc">nternal</span><span class="w"> </span><span class="err">AI</span><span class="w"> </span><span class="err">i</span><span class="kc">n</span><span class="err">ve</span><span class="kc">nt</span><span class="err">ories</span><span class="w"> </span><span class="err">/</span><span class="w"> </span><span class="err">regis</span><span class="kc">ters</span><span class="p">,</span>
 <span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">risk</span><span class="w"> </span><span class="err">regis</span><span class="kc">ters</span><span class="p">,</span>
-<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">JPMC’s</span><span class="w"> </span><span class="err">i</span><span class="kc">nternal</span><span class="w"> </span><span class="err">LLM</span><span class="w"> </span><span class="err">Sui</span><span class="kc">te</span><span class="w"> </span><span class="err">/</span><span class="w"> </span><span class="err">AI</span><span class="w"> </span><span class="err">regis</span><span class="kc">tr</span><span class="err">y.</span>
+<span class="w">  </span><span class="err">*</span><span class="w"> </span><span class="err">i</span><span class="kc">nternal</span><span class="w"> </span><span class="err">LLM</span><span class="w"> </span><span class="err">Sui</span><span class="kc">te</span><span class="w"> </span><span class="err">regis</span><span class="kc">tr</span><span class="err">ies</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="err">AI</span><span class="w"> </span><span class="err">ca</span><span class="kc">tal</span><span class="err">ogs.</span>
 
 <span class="err">Example</span><span class="p">:</span>
 
@@ -2212,7 +2235,7 @@
 <td><code>brando:impactSummary</code></td>
 <td><code>xsd:string</code></td>
 <td><code>owl:DatatypeProperty</code></td>
-<td>Short human-readable summary of the overall brand, customer, and regulatory impact.</td>
+<td>Short human-readable summary of the overall brand, customer, and regulatory-signal impact.</td>
 </tr>
 <tr>
 <td><code>brando:impactAreas</code></td>
@@ -2230,7 +2253,7 @@
 <td><code>brando:riskRating</code></td>
 <td><code>xsd:string</code></td>
 <td><code>owl:DatatypeProperty</code></td>
-<td>Overall risk/impact rating for the use case (e.g. “Low”, “Medium”, “High”, “VeryHigh”).</td>
+<td>Overall brand/impact rating for the use case (e.g. “Low”, “Medium”, “High”, “VeryHigh”).</td>
 </tr>
 <tr>
 <td><code>brando:residualRiskRating</code></td>
@@ -2267,7 +2290,7 @@
 <p><code>riskRating</code> and <code>residualRiskRating</code> can be aligned to:</p>
 </li>
 <li>
-<p>internal risk scales (e.g. <code>L</code>, <code>M</code>, <code>H</code>), or</p>
+<p>internal brand/AI risk scales (e.g. <code>L</code>, <code>M</code>, <code>H</code>), or</p>
 </li>
 <li>a 1–5 style scale if harmonised with a wider risk vocabulary.</li>
 </ul>
@@ -2346,7 +2369,7 @@
 </table>
 <p><strong>Usage notes (non-normative):</strong></p>
 <ul>
-<li><code>linkedPolicy</code> is the glue between <strong>impact assessments</strong> and <strong>machine-readable policies</strong> (<code>brando:Policy</code>) used at runtime.</li>
+<li><code>linkedPolicy</code> is the glue between <strong>impact assessments</strong> and <strong>machine-readable policies</strong> (<code>brando:Policy</code>) that Brand Brain runtimes actually enforce.</li>
 <li><code>requiredMitigation</code> is often easiest as a list of bullet-style strings; it can also hold JSON describing more structured actions.</li>
 <li>
 <p><code>decisionStatus</code> is free-form but benefits from a constrained vocabulary in practice, e.g.:</p>
@@ -2370,7 +2393,7 @@
 <span class="w">  </span><span class="p">],</span>
 <span class="w">  </span><span class="nt">&quot;brando:mitigationStatus&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;in-progress&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:decisionStatus&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;approved-with-conditions&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;brando:decisionRationale&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;High potential customer impact; approved subject to strict guard rails and human escalation in high-risk cases.&quot;</span>
+<span class="w">  </span><span class="nt">&quot;brando:decisionRationale&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;High potential customer impact; residual risk acceptable with strict guard rails and human escalation.&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
@@ -2407,13 +2430,13 @@
 <td><code>brando:assessmentMethod</code></td>
 <td><code>xsd:string</code></td>
 <td><code>owl:DatatypeProperty</code></td>
-<td>Short description of the method/framework used (e.g. “ISO/IEC 42005-style AI impact assessment”).</td>
+<td>Short description of the method/framework used (e.g. “ISO/IEC 42005-style brand impact lens on AI use case”).</td>
 </tr>
 <tr>
 <td><code>brando:externalSystemId</code></td>
 <td><code>xsd:string</code></td>
 <td><code>owl:DatatypeProperty</code></td>
-<td>Identifier for this assessment in external governance tools or AI registries.</td>
+<td>Identifier for this assessment in external governance tools or AI registries (enterprise AI/ML risk systems).</td>
 </tr>
 </tbody>
 </table>
@@ -2421,7 +2444,7 @@
 <ul>
 <li><code>assessmentMethod</code> is where you can make <strong>standards alignment explicit</strong>, e.g.:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;assessmentMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Aligned with ISO/IEC 42005 impact assessment structure for AI systems.&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;assessmentMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Aligned with ISO/IEC 42005 structure; scoped to brand, customer, and communications impact.&quot;</span>
 </code></pre></div>
 <ul>
 <li>
@@ -2430,7 +2453,17 @@
 <li>
 <p>dashboards can show which assessments are “stale”,</p>
 </li>
-<li>agents can automatically flag use cases due for re-assessment (e.g. after a model change).</li>
+<li>
+<p>agents can automatically flag use cases due for re-assessment (e.g. after a model or policy change).</p>
+</li>
+<li>
+<p><code>externalSystemId</code> is a natural bridge into:</p>
+</li>
+<li>
+<p>enterprise AI registers,</p>
+</li>
+<li>model risk systems,</li>
+<li>DPIA / PIA registers (where applicable).</li>
 </ul>
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -2438,7 +2471,7 @@
 <span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:ImpactAssessment&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:assessmentDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-03-15&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:nextReviewDue&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-09-15&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;brando:assessmentMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ISO/IEC 42005-aligned AI brand impact assessment template&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:assessmentMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ISO/IEC 42005-aligned AI brand impact assessment template layered on top of enterprise AI/ML risk review.&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:externalSystemId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AIREG-NSB-001&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -2489,7 +2522,7 @@
 </code></pre></div>
 <hr />
 <h2 id="example-brand-context-model-impact-assessment">Example: Brand + Context + Model + Impact Assessment</h2>
-<p>A combined example showing how <code>brando:ImpactAssessment</code> connects the <strong>Brand Brain</strong> governance objects:</p>
+<p>A combined example showing how <code>brando:ImpactAssessment</code> connects the <strong>Brand Brain</strong> governance objects and can coexist with enterprise AI governance:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org/&quot;</span><span class="p">,</span>
@@ -2536,7 +2569,7 @@
 <span class="w">      </span><span class="nt">&quot;brando:assessesModel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/models/wealth-assistant-v1&quot;</span><span class="w"> </span><span class="p">},</span>
 <span class="w">      </span><span class="nt">&quot;brando:assessmentUseCaseId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NSB-WEALTH-CHAT-001&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:assessmentPhase&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;design&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:impactSummary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;High-impact wealth advisory chatbot; approved with strict guard rails and escalation.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:impactSummary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;High-impact wealth advisory chatbot; approved with strict brand and conduct guard rails and human escalation.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:impactAreas&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="s2">&quot;brand-trust&quot;</span><span class="p">,</span>
 <span class="w">        </span><span class="s2">&quot;customer-outcomes&quot;</span><span class="p">,</span>
@@ -2558,10 +2591,11 @@
 <span class="w">        </span><span class="s2">&quot;Monitor conversation samples weekly for mis-selling risks.&quot;</span>
 <span class="w">      </span><span class="p">],</span>
 <span class="w">      </span><span class="nt">&quot;brando:decisionStatus&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;approved-with-conditions&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:decisionRationale&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Residual risk acceptable with additional guard rails and human oversight.&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:assessmentMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ISO/IEC 42005-aligned AI brand impact assessment&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:decisionRationale&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Residual brand and customer risk acceptable with guard rails and human-in-the-loop oversight.&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:assessmentMethod&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ISO/IEC 42005-aligned AI brand impact assessment layered on top of enterprise AI model risk review.&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:assessmentDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-03-15&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:nextReviewDue&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-09-15&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;brando:externalSystemId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AIREG-NSB-001&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;brando:retrievableInLLM&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -2569,16 +2603,27 @@
 </code></pre></div>
 <p><strong>Runtime pattern (non-normative):</strong></p>
 <ol>
-<li>Resolve current <code>brando:Brand</code>, <code>brando:Context</code>, and <code>brando:BrandModel</code>.</li>
-<li>Lookup associated <code>brando:ImpactAssessment</code> nodes.</li>
+<li>
+<p>Resolve current <code>brando:Brand</code>, <code>brando:Context</code>, and <code>brando:BrandModel</code>.</p>
+</li>
+<li>
+<p>Lookup associated <code>brando:ImpactAssessment</code> nodes.</p>
+</li>
 <li>
 <p>Filter to:</p>
 </li>
 <li>
 <p><code>decisionStatus</code> ∈ approved/approved-with-conditions</p>
 </li>
-<li><code>assessmentDate</code> and <code>nextReviewDue</code> still valid.</li>
-<li>Use <code>linkedPolicy</code> to pull the precise <code>brando:Policy</code> guard rails.</li>
+<li>
+<p><code>assessmentDate</code> and <code>nextReviewDue</code> still valid.</p>
+</li>
+<li>
+<p>Use <code>linkedPolicy</code> to pull the precise <code>brando:Policy</code> guard rails.</p>
+</li>
+<li>
+<p>Use <code>externalSystemId</code> / <code>assessmentMethod</code> to show how this use case maps into wider <strong>enterprise AI governance</strong>.</p>
+</li>
 <li>
 <p>Surface <code>impactSummary</code>, <code>impactAreas</code>, and <code>requiredMitigation</code> in:</p>
 </li>
