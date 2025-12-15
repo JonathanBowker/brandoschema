@@ -2162,17 +2162,23 @@
 <p>Use <code>brando:ImpactAssessment</code> whenever you need to <strong>formally record how an AI use case or configuration has been evaluated from a brand, customer, communications, and regulatory-signal perspective, including how success will be measured.</strong></p>
 <p>Common patterns:</p>
 <ul>
-<li><strong>Pre-deployment brand impact &amp; value assessment</strong><ul>
+<li>
+<p><strong>Pre-deployment brand impact &amp; value assessment</strong></p>
+<ul>
 <li>New assistant, tool, or feature using generative AI in a branded surface.</li>
 <li>New prompt flows or agents that can speak or act on behalf of the brand.</li>
-</ul>
+<li>
+<p><strong>Material change assessment</strong></p>
 </li>
-<li><strong>Material change assessment</strong><ul>
-<li>Model upgrade, new data source, new high-risk channel (e.g. wealth, healthcare, youth, public social).</li>
-</ul>
+<li>
+<p>Model upgrade, new data source, new high-risk channel (e.g. wealth, healthcare, youth, public social).</p>
 </li>
-<li><strong>Periodic / portfolio review</strong><ul>
-<li>Quarterly re-assessment of high-impact, high-visibility use cases.</li>
+<li>
+<p><strong>Periodic / portfolio review</strong></p>
+</li>
+<li>
+<p>Quarterly re-assessment of high-impact, high-visibility use cases.</p>
+</li>
 <li>The Brand Brain’s “AI inventory” view: each live use case has an attached brand impact &amp; value assessment.</li>
 </ul>
 </li>
@@ -2193,17 +2199,29 @@
 </ul>
 <p>In a typical flow:</p>
 <ol>
-<li>A team defines a <code>brando:Brand</code>, <code>brando:Context</code>, and relevant runtime artefacts:</li>
-<li><code>brando:BrandModel</code>, <code>brando:Prompt</code>, <code>brando:AutomationRule</code>.</li>
+<li>
+<p>A team defines a <code>brando:Brand</code>, <code>brando:Context</code>, and relevant runtime artefacts:</p>
+</li>
+<li>
+<p><code>brando:BrandModel</code>, <code>brando:Prompt</code>, <code>brando:AutomationRule</code>.</p>
+</li>
 <li>They create a <code>brando:ImpactAssessment</code> instance linked to those nodes.</li>
-<li>The assessment captures:</li>
-<li>purpose, user groups, channels, jurisdictions;</li>
+<li>
+<p>The assessment captures:</p>
+</li>
+<li>
+<p>purpose, user groups, channels, jurisdictions;</p>
+</li>
 <li>potential <strong>brand &amp; customer harms</strong> and <strong>regulatory exposure as it shows up in comms</strong>;</li>
 <li><strong>success criteria, metrics, and expected outcomes</strong>;</li>
 <li>mitigations (policies, controls, guard rails) and residual risk.</li>
 <li>A governance body (e.g. Brand, Legal, Risk, Compliance) records a <strong>decision</strong> (approve, reject, pilot-only) and a <strong>rationale</strong>.</li>
-<li>Runtimes and dashboards query <code>brando:ImpactAssessment</code> to determine:</li>
-<li>whether a given use case is <strong>approved</strong>,</li>
+<li>
+<p>Runtimes and dashboards query <code>brando:ImpactAssessment</code> to determine:</p>
+</li>
+<li>
+<p>whether a given use case is <strong>approved</strong>,</p>
+</li>
 <li>under what <strong>conditions</strong>,</li>
 <li>how it is <strong>performing against its success metrics</strong>, and</li>
 <li>when it must be <strong>re-reviewed</strong>.</li>
