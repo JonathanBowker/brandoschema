@@ -2029,6 +2029,9 @@ og_image: /assets/images/4x/brando@4x.webp</p>
 twitter_title: Brand Oracle (Brando) – Schema Vocabulary v1.3
 twitter_description: An open, Schema.org-compatible Brand Definition Vocabulary (BDV) that tokenises brand intelligence for AI systems and enforces governance via Machine-Actionable Policy Graphs in Brand Operating Systems.
 twitter_image: /assets/images/4x/brando@4x.webp</p>
+<p>load_brando_graphs:
+  - core
+  - personas</p>
 <h1 id="qwiki-structured-data-injected-into-by-template">QWIKI STRUCTURED DATA (injected into <head> by template)</h1>
 <p>qwiki_schema: |
 {
@@ -2037,11 +2040,7 @@ twitter_image: /assets/images/4x/brando@4x.webp</p>
     "brando": "<a href="https://brandoschema.com/">https://brandoschema.com/</a>"
   },
   "@graph": [</p>
-<pre><code>/* =========================
-   WEBSITE (Discovery Layer)
-   ========================= */
-
-{
+<pre><code>{
   "@type": "schema:WebSite",
   "@id": "https://brandoschema.com/#website",
   "name": "Brando – Brand-as-Code",
@@ -2057,10 +2056,6 @@ twitter_image: /assets/images/4x/brando@4x.webp</p>
     "query-input": "required name=search_term_string"
   }
 },
-
-/* =========================
-   ORGANIZATION (Authority)
-   ========================= */
 
 {
   "@type": "schema:Organization",
@@ -2081,10 +2076,6 @@ twitter_image: /assets/images/4x/brando@4x.webp</p>
   ]
 },
 
-/* =========================
-   BRAND (Public Identity)
-   ========================= */
-
 {
   "@type": "schema:Brand",
   "@id": "https://brandoschema.com/#brand",
@@ -2102,10 +2093,6 @@ twitter_image: /assets/images/4x/brando@4x.webp</p>
   },
   "slogan": "Representing Brand-as-Code"
 },
-
-/* =========================
-   PERSON (Expert Authority)
-   ========================= */
 
 {
   "@type": "schema:Person",
@@ -2128,59 +2115,11 @@ twitter_image: /assets/images/4x/brando@4x.webp</p>
   ]
 },
 
-/* =========================
-   BRANDO GOVERNANCE LAYER
-   ========================= */
-
-{
-  "@type": "brando:VerbalIdentity",
-  "@id": "https://brandoschema.com/brando/verbal-identity/core",
-  "brando:toneOfVoice": [
-    "Precise",
-    "Authoritative",
-    "Calm",
-    "Non-promotional",
-    "Technically rigorous"
-  ],
-  "brando:writingStyle": [
-    "Declarative",
-    "Structured",
-    "Evidence-led"
-  ],
-  "brando:mustNotDos": [
-    "Marketing hype",
-    "Unverifiable claims",
-    "Speculative assertions"
-  ]
-},
-
-{
-  "@type": "brando:SyntheticPersona",
-  "@id": "https://brandoschema.com/brando/personas/reference",
-  "brando:personaName": "Brando Reference Persona",
-  "brando:audienceSegment": [
-    "AI systems",
-    "Enterprise architects",
-    "Governance teams"
-  ],
-  "brando:usesVerbalIdentity": {
-    "@id": "https://brandoschema.com/brando/verbal-identity/core"
-  },
-  "brando:guardRails": [
-    "No legal advice",
-    "No vendor endorsement",
-    "No promotional bias"
-  ]
-},
-
 {
   "@type": "brando:QwikiEntry",
   "@id": "https://brandoschema.com/qwiki/brando#what-is-brando",
   "brando:question": "What is Brando?",
   "brando:answer": "Brando (Brand Oracle) is an AI-native Brand Definition Vocabulary that enables Brand-as-Code by structuring brand intelligence as governed, machine-actionable semantics.",
-  "brando:usesPersona": {
-    "@id": "https://brandoschema.com/brando/personas/reference"
-  },
   "brando:accuracy": "accurate",
   "brando:sentiment": "neutral"
 }
