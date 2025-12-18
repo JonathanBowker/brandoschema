@@ -109,6 +109,41 @@
 
     
 
+    
+    
+    
+    
+    <script>
+    (function () {
+      const graphMap = {
+        "core": "/data/brando/core.graph.jsonld",
+        "personas": "/data/brando/personas.graph.jsonld",
+        "qwiki": "/data/brando/qwiki.graph.jsonld",
+        "policies": "/data/brando/policies.graph.jsonld"
+      };
+
+      const graphsToLoad = ["core", "personas", "policies"];
+
+      graphsToLoad.forEach(function (key) {
+        const url = graphMap[key];
+        if (!url) return;
+
+        fetch(url)
+          .then(res => res.json())
+          .then(json => {
+            const script = document.createElement("script");
+            script.type = "application/ld+json";
+            script.text = JSON.stringify(json);
+            document.head.appendChild(script);
+          })
+          .catch(err => {
+            console.warn("Brando graph failed to load:", key, err);
+          });
+      });
+    })();
+    </script>
+    
+
   
 
   </head>
