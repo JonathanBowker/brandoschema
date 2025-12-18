@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let duration = 750;
     let tooltipLocked = false;  // Flag to keep track of whether the tooltip is locked (i.e., clicked)
 
-    // Load the JSON data
-    d3.json("data/brando-schema.json").then(function (data) {
+    // Load the JSON data (served from docs/assets/brando-schema/brando-schema.json)
+    d3.json("/assets/brando-schema/brando-schema.json").then(function (data) {
         const root = d3.hierarchy(data, d => d.children);
         root.x0 = treeHeight / 2;
         root.y0 = 0;
