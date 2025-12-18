@@ -1,129 +1,217 @@
 # robots.txt – AI Crawlers & Major Search Bots
-# Descriptions added for every User-agent group. Edit as needed.
+# Optimised for AI search, citation engines, and traditional indexing
+# Last updated: 2025-12
 
-# ——— OPENAI ———
-# Large-scale GPTBot crawler that gathers public text for ChatGPT & GPT-4o; block if you want to keep data out of their AI models.
+# =========================================================
+# OPENAI
+# =========================================================
+
+# Large-scale crawler used to gather public text for OpenAI models
 User-agent: GPTBot
 Allow: /
 
-# Retrieval-augmented OpenAI SearchBot that indexes pages for ChatGPT’s research and live references.
+# Retrieval-augmented crawler for ChatGPT Search & citations
 User-agent: OAI-SearchBot
 Allow: /
 
-# Legacy ChatGPT user fetcher that loads URLs on demand when a user shares links or ChatGPT needs additional data.
+# Legacy ChatGPT on-demand fetcher
 User-agent: ChatGPT-User
 Allow: /
 
-# Up-to-date ChatGPT user agent replacing version 1.0 for on-demand fetching and in-response lookups.
+# Current ChatGPT on-demand fetcher
 User-agent: ChatGPT-User/2.0
 Allow: /
 
-# ——— ANTHROPIC (Claude) ———
-# Primary Anthropic crawler that collects broad web data for Claude model development.
+
+# =========================================================
+# ANTHROPIC (Claude)
+# =========================================================
+
+# Primary Anthropic crawler for model training
 User-agent: anthropic-ai
 Allow: /
 
-# Real-time fetcher used by Claude to retrieve cited URLs during AI chat sessions.
+# Real-time citation and browsing fetcher
 User-agent: ClaudeBot
 Allow: /
 
-# Targeted crawler for recent web content, feeding the Claude browser agent with updated site data.
+# Recent-content crawler for Claude web tools
 User-agent: claude-web
 Allow: /
 
-# ——— PERPLEXITY ———
-# Primary PerplexityBot crawler that indexes sites to build the Perplexity AI search engine.
+
+# =========================================================
+# PERPLEXITY
+# =========================================================
+
+# Primary Perplexity crawler
 User-agent: PerplexityBot
 Allow: /
 
-# Loads a page only when a user clicks a Perplexity citation; treated as human-like traffic, bypasses robots.txt.
+# Lowercase / variant identifiers
+User-agent: perplexitybot
+Allow: /
+
+# Wildcard coverage for undocumented Perplexity agents
+User-agent: Perplexity*
+Allow: /
+
+# On-demand fetcher used when users click citations
 User-agent: Perplexity-User
 Allow: /
 
-# ——— GOOGLE (Gemini) ———
-# Used for Gemini and AI-related indexing beyond standard search; block to exclude your content from Google’s AI responses.
+
+# =========================================================
+# GOOGLE (Search & Gemini)
+# =========================================================
+
+# Google AI & Gemini-specific crawler
 User-agent: Google-Extended
 Allow: /
 
-# ——— MICROSOFT (Bing / Copilot) ———
-# Default BingBot crawling service that powers Bing Search and Bing Chat (Copilot) answers.
+
+# =========================================================
+# MICROSOFT (Bing / Copilot)
+# =========================================================
+
+# Primary Bing crawler (critical for AI search engines)
 User-agent: BingBot
 Allow: /
 
-# ——— AMAZON ———
-# Amazonbot that crawls sites to support Alexa’s queries, Fire OS AI, and product recommendations.
+# Lowercase variant
+User-agent: bingbot
+Allow: /
+
+# Preview / rendering crawler
+User-agent: BingPreview
+Allow: /
+
+
+# =========================================================
+# AMAZON
+# =========================================================
+
+# Alexa, Fire OS, and Amazon AI services
 User-agent: Amazonbot
 Allow: /
 
-# ——— APPLE ———
-# Primary crawler for Siri and Spotlight, indexing webpages to improve Apple’s search features.
+
+# =========================================================
+# APPLE
+# =========================================================
+
+# Siri & Spotlight crawler
 User-agent: Applebot
 Allow: /
 
-# Opt-in extended crawler collecting data for Apple’s future AI models (blocked by default unless allowed).
+# Extended Apple AI crawler (opt-in)
 User-agent: Applebot-Extended
 Allow: /
 
-# ——— META (Facebook/Instagram/Threads) ———
-# Official Meta crawler that generates preview snippets and link metadata for Facebook and Instagram.
+
+# =========================================================
+# META (Facebook / Instagram / Threads)
+# =========================================================
+
+# Open Graph & link preview crawler
 User-agent: FacebookBot
 Allow: /
 
-# Fallback fetcher used if FacebookBot fails, ensuring external content can still render on Meta platforms.
+# Fallback Meta fetcher
 User-agent: meta-externalagent
 Allow: /
 
-# ——— LINKEDIN ———
-# LinkedInBot that extracts Open Graph data for previews in posts, messages, and articles.
+
+# =========================================================
+# LINKEDIN
+# =========================================================
+
+# LinkedIn link previews and articles
 User-agent: LinkedInBot
 Allow: /
 
-# ——— BYTEDANCE (TikTok) ———
-# Feeds TikTok search, CapCut AI captions, and Toutiao headlines by crawling global webpages.
+
+# =========================================================
+# BYTEDANCE (TikTok)
+# =========================================================
+
+# TikTok search, captions, and AI tools
 User-agent: Bytespider
 Allow: /
 
-# ——— DUCKDUCKGO ———
-# Scrapes fact-based snippets for DuckAssist, DuckDuckGo’s private AI answer feature.
+
+# =========================================================
+# DUCKDUCKGO
+# =========================================================
+
+# DuckAssist AI answer engine
 User-agent: DuckAssistBot
 Allow: /
 
-# ——— COHERE ———
-# Collects textual data for Cohere’s language models, helping refine large-scale text generation.
+
+# =========================================================
+# COHERE
+# =========================================================
+
+# Cohere model training crawler
 User-agent: cohere-ai
 Allow: /
 
-# ——— AI2, COMMON CRAWL, OTHER RESEARCH BOTS ———
-# Academic crawler powering Semantic Scholar and other Allen Institute AI research tools.
+
+# =========================================================
+# AI2, COMMON CRAWL, RESEARCH & DATA PROVIDERS
+# =========================================================
+
+# Allen Institute for AI (Semantic Scholar, etc.)
 User-agent: AI2Bot
 Allow: /
 
-# Indexes public websites for Common Crawl’s open dataset, used by many open-source AI projects.
+# Common Crawl open web dataset
 User-agent: CCBot
 Allow: /
 
-# Transforms webpages into structured data like product listings, articles, or FAQs for ML pipelines.
+# Structured data extraction for ML pipelines
 User-agent: Diffbot
 Allow: /
 
-# Focuses on indexing forums, comments, and discussion boards for deeper conversation insights.
+# Forum and discussion indexing
 User-agent: omgili
 Allow: /
 
-# ——— EMERGING SEARCH & AI STARTUPS ———
-# Decentralized search startup crawler with lower traffic, aiming to build a distributed indexing network.
+
+# =========================================================
+# EMERGING SEARCH & AI STARTUPS
+# =========================================================
+
+# Decentralized search crawler
 User-agent: TimpiBot
 Allow: /
 
-# Crawler behind You.com’s AI search and browser assistant, indexing content for real-time answers.
+# You.com AI search and browser assistant
 User-agent: YouBot
 Allow: /
 
-# ——— MISTRAL ———
-# Mistral’s real-time citation fetcher for “Le Chat” assistant; respects robots.txt directives.
+
+# =========================================================
+# MISTRAL
+# =========================================================
+
+# Mistral “Le Chat” citation fetcher
 User-agent: MistralAI-User
 Allow: /
 
-# (End of file)
+
+# =========================================================
+# DEFAULT FALLBACK (Future-proofing)
+# =========================================================
+
+# Allow all other well-behaved crawlers
+User-agent: *
+Allow: /
+
+
+# =========================================================
+# SITEMAP
+# =========================================================
 
 Sitemap: https://brandoschema.com/sitemap.xml
