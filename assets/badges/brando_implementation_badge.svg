@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="28" role="img" aria-label="Brando Reference Implementation">
+  <title>Brando Reference Implementation</title>
+  <linearGradient id="b" x2="0" y2="100%">
+    <stop offset="0" stop-color="#eee" stop-opacity=".1"></stop>
+    <stop offset="1" stop-opacity=".1"></stop>
+  </linearGradient>
+
+  <!-- Left (label) -->
+  <rect rx="4" width="150" height="28" fill="#555"></rect>
+  <rect rx="4" x="150" width="170" height="28" fill="#4B2E83"></rect>
+  <rect rx="4" width="320" height="28" fill="url(#b)"></rect>
+
+  <g fill="#fff" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="600">
+    <text x="75" y="19">Brando®</text>
+    <text x="235" y="19">Reference Implementation</text>
+  </g>
+</svg>
