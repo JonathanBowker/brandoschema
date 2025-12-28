@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair",
+      "@type": "schema:Brand",
+      "schema:name": "Icelandair",
+      "schema:description": "Icelandair is the national airline of Iceland, operating passenger and cargo services across the North Atlantic region. The brand represents a balance of pioneering spirit, responsibility, simplicity, and warm hospitality, bringing the spirit of Iceland to the world.",
+      "schema:url": "https://www.icelandair.com/",
+      "schema:logo": {
+        "@type": "schema:ImageObject",
+        "schema:url": "https://brandoschema.com/assets/brands/icelandair/logo-primary.png"
+      },
+      "schema:slogan": "Bringing the spirit of Iceland to the world",
+      "brando:brandDomain": [
+        "Aviation",
+        "Passenger air travel",
+        "Cargo logistics"
+      ],
+      "brando:brandValues": [
+        "Pioneering",
+        "Responsible",
+        "Simple",
+        "Warm",
+        "Trustworthy"
+      ],
+      "brando:governedBy": {
+        "@id": "https://brandoschema.com/icelandair/organization"
+      }
+    },
+    {
+      "@id": "https://brandoschema.com/icelandair/organization",
+      "@type": "schema:Organization",
+      "schema:name": "Icelandair Group hf.",
+      "schema:legalName": "Icelandair Group hf.",
+      "schema:url": "https://www.icelandairgroup.com/",
+      "schema:description": "Icelandair Group hf. is the parent company and governing organization responsible for the Icelandair brand, its operations, subsidiaries, and brand governance.",
+      "schema:logo": {
+        "@type": "schema:ImageObject",
+        "schema:url": "https://brandoschema.com/assets/brands/icelandair/logo-group.png"
+      },
+      "schema:sameAs": [
+        "https://www.linkedin.com/company/icelandair/",
+        "https://www.instagram.com/icelandair/",
+        "https://www.facebook.com/icelandair"
+      ]
+    }
+  ]
+}

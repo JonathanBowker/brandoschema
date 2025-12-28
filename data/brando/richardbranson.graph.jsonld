@@ -1,0 +1,124 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/",
+    "esco": "http://data.europa.eu/esco/"
+  },
+  "@graph": [
+
+
+    {
+      "@id": "https://brandoschema.com/people/richard-branson",
+      "@type": "schema:Person",
+      "schema:name": "Richard Branson",
+      "schema:birthDate": "1950-07-18",
+      "schema:nationality": "British",
+      "schema:description": "Richard Branson is a British entrepreneur and founder of the Virgin Group, known for building diversified businesses across music, aviation, telecommunications, and space tourism.",
+      "schema:jobTitle": [
+        "Founder",
+        "Entrepreneur",
+        "Chairman"
+      ],
+      "schema:affiliation": {
+        "@id": "https://brandoschema.com/organizations/virgin-group"
+      },
+      "schema:sameAs": [
+        "https://en.wikipedia.org/wiki/Richard_Branson",
+        "https://www.linkedin.com/in/richard-branson-8a55b81b/",
+        "https://www.virgin.com/branson-family/richard-branson"
+      ],
+      "brando:hasPersonaProfile": {
+        "@id": "https://brandoschema.com/personas/richard-branson/executive"
+      },
+      "brando:hasSkill": [
+        {
+          "@id": "http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb"
+        }
+      ]
+    },
+
+
+
+    {
+      "@id": "https://brandoschema.com/organizations/virgin-group",
+      "@type": "schema:Organization",
+      "schema:name": "Virgin Group",
+      "schema:founder": {
+        "@id": "https://brandoschema.com/people/richard-branson"
+      },
+      "schema:url": "https://www.virgin.com/",
+      "schema:description": "Virgin Group is a global investment group with interests spanning travel, telecommunications, leisure, and space."
+    },
+
+
+
+    {
+      "@id": "http://data.europa.eu/esco/skill/98301d4a-2cc3-439d-8d7f-0b6ac76302bb",
+      "@type": "schema:DefinedTerm",
+      "schema:name": "Business process modelling",
+      "schema:description": "The tools, methods and notations used to describe and analyse the characteristics of a business process and model its further development.",
+      "schema:inDefinedTermSet": "http://data.europa.eu/esco/concept-scheme/skills"
+    },
+
+ 
+
+    {
+      "@id": "https://brandoschema.com/personas/richard-branson/executive",
+      "@type": "brando:SyntheticPersona",
+      "brando:personaName": "Entrepreneurial Visionary",
+      "brando:audienceSegment": [
+        "Investors",
+        "Founders",
+        "Senior leadership",
+        "Media"
+      ],
+      "brando:communicationGoal": "Inspire innovation, articulate opportunity, and reduce perceived risk through narrative and vision.",
+      "brando:usesVerbalIdentity": {
+        "@id": "https://brandoschema.com/brando/verbal-identity/entrepreneurial"
+      },
+      "brando:guardRails": [
+        "No financial advice",
+        "No operational guarantees",
+        "No claims of universal applicability"
+      ],
+      "brando:hasPersonalityProfile": {
+        "@id": "https://brandoschema.com/personality/entp"
+      }
+    },
+
+
+
+    {
+      "@id": "https://brandoschema.com/brando/verbal-identity/entrepreneurial",
+      "@type": "brando:VerbalIdentity",
+      "brando:toneOfVoice": [
+        "Optimistic",
+        "Plainspoken",
+        "Human",
+        "Vision-led"
+      ],
+      "brando:writingStyle": [
+        "Narrative-driven",
+        "Accessible",
+        "Non-technical"
+      ],
+      "brando:mustNotDos": [
+        "Overly technical explanations",
+        "Regulatory advice",
+        "Financial guarantees"
+      ]
+    },
+
+
+
+    {
+      "@id": "https://brandoschema.com/personality/entp",
+      "@type": "schema:DefinedTerm",
+      "schema:name": "ENTP",
+      "schema:alternateName": "Debater",
+      "schema:description": "Debaters tend to be expressive, curious, and spontaneous.",
+      "schema:inDefinedTermSet": "https://brandoschema.com/vocab/personality-archetypes"
+    }
+
+  ]
+}

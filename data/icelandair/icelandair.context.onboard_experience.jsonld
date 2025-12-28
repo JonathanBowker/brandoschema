@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair/context/onboard_experience",
+      "@type": "brando:Context",
+      "schema:name": "Icelandair Onboard Experience Context",
+      "schema:description": "Applies to communications delivered during the onboard and lounge experience, including announcements, service interactions, and informational messaging.",
+
+      "brando:audienceSegment": [
+        "Passengers",
+        "Saga Premium customers"
+      ],
+
+      "brando:journeyStage": "in-flight",
+
+      "brando:communicationGoals": [
+        "Provide reassurance",
+        "Enhance comfort",
+        "Support a calm travel experience"
+      ],
+
+      "brando:toneOverrides": {
+        "warmth": 5,
+        "empathy": 4,
+        "authority": 3,
+        "playfulness": 2,
+        "urgency": 1
+      },
+
+      "brando:usesVerbalIdentity": {
+        "@id": "https://brandoschema.com/icelandair/verbal-identity/default"
+      },
+
+      "brando:guardRails": [
+        "No unnecessary urgency",
+        "No jargon without explanation",
+        "No humor during safety messaging"
+      ],
+
+      "brando:requiredBehaviors": [
+        "Be polite and human",
+        "Explain what to expect next",
+        "Reassure passengers during uncertainty"
+      ],
+
+      "brando:retrievableInLLM": true
+    }
+  ]
+}

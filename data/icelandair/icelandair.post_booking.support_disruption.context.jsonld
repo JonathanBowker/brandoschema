@@ -1,0 +1,138 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair/contexts/post_booking/support_disruption",
+      "@type": "brando:Context",
+      "schema:name": "Icelandair Post-Booking Support & Disruption Context",
+      "schema:description": "Defines communication rules, tone constraints, and policy enforcement for customer support and disruption scenarios after booking, including delays, cancellations, operational changes, and service issues.",
+
+      "brando:appliesToBrand": {
+        "@id": "https://brandoschema.com/icelandair"
+      },
+
+      "brando:journeyStage": "post_booking",
+      "brando:scenarioType": [
+        "service_disruption",
+        "operational_change",
+        "customer_support",
+        "irregular_operations"
+      ],
+
+      "brando:audienceState": [
+        "anxious",
+        "uncertain",
+        "time-sensitive",
+        "emotionally heightened"
+      ],
+
+      "brando:audienceSegment": [
+        "ticketed passengers",
+        "connecting passengers",
+        "families",
+        "international travelers"
+      ],
+
+      "brando:communicationIntent": [
+        "inform",
+        "reassure",
+        "guide",
+        "resolve"
+      ],
+
+      "brando:usesVerbalIdentity": {
+        "@id": "https://brandoschema.com/icelandair/verbal-identity/default"
+      },
+
+      "brando:enforcedToneProfile": {
+        "empathy": 5,
+        "clarity": 5,
+        "trustworthiness": 5,
+        "authority": 4,
+        "warmth": 4,
+        "playfulness": 0,
+        "urgency": 3,
+        "formality": 3
+      },
+
+      "brando:tonePrecedence": [
+        "empathy",
+        "clarity",
+        "trustworthiness",
+        "reassurance",
+        "authority"
+      ],
+
+      "brando:contextualGuardRails": [
+        "Acknowledge inconvenience or distress explicitly",
+        "Avoid defensive or justificatory language",
+        "Do not minimize customer impact",
+        "Do not over-promise outcomes",
+        "Provide clear next steps wherever possible",
+        "Offer solutions or alternatives when available"
+      ],
+
+      "brando:humorPolicy": {
+        "allowed": false,
+        "reason": "Humor may undermine trust during disruption or distress scenarios"
+      },
+
+      "brando:selfReferenceRule": {
+        "preferredForm": "we",
+        "avoidForms": [
+          "Icelandair"
+        ]
+      },
+
+      "brando:linkedPolicies": [
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/core"
+        },
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/non_promotional"
+        },
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/empathy_accountability"
+        },
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/runtime"
+        }
+      ],
+
+      "brando:responseExpectations": {
+        "structure": [
+          "Acknowledge situation",
+          "Explain what happened (factually)",
+          "Explain what we are doing",
+          "Explain what the customer can do next",
+          "Offer reassurance or support channel"
+        ],
+        "languageRequirements": [
+          "Plain English",
+          "Short paragraphs",
+          "Explicit next steps",
+          "Avoid jargon unless operationally required"
+        ]
+      },
+
+      "brando:conflictResolution": {
+        "ifPolicyConflict": "most_restrictive_applies",
+        "fallbackStrategy": [
+          "Reduce tone complexity",
+          "Prioritize clarity and empathy",
+          "Defer to human support escalation"
+        ]
+      },
+
+      "brando:effectiveDuring": {
+        "validFrom": "1937-01-01",
+        "validThrough": null
+      },
+
+      "brando:retrievableInLLM": true
+    }
+  ]
+}

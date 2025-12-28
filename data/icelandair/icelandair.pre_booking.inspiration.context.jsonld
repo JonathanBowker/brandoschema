@@ -1,0 +1,151 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair/contexts/pre_booking/inspiration",
+      "@type": "brando:Context",
+      "schema:name": "Icelandair Pre-Booking Inspiration Context",
+      "schema:description": "Defines tone, emotional intent, and governance rules for Icelandair communications aimed at inspiring travel before booking, including brand awareness, destination storytelling, and emotional engagement.",
+
+      "brando:appliesToBrand": {
+        "@id": "https://brandoschema.com/icelandair"
+      },
+
+      "brando:journeyStage": "pre_booking",
+      "brando:scenarioType": [
+        "brand_awareness",
+        "travel_inspiration",
+        "destination_storytelling",
+        "community_engagement"
+      ],
+
+      "brando:audienceState": [
+        "curious",
+        "dreaming",
+        "exploratory",
+        "emotionally open"
+      ],
+
+      "brando:audienceSegment": [
+        "prospective travelers",
+        "leisure travelers",
+        "adventure seekers",
+        "stopover-curious passengers"
+      ],
+
+      "brando:communicationIntent": [
+        "inspire",
+        "delight",
+        "invite",
+        "spark curiosity"
+      ],
+
+      "brando:usesVerbalIdentity": {
+        "@id": "https://brandoschema.com/icelandair/verbal-identity/default"
+      },
+
+      "brando:enforcedToneProfile": {
+        "warmth": 4,
+        "empathy": 3,
+        "trustworthiness": 4,
+        "authority": 3,
+        "playfulness": 3,
+        "curiosity": 5,
+        "formality": 2,
+        "urgency": 1
+      },
+
+      "brando:tonePrecedence": [
+        "curiosity",
+        "warmth",
+        "trustworthiness",
+        "playfulness",
+        "clarity"
+      ],
+
+      "brando:contextualGuardRails": [
+        "Avoid exaggerated or hyperbolic claims",
+        "Do not present inspiration as obligation",
+        "Do not over-specify pricing or logistics",
+        "Let imagery and story do the persuasive work",
+        "Keep messages emotionally resonant but inclusive"
+      ],
+
+      "brando:humorPolicy": {
+        "allowed": true,
+        "guidelines": [
+          "Light, inclusive wit",
+          "Occasional wordplay or surprise",
+          "Humor must translate cross-culturally",
+          "Never humor at the expense of people or places"
+        ]
+      },
+
+      "brando:writingGuidelines": {
+        "preferredTechniques": [
+          "Short, evocative sentences",
+          "Unexpected phrasing when appropriate",
+          "Sensory language grounded in real experience",
+          "Open-ended invitations rather than directives"
+        ],
+        "discouragedTechniques": [
+          "Sales pressure",
+          "Superlatives without grounding",
+          "Overly poetic abstraction"
+        ]
+      },
+
+      "brando:selfReferenceRule": {
+        "preferredForm": "we",
+        "avoidForms": [
+          "Icelandair"
+        ]
+      },
+
+      "brando:linkedPolicies": [
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/core"
+        },
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/non_promotional"
+        },
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/claims"
+        }
+      ],
+
+      "brando:callToActionGuidance": {
+        "allowed": [
+          "Explore",
+          "Discover",
+          "Get inspired",
+          "See what’s possible"
+        ],
+        "restricted": [
+          "Book now",
+          "Limited time",
+          "Don’t miss out"
+        ]
+      },
+
+      "brando:conflictResolution": {
+        "ifPolicyConflict": "brand_safety_over_inspiration",
+        "fallbackStrategy": [
+          "Reduce persuasion",
+          "Increase neutrality",
+          "Defer to informational tone"
+        ]
+      },
+
+      "brando:effectiveDuring": {
+        "validFrom": "1937-01-01",
+        "validThrough": null
+      },
+
+      "brando:retrievableInLLM": true
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair/verbal-identity/default",
+      "@type": "brando:VerbalIdentity",
+      "schema:name": "Icelandair Default Verbal Identity",
+      "schema:description": "Defines the default tone of voice, writing principles, and linguistic constraints for all Icelandair communications unless overridden by a context-specific verbal identity.",
+
+      "brando:appliesToBrand": {
+        "@id": "https://brandoschema.com/icelandair"
+      },
+
+      "brando:scaleDefinition": {
+        "scaleType": "ordinal",
+        "min": 0,
+        "max": 5,
+        "semantics": {
+          "0": "absent",
+          "1": "minimal",
+          "2": "low",
+          "3": "balanced",
+          "4": "high",
+          "5": "dominant"
+        }
+      },
+
+      "brando:emotionalAdaptability": true,
+
+      "brando:toneProfile": {
+        "warmth": 4,
+        "empathy": 5,
+        "trustworthiness": 5,
+        "authority": 4,
+        "formality": 2,
+        "playfulness": 2,
+        "urgency": 1,
+        "technicalDepth": 2,
+        "canDoOptimism": 3
+      },
+
+      "brando:tonePrecedence": [
+        "empathy",
+        "clarity",
+        "trustworthiness",
+        "authority",
+        "warmth",
+        "playfulness"
+      ],
+
+      "brando:writingStyleProfile": {
+        "clarity": 5,
+        "conciseness": 4,
+        "conversationality": 4,
+        "structure": 4,
+        "claimIntensity": 1
+      },
+
+      "brando:communicationPrinciples": [
+        "Write as if speaking to another human",
+        "Prioritize clarity over cleverness",
+        "Explain actions rather than making abstract claims",
+        "Assume a global audience with varied English proficiency",
+        "Adapt tone without losing authority"
+      ],
+
+      "brando:personalityProfile": {
+        "pioneering": 4,
+        "grounded": 5,
+        "helpfulness": 5,
+        "reassurance": 5,
+        "curiosity": 4,
+        "responsibility": 5,
+        "transparency": 5
+      },
+
+      "brando:preferredConventions": {
+        "contractions": "preferred",
+        "caseStyle": "sentence-case",
+        "voice": "active",
+        "defaultSpelling": "en-US",
+        "measurementUnits": [
+          "metric",
+          "imperial"
+        ]
+      },
+
+      "brando:humorProfile": {
+        "baselineLevel": 2,
+        "allowedForms": [
+          "light wit",
+          "occasional wordplay",
+          "inclusive humor"
+        ],
+        "restrictedForms": [
+          "sarcasm",
+          "culturally dependent irony"
+        ]
+      },
+
+      "brando:guardrailThresholds": {
+        "playfulness": {
+          "max": 1,
+          "appliesWhen": [
+            "service_disruption",
+            "customer_distress",
+            "safety",
+            "operational_failure"
+          ],
+          "overrideType": "contextual"
+        },
+        "formality": {
+          "max": 3
+        },
+        "claimIntensity": {
+          "max": 1
+        }
+      },
+
+      "brando:mustNotDos": [
+        "Marketing hype or exaggerated language",
+        "Overly formal or corporate phrasing",
+        "Dark, offensive, or mocking humor",
+        "Unverifiable or speculative claims",
+        "Robotic or scripted language"
+      ],
+
+      "brando:selfReferenceRule": {
+        "preferredForm": "we",
+        "avoidForms": [
+          "Icelandair"
+        ]
+      },
+
+      "brando:emailSignOff": "Best wishes, The Icelandair team"
+    }
+  ]
+}

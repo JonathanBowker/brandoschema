@@ -1,0 +1,130 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair/verbal-identity/support_disruption",
+      "@type": "brando:VerbalIdentity",
+      "schema:name": "Icelandair Support & Disruption Verbal Identity",
+      "schema:description": "Defines the tone, language constraints, and emotional priorities for Icelandair communications during service disruption, operational issues, customer support, and delivery of bad news.",
+
+      "brando:appliesToBrand": {
+        "@id": "https://brandoschema.com/icelandair"
+      },
+
+      "brando:inheritsFrom": {
+        "@id": "https://brandoschema.com/icelandair/verbal-identity/default"
+      },
+
+      "brando:toneProfile": {
+        "empathy": 5,
+        "warmth": 4,
+        "clarity": 5,
+        "trustworthiness": 5,
+        "authority": 4,
+        "formality": 2,
+        "playfulness": 0,
+        "urgency": 3,
+        "technicalDepth": 2
+      },
+
+      "brando:tonePrecedence": [
+        "empathy",
+        "clarity",
+        "trustworthiness",
+        "reassurance",
+        "authority"
+      ],
+
+      "brando:communicationIntent": [
+        "reassure",
+        "inform",
+        "support",
+        "resolve",
+        "restore trust"
+      ],
+
+      "brando:writingGuidelines": {
+        "requiredBehaviors": [
+          "Acknowledge inconvenience or impact explicitly",
+          "Use plain, direct language",
+          "Explain what happened without defensiveness",
+          "State what happens next clearly",
+          "Offer practical guidance or solutions where possible"
+        ],
+        "discouragedBehaviors": [
+          "Over-apologizing without action",
+          "Deflecting responsibility",
+          "Minimizing customer impact",
+          "Using humor or wordplay",
+          "Providing speculative explanations"
+        ]
+      },
+
+      "brando:languageConstraints": {
+        "sentenceStructure": "short and direct",
+        "preferredVoice": "active",
+        "readingLevel": "accessible to non-native English speakers"
+      },
+
+      "brando:humorPolicy": {
+        "allowed": false,
+        "reason": "Customers may be stressed, disappointed, or time-sensitive"
+      },
+
+      "brando:empathyPatterns": [
+        "We understand how frustrating this is",
+        "We know this may disrupt your plans",
+        "Thank you for your patience"
+      ],
+
+      "brando:resolutionFraming": {
+        "requiredElements": [
+          "What we know now",
+          "What we are doing",
+          "What the customer should do next"
+        ],
+        "optionalElements": [
+          "How to get help",
+          "Where to find updates"
+        ]
+      },
+
+      "brando:selfReferenceRule": {
+        "preferredForm": "we",
+        "avoidForms": [
+          "Icelandair"
+        ]
+      },
+
+      "brando:guardRails": [
+        "No humor",
+        "No sales language",
+        "No promotional framing",
+        "No speculative timelines",
+        "No blame-shifting"
+      ],
+
+      "brando:linkedPolicies": [
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/core"
+        },
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/empathy_accountability"
+        },
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/non_promotional"
+        }
+      ],
+
+      "brando:effectiveDuring": {
+        "validFrom": "1937-01-01",
+        "validThrough": null
+      },
+
+      "brando:retrievableInLLM": true
+    }
+  ]
+}

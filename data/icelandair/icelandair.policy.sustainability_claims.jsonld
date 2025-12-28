@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair/policies/sustainability_claims",
+      "@type": "brando:Policy",
+      "schema:name": "Icelandair Sustainability Claims Policy",
+      "schema:description": "Restricts how sustainability, environmental impact, and responsibility claims may be made.",
+
+      "brando:enforcementLevel": "strict",
+      "brando:priority": 1,
+
+      "brando:requiredBehaviors": [
+        "Describe concrete actions",
+        "Reference measurable initiatives",
+        "Use factual, verifiable language"
+      ],
+
+      "brando:mustNotDos": [
+        "Abstract sustainability statements",
+        "Implied environmental leadership without evidence",
+        "Vague commitments without timelines"
+      ],
+
+      "brando:guardRails": [
+        "No claims of carbon neutrality unless verified",
+        "No future promises without active programs",
+        "No moral superiority framing"
+      ],
+
+      "brando:reviewWorkflow": "Claims reviewed against published sustainability documentation",
+
+      "brando:retrievableInLLM": true
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair/visual-identity/core",
+      "@type": "brando:VisualIdentity",
+      "schema:name": "Icelandair Core Visual Identity",
+      "schema:description": "Defines the core visual identity system for Icelandair, including logo usage, color palettes, typography, layout rules, and visual guardrails.",
+
+      "brando:appliesToBrand": {
+        "@id": "https://brandoschema.com/icelandair"
+      },
+
+      "brando:logoRules": {
+        "primaryLogo": "Midnight blue logo",
+        "secondaryLogo": "Snow white logo on Midnight blue background",
+        "fallbackLogo": "Black logo",
+        "mustNotDos": [
+          "Alter proportions",
+          "Change colors outside approved palette",
+          "Redraw or stylize the logo",
+          "Use monogram alone without approval"
+        ],
+        "placementRules": [
+          "Top-right corner",
+          "Centered on end slates"
+        ],
+        "minimumSizes": {
+          "digital": "30px height",
+          "print": "10mm height"
+        }
+      },
+
+      "brando:colorSystem": {
+        "signatureColor": "Midnight Blue",
+        "primaryPalette": [
+          {
+            "name": "Midnight Blue",
+            "hex": "#001B71"
+          },
+          {
+            "name": "Snow White",
+            "hex": "#FBFBFB"
+          },
+          {
+            "name": "Basalt Grey",
+            "hex": "#303030"
+          }
+        ],
+        "secondaryPalette": [
+          "#FF47B3",
+          "#54C0E8",
+          "#91F5E1",
+          "#50E68C",
+          "#FFDA00",
+          "#BE00FF"
+        ],
+        "colorGuardrails": [
+          "Always lead with Midnight Blue",
+          "Secondary colors must remain accents",
+          "Never combine Arctic Lilac with Midnight Blue"
+        ]
+      },
+
+      "brando:typographySystem": {
+        "primaryTypeface": "Icelandair Loft",
+        "fallbackTypeface": "Arial",
+        "usageRules": [
+          "Icelandair Loft used wherever possible",
+          "Arial permitted only for third-party tools",
+          "No typography modification or substitution"
+        ]
+      },
+
+      "brando:layoutPrinciples": [
+        "White space is intentional",
+        "Hierarchy must remain consistent",
+        "Stripes never placed in image safe zones",
+        "Grid system must not be altered"
+      ],
+
+      "brando:retrievableInLLM": true
+    }
+  ]
+}

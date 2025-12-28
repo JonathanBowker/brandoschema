@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair/journey/customer",
+      "@type": "brando:CustomerJourney",
+      "schema:name": "Icelandair Customer Journey",
+      "schema:description": "Defines the ordered sequence of customer-facing journey stages and their default and conditional contexts, enabling runtime intent-based context, tone, and policy resolution.",
+
+      "brando:journeyStages": [
+        {
+          "stage": "pre_booking",
+          "primaryContext": {
+            "@id": "https://brandoschema.com/icelandair/context/pre_booking/inspiration"
+          },
+          "emotionalBaseline": "curious_optimistic"
+        },
+        {
+          "stage": "booking_flow",
+          "primaryContext": {
+            "@id": "https://brandoschema.com/icelandair/context/booking_flow"
+          },
+          "emotionalBaseline": "focused_decision_making"
+        },
+        {
+          "stage": "post_booking",
+          "primaryContext": {
+            "@id": "https://brandoschema.com/icelandair/context/post_booking/standard_support"
+          },
+          "conditionalContexts": [
+            {
+              "trigger": "service_disruption",
+              "context": {
+                "@id": "https://brandoschema.com/icelandair/context/post_booking/support_disruption"
+              },
+              "emotionalShift": "anxious"
+            },
+            {
+              "trigger": "customer_complaint",
+              "context": {
+                "@id": "https://brandoschema.com/icelandair/context/post_booking/complaint_handling"
+              },
+              "emotionalShift": "frustrated"
+            }
+          ],
+          "emotionalBaseline": "expectant_reassured"
+        },
+        {
+          "stage": "onboard",
+          "primaryContext": {
+            "@id": "https://brandoschema.com/icelandair/context/onboard_experience"
+          },
+          "conditionalContexts": [
+            {
+              "trigger": "onboard_issue",
+              "context": {
+                "@id": "https://brandoschema.com/icelandair/context/onboard/support_disruption"
+              },
+              "emotionalShift": "concerned"
+            }
+          ],
+          "emotionalBaseline": "calm_trusting"
+        }
+      ],
+
+      "brando:defaultEntryPoint": {
+        "@id": "https://brandoschema.com/icelandair/context/pre_booking/inspiration"
+      }
+    }
+  ]
+}

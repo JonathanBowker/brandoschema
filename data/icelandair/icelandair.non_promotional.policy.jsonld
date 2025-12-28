@@ -1,0 +1,90 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair/policies/non_promotional",
+      "@type": "brando:Policy",
+      "schema:name": "Icelandair Non-Promotional Communication Policy",
+      "schema:description": "Prevents exaggerated, sales-led, or vendor-style language in Icelandair communications. Ensures an authoritative, human, and action-led tone aligned with Icelandair’s brand identity.",
+
+      "brando:appliesToBrand": {
+        "@id": "https://brandoschema.com/icelandair"
+      },
+
+      "brando:policyCategory": "tone-and-claims",
+      "brando:enforcementLevel": "strict",
+      "brando:priority": 2,
+
+      "brando:inheritsPolicies": {
+        "@id": "https://brandoschema.com/icelandair/policies/core"
+      },
+
+      "brando:mustNotDos": [
+        "Use sales language or overt calls to purchase outside explicit booking flows",
+        "Use hype, superlatives, or exaggerated claims",
+        "Position Icelandair as superior to competitors through comparison",
+        "Make abstract brand claims without supporting actions",
+        "Use vendor-style or corporate marketing phrasing",
+        "Frame messages as persuasion rather than assistance"
+      ],
+
+      "brando:restrictedLanguagePatterns": [
+        "best in class",
+        "world-class",
+        "industry-leading",
+        "unmatched",
+        "revolutionary",
+        "cutting-edge",
+        "premium experience (when unsupported by concrete features)"
+      ],
+
+      "brando:allowedCommunicationPatterns": [
+        "Describe concrete actions rather than abstract promises",
+        "Explain services in a matter-of-fact, helpful manner",
+        "Let operational behavior illustrate brand values",
+        "Focus on clarity, reassurance, and next steps",
+        "Use informative, travel-authoritative language"
+      ],
+
+      "brando:claimGovernance": {
+        "claimIntensityMax": 1,
+        "requireActionEvidence": true,
+        "allowEmotiveLanguage": "limited"
+      },
+
+      "brando:toneConstraints": {
+        "playfulness": {
+          "max": 2
+        },
+        "formality": {
+          "max": 3
+        },
+        "authority": {
+          "min": 3
+        }
+      },
+
+      "brando:appliesAcrossContexts": [
+        "brand_marketing",
+        "customer_support",
+        "booking_flow",
+        "post_booking",
+        "onboard_communications"
+      ],
+
+      "brando:conflictResolution": {
+        "ifConflict": "policy_overrides_tone",
+        "fallbackStrategy": [
+          "Reduce claim intensity",
+          "Remove promotional framing",
+          "Reframe message as guidance or assistance"
+        ]
+      },
+
+      "brando:retrievableInLLM": true
+    }
+  ]
+}

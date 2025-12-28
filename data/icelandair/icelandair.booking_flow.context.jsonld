@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair/context/booking_flow",
+      "@type": "brando:Context",
+      "schema:name": "Icelandair Booking Flow Context",
+      "schema:description": "Applies to all customer-facing communications during the booking and purchase phase, where clarity, consistency, and trust are critical.",
+
+      "brando:appliesToBrand": {
+        "@id": "https://brandoschema.com/icelandair"
+      },
+
+      "brando:journeyStage": "purchase",
+
+      "brando:domainContext": {
+        "channel": [
+          "website",
+          "mobile-app",
+          "email"
+        ],
+        "surface": [
+          "booking-flow",
+          "payment",
+          "confirmation"
+        ]
+      },
+
+      "brando:communicationGoals": [
+        "guide",
+        "inform",
+        "reduce friction",
+        "build confidence"
+      ],
+
+      "brando:usesVerbalIdentity": {
+        "@id": "https://brandoschema.com/icelandair/verbal-identity/booking_flow"
+      },
+
+      "brando:linkedPolicies": [
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/non_promotional"
+        }
+      ],
+
+      "brando:effectiveDuring": {
+        "validFrom": "1937-01-01",
+        "validThrough": null
+      },
+
+      "brando:retrievableInLLM": true
+    }
+  ]
+}

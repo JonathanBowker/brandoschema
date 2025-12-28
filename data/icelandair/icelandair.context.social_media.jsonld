@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair/context/social_media",
+      "@type": "brando:Context",
+      "schema:name": "Icelandair Social Media Context",
+      "schema:description": "Applies to all public-facing social media communications across platforms.",
+
+      "brando:audienceSegment": [
+        "General public",
+        "Travelers",
+        "Brand community"
+      ],
+
+      "brando:journeyStage": "pre-booking",
+
+      "brando:communicationGoals": [
+        "Build brand awareness",
+        "Inspire travel",
+        "Encourage engagement"
+      ],
+
+      "brando:toneOverrides": {
+        "warmth": 5,
+        "playfulness": 3,
+        "authority": 3,
+        "empathy": 4
+      },
+
+      "brando:humorAllowance": {
+        "enabled": true,
+        "maxLevel": 3
+      },
+
+      "brando:usesVerbalIdentity": {
+        "@id": "https://brandoschema.com/icelandair/verbal-identity/default"
+      },
+
+      "brando:hasPolicy": [
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/non_promotional"
+        }
+      ],
+
+      "brando:guardRails": [
+        "No sarcasm",
+        "No mockery",
+        "No engagement during unresolved disruptions"
+      ],
+
+      "brando:retrievableInLLM": true
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "brando": "https://brandoschema.com/"
+  },
+  "@graph": [
+    {
+      "@id": "https://brandoschema.com/icelandair/context/booking_flow",
+      "@type": "brando:Context",
+      "schema:name": "Icelandair Booking Flow Context",
+      "schema:description": "Applies to all customer-facing communications during the flight search, selection, and booking process.",
+
+      "brando:audienceSegment": [
+        "Prospective passengers",
+        "Returning customers"
+      ],
+
+      "brando:journeyStage": "purchase",
+
+      "brando:communicationGoals": [
+        "Guide customers through booking with confidence",
+        "Reduce uncertainty and cognitive load",
+        "Encourage completion without pressure"
+      ],
+
+      "brando:toneOverrides": {
+        "clarity": 5,
+        "empathy": 4,
+        "authority": 4,
+        "playfulness": 1,
+        "urgency": 2
+      },
+
+      "brando:usesVerbalIdentity": {
+        "@id": "https://brandoschema.com/icelandair/verbal-identity/default"
+      },
+
+      "brando:hasPolicy": [
+        {
+          "@id": "https://brandoschema.com/icelandair/policies/non_promotional"
+        }
+      ],
+
+      "brando:guardRails": [
+        "No surprise phrasing",
+        "No emotional manipulation",
+        "No ambiguity around pricing or steps"
+      ],
+
+      "brando:retrievableInLLM": true
+    }
+  ]
+}
