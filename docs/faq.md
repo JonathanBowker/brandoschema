@@ -13,7 +13,7 @@ This FAQ covers common questions about **what Brando is**, **how to use it**, an
 
 **Brando (Brand Oracle)** is a **JSON-LD vocabulary and schema** for modelling brand identity, expression, and governance in a way that **LLMs, agents, and AI tools can consume as a control layer**, not just as SEO metadata.
 
-It defines types like `brando:Brand`, `brando:Context`, `brando:VerbalToken`, `brando:Policy`, etc., and a set of properties that together form a **Brand Knowledge Graph**.
+It defines types like `brando:Brand`, `brando:Context`, `Brando:VerbalIdentity`, `brando:Policy`, etc., and a set of properties that together form a **Brand Knowledge Graph**.
 
 See: [Getting started](getting-started.md)
 
@@ -26,12 +26,12 @@ Brando:
 - **extends** Schema.org patterns (JSON-LD, `schema:Brand`, `schema:Intangible`),
 - but has a different **purpose**:
 
-> Schema.org primarily describes what a brand *is* for search and structured data.  
+> Schema.org primarily describes what a brand *is* for search and structured data.
 > Brando primarily describes **how a brand behaves** in AI systems.
 
 Key differences:
 
-- Behavioural types (`brando:VerbalToken`, `brando:VisualToken`, `brando:AudioToken`, `brando:Policy`, `brando:AutomationRule`).
+- Behavioural types (`Brando:VerbalIdentity`, `Brando:VisualIdentity`, `Brando:AudioIdentity`, `brando:Policy`, `brando:AutomationRule`).
 - Governance concepts (enforcement levels, risk tags, retrievability for LLMs).
 - Explicit runtime integration patterns (contexts, external systems, automation rules).
 
@@ -99,7 +99,7 @@ Typical setups:
 Brando only requires that:
 
 * you keep a **consistent `@id` scheme**,
-* you can resolve linked nodes (`brando:hasContext`, `brando:usesVerbalToken`, etc.),
+* you can resolve linked nodes (`brando:hasContext`, `brando:usesVerbal`, etc.),
 * you can serve a Brand Knowledge Graph to whatever runtime you have.
 
 See:
@@ -177,7 +177,7 @@ A **Brand Knowledge Graph** is just:
 
     * `brando:Brand`,
     * `brando:Context`,
-    * `brando:VerbalToken` / `VisualToken` / `AudioToken`,
+    * `Brando:VerbalIdentity` / `Visual` / `Audio`,
     * `brando:Policy`,
     * `brando:BrandedCategory`,
     * `brando:Campaign`,
@@ -186,7 +186,7 @@ A **Brand Knowledge Graph** is just:
 * linked by their relationships:
 
     * `brando:hasContext`,
-    * `brando:usesVerbalToken`,
+    * `brando:usesVerbal`,
     * `brando:hasPolicy`,
     * `brando:hasProductCategory`,
     * `brando:hasCampaign`,
@@ -223,9 +223,9 @@ At runtime, your backend (or Brand OS) will:
    interface RuntimeBrandConfig {
      brand: Brand;
      context: Context;
-     verbalTokens: VerbalToken[];
-     visualTokens: VisualToken[];
-     audioTokens: AudioToken[];
+     Verbals: Verbal[];
+     Visuals: Visual[];
+     Audios: Audio[];
      policies: Policy[];
      campaigns: Campaign[];
      automationRules: AutomationRule[];
@@ -261,13 +261,13 @@ Common adoption path:
 
     * `brando:Brand`
     * `brando:Context`
-    * `brando:VerbalToken`
+    * `Brando:VerbalIdentity`
     * `brando:Policy`
 
 2. Add later as needed:
 
-    * Visual identity → `brando:VisualToken`
-    * Audio identity → `brando:AudioToken`
+    * Visual identity → `Brando:VisualIdentity`
+    * Audio identity → `Brando:AudioIdentity`
     * Product structure → `brando:BrandedCategory`
     * Campaign overlays → `brando:Campaign`
     * Automation → `brando:AutomationRule`
@@ -303,7 +303,7 @@ This allows you to:
 * keep **brand language** about categories,
 * while maintaining **machine alignment** with GS1 / UNSPSC / Google Product Taxonomy.
 
-See: [`brando:BrandedCategory`](types/branded-category.md) reference.
+See the [`brando:BrandedCategory`](types/branded-category.md) reference for classification alignment patterns.
 
 ---
 
@@ -407,5 +407,4 @@ If you’re starting from zero:
     * an internal **AI optimisation workshop**,
     * a roadmap for extending Brando across more channels and brands.
 
-See: [AI Optimisation Workshop](optimisation-workshop.md)
-
+See: [Brando IBOM Workshop & Pilot](brando-workshop.md)

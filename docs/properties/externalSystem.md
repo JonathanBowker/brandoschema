@@ -1,20 +1,24 @@
 # `brando:externalSystem`
 
-*A Brando Property*  
-*Defined in the brando section.*
+*A Brando Property*
+*Defined in the Brando<sup>®</sup> vocabulary.*
 
 ---
 
 ## Thing > Intangible > Multiple types :: externalSystem (brando:Brand, brando:Context, brando:Policy, brando:Campaign, brando:AutomationRule)
 
-**Canonical URL:** `https://brandoschema.com/properties/externalSystem`  
+**Canonical URL:** `https://brandoschema.com/properties/externalSystem`
 **Check for open issues.**
 
 ---
 
 ## Description
 
-Links a brand, context, policy, campaign, or automation rule to the external tool or platform (e.g. Adobe GenStudio, Meta Ads Manager, Figma, CMS) that executes or consumes the corresponding brand rules. Typically points to a schema:SoftwareApplication node that describes the integration target.
+Links a brand, context, policy, campaign, or automation rule to the external tool or platform that executes, manages, or consumes the corresponding brand rules.
+
+`brando:externalSystem` typically points to a `schema:SoftwareApplication` node describing an integration target such as a CMS, DAM, product catalogue, advertising platform, design tool, or internal Brand OS.
+
+For binding a Brando node to a specific native object inside that external system, use [`brando:externalSystemId`](./externalSystemId.md).
 
 ---
 
@@ -43,11 +47,13 @@ Links a brand, context, policy, campaign, or automation rule to the external too
     "schema": "https://schema.org/",
     "brando": "https://brandoschema.com/"
   },
+  "@id": "https://brandoschema.com/brand/example",
   "@type": "brando:Brand",
   "schema:name": "Example Brand",
   "brando:externalSystem": {
-    "@id": "https://example.com/example",
-    "@type": "schema:SoftwareApplication"
+    "@id": "https://apps.example.com/brand-os",
+    "@type": "schema:SoftwareApplication",
+    "schema:name": "Brand Management Platform"
   }
 }
 ```
@@ -61,15 +67,19 @@ Links a brand, context, policy, campaign, or automation rule to the external too
   schema: https://schema.org/
   brando: https://brandoschema.com/
 
+@id: https://brandoschema.com/brand/example
 @type: brando:Brand
 schema:name: Example Brand
 
-brando:externalSystem: {'@id': 'https://example.com/example', '@type': 'schema:SoftwareApplication'}
+brando:externalSystem:
+  '@id': https://apps.example.com/brand-os
+  '@type': schema:SoftwareApplication
+  schema:name: Brand Management Platform
 ```
 
 ---
 
 ## Acknowledgements
 
-This element is based on the work of **Advanced Analytica**.  
+This element is based on the work of **Advanced Analytica**.
 Many Type and Property definitions are inspired by extensive analysis of brand guidelines, governance systems, and AI content-safety practices.
