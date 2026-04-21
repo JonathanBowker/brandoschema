@@ -5,17 +5,19 @@ description: Overview of the core classes in the Brand Oracle (Brando) schema vo
 
 # Brando types overview
 
-The Brando Schema Vocabulary v1.3 defines **ten core classes** under the `brando:` namespace.
+The Brando Schema Vocabulary v1.3 defines a set of schema types under the
+`brando:` namespace, spanning core brand graph types, expression tokens,
+governance objects, personas, runtime orchestration, and brand touchpoints.
 
-These classes form the backbone of a **Brand Knowledge Graph** used by a Brand Operating System (Brand OS), LLM apps, and agents to:
+These types form the backbone of a **Brand Knowledge Graph** used by a Brand Operating System (Brand OS), LLM apps, and agents to:
 
 - represent **brand identity and architecture**,
 - attach **verbal, visual, and audio expression tokens**,
 - encode **governance and automation rules**,
 - and align **products and services** with external classifications (GS1, UNSPSC, Google Product Taxonomy).
 
-This page gives a **conceptual overview** of each class and how they relate.  
-For detailed, per-class reference, see the dedicated pages under **Schema → Types** in the navigation.
+This page gives a **conceptual overview** of the primary graph classes and how they relate.
+For detailed, per-type reference, see the dedicated pages under **Schema → Types** in the navigation.
 
 ---
 
@@ -425,14 +427,22 @@ Each node’s **full set of properties, domains, and ranges** is documented on i
 
 * [`brando:Brand`](brand.md)
 * [`brando:Context`](context.md)
+* [`brando:BrandedCategory`](branded-category.md)
+* [`brando:Campaign`](campaign.md)
+* [`brando:ProductItem`](product-item.md)
 * [`brando:BrandExpressionToken`](brand-expression-token.md)
 * [`brando:VerbalToken`](verbal-token.md)
 * [`brando:VisualToken`](visual-token.md)
 * [`brando:AudioToken`](audio-token.md)
 * [`brando:Policy`](policy.md)
-* [`brando:BrandedCategory`](branded-category.md)
-* [`brando:Campaign`](campaign.md)
+* [`brando:ImpactAssessment`](impact-assessment.md)
+* [`brando:SyntheticPersona`](synthetic-persona.md)
+* [`brando:ProductPersona`](product-persona.md)
+* [`brando:BrandModel`](brand-model.md)
+* [`brando:Prompt`](prompt.md)
 * [`brando:AutomationRule`](automation-rule.md)
+* [`brando:BrandApplication`](brand-application.md)
+* [`brando:BrandTouchpoint`](brand-touchpoint.md)
 
 ---
 

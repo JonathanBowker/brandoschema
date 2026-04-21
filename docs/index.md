@@ -238,26 +238,34 @@ It:
 
 ---
 
-## Core concepts and classes
+## Core concepts and schema types
 
-Brando v1.3 defines **twelve core classes**:
+The current Brando documentation covers **18 schema types** across identity,
+expression, governance, personas, runtime orchestration, and brand touchpoints:
 
-| Class                     | Purpose                        |
-| ------------------------- | ------------------------------ |
-| `brando:Brand`            | Core brand identity            |
-| `brando:Context`          | Activation context             |
-| `brando:BrandExpression`  | Abstract expression superclass |
-| `Brando:VerbalIdentity`   | Voice and language             |
-| `Brando:VisualIdentity`   | Visual system                  |
-| `Brando:AudioIdentity`    | Sonic identity                 |
-| `brando:Policy`           | Governance rules               |
-| `brando:BrandedCategory`  | Taxonomy alignment             |
-| `brando:Campaign`         | Temporal overrides             |
-| `brando:AutomationRule`   | Automated governance           |
-| `brando:ProductPersona`   | Product-scoped AI              |
-| `brando:SyntheticPersona` | Governed AI persona            |
+| Type | Purpose |
+| --- | --- |
+| `brando:Brand` | Core brand identity |
+| `brando:Context` | Activation context |
+| `brando:BrandedCategory` | Brand-level taxonomy and product category alignment |
+| `brando:Campaign` | Time-bound brand and messaging overlay |
+| `brando:ProductItem` | Individually identifiable product, SKU, or GTIN-level item |
+| `brando:BrandExpressionToken` | Abstract superclass for expression tokens |
+| `brando:VerbalToken` | Voice, language, vocabulary, and prompt behaviour |
+| `brando:VisualToken` | Visual system, logos, colour, typography, and imagery |
+| `brando:AudioToken` | Sonic identity, voice, pronunciation, and audio cues |
+| `brando:Policy` | Governance rules, guardrails, and enforcement logic |
+| `brando:ImpactAssessment` | AI, brand, and governance risk assessment |
+| `brando:SyntheticPersona` | Governed AI persona |
+| `brando:ProductPersona` | Product-scoped AI persona |
+| `brando:BrandModel` | Model routing and runtime configuration |
+| `brando:Prompt` | Governed prompt asset or instruction object |
+| `brando:AutomationRule` | Automated governance or runtime rule |
+| `brando:BrandApplication` | Governed brand use case or application context |
+| `brando:BrandTouchpoint` | Channel, placement, or experience where brand rules apply |
 
-All classes extend `schema:Intangible`; `brando:Brand` extends `schema:Brand`.
+Most Brando types extend `schema:Intangible`; `brando:Brand` aligns with
+`schema:Brand`, and `brando:Prompt` aligns with `schema:CreativeWork`.
 
 ---
 
