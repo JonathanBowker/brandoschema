@@ -973,7 +973,7 @@
   <span class="md-ellipsis">
     
   
-    brando:BrandExpression
+    brando:BrandExpressionToken
   
 
     
@@ -1001,7 +1001,7 @@
   <span class="md-ellipsis">
     
   
-    brando:VerbalIdentity
+    brando:VerbalToken
   
 
     
@@ -1029,7 +1029,7 @@
   <span class="md-ellipsis">
     
   
-    brando:VisualIdentity
+    brando:VisualToken
   
 
     
@@ -1057,7 +1057,7 @@
   <span class="md-ellipsis">
     
   
-    brando:AudioIdentity
+    brando:AudioToken
   
 
     
@@ -3384,7 +3384,7 @@ Encodes brand identity, tone, vocabulary, competencies, behavioural constraints,
 <li>product-, service-, or place-embedded assistants</li>
 </ul>
 <p>It determines <em>exactly how the AI appears, speaks, reasons, and behaves</em>.</p>
-<p>Where Schema.org / GS1 describe <strong>what an entity is</strong>, a <code>brando:SyntheticPersona</code> describes <strong>how AI is allowed to talk, reason, and act in relation to that entity</strong>. It is the <strong>semantic identity and behaviour layer</strong> of a brand’s AI Operating System and Brand Definition Vocabulary (BDV).</p>
+<p>Where Schema.org / GS1 describe <strong>what an entity is</strong>, a <code>brando:SyntheticPersona</code> describes <strong>how AI is allowed to talk, reason, and act in relation to that entity</strong>. It is the <strong>semantic identity and behaviour layer</strong> of a brand’s AI Operating System and Brand Governance Vocabulary (BGV).</p>
 <hr />
 <h2 id="relationship-summary"><strong>Relationship Summary</strong></h2>
 <h3 id="syntheticpersona-as-an-operative-layer-over-schemaorg-gs1">SyntheticPersona as an operative layer over Schema.org / GS1</h3>
@@ -3423,7 +3423,7 @@ The <code>brando:SyntheticPersona</code> layer answers <strong>“if an AI repre
 <ul>
 <li><strong><code>brando:Context</code></strong> — scenario-specific behaviour (channel, market, regulatory regime).</li>
 <li><strong><code>brando:Policy</code></strong> — lexical, behavioural, or safety policies that bind the persona.</li>
-<li><strong><code>Brando:VerbalIdentity</code></strong> — controlled vocabulary and tone tokens.</li>
+<li><strong><code>brando:VerbalToken</code></strong> — controlled vocabulary and tone tokens.</li>
 <li><strong>Schema.org / GS1 anchors</strong> — entities this persona “represents” at runtime:<ul>
 <li><code>schema:Product</code>, <code>gs1:Product</code> — product- or GTIN-level anchoring.</li>
 <li><code>schema:Brand</code>, <code>schema:Organization</code> — corporate or master-brand anchoring.</li>
@@ -3792,7 +3792,7 @@ Identity properties describe the <strong>“profile card”</strong> of the pers
 </tr>
 <tr>
 <td><strong>usesVerbalToken</strong></td>
-<td>Brando:VerbalIdentity</td>
+<td>brando:VerbalToken</td>
 <td>Canonical verbal tokens.</td>
 </tr>
 </tbody>
@@ -4146,7 +4146,7 @@ Identity properties describe the <strong>“profile card”</strong> of the pers
 <span class="cm">     * --------------------------------------------------------- */</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/verbal/brando-definitions&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VerbalIdentity&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando Core Definitions&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;tokenType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;definition&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;approvedTerms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -4157,7 +4157,7 @@ Identity properties describe the <strong>“profile card”</strong> of the pers
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/verbal/brando-tone-keyphrases&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VerbalIdentity&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando Tone Key Phrases&quot;</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">&quot;approvedTerms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="s2">&quot;precise&quot;</span><span class="p">,</span>
@@ -4409,7 +4409,7 @@ Identity properties describe the <strong>“profile card”</strong> of the pers
 <li><a href="../brand/"><code>brando:Brand</code></a></li>
 <li><a href="../policy/"><code>brando:Policy</code></a></li>
 <li><a href="../context/"><code>brando:Context</code></a></li>
-<li><a href="../verbal-token/"><code>Brando:VerbalIdentity</code></a></li>
+<li><a href="../verbal-token/"><code>brando:VerbalToken</code></a></li>
 <li><a href="../automation-rule/"><code>brando:AutomationRule</code></a></li>
 <li><a href="../../architecture/runtime-integration/">Runtime Integration Guide</a></li>
 </ul>

@@ -973,7 +973,7 @@
   <span class="md-ellipsis">
     
   
-    brando:BrandExpression
+    brando:BrandExpressionToken
   
 
     
@@ -1001,7 +1001,7 @@
   <span class="md-ellipsis">
     
   
-    brando:VerbalIdentity
+    brando:VerbalToken
   
 
     
@@ -1029,7 +1029,7 @@
   <span class="md-ellipsis">
     
   
-    brando:VisualIdentity
+    brando:VisualToken
   
 
     
@@ -1057,7 +1057,7 @@
   <span class="md-ellipsis">
     
   
-    brando:AudioIdentity
+    brando:AudioToken
   
 
     
@@ -3175,13 +3175,13 @@
 <p>A governed, <strong>product-anchored AI persona</strong> for LLMs, multimodal models, and agents.</p>
 <p>A <code>brando:ProductPersona</code> encodes <strong>how an AI is allowed to talk about a specific product or product family</strong> – including facts, benefits, risks, tone, regulatory constraints, and claim boundaries – while remaining strictly aligned with:</p>
 <ul>
-<li>the <strong>brand’s operatives</strong> (Brando BDV – Brand Directive Vocabulary),</li>
+<li>the <strong>brand’s operatives</strong> (Brando BGV – Brand Governance Vocabulary),</li>
 <li>the <strong>product master data</strong> (GS1 GTIN / GLN, DPP, PIP, SmartLabel, etc.),</li>
 <li>and the <strong>governing policies</strong> (tone, lexical, safety).</li>
 </ul>
 <blockquote>
 <p><strong>rdfs:comment</strong>
-<em>A <code>brando:ProductPersona</code> defines a governed AI identity for a product or product line. It acts as a semantic bridge between GS1-based product data (e.g. GTIN JSON-LD) and Brando’s Brand Directive Vocabulary. It specifies what the product is, which canonical claims are allowed, how the tone flexes by channel, and which evidence sources the AI must rely on — enabling non-hallucinated, on-brand product content generation.</em></p>
+<em>A <code>brando:ProductPersona</code> defines a governed AI identity for a product or product line. It acts as a semantic bridge between GS1-based product data (e.g. GTIN JSON-LD) and Brando’s Brand Governance Vocabulary. It specifies what the product is, which canonical claims are allowed, how the tone flexes by channel, and which evidence sources the AI must rely on — enabling non-hallucinated, on-brand product content generation.</em></p>
 </blockquote>
 <hr />
 <h2 id="term-definition"><strong>Term definition</strong></h2>
@@ -3200,7 +3200,7 @@
 <li>post-purchase and troubleshooting assistants.</li>
 </ul>
 <p>It determines <strong>how the AI talks about a product</strong>, which facts it may use, and which claims are disallowed.</p>
-<p>Within a Brand Operating System, it is the <strong>product-level semantic identity layer</strong>, sitting on top of <strong>Schema.org / GS1 descriptive data</strong> and under the <strong>Brand Definition Vocabulary (BDV)</strong>.</p>
+<p>Within a Brand Operating System, it is the <strong>product-level semantic identity layer</strong>, sitting on top of <strong>Schema.org / GS1 descriptive data</strong> and under the <strong>Brand Governance Vocabulary (BGV)</strong>.</p>
 <hr />
 <h2 id="relationship-summary"><strong>Relationship Summary</strong></h2>
 <h3 id="productpersona-as-an-operative-layer-over-gs1-schemaorg">ProductPersona as an operative layer over GS1 + Schema.org</h3>
@@ -3253,9 +3253,9 @@
 </ul>
 </li>
 <li>
-<p><strong>Brando BDV objects</strong>:</p>
+<p><strong>Brando BGV objects</strong>:</p>
 <ul>
-<li><code>brando:VerbalIdentity</code>, <code>brando:VisualIdentity</code>, <code>brando:AudioIdentity</code>.</li>
+<li><code>brando:VerbalToken</code>, <code>brando:VisualToken</code>, <code>brando:AudioToken</code>.</li>
 </ul>
 </li>
 <li>
@@ -3556,13 +3556,13 @@ These fields describe the <strong>persona itself</strong>, not the underlying pr
 </tr>
 <tr>
 <td><strong>usesVerbalToken</strong></td>
-<td><code>Brando:VerbalIdentity</code></td>
-<td>Linked verbal identity assets (BDV tokens).</td>
+<td><code>brando:VerbalToken</code></td>
+<td>Linked verbal identity assets (BGV tokens).</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Usage notes:</strong>
-This is where the <strong>Brand Definition Vocabulary (BDV)</strong> is applied: tone, phrasing patterns, approved descriptors, and category-specific tokens.</p>
+This is where the <strong>Brand Governance Vocabulary (BGV)</strong> is applied: tone, phrasing patterns, approved descriptors, and category-specific tokens.</p>
 <hr />
 <h2 id="6-claim-safety-regulatory-governance"><strong>6. Claim, Safety &amp; Regulatory Governance</strong></h2>
 <blockquote>
@@ -3978,7 +3978,7 @@ This is where the <strong>Brand Definition Vocabulary (BDV)</strong> is applied:
 <li><a href="../brand/"><code>brando:Brand</code></a></li>
 <li><a href="../context/"><code>brando:Context</code></a></li>
 <li><a href="../policy/"><code>brando:Policy</code></a></li>
-<li><a href="../verbal-token/"><code>brando:VerbalIdentity</code></a></li>
+<li><a href="../verbal-token/"><code>brando:VerbalToken</code></a></li>
 <li><a href="../../spec/jsonld-context/">JSON-LD context</a></li>
 <li><a href="../../examples/chatbot-runtime/">Chatbot + Brando runtime flow</a></li>
 </ul>

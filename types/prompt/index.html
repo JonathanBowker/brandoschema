@@ -973,7 +973,7 @@
   <span class="md-ellipsis">
     
   
-    brando:BrandExpression
+    brando:BrandExpressionToken
   
 
     
@@ -1001,7 +1001,7 @@
   <span class="md-ellipsis">
     
   
-    brando:VerbalIdentity
+    brando:VerbalToken
   
 
     
@@ -1029,7 +1029,7 @@
   <span class="md-ellipsis">
     
   
-    brando:VisualIdentity
+    brando:VisualToken
   
 
     
@@ -1057,7 +1057,7 @@
   <span class="md-ellipsis">
     
   
-    brando:AudioIdentity
+    brando:AudioToken
   
 
     
@@ -3253,13 +3253,13 @@
 <p>A governed, <strong>brand-anchored prompt template</strong> for LLMs, multimodal models, and agents.</p>
 <p>A <code>brando:Prompt</code> encodes <strong>how an AI should be instructed in a specific brand application</strong> – including role, task, tone, constraints, variables, inputs, modalities, and expected output format – while remaining strictly aligned with:</p>
 <ul>
-<li>the <strong>brand’s directives</strong> (Brando BDV – Brand Directive Vocabulary),</li>
+<li>the <strong>brand’s directives</strong> (Brando BGV – Brand Governance Vocabulary),</li>
 <li>the <strong>domain / application configuration</strong> (e.g. BrandModel, BrandApplication, BrandTouchpoint),</li>
 <li>and the <strong>governing policies</strong> (tone, lexical, safety, regulatory).</li>
 </ul>
 <blockquote>
 <p><strong>rdfs:comment</strong>
-<em>A <code>brando:Prompt</code> defines a governed, reusable prompt template for a given brand application (e.g. social post generation, PDP copy, support chat, image or video generation). It acts as a semantic bridge between Brando’s Brand Directive Vocabulary (tone, constraints, policies) and the runtime AI system (LLMs, multimodal models, tools, routes). It specifies the system role, task, constraints, variables, channels, modalities and output schema required for safe, on-brand AI behaviour.</em></p>
+<em>A <code>brando:Prompt</code> defines a governed, reusable prompt template for a given brand application (e.g. social post generation, PDP copy, support chat, image or video generation). It acts as a semantic bridge between Brando’s Brand Governance Vocabulary (tone, constraints, policies) and the runtime AI system (LLMs, multimodal models, tools, routes). It specifies the system role, task, constraints, variables, channels, modalities and output schema required for safe, on-brand AI behaviour.</em></p>
 </blockquote>
 <hr />
 <h2 id="term-definition"><strong>Term definition</strong></h2>
@@ -3559,8 +3559,8 @@ This anchors the prompt to a <strong>specific BrandApplication + context</strong
 </tr>
 <tr>
 <td><strong>usesVerbalToken</strong></td>
-<td><code>brando:VerbalIdentity</code>, URL</td>
-<td>Linked verbal identity assets (BDV tokens, phrases, patterns).</td>
+<td><code>brando:VerbalToken</code>, URL</td>
+<td>Linked verbal identity assets (BGV tokens, phrases, patterns).</td>
 </tr>
 </tbody>
 </table>
@@ -3964,7 +3964,7 @@ This anchors the prompt to a <strong>specific BrandApplication + context</strong
 <li><a href="../brand-touchpoint/"><code>brando:BrandTouchpoint</code></a></li>
 <li><a href="../synthetic-persona/"><code>brando:SyntheticPersona</code></a></li>
 <li><a href="../policy/"><code>brando:Policy</code></a></li>
-<li><a href="../verbal-token/"><code>brando:VerbalIdentity</code></a></li>
+<li><a href="../verbal-token/"><code>brando:VerbalToken</code></a></li>
 <li><a href="../../spec/jsonld-context/">JSON-LD context</a></li>
 <li><a href="../../examples/prompt-runtime/">Prompt governance &amp; runtime flow</a></li>
 </ul>
