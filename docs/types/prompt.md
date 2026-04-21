@@ -11,12 +11,12 @@ A governed, **brand-anchored prompt template** for LLMs, multimodal models, and 
 
 A `brando:Prompt` encodes **how an AI should be instructed in a specific brand application** – including role, task, tone, constraints, variables, inputs, modalities, and expected output format – while remaining strictly aligned with:
 
-- the **brand’s directives** (Brando BDV – Brand Directive Vocabulary),
+- the **brand’s directives** (Brando BGV – Brand Governance Vocabulary),
 - the **domain / application configuration** (e.g. BrandModel, BrandApplication, BrandTouchpoint),
 - and the **governing policies** (tone, lexical, safety, regulatory).
 
 > **rdfs:comment**
-> *A `brando:Prompt` defines a governed, reusable prompt template for a given brand application (e.g. social post generation, PDP copy, support chat, image or video generation). It acts as a semantic bridge between Brando’s Brand Directive Vocabulary (tone, constraints, policies) and the runtime AI system (LLMs, multimodal models, tools, routes). It specifies the system role, task, constraints, variables, channels, modalities and output schema required for safe, on-brand AI behaviour.*
+> *A `brando:Prompt` defines a governed, reusable prompt template for a given brand application (e.g. social post generation, PDP copy, support chat, image or video generation). It acts as a semantic bridge between Brando’s Brand Governance Vocabulary (tone, constraints, policies) and the runtime AI system (LLMs, multimodal models, tools, routes). It specifies the system role, task, constraints, variables, channels, modalities and output schema required for safe, on-brand AI behaviour.*
 
 ---
 
@@ -180,7 +180,7 @@ This anchors the prompt to a **specific BrandApplication + context**, so it’s 
 | **writingStyle**    | Text                       | Style hints (“short sentences”, “plain language”, etc.).                |
 | **speechStyle**     | Text                       | For voice experiences (if applicable).                                  |
 | **keyMessages**     | Text                       | Core “meta messages” about how the assistant should behave.             |
-| **usesVerbalToken** | `brando:VerbalIdentity`, URL | Linked verbal identity assets (BDV tokens, phrases, patterns).        |
+| **usesVerbalToken** | `brando:VerbalToken`, URL | Linked verbal identity assets (BGV tokens, phrases, patterns).        |
 
 ---
 
@@ -413,6 +413,6 @@ Common `schema:name` values (recommended but not mandated):
 * [`brando:BrandTouchpoint`](brand-touchpoint.md)
 * [`brando:SyntheticPersona`](synthetic-persona.md)
 * [`brando:Policy`](policy.md)
-* [`brando:VerbalIdentity`](verbal-token.md)
+* [`brando:VerbalToken`](verbal-token.md)
 * [JSON-LD context](../spec/jsonld-context.md)
 * [Prompt governance & runtime flow](../examples/prompt-runtime.md)

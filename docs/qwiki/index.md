@@ -24,7 +24,7 @@ qwiki_schema: |
       "@type": "WebSite",
       "@id": "https://brandoschema.com/#website",
       "name": "Brando – Brand-as-Code",
-      "description": "Brando (Brand Oracle) is an AI-native, governance-ready Brand Governance Vocabulary  (BGV) that enables Brand-as-Code by tokenising brand intelligence into Brand Knowledge Graphs and Machine-Actionable Policy Graphs.",
+      "description": "Brando (Brand Oracle) is an AI-native, governance-ready Brand Governance Vocabulary (BGV) that enables Brand-as-Code by tokenising brand intelligence into Brand Knowledge Graphs and Machine-Actionable Policy Graphs.",
       "url": "https://brandoschema.com/",
       "publisher": {
         "@id": "https://brandoschema.com/#organization"
@@ -75,7 +75,7 @@ qwiki_schema: |
         "Brando Schema",
         "Brando Vocabulary"
       ],
-      "description": "Brando (Brand Oracle) is an AI-native Brand Governance Vocabulary  (BGV) that enables Brand-as-Code by tokenising brand identity, expression, context, and governance into machine-actionable semantics.",
+      "description": "Brando (Brand Oracle) is an AI-native Brand Governance Vocabulary (BGV) that enables Brand-as-Code by tokenising brand identity, expression, context, and governance into machine-actionable semantics.",
       "url": "https://brandoschema.com/",
       "logo": {
         "@type": "ImageObject",

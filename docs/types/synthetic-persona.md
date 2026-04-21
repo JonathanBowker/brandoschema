@@ -33,7 +33,7 @@ A `brando:SyntheticPersona` is a **structured, governed digital identity** desig
 
 It determines *exactly how the AI appears, speaks, reasons, and behaves*.
 
-Where Schema.org / GS1 describe **what an entity is**, a `brando:SyntheticPersona` describes **how AI is allowed to talk, reason, and act in relation to that entity**. It is the **semantic identity and behaviour layer** of a brand’s AI Operating System and Brand Definition Vocabulary (BDV).
+Where Schema.org / GS1 describe **what an entity is**, a `brando:SyntheticPersona` describes **how AI is allowed to talk, reason, and act in relation to that entity**. It is the **semantic identity and behaviour layer** of a brand’s AI Operating System and Brand Governance Vocabulary (BGV).
 
 ---
 
@@ -84,7 +84,7 @@ A SyntheticPersona may reference:
 
 * **`brando:Context`** — scenario-specific behaviour (channel, market, regulatory regime).
 * **`brando:Policy`** — lexical, behavioural, or safety policies that bind the persona.
-* **`Brando:VerbalIdentity`** — controlled vocabulary and tone tokens.
+* **`brando:VerbalToken`** — controlled vocabulary and tone tokens.
 * **Schema.org / GS1 anchors** — entities this persona “represents” at runtime:
     * `schema:Product`, `gs1:Product` — product- or GTIN-level anchoring.
     * `schema:Brand`, `schema:Organization` — corporate or master-brand anchoring.
@@ -229,7 +229,7 @@ Defines *what the persona represents* and *how it is meant to appear*.
 | ----------------------- | ------------------ | ------------------------------------- |
 | **canonicalVocabulary** | Text, URL          | Official vocabulary persona must use. |
 | **lexicalPolicy**       | Text, URL          | Lexical rule set.                     |
-| **usesVerbalToken**     | Brando:VerbalIdentity | Canonical verbal tokens.              |
+| **usesVerbalToken**     | brando:VerbalToken | Canonical verbal tokens.              |
 
 ---
 
@@ -395,7 +395,7 @@ Defines *what the persona represents* and *how it is meant to appear*.
      * --------------------------------------------------------- */
     {
       "@id": "https://example.com/verbal/brando-definitions",
-      "@type": "Brando:VerbalIdentity",
+      "@type": "brando:VerbalToken",
       "name": "Brando Core Definitions",
       "tokenType": "definition",
       "approvedTerms": [
@@ -406,7 +406,7 @@ Defines *what the persona represents* and *how it is meant to appear*.
     },
     {
       "@id": "https://example.com/verbal/brando-tone-keyphrases",
-      "@type": "Brando:VerbalIdentity",
+      "@type": "brando:VerbalToken",
       "name": "Brando Tone Key Phrases",
       "approvedTerms": [
         "precise",
@@ -660,7 +660,7 @@ Defines *what the persona represents* and *how it is meant to appear*.
 * [`brando:Brand`](brand.md)
 * [`brando:Policy`](policy.md)
 * [`brando:Context`](context.md)
-* [`Brando:VerbalIdentity`](verbal-token.md)
+* [`brando:VerbalToken`](verbal-token.md)
 * [`brando:AutomationRule`](automation-rule.md)
 * [Runtime Integration Guide](../architecture/runtime-integration.md)
 

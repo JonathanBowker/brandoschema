@@ -12,7 +12,7 @@ A governed, **AI runtime profile for a brand**.
 A `brando:BrandModel` encodes **how a brand is executed in AI runtimes** – which models/endpoints are used, which modalities they support (text, image, audio, video), which APIs they talk to (chat completions, images, assistants), and which safety / generation parameters and policies apply by default.
 
 > **rdfs:comment**
-> *A `brando:BrandModel` defines a governed AI “model profile” for a brand or brand segment. It describes which AI capabilities (chat, image generation, assistants) are available, which providers/endpoints are used, the default generation parameters (temperature, top_p, max tokens, etc.), and which policies and prompts are bound to that profile. It acts as the operational bridge between Brando’s Brand Directive Vocabulary and concrete AI infrastructure.*
+> *A `brando:BrandModel` defines a governed AI “model profile” for a brand or brand segment. It describes which AI capabilities (chat, image generation, assistants) are available, which providers/endpoints are used, the default generation parameters (temperature, top_p, max tokens, etc.), and which policies and prompts are bound to that profile. It acts as the operational bridge between Brando’s Brand Governance Vocabulary and concrete AI infrastructure.*
 
 ---
 

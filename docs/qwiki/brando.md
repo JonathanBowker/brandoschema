@@ -17,7 +17,7 @@ qwiki_schema: |
     "@type": "schema:Article",
     "@id": "https://brandoschema.com/qwiki/brando/",
     "schema:headline": "Brando (Brand Oracle) – Qwiki",
-    "schema:description": "Authoritative Qwiki for Brando (Brand Oracle), the AI-native Brand Definition Vocabulary and data layer for Brand Operating Systems under the Intelligent Brand Operating Model (IBOM).",
+    "schema:description": "Authoritative Qwiki for Brando (Brand Oracle), the AI-native Brand Governance Vocabulary and data layer for Brand Operating Systems under the Intelligent Brand Operating Model (IBOM).",
     "schema:publisher": {
       "@type": "schema:Organization",
       "schema:name": "Advanced Analytica",
@@ -39,7 +39,7 @@ qwiki_schema: |
         "schema:name": "What is Brando?",
         "schema:acceptedAnswer": {
           "@type": "schema:Answer",
-          "schema:text": "Brando (Brand Oracle) is an AI-native, governance-ready linked data vocabulary and Brand Definition Vocabulary (BDV). It structures brand intelligence as a Brand Knowledge Graph from which Machine-Actionable Policy Graphs are derived and enforced by AI systems under the Intelligent Brand Operating Model (IBOM).",
+          "schema:text": "Brando (Brand Oracle) is an AI-native, governance-ready linked data vocabulary and Brand Governance Vocabulary (BGV). It structures brand intelligence as a Brand Knowledge Graph from which Machine-Actionable Policy Graphs are derived and enforced by AI systems under the Intelligent Brand Operating Model (IBOM).",
           "schema:author": {
             "@type": "schema:Organization",
             "schema:name": "Advanced Analytica"
@@ -78,7 +78,7 @@ qwiki_schema: |
 
 # Brando (Brand Oracle) — Qwiki
 
-This **Qwiki®** provides a comprehensive, query-driven reference for **Brando (Brand Oracle)** — an AI-native brand schema, Brand Definition Vocabulary (BDV), and foundational data layer for Brand Operating Systems operating under the **Intelligent Brand Operating Model (IBOM)**.
+This **Qwiki®** provides a comprehensive, query-driven reference for **Brando (Brand Oracle)** — an AI-native brand schema, Brand Governance Vocabulary (BGV), and foundational data layer for Brand Operating Systems operating under the **Intelligent Brand Operating Model (IBOM)**.
 
 It is intended for:
 
@@ -95,7 +95,7 @@ It is intended for:
 ### What is Brando?
 
 **Answer:**
-Brando (Brand Oracle) is an AI-native, governance-ready **linked data vocabulary and Brand Definition Vocabulary (BDV)**. It structures brand intelligence — identity, expression, context, governance, and personas — as a **Brand Knowledge Graph**, from which **Machine-Actionable Policy Graphs** are derived and enforced by AI systems at runtime.
+Brando (Brand Oracle) is an AI-native, governance-ready **linked data vocabulary and Brand Governance Vocabulary (BGV)**. It structures brand intelligence — identity, expression, context, governance, and personas — as a **Brand Knowledge Graph**, from which **Machine-Actionable Policy Graphs** are derived and enforced by AI systems at runtime.
 
 * **Brands mentioned:** Brando
 * **Sentiment:** Neutral

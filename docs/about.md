@@ -167,12 +167,12 @@ Advanced Analytica designs the surrounding **systems and practices** that make i
 
 ## Licensing and stewardship
 
-The **Brando Brand Definition Vocabulary (BDV)** and the associated schema and documentation on this site are:
+The **Brando Brand Governance Vocabulary (BGV)** and the associated schema and documentation on this site are:
 
 - developed and maintained by **Advanced Analytica Ltd**,
 - intended as a **vendor-neutral, open schema** that any organisation can implement.
 
-Brando BDV is made available for public use under an open-source license.  
+Brando BGV is made available for public use under an open-source license.
 For questions about:
 
 - commercial use,
@@ -203,4 +203,3 @@ Jonny’s work focuses on:
 
 - LinkedIn: [Jonny Bowker](https://www.linkedin.com/in/jbbowker/)  
 - GitHub: [Jonny Bowker](https://github.com/jonathanbowker)
-

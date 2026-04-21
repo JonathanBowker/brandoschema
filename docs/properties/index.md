@@ -251,8 +251,8 @@ Properties in this section: **2**
 | --- | --- |
 | Description | Preview-friendly URL or data reference for displaying this token's associated asset. |
 | Values expected | **URL**<br>**List of URL values** |
-| Used on | [brando:BrandExpression](../types/brand-expression-token.md) |
-| Vocabulary path | Brand > Property > BrandExpression :: assetPreview |
+| Used on | [brando:BrandExpressionToken](../types/brand-expression-token.md) |
+| Vocabulary path | Brand > Property > BrandExpressionToken :: assetPreview |
 | Canonical URL | [`https://brandoschema.com/properties/assetPreview`](https://brandoschema.com/properties/assetPreview) |
 
 #### [`brando:assetURL`](assetURL.md)
@@ -261,8 +261,8 @@ Properties in this section: **2**
 | --- | --- |
 | Description | Canonical source URL for an asset associated with this expression token (e.g. avatar, badge, waveform). |
 | Values expected | **URL**<br>**List of URL values** |
-| Used on | [brando:BrandExpression](../types/brand-expression-token.md) |
-| Vocabulary path | Brand > Property > BrandExpression :: assetURL |
+| Used on | [brando:BrandExpressionToken](../types/brand-expression-token.md) |
+| Vocabulary path | Brand > Property > BrandExpressionToken :: assetURL |
 | Canonical URL | [`https://brandoschema.com/properties/assetURL`](https://brandoschema.com/properties/assetURL) |
 
 ### [Verbal identity properties](verbal-identity.md)
@@ -277,8 +277,8 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Words and phrases that are encouraged in this verbal token. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VerbalIdentity](../types/verbal-token.md) |
-| Vocabulary path | Brand > Property > Verbal :: approvedTerms |
+| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Vocabulary path | Brand > Property > VerbalToken :: approvedTerms |
 | Canonical URL | [`https://brandoschema.com/properties/approvedTerms`](https://brandoschema.com/properties/approvedTerms) |
 
 #### [`brando:dialogueStyle`](dialogueStyle.md)
@@ -287,8 +287,8 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Guidance on conversational patterns, pacing, and pronoun usage. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VerbalIdentity](../types/verbal-token.md) |
-| Vocabulary path | Brand > Property > Verbal :: dialogueStyle |
+| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Vocabulary path | Brand > Property > VerbalToken :: dialogueStyle |
 | Canonical URL | [`https://brandoschema.com/properties/dialogueStyle`](https://brandoschema.com/properties/dialogueStyle) |
 
 #### [`brando:keyMessages`](keyMessages.md)
@@ -297,8 +297,8 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Core value propositions and ideas that should recur across outputs. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VerbalIdentity](../types/verbal-token.md) |
-| Vocabulary path | Brand > Property > Verbal :: keyMessages |
+| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Vocabulary path | Brand > Property > VerbalToken :: keyMessages |
 | Canonical URL | [`https://brandoschema.com/properties/keyMessages`](https://brandoschema.com/properties/keyMessages) |
 
 #### [`brando:mustDo`](mustDos.md)
@@ -307,8 +307,8 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Required behaviours and inclusions this verbal token must follow. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VerbalIdentity](../types/verbal-token.md) |
-| Vocabulary path | Brand > Property > Verbal :: mustDos |
+| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Vocabulary path | Brand > Property > VerbalToken :: mustDos |
 | Canonical URL | [`https://brandoschema.com/properties/mustDos`](https://brandoschema.com/properties/mustDos) |
 
 #### [`brando:mustNotDo`](mustNotDos.md)
@@ -317,8 +317,8 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Behaviours and constructions this verbal token must never produce. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VerbalIdentity](../types/verbal-token.md) |
-| Vocabulary path | Brand > Property > Verbal :: mustNotDos |
+| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Vocabulary path | Brand > Property > VerbalToken :: mustNotDos |
 | Canonical URL | [`https://brandoschema.com/properties/mustNotDos`](https://brandoschema.com/properties/mustNotDos) |
 
 #### [`brando:namingConvention`](namingConvention.md)
@@ -327,8 +327,8 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Rules for how products, features, dates, and other entities are named and formatted. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VerbalIdentity](../types/verbal-token.md) |
-| Vocabulary path | Brand > Property > Verbal :: namingConvention |
+| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Vocabulary path | Brand > Property > VerbalToken :: namingConvention |
 | Canonical URL | [`https://brandoschema.com/properties/namingConvention`](https://brandoschema.com/properties/namingConvention) |
 
 #### [`brando:personaCard`](personaCard.md)
@@ -337,8 +337,8 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Humanised brand-as-a-person description used to guide tone and behaviour. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VerbalIdentity](../types/verbal-token.md) |
-| Vocabulary path | Brand > Property > Verbal :: personaCard |
+| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Vocabulary path | Brand > Property > VerbalToken :: personaCard |
 | Canonical URL | [`https://brandoschema.com/properties/personaCard`](https://brandoschema.com/properties/personaCard) |
 
 #### [`brando:prohibitedTerms`](prohibitedTerms.md)
@@ -347,8 +347,8 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Words and phrases that must not be used in this verbal token. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VerbalIdentity](../types/verbal-token.md) |
-| Vocabulary path | Brand > Property > Verbal :: prohibitedTerms |
+| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Vocabulary path | Brand > Property > VerbalToken :: prohibitedTerms |
 | Canonical URL | [`https://brandoschema.com/properties/prohibitedTerms`](https://brandoschema.com/properties/prohibitedTerms) |
 
 #### [`brando:promptScaffold`](promptScaffold.md)
@@ -357,8 +357,8 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Reusable instruction block or template for priming language models. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VerbalIdentity](../types/verbal-token.md) |
-| Vocabulary path | Brand > Property > Verbal :: promptScaffold |
+| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Vocabulary path | Brand > Property > VerbalToken :: promptScaffold |
 | Canonical URL | [`https://brandoschema.com/properties/promptScaffold`](https://brandoschema.com/properties/promptScaffold) |
 
 #### [`brando:tagline`](tagline.md)
@@ -367,8 +367,8 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Primary tagline plus any sanctioned variants for this verbal token. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VerbalIdentity](../types/verbal-token.md) |
-| Vocabulary path | Brand > Property > Verbal :: tagline |
+| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Vocabulary path | Brand > Property > VerbalToken :: tagline |
 | Canonical URL | [`https://brandoschema.com/properties/tagline`](https://brandoschema.com/properties/tagline) |
 
 #### [`brando:toneOfVoice`](toneOfVoice.md)
@@ -377,8 +377,8 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Emotional texture and attitude of the brand's voice in this token. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VerbalIdentity](../types/verbal-token.md) |
-| Vocabulary path | Brand > Property > Verbal :: toneOfVoice |
+| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Vocabulary path | Brand > Property > VerbalToken :: toneOfVoice |
 | Canonical URL | [`https://brandoschema.com/properties/toneOfVoice`](https://brandoschema.com/properties/toneOfVoice) |
 
 #### [`brando:writingStyle`](writingStyle.md)
@@ -387,8 +387,8 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Preferences for grammar, sentence structure, and clarity. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VerbalIdentity](../types/verbal-token.md) |
-| Vocabulary path | Brand > Property > Verbal :: writingStyle |
+| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Vocabulary path | Brand > Property > VerbalToken :: writingStyle |
 | Canonical URL | [`https://brandoschema.com/properties/writingStyle`](https://brandoschema.com/properties/writingStyle) |
 
 ### [Visual identity properties](visual-identity.md)
@@ -403,8 +403,8 @@ Properties in this section: **9**
 | --- | --- |
 | Description | Display name of the brand as it should appear in visual treatments. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Brand > Property > Visual :: brandName |
+| Used on | [brando:VisualToken](../types/visual-token.md) |
+| Vocabulary path | Brand > Property > VisualToken :: brandName |
 | Canonical URL | [`https://brandoschema.com/properties/brandName`](https://brandoschema.com/properties/brandName) |
 
 #### [`brando:colourPalette`](colourPalette.md)
@@ -413,8 +413,8 @@ Properties in this section: **9**
 | --- | --- |
 | Description | Structured description of the brand's colour system, including roles and values. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Brand > Property > Visual :: colourPalette |
+| Used on | [brando:VisualToken](../types/visual-token.md) |
+| Vocabulary path | Brand > Property > VisualToken :: colourPalette |
 | Canonical URL | [`https://brandoschema.com/properties/colourPalette`](https://brandoschema.com/properties/colourPalette) |
 
 #### [`brando:imageryStyles`](imageryStyles.md)
@@ -423,8 +423,8 @@ Properties in this section: **9**
 | --- | --- |
 | Description | Guidance on photography, illustration, and composition style. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Brand > Property > Visual :: imageryStyles |
+| Used on | [brando:VisualToken](../types/visual-token.md) |
+| Vocabulary path | Brand > Property > VisualToken :: imageryStyles |
 | Canonical URL | [`https://brandoschema.com/properties/imageryStyles`](https://brandoschema.com/properties/imageryStyles) |
 
 #### [`brando:logo`](logo.md)
@@ -433,8 +433,8 @@ Properties in this section: **9**
 | --- | --- |
 | Description | Canonical reference URL to the primary logo asset or logo set. |
 | Values expected | **URL**<br>**List of URL values** |
-| Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Brand > Property > Visual :: logo |
+| Used on | [brando:VisualToken](../types/visual-token.md) |
+| Vocabulary path | Brand > Property > VisualToken :: logo |
 | Canonical URL | [`https://brandoschema.com/properties/logo`](https://brandoschema.com/properties/logo) |
 
 #### [`brando:motionRules`](motionRules.md)
@@ -443,8 +443,8 @@ Properties in this section: **9**
 | --- | --- |
 | Description | Principles for animation, transitions, and micro-interactions. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Brand > Property > Visual :: motionRules |
+| Used on | [brando:VisualToken](../types/visual-token.md) |
+| Vocabulary path | Brand > Property > VisualToken :: motionRules |
 | Canonical URL | [`https://brandoschema.com/properties/motionRules`](https://brandoschema.com/properties/motionRules) |
 
 #### [`brando:typography`](typography.md)
@@ -453,38 +453,38 @@ Properties in this section: **9**
 | --- | --- |
 | Description | Typographic system including font families, weights, sizes, and hierarchy. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Brand > Property > Visual :: typography |
+| Used on | [brando:VisualToken](../types/visual-token.md) |
+| Vocabulary path | Brand > Property > VisualToken :: typography |
 | Canonical URL | [`https://brandoschema.com/properties/typography`](https://brandoschema.com/properties/typography) |
 
-#### [`brando:VisualIdentity`](visualToken.md)
+#### [`brando:visualToken`](visualToken.md)
 
 | Field | Value |
 | --- | --- |
 | Description | Core design tokens such as spacing, radius, and elevation. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Brand > Property > Visual :: Visual |
+| Used on | [brando:VisualToken](../types/visual-token.md) |
+| Vocabulary path | Brand > Property > VisualToken :: visualToken |
 | Canonical URL | [`https://brandoschema.com/properties/Visual`](https://brandoschema.com/properties/Visual) |
 
-#### [`brando:VisualIdentityReferenceLink`](visualReferenceLink.md)
+#### [`brando:visualReferenceLink`](visualReferenceLink.md)
 
 | Field | Value |
 | --- | --- |
 | Description | URL pointing to full visual identity guidelines or design system documentation. |
 | Values expected | **URL**<br>**List of URL values** |
-| Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Brand > Property > Visual :: visualReferenceLink |
+| Used on | [brando:VisualToken](../types/visual-token.md) |
+| Vocabulary path | Brand > Property > VisualToken :: visualReferenceLink |
 | Canonical URL | [`https://brandoschema.com/properties/visualReferenceLink`](https://brandoschema.com/properties/visualReferenceLink) |
 
-#### [`brando:VisualIdentityUsageGuidelines`](visualUsageGuidelines.md)
+#### [`brando:visualUsageGuidelines`](visualUsageGuidelines.md)
 
 | Field | Value |
 | --- | --- |
 | Description | Do's and don'ts for applying logos, colours, typography, and imagery. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Brand > Property > Visual :: visualUsageGuidelines |
+| Used on | [brando:VisualToken](../types/visual-token.md) |
+| Vocabulary path | Brand > Property > VisualToken :: visualUsageGuidelines |
 | Canonical URL | [`https://brandoschema.com/properties/visualUsageGuidelines`](https://brandoschema.com/properties/visualUsageGuidelines) |
 
 ### [Audio identity properties](audio-identity.md)
@@ -493,44 +493,44 @@ Voice, sonic logo, audio cue, pronunciation, and audio-guidance properties.
 
 Properties in this section: **7**
 
-#### [`brando:AudioIdentityCue`](audioCue.md)
+#### [`brando:audioCue`](audioCue.md)
 
 | Field | Value |
 | --- | --- |
 | Description | Definitions of short sound cues used as confirmations, alerts, or transitions. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:AudioIdentity](../types/audio-token.md) |
-| Vocabulary path | Brand > Property > Audio :: audioCue |
+| Used on | [brando:AudioToken](../types/audio-token.md) |
+| Vocabulary path | Brand > Property > AudioToken :: audioCue |
 | Canonical URL | [`https://brandoschema.com/properties/audioCue`](https://brandoschema.com/properties/audioCue) |
 
-#### [`brando:AudioIdentityLogo`](audioLogo.md)
+#### [`brando:audioLogo`](audioLogo.md)
 
 | Field | Value |
 | --- | --- |
 | Description | URI pointing to the brand's sonic logo or audio mark. |
 | Values expected | **URL**<br>**List of URL values** |
-| Used on | [Brando:AudioIdentity](../types/audio-token.md) |
-| Vocabulary path | Brand > Property > Audio :: audioLogo |
+| Used on | [brando:AudioToken](../types/audio-token.md) |
+| Vocabulary path | Brand > Property > AudioToken :: audioLogo |
 | Canonical URL | [`https://brandoschema.com/properties/audioLogo`](https://brandoschema.com/properties/audioLogo) |
 
-#### [`brando:AudioIdentityReferenceLink`](audioReferenceLink.md)
+#### [`brando:audioReferenceLink`](audioReferenceLink.md)
 
 | Field | Value |
 | --- | --- |
 | Description | URL pointing to canonical audio repositories or style guides. |
 | Values expected | **URL**<br>**List of URL values** |
-| Used on | [Brando:AudioIdentity](../types/audio-token.md) |
-| Vocabulary path | Brand > Property > Audio :: audioReferenceLink |
+| Used on | [brando:AudioToken](../types/audio-token.md) |
+| Vocabulary path | Brand > Property > AudioToken :: audioReferenceLink |
 | Canonical URL | [`https://brandoschema.com/properties/audioReferenceLink`](https://brandoschema.com/properties/audioReferenceLink) |
 
-#### [`brando:AudioIdentityUsageGuidelines`](audioUsageGuidelines.md)
+#### [`brando:audioUsageGuidelines`](audioUsageGuidelines.md)
 
 | Field | Value |
 | --- | --- |
 | Description | Do's and don'ts for when and how branded audio should be used. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:AudioIdentity](../types/audio-token.md) |
-| Vocabulary path | Brand > Property > Audio :: audioUsageGuidelines |
+| Used on | [brando:AudioToken](../types/audio-token.md) |
+| Vocabulary path | Brand > Property > AudioToken :: audioUsageGuidelines |
 | Canonical URL | [`https://brandoschema.com/properties/audioUsageGuidelines`](https://brandoschema.com/properties/audioUsageGuidelines) |
 
 #### [`brando:pronunciationGuide`](pronunciationGuide.md)
@@ -539,8 +539,8 @@ Properties in this section: **7**
 | --- | --- |
 | Description | Standardised pronunciation notes (e.g. IPA or phonetic spelling) for brand names and key terms. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:AudioIdentity](../types/audio-token.md) |
-| Vocabulary path | Brand > Property > Audio :: pronunciationGuide |
+| Used on | [brando:AudioToken](../types/audio-token.md) |
+| Vocabulary path | Brand > Property > AudioToken :: pronunciationGuide |
 | Canonical URL | [`https://brandoschema.com/properties/pronunciationGuide`](https://brandoschema.com/properties/pronunciationGuide) |
 
 #### [`brando:speechStyle`](speechStyle.md)
@@ -549,8 +549,8 @@ Properties in this section: **7**
 | --- | --- |
 | Description | Guidance on rhythm, pacing, pausing, and expressiveness for spoken output. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:AudioIdentity](../types/audio-token.md) |
-| Vocabulary path | Brand > Property > Audio :: speechStyle |
+| Used on | [brando:AudioToken](../types/audio-token.md) |
+| Vocabulary path | Brand > Property > AudioToken :: speechStyle |
 | Canonical URL | [`https://brandoschema.com/properties/speechStyle`](https://brandoschema.com/properties/speechStyle) |
 
 #### [`brando:voiceSignature`](voiceSignature.md)
@@ -559,8 +559,8 @@ Properties in this section: **7**
 | --- | --- |
 | Description | Description of the desired voice profile for TTS or voice agents. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [Brando:AudioIdentity](../types/audio-token.md) |
-| Vocabulary path | Brand > Property > Audio :: voiceSignature |
+| Used on | [brando:AudioToken](../types/audio-token.md) |
+| Vocabulary path | Brand > Property > AudioToken :: voiceSignature |
 | Canonical URL | [`https://brandoschema.com/properties/voiceSignature`](https://brandoschema.com/properties/voiceSignature) |
 
 ### [Policy properties](policy.md)
@@ -899,8 +899,8 @@ Properties in this section: **16**
 | --- | --- |
 | Description | Links a brand, token, context, campaign, or policy node to one or more canonical downloadable file assets (e.g. master logo packs, current guideline PDFs) represented as schema:MediaObject. Intended as a stable pointer to the most up-to-date creative files exposed by the Brand OS or DAM. |
 | Values expected | **schema:MediaObject**<br>**List of schema:MediaObject values** |
-| Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md)<br>[Brando:VisualIdentity](../types/visual-token.md)<br>[Brando:VerbalIdentity](../types/verbal-token.md)<br>[Brando:AudioIdentity](../types/audio-token.md)<br>[brando:Policy](../types/policy.md)<br>[brando:Campaign](../types/campaign.md)<br>[brando:BrandedCategory](../types/branded-category.md) |
-| Vocabulary path | Brand > Property > Multiple types :: downloadableFile (brando:Brand, brando:Context, Brando:VisualIdentity, Brando:VerbalIdentity, Brando:AudioIdentity, brando:Policy, brando:Campaign, brando:BrandedCategory) |
+| Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md)<br>[brando:VisualToken](../types/visual-token.md)<br>[brando:VerbalToken](../types/verbal-token.md)<br>[brando:AudioToken](../types/audio-token.md)<br>[brando:Policy](../types/policy.md)<br>[brando:Campaign](../types/campaign.md)<br>[brando:BrandedCategory](../types/branded-category.md) |
+| Vocabulary path | Brand > Property > Multiple types :: downloadableFile (brando:Brand, brando:Context, brando:VisualToken, brando:VerbalToken, brando:AudioToken, brando:Policy, brando:Campaign, brando:BrandedCategory) |
 | Canonical URL | [`https://brandoschema.com/properties/downloadableFile`](https://brandoschema.com/properties/downloadableFile) |
 
 #### [`brando:effectiveDuring`](effectiveDuring.md)
@@ -989,36 +989,36 @@ Properties in this section: **16**
 | --- | --- |
 | Description | Links a brand, token, context, campaign, or policy node to non-canonical supporting creative files (e.g. templates, mockups, working documents, previous guideline versions) represented as schema:MediaObject. These files are helpful for production but are not the primary source-of-truth asset. |
 | Values expected | **schema:MediaObject**<br>**List of schema:MediaObject values** |
-| Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md)<br>[Brando:VisualIdentity](../types/visual-token.md)<br>[Brando:VerbalIdentity](../types/verbal-token.md)<br>[Brando:AudioIdentity](../types/audio-token.md)<br>[brando:Policy](../types/policy.md)<br>[brando:Campaign](../types/campaign.md)<br>[brando:BrandedCategory](../types/branded-category.md) |
-| Vocabulary path | Brand > Property > Multiple types :: supportingFile (brando:Brand, brando:Context, Brando:VisualIdentity, Brando:VerbalIdentity, Brando:AudioIdentity, brando:Policy, brando:Campaign, brando:BrandedCategory) |
+| Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md)<br>[brando:VisualToken](../types/visual-token.md)<br>[brando:VerbalToken](../types/verbal-token.md)<br>[brando:AudioToken](../types/audio-token.md)<br>[brando:Policy](../types/policy.md)<br>[brando:Campaign](../types/campaign.md)<br>[brando:BrandedCategory](../types/branded-category.md) |
+| Vocabulary path | Brand > Property > Multiple types :: supportingFile (brando:Brand, brando:Context, brando:VisualToken, brando:VerbalToken, brando:AudioToken, brando:Policy, brando:Campaign, brando:BrandedCategory) |
 | Canonical URL | [`https://brandoschema.com/properties/supportingFile`](https://brandoschema.com/properties/supportingFile) |
 
-#### [`brando:usesAudio`](usesAudioToken.md)
+#### [`brando:usesAudioToken`](usesAudioToken.md)
 
 | Field | Value |
 | --- | --- |
 | Description | Attaches an audio expression token defining how the brand sounds in this scope. |
-| Values expected | **Brando:AudioIdentity**<br>**List of Brando:AudioIdentity values** |
+| Values expected | **brando:AudioToken**<br>**List of brando:AudioToken values** |
 | Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md) |
 | Vocabulary path | Brand > Property > Multiple types :: usesAudio (brando:Brand, brando:Context) |
 | Canonical URL | [`https://brandoschema.com/properties/usesAudio`](https://brandoschema.com/properties/usesAudio) |
 
-#### [`brando:usesVerbal`](usesVerbalToken.md)
+#### [`brando:usesVerbalToken`](usesVerbalToken.md)
 
 | Field | Value |
 | --- | --- |
 | Description | Attaches a verbal expression token defining how the brand speaks in this scope. |
-| Values expected | **Brando:VerbalIdentity**<br>**List of Brando:VerbalIdentity values** |
+| Values expected | **brando:VerbalToken**<br>**List of brando:VerbalToken values** |
 | Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md) |
 | Vocabulary path | Brand > Property > Multiple types :: usesVerbal (brando:Brand, brando:Context) |
 | Canonical URL | [`https://brandoschema.com/properties/usesVerbal`](https://brandoschema.com/properties/usesVerbal) |
 
-#### [`brando:usesVisual`](usesVisualToken.md)
+#### [`brando:usesVisualToken`](usesVisualToken.md)
 
 | Field | Value |
 | --- | --- |
 | Description | Attaches a visual expression token defining how the brand looks in this scope. |
-| Values expected | **Brando:VisualIdentity**<br>**List of Brando:VisualIdentity values** |
+| Values expected | **brando:VisualToken**<br>**List of brando:VisualToken values** |
 | Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md) |
 | Vocabulary path | Brand > Property > Multiple types :: usesVisual (brando:Brand, brando:Context) |
 | Canonical URL | [`https://brandoschema.com/properties/usesVisual`](https://brandoschema.com/properties/usesVisual) |

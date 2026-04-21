@@ -11,12 +11,12 @@ A governed, **product-anchored AI persona** for LLMs, multimodal models, and age
 
 A `brando:ProductPersona` encodes **how an AI is allowed to talk about a specific product or product family** – including facts, benefits, risks, tone, regulatory constraints, and claim boundaries – while remaining strictly aligned with:
 
-- the **brand’s operatives** (Brando BDV – Brand Directive Vocabulary),
+- the **brand’s operatives** (Brando BGV – Brand Governance Vocabulary),
 - the **product master data** (GS1 GTIN / GLN, DPP, PIP, SmartLabel, etc.),
 - and the **governing policies** (tone, lexical, safety).
 
 > **rdfs:comment**
-> *A `brando:ProductPersona` defines a governed AI identity for a product or product line. It acts as a semantic bridge between GS1-based product data (e.g. GTIN JSON-LD) and Brando’s Brand Directive Vocabulary. It specifies what the product is, which canonical claims are allowed, how the tone flexes by channel, and which evidence sources the AI must rely on — enabling non-hallucinated, on-brand product content generation.*
+> *A `brando:ProductPersona` defines a governed AI identity for a product or product line. It acts as a semantic bridge between GS1-based product data (e.g. GTIN JSON-LD) and Brando’s Brand Governance Vocabulary. It specifies what the product is, which canonical claims are allowed, how the tone flexes by channel, and which evidence sources the AI must rely on — enabling non-hallucinated, on-brand product content generation.*
 
 ---
 
@@ -37,7 +37,7 @@ A `brando:ProductPersona` is a **structured, governance-ready product identity l
 
 It determines **how the AI talks about a product**, which facts it may use, and which claims are disallowed.
 
-Within a Brand Operating System, it is the **product-level semantic identity layer**, sitting on top of **Schema.org / GS1 descriptive data** and under the **Brand Definition Vocabulary (BDV)**.
+Within a Brand Operating System, it is the **product-level semantic identity layer**, sitting on top of **Schema.org / GS1 descriptive data** and under the **Brand Governance Vocabulary (BGV)**.
 
 ---
 
@@ -97,9 +97,9 @@ A `brando:ProductPersona` typically references:
     - `brando:appliesToGTIN` → GTIN(s) covered,
     - `brando:appliesToProduct` → product JSON-LD URI(s) covered.
 
-- **Brando BDV objects**:
+- **Brando BGV objects**:
 
-    - `brando:VerbalIdentity`, `brando:VisualIdentity`, `brando:AudioIdentity`.
+    - `brando:VerbalToken`, `brando:VisualToken`, `brando:AudioToken`.
 
 - **Policies**:
 
@@ -201,10 +201,10 @@ These fields describe the **persona itself**, not the underlying product master 
 | **mustDos**         | Text                 | Required messaging behaviours (e.g. mandatory disclaimers).|
 | **mustNotDos**      | Text                 | Prohibited behaviours (e.g. “no superlative claims”).      |
 | **tagline**         | Text                 | Optional tagline / reusable line.                          |
-| **usesVerbalToken** | `Brando:VerbalIdentity` | Linked verbal identity assets (BDV tokens).                |
+| **usesVerbalToken** | `brando:VerbalToken` | Linked verbal identity assets (BGV tokens).                |
 
 **Usage notes:**
-This is where the **Brand Definition Vocabulary (BDV)** is applied: tone, phrasing patterns, approved descriptors, and category-specific tokens.
+This is where the **Brand Governance Vocabulary (BGV)** is applied: tone, phrasing patterns, approved descriptors, and category-specific tokens.
 
 ---
 
@@ -474,7 +474,7 @@ This is where the **Brand Definition Vocabulary (BDV)** is applied: tone, phrasi
 * [`brando:Brand`](brand.md)
 * [`brando:Context`](context.md)
 * [`brando:Policy`](policy.md)
-* [`brando:VerbalIdentity`](verbal-token.md)
+* [`brando:VerbalToken`](verbal-token.md)
 * [JSON-LD context](../spec/jsonld-context.md)
 * [Chatbot + Brando runtime flow](../examples/chatbot-runtime.md)
 

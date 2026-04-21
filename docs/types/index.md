@@ -1,6 +1,6 @@
 ---
 title: Brando Types Overview
-description: Overview of the core classes in the Brand Oracle (Brando) schema vocabulary v1.3, including their roles, relationships, and how they fit into a Brand Knowledge Graph.
+description: Overview of the schema types in the Brand Oracle (Brando) schema vocabulary v1.3, including their roles, relationships, and how they fit into a Brand Knowledge Graph.
 ---
 
 # Brando types overview

@@ -7,8 +7,8 @@ keywords:
   - Brand Brain
   - Intelligent Brand Operating Model
   - IBOM
-  - Brand Definition Vocabulary
-  - BDV
+  - Brand Governance Vocabulary
+  - BGV
   - Brand Knowledge Graph
   - Machine-Actionable Policy Graph
   - Brand Operating System
@@ -46,7 +46,7 @@ It provides a full-lifecycle, enterprise-grade path for transforming static bran
 1. **Brand Knowledge Graph**
    The authoritative, structured representation of brand identity, expression, context, personas, and governance.
 
-2. **Brand Definition Vocabulary (BDV)**
+2. **Brand Governance Vocabulary (BGV)**
    The directive ontology that defines how the brand *must* behave inside AI systems.
 
 3. **Machine-Actionable Policy Graphs**
@@ -109,7 +109,7 @@ It is a **purpose-built, AI-native vocabulary and operating model**, designed sp
 The IBOM Implementation Service is delivered by the **same team that designed and maintains**:
 
 * the Brando Schema Vocabulary,
-* the Brand Definition Vocabulary (BDV),
+* the Brand Governance Vocabulary (BGV),
 * the Intelligent Brand Operating Model (IBOM),
 * and the reference Brand Operating System architecture.
 
@@ -191,7 +191,7 @@ Translate brand intent into structured, machine-readable form.
 
 ### Activities
 
-* Define Brand Definition Vocabulary (BDV)
+* Define Brand Governance Vocabulary (BGV)
 * Codify tone, language, constraints, and tokens
 * Model contexts, personas, and categories
 * Align with Schema.org, GS1, and taxonomies
@@ -199,7 +199,7 @@ Translate brand intent into structured, machine-readable form.
 ### Outputs
 
 * Canonical Brand Knowledge Graph
-* Complete BDV (JSON-LD + YAML)
+* Complete BGV (JSON-LD + YAML)
 * Governance rules and constraints
 * Policy derivation logic
 
@@ -221,7 +221,7 @@ Derive executable governance from brand knowledge.
 ### Outputs
 
 * Executable Policy Graphs
-* Refined BDV and governance rules
+* Refined BGV and governance rules
 * Updated impact assessments
 
 ---

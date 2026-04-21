@@ -17,8 +17,8 @@ Properties in this section: **2**
 | --- | --- |
 | Description | Preview-friendly URL or data reference for displaying this token's associated asset. |
 | Values expected | **URL**<br>**List of URL values** |
-| Used on | [brando:BrandExpression](../types/brand-expression-token.md) |
-| Vocabulary path | Brand > Property > BrandExpression :: assetPreview |
+| Used on | [brando:BrandExpressionToken](../types/brand-expression-token.md) |
+| Vocabulary path | Brand > Property > BrandExpressionToken :: assetPreview |
 | Canonical URL | [`https://brandoschema.com/properties/assetPreview`](https://brandoschema.com/properties/assetPreview) |
 
 ## [`brando:assetURL`](assetURL.md)
@@ -27,6 +27,6 @@ Properties in this section: **2**
 | --- | --- |
 | Description | Canonical source URL for an asset associated with this expression token (e.g. avatar, badge, waveform). |
 | Values expected | **URL**<br>**List of URL values** |
-| Used on | [brando:BrandExpression](../types/brand-expression-token.md) |
-| Vocabulary path | Brand > Property > BrandExpression :: assetURL |
+| Used on | [brando:BrandExpressionToken](../types/brand-expression-token.md) |
+| Vocabulary path | Brand > Property > BrandExpressionToken :: assetURL |
 | Canonical URL | [`https://brandoschema.com/properties/assetURL`](https://brandoschema.com/properties/assetURL) |

@@ -6,8 +6,8 @@ keywords:
   - Brando IBOM
   - Intelligent Brand Operating Model
   - Brand Assessment
-  - Brand Definition Vocabulary
-  - BDV
+  - Brand Governance Vocabulary
+  - BGV
   - Brand-as-Code
   - Brand Knowledge Graph
   - Machine-Actionable Policy Graph
@@ -104,7 +104,7 @@ Recommended group size: **4–8 participants**
   - tone and language principles,
   - behavioural expectations,
   - constraints and non-negotiables
-- Define the **Brand Definition Vocabulary (BDV)** at a conceptual level
+- Define the **Brand Governance Vocabulary (BGV)** at a conceptual level
 
 #### 4. Governance intent
 - Identify:
@@ -121,7 +121,7 @@ By the end of the workshop, organisations receive:
 
 - A **Brand & AI Readiness Assessment**
 - A clear **IBOM-aligned brand definition**
-- A conceptual **BDV blueprint**
+- A conceptual **BGV blueprint**
 - A prioritised **use-case and context map**
 - A recommendation on whether to proceed to Pilot or Implementation
 
@@ -172,7 +172,7 @@ This is a **proof of capability**, not a full rollout.
 - Author Brando assets in JSON-LD and/or YAML:
   - `brando:Brand`
   - `brando:Context`
-  - `Brando:VerbalIdentity`
+  - `brando:VerbalToken`
   - **Draft `brando:Policy` nodes**
 - Convert defined brand intent into structured, executable data
 
@@ -223,7 +223,7 @@ By the end of the Pilot, organisations receive:
 - A **working Brand Knowledge Graph**
 - Draft **Machine-Actionable Policy Graphs**
 - Validated AI behaviour for selected use cases
-- A refined BDV and governance model
+- A refined BGV and governance model
 - A clear recommendation for full IBOM implementation
 
 ---

@@ -13,7 +13,7 @@ This FAQ covers common questions about **what Brando is**, **how to use it**, an
 
 **Brando (Brand Oracle)** is a **JSON-LD vocabulary and schema** for modelling brand identity, expression, and governance in a way that **LLMs, agents, and AI tools can consume as a control layer**, not just as SEO metadata.
 
-It defines types like `brando:Brand`, `brando:Context`, `Brando:VerbalIdentity`, `brando:Policy`, etc., and a set of properties that together form a **Brand Knowledge Graph**.
+It defines types like `brando:Brand`, `brando:Context`, `brando:VerbalToken`, `brando:Policy`, etc., and a set of properties that together form a **Brand Knowledge Graph**.
 
 See: [Getting started](getting-started.md)
 
@@ -31,7 +31,7 @@ Brando:
 
 Key differences:
 
-- Behavioural types (`Brando:VerbalIdentity`, `Brando:VisualIdentity`, `Brando:AudioIdentity`, `brando:Policy`, `brando:AutomationRule`).
+- Behavioural types (`brando:VerbalToken`, `brando:VisualToken`, `brando:AudioToken`, `brando:Policy`, `brando:AutomationRule`).
 - Governance concepts (enforcement levels, risk tags, retrievability for LLMs).
 - Explicit runtime integration patterns (contexts, external systems, automation rules).
 
@@ -177,7 +177,7 @@ A **Brand Knowledge Graph** is just:
 
     * `brando:Brand`,
     * `brando:Context`,
-    * `Brando:VerbalIdentity` / `Visual` / `Audio`,
+    * `brando:VerbalToken` / `Visual` / `Audio`,
     * `brando:Policy`,
     * `brando:BrandedCategory`,
     * `brando:Campaign`,
@@ -261,13 +261,13 @@ Common adoption path:
 
     * `brando:Brand`
     * `brando:Context`
-    * `Brando:VerbalIdentity`
+    * `brando:VerbalToken`
     * `brando:Policy`
 
 2. Add later as needed:
 
-    * Visual identity → `Brando:VisualIdentity`
-    * Audio identity → `Brando:AudioIdentity`
+    * Visual identity → `brando:VisualToken`
+    * Audio identity → `brando:AudioToken`
     * Product structure → `brando:BrandedCategory`
     * Campaign overlays → `brando:Campaign`
     * Automation → `brando:AutomationRule`

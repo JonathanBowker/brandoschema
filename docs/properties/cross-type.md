@@ -47,8 +47,8 @@ Properties in this section: **16**
 | --- | --- |
 | Description | Links a brand, token, context, campaign, or policy node to one or more canonical downloadable file assets (e.g. master logo packs, current guideline PDFs) represented as schema:MediaObject. Intended as a stable pointer to the most up-to-date creative files exposed by the Brand OS or DAM. |
 | Values expected | **schema:MediaObject**<br>**List of schema:MediaObject values** |
-| Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md)<br>[Brando:VisualIdentity](../types/visual-token.md)<br>[Brando:VerbalIdentity](../types/verbal-token.md)<br>[Brando:AudioIdentity](../types/audio-token.md)<br>[brando:Policy](../types/policy.md)<br>[brando:Campaign](../types/campaign.md)<br>[brando:BrandedCategory](../types/branded-category.md) |
-| Vocabulary path | Brand > Property > Multiple types :: downloadableFile (brando:Brand, brando:Context, Brando:VisualIdentity, Brando:VerbalIdentity, Brando:AudioIdentity, brando:Policy, brando:Campaign, brando:BrandedCategory) |
+| Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md)<br>[brando:VisualToken](../types/visual-token.md)<br>[brando:VerbalToken](../types/verbal-token.md)<br>[brando:AudioToken](../types/audio-token.md)<br>[brando:Policy](../types/policy.md)<br>[brando:Campaign](../types/campaign.md)<br>[brando:BrandedCategory](../types/branded-category.md) |
+| Vocabulary path | Brand > Property > Multiple types :: downloadableFile (brando:Brand, brando:Context, brando:VisualToken, brando:VerbalToken, brando:AudioToken, brando:Policy, brando:Campaign, brando:BrandedCategory) |
 | Canonical URL | [`https://brandoschema.com/properties/downloadableFile`](https://brandoschema.com/properties/downloadableFile) |
 
 ## [`brando:effectiveDuring`](effectiveDuring.md)
@@ -137,36 +137,36 @@ Properties in this section: **16**
 | --- | --- |
 | Description | Links a brand, token, context, campaign, or policy node to non-canonical supporting creative files (e.g. templates, mockups, working documents, previous guideline versions) represented as schema:MediaObject. These files are helpful for production but are not the primary source-of-truth asset. |
 | Values expected | **schema:MediaObject**<br>**List of schema:MediaObject values** |
-| Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md)<br>[Brando:VisualIdentity](../types/visual-token.md)<br>[Brando:VerbalIdentity](../types/verbal-token.md)<br>[Brando:AudioIdentity](../types/audio-token.md)<br>[brando:Policy](../types/policy.md)<br>[brando:Campaign](../types/campaign.md)<br>[brando:BrandedCategory](../types/branded-category.md) |
-| Vocabulary path | Brand > Property > Multiple types :: supportingFile (brando:Brand, brando:Context, Brando:VisualIdentity, Brando:VerbalIdentity, Brando:AudioIdentity, brando:Policy, brando:Campaign, brando:BrandedCategory) |
+| Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md)<br>[brando:VisualToken](../types/visual-token.md)<br>[brando:VerbalToken](../types/verbal-token.md)<br>[brando:AudioToken](../types/audio-token.md)<br>[brando:Policy](../types/policy.md)<br>[brando:Campaign](../types/campaign.md)<br>[brando:BrandedCategory](../types/branded-category.md) |
+| Vocabulary path | Brand > Property > Multiple types :: supportingFile (brando:Brand, brando:Context, brando:VisualToken, brando:VerbalToken, brando:AudioToken, brando:Policy, brando:Campaign, brando:BrandedCategory) |
 | Canonical URL | [`https://brandoschema.com/properties/supportingFile`](https://brandoschema.com/properties/supportingFile) |
 
-## [`brando:usesAudio`](usesAudioToken.md)
+## [`brando:usesAudioToken`](usesAudioToken.md)
 
 | Field | Value |
 | --- | --- |
 | Description | Attaches an audio expression token defining how the brand sounds in this scope. |
-| Values expected | **Brando:AudioIdentity**<br>**List of Brando:AudioIdentity values** |
+| Values expected | **brando:AudioToken**<br>**List of brando:AudioToken values** |
 | Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md) |
 | Vocabulary path | Brand > Property > Multiple types :: usesAudio (brando:Brand, brando:Context) |
 | Canonical URL | [`https://brandoschema.com/properties/usesAudio`](https://brandoschema.com/properties/usesAudio) |
 
-## [`brando:usesVerbal`](usesVerbalToken.md)
+## [`brando:usesVerbalToken`](usesVerbalToken.md)
 
 | Field | Value |
 | --- | --- |
 | Description | Attaches a verbal expression token defining how the brand speaks in this scope. |
-| Values expected | **Brando:VerbalIdentity**<br>**List of Brando:VerbalIdentity values** |
+| Values expected | **brando:VerbalToken**<br>**List of brando:VerbalToken values** |
 | Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md) |
 | Vocabulary path | Brand > Property > Multiple types :: usesVerbal (brando:Brand, brando:Context) |
 | Canonical URL | [`https://brandoschema.com/properties/usesVerbal`](https://brandoschema.com/properties/usesVerbal) |
 
-## [`brando:usesVisual`](usesVisualToken.md)
+## [`brando:usesVisualToken`](usesVisualToken.md)
 
 | Field | Value |
 | --- | --- |
 | Description | Attaches a visual expression token defining how the brand looks in this scope. |
-| Values expected | **Brando:VisualIdentity**<br>**List of Brando:VisualIdentity values** |
+| Values expected | **brando:VisualToken**<br>**List of brando:VisualToken values** |
 | Used on | [brando:Brand](../types/brand.md)<br>[brando:Context](../types/context.md) |
 | Vocabulary path | Brand > Property > Multiple types :: usesVisual (brando:Brand, brando:Context) |
 | Canonical URL | [`https://brandoschema.com/properties/usesVisual`](https://brandoschema.com/properties/usesVisual) |

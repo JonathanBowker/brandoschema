@@ -32,7 +32,7 @@ The following are protected as trademarks / brand identifiers of **Advanced Anal
 - The combination of the above with terms such as:
     - “Brand Oracle Schema”  
     - “Brando Schema”  
-    - “Brando Brand Definition Vocabulary (BDV)”
+    - “Brando Brand Governance Vocabulary (BGV)”
 
 The **schema / vocabulary itself** (the JSON-LD terms and technical specification) is published for open use under the license described on the [About](about.md) page, but the **names and logos** remain the property of Advanced Analytica.
 

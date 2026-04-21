@@ -130,11 +130,11 @@ Brando provides the **formal vocabulary and schema** required to tokenise brands
 Using Brando, brand intelligence is modelled as a **Brand Knowledge Graph** composed of tokenised nodes, including:
 
 * `brando:Brand` — core brand identity
-* `brando:BrandExpression` and specialised expression tokens:
+* `brando:BrandExpressionToken` and specialised expression tokens:
 
-  * `brando:VerbalIdentity`
-  * `brando:VisualIdentity`
-  * `brando:AudioIdentity`
+  * `brando:VerbalToken`
+  * `brando:VisualToken`
+  * `brando:AudioToken`
 * `brando:Policy` — governance and constraint tokens
 * `brando:Context` — situational activation tokens
 * supporting structures such as campaigns, categories, personas, and automation rules

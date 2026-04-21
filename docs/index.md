@@ -48,7 +48,7 @@ author: "Advanced Analytica"
 og:
   title: "Brand Oracle (Brando) Schema Vocabulary v1.3"
   description: >
-    Brando is an AI-native linked-data vocabulary and Brand Governance Vocabulary  (BGV)
+    Brando is an AI-native linked-data vocabulary and Brand Governance Vocabulary (BGV)
     that enables Brand-as-Code: policy-driven, not prompt-driven. It tokenises brand
     intelligence into Brand Knowledge Graphs and machine-actionable Policy Graphs,
     executed by Brand Operating Systems under the IBOM framework.
@@ -211,7 +211,7 @@ They operate against **policy-constrained projections**.
 Brando is:
 
 * a **linked data vocabulary and ontology** extending Schema.org,
-* a **Brand Governance Vocabulary  (BGV)** encoding intent, rules, and behaviour,
+* a **Brand Governance Vocabulary (BGV)** encoding intent, rules, and behaviour,
 * the **authoritative Brand Knowledge Graph** for Brand Operating Systems,
 * the **source of executable Policy Graphs** under IBOM.
 

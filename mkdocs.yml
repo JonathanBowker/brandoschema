@@ -110,10 +110,10 @@ nav:
             - brando:ProductItem: types/product-item.md
 
         - Expression & identity:
-            - brando:BrandExpression: types/brand-expression-token.md
-            - brando:VerbalIdentity: types/verbal-token.md
-            - brando:VisualIdentity: types/visual-token.md
-            - brando:AudioIdentity: types/audio-token.md
+            - brando:BrandExpressionToken: types/brand-expression-token.md
+            - brando:VerbalToken: types/verbal-token.md
+            - brando:VisualToken: types/visual-token.md
+            - brando:AudioToken: types/audio-token.md
 
         - Governance:
             - brando:Policy: types/policy.md

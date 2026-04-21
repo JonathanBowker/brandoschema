@@ -80,7 +80,7 @@ Except as explicitly permitted in these Terms or by an applicable open-source or
 
 ### 3.2 Brando schema and vocabulary
 
-The **Brando Brand Definition Vocabulary (BDV)** and associated schema/vocabulary definitions (including the JSON-LD terms described on this Site):
+The **Brando Brand Governance Vocabulary (BGV)** and associated schema/vocabulary definitions (including the JSON-LD terms described on this Site):
 
 - are developed and maintained by Advanced Analytica, and  
 - are intended as a **vendor-neutral, open schema**.

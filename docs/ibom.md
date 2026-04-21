@@ -60,7 +60,7 @@ The Brando ecosystem is deliberately split into **definition** and **operation**
 
 ### **Brando Schema**
 - The **definition layer**
-- A linked-data vocabulary and **Brand Definition Vocabulary (BDV)**
+- A linked-data vocabulary and **Brand Governance Vocabulary (BGV)**
 - Encodes brand identity, expression, personas, context, and governance as data
 - Forms the canonical **Brand Knowledge Graph**
 
@@ -130,7 +130,7 @@ The **Brando IBOM** is not theoretical.
 
 It is executed in production through the **Brando IBOM Implementation Service**, which delivers the **official reference implementation** of:
 
-- the Brando Schema and BDV,
+- the Brando Schema and BGV,
 - the Brand Knowledge Graph,
 - Machine-Actionable Policy Graphs,
 - AI Brand Impact Assessments,
@@ -179,7 +179,7 @@ Transforms definition into structured data using **Brando Schema**.
 
 Outputs include:
 
-- Brand Definition Vocabulary (BDV),
+- Brand Governance Vocabulary (BGV),
 - Brand Knowledge Graph (JSON-LD / YAML),
 - context-aware personas and tokens,
 - policy derivation logic.
