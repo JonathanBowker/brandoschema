@@ -106,18 +106,6 @@
     <meta name="twitter:title" content="Brand Operating System Architecture">
     <meta name="twitter:description" content="Conceptual and technical architecture for a Brand Operating System built on the Brando (Brand Oracle) schema and vocabulary.">
     <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
-
-    
-    
-    
-
-    
-
-    
-    
-    
-    
-
   
 
   </head>
@@ -2938,7 +2926,7 @@
 <ul>
 <li><code>brando:Brand</code> – core identity and defaults</li>
 <li><code>brando:Context</code> – situational modifiers (channel, audience, region, goal)</li>
-<li><code>Brando:VerbalIdentity</code> / <code>Visual</code> / <code>Audio</code> – expression tokens by modality</li>
+<li><code>brando:VerbalToken</code> / <code>VisualToken</code> / <code>AudioToken</code> – expression tokens by modality</li>
 <li><code>brando:Policy</code> – governance and guard rails</li>
 <li><code>brando:BrandedCategory</code> – product/category alignment and vocabulary</li>
 <li><code>brando:Campaign</code> – time-bound overlays</li>
@@ -3038,15 +3026,15 @@
 <td>Situation where behaviour changes (channel, audience, task, jurisdiction)</td>
 </tr>
 <tr>
-<td><code>Brando:VerbalIdentity</code></td>
+<td><code>brando:VerbalToken</code></td>
 <td>Voice/tone/vocabulary presets</td>
 </tr>
 <tr>
-<td><code>Brando:VisualIdentity</code></td>
+<td><code>brando:VisualToken</code></td>
 <td>Visual system / design tokens</td>
 </tr>
 <tr>
-<td><code>Brando:AudioIdentity</code></td>
+<td><code>brando:AudioToken</code></td>
 <td>Sonic identity</td>
 </tr>
 <tr>
@@ -3071,7 +3059,7 @@
 <ul>
 <li>store these as nodes in a knowledge graph or config store,</li>
 <li>index them by <code>@id</code>,</li>
-<li>use the relationships (<code>brando:hasContext</code>, <code>brando:usesVerbal</code>, <code>brando:hasPolicy</code>, etc.) to assemble runtime configurations.</li>
+<li>use the relationships (<code>brando:hasContext</code>, <code>brando:usesVerbalToken</code>, <code>brando:hasPolicy</code>, etc.) to assemble runtime configurations.</li>
 </ul>
 <hr />
 <h2 id="3-core-brand-os-operations">3. Core Brand OS operations</h2>
@@ -3090,9 +3078,9 @@
 <li>
 <p>Walk relationships:</p>
 <ul>
-<li><code>brando:usesVerbal</code></li>
-<li><code>brando:usesVisual</code></li>
-<li><code>brando:usesAudio</code></li>
+<li><code>brando:usesVerbalToken</code></li>
+<li><code>brando:usesVisualToken</code></li>
+<li><code>brando:usesAudioToken</code></li>
 <li><code>brando:hasPolicy</code></li>
 <li><code>brando:hasProductCategory</code></li>
 <li><code>brando:hasCampaign</code></li>
@@ -3174,9 +3162,9 @@
 <div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">RuntimeBrandConfig</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">brand</span><span class="o">:</span><span class="w"> </span><span class="kt">Brand</span><span class="p">;</span>
 <span class="w">  </span><span class="nx">context</span><span class="o">:</span><span class="w"> </span><span class="kt">Context</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">Verbals</span><span class="o">:</span><span class="w"> </span><span class="kt">Verbal</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">Visuals</span><span class="o">:</span><span class="w"> </span><span class="kt">Visual</span><span class="p">[];</span>
-<span class="w">  </span><span class="nx">Audios</span><span class="o">:</span><span class="w"> </span><span class="kt">Audio</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">verbalTokens</span><span class="o">:</span><span class="w"> </span><span class="kt">VerbalToken</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">visualTokens</span><span class="o">:</span><span class="w"> </span><span class="kt">VisualToken</span><span class="p">[];</span>
+<span class="w">  </span><span class="nx">audioTokens</span><span class="o">:</span><span class="w"> </span><span class="kt">AudioToken</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">policies</span><span class="o">:</span><span class="w"> </span><span class="kt">Policy</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">campaigns</span><span class="o">:</span><span class="w"> </span><span class="kt">Campaign</span><span class="p">[];</span>
 <span class="w">  </span><span class="nx">automationRules</span><span class="o">:</span><span class="w"> </span><span class="kt">AutomationRule</span><span class="p">[];</span>
@@ -3247,7 +3235,7 @@
 <span class="w">      </span><span class="nt">&quot;brando:audiencePersona&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="s2">&quot;Everyday saver&quot;</span>
 <span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;brando:usesVerbal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;brando:usesVerbalToken&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/support&quot;</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
@@ -3292,7 +3280,7 @@
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/visual/master&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brando:VisualIdentity&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VisualToken&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:assetURL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/visual/master-token.json&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;brando:downloadableFile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/visual/master-kit.zip&quot;</span><span class="p">,</span>
@@ -3503,7 +3491,7 @@ back to
       
         <footer>
   <div class="custom-footer">
-    <strong>© 2025 Advanced Analytica Ltd </strong>. Brando and IBOM are defined and stewarded by Advanced Analytica.  
+    <strong>© 2025 Advanced Analytica Ltd </strong> &middot; All rights reserved. Unauthorised use is strictly prohibited.
   </div>
 </footer>
       

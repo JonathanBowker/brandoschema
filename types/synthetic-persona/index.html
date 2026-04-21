@@ -106,18 +106,6 @@
     <meta name="twitter:title" content="Brando:SyntheticPersona">
     <meta name="twitter:description" content="Reference for the Brando:SyntheticPersona class in the Brand Oracle (Brando) schema vocabulary v1.3.">
     <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
-
-    
-    
-    
-
-    
-
-    
-    
-    
-    
-
   
 
   </head>
@@ -3372,28 +3360,28 @@
 
 <h1 id="brandosyntheticpersona"><strong><code>brando:SyntheticPersona</code></strong></h1>
 <h3 id="brando-schema-vocabulary-v14-option-a-full-schema-listing"><strong>Brando Schema Vocabulary v1.4 — Option A (FULL SCHEMA LISTING)</strong></h3>
-<p>A governed digital persona for LLMs, multimodal models, and autonomous agents.<br />
+<p>A governed digital persona for LLMs, multimodal models, and autonomous agents.
 Encodes brand identity, tone, vocabulary, competencies, behavioural constraints, compliance boundaries, tool permissions, and technical parameters.</p>
 <blockquote>
-<p><strong>rdfs:comment</strong><br />
+<p><strong>rdfs:comment</strong>
 <em>A <code>brando:SyntheticPersona</code> defines a governed identity for an AI system. It specifies which real-world entity (or entities) from Schema.org / GS1 it is speaking <strong>on behalf of</strong>, how it should behave, what vocabulary it must use, what emotional or expressive limits apply, what competencies and tools it has, and what policies it must follow. SyntheticPersonas act as the directive, operative layer over descriptive graphs – turning Schema.org / GS1 entity descriptions into executable instructions for LLMs, agents, and autonomous systems within a Machine-Actionable Policy Graph.</em></p>
 </blockquote>
 <hr />
 <h2 id="term-definition"><strong>Term definition</strong></h2>
 <ul>
-<li><strong>IRI:</strong> <code>brando:SyntheticPersona</code>  </li>
-<li><strong>Type:</strong> <code>owl:Class</code>  </li>
-<li><strong>Superclass:</strong> <code>schema:Intangible</code>  </li>
-<li><strong>Defined in:</strong> Brando Schema Vocabulary v1.4  </li>
+<li><strong>IRI:</strong> <code>brando:SyntheticPersona</code></li>
+<li><strong>Type:</strong> <code>owl:Class</code></li>
+<li><strong>Superclass:</strong> <code>schema:Intangible</code></li>
+<li><strong>Defined in:</strong> Brando Schema Vocabulary v1.4</li>
 </ul>
 <p>A <code>brando:SyntheticPersona</code> is a <strong>structured, governed digital identity</strong> designed for use by:</p>
 <ul>
-<li>LLM-based assistants  </li>
-<li>AI agents and tool-using systems  </li>
-<li>multimodal systems (text, image, voice, UI)  </li>
-<li>autonomous reasoning engines  </li>
-<li>digital NPCs and interactive characters  </li>
-<li>product-, service-, or place-embedded assistants  </li>
+<li>LLM-based assistants</li>
+<li>AI agents and tool-using systems</li>
+<li>multimodal systems (text, image, voice, UI)</li>
+<li>autonomous reasoning engines</li>
+<li>digital NPCs and interactive characters</li>
+<li>product-, service-, or place-embedded assistants</li>
 </ul>
 <p>It determines <em>exactly how the AI appears, speaks, reasons, and behaves</em>.</p>
 <p>Where Schema.org / GS1 describe <strong>what an entity is</strong>, a <code>brando:SyntheticPersona</code> describes <strong>how AI is allowed to talk, reason, and act in relation to that entity</strong>. It is the <strong>semantic identity and behaviour layer</strong> of a brand’s AI Operating System and Brand Definition Vocabulary (BDV).</p>
@@ -3402,15 +3390,15 @@ Encodes brand identity, tone, vocabulary, competencies, behavioural constraints,
 <h3 id="syntheticpersona-as-an-operative-layer-over-schemaorg-gs1">SyntheticPersona as an operative layer over Schema.org / GS1</h3>
 <p>A single <code>brando:SyntheticPersona</code> can be anchored to one or more <strong>descriptive entities</strong> from Schema.org / GS1:</p>
 <ul>
-<li><code>schema:Product</code> (and GS1 <code>gs1:Product</code>, <code>gs1:gtin</code>-identified trade items)  </li>
-<li><code>schema:Brand</code> and <code>schema:Organization</code>  </li>
-<li><code>schema:Service</code>  </li>
-<li><code>schema:Place</code> (e.g. a store, campus, venue, region)  </li>
-<li><code>schema:Event</code> (e.g. a campaign event, conference, activation)  </li>
-<li><code>schema:CreativeWork</code> (e.g. a documentation corpus, knowledge base)  </li>
+<li><code>schema:Product</code> (and GS1 <code>gs1:Product</code>, <code>gs1:gtin</code>-identified trade items)</li>
+<li><code>schema:Brand</code> and <code>schema:Organization</code></li>
+<li><code>schema:Service</code></li>
+<li><code>schema:Place</code> (e.g. a store, campus, venue, region)</li>
+<li><code>schema:Event</code> (e.g. a campaign event, conference, activation)</li>
+<li><code>schema:CreativeWork</code> (e.g. a documentation corpus, knowledge base)</li>
 <li>domain-specific first types such as <code>schema:MedicalEntity</code>, <code>schema:FinancialProduct</code>, etc.</li>
 </ul>
-<p>The descriptive layer (Schema.org / GS1) answers <strong>“what is this thing?”</strong><br />
+<p>The descriptive layer (Schema.org / GS1) answers <strong>“what is this thing?”</strong>
 The <code>brando:SyntheticPersona</code> layer answers <strong>“if an AI represents this thing, how must it behave?”</strong></p>
 <p>This makes SyntheticPersonas the <strong>operative specification</strong> for AI behaviour over an existing knowledge graph.</p>
 <hr />
@@ -3418,14 +3406,14 @@ The <code>brando:SyntheticPersona</code> layer answers <strong>“if an AI repre
 <h3 id="hassyntheticpersona"><strong><code>hasSyntheticPersona</code></strong></h3>
 <p>Links a brand to one of its governed personas.</p>
 <ul>
-<li><strong>Type:</strong> <code>owl:ObjectProperty</code>  </li>
-<li><strong>Domain:</strong> <code>brando:Brand</code>  </li>
-<li><strong>Range:</strong> <code>brando:SyntheticPersona</code>  </li>
+<li><strong>Type:</strong> <code>owl:ObjectProperty</code></li>
+<li><strong>Domain:</strong> <code>brando:Brand</code></li>
+<li><strong>Range:</strong> <code>brando:SyntheticPersona</code></li>
 <li><strong>rdfs:comment:</strong> Connects a brand to its governed AI personas (brand-, product-, service-, or channel-specific).</li>
 </ul>
 <p>A brand may maintain:</p>
 <ul>
-<li>a <strong>small core set</strong> of global personas (e.g. “Brand Governance Assistant”), and  </li>
+<li>a <strong>small core set</strong> of global personas (e.g. “Brand Governance Assistant”), and</li>
 <li>a <strong>larger set</strong> of product-, audience-, or channel-scoped personas (e.g. “Credit Card Explainer – UK”, “Homeware Product Concierge”).</li>
 </ul>
 <p>All of these are instances of <code>brando:SyntheticPersona</code>, potentially profiled as “BrandPersona”, “ProductPersona”, etc. in implementation guides.</p>
@@ -3433,22 +3421,22 @@ The <code>brando:SyntheticPersona</code> layer answers <strong>“if an AI repre
 <h2 id="outbound-relationship-highlights"><strong>Outbound Relationship Highlights</strong></h2>
 <p>A SyntheticPersona may reference:</p>
 <ul>
-<li><strong><code>brando:Context</code></strong> — scenario-specific behaviour (channel, market, regulatory regime).  </li>
-<li><strong><code>brando:Policy</code></strong> — lexical, behavioural, or safety policies that bind the persona.  </li>
-<li><strong><code>Brando:VerbalIdentity</code></strong> — controlled vocabulary and tone tokens.  </li>
+<li><strong><code>brando:Context</code></strong> — scenario-specific behaviour (channel, market, regulatory regime).</li>
+<li><strong><code>brando:Policy</code></strong> — lexical, behavioural, or safety policies that bind the persona.</li>
+<li><strong><code>Brando:VerbalIdentity</code></strong> — controlled vocabulary and tone tokens.</li>
 <li><strong>Schema.org / GS1 anchors</strong> — entities this persona “represents” at runtime:<ul>
-<li><code>schema:Product</code>, <code>gs1:Product</code> — product- or GTIN-level anchoring.  </li>
-<li><code>schema:Brand</code>, <code>schema:Organization</code> — corporate or master-brand anchoring.  </li>
-<li><code>schema:Service</code>, <code>schema:Place</code>, <code>schema:Event</code>, <code>schema:CreativeWork</code>, domain-specific first types.  </li>
+<li><code>schema:Product</code>, <code>gs1:Product</code> — product- or GTIN-level anchoring.</li>
+<li><code>schema:Brand</code>, <code>schema:Organization</code> — corporate or master-brand anchoring.</li>
+<li><code>schema:Service</code>, <code>schema:Place</code>, <code>schema:Event</code>, <code>schema:CreativeWork</code>, domain-specific first types.</li>
 </ul>
 </li>
-<li><strong><code>brando:SyntheticPersona</code></strong> — other personas, for multi-agent coordination and fallbacks.  </li>
+<li><strong><code>brando:SyntheticPersona</code></strong> — other personas, for multi-agent coordination and fallbacks.</li>
 <li><strong><code>schema:SoftwareApplication</code></strong> — tool permissions and runtime integrations.</li>
 </ul>
 <p><strong>Profile note (non-normative):</strong></p>
 <ul>
-<li>A <strong>BrandPersona</strong> profile may describe a <code>brando:SyntheticPersona</code> anchored primarily to <code>schema:Brand</code> / <code>schema:Organization</code>.  </li>
-<li>A <strong>ProductPersona</strong> profile may describe a <code>brando:SyntheticPersona</code> anchored primarily to <code>schema:Product</code> / GS1 <code>gtin</code> records.  </li>
+<li>A <strong>BrandPersona</strong> profile may describe a <code>brando:SyntheticPersona</code> anchored primarily to <code>schema:Brand</code> / <code>schema:Organization</code>.</li>
+<li>A <strong>ProductPersona</strong> profile may describe a <code>brando:SyntheticPersona</code> anchored primarily to <code>schema:Product</code> / GS1 <code>gtin</code> records.</li>
 </ul>
 <p>Both are realised as concrete instances of the same class: <code>brando:SyntheticPersona</code>.</p>
 <hr />
@@ -3499,7 +3487,7 @@ The <code>brando:SyntheticPersona</code> layer answers <strong>“if an AI repre
 </tr>
 </tbody>
 </table>
-<p><strong>Usage notes:</strong><br />
+<p><strong>Usage notes:</strong>
 Identity properties describe the <strong>“profile card”</strong> of the persona, not its behavioural rules.</p>
 <hr />
 <h2 id="2-representation-anchor"><strong>2. Representation &amp; Anchor</strong></h2>
@@ -3527,8 +3515,8 @@ Identity properties describe the <strong>“profile card”</strong> of the pers
 </table>
 <p><strong>Usage notes:</strong></p>
 <ul>
-<li><code>representsEntity</code> should normally point to a <strong>Schema.org / GS1 entity</strong> (e.g. a specific <code>schema:Product</code> or <code>schema:Brand</code> node).  </li>
-<li><code>representationKind</code> expresses the <em>role</em> this persona performs (governance agent, concierge, explainer, NPC, etc.).  </li>
+<li><code>representsEntity</code> should normally point to a <strong>Schema.org / GS1 entity</strong> (e.g. a specific <code>schema:Product</code> or <code>schema:Brand</code> node).</li>
+<li><code>representationKind</code> expresses the <em>role</em> this persona performs (governance agent, concierge, explainer, NPC, etc.).</li>
 <li>A SyntheticPersona is always an <code>Intangible</code>; it is a <strong>governed identity</strong>, not a person.</li>
 </ul>
 <hr />
@@ -3566,7 +3554,7 @@ Identity properties describe the <strong>“profile card”</strong> of the pers
 </table>
 <p><strong>Usage notes:</strong></p>
 <ul>
-<li>Use <code>brand</code> / <code>worksFor</code> for <strong>governance ownership</strong>.  </li>
+<li>Use <code>brand</code> / <code>worksFor</code> for <strong>governance ownership</strong>.</li>
 <li>Use <code>associatedProduct</code> and <code>representsEntity</code> together when the persona is explicitly <strong>product- or GTIN-scoped</strong> (e.g. a ProductPersona profile).</li>
 </ul>
 <hr />
@@ -3614,7 +3602,7 @@ Identity properties describe the <strong>“profile card”</strong> of the pers
 </table>
 <p><strong>Usage notes:</strong></p>
 <ul>
-<li><code>contextGraph</code> typically points to <strong>one or more <code>brando:Context</code> nodes</strong> describing channel × audience × jurisdiction.  </li>
+<li><code>contextGraph</code> typically points to <strong>one or more <code>brando:Context</code> nodes</strong> describing channel × audience × jurisdiction.</li>
 <li>These contextual nodes, plus policies, determine how a single persona behaves differently across surfaces.</li>
 </ul>
 <hr />
@@ -4090,7 +4078,7 @@ Identity properties describe the <strong>“profile card”</strong> of the pers
 </table>
 <p><strong>Usage notes:</strong></p>
 <ul>
-<li>These links allow you to build <strong>multi-agent graphs</strong> (e.g. governance persona + creative persona + support persona).  </li>
+<li>These links allow you to build <strong>multi-agent graphs</strong> (e.g. governance persona + creative persona + support persona).</li>
 <li>In product or domain profiles, these may correspond to personas anchored to different Schema.org first types but collaborating over the same Brand OS.</li>
 </ul>
 <hr />
@@ -4455,7 +4443,7 @@ Identity properties describe the <strong>“profile card”</strong> of the pers
       
         <footer>
   <div class="custom-footer">
-    <strong>© 2025 Advanced Analytica Ltd </strong>. Brando and IBOM are defined and stewarded by Advanced Analytica.  
+    <strong>© 2025 Advanced Analytica Ltd </strong> &middot; All rights reserved. Unauthorised use is strictly prohibited.
   </div>
 </footer>
       

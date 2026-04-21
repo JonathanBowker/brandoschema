@@ -106,18 +106,6 @@
     <meta name="twitter:title" content="JSON-LD context">
     <meta name="twitter:description" content="JSON-LD context, namespace, and prefix usage for the Brand Oracle (Brando) schema vocabulary v1.3.">
     <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
-
-    
-    
-    
-
-    
-
-    
-    
-    
-    
-
   
 
   </head>
@@ -3059,16 +3047,14 @@ The exact IRIs for classes and properties are defined in the vocabulary’s <cod
 <ul>
 <li>
 <p>it lets the vocab express:</p>
-<ul>
-<li><code>owl:Class</code>, <code>owl:ObjectProperty</code>, <code>owl:DatatypeProperty</code>,</li>
+</li>
+<li>
+<p><code>owl:Class</code>, <code>owl:ObjectProperty</code>, <code>owl:DatatypeProperty</code>,</p>
+</li>
 <li><code>rdfs:label</code>, <code>rdfs:comment</code>, <code>rdfs:domain</code>, <code>rdfs:range</code>,</li>
 <li>metadata via <code>dcterms:</code> and <code>cc:</code>,</li>
 <li>alignments to <code>schema:</code> and <code>gs1:</code>,</li>
-</ul>
-</li>
-<li>
-<p>it is <em>not</em> required to be copied verbatim into every instance document.</p>
-</li>
+<li>it is <em>not</em> required to be copied verbatim into every instance document.</li>
 </ul>
 <hr />
 <h2 id="3-recommended-context-for-instance-data">3. Recommended context for instance data</h2>
@@ -3188,23 +3174,19 @@ For most Brando deployments (Brand OS + LLMs + APIs), use the <strong>slim insta
 <ol>
 <li>
 <p><strong>Use stable <code>@id</code> URIs</strong></p>
-<ul>
+</li>
 <li>
 <p>Treat <code>@id</code> as the <strong>canonical identifier</strong> for each:</p>
 <ul>
 <li><code>brando:Brand</code></li>
 <li><code>brando:Context</code></li>
 <li>token, policy, category, campaign, automation rule.</li>
-</ul>
-</li>
-<li>
-<p>Keep them stable across deployments and environments where possible.</p>
-</li>
+<li>Keep them stable across deployments and environments where possible.</li>
 </ul>
 </li>
 <li>
 <p><strong>Use <code>@graph</code> for multi-node documents</strong></p>
-<ul>
+</li>
 <li>
 <p>A Brand Knowledge Graph is typically represented as a JSON-LD document with:</p>
 <ul>
@@ -3212,16 +3194,14 @@ For most Brando deployments (Brand OS + LLMs + APIs), use the <strong>slim insta
 <li>a single <code>@graph</code> containing multiple nodes.</li>
 </ul>
 </li>
-</ul>
-</li>
 <li>
 <p><strong>Use the same prefixes consistently</strong></p>
-<ul>
-<li>Always map <code>schema</code> to <code>https://schema.org/</code>.</li>
+</li>
+<li>
+<p>Always map <code>schema</code> to <code>https://schema.org/</code>.</p>
+</li>
 <li>Always map <code>brando</code> to <code>https://brandoschema.com/</code>.</li>
 <li>If you need GS1, always map <code>gs1</code> to <code>https://ref.gs1.org/voc/</code>.</li>
-</ul>
-</li>
 </ol>
 <p>Example multi-node document:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -3254,8 +3234,10 @@ For most Brando deployments (Brand OS + LLMs + APIs), use the <strong>slim insta
 <ul>
 <li>
 <p>is itself a <strong>JSON-LD document</strong> with:</p>
-<ul>
-<li>the vocabulary <code>@context</code> (prefixes, including <code>brando</code>),</li>
+</li>
+<li>
+<p>the vocabulary <code>@context</code> (prefixes, including <code>brando</code>),</p>
+</li>
 <li>
 <p>an <code>@graph</code> of:</p>
 <ul>
@@ -3265,17 +3247,15 @@ For most Brando deployments (Brand OS + LLMs + APIs), use the <strong>slim insta
 </ul>
 </li>
 </ul>
-</li>
-</ul>
 <p>Your instance data:</p>
 <ul>
 <li>
 <p><strong>imports the semantics</strong>, not the whole file:</p>
-<ul>
-<li>you don’t embed the vocab’s <code>@graph</code>,</li>
-<li>you just <strong>use</strong> the IRIs it defines under the <code>brando</code> namespace.</li>
-</ul>
 </li>
+<li>
+<p>you don’t embed the vocab’s <code>@graph</code>,</p>
+</li>
+<li>you just <strong>use</strong> the IRIs it defines under the <code>brando</code> namespace.</li>
 </ul>
 <p>In other words:</p>
 <ul>
@@ -3332,7 +3312,7 @@ For most Brando deployments (Brand OS + LLMs + APIs), use the <strong>slim insta
       
         <footer>
   <div class="custom-footer">
-    <strong>© 2025 Advanced Analytica Ltd </strong>. Brando and IBOM are defined and stewarded by Advanced Analytica.  
+    <strong>© 2025 Advanced Analytica Ltd </strong> &middot; All rights reserved. Unauthorised use is strictly prohibited.
   </div>
 </footer>
       

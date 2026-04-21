@@ -106,18 +106,6 @@
     <meta name="twitter:title" content="brando:ProductPersona">
     <meta name="twitter:description" content="Reference for the brando:ProductPersona class in the Brand Oracle (Brando) schema vocabulary v1.3.">
     <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
-
-    
-    
-    
-
-    
-
-    
-    
-    
-    
-
   
 
   </head>
@@ -3192,24 +3180,24 @@
 <li>and the <strong>governing policies</strong> (tone, lexical, safety).</li>
 </ul>
 <blockquote>
-<p><strong>rdfs:comment</strong><br />
+<p><strong>rdfs:comment</strong>
 <em>A <code>brando:ProductPersona</code> defines a governed AI identity for a product or product line. It acts as a semantic bridge between GS1-based product data (e.g. GTIN JSON-LD) and Brando’s Brand Directive Vocabulary. It specifies what the product is, which canonical claims are allowed, how the tone flexes by channel, and which evidence sources the AI must rely on — enabling non-hallucinated, on-brand product content generation.</em></p>
 </blockquote>
 <hr />
 <h2 id="term-definition"><strong>Term definition</strong></h2>
 <ul>
-<li><strong>IRI:</strong> <code>brando:ProductPersona</code>  </li>
-<li><strong>Type:</strong> <code>owl:Class</code>  </li>
-<li><strong>Superclass:</strong> <code>schema:Intangible</code>  </li>
-<li><strong>Defined in:</strong> Brando Schema Vocabulary v1.4  </li>
+<li><strong>IRI:</strong> <code>brando:ProductPersona</code></li>
+<li><strong>Type:</strong> <code>owl:Class</code></li>
+<li><strong>Superclass:</strong> <code>schema:Intangible</code></li>
+<li><strong>Defined in:</strong> Brando Schema Vocabulary v1.4</li>
 </ul>
 <p>A <code>brando:ProductPersona</code> is a <strong>structured, governance-ready product identity layer</strong> designed for use by:</p>
 <ul>
-<li>product copy generators,  </li>
-<li>ecommerce and PDP assistants,  </li>
-<li>support/chat agents answering product questions,  </li>
-<li>in-store associate copilots,  </li>
-<li>post-purchase and troubleshooting assistants.  </li>
+<li>product copy generators,</li>
+<li>ecommerce and PDP assistants,</li>
+<li>support/chat agents answering product questions,</li>
+<li>in-store associate copilots,</li>
+<li>post-purchase and troubleshooting assistants.</li>
 </ul>
 <p>It determines <strong>how the AI talks about a product</strong>, which facts it may use, and which claims are disallowed.</p>
 <p>Within a Brand Operating System, it is the <strong>product-level semantic identity layer</strong>, sitting on top of <strong>Schema.org / GS1 descriptive data</strong> and under the <strong>Brand Definition Vocabulary (BDV)</strong>.</p>
@@ -3218,25 +3206,25 @@
 <h3 id="productpersona-as-an-operative-layer-over-gs1-schemaorg">ProductPersona as an operative layer over GS1 + Schema.org</h3>
 <p>A <code>brando:ProductPersona</code> is typically anchored to <strong>one or more concrete product nodes</strong>:</p>
 <ul>
-<li><code>schema:Product</code> (web-facing product description),  </li>
-<li><code>gs1:Product</code> with <code>gs1:gtin</code> (GS1 Web Vocabulary trade item),  </li>
+<li><code>schema:Product</code> (web-facing product description),</li>
+<li><code>gs1:Product</code> with <code>gs1:gtin</code> (GS1 Web Vocabulary trade item),</li>
 <li>
 <p>plus related <strong>brand</strong> and <strong>organization</strong> nodes:</p>
 <ul>
-<li><code>schema:Brand</code>  </li>
+<li><code>schema:Brand</code></li>
 <li><code>schema:Organization</code></li>
 </ul>
 </li>
 </ul>
-<p>The descriptive product graph (Schema.org + GS1) answers <strong>“what is this product?”</strong><br />
+<p>The descriptive product graph (Schema.org + GS1) answers <strong>“what is this product?”</strong>
 <code>brando:ProductPersona</code> answers <strong>“if an AI talks about this product, how must it behave?”</strong></p>
 <h3 id="inbound-from-product-brand"><strong>Inbound: from Product / Brand</strong></h3>
 <h4 id="brandohasproductpersona-recommended"><strong><code>brando:hasProductPersona</code> (recommended)</strong></h4>
 <p>Links a concrete product (or product family) to its governed persona.</p>
 <ul>
-<li><strong>Type:</strong> <code>owl:ObjectProperty</code>  </li>
-<li><strong>Domain:</strong> <code>schema:Product</code> (or <code>gs1:Product</code>)  </li>
-<li><strong>Range:</strong> <code>brando:ProductPersona</code>  </li>
+<li><strong>Type:</strong> <code>owl:ObjectProperty</code></li>
+<li><strong>Domain:</strong> <code>schema:Product</code> (or <code>gs1:Product</code>)</li>
+<li><strong>Range:</strong> <code>brando:ProductPersona</code></li>
 <li><strong>rdfs:comment:</strong> Connects a product GTIN / GLN instance to the AI persona that is allowed to speak for it.</li>
 </ul>
 <p>This lets each product (or SKU family) declare <strong>its canonical AI voice</strong>.</p>
@@ -3245,35 +3233,35 @@
 <h4 id="brandohassyntheticpersona-brandohasproductpersona"><strong><code>brando:hasSyntheticPersona</code> / <code>brando:hasProductPersona</code></strong></h4>
 <p>A <code>brando:Brand</code> may reference:</p>
 <ul>
-<li>brand-level personas: <code>brando:SyntheticPersona</code>  </li>
-<li>product-level personas: <code>brando:ProductPersona</code>  </li>
+<li>brand-level personas: <code>brando:SyntheticPersona</code></li>
+<li>product-level personas: <code>brando:ProductPersona</code></li>
 </ul>
 <p>Together, these support <strong>portfolio-wide governance</strong>: corporate voice + product voices, expressed as governed personas.</p>
 <hr />
 <h3 id="outbound-relationships-anchor-governance"><strong>Outbound Relationships (anchor &amp; governance)</strong></h3>
 <p>A <code>brando:ProductPersona</code> typically references:</p>
 <ul>
-<li><strong><code>schema:Product</code> / <code>gs1:Product</code></strong> — the product(s) described.  </li>
+<li><strong><code>schema:Product</code> / <code>gs1:Product</code></strong> — the product(s) described.</li>
 <li>
-<p><strong><code>schema:Brand</code> / <code>schema:Organization</code></strong> — visible brand and accountable owner.  </p>
+<p><strong><code>schema:Brand</code> / <code>schema:Organization</code></strong> — visible brand and accountable owner.</p>
 </li>
 <li>
 <p><strong>GS1 identifiers</strong> via Brando properties:</p>
 <ul>
-<li><code>brando:appliesToGTIN</code> → GTIN(s) covered,  </li>
-<li><code>brando:appliesToProduct</code> → product JSON-LD URI(s) covered.  </li>
+<li><code>brando:appliesToGTIN</code> → GTIN(s) covered,</li>
+<li><code>brando:appliesToProduct</code> → product JSON-LD URI(s) covered.</li>
 </ul>
 </li>
 <li>
 <p><strong>Brando BDV objects</strong>:</p>
 <ul>
-<li><code>brando:VerbalIdentity</code>, <code>brando:VisualIdentity</code>, <code>brando:AudioIdentity</code>.  </li>
+<li><code>brando:VerbalIdentity</code>, <code>brando:VisualIdentity</code>, <code>brando:AudioIdentity</code>.</li>
 </ul>
 </li>
 <li>
 <p><strong>Policies</strong>:</p>
 <ul>
-<li><code>brando:Policy</code> nodes for lexical, claim, and safety constraints.  </li>
+<li><code>brando:Policy</code> nodes for lexical, claim, and safety constraints.</li>
 </ul>
 </li>
 <li>
@@ -3335,7 +3323,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Usage notes:</strong><br />
+<p><strong>Usage notes:</strong>
 These fields describe the <strong>persona itself</strong>, not the underlying product master data.</p>
 <hr />
 <h2 id="2-product-anchor-gs1-linkage"><strong>2. Product Anchor &amp; GS1 Linkage</strong></h2>
@@ -3393,7 +3381,7 @@ These fields describe the <strong>persona itself</strong>, not the underlying pr
 </tr>
 </tbody>
 </table>
-<p><strong>Usage notes:</strong><br />
+<p><strong>Usage notes:</strong>
 <code>appliesToGTIN</code> is the main bridge into GS1. A separate <code>{gtin}.jsonld</code> can define full GS1 Web Vocabulary content; <code>brando:ProductPersona</code> then <strong>constrains how AI is allowed to use it</strong>.</p>
 <hr />
 <h2 id="3-brand-category-relationships"><strong>3. Brand &amp; Category Relationships</strong></h2>
@@ -3573,7 +3561,7 @@ These fields describe the <strong>persona itself</strong>, not the underlying pr
 </tr>
 </tbody>
 </table>
-<p><strong>Usage notes:</strong><br />
+<p><strong>Usage notes:</strong>
 This is where the <strong>Brand Definition Vocabulary (BDV)</strong> is applied: tone, phrasing patterns, approved descriptors, and category-specific tokens.</p>
 <hr />
 <h2 id="6-claim-safety-regulatory-governance"><strong>6. Claim, Safety &amp; Regulatory Governance</strong></h2>
@@ -4024,7 +4012,7 @@ This is where the <strong>Brand Definition Vocabulary (BDV)</strong> is applied:
       
         <footer>
   <div class="custom-footer">
-    <strong>© 2025 Advanced Analytica Ltd </strong>. Brando and IBOM are defined and stewarded by Advanced Analytica.  
+    <strong>© 2025 Advanced Analytica Ltd </strong> &middot; All rights reserved. Unauthorised use is strictly prohibited.
   </div>
 </footer>
       

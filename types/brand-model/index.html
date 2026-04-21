@@ -106,18 +106,6 @@
     <meta name="twitter:title" content="brando:BrandModel">
     <meta name="twitter:description" content="Reference for the brando:BrandModel class in the Brand Oracle (Brando) schema vocabulary v1.4.">
     <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
-
-    
-    
-    
-
-    
-
-    
-    
-    
-    
-
   
 
   </head>
@@ -3265,26 +3253,26 @@
 <p>A governed, <strong>AI runtime profile for a brand</strong>.</p>
 <p>A <code>brando:BrandModel</code> encodes <strong>how a brand is executed in AI runtimes</strong> – which models/endpoints are used, which modalities they support (text, image, audio, video), which APIs they talk to (chat completions, images, assistants), and which safety / generation parameters and policies apply by default.</p>
 <blockquote>
-<p><strong>rdfs:comment</strong><br />
+<p><strong>rdfs:comment</strong>
 <em>A <code>brando:BrandModel</code> defines a governed AI “model profile” for a brand or brand segment. It describes which AI capabilities (chat, image generation, assistants) are available, which providers/endpoints are used, the default generation parameters (temperature, top_p, max tokens, etc.), and which policies and prompts are bound to that profile. It acts as the operational bridge between Brando’s Brand Directive Vocabulary and concrete AI infrastructure.</em></p>
 </blockquote>
 <hr />
 <h2 id="term-definition"><strong>Term definition</strong></h2>
 <ul>
-<li><strong>IRI:</strong> <code>brando:BrandModel</code>  </li>
-<li><strong>Type:</strong> <code>owl:Class</code>  </li>
-<li><strong>Superclass:</strong> <code>schema:Intangible</code>  </li>
-<li><strong>Defined in:</strong> Brando Schema Vocabulary v1.4  </li>
+<li><strong>IRI:</strong> <code>brando:BrandModel</code></li>
+<li><strong>Type:</strong> <code>owl:Class</code></li>
+<li><strong>Superclass:</strong> <code>schema:Intangible</code></li>
+<li><strong>Defined in:</strong> Brando Schema Vocabulary v1.4</li>
 </ul>
 <p>A <code>brando:BrandModel</code> is a <strong>structured, governance-ready AI model profile</strong> designed to be used by:</p>
 <ul>
-<li>one or more <strong>BrandApplications</strong> (e.g. Social Post Production, PDP Copy, Support Chat, Image Production),  </li>
-<li>one or more <strong>Prompts</strong> (<code>brando:Prompt</code>) that specify detailed instructions and constraints,  </li>
+<li>one or more <strong>BrandApplications</strong> (e.g. Social Post Production, PDP Copy, Support Chat, Image Production),</li>
+<li>one or more <strong>Prompts</strong> (<code>brando:Prompt</code>) that specify detailed instructions and constraints,</li>
 <li>orchestration / routing layers that decide <strong>which AI model profile</strong> to use for a given request.</li>
 </ul>
 <p>Within a Brand Operating System, it is the <strong>runtime capability layer</strong>, sitting between:</p>
 <ul>
-<li><strong>Brand &amp; policies</strong> (Brand, BrandApplication, BrandGuideline, BrandConstraint), and  </li>
+<li><strong>Brand &amp; policies</strong> (Brand, BrandApplication, BrandGuideline, BrandConstraint), and</li>
 <li><strong>AI infrastructure</strong> (OpenAI, other providers, on-prem models, tool stacks).</li>
 </ul>
 <hr />
@@ -3292,54 +3280,54 @@
 <h3 id="brandmodel-as-a-profile-over-ai-infrastructure">BrandModel as a profile over AI infrastructure</h3>
 <p>A <code>brando:BrandModel</code> usually references:</p>
 <ul>
-<li>one or more <strong>concrete AI endpoints</strong> (e.g. OpenAI models) via <code>schema:SoftwareApplication</code>,  </li>
-<li>one or more <strong>Prompts</strong> that it is allowed to run (<code>brando:hasPrompt</code>),  </li>
-<li>one or more <strong>BrandApplications</strong> that it serves (<code>brando:servesApplication</code>),  </li>
+<li>one or more <strong>concrete AI endpoints</strong> (e.g. OpenAI models) via <code>schema:SoftwareApplication</code>,</li>
+<li>one or more <strong>Prompts</strong> that it is allowed to run (<code>brando:hasPrompt</code>),</li>
+<li>one or more <strong>BrandApplications</strong> that it serves (<code>brando:servesApplication</code>),</li>
 <li>one or more <strong>Policies</strong> it must always respect (<code>brando:inheritsPolicies</code>).</li>
 </ul>
-<p>The infrastructure answers <strong>“which engine is being called?”</strong><br />
+<p>The infrastructure answers <strong>“which engine is being called?”</strong>
 <code>brando:BrandModel</code> answers <strong>“how is this engine configured for this brand?”</strong></p>
 <hr />
 <h3 id="inbound-from-brand-brandapplication"><strong>Inbound: from Brand / BrandApplication</strong></h3>
 <h4 id="brandohasbrandmodel-recommended"><strong><code>brando:hasBrandModel</code> (recommended)</strong></h4>
 <p>Links a brand or brand application to its model profile(s).</p>
 <ul>
-<li><strong>Type:</strong> <code>owl:ObjectProperty</code>  </li>
-<li><strong>Domain:</strong> <code>brando:Brand</code>, <code>brando:BrandApplication</code>  </li>
-<li><strong>Range:</strong> <code>brando:BrandModel</code>  </li>
+<li><strong>Type:</strong> <code>owl:ObjectProperty</code></li>
+<li><strong>Domain:</strong> <code>brando:Brand</code>, <code>brando:BrandApplication</code></li>
+<li><strong>Range:</strong> <code>brando:BrandModel</code></li>
 <li><strong>rdfs:comment:</strong> Connects a brand or brand application to the AI model profiles that may be used to execute it.</li>
 </ul>
 <p>This lets:</p>
 <ul>
-<li>a <strong>Brand</strong> declare its default AI runtime profile(s), and  </li>
+<li>a <strong>Brand</strong> declare its default AI runtime profile(s), and</li>
 <li>a <strong>BrandApplication</strong> override or narrow the allowed profiles.</li>
 </ul>
 <h4 id="brandoservesapplication"><strong><code>brando:servesApplication</code></strong></h4>
 <ul>
-<li><strong>Type:</strong> <code>owl:ObjectProperty</code>  </li>
-<li><strong>Domain:</strong> <code>brando:BrandModel</code>  </li>
-<li><strong>Range:</strong> <code>brando:BrandApplication</code>  </li>
+<li><strong>Type:</strong> <code>owl:ObjectProperty</code></li>
+<li><strong>Domain:</strong> <code>brando:BrandModel</code></li>
+<li><strong>Range:</strong> <code>brando:BrandApplication</code></li>
 <li><strong>rdfs:comment:</strong> Declares which BrandApplications this BrandModel is intended to serve.</li>
 </ul>
 <hr />
 <h3 id="outbound-to-prompts-infrastructure"><strong>Outbound: to Prompts &amp; Infrastructure</strong></h3>
 <p>A <code>brando:BrandModel</code> typically references:</p>
 <ul>
-<li><strong>Prompts</strong>:  </li>
+<li><strong>Prompts</strong>:</li>
 <li>
-<p><code>brando:hasPrompt</code> → <code>brando:Prompt</code>  </p>
+<p><code>brando:hasPrompt</code> → <code>brando:Prompt</code></p>
 </li>
 <li>
-<p><strong>AI software endpoints</strong>:  </p>
+<p><strong>AI software endpoints</strong>:</p>
 </li>
 <li>
-<p><code>schema:SoftwareApplication</code> → concrete model endpoints, APIs, runtimes  </p>
+<p><code>schema:SoftwareApplication</code> → concrete model endpoints, APIs, runtimes</p>
 </li>
 <li>
-<p><strong>Policies &amp; contexts</strong>:  </p>
+<p><strong>Policies &amp; contexts</strong>:</p>
 </li>
-<li><code>brando:Policy</code> → safety / lexical / claim policies  </li>
-<li><code>brando:Context</code> → regional / regulatory contexts  </li>
+<li><code>brando:Policy</code> → safety / lexical / claim policies</li>
+<li><code>brando:Context</code> → regional / regulatory contexts</li>
 <li><code>brando:generationParameter</code> → default generation parameters</li>
 </ul>
 <hr />
@@ -3503,7 +3491,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Usage notes:</strong><br />
+<p><strong>Usage notes:</strong>
 These flags &amp; modality hints are for <strong>orchestration logic</strong>. They do not affect provider APIs by themselves but tell the Brand OS which flows this profile may be used for.</p>
 <hr />
 <h2 id="4-provider-endpoint-binding"><strong>4. Provider &amp; Endpoint Binding</strong></h2>
@@ -3597,7 +3585,7 @@ These flags &amp; modality hints are for <strong>orchestration logic</strong>. T
 </tr>
 </tbody>
 </table>
-<p><strong>Usage notes:</strong><br />
+<p><strong>Usage notes:</strong>
 Prompts and Applications may add <strong>more specific</strong> policies; <code>BrandModel</code> defines the <strong>global defaults</strong> for that model profile.</p>
 <hr />
 <h2 id="6-prompts-routing"><strong>6. Prompts &amp; Routing</strong></h2>
@@ -3635,10 +3623,10 @@ Prompts and Applications may add <strong>more specific</strong> policies; <code>
 </tr>
 </tbody>
 </table>
-<p><strong>Usage notes:</strong><br />
+<p><strong>Usage notes:</strong>
 In many implementations, routing logic uses:</p>
 <ul>
-<li><strong>BrandApplication + Context + Modality</strong> → set of eligible <code>BrandModel</code>s  </li>
+<li><strong>BrandApplication + Context + Modality</strong> → set of eligible <code>BrandModel</code>s</li>
 <li>Then uses <code>priority</code> / <code>regionScope</code> / <code>riskTag</code> to pick one.</li>
 </ul>
 <hr />
@@ -3649,13 +3637,13 @@ In many implementations, routing logic uses:</p>
 <p><code>brando:generationParameter</code> is already defined to work with both <code>brando:Prompt</code> and <code>brando:BrandModel</code>.</p>
 <h3 id="property">Property</h3>
 <ul>
-<li><strong>IRI:</strong> <code>brando:generationParameter</code>  </li>
-<li><strong>Type:</strong> <code>owl:ObjectProperty</code>  </li>
-<li><strong>Domain:</strong> <code>brando:Prompt</code>, <code>brando:BrandModel</code>  </li>
-<li><strong>Range:</strong> <code>schema:PropertyValue</code>  </li>
+<li><strong>IRI:</strong> <code>brando:generationParameter</code></li>
+<li><strong>Type:</strong> <code>owl:ObjectProperty</code></li>
+<li><strong>Domain:</strong> <code>brando:Prompt</code>, <code>brando:BrandModel</code></li>
+<li><strong>Range:</strong> <code>schema:PropertyValue</code></li>
 </ul>
 <blockquote>
-<p><strong>rdfs:comment</strong><br />
+<p><strong>rdfs:comment</strong>
 <em>Declares one or more model-side generation parameters (e.g. temperature, top_p, max_output_tokens) to be applied when using this prompt or brand model. The parameter name and value are encoded as <code>schema:PropertyValue</code> to allow vendor-neutral, extensible configuration.</em></p>
 </blockquote>
 <h3 id="typical-usage-on-brandmodel">Typical usage on BrandModel</h3>
@@ -3682,15 +3670,15 @@ In many implementations, routing logic uses:</p>
 </table>
 <p>Recommended <code>schema:name</code> values:</p>
 <ul>
-<li><code>"temperature"</code> – float <code>0.0–1.0</code>  </li>
-<li><code>"top_p"</code> – float <code>0.0–1.0</code>  </li>
-<li><code>"max_output_tokens"</code> – integer  </li>
-<li><code>"presence_penalty"</code> – float  </li>
-<li><code>"frequency_penalty"</code> – float  </li>
-<li><code>"seed"</code> – integer  </li>
+<li><code>"temperature"</code> – float <code>0.0–1.0</code></li>
+<li><code>"top_p"</code> – float <code>0.0–1.0</code></li>
+<li><code>"max_output_tokens"</code> – integer</li>
+<li><code>"presence_penalty"</code> – float</li>
+<li><code>"frequency_penalty"</code> – float</li>
+<li><code>"seed"</code> – integer</li>
 </ul>
-<p><strong>Override behaviour:</strong><br />
-- <code>BrandModel</code> sets <strong>defaults</strong>.<br />
+<p><strong>Override behaviour:</strong>
+- <code>BrandModel</code> sets <strong>defaults</strong>.
 - Individual <code>Prompt</code>s may <strong>override or narrow</strong> parameters for specific applications.</p>
 <hr />
 <h2 id="8-monitoring-metrics-data-use"><strong>8. Monitoring, Metrics &amp; Data Use</strong></h2>
@@ -3970,7 +3958,7 @@ In many implementations, routing logic uses:</p>
       
         <footer>
   <div class="custom-footer">
-    <strong>© 2025 Advanced Analytica Ltd </strong>. Brando and IBOM are defined and stewarded by Advanced Analytica.  
+    <strong>© 2025 Advanced Analytica Ltd </strong> &middot; All rights reserved. Unauthorised use is strictly prohibited.
   </div>
 </footer>
       

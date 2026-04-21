@@ -108,48 +108,6 @@
     <meta name="twitter:description" content="Brand Oracle (Brando®) is an AI-native, governance-ready linked data vocabulary and Brand Governance Vocabulary (BGV) for brands. Brando enables Brand-as-Code by tokenising brand intelligence — identity, expression, context, and governance — as a Brand Knowledge Graph from which Machine-Actionable Policy Graphs are derived and executed within Brand Operating Systems under the Intelligent Brand Operating Model (IBOM).
 ">
     <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
-
-    
-    
-    
-
-    
-
-    
-    
-    
-    
-    <script>
-    (function () {
-      const graphMap = {
-        "core": "/data/brando/core.graph.jsonld",
-        "personas": "/data/brando/personas.graph.jsonld",
-        "qwiki": "/data/brando/qwiki.graph.jsonld",
-        "policies": "/data/brando/policies.graph.jsonld"
-      };
-
-      const graphsToLoad = ["core", "personas", "policies"];
-
-      graphsToLoad.forEach(function (key) {
-        const url = graphMap[key];
-        if (!url) return;
-
-        fetch(url)
-          .then(res => res.json())
-          .then(json => {
-            const script = document.createElement("script");
-            script.type = "application/ld+json";
-            script.text = JSON.stringify(json);
-            document.head.appendChild(script);
-          })
-          .catch(err => {
-            console.warn("Brando graph failed to load:", key, err);
-          });
-      });
-    })();
-    </script>
-    
-
   
 
   </head>
@@ -527,10 +485,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#core-concepts-and-classes" class="md-nav__link">
+  <a href="#core-concepts-and-schema-types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Core concepts and classes
+        Core concepts and schema types
       
     </span>
   </a>
@@ -3039,10 +2997,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#core-concepts-and-classes" class="md-nav__link">
+  <a href="#core-concepts-and-schema-types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Core concepts and classes
+        Core concepts and schema types
       
     </span>
   </a>
@@ -3279,12 +3237,13 @@ They operate against <strong>policy-constrained projections</strong>.</p>
 <li><strong>Worked examples</strong></li>
 </ul>
 <hr />
-<h2 id="core-concepts-and-classes">Core concepts and classes</h2>
-<p>Brando v1.3 defines <strong>twelve core classes</strong>:</p>
+<h2 id="core-concepts-and-schema-types">Core concepts and schema types</h2>
+<p>The current Brando documentation covers <strong>18 schema types</strong> across identity,
+expression, governance, personas, runtime orchestration, and brand touchpoints:</p>
 <table>
 <thead>
 <tr>
-<th>Class</th>
+<th>Type</th>
 <th>Purpose</th>
 </tr>
 </thead>
@@ -3298,48 +3257,73 @@ They operate against <strong>policy-constrained projections</strong>.</p>
 <td>Activation context</td>
 </tr>
 <tr>
-<td><code>brando:BrandExpression</code></td>
-<td>Abstract expression superclass</td>
-</tr>
-<tr>
-<td><code>Brando:VerbalIdentity</code></td>
-<td>Voice and language</td>
-</tr>
-<tr>
-<td><code>Brando:VisualIdentity</code></td>
-<td>Visual system</td>
-</tr>
-<tr>
-<td><code>Brando:AudioIdentity</code></td>
-<td>Sonic identity</td>
-</tr>
-<tr>
-<td><code>brando:Policy</code></td>
-<td>Governance rules</td>
-</tr>
-<tr>
 <td><code>brando:BrandedCategory</code></td>
-<td>Taxonomy alignment</td>
+<td>Brand-level taxonomy and product category alignment</td>
 </tr>
 <tr>
 <td><code>brando:Campaign</code></td>
-<td>Temporal overrides</td>
+<td>Time-bound brand and messaging overlay</td>
 </tr>
 <tr>
-<td><code>brando:AutomationRule</code></td>
-<td>Automated governance</td>
+<td><code>brando:ProductItem</code></td>
+<td>Individually identifiable product, SKU, or GTIN-level item</td>
 </tr>
 <tr>
-<td><code>brando:ProductPersona</code></td>
-<td>Product-scoped AI</td>
+<td><code>brando:BrandExpressionToken</code></td>
+<td>Abstract superclass for expression tokens</td>
+</tr>
+<tr>
+<td><code>brando:VerbalToken</code></td>
+<td>Voice, language, vocabulary, and prompt behaviour</td>
+</tr>
+<tr>
+<td><code>brando:VisualToken</code></td>
+<td>Visual system, logos, colour, typography, and imagery</td>
+</tr>
+<tr>
+<td><code>brando:AudioToken</code></td>
+<td>Sonic identity, voice, pronunciation, and audio cues</td>
+</tr>
+<tr>
+<td><code>brando:Policy</code></td>
+<td>Governance rules, guardrails, and enforcement logic</td>
+</tr>
+<tr>
+<td><code>brando:ImpactAssessment</code></td>
+<td>AI, brand, and governance risk assessment</td>
 </tr>
 <tr>
 <td><code>brando:SyntheticPersona</code></td>
 <td>Governed AI persona</td>
 </tr>
+<tr>
+<td><code>brando:ProductPersona</code></td>
+<td>Product-scoped AI persona</td>
+</tr>
+<tr>
+<td><code>brando:BrandModel</code></td>
+<td>Model routing and runtime configuration</td>
+</tr>
+<tr>
+<td><code>brando:Prompt</code></td>
+<td>Governed prompt asset or instruction object</td>
+</tr>
+<tr>
+<td><code>brando:AutomationRule</code></td>
+<td>Automated governance or runtime rule</td>
+</tr>
+<tr>
+<td><code>brando:BrandApplication</code></td>
+<td>Governed brand use case or application context</td>
+</tr>
+<tr>
+<td><code>brando:BrandTouchpoint</code></td>
+<td>Channel, placement, or experience where brand rules apply</td>
+</tr>
 </tbody>
 </table>
-<p>All classes extend <code>schema:Intangible</code>; <code>brando:Brand</code> extends <code>schema:Brand</code>.</p>
+<p>Most Brando types extend <code>schema:Intangible</code>; <code>brando:Brand</code> aligns with
+<code>schema:Brand</code>, and <code>brando:Prompt</code> aligns with <code>schema:CreativeWork</code>.</p>
 <hr />
 <h2 id="canonical-form-and-profiles">Canonical form and profiles</h2>
 <p>Brando is <strong>JSON-LD–first</strong>.</p>
@@ -3442,7 +3426,7 @@ They operate against <strong>policy-constrained projections</strong>.</p>
       
         <footer>
   <div class="custom-footer">
-    <strong>© 2025 Advanced Analytica Ltd </strong>. Brando and IBOM are defined and stewarded by Advanced Analytica.  
+    <strong>© 2025 Advanced Analytica Ltd </strong> &middot; All rights reserved. Unauthorised use is strictly prohibited.
   </div>
 </footer>
       

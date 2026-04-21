@@ -106,18 +106,6 @@
     <meta name="twitter:title" content="brando:Prompt">
     <meta name="twitter:description" content="Reference for the brando:Prompt class in the Brand Oracle (Brando) schema vocabulary v1.4.">
     <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
-
-    
-    
-    
-
-    
-
-    
-    
-    
-    
-
   
 
   </head>
@@ -3270,16 +3258,16 @@
 <li>and the <strong>governing policies</strong> (tone, lexical, safety, regulatory).</li>
 </ul>
 <blockquote>
-<p><strong>rdfs:comment</strong><br />
+<p><strong>rdfs:comment</strong>
 <em>A <code>brando:Prompt</code> defines a governed, reusable prompt template for a given brand application (e.g. social post generation, PDP copy, support chat, image or video generation). It acts as a semantic bridge between Brando’s Brand Directive Vocabulary (tone, constraints, policies) and the runtime AI system (LLMs, multimodal models, tools, routes). It specifies the system role, task, constraints, variables, channels, modalities and output schema required for safe, on-brand AI behaviour.</em></p>
 </blockquote>
 <hr />
 <h2 id="term-definition"><strong>Term definition</strong></h2>
 <ul>
-<li><strong>IRI:</strong> <code>brando:Prompt</code>  </li>
-<li><strong>Type:</strong> <code>owl:Class</code>  </li>
-<li><strong>Superclass:</strong> <code>schema:CreativeWork</code>  </li>
-<li><strong>Defined in:</strong> Brando Schema Vocabulary v1.4  </li>
+<li><strong>IRI:</strong> <code>brando:Prompt</code></li>
+<li><strong>Type:</strong> <code>owl:Class</code></li>
+<li><strong>Superclass:</strong> <code>schema:CreativeWork</code></li>
+<li><strong>Defined in:</strong> Brando Schema Vocabulary v1.4</li>
 </ul>
 <p>A <code>brando:Prompt</code> is a <strong>structured, governance-ready instruction layer</strong> designed for use by:</p>
 <ul>
@@ -3299,19 +3287,19 @@
 <h3 id="prompt-as-an-operative-layer-over-brandmodel-brandapplication">Prompt as an operative layer over BrandModel + BrandApplication</h3>
 <p>A <code>brando:Prompt</code> is typically anchored to <strong>one or more concrete brand application nodes</strong>:</p>
 <ul>
-<li><code>brando:BrandApplication</code> (e.g. “Social Media Post Production”, “Homepage Hero Copy”, “Image Production”),  </li>
-<li><code>brando:BrandModel</code> (overall model configuration / routing),  </li>
+<li><code>brando:BrandApplication</code> (e.g. “Social Media Post Production”, “Homepage Hero Copy”, “Image Production”),</li>
+<li><code>brando:BrandModel</code> (overall model configuration / routing),</li>
 <li><code>brando:BrandTouchpoint</code> (channel-specific execution, e.g. “web PDP hero”, “email subject”, “support reply”, “social image creative”).</li>
 </ul>
-<p>The BrandApplication and BrandModel answer <strong>“what is this AI experience for?”</strong><br />
+<p>The BrandApplication and BrandModel answer <strong>“what is this AI experience for?”</strong>
 <code>brando:Prompt</code> answers <strong>“exactly how should this AI be instructed for that experience, in this modality?”</strong></p>
 <h3 id="inbound-from-brandapplication-brandmodel"><strong>Inbound: from BrandApplication / BrandModel</strong></h3>
 <h4 id="brandohasprompt-recommended"><strong><code>brando:hasPrompt</code> (recommended)</strong></h4>
 <p>Links a brand application or model to its governed prompt template(s).</p>
 <ul>
-<li><strong>Type:</strong> <code>owl:ObjectProperty</code>  </li>
-<li><strong>Domain:</strong> <code>brando:BrandApplication</code>, <code>brando:BrandModel</code>, <code>brando:BrandTouchpoint</code>  </li>
-<li><strong>Range:</strong> <code>brando:Prompt</code>  </li>
+<li><strong>Type:</strong> <code>owl:ObjectProperty</code></li>
+<li><strong>Domain:</strong> <code>brando:BrandApplication</code>, <code>brando:BrandModel</code>, <code>brando:BrandTouchpoint</code></li>
+<li><strong>Range:</strong> <code>brando:Prompt</code></li>
 <li><strong>rdfs:comment:</strong> Connects a brand application (e.g. “Social Post Generator”, “Image Generator”, “Support Chat”) to the prompt(s) that govern how the AI is instructed.</li>
 </ul>
 <p>This lets each application declare <strong>its canonical prompt templates</strong>, and each BrandModel declare <strong>its default system scaffolds</strong>.</p>
@@ -3319,7 +3307,7 @@
 <h3 id="inbound-from-brandobrand"><strong>Inbound: from <code>brando:Brand</code></strong></h3>
 <p>A <code>brando:Brand</code> may reference:</p>
 <ul>
-<li>brand-wide prompt templates: <code>brando:Prompt</code> (e.g. “global system prompt”),  </li>
+<li>brand-wide prompt templates: <code>brando:Prompt</code> (e.g. “global system prompt”),</li>
 <li>brand-specific models: <code>brando:BrandModel</code>.</li>
 </ul>
 <p>Together, these support <strong>portfolio-wide governance</strong>: corporate voice + application-specific prompts + model configuration.</p>
@@ -3328,22 +3316,22 @@
 <p>A <code>brando:Prompt</code> typically references:</p>
 <ul>
 <li><strong>Brand application nodes</strong>:</li>
-<li><code>brando:BrandApplication</code> — what this prompt is for.  </li>
+<li><code>brando:BrandApplication</code> — what this prompt is for.</li>
 <li>
-<p><code>brando:BrandTouchpoint</code> — where it runs (channel, placement).  </p>
+<p><code>brando:BrandTouchpoint</code> — where it runs (channel, placement).</p>
 </li>
 <li>
 <p><strong>Brand &amp; policy nodes</strong>:</p>
 </li>
-<li><code>brando:Brand</code> — brand identity this prompt serves.  </li>
-<li><code>brando:Policy</code> — lexical, claim, and safety constraints.  </li>
+<li><code>brando:Brand</code> — brand identity this prompt serves.</li>
+<li><code>brando:Policy</code> — lexical, claim, and safety constraints.</li>
 <li>
 <p><code>brando:Context</code> — channel / region / audience contexts.</p>
 </li>
 <li>
 <p><strong>Runtime configuration</strong>:</p>
 </li>
-<li><code>schema:SoftwareApplication</code> — the LLM / multimodal endpoint.  </li>
+<li><code>schema:SoftwareApplication</code> — the LLM / multimodal endpoint.</li>
 <li><code>brando:generationParameter</code> — model-side parameters such as temperature, top_p, max tokens.</li>
 </ul>
 <p>In many implementations, a <code>brando:Prompt</code> is also treated as the <strong>binding between a BrandApplication and a BrandModel</strong>, specialised around a channel, locale, touchpoint and modality.</p>
@@ -3398,7 +3386,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Usage notes:</strong><br />
+<p><strong>Usage notes:</strong>
 These fields describe the <strong>prompt itself</strong>, not the underlying brand guidelines or assets.</p>
 <hr />
 <h2 id="2-application-anchor-scope"><strong>2. Application Anchor &amp; Scope</strong></h2>
@@ -3446,7 +3434,7 @@ These fields describe the <strong>prompt itself</strong>, not the underlying bra
 </tr>
 </tbody>
 </table>
-<p><strong>Usage notes:</strong><br />
+<p><strong>Usage notes:</strong>
 This anchors the prompt to a <strong>specific BrandApplication + context</strong>, so it’s clear where it should and shouldn’t be used.</p>
 <hr />
 <h2 id="3-brand-ownership-context"><strong>3. Brand &amp; Ownership Context</strong></h2>
@@ -3688,7 +3676,7 @@ This anchors the prompt to a <strong>specific BrandApplication + context</strong
 </tr>
 </tbody>
 </table>
-<p><strong>Usage notes:</strong><br />
+<p><strong>Usage notes:</strong>
 <code>outputModality</code> can be a single value (e.g. <code>"text"</code>) or a small list (e.g. <code>"text"</code>, <code>"image"</code>) for multimodal prompts that produce copy <em>and</em> a generated image prompt string.</p>
 <hr />
 <h2 id="8-prompt-text-variables-runtime-configuration"><strong>8. Prompt Text, Variables &amp; Runtime Configuration</strong></h2>
@@ -3746,8 +3734,8 @@ This anchors the prompt to a <strong>specific BrandApplication + context</strong
 </table>
 <p>Each <code>promptVariable</code> SHOULD be a <code>schema:PropertyValue</code> with:</p>
 <ul>
-<li><code>schema:name</code> – variable name (e.g. <code>"platform"</code>, <code>"audienceSegment"</code>, <code>"imageConcept"</code>),  </li>
-<li><code>schema:value</code> – example or default,  </li>
+<li><code>schema:name</code> – variable name (e.g. <code>"platform"</code>, <code>"audienceSegment"</code>, <code>"imageConcept"</code>),</li>
+<li><code>schema:value</code> – example or default,</li>
 <li>optionally <code>schema:description</code> / <code>valueReference</code> for richer semantics.</li>
 </ul>
 <h3 id="83-model-binding-generation-parameters">8.3 Model binding &amp; generation parameters</h3>
@@ -3784,22 +3772,22 @@ This anchors the prompt to a <strong>specific BrandApplication + context</strong
 </table>
 <h4 id="brandogenerationparameter"><code>brando:generationParameter</code></h4>
 <ul>
-<li><strong>IRI:</strong> <code>brando:generationParameter</code>  </li>
-<li><strong>Type:</strong> <code>owl:ObjectProperty</code>  </li>
-<li><strong>Domain:</strong> <code>brando:Prompt</code>, <code>brando:BrandModel</code>  </li>
-<li><strong>Range:</strong> <code>schema:PropertyValue</code>  </li>
+<li><strong>IRI:</strong> <code>brando:generationParameter</code></li>
+<li><strong>Type:</strong> <code>owl:ObjectProperty</code></li>
+<li><strong>Domain:</strong> <code>brando:Prompt</code>, <code>brando:BrandModel</code></li>
+<li><strong>Range:</strong> <code>schema:PropertyValue</code></li>
 </ul>
 <blockquote>
-<p><strong>rdfs:comment</strong><br />
+<p><strong>rdfs:comment</strong>
 <em>Declares one or more model-side generation parameters (e.g. temperature, top_p, max_output_tokens) to be applied when using this prompt or brand model. The parameter name and value are encoded as <code>schema:PropertyValue</code> to allow vendor-neutral, extensible configuration.</em></p>
 </blockquote>
 <p>Common <code>schema:name</code> values (recommended but not mandated):</p>
 <ul>
-<li><code>"temperature"</code> – float <code>0.0–1.0</code>  </li>
-<li><code>"top_p"</code> – float <code>0.0–1.0</code>  </li>
-<li><code>"max_output_tokens"</code> – integer  </li>
-<li><code>"presence_penalty"</code> – float  </li>
-<li><code>"frequency_penalty"</code> – float  </li>
+<li><code>"temperature"</code> – float <code>0.0–1.0</code></li>
+<li><code>"top_p"</code> – float <code>0.0–1.0</code></li>
+<li><code>"max_output_tokens"</code> – integer</li>
+<li><code>"presence_penalty"</code> – float</li>
+<li><code>"frequency_penalty"</code> – float</li>
 <li><code>"seed"</code> – integer (for reproducibility where supported)</li>
 </ul>
 <hr />
@@ -4009,7 +3997,7 @@ This anchors the prompt to a <strong>specific BrandApplication + context</strong
       
         <footer>
   <div class="custom-footer">
-    <strong>© 2025 Advanced Analytica Ltd </strong>. Brando and IBOM are defined and stewarded by Advanced Analytica.  
+    <strong>© 2025 Advanced Analytica Ltd </strong> &middot; All rights reserved. Unauthorised use is strictly prohibited.
   </div>
 </footer>
       
