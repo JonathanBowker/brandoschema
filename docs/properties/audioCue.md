@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > AudioToken :: audioCue
+## Brand > Property > AudioToken :: audioCue
 
 **Canonical URL:** `https://brandoschema.com/properties/audioCue`  
 **Check for open issues.**

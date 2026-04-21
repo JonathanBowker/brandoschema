@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > BrandExpressionToken :: assetPreview
+## Brand > Property > BrandExpressionToken :: assetPreview
 
 **Canonical URL:** `https://brandoschema.com/properties/assetPreview`  
 **Check for open issues.**

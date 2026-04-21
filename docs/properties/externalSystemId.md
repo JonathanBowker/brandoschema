@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: externalSystemId (brando:Brand, brando:Context, brando:Policy, brando:Campaign, brando:AutomationRule)
+## Brand > Property > Multiple types :: externalSystemId (brando:Brand, brando:Context, brando:Policy, brando:Campaign, brando:AutomationRule)
 
 **Canonical URL:** `https://brandoschema.com/properties/externalSystemId`  
 **Check for open issues.**

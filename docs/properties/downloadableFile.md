@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: downloadableFile (brando:Brand, brando:Context, brando:VisualToken, brando:VerbalToken, brando:AudioToken, brando:Policy, brando:Campaign, brando:BrandedCategory)
+## Brand > Property > Multiple types :: downloadableFile (brando:Brand, brando:Context, brando:VisualToken, brando:VerbalToken, brando:AudioToken, brando:Policy, brando:Campaign, brando:BrandedCategory)
 
 **Canonical URL:** `https://brandoschema.com/properties/downloadableFile`  
 **Check for open issues.**

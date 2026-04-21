@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Policy :: priority
+## Brand > Property > Policy :: priority
 
 **Canonical URL:** `https://brandoschema.com/properties/priority`  
 **Check for open issues.**

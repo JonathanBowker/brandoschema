@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: hasContext
+## Brand > Property > Brand :: hasContext
 
 **Canonical URL:** `https://brandoschema.com/properties/hasContext`  
 **Check for open issues.**

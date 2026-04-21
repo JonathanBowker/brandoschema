@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: brandArchitectureRole
+## Brand > Property > Brand :: brandArchitectureRole
 
 **Canonical URL:** `https://brandoschema.com/properties/brandArchitectureRole`  
 **Check for open issues.**

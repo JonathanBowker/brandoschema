@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VisualToken :: typography
+## Brand > Property > VisualToken :: typography
 
 **Canonical URL:** `https://brandoschema.com/properties/typography`  
 **Check for open issues.**

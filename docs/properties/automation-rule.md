@@ -18,7 +18,7 @@ Properties in this section: **4**
 | Description | Structured JSON describing actions taken when trigger conditions are met. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:AutomationRule](../types/automation-rule.md) |
-| Vocabulary path | Thing > Intangible > AutomationRule :: automationAction |
+| Vocabulary path | Brand > Property > AutomationRule :: automationAction |
 | Canonical URL | [`https://brandoschema.com/properties/automationAction`](https://brandoschema.com/properties/automationAction) |
 
 ## [`brando:dataSource`](dataSource.md)
@@ -28,7 +28,7 @@ Properties in this section: **4**
 | Description | API endpoint or data source providing metrics or signals. |
 | Values expected | **URL**<br>**List of URL values** |
 | Used on | [brando:AutomationRule](../types/automation-rule.md) |
-| Vocabulary path | Thing > Intangible > AutomationRule :: dataSource |
+| Vocabulary path | Brand > Property > AutomationRule :: dataSource |
 | Canonical URL | [`https://brandoschema.com/properties/dataSource`](https://brandoschema.com/properties/dataSource) |
 
 ## [`brando:monitoredMetric`](monitoredMetric.md)
@@ -38,7 +38,7 @@ Properties in this section: **4**
 | Description | Structured JSON describing the metric being monitored, thresholds, and operators. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:AutomationRule](../types/automation-rule.md) |
-| Vocabulary path | Thing > Intangible > AutomationRule :: monitoredMetric |
+| Vocabulary path | Brand > Property > AutomationRule :: monitoredMetric |
 | Canonical URL | [`https://brandoschema.com/properties/monitoredMetric`](https://brandoschema.com/properties/monitoredMetric) |
 
 ## [`brando:triggerType`](triggerType.md)
@@ -48,5 +48,5 @@ Properties in this section: **4**
 | Description | Type of event or condition that activates this automation rule. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:AutomationRule](../types/automation-rule.md) |
-| Vocabulary path | Thing > Intangible > AutomationRule :: triggerType |
+| Vocabulary path | Brand > Property > AutomationRule :: triggerType |
 | Canonical URL | [`https://brandoschema.com/properties/triggerType`](https://brandoschema.com/properties/triggerType) |

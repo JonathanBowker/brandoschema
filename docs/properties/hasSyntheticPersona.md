@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: hasSyntheticPersona
+## Brand > Property > Brand :: hasSyntheticPersona
 
 **Canonical URL:** `https://brandoschema.com/properties/hasSyntheticPersona`
 **Check for open issues.**

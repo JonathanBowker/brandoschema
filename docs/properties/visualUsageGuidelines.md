@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VisualToken :: visualUsageGuidelines
+## Brand > Property > VisualToken :: visualUsageGuidelines
 
 **Canonical URL:** `https://brandoschema.com/properties/visualUsageGuidelines`  
 **Check for open issues.**

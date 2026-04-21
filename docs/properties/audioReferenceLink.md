@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > AudioToken :: audioReferenceLink
+## Brand > Property > AudioToken :: audioReferenceLink
 
 **Canonical URL:** `https://brandoschema.com/properties/audioReferenceLink`  
 **Check for open issues.**

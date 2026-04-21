@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VisualToken :: visualReferenceLink
+## Brand > Property > VisualToken :: visualReferenceLink
 
 **Canonical URL:** `https://brandoschema.com/properties/visualReferenceLink`  
 **Check for open issues.**

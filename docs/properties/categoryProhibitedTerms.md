@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > BrandedCategory :: categoryProhibitedTerms
+## Brand > Property > BrandedCategory :: categoryProhibitedTerms
 
 **Canonical URL:** `https://brandoschema.com/properties/categoryProhibitedTerms`  
 **Check for open issues.**

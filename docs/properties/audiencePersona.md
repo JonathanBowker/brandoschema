@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Context :: audiencePersona
+## Brand > Property > Context :: audiencePersona
 
 **Canonical URL:** `https://brandoschema.com/properties/audiencePersona`  
 **Check for open issues.**

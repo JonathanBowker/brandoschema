@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > AutomationRule :: dataSource
+## Brand > Property > AutomationRule :: dataSource
 
 **Canonical URL:** `https://brandoschema.com/properties/dataSource`  
 **Check for open issues.**

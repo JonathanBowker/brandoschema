@@ -18,7 +18,7 @@ Properties in this section: **17**
 | Description | The role this brand plays in the broader brand architecture (e.g. master brand, endorsed brand, sub-brand). |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: brandArchitectureRole |
+| Vocabulary path | Brand > Property > Brand :: brandArchitectureRole |
 | Canonical URL | [`https://brandoschema.com/properties/brandArchitectureRole`](https://brandoschema.com/properties/brandArchitectureRole) |
 
 ## [`brando:brandNarrative`](brandNarrative.md)
@@ -28,7 +28,7 @@ Properties in this section: **17**
 | Description | Longer-form narrative that explains the brand's origin, evolution, and purpose. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: brandNarrative |
+| Vocabulary path | Brand > Property > Brand :: brandNarrative |
 | Canonical URL | [`https://brandoschema.com/properties/brandNarrative`](https://brandoschema.com/properties/brandNarrative) |
 
 ## [`brando:brandPromise`](brandPromise.md)
@@ -38,7 +38,7 @@ Properties in this section: **17**
 | Description | The core commitment or experience the brand guarantees to deliver. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: brandPromise |
+| Vocabulary path | Brand > Property > Brand :: brandPromise |
 | Canonical URL | [`https://brandoschema.com/properties/brandPromise`](https://brandoschema.com/properties/brandPromise) |
 
 ## [`brando:competitorContext`](competitorContext.md)
@@ -48,7 +48,7 @@ Properties in this section: **17**
 | Description | Summary of competitors, adjacent solutions, and how the brand differentiates. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: competitorContext |
+| Vocabulary path | Brand > Property > Brand :: competitorContext |
 | Canonical URL | [`https://brandoschema.com/properties/competitorContext`](https://brandoschema.com/properties/competitorContext) |
 
 ## [`brando:coreValues`](coreValues.md)
@@ -58,7 +58,7 @@ Properties in this section: **17**
 | Description | Foundational principles and beliefs that guide brand decisions and behaviours. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: coreValues |
+| Vocabulary path | Brand > Property > Brand :: coreValues |
 | Canonical URL | [`https://brandoschema.com/properties/coreValues`](https://brandoschema.com/properties/coreValues) |
 
 ## [`brando:governanceModel`](governanceModel.md)
@@ -68,7 +68,7 @@ Properties in this section: **17**
 | Description | Description of how the brand is governed (e.g. centralised, federated, hybrid) for decision-making and approvals. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: governanceModel |
+| Vocabulary path | Brand > Property > Brand :: governanceModel |
 | Canonical URL | [`https://brandoschema.com/properties/governanceModel`](https://brandoschema.com/properties/governanceModel) |
 
 ## [`brando:hasAutomationRule`](hasAutomationRule.md)
@@ -78,7 +78,7 @@ Properties in this section: **17**
 | Description | Links a brand to automated governance rules and triggers. |
 | Values expected | **brando:AutomationRule**<br>**List of brando:AutomationRule values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: hasAutomationRule |
+| Vocabulary path | Brand > Property > Brand :: hasAutomationRule |
 | Canonical URL | [`https://brandoschema.com/properties/hasAutomationRule`](https://brandoschema.com/properties/hasAutomationRule) |
 
 ## [`brando:hasCampaign`](hasCampaign.md)
@@ -88,7 +88,7 @@ Properties in this section: **17**
 | Description | Links a brand to time-bound campaigns that may temporarily adjust rules and tokens. |
 | Values expected | **brando:Campaign**<br>**List of brando:Campaign values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: hasCampaign |
+| Vocabulary path | Brand > Property > Brand :: hasCampaign |
 | Canonical URL | [`https://brandoschema.com/properties/hasCampaign`](https://brandoschema.com/properties/hasCampaign) |
 
 ## [`brando:hasContext`](hasContext.md)
@@ -98,7 +98,7 @@ Properties in this section: **17**
 | Description | Links a brand to one or more activation contexts in which it operates. |
 | Values expected | **brando:Context**<br>**List of brando:Context values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: hasContext |
+| Vocabulary path | Brand > Property > Brand :: hasContext |
 | Canonical URL | [`https://brandoschema.com/properties/hasContext`](https://brandoschema.com/properties/hasContext) |
 
 ## [`brando:hasProductCategory`](hasProductCategory.md)
@@ -108,7 +108,7 @@ Properties in this section: **17**
 | Description | Links a brand to its branded product or service category taxonomy nodes. |
 | Values expected | **brando:BrandedCategory**<br>**List of brando:BrandedCategory values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: hasProductCategory |
+| Vocabulary path | Brand > Property > Brand :: hasProductCategory |
 | Canonical URL | [`https://brandoschema.com/properties/hasProductCategory`](https://brandoschema.com/properties/hasProductCategory) |
 
 ## [`brando:hasProductPersona`](hasProductPersona.md)
@@ -118,7 +118,7 @@ Properties in this section: **17**
 | Description | Links a brand to its branded product or service category taxonomy nodes. |
 | Values expected | **brando:BrandedCategory**<br>**List of brando:BrandedCategory values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: hasProductPersona |
+| Vocabulary path | Brand > Property > Brand :: hasProductPersona |
 | Canonical URL | [`https://brandoschema.com/properties/hasProductPersona`](https://brandoschema.com/properties/hasProductPersona) |
 
 ## [`brando:hasSyntheticPersona`](hasSyntheticPersona.md)
@@ -128,7 +128,7 @@ Properties in this section: **17**
 | Description | Links a brand to its branded product or service category taxonomy nodes. |
 | Values expected | **brando:BrandedCategory**<br>**List of brando:BrandedCategory values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: hasSyntheticPersona |
+| Vocabulary path | Brand > Property > Brand :: hasSyntheticPersona |
 | Canonical URL | [`https://brandoschema.com/properties/hasSyntheticPersona`](https://brandoschema.com/properties/hasSyntheticPersona) |
 
 ## [`brando:inheritsPolicies`](inheritsPolicies.md)
@@ -138,7 +138,7 @@ Properties in this section: **17**
 | Description | Indicates whether a sub-brand inherits governance policies from its parent brand. |
 | Values expected | **Boolean**<br>**List of Boolean values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: inheritsPolicies |
+| Vocabulary path | Brand > Property > Brand :: inheritsPolicies |
 | Canonical URL | [`https://brandoschema.com/properties/inheritsPolicies`](https://brandoschema.com/properties/inheritsPolicies) |
 
 ## [`brando:inheritsTokens`](inheritsTokens.md)
@@ -148,7 +148,7 @@ Properties in this section: **17**
 | Description | Structured definition of which expression tokens (verbal, visual, audio) are inherited and how. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: inheritsTokens |
+| Vocabulary path | Brand > Property > Brand :: inheritsTokens |
 | Canonical URL | [`https://brandoschema.com/properties/inheritsTokens`](https://brandoschema.com/properties/inheritsTokens) |
 
 ## [`brando:marketPosition`](marketPosition.md)
@@ -158,7 +158,7 @@ Properties in this section: **17**
 | Description | How the brand positions itself in its category relative to alternatives and peers. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: marketPosition |
+| Vocabulary path | Brand > Property > Brand :: marketPosition |
 | Canonical URL | [`https://brandoschema.com/properties/marketPosition`](https://brandoschema.com/properties/marketPosition) |
 
 ## [`brando:missionStatement`](missionStatement.md)
@@ -168,7 +168,7 @@ Properties in this section: **17**
 | Description | The brand's core purpose and day-to-day reason for existing. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: missionStatement |
+| Vocabulary path | Brand > Property > Brand :: missionStatement |
 | Canonical URL | [`https://brandoschema.com/properties/missionStatement`](https://brandoschema.com/properties/missionStatement) |
 
 ## [`brando:visionStatement`](visionStatement.md)
@@ -178,5 +178,5 @@ Properties in this section: **17**
 | Description | The aspirational future state the brand is working toward. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Brand](../types/brand.md) |
-| Vocabulary path | Thing > Intangible > Brand :: visionStatement |
+| Vocabulary path | Brand > Property > Brand :: visionStatement |
 | Canonical URL | [`https://brandoschema.com/properties/visionStatement`](https://brandoschema.com/properties/visionStatement) |

@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > BrandedCategory :: gpcCategoryDescription
+## Brand > Property > BrandedCategory :: gpcCategoryDescription
 
 **Canonical URL:** `https://brandoschema.com/properties/gpcCategoryDescription`  
 **Check for open issues.**

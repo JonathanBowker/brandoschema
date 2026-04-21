@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: brandPromise
+## Brand > Property > Brand :: brandPromise
 
 **Canonical URL:** `https://brandoschema.com/properties/brandPromise`  
 **Check for open issues.**

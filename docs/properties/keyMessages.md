@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VerbalToken :: keyMessages
+## Brand > Property > VerbalToken :: keyMessages
 
 **Canonical URL:** `https://brandoschema.com/properties/keyMessages`  
 **Check for open issues.**

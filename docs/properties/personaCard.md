@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VerbalToken :: personaCard
+## Brand > Property > VerbalToken :: personaCard
 
 **Canonical URL:** `https://brandoschema.com/properties/personaCard`  
 **Check for open issues.**

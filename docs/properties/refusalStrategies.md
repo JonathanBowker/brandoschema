@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Policy :: refusalStrategies
+## Brand > Property > Policy :: refusalStrategies
 
 **Canonical URL:** `https://brandoschema.com/properties/refusalStrategies`  
 **Check for open issues.**

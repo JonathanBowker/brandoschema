@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: productItem (brando:BrandedCategory, brando:Brand)
+## Brand > Property > Multiple types :: productItem (brando:BrandedCategory, brando:Brand)
 
 **Canonical URL:** `https://brandoschema.com/properties/productItem`
 **Check for open issues.**

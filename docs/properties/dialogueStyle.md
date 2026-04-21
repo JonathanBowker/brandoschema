@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VerbalToken :: dialogueStyle
+## Brand > Property > VerbalToken :: dialogueStyle
 
 **Canonical URL:** `https://brandoschema.com/properties/dialogueStyle`  
 **Check for open issues.**

@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: hasAutomationRule
+## Brand > Property > Brand :: hasAutomationRule
 
 **Canonical URL:** `https://brandoschema.com/properties/hasAutomationRule`  
 **Check for open issues.**

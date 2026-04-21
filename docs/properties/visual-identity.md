@@ -18,7 +18,7 @@ Properties in this section: **9**
 | Description | Display name of the brand as it should appear in visual treatments. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Thing > Intangible > Visual :: brandName |
+| Vocabulary path | Brand > Property > Visual :: brandName |
 | Canonical URL | [`https://brandoschema.com/properties/brandName`](https://brandoschema.com/properties/brandName) |
 
 ## [`brando:colourPalette`](colourPalette.md)
@@ -28,7 +28,7 @@ Properties in this section: **9**
 | Description | Structured description of the brand's colour system, including roles and values. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Thing > Intangible > Visual :: colourPalette |
+| Vocabulary path | Brand > Property > Visual :: colourPalette |
 | Canonical URL | [`https://brandoschema.com/properties/colourPalette`](https://brandoschema.com/properties/colourPalette) |
 
 ## [`brando:imageryStyles`](imageryStyles.md)
@@ -38,7 +38,7 @@ Properties in this section: **9**
 | Description | Guidance on photography, illustration, and composition style. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Thing > Intangible > Visual :: imageryStyles |
+| Vocabulary path | Brand > Property > Visual :: imageryStyles |
 | Canonical URL | [`https://brandoschema.com/properties/imageryStyles`](https://brandoschema.com/properties/imageryStyles) |
 
 ## [`brando:logo`](logo.md)
@@ -48,7 +48,7 @@ Properties in this section: **9**
 | Description | Canonical reference URL to the primary logo asset or logo set. |
 | Values expected | **URL**<br>**List of URL values** |
 | Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Thing > Intangible > Visual :: logo |
+| Vocabulary path | Brand > Property > Visual :: logo |
 | Canonical URL | [`https://brandoschema.com/properties/logo`](https://brandoschema.com/properties/logo) |
 
 ## [`brando:motionRules`](motionRules.md)
@@ -58,7 +58,7 @@ Properties in this section: **9**
 | Description | Principles for animation, transitions, and micro-interactions. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Thing > Intangible > Visual :: motionRules |
+| Vocabulary path | Brand > Property > Visual :: motionRules |
 | Canonical URL | [`https://brandoschema.com/properties/motionRules`](https://brandoschema.com/properties/motionRules) |
 
 ## [`brando:typography`](typography.md)
@@ -68,7 +68,7 @@ Properties in this section: **9**
 | Description | Typographic system including font families, weights, sizes, and hierarchy. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Thing > Intangible > Visual :: typography |
+| Vocabulary path | Brand > Property > Visual :: typography |
 | Canonical URL | [`https://brandoschema.com/properties/typography`](https://brandoschema.com/properties/typography) |
 
 ## [`brando:VisualIdentity`](visualToken.md)
@@ -78,7 +78,7 @@ Properties in this section: **9**
 | Description | Core design tokens such as spacing, radius, and elevation. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Thing > Intangible > Visual :: Visual |
+| Vocabulary path | Brand > Property > Visual :: Visual |
 | Canonical URL | [`https://brandoschema.com/properties/Visual`](https://brandoschema.com/properties/Visual) |
 
 ## [`brando:VisualIdentityReferenceLink`](visualReferenceLink.md)
@@ -88,7 +88,7 @@ Properties in this section: **9**
 | Description | URL pointing to full visual identity guidelines or design system documentation. |
 | Values expected | **URL**<br>**List of URL values** |
 | Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Thing > Intangible > Visual :: visualReferenceLink |
+| Vocabulary path | Brand > Property > Visual :: visualReferenceLink |
 | Canonical URL | [`https://brandoschema.com/properties/visualReferenceLink`](https://brandoschema.com/properties/visualReferenceLink) |
 
 ## [`brando:VisualIdentityUsageGuidelines`](visualUsageGuidelines.md)
@@ -98,5 +98,5 @@ Properties in this section: **9**
 | Description | Do's and don'ts for applying logos, colours, typography, and imagery. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [Brando:VisualIdentity](../types/visual-token.md) |
-| Vocabulary path | Thing > Intangible > Visual :: visualUsageGuidelines |
+| Vocabulary path | Brand > Property > Visual :: visualUsageGuidelines |
 | Canonical URL | [`https://brandoschema.com/properties/visualUsageGuidelines`](https://brandoschema.com/properties/visualUsageGuidelines) |

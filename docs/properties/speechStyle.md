@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > AudioToken :: speechStyle
+## Brand > Property > AudioToken :: speechStyle
 
 **Canonical URL:** `https://brandoschema.com/properties/speechStyle`  
 **Check for open issues.**

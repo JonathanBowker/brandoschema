@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: visionStatement
+## Brand > Property > Brand :: visionStatement
 
 **Canonical URL:** `https://brandoschema.com/properties/visionStatement`  
 **Check for open issues.**

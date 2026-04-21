@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: hasPolicy (brando:Brand, brando:Context)
+## Brand > Property > Multiple types :: hasPolicy (brando:Brand, brando:Context)
 
 **Canonical URL:** `https://brandoschema.com/properties/hasPolicy`  
 **Check for open issues.**

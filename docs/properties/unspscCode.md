@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > BrandedCategory :: unspscCode
+## Brand > Property > BrandedCategory :: unspscCode
 
 **Canonical URL:** `https://brandoschema.com/properties/unspscCode`  
 **Check for open issues.**

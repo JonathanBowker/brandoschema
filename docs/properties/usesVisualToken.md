@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: usesVisualToken (brando:Brand, brando:Context)
+## Brand > Property > Multiple types :: usesVisualToken (brando:Brand, brando:Context)
 
 **Canonical URL:** `https://brandoschema.com/properties/usesVisualToken`  
 **Check for open issues.**

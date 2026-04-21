@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VisualToken :: logo
+## Brand > Property > VisualToken :: logo
 
 **Canonical URL:** `https://brandoschema.com/properties/logo`  
 **Check for open issues.**

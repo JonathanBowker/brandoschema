@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: usesAudioToken (brando:Brand, brando:Context)
+## Brand > Property > Multiple types :: usesAudioToken (brando:Brand, brando:Context)
 
 **Canonical URL:** `https://brandoschema.com/properties/usesAudioToken`  
 **Check for open issues.**

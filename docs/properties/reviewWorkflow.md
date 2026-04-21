@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Policy :: reviewWorkflow
+## Brand > Property > Policy :: reviewWorkflow
 
 **Canonical URL:** `https://brandoschema.com/properties/reviewWorkflow`  
 **Check for open issues.**

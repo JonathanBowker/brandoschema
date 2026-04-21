@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Context :: domainContext
+## Brand > Property > Context :: domainContext
 
 **Canonical URL:** `https://brandoschema.com/properties/domainContext`  
 **Check for open issues.**

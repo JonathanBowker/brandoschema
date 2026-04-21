@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VisualToken :: motionRules
+## Brand > Property > VisualToken :: motionRules
 
 **Canonical URL:** `https://brandoschema.com/properties/motionRules`  
 **Check for open issues.**

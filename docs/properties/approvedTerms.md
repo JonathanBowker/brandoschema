@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VerbalToken :: approvedTerms
+## Brand > Property > VerbalToken :: approvedTerms
 
 **Canonical URL:** `https://brandoschema.com/properties/approvedTerms`  
 **Check for open issues.**

@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > AudioToken :: voiceSignature
+## Brand > Property > AudioToken :: voiceSignature
 
 **Canonical URL:** `https://brandoschema.com/properties/voiceSignature`  
 **Check for open issues.**

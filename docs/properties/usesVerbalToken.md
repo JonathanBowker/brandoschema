@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: usesVerbalToken (brando:Brand, brando:Context)
+## Brand > Property > Multiple types :: usesVerbalToken (brando:Brand, brando:Context)
 
 **Canonical URL:** `https://brandoschema.com/properties/usesVerbalToken`  
 **Check for open issues.**

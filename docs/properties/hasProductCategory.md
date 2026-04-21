@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: hasProductCategory
+## Brand > Property > Brand :: hasProductCategory
 
 **Canonical URL:** `https://brandoschema.com/properties/hasProductCategory`  
 **Check for open issues.**

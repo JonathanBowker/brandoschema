@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VerbalToken :: writingStyle
+## Brand > Property > VerbalToken :: writingStyle
 
 **Canonical URL:** `https://brandoschema.com/properties/writingStyle`  
 **Check for open issues.**

@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Policy :: embeddingQuality
+## Brand > Property > Policy :: embeddingQuality
 
 **Canonical URL:** `https://brandoschema.com/properties/embeddingQuality`  
 **Check for open issues.**

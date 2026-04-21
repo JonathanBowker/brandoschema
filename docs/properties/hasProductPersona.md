@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: hasProductPersona
+## Brand > Property > Brand :: hasProductPersona
 
 **Canonical URL:** `https://brandoschema.com/properties/hasProductPersona`
 **Check for open issues.**

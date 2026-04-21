@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VisualToken :: colourPalette
+## Brand > Property > VisualToken :: colourPalette
 
 **Canonical URL:** `https://brandoschema.com/properties/colourPalette`  
 **Check for open issues.**

@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: governanceModel
+## Brand > Property > Brand :: governanceModel
 
 **Canonical URL:** `https://brandoschema.com/properties/governanceModel`  
 **Check for open issues.**

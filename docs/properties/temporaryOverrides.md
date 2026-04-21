@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Campaign :: temporaryOverrides
+## Brand > Property > Campaign :: temporaryOverrides
 
 **Canonical URL:** `https://brandoschema.com/properties/temporaryOverrides`  
 **Check for open issues.**

@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > AudioToken :: audioUsageGuidelines
+## Brand > Property > AudioToken :: audioUsageGuidelines
 
 **Canonical URL:** `https://brandoschema.com/properties/audioUsageGuidelines`  
 **Check for open issues.**

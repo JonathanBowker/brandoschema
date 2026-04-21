@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Policy :: updatePolicy
+## Brand > Property > Policy :: updatePolicy
 
 **Canonical URL:** `https://brandoschema.com/properties/updatePolicy`  
 **Check for open issues.**

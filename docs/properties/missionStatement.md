@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: missionStatement
+## Brand > Property > Brand :: missionStatement
 
 **Canonical URL:** `https://brandoschema.com/properties/missionStatement`  
 **Check for open issues.**

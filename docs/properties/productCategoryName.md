@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > BrandedCategory :: productCategoryName
+## Brand > Property > BrandedCategory :: productCategoryName
 
 **Canonical URL:** `https://brandoschema.com/properties/productCategoryName`  
 **Check for open issues.**

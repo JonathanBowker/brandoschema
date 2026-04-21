@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: inheritsPolicies
+## Brand > Property > Brand :: inheritsPolicies
 
 **Canonical URL:** `https://brandoschema.com/properties/inheritsPolicies`  
 **Check for open issues.**

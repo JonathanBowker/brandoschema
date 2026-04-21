@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: appliesTo (brando:Context, brando:Policy, brando:AutomationRule)
+## Brand > Property > Multiple types :: appliesTo (brando:Context, brando:Policy, brando:AutomationRule)
 
 **Canonical URL:** `https://brandoschema.com/properties/appliesTo`  
 **Check for open issues.**

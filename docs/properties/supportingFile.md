@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: supportingFile (brando:Brand, brando:Context, brando:VisualToken, brando:VerbalToken, brando:AudioToken, brando:Policy, brando:Campaign, brando:BrandedCategory)
+## Brand > Property > Multiple types :: supportingFile (brando:Brand, brando:Context, brando:VisualToken, brando:VerbalToken, brando:AudioToken, brando:Policy, brando:Campaign, brando:BrandedCategory)
 
 **Canonical URL:** `https://brandoschema.com/properties/supportingFile`  
 **Check for open issues.**

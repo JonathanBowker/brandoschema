@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: brandNarrative
+## Brand > Property > Brand :: brandNarrative
 
 **Canonical URL:** `https://brandoschema.com/properties/brandNarrative`  
 **Check for open issues.**

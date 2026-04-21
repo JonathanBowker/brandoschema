@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VisualToken :: imageryStyles
+## Brand > Property > VisualToken :: imageryStyles
 
 **Canonical URL:** `https://brandoschema.com/properties/imageryStyles`  
 **Check for open issues.**

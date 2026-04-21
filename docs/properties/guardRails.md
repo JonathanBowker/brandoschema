@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Policy :: guardRails
+## Brand > Property > Policy :: guardRails
 
 **Canonical URL:** `https://brandoschema.com/properties/guardRails`  
 **Check for open issues.**

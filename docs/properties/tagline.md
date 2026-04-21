@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VerbalToken :: tagline
+## Brand > Property > VerbalToken :: tagline
 
 **Canonical URL:** `https://brandoschema.com/properties/tagline`  
 **Check for open issues.**

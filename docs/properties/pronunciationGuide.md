@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > AudioToken :: pronunciationGuide
+## Brand > Property > AudioToken :: pronunciationGuide
 
 **Canonical URL:** `https://brandoschema.com/properties/pronunciationGuide`  
 **Check for open issues.**

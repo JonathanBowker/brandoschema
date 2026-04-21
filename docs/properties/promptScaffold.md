@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VerbalToken :: promptScaffold
+## Brand > Property > VerbalToken :: promptScaffold
 
 **Canonical URL:** `https://brandoschema.com/properties/promptScaffold`  
 **Check for open issues.**

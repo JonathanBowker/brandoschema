@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Policy :: riskScenarios
+## Brand > Property > Policy :: riskScenarios
 
 **Canonical URL:** `https://brandoschema.com/properties/riskScenarios`  
 **Check for open issues.**

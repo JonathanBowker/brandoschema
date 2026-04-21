@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Campaign :: campaignTheme
+## Brand > Property > Campaign :: campaignTheme
 
 **Canonical URL:** `https://brandoschema.com/properties/campaignTheme`  
 **Check for open issues.**

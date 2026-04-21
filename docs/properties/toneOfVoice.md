@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VerbalToken :: toneOfVoice
+## Brand > Property > VerbalToken :: toneOfVoice
 
 **Canonical URL:** `https://brandoschema.com/properties/toneOfVoice`  
 **Check for open issues.**

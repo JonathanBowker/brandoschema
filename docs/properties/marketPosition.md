@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: marketPosition
+## Brand > Property > Brand :: marketPosition
 
 **Canonical URL:** `https://brandoschema.com/properties/marketPosition`  
 **Check for open issues.**

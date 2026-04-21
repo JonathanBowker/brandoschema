@@ -18,7 +18,7 @@ Properties in this section: **3**
 | Description | Human-readable name of a marketing or communications campaign. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Campaign](../types/campaign.md) |
-| Vocabulary path | Thing > Intangible > Campaign :: campaignName |
+| Vocabulary path | Brand > Property > Campaign :: campaignName |
 | Canonical URL | [`https://brandoschema.com/properties/campaignName`](https://brandoschema.com/properties/campaignName) |
 
 ## [`brando:campaignTheme`](campaignTheme.md)
@@ -28,7 +28,7 @@ Properties in this section: **3**
 | Description | Central message or creative theme for the campaign. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Campaign](../types/campaign.md) |
-| Vocabulary path | Thing > Intangible > Campaign :: campaignTheme |
+| Vocabulary path | Brand > Property > Campaign :: campaignTheme |
 | Canonical URL | [`https://brandoschema.com/properties/campaignTheme`](https://brandoschema.com/properties/campaignTheme) |
 
 ## [`brando:temporaryOverrides`](temporaryOverrides.md)
@@ -38,5 +38,5 @@ Properties in this section: **3**
 | Description | Structured JSON describing temporary modifications to brand rules during this campaign. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Campaign](../types/campaign.md) |
-| Vocabulary path | Thing > Intangible > Campaign :: temporaryOverrides |
+| Vocabulary path | Brand > Property > Campaign :: temporaryOverrides |
 | Canonical URL | [`https://brandoschema.com/properties/temporaryOverrides`](https://brandoschema.com/properties/temporaryOverrides) |

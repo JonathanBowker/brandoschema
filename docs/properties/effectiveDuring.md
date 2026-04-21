@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: effectiveDuring (brando:Context, brando:Campaign, brando:Policy)
+## Brand > Property > Multiple types :: effectiveDuring (brando:Context, brando:Campaign, brando:Policy)
 
 **Canonical URL:** `https://brandoschema.com/properties/effectiveDuring`  
 **Check for open issues.**

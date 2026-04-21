@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VerbalToken :: prohibitedTerms
+## Brand > Property > VerbalToken :: prohibitedTerms
 
 **Canonical URL:** `https://brandoschema.com/properties/prohibitedTerms`  
 **Check for open issues.**

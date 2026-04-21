@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: inheritsTokens
+## Brand > Property > Brand :: inheritsTokens
 
 **Canonical URL:** `https://brandoschema.com/properties/inheritsTokens`  
 **Check for open issues.**

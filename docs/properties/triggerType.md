@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > AutomationRule :: triggerType
+## Brand > Property > AutomationRule :: triggerType
 
 **Canonical URL:** `https://brandoschema.com/properties/triggerType`  
 **Check for open issues.**

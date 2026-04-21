@@ -18,7 +18,7 @@ Properties in this section: **3**
 | Description | Persona-style archetypes representing typical users in this context. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Context](../types/context.md) |
-| Vocabulary path | Thing > Intangible > Context :: audiencePersona |
+| Vocabulary path | Brand > Property > Context :: audiencePersona |
 | Canonical URL | [`https://brandoschema.com/properties/audiencePersona`](https://brandoschema.com/properties/audiencePersona) |
 
 ## [`brando:audienceSegment`](audienceSegment.md)
@@ -28,7 +28,7 @@ Properties in this section: **3**
 | Description | Strategic grouping of individuals who share needs or characteristics relevant to this context. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Context](../types/context.md) |
-| Vocabulary path | Thing > Intangible > Context :: audienceSegment |
+| Vocabulary path | Brand > Property > Context :: audienceSegment |
 | Canonical URL | [`https://brandoschema.com/properties/audienceSegment`](https://brandoschema.com/properties/audienceSegment) |
 
 ## [`brando:domainContext`](domainContext.md)
@@ -38,5 +38,5 @@ Properties in this section: **3**
 | Description | Operational, legal, channel, regional, and use-case conditions encoded as a structured JSON payload. |
 | Values expected | **Text**<br>**List of Text values** |
 | Used on | [brando:Context](../types/context.md) |
-| Vocabulary path | Thing > Intangible > Context :: domainContext |
+| Vocabulary path | Brand > Property > Context :: domainContext |
 | Canonical URL | [`https://brandoschema.com/properties/domainContext`](https://brandoschema.com/properties/domainContext) |

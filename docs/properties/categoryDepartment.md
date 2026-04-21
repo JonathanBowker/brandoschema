@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > BrandedCategory :: categoryDepartment
+## Brand > Property > BrandedCategory :: categoryDepartment
 
 **Canonical URL:** `https://brandoschema.com/properties/categoryDepartment`  
 **Check for open issues.**

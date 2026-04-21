@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Policy :: retrievableInLLM
+## Brand > Property > Policy :: retrievableInLLM
 
 **Canonical URL:** `https://brandoschema.com/properties/retrievableInLLM`  
 **Check for open issues.**

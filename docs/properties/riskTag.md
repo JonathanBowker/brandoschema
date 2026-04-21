@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: riskTag (brando:Policy, brando:AutomationRule)
+## Brand > Property > Multiple types :: riskTag (brando:Policy, brando:AutomationRule)
 
 **Canonical URL:** `https://brandoschema.com/properties/riskTag`  
 **Check for open issues.**

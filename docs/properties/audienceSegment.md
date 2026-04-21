@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Context :: audienceSegment
+## Brand > Property > Context :: audienceSegment
 
 **Canonical URL:** `https://brandoschema.com/properties/audienceSegment`  
 **Check for open issues.**

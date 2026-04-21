@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: enforcementLevel (brando:Policy, brando:AutomationRule)
+## Brand > Property > Multiple types :: enforcementLevel (brando:Policy, brando:AutomationRule)
 
 **Canonical URL:** `https://brandoschema.com/properties/enforcementLevel`  
 **Check for open issues.**

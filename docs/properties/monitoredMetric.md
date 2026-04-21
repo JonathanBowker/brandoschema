@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > AutomationRule :: monitoredMetric
+## Brand > Property > AutomationRule :: monitoredMetric
 
 **Canonical URL:** `https://brandoschema.com/properties/monitoredMetric`  
 **Check for open issues.**

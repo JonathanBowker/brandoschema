@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VerbalToken :: namingConvention
+## Brand > Property > VerbalToken :: namingConvention
 
 **Canonical URL:** `https://brandoschema.com/properties/namingConvention`  
 **Check for open issues.**

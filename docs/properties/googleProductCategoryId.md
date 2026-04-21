@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > BrandedCategory :: googleProductCategoryId
+## Brand > Property > BrandedCategory :: googleProductCategoryId
 
 **Canonical URL:** `https://brandoschema.com/properties/googleProductCategoryId`  
 **Check for open issues.**

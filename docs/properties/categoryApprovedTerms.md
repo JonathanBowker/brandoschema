@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > BrandedCategory :: categoryApprovedTerms
+## Brand > Property > BrandedCategory :: categoryApprovedTerms
 
 **Canonical URL:** `https://brandoschema.com/properties/categoryApprovedTerms`  
 **Check for open issues.**

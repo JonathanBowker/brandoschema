@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: externalSystem (brando:Brand, brando:Context, brando:Policy, brando:Campaign, brando:AutomationRule)
+## Brand > Property > Multiple types :: externalSystem (brando:Brand, brando:Context, brando:Policy, brando:Campaign, brando:AutomationRule)
 
 **Canonical URL:** `https://brandoschema.com/properties/externalSystem`
 **Check for open issues.**

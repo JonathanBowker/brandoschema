@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Policy :: complianceTags
+## Brand > Property > Policy :: complianceTags
 
 **Canonical URL:** `https://brandoschema.com/properties/complianceTags`  
 **Check for open issues.**

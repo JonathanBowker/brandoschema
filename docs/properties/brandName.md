@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VisualToken :: brandName
+## Brand > Property > VisualToken :: brandName
 
 **Canonical URL:** `https://brandoschema.com/properties/brandName`  
 **Check for open issues.**

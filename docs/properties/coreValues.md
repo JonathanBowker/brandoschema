@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: coreValues
+## Brand > Property > Brand :: coreValues
 
 **Canonical URL:** `https://brandoschema.com/properties/coreValues`  
 **Check for open issues.**

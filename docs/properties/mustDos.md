@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > VerbalToken :: mustDos
+## Brand > Property > VerbalToken :: mustDos
 
 **Canonical URL:** `https://brandoschema.com/properties/mustDos`  
 **Check for open issues.**

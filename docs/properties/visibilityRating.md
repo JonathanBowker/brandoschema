@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Policy :: visibilityRating
+## Brand > Property > Policy :: visibilityRating
 
 **Canonical URL:** `https://brandoschema.com/properties/visibilityRating`  
 **Check for open issues.**

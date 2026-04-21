@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: appliesToProduct (brando:BrandedCategory, brando:Policy)
+## Brand > Property > Multiple types :: appliesToProduct (brando:BrandedCategory, brando:Policy)
 
 **Canonical URL:** `https://brandoschema.com/properties/appliesToProduct`  
 **Check for open issues.**

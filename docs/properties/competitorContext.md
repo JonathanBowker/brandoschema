@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Brand :: competitorContext
+## Brand > Property > Brand :: competitorContext
 
 **Canonical URL:** `https://brandoschema.com/properties/competitorContext`  
 **Check for open issues.**

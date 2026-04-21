@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > Multiple types :: appliesToGTIN (brando:BrandedCategory, brando:Policy)
+## Brand > Property > Multiple types :: appliesToGTIN (brando:BrandedCategory, brando:Policy)
 
 **Canonical URL:** `https://brandoschema.com/properties/appliesToGTIN`  
 **Check for open issues.**

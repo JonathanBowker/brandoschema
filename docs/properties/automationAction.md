@@ -5,7 +5,7 @@
 
 ---
 
-## Thing > Intangible > AutomationRule :: automationAction
+## Brand > Property > AutomationRule :: automationAction
 
 **Canonical URL:** `https://brandoschema.com/properties/automationAction`  
 **Check for open issues.**
