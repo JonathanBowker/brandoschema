@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Copy-paste JSON-LD examples for the Brando Schema vocabulary v1.3, including a minimal brand graph and a brand+context+tokens+policies graph.">
+        <meta name="description" content="How to structure the JSON sidecar in the Brando Schema triad.">
       
       
         <meta name="author" content="Jonathan Bowker">
@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://brandoschema.com/getting-started-jsonld/">
       
       
-        <link rel="prev" href="../getting-started-markdown/">
+        <link rel="prev" href="../getting-started-yaml/">
       
       
-        <link rel="next" href="../getting-started-yaml/">
+        <link rel="next" href="../entity-types/">
       
       
         
@@ -30,7 +30,7 @@
     
   <title>
     
-      Quickstart – Brando in JSON-LD
+      Quickstart – JSON
     
   </title>
 
@@ -90,22 +90,22 @@
   <!-- End Google Tag Manager -->
 
   
-    <meta name="description" content="Copy-paste JSON-LD examples for the Brando Schema vocabulary v1.3, including a minimal brand graph and a brand+context+tokens+policies graph.">
+    <meta name="description" content="How to structure the JSON sidecar in the Brando Schema triad.">
     <meta name="author" content="Jonathan Bowker">
     <meta name="keywords" content="">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Quickstart – Brando in JSON-LD">
-    <meta property="og:description" content="Copy-paste JSON-LD examples for the Brando Schema vocabulary v1.3, including a minimal brand graph and a brand+context+tokens+policies graph.">
+    <meta property="og:title" content="Quickstart – JSON">
+    <meta property="og:description" content="How to structure the JSON sidecar in the Brando Schema triad.">
     <meta property="og:url" content="https://brandoschema.com/getting-started-jsonld/">
-    <meta property="og:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
+    <meta property="og:image" content="">
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Quickstart – Brando in JSON-LD">
-    <meta name="twitter:description" content="Copy-paste JSON-LD examples for the Brando Schema vocabulary v1.3, including a minimal brand graph and a brand+context+tokens+policies graph.">
-    <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
+    <meta name="twitter:card" content="">
+    <meta name="twitter:title" content="Quickstart – JSON">
+    <meta name="twitter:description" content="How to structure the JSON sidecar in the Brando Schema triad.">
+    <meta name="twitter:image" content="">
   
 
   </head>
@@ -127,7 +127,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#quickstart-brando-in-json-ld" class="md-skip">
+        <a href="#quickstart-json-sidecar" class="md-skip">
           Skip to content
         </a>
       
@@ -143,7 +143,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Brando Schema" class="md-header__button md-logo" aria-label="Brando Schema" data-md-component="logo">
+    <a href=".." title="Brando – Brand-as-Code" class="md-header__button md-logo" aria-label="Brando – Brand-as-Code" data-md-component="logo">
       
   <img src="../assets/images/4x/masthead_logo@4x.png" alt="logo">
 
@@ -156,13 +156,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Brando Schema
+            Brando – Brand-as-Code
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Quickstart – Brando in JSON-LD
+              Quickstart – JSON
             
           </span>
         </div>
@@ -278,12 +278,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Brando Schema" class="md-nav__button md-logo" aria-label="Brando Schema" data-md-component="logo">
+    <a href=".." title="Brando – Brand-as-Code" class="md-nav__button md-logo" aria-label="Brando – Brand-as-Code" data-md-component="logo">
       
   <img src="../assets/images/4x/masthead_logo@4x.png" alt="logo">
 
     </a>
-    Brando Schema
+    Brando – Brand-as-Code
   </label>
   
     <div class="md-nav__source">
@@ -436,6 +436,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started-yaml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quickstart (YAML)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -455,7 +483,7 @@
   <span class="md-ellipsis">
     
   
-    Quickstart (JSON-LD)
+    Quickstart (JSON)
   
 
     
@@ -473,7 +501,7 @@
   <span class="md-ellipsis">
     
   
-    Quickstart (JSON-LD)
+    Quickstart (JSON)
   
 
     
@@ -499,10 +527,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-json-ld-context" class="md-nav__link">
+  <a href="#what-belongs-in-the-json-sidecar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. JSON-LD context
+        What belongs in the JSON sidecar
       
     </span>
   </a>
@@ -510,88 +538,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-minimal-single-brand-example" class="md-nav__link">
+  <a href="#example-shape" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Minimal single-brand example
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Minimal single-brand example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-a-runtime-uses-this" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How a runtime uses this
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-adding-classification-and-integrations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Adding classification and integrations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Adding classification and integrations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-this-enables" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What this enables
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-embedding-json-ld-on-the-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Embedding JSON-LD on the web
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-json-ld-vs-yaml-staying-in-sync" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. JSON-LD vs YAML – staying in sync
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-where-to-go-next" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Where to go next
+        Example shape
       
     </span>
   </a>
@@ -602,34 +552,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../getting-started-yaml/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Quickstart (YAML)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -1057,6 +979,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../entity-types/claims-and-disclosures/product-claim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Product claim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../entity-types/claims-and-disclosures/regulatory-disclosure/" class="md-nav__link">
         
   
@@ -1093,34 +1043,6 @@
     
   
     Sustainability statement
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../entity-types/claims-and-disclosures/product-claim/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Product claim
   
 
     
@@ -1374,6 +1296,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../properties/jsonLdSidecar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JSON sidecar link
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../properties/brand-and-context/" class="md-nav__link">
         
   
@@ -1605,7 +1555,63 @@
   <span class="md-ellipsis">
     
   
-    Advanced Analytica
+    About Brando Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
   
 
     
@@ -1633,35 +1639,7 @@
   <span class="md-ellipsis">
     
   
-    Partner Ecosystem
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../use-brando-trademark/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Brando Trademark
+    Partners
   
 
     
@@ -1737,10 +1715,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-json-ld-context" class="md-nav__link">
+  <a href="#what-belongs-in-the-json-sidecar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. JSON-LD context
+        What belongs in the JSON sidecar
       
     </span>
   </a>
@@ -1748,88 +1726,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-minimal-single-brand-example" class="md-nav__link">
+  <a href="#example-shape" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Minimal single-brand example
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Minimal single-brand example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-a-runtime-uses-this" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How a runtime uses this
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-adding-classification-and-integrations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Adding classification and integrations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Adding classification and integrations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-this-enables" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What this enables
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-embedding-json-ld-on-the-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Embedding JSON-LD on the web
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-json-ld-vs-yaml-staying-in-sync" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. JSON-LD vs YAML – staying in sync
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-where-to-go-next" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Where to go next
+        Example shape
       
     </span>
   </a>
@@ -1856,277 +1756,50 @@
   
 
 
-<h1 id="quickstart-brando-in-json-ld">Quickstart: Brando in JSON-LD</h1>
-<p>This page gives you <strong>copy-paste JSON-LD examples</strong> for the Brando Schema Vocabulary v1.3.</p>
-<p>Use this if you:</p>
+<h1 id="quickstart-json-sidecar">Quickstart: JSON sidecar</h1>
+<p>In the Brando Schema triad, JSON is the machine-readable sidecar for the same entity described in the Markdown body and YAML frontmatter.</p>
+<h2 id="what-belongs-in-the-json-sidecar">What belongs in the JSON sidecar</h2>
+<p>The JSON sidecar usually includes:</p>
 <ul>
-<li>want to publish Brando as JSON-LD on your website or API,</li>
-<li>are wiring Brando into a knowledge graph or LLM/agent runtime,</li>
-<li>prefer to see concrete examples rather than read the ontology.</li>
+<li><code>@context</code></li>
+<li><code>@id</code></li>
+<li><code>@type</code></li>
+<li>the document name or headline</li>
+<li><code>brando:jsonLdSidecar</code></li>
+<li>grouped <code>brando:properties</code></li>
+<li>grouped <code>brando:relationships</code></li>
+<li>grouped <code>brando:controls</code></li>
+<li>grouped <code>brando:references</code></li>
 </ul>
-<p>If you haven’t yet, read <strong><a href="../getting-started/">Getting started</a></strong> for the mental model and workflows first.
-For document-style content, also see <strong><a href="../getting-started-markdown/">Quickstart (Markdown)</a></strong>.</p>
-<hr />
-<h2 id="1-json-ld-context">1. JSON-LD context</h2>
-<p>For instance data, you typically need:</p>
-<ul>
-<li><code>schema</code> – core schema.org terms (<code>schema:Brand</code>, <code>schema:SoftwareApplication</code>, etc.),</li>
-<li><code>brando</code> – the Brando Schema vocabulary namespace.</li>
-</ul>
-<p>You can inline a minimal context:</p>
+<h2 id="example-shape">Example shape</h2>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nd">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org/&quot;</span><span class="p">,</span>
 <span class="w">    </span><span class="nt">&quot;brando&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://brandoschema.com/&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brands/abc-example-inc/reports/workflow-automation-market-review-2026&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:MarketReport&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ABC Example Inc workflow automation market review 2026&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:jsonLdSidecar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brands/abc-example-inc/reports/workflow-automation-market-review-2026.json&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;brando:properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;brand&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ABC Example Inc&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dataSource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Analyst desk research and approved internal notes&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;reviewWorkflow&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Strategy lead review, legal review, brand review&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:relationships&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;appliesToProduct&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ABC Flow Pilot&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;effectiveDuring&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;2026 planning cycle&quot;</span><span class="p">]</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:controls&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;required&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Cite approved market sources only&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;reviewed&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Quarterly by strategy and legal&quot;</span><span class="p">]</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;brando:references&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;benchmarkExamples&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ABC Example Inc workflow benchmark example&quot;</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;sourceDocuments&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ABC Example Inc category notes&quot;</span><span class="p">]</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Or, if you already have a broader JSON-LD context for your site or graph, just add the <code>brando</code> prefix.</p>
-<hr />
-<h2 id="2-minimal-single-brand-example">2. Minimal single-brand example</h2>
-<p>This is the <strong>smallest useful Brando graph</strong> in JSON-LD:</p>
-<ul>
-<li>one <code>brando:Brand</code>,</li>
-<li>one <code>brando:Context</code>,</li>
-<li>one <code>brando:VerbalToken</code>,</li>
-<li>one <code>brando:Policy</code>.</li>
-</ul>
-<p>You can embed this in a <code>&lt;script type="application/ld+json"&gt;</code> tag on a page, or return it via an API.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nd">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org/&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;brando&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://brandoschema.com/&quot;</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nd">&quot;@graph&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Brand&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar Bank&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:missionStatement&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Financial clarity with absolute trust.&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:visionStatement&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Help people feel in control of their financial future.&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:coreValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;Clarity over complexity&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;Do the right thing&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;Long-term alignment with customers&quot;</span>
-<span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;brando:marketPosition&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Digital-first bank for risk-aware customers.&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:tagline&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Clarity, not shortcuts.&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:hasContext&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/context/retail-chatbot&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;brando:usesVerbalToken&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;brando:hasPolicy&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/policies/regulated-claims&quot;</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/context/retail-chatbot&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Context&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:audienceSegment&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Retail banking customers&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:audiencePersona&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Everyday saver&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:domainContext&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{\&quot;channel\&quot;:\&quot;chatbot\&quot;,\&quot;surface\&quot;:\&quot;public-website\&quot;,\&quot;region\&quot;:\&quot;UK\&quot;}&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/tokens/verbal/default&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:VerbalToken&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:toneOfVoice&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Calm, empathetic, precise. Explain options in simple language without being patronising.&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:approvedTerms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;interest rate&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;fees&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;savings goals&quot;</span>
-<span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;brando:prohibitedTerms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;get rich quick&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;guaranteed returns&quot;</span>
-<span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;brando:keyMessages&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;We help you understand the trade-offs, not hide them.&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;We prioritise long-term financial health over short-term hype.&quot;</span>
-<span class="w">      </span><span class="p">]</span>
-<span class="w">    </span><span class="p">},</span>
-
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/policies/regulated-claims&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Policy&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:enforcementLevel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mandatory&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:riskTag&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;financial-regulation&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;consumer-protection&quot;</span>
-<span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;brando:mustNotDos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;Do not recommend specific products as &#39;best&#39; without disclaimers.&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;Do not provide personalised investment advice.&quot;</span>
-<span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;brando:refusalStrategies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;Explain that you cannot give personalised investment advice.&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;Offer to connect the user to a human advisor.&quot;</span>
-<span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;brando:reviewWorkflow&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Compliance team reviews changes to this policy and any flagged AI outputs weekly.&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:retrievableInLLM&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
-<h3 id="how-a-runtime-uses-this">How a runtime uses this</h3>
-<p>An LLM app or Brand OS would:</p>
-<ol>
-<li>Load the graph and pick the <code>brando:Brand</code> node that matches the tenant or domain.</li>
-<li>
-<p>Follow:</p>
-<ul>
-<li><code>brando:hasContext</code> → <code>brando:Context</code> for the current channel,</li>
-<li><code>brando:usesVerbalToken</code> → <code>brando:VerbalToken</code>,</li>
-<li><code>brando:hasPolicy</code> → <code>brando:Policy</code>.</li>
-<li>
-<p>Build prompts and guardrails using properties like:</p>
-</li>
-<li>
-<p><code>brando:toneOfVoice</code>, <code>brando:approvedTerms</code>, <code>brando:prohibitedTerms</code>,</p>
-</li>
-<li><code>brando:mustDos</code>, <code>brando:mustNotDos</code>, <code>brando:refusalStrategies</code>,</li>
-<li><code>brando:enforcementLevel</code>.</li>
-</ul>
-</li>
-</ol>
-<hr />
-<h2 id="3-adding-classification-and-integrations">3. Adding classification and integrations</h2>
-<p>This example adds:</p>
-<ul>
-<li>a <code>brando:BrandedCategory</code> with GS1 / UNSPSC / Google Product Taxonomy alignment, and</li>
-<li>an integration to an external tool via <code>brando:externalSystem</code> + <code>brando:externalSystemId</code>,</li>
-<li>asset links via <code>brando:downloadableFile</code> / <code>brando:supportingFile</code>.</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nd">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org/&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;brando&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://brandoschema.com/&quot;</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nd">&quot;@graph&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:Brand&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Northstar Bank&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:missionStatement&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Financial clarity with absolute trust.&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:coreValues&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">        </span><span class="s2">&quot;Clarity over complexity&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;Do the right thing&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="s2">&quot;Long-term alignment with customers&quot;</span>
-<span class="w">      </span><span class="p">],</span>
-<span class="w">      </span><span class="nt">&quot;brando:hasProductCategory&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/categories/savings-accounts&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;brando:externalSystem&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/integrations/adobe-genstudio&quot;</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;brando:externalSystemId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;northstar_brand_master&quot;</span>
-<span class="w">    </span><span class="p">},</span>
-
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar/categories/savings-accounts&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;brando:BrandedCategory&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:productCategoryName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Savings accounts&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:gpcCategoryCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;43191500&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:gpcCategoryDescription&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Savings and investment accounts (example code for illustration only).&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:unspscCode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;84131500&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:googleProductCategoryId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Finance &gt; Banking Services&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;brando:downloadableFile&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://assets.example.com/northstar/brand/savings-accounts-guidelines.pdf&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:MediaObject&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Savings Accounts Brand Guidelines (PDF)&quot;</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nd">&quot;@id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/integrations/adobe-genstudio&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nd">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;schema:SoftwareApplication&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;schema:name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Adobe GenStudio&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;schema:applicationCategory&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Brand and content operations&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;schema:url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://business.adobe.com/products/genstudio.html&quot;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
-<h3 id="what-this-enables">What this enables</h3>
-<ul>
-<li>Recommendation / search systems can use the <strong>taxonomy IDs</strong> (<code>gpcCategoryCode</code>, <code>unspscCode</code>, <code>googleProductCategoryId</code>) to line up brand semantics with commerce and ads systems.</li>
-<li>
-<p>A Brand OS can use <code>brando:externalSystem</code> / <code>brando:externalSystemId</code> to:</p>
-<ul>
-<li>map brand nodes to specific integration objects (e.g. folders, workspaces, ad accounts),</li>
-<li>or drive sync jobs between the Brand Knowledge Graph and external tools.</li>
-<li><code>brando:downloadableFile</code> (and <code>brando:supportingFile</code> if you use it) gives AIs and tools a <strong>stable pointer</strong> to current, production-ready assets.</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h2 id="4-embedding-json-ld-on-the-web">4. Embedding JSON-LD on the web</h2>
-<p>To expose Brando to crawlers, AI systems, and your own tools via the public web, embed the JSON-LD in your HTML.</p>
-<p>Minimal pattern:</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;application/ld+json&quot;</span><span class="p">&gt;</span>
-<span class="p">{</span>
-<span class="w">  </span><span class="s2">&quot;@context&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="s2">&quot;schema&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org/&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="s2">&quot;brando&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://brandoschema.com/&quot;</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="s2">&quot;@graph&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="s2">&quot;@id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/brand/northstar&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;@type&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;brando:Brand&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;schema:name&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Northstar Bank&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="s2">&quot;brando:missionStatement&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Financial clarity with absolute trust.&quot;</span>
-<span class="w">      </span><span class="cm">/* ...additional Brando properties... */</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">]</span>
-<span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-<ul>
-<li>You can embed <strong>one consolidated graph</strong> at the site root (e.g. <code>/brandoschema.jsonld</code> and <code>&lt;link rel="alternate" ...&gt;</code>), or smaller graphs per brand / sub-site.</li>
-<li>Internally, the same JSON-LD can be served over an API or stored in a graph database – the syntax does not change.</li>
-</ul>
-<hr />
-<h2 id="5-json-ld-vs-yaml-staying-in-sync">5. JSON-LD vs YAML – staying in sync</h2>
-<p>If you also use the <strong>YAML profile</strong>:</p>
-<ul>
-<li>treat Markdown with YAML frontmatter as the <strong>primary authoring layer</strong>,</li>
-<li>use YAML profiles for <strong>configuration and validation</strong>,</li>
-<li>generate JSON-LD as a <strong>secondary publication, API, runtime exchange, or graph-interoperability layer</strong>.</li>
-</ul>
-<p>A common pattern:</p>
-<ol>
-<li>Keep <code>brand.yaml</code>, <code>contexts.yaml</code>, <code>tokens.yaml</code>, <code>policies.yaml</code> in a repo (validated against the Brando YAML profile).</li>
-<li>
-<p>Use a build step to emit:</p>
-<ul>
-<li><code>brandoschema.jsonld</code> from those YAML files.</li>
-<li>Embed or serve the emitted JSON-LD from your site or Brand OS.</li>
-</ul>
-</li>
-</ol>
-<p>See:</p>
-<ul>
-<li><strong><a href="../getting-started-yaml/">Quickstart (YAML)</a></strong></li>
-<li><strong><a href="../spec/yaml-profile/">YAML schema profile</a></strong></li>
-</ul>
-<hr />
-<h2 id="6-where-to-go-next">6. Where to go next</h2>
-<ul>
-<li>For a more narrative introduction: <strong><a href="../getting-started/">Getting started</a></strong></li>
-<li>For document-body authoring: <strong><a href="../getting-started-markdown/">Quickstart (Markdown)</a></strong></li>
-<li>For the full vocabulary definitions: <strong><a href="../types/">Types reference</a></strong> and <strong><a href="../properties/">Properties reference</a></strong></li>
-<li>For runtime patterns with LLMs, agents, and tools:
-  <strong><a href="../architecture/runtime-integration/">Runtime Integration (LLMs, MCP, APIs)</a></strong></li>
-</ul>
-<p>Once you have a minimal JSON-LD graph working, you can incrementally add:</p>
-<ul>
-<li>more <code>brando:Context</code> nodes for key channels,</li>
-<li><code>brando:VisualToken</code> and <code>brando:AudioToken</code> for multimodal expression,</li>
-<li>additional <code>brando:Policy</code> and <code>brando:AutomationRule</code> nodes for deeper governance.</li>
-</ul>
 
 
 
@@ -2179,14 +1852,14 @@ For document-style content, also see <strong><a href="../getting-started-markdow
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "header.autohide", "content.headings.anchor", "navigation.expand", "content.code.wrap"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.wrap", "content.headings.anchor", "header.autohide", "navigation.expand"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../js/smooth-scroll.js"></script>
-      
         <script src="../js/nav-depth.js"></script>
+      
+        <script src="../js/smooth-scroll.js"></script>
       
         <script src="https://d3js.org/d3.v7.min.js"></script>
       

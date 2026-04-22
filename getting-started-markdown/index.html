@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Brando Schema v1.3 is an open-source markup language and vocabulary for structuring brand identity, governance policies, and content guidelines in machine-readable Markdown/YAML for AI systems and Large Language Models.">
+        <meta name="description" content="How to author the Markdown body in the Brando Schema triad.">
       
       
         <meta name="author" content="Jonathan Bowker">
@@ -18,7 +18,7 @@
         <link rel="prev" href="../getting-started/">
       
       
-        <link rel="next" href="../getting-started-jsonld/">
+        <link rel="next" href="../getting-started-yaml/">
       
       
         
@@ -30,7 +30,7 @@
     
   <title>
     
-      Brando Schema
+      Quickstart – Markdown
     
   </title>
 
@@ -90,22 +90,22 @@
   <!-- End Google Tag Manager -->
 
   
-    <meta name="description" content="Brando Schema v1.3 is an open-source markup language and vocabulary for structuring brand identity, governance policies, and content guidelines in machine-readable Markdown/YAML for AI systems and Large Language Models.">
+    <meta name="description" content="How to author the Markdown body in the Brando Schema triad.">
     <meta name="author" content="Jonathan Bowker">
     <meta name="keywords" content="">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Brando Schema v1.3 – Open Brand Vocabulary">
-    <meta property="og:description" content="Open-source vocabulary for structuring brand identity, governance, and content guidelines. CC BY 4.0 licensed. Extends Schema.org for AI-ready brand data.">
+    <meta property="og:title" content="Quickstart – Markdown">
+    <meta property="og:description" content="How to author the Markdown body in the Brando Schema triad.">
     <meta property="og:url" content="https://brandoschema.com/getting-started-markdown/">
-    <meta property="og:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
+    <meta property="og:image" content="">
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Brando Schema v1.3 – Open Brand Vocabulary">
-    <meta name="twitter:description" content="Open-source Schema.org extension for brand identity, governance, and content guidelines for AI systems and Large Language Models.">
-    <meta name="twitter:image" content="https://brandoschema.com/assets/images/brando-og-image.png">
+    <meta name="twitter:card" content="">
+    <meta name="twitter:title" content="Quickstart – Markdown">
+    <meta name="twitter:description" content="How to author the Markdown body in the Brando Schema triad.">
+    <meta name="twitter:image" content="">
   
 
   </head>
@@ -127,7 +127,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#quickstart-brando-in-markdown" class="md-skip">
+        <a href="#quickstart-markdown-body" class="md-skip">
           Skip to content
         </a>
       
@@ -143,7 +143,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Brando Schema" class="md-header__button md-logo" aria-label="Brando Schema" data-md-component="logo">
+    <a href=".." title="Brando – Brand-as-Code" class="md-header__button md-logo" aria-label="Brando – Brand-as-Code" data-md-component="logo">
       
   <img src="../assets/images/4x/masthead_logo@4x.png" alt="logo">
 
@@ -156,13 +156,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Brando Schema
+            Brando – Brand-as-Code
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Quickstart (Markdown)
+              Quickstart – Markdown
             
           </span>
         </div>
@@ -278,12 +278,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Brando Schema" class="md-nav__button md-logo" aria-label="Brando Schema" data-md-component="logo">
+    <a href=".." title="Brando – Brand-as-Code" class="md-nav__button md-logo" aria-label="Brando – Brand-as-Code" data-md-component="logo">
       
   <img src="../assets/images/4x/masthead_logo@4x.png" alt="logo">
 
     </a>
-    Brando Schema
+    Brando – Brand-as-Code
   </label>
   
     <div class="md-nav__source">
@@ -471,10 +471,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-document-structure" class="md-nav__link">
+  <a href="#what-belongs-in-the-markdown-body" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Document structure
+        What belongs in the Markdown body
       
     </span>
   </a>
@@ -482,10 +482,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-what-belongs-where" class="md-nav__link">
+  <a href="#what-does-not-belong-in-the-markdown-body" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. What belongs where
+        What does not belong in the Markdown body
       
     </span>
   </a>
@@ -493,32 +493,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-when-to-use-this-format" class="md-nav__link">
+  <a href="#example-shape" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. When to use this format
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-practical-rule" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Practical rule
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-next" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Next
+        Example shape
       
     </span>
   </a>
@@ -541,14 +519,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started-jsonld/" class="md-nav__link">
+      <a href="../getting-started-yaml/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Quickstart (JSON-LD)
+    Quickstart (YAML)
   
 
     
@@ -569,14 +547,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-started-yaml/" class="md-nav__link">
+      <a href="../getting-started-jsonld/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Quickstart (YAML)
+    Quickstart (JSON)
   
 
     
@@ -1012,6 +990,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../entity-types/claims-and-disclosures/product-claim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Product claim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../entity-types/claims-and-disclosures/regulatory-disclosure/" class="md-nav__link">
         
   
@@ -1048,34 +1054,6 @@
     
   
     Sustainability statement
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../entity-types/claims-and-disclosures/product-claim/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Product claim
   
 
     
@@ -1329,6 +1307,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../properties/jsonLdSidecar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JSON sidecar link
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../properties/brand-and-context/" class="md-nav__link">
         
   
@@ -1560,7 +1566,63 @@
   <span class="md-ellipsis">
     
   
-    Advanced Analytica
+    About Brando Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../how-to-use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
   
 
     
@@ -1588,35 +1650,7 @@
   <span class="md-ellipsis">
     
   
-    Partner Ecosystem
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../use-brando-trademark/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Brando Trademark
+    Partners
   
 
     
@@ -1692,10 +1726,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-document-structure" class="md-nav__link">
+  <a href="#what-belongs-in-the-markdown-body" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Document structure
+        What belongs in the Markdown body
       
     </span>
   </a>
@@ -1703,10 +1737,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-what-belongs-where" class="md-nav__link">
+  <a href="#what-does-not-belong-in-the-markdown-body" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. What belongs where
+        What does not belong in the Markdown body
       
     </span>
   </a>
@@ -1714,32 +1748,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-when-to-use-this-format" class="md-nav__link">
+  <a href="#example-shape" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. When to use this format
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-practical-rule" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Practical rule
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-next" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Next
+        Example shape
       
     </span>
   </a>
@@ -1766,96 +1778,71 @@
   
 
 
-<h1 id="quickstart-brando-in-markdown">Quickstart: Brando in Markdown</h1>
-<p>This page shows the document authoring pattern used by the operational entity examples.</p>
-<p>Use this when you want the content to read like a normal document, while still carrying structured metadata and a machine-readable sidecar.</p>
-<p>Brando document authoring is a triad:</p>
-<ol>
-<li>Markdown</li>
-<li>YAML</li>
-<li>JSON</li>
-</ol>
-<p>The Markdown body is the human-readable document. The YAML frontmatter describes it. The JSON sidecar mirrors it for systems that need structured data.</p>
-<p>If you have not already, read:</p>
+<h1 id="quickstart-markdown-body">Quickstart: Markdown body</h1>
+<p>In the Brando Schema triad, the Markdown body is the authored document.</p>
+<p>It should contain the human-readable content that an editor, reviewer, or partner would actually work on. It should not contain YAML frontmatter and it should not duplicate the JSON sidecar syntax.</p>
+<h2 id="what-belongs-in-the-markdown-body">What belongs in the Markdown body</h2>
+<p>Use standard Markdown for:</p>
 <ul>
-<li><a href="../getting-started/">Getting started</a></li>
-<li><a href="../getting-started-yaml/">Quickstart (YAML)</a></li>
-<li><a href="../getting-started-jsonld/">Quickstart (JSON-LD)</a></li>
+<li>the document title</li>
+<li>section headings</li>
+<li>paragraphs</li>
+<li>bullet lists</li>
+<li>short reference links</li>
 </ul>
-<h2 id="1-document-structure">1. Document structure</h2>
-<p>The standard document shape is:</p>
-<div class="highlight"><pre><span></span><code>---
-id: https://example.com/brands/abc-example-inc/reports/workflow-automation-market-review-2026
-brando_type: MarketReport
-title: ABC Example Inc workflow automation market review 2026
-<span class="gu">jsonLdSidecar: https://example.com/brands/abc-example-inc/reports/workflow-automation-market-review-2026.jsonld</span>
-<span class="gu">---</span>
-
-<span class="gh"># ABC Example Inc workflow automation market review 2026</span>
+<p>For document entity examples in this site, the Markdown body usually includes sections such as:</p>
+<ul>
+<li><code>Summary</code></li>
+<li><code>Properties</code></li>
+<li><code>Relationships</code></li>
+<li><code>Controls</code></li>
+<li><code>References</code></li>
+</ul>
+<h2 id="what-does-not-belong-in-the-markdown-body">What does not belong in the Markdown body</h2>
+<p>Do not put these in the Markdown tab:</p>
+<ul>
+<li>YAML frontmatter</li>
+<li>raw JSON</li>
+<li>schema prefixes or context blocks</li>
+</ul>
+<h2 id="example-shape">Example shape</h2>
+<div class="highlight"><pre><span></span><code><span class="gh"># ABC Example Inc workflow automation market review 2026</span>
 
 <span class="gu">## Summary</span>
 
-This report reviews the workflow automation market for ABC Example Inc.
+This report summarises the workflow automation category language, competitor framing, and market shifts relevant to ABC Example Inc.
 
-<span class="gu">## Key points</span>
+<span class="gu">## Properties</span>
 
-<span class="k">-</span><span class="w"> </span>Market position is still forming.
-<span class="k">-</span><span class="w"> </span>Buyer language is shifting toward automation and control.
-<span class="k">-</span><span class="w"> </span>Proof points should be referenced in the sidecar.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Brand:**</span> ABC Example Inc
+<span class="k">-</span><span class="w"> </span><span class="gs">**Data source:**</span> Analyst desk research and approved internal notes
+<span class="k">-</span><span class="w"> </span><span class="gs">**Review workflow:**</span> Strategy lead review, legal review, brand review
+
+<span class="gu">## Relationships</span>
+
+<span class="k">-</span><span class="w"> </span><span class="gs">**Applies to product:**</span> ABC Flow Pilot
+<span class="k">-</span><span class="w"> </span><span class="gs">**Effective during:**</span> 2026 planning cycle
+
+<span class="gu">## Controls</span>
+
+<span class="k">-</span><span class="w"> </span><span class="gs">**Required:**</span> Cite approved market sources only
+<span class="k">-</span><span class="w"> </span><span class="gs">**Reviewed:**</span> Quarterly by strategy and legal
+
+<span class="gu">## References</span>
+
+<span class="k">-</span><span class="w"> </span>ABC Example Inc category notes
+<span class="k">-</span><span class="w"> </span>Approved benchmark examples
+<span class="k">-</span><span class="w"> </span>Source documents and evidence records
 </code></pre></div>
-<p>The YAML frontmatter stays above the Markdown body. Do not put frontmatter in the body.</p>
-<h2 id="2-what-belongs-where">2. What belongs where</h2>
-<p>Markdown:</p>
-<ul>
-<li>the title shown to readers,</li>
-<li>headings and sections,</li>
-<li>narrative explanation,</li>
-<li>lists, tables, and notes,</li>
-<li>examples and context for human review.</li>
-</ul>
-<p>YAML:</p>
-<ul>
-<li><code>id</code>,</li>
-<li>entity type,</li>
-<li>title,</li>
-<li>references such as <code>jsonLdSidecar</code>,</li>
-<li>review and governance metadata,</li>
-<li>relationships that should be easy to edit in Git.</li>
-</ul>
-<p>JSON:</p>
-<ul>
-<li>canonical structured fields,</li>
-<li>machine-readable relationships,</li>
-<li>content that needs to be consumed by APIs, graphs, or tooling,</li>
-<li>the publication-ready counterpart to the Markdown document.</li>
-</ul>
-<h2 id="3-when-to-use-this-format">3. When to use this format</h2>
-<p>Use the Markdown / YAML / JSON triad when the thing you are modelling is a document-like entity:</p>
-<ul>
-<li>market reports,</li>
-<li>campaign strategies,</li>
-<li>product claims,</li>
-<li>regulatory disclosures,</li>
-<li>evidence records,</li>
-<li>audit records,</li>
-<li>source documents.</li>
-</ul>
-<p>These are the document entity types grouped under <a href="../entity-types/">Document entity types</a>.</p>
-<h2 id="4-practical-rule">4. Practical rule</h2>
-<p>If a human would expect to read it as a document, write the content in Markdown first.
-If a machine needs to consume it, put the structured data in YAML frontmatter and the JSON sidecar.</p>
-<h2 id="5-next">5. Next</h2>
-<ul>
-<li><a href="../getting-started-yaml/">Quickstart (YAML)</a></li>
-<li><a href="../getting-started-jsonld/">Quickstart (JSON-LD)</a></li>
-<li><a href="../entity-types/">Document entity types</a></li>
-</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1899,14 +1886,14 @@ If a machine needs to consume it, put the structured data in YAML frontmatter an
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "header.autohide", "content.headings.anchor", "navigation.expand", "content.code.wrap"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.wrap", "content.headings.anchor", "header.autohide", "navigation.expand"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../js/smooth-scroll.js"></script>
-      
         <script src="../js/nav-depth.js"></script>
+      
+        <script src="../js/smooth-scroll.js"></script>
       
         <script src="https://d3js.org/d3.v7.min.js"></script>
       

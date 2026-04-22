@@ -9,14 +9,6 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://brandoschema.com/brando-implementation/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/brando-workshop/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://brandoschema.com/faq/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
@@ -41,39 +33,11 @@
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
-         <loc>https://brandoschema.com/ibom/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/optimisation-workshop/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
          <loc>https://brandoschema.com/partner/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
          <loc>https://brandoschema.com/terms/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/use-brando-trademark/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/architecture/brand-architecture/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/architecture/brand-os/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/architecture/brand-tokenisation/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/architecture/runtime-integration/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
     <url>
@@ -570,102 +534,6 @@
     </url>
     <url>
          <loc>https://brandoschema.com/properties/writingStyle/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/qwiki/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/qwiki/brando/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/spec/jsonld-context/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/spec/typescript-model/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/spec/yaml-profile/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/audio-token/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/automation-rule/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/brand-application/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/brand-expression-token/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/brand-model/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/brand-touchpoint/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/brand/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/branded-category/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/campaign/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/context/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/impact-assessment/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/policy/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/product-item/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/product-persona/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/prompt/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/synthetic-persona/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/verbal-token/</loc>
-         <lastmod>2026-04-22</lastmod>
-    </url>
-    <url>
-         <loc>https://brandoschema.com/types/visual-token/</loc>
          <lastmod>2026-04-22</lastmod>
     </url>
 </urlset>
