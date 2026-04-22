@@ -25,7 +25,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-material mkdocs-copywell-known
+          pip install mkdocs mkdocs-material
+          pip install -e ./plugins/copy_well_known
 
       - name: Build the site
         run: mkdocs build --clean
