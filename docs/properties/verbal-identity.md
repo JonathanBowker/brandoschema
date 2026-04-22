@@ -17,7 +17,7 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Words and phrases that are encouraged in this verbal token. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Used on | `brando:VerbalToken` |
 | Vocabulary path | Brand > Property > VerbalToken :: approvedTerms |
 | Canonical URL | [`https://brandoschema.com/properties/approvedTerms`](https://brandoschema.com/properties/approvedTerms) |
 
@@ -27,7 +27,7 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Guidance on conversational patterns, pacing, and pronoun usage. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Used on | `brando:VerbalToken` |
 | Vocabulary path | Brand > Property > VerbalToken :: dialogueStyle |
 | Canonical URL | [`https://brandoschema.com/properties/dialogueStyle`](https://brandoschema.com/properties/dialogueStyle) |
 
@@ -37,7 +37,7 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Core value propositions and ideas that should recur across outputs. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Used on | `brando:VerbalToken` |
 | Vocabulary path | Brand > Property > VerbalToken :: keyMessages |
 | Canonical URL | [`https://brandoschema.com/properties/keyMessages`](https://brandoschema.com/properties/keyMessages) |
 
@@ -47,7 +47,7 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Required behaviours and inclusions this verbal token must follow. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Used on | `brando:VerbalToken` |
 | Vocabulary path | Brand > Property > VerbalToken :: mustDos |
 | Canonical URL | [`https://brandoschema.com/properties/mustDos`](https://brandoschema.com/properties/mustDos) |
 
@@ -57,7 +57,7 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Behaviours and constructions this verbal token must never produce. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Used on | `brando:VerbalToken` |
 | Vocabulary path | Brand > Property > VerbalToken :: mustNotDos |
 | Canonical URL | [`https://brandoschema.com/properties/mustNotDos`](https://brandoschema.com/properties/mustNotDos) |
 
@@ -67,7 +67,7 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Rules for how products, features, dates, and other entities are named and formatted. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Used on | `brando:VerbalToken` |
 | Vocabulary path | Brand > Property > VerbalToken :: namingConvention |
 | Canonical URL | [`https://brandoschema.com/properties/namingConvention`](https://brandoschema.com/properties/namingConvention) |
 
@@ -77,7 +77,7 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Humanised brand-as-a-person description used to guide tone and behaviour. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Used on | `brando:VerbalToken` |
 | Vocabulary path | Brand > Property > VerbalToken :: personaCard |
 | Canonical URL | [`https://brandoschema.com/properties/personaCard`](https://brandoschema.com/properties/personaCard) |
 
@@ -87,7 +87,7 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Words and phrases that must not be used in this verbal token. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Used on | `brando:VerbalToken` |
 | Vocabulary path | Brand > Property > VerbalToken :: prohibitedTerms |
 | Canonical URL | [`https://brandoschema.com/properties/prohibitedTerms`](https://brandoschema.com/properties/prohibitedTerms) |
 
@@ -97,7 +97,7 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Reusable instruction block or template for priming language models. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Used on | `brando:VerbalToken` |
 | Vocabulary path | Brand > Property > VerbalToken :: promptScaffold |
 | Canonical URL | [`https://brandoschema.com/properties/promptScaffold`](https://brandoschema.com/properties/promptScaffold) |
 
@@ -107,7 +107,7 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Primary tagline plus any sanctioned variants for this verbal token. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Used on | `brando:VerbalToken` |
 | Vocabulary path | Brand > Property > VerbalToken :: tagline |
 | Canonical URL | [`https://brandoschema.com/properties/tagline`](https://brandoschema.com/properties/tagline) |
 
@@ -117,7 +117,7 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Emotional texture and attitude of the brand's voice in this token. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Used on | `brando:VerbalToken` |
 | Vocabulary path | Brand > Property > VerbalToken :: toneOfVoice |
 | Canonical URL | [`https://brandoschema.com/properties/toneOfVoice`](https://brandoschema.com/properties/toneOfVoice) |
 
@@ -127,6 +127,6 @@ Properties in this section: **12**
 | --- | --- |
 | Description | Preferences for grammar, sentence structure, and clarity. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:VerbalToken](../types/verbal-token.md) |
+| Used on | `brando:VerbalToken` |
 | Vocabulary path | Brand > Property > VerbalToken :: writingStyle |
 | Canonical URL | [`https://brandoschema.com/properties/writingStyle`](https://brandoschema.com/properties/writingStyle) |

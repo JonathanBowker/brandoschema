@@ -27,7 +27,7 @@ Display name of the brand as it should appear in visual treatments.
 
 ## Used on these types
 
-* [brando:VisualToken](../types/visual-token.md)
+* `brando:VisualToken`
 
 ---
 

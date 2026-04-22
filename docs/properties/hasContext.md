@@ -27,7 +27,7 @@ Links a brand to one or more activation contexts in which it operates.
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

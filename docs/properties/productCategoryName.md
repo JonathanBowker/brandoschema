@@ -27,7 +27,7 @@ Name of a product or service category with associated brand tokens and rules.
 
 ## Used on these types
 
-* [brando:BrandedCategory](../types/branded-category.md)
+* `brando:BrandedCategory`
 
 ---
 

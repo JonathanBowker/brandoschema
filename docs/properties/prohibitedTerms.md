@@ -27,7 +27,7 @@ Words and phrases that must not be used in this verbal token.
 
 ## Used on these types
 
-* [brando:VerbalToken](../types/verbal-token.md)
+* `brando:VerbalToken`
 
 ---
 

@@ -27,7 +27,7 @@ The brand's core purpose and day-to-day reason for existing.
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

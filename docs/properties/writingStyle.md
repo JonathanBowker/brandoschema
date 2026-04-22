@@ -27,7 +27,7 @@ Preferences for grammar, sentence structure, and clarity.
 
 ## Used on these types
 
-* [brando:VerbalToken](../types/verbal-token.md)
+* `brando:VerbalToken`
 
 ---
 

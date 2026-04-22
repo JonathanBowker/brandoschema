@@ -27,8 +27,8 @@ Attaches a visual expression token defining how the brand looks in this scope.
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
-* [brando:Context](../types/context.md)
+* `brando:Brand`
+* `brando:Context`
 
 ---
 

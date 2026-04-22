@@ -27,7 +27,7 @@ Links a brand to automated governance rules and triggers.
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

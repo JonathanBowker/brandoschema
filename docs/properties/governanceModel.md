@@ -27,7 +27,7 @@ Description of how the brand is governed (e.g. centralised, federated, hybrid) f
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

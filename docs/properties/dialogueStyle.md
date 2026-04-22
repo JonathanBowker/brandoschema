@@ -27,7 +27,7 @@ Guidance on conversational patterns, pacing, and pronoun usage.
 
 ## Used on these types
 
-* [brando:VerbalToken](../types/verbal-token.md)
+* `brando:VerbalToken`
 
 ---
 

@@ -27,7 +27,7 @@ Qualitative or scored assessment of how well this content performs in vector sea
 
 ## Used on these types
 
-* [brando:Policy](../types/policy.md)
+* `brando:Policy`
 
 ---
 

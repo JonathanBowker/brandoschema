@@ -27,7 +27,7 @@ Do's and don'ts for when and how branded audio should be used.
 
 ## Used on these types
 
-* [brando:AudioToken](../types/audio-token.md)
+* `brando:AudioToken`
 
 ---
 

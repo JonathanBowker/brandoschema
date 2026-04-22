@@ -27,7 +27,7 @@ URL pointing to canonical audio repositories or style guides.
 
 ## Used on these types
 
-* [brando:AudioToken](../types/audio-token.md)
+* `brando:AudioToken`
 
 ---
 

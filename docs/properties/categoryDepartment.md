@@ -27,7 +27,7 @@ Department-level categorisation within a product category.
 
 ## Used on these types
 
-* [brando:BrandedCategory](../types/branded-category.md)
+* `brando:BrandedCategory`
 
 ---
 

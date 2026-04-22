@@ -27,7 +27,7 @@ Principles for animation, transitions, and micro-interactions.
 
 ## Used on these types
 
-* [brando:VisualToken](../types/visual-token.md)
+* `brando:VisualToken`
 
 ---
 

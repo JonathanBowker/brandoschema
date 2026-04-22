@@ -27,7 +27,7 @@ Canonical source URL for an asset associated with this expression token (e.g. av
 
 ## Used on these types
 
-* [brando:BrandExpressionToken](../types/brand-expression-token.md)
+* `brando:BrandExpressionToken`
 
 ---
 

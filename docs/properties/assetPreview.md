@@ -27,7 +27,7 @@ Preview-friendly URL or data reference for displaying this token's associated as
 
 ## Used on these types
 
-* [brando:BrandExpressionToken](../types/brand-expression-token.md)
+* `brando:BrandExpressionToken`
 
 ---
 

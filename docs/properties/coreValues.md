@@ -27,7 +27,7 @@ Foundational principles and beliefs that guide brand decisions and behaviours.
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

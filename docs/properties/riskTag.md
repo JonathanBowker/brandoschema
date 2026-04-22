@@ -27,8 +27,8 @@ One or more lightweight tags describing the primary risk domains addressed by a 
 
 ## Used on these types
 
-* [brando:Policy](../types/policy.md)
-* [brando:AutomationRule](../types/automation-rule.md)
+* `brando:Policy`
+* `brando:AutomationRule`
 
 ---
 

@@ -27,7 +27,7 @@ Emotional texture and attitude of the brand's voice in this token.
 
 ## Used on these types
 
-* [brando:VerbalToken](../types/verbal-token.md)
+* `brando:VerbalToken`
 
 ---
 

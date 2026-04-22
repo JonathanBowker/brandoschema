@@ -27,7 +27,7 @@ Definitions of short sound cues used as confirmations, alerts, or transitions.
 
 ## Used on these types
 
-* [brando:AudioToken](../types/audio-token.md)
+* `brando:AudioToken`
 
 ---
 

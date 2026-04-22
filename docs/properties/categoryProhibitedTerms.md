@@ -27,7 +27,7 @@ Terms prohibited for this category, layered on top of brand-level prohibited ter
 
 ## Used on these types
 
-* [brando:BrandedCategory](../types/branded-category.md)
+* `brando:BrandedCategory`
 
 ---
 

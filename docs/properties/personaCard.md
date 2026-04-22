@@ -27,7 +27,7 @@ Humanised brand-as-a-person description used to guide tone and behaviour.
 
 ## Used on these types
 
-* [brando:VerbalToken](../types/verbal-token.md)
+* `brando:VerbalToken`
 
 ---
 

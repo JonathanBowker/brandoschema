@@ -27,7 +27,7 @@ Structured JSON describing the metric being monitored, thresholds, and operators
 
 ## Used on these types
 
-* [brando:AutomationRule](../types/automation-rule.md)
+* `brando:AutomationRule`
 
 ---
 

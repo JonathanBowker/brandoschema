@@ -27,7 +27,7 @@ Operational, legal, channel, regional, and use-case conditions encoded as a stru
 
 ## Used on these types
 
-* [brando:Context](../types/context.md)
+* `brando:Context`
 
 ---
 

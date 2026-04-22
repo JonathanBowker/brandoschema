@@ -27,7 +27,7 @@ Structured JSON describing temporary modifications to brand rules during this ca
 
 ## Used on these types
 
-* [brando:Campaign](../types/campaign.md)
+* `brando:Campaign`
 
 ---
 

@@ -27,7 +27,7 @@ Non-negotiable boundaries that AI systems must not cross.
 
 ## Used on these types
 
-* [brando:Policy](../types/policy.md)
+* `brando:Policy`
 
 ---
 

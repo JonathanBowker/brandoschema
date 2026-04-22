@@ -27,7 +27,7 @@ Qualitative indicator of how easily this policy should be discoverable by AI sys
 
 ## Used on these types
 
-* [brando:Policy](../types/policy.md)
+* `brando:Policy`
 
 ---
 

@@ -27,14 +27,14 @@ Links a brand, token, context, campaign, or policy node to non-canonical support
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
-* [brando:Context](../types/context.md)
-* [brando:VisualToken](../types/visual-token.md)
-* [brando:VerbalToken](../types/verbal-token.md)
-* [brando:AudioToken](../types/audio-token.md)
-* [brando:Policy](../types/policy.md)
-* [brando:Campaign](../types/campaign.md)
-* [brando:BrandedCategory](../types/branded-category.md)
+* `brando:Brand`
+* `brando:Context`
+* `brando:VisualToken`
+* `brando:VerbalToken`
+* `brando:AudioToken`
+* `brando:Policy`
+* `brando:Campaign`
+* `brando:BrandedCategory`
 
 ---
 

@@ -27,7 +27,7 @@ Specific item type within a category class.
 
 ## Used on these types
 
-* [brando:BrandedCategory](../types/branded-category.md)
+* `brando:BrandedCategory`
 
 ---
 

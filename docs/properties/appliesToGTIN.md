@@ -27,8 +27,8 @@ GTIN(s) for which this branded category or policy is applicable.
 
 ## Used on these types
 
-* [brando:BrandedCategory](../types/branded-category.md)
-* [brando:Policy](../types/policy.md)
+* `brando:BrandedCategory`
+* `brando:Policy`
 
 ---
 

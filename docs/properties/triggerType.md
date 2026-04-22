@@ -27,7 +27,7 @@ Type of event or condition that activates this automation rule.
 
 ## Used on these types
 
-* [brando:AutomationRule](../types/automation-rule.md)
+* `brando:AutomationRule`
 
 ---
 

@@ -27,7 +27,7 @@ Canonical reference URL to the primary logo asset or logo set.
 
 ## Used on these types
 
-* [brando:VisualToken](../types/visual-token.md)
+* `brando:VisualToken`
 
 ---
 

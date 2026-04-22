@@ -27,8 +27,8 @@ Attaches an audio expression token defining how the brand sounds in this scope.
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
-* [brando:Context](../types/context.md)
+* `brando:Brand`
+* `brando:Context`
 
 ---
 

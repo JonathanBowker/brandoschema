@@ -27,7 +27,7 @@ Behaviours and constructions this verbal token must never produce.
 
 ## Used on these types
 
-* [brando:VerbalToken](../types/verbal-token.md)
+* `brando:VerbalToken`
 
 ---
 

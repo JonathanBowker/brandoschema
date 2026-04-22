@@ -27,7 +27,7 @@ How the brand positions itself in its category relative to alternatives and peer
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

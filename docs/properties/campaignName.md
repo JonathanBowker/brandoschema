@@ -27,7 +27,7 @@ Human-readable name of a marketing or communications campaign.
 
 ## Used on these types
 
-* [brando:Campaign](../types/campaign.md)
+* `brando:Campaign`
 
 ---
 

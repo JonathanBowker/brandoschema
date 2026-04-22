@@ -27,7 +27,7 @@ Typographic system including font families, weights, sizes, and hierarchy.
 
 ## Used on these types
 
-* [brando:VisualToken](../types/visual-token.md)
+* `brando:VisualToken`
 
 ---
 

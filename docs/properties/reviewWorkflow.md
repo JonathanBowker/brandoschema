@@ -27,7 +27,7 @@ Description of human and/or automated steps for reviewing content and policy cha
 
 ## Used on these types
 
-* [brando:Policy](../types/policy.md)
+* `brando:Policy`
 
 ---
 

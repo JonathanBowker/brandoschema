@@ -27,7 +27,7 @@ Links a brand to time-bound campaigns that may temporarily adjust rules and toke
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

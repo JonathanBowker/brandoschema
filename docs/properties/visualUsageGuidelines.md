@@ -27,7 +27,7 @@ Do's and don'ts for applying logos, colours, typography, and imagery.
 
 ## Used on these types
 
-* [brando:VisualToken](../types/visual-token.md)
+* `brando:VisualToken`
 
 ---
 

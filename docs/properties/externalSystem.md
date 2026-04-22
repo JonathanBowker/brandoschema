@@ -31,11 +31,11 @@ For binding a Brando node to a specific native object inside that external syste
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
-* [brando:Context](../types/context.md)
-* [brando:Policy](../types/policy.md)
-* [brando:Campaign](../types/campaign.md)
-* [brando:AutomationRule](../types/automation-rule.md)
+* `brando:Brand`
+* `brando:Context`
+* `brando:Policy`
+* `brando:Campaign`
+* `brando:AutomationRule`
 
 ---
 

@@ -27,7 +27,7 @@ Class-level categorisation within a department.
 
 ## Used on these types
 
-* [brando:BrandedCategory](../types/branded-category.md)
+* `brando:BrandedCategory`
 
 ---
 

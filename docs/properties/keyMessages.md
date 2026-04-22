@@ -27,7 +27,7 @@ Core value propositions and ideas that should recur across outputs.
 
 ## Used on these types
 
-* [brando:VerbalToken](../types/verbal-token.md)
+* `brando:VerbalToken`
 
 ---
 

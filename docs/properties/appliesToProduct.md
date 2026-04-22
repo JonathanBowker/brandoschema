@@ -27,8 +27,8 @@ Links a branded category or policy to one or more GS1 Product nodes.
 
 ## Used on these types
 
-* [brando:BrandedCategory](../types/branded-category.md)
-* [brando:Policy](../types/policy.md)
+* `brando:BrandedCategory`
+* `brando:Policy`
 
 ---
 

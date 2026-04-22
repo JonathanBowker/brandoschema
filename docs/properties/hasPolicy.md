@@ -27,8 +27,8 @@ Attaches governance, safety, and compliance policies to a brand or context.
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
-* [brando:Context](../types/context.md)
+* `brando:Brand`
+* `brando:Context`
 
 ---
 

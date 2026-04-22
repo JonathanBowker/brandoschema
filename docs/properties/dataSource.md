@@ -27,7 +27,7 @@ API endpoint or data source providing metrics or signals.
 
 ## Used on these types
 
-* [brando:AutomationRule](../types/automation-rule.md)
+* `brando:AutomationRule`
 
 ---
 

@@ -27,7 +27,7 @@ Google Product Taxonomy category identifier associated with this branded categor
 
 ## Used on these types
 
-* [brando:BrandedCategory](../types/branded-category.md)
+* `brando:BrandedCategory`
 
 ---
 

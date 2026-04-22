@@ -27,9 +27,9 @@ Optional scoping for which products, categories, personas, or channels this node
 
 ## Used on these types
 
-* [brando:Context](../types/context.md)
-* [brando:Policy](../types/policy.md)
-* [brando:AutomationRule](../types/automation-rule.md)
+* `brando:Context`
+* `brando:Policy`
+* `brando:AutomationRule`
 
 ---
 

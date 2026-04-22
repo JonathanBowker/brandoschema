@@ -27,7 +27,7 @@ URL pointing to full visual identity guidelines or design system documentation.
 
 ## Used on these types
 
-* [brando:VisualToken](../types/visual-token.md)
+* `brando:VisualToken`
 
 ---
 

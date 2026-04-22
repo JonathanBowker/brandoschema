@@ -27,7 +27,7 @@ Core design tokens such as spacing, radius, and elevation.
 
 ## Used on these types
 
-* [brando:VisualToken](../types/visual-token.md)
+* `brando:VisualToken`
 
 ---
 

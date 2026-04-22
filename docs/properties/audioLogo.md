@@ -27,7 +27,7 @@ URI pointing to the brand's sonic logo or audio mark.
 
 ## Used on these types
 
-* [brando:AudioToken](../types/audio-token.md)
+* `brando:AudioToken`
 
 ---
 

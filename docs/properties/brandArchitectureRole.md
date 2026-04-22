@@ -27,7 +27,7 @@ The role this brand plays in the broader brand architecture (e.g. master brand, 
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

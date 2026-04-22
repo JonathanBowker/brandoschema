@@ -27,7 +27,7 @@ Human-readable description of the GS1 Global Product Classification (GPC) brick 
 
 ## Used on these types
 
-* [brando:BrandedCategory](../types/branded-category.md)
+* `brando:BrandedCategory`
 
 ---
 

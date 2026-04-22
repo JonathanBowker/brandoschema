@@ -27,7 +27,7 @@ Strategic grouping of individuals who share needs or characteristics relevant to
 
 ## Used on these types
 
-* [brando:Context](../types/context.md)
+* `brando:Context`
 
 ---
 

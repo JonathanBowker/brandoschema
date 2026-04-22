@@ -27,7 +27,7 @@ Longer-form narrative that explains the brand's origin, evolution, and purpose.
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

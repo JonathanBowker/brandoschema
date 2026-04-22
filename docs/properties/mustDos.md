@@ -27,7 +27,7 @@ Required behaviours and inclusions this verbal token must follow.
 
 ## Used on these types
 
-* [brando:VerbalToken](../types/verbal-token.md)
+* `brando:VerbalToken`
 
 ---
 

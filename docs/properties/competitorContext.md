@@ -27,7 +27,7 @@ Summary of competitors, adjacent solutions, and how the brand differentiates.
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

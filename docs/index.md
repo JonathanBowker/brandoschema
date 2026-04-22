@@ -1,360 +1,196 @@
 ---
-title: "Brand Oracle (Brando) Schema Vocabulary v1.3"
-description: >
-  Brand Oracle (Brando®) is an AI-native, governance-ready linked data vocabulary and
-  Brand Governance Vocabulary (BGV) for brands. Brando enables Brand-as-Code by
-  tokenising brand intelligence — identity, expression, context, and governance —
-  as a Brand Knowledge Graph from which Machine-Actionable Policy Graphs are derived
-  and executed within Brand Operating Systems under the Intelligent Brand Operating
-  Model (IBOM).
-
-keywords:
-  - Brand Oracle
-  - Brand Token
-  - Brand Tokenisation
-  - Brando
-  - Brand Brain
-  - Brando Schema
-  - Brando Vocabulary
-  - Brand Governance Vocabulary
-  - BGV
-  - brand ontology
-  - brand schema
-  - Brand Knowledge Graph
-  - brand tokenisation
-  - Brand-as-Code
-  - Machine-Actionable Policy Graph
-  - Brand Operating System
-  - IBOM
-  - Intelligent Brand Operating Model
-  - AI brand operations
-  - AI brand governance
-  - AI-native brand identity
-  - structured brand metadata
-  - brand semantics
-  - verbal identity schema
-  - visual identity schema
-  - audio identity schema
-  - brand compliance AI
-  - AI brand risk management
-  - brand guidelines for AI
-  - LLM brand safety
-  - AI brand discovery
-  - brand architecture
-  - house of brands
-
-author: "Advanced Analytica"
-
-og:
-  title: "Brand Oracle (Brando) Schema Vocabulary v1.3"
-  description: >
-    Brando is an AI-native linked-data vocabulary and Brand Governance Vocabulary (BGV)
-    that enables Brand-as-Code: policy-driven, not prompt-driven. It tokenises brand
-    intelligence into Brand Knowledge Graphs and machine-actionable Policy Graphs,
-    executed by Brand Operating Systems under the IBOM framework.
-  type: "website"
-  url: "https://brandoschema.com/"
-  image: "https://brandoschema.com/assets/images/4x/brando@4x.webp"
-
-twitter:
-  card: "summary_large_image"
-  title: "Brand Oracle (Brando) – Schema Vocabulary v1.3"
-  description: >
-    An open, Schema.org-compatible Brand Governance Vocabulary (BGV) that tokenises
-    brand intelligence for AI systems and enforces governance via Machine-Actionable
-    Policy Graphs in Brand Operating Systems.
-  image: "https://brandoschema.com/assets/images/4x/brando@4x.webp"
-
-load_brando_graphs:
-  - core
-  - personas
-  - policies
+title: Brando Schema v1.3
+description: Brando is an open-source vocabulary for structuring brand identity, governance policies, and content guidelines in machine-readable formats.
 ---
 
-# **Brando:: Assured Brand Governance for AI**
+# Brando Schema - Brand-as-Code
+## Brando Schema v1.3 - Governance Framework for AI Brands
 
-## **Brand Oracle (Brando) Vocabulary v1.3**
+<img src="/assets/images/4x/brando-schema@4x.webp" alt="Brando Schema: open vocabulary for brand identity, governance, and content guidelines" style="width: 100%; max-width: 960px; display: block; margin: 2rem auto;" />
 
-**Brando** (Brand Oracle) is an open-source vocabulary for structuring brand identity, governance policies, and content guidelines in machine-readable formats. It enables AI systems and Large Language Models to retrieve and apply brand rules consistently across automated workflows.
+Brando is an open-source vocabulary for structuring brand identity, governance policies, and content guidelines in machine-readable formats. It enables AI systems and Large Language Models to retrieve and apply brand rules consistently across automated workflows.
 
 Published under Creative Commons Attribution 4.0 (CC BY 4.0) with W3C Royalty-Free Patent Policy protections, Brando extends Schema.org's Brand vocabulary to support structured brand representation across verbal identity, visual identity, audio branding, strategic positioning, governance, and approved assets.
 
+*Brando Schema: open vocabulary for brand identity, governance, and content guidelines*
 
-<img src="https://brandoschema.com/assets/images/4x/brando@4x.webp" alt="Brando Schema: AI-native vocabulary for brands" style="width: 100%; max-width: 960px; display: block; margin: 2rem auto;" />
+## What Brando Is
 
----
+An open vocabulary, not a platform, not software, not a service.
 
-## Why Brando matters for AI governance
+Brando defines structured properties, relationships, controls, and references across the main parts of a governed brand system:
 
-**Advanced Analytica** is pioneering the use of JSON-LD (JavaScript Object Notation – Linked Data) as a **control and governance layer** for LLMs, agents, and generative AI systems.
+- **Core:** identity, positioning, mission, values, and the main entities that describe what the brand is
+- **Standards:** policies, rules, controls, review workflows, and the structured guidance that governs brand use
+- **Applications:** campaigns, claims, disclosures, and operational documents used across live workflows
+- **Design System:** visual tokens, verbal patterns, design guidance, and linked system references
+- **Assets:** approved logos, templates, fonts, supporting materials, and source references
 
-Our research into foundation model training and inference shows that:
+These properties extend Schema.org's `Brand` type to make brand guidance machine-readable for AI systems.
 
-* JSON-LD and Schema.org patterns are deeply embedded in model training data
-* graph-structured semantics are interpreted reliably by LLMs
-* linked data provides a stable, tool-independent way to encode intent, rules, and constraints
+## The New v1.3 Example Format
 
-Brando — short for **Brand Oracle** — formally extends <a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Schema.org</a> beyond a purely **descriptive SEO layer** into an **operative, governance-capable layer** for AI-native systems.
+The current documentation now presents entity examples as coordinated code blocks rather than as isolated snippets.
 
-Rather than replacing existing Schema Markup, Brando **reuses and extends it**, allowing organisations to:
+Each entity page shows the same example in three linked views:
 
-* minimise rework,
-* accelerate adoption,
-* and evolve static brand guidelines into **Brand-as-Code**.
+- **Markdown Body:** the authored document content
+- **YAML Frontmatter:** the structured metadata for that same document
+- **JSON Sidecar:** the machine-readable representation linked to the document
 
----
+This makes it easier to understand how one governed document is expressed for human authors, reviewers, and AI systems at the same time.
 
-## Brand-as-Code and brand tokenisation
+Across those example blocks, the documentation also makes four layers explicit:
 
-At the core of **Brand-as-Code** is **brand tokenisation** — the process of decomposing brand identity, expression, context, and governance into **explicit, machine-readable brand tokens**.
+- **Entities:** the governed documents and related brand objects being described, such as reports, claims, disclosures, examples, evidence records, and source documents
+- **Properties:** the structured attributes carried by the entity
+- **Relationships:** the links to other entities, policies, prompts, products, or tokens
+- **Controls:** the rules that define what is required, reviewed, escalated, discouraged, or prohibited
+- **References:** the supporting evidence, examples, source documents, and audit materials connected to the entity
 
-These tokens are not latent embeddings or informal prompts.
-They are **first-class semantic units** that can be:
+The result is that the site no longer shows code as disconnected syntax examples. It shows one complete document pattern rendered consistently across the three formats.
 
-* referenced and versioned,
-* inherited and overridden,
-* governed by policy,
-* resolved dynamically at runtime.
+## How It Works
 
-Together, they form the nodes of a **Brand Knowledge Graph**, from which **Machine-Actionable Policy Graphs** are derived to constrain and guide AI behaviour.
+### 1. Author the entity as a document
 
-→ **[Read: Brand tokenisation (Brand-as-Code)](architecture/brand-tokenisation.md)**
+Teams create a governed entity as one coordinated document pattern:
 
----
+- Markdown body for the authored content
+- YAML frontmatter for the structured metadata
+- JSON sidecar for the machine-readable representation
 
-## Brando, IBOM, and the operating model
+The three representations describe the same entity, not three unrelated files.
 
-Brando is not just a vocabulary — it is the **foundational control layer** of the **Brando Intelligent Brand Operating Model (IBOM)**.
+Example:
 
-* **Brando Schema** defines **what brand intelligence is** and how it is tokenised.
-* **Brando IBOM** defines **how that intelligence is assessed, codified, deployed, operated, and assured** across AI systems and enterprise platforms.
-
-Together, they allow brand to operate as **governed infrastructure**, not static documentation.
-
-* **Brando IBOM** → operating lifecycle and discipline
-* **Brando** → data model, vocabulary, executable semantics
-
-→ **[Read: The Brando Intelligent Brand Operating Model (IBOM)](ibom.md)**
-
----
-
-## Brando as a “Brand Brain” (precisely defined)
-
-Brando is often described as a **“Brand Brain”** — a useful metaphor when used carefully.
-
-Like a brain, Brando:
-
-* stores structured memory (tokenised identity, values, and rules),
-* reasons across context,
-* governs behaviour,
-* guides action.
-
-Unlike vague or metaphorical “brand brains”, Brando is:
-
-* **explicitly structured**, not latent,
-* **auditable and versioned**, not opaque,
-* **policy-driven**, not purely generative,
-* **designed for enterprise governance and assurance**.
-
-> Brando is not a model.
-> **It is the authoritative brand intelligence that models and agents must obey.**
-
----
-
-## Brand Knowledge Graphs and Policy Graphs
-
-Brando deliberately separates **knowledge** from **execution**.
-
-### Brand Knowledge Graph
-
-The **Brand Knowledge Graph** represents:
-
-* tokenised brand identities and portfolios,
-* contexts, audiences, channels, and jurisdictions,
-* verbal, visual, and audio identity tokens,
-* personas, campaigns, and classifications,
-* governance metadata and constraints.
-
-It answers:
-
-> **“What brand intelligence exists?”**
-
-### Machine-Actionable Policy Graphs
-
-From the Knowledge Graph, Brando derives **Machine-Actionable Policy Graphs** that encode:
-
-* permissions and prohibitions,
-* enforcement levels,
-* refusal and escalation strategies,
-* risk, compliance, and regulatory logic,
-* temporal and contextual overrides.
-
-They answer:
-
-> **“What is allowed, required, or forbidden right now, in this context?”**
-
-At runtime:
-
-```
-Brand Knowledge Graph
-└── Policy Graph (derived projection)
-└── Executed by LLMs, agents, workflows
-```
-
-AI systems do **not** reason freely over the entire knowledge graph.
-They operate against **policy-constrained projections**.
-
----
-
-## What is Brando?
-
-Brando is:
-
-* a **linked data vocabulary and ontology** extending Schema.org,
-* a **Brand Governance Vocabulary (BGV)** encoding intent, rules, and behaviour,
-* the **authoritative Brand Knowledge Graph** for Brand Operating Systems,
-* the **source of executable Policy Graphs** under IBOM.
-
-**Namespace:** `https://brandoschema.com/`
-**Prefix:** `brando:`
-
-It:
-
-* extends `schema:Brand` and `schema:Intangible`,
-* aligns with GS1 Web Vocabulary, UNSPSC, and Google Product Taxonomy,
-* is published canonically in **JSON-LD**,
-* is profiled in **YAML** for operational use.
-
----
-
-## What this documentation covers
-
-* **Getting started** – motivation and adoption patterns
-* **Quickstarts (JSON-LD / YAML)**
-* **Types and Properties references**
-* **Brand Operating System architecture**
-* **Brand tokenisation and runtime integration**
-* **Worked examples**
-
----
-
-## Core concepts and schema types
-
-The current Brando documentation covers **18 schema types** across identity,
-expression, governance, personas, runtime orchestration, and brand touchpoints:
-
-| Type | Purpose |
-| --- | --- |
-| `brando:Brand` | Core brand identity |
-| `brando:Context` | Activation context |
-| `brando:BrandedCategory` | Brand-level taxonomy and product category alignment |
-| `brando:Campaign` | Time-bound brand and messaging overlay |
-| `brando:ProductItem` | Individually identifiable product, SKU, or GTIN-level item |
-| `brando:BrandExpressionToken` | Abstract superclass for expression tokens |
-| `brando:VerbalToken` | Voice, language, vocabulary, and prompt behaviour |
-| `brando:VisualToken` | Visual system, logos, colour, typography, and imagery |
-| `brando:AudioToken` | Sonic identity, voice, pronunciation, and audio cues |
-| `brando:Policy` | Governance rules, guardrails, and enforcement logic |
-| `brando:ImpactAssessment` | AI, brand, and governance risk assessment |
-| `brando:SyntheticPersona` | Governed AI persona |
-| `brando:ProductPersona` | Product-scoped AI persona |
-| `brando:BrandModel` | Model routing and runtime configuration |
-| `brando:Prompt` | Governed prompt asset or instruction object |
-| `brando:AutomationRule` | Automated governance or runtime rule |
-| `brando:BrandApplication` | Governed brand use case or application context |
-| `brando:BrandTouchpoint` | Channel, placement, or experience where brand rules apply |
-
-Most Brando types extend `schema:Intangible`; `brando:Brand` aligns with
-`schema:Brand`, and `brando:Prompt` aligns with `schema:CreativeWork`.
-
----
-
-## Canonical form and profiles
-
-Brando is **JSON-LD–first**.
-
-Two profiles are provided:
-
-1. **JSON-LD profile** — publication and runtime
-2. **YAML profile** — configuration and CI/CD
-
-A TypeScript model is provided as **non-normative** convenience.
-
----
-
-## Example: minimal brand (JSON-LD)
-
-```jsonld
+```json
 {
   "@context": {
     "schema": "https://schema.org/",
     "brando": "https://brandoschema.com/"
   },
-  "@id": "https://example.com/brand/northstar",
-  "@type": "brando:Brand",
-  "schema:name": "Northstar Bank",
-  "brando:missionStatement": "Financial clarity with absolute trust."
+  "@id": "https://example.com/brands/abc-example-inc/reports/workflow-automation-market-review-2026",
+  "@type": "brando:MarketReport",
+  "schema:name": "ABC Example Inc workflow automation market review 2026",
+  "brando:jsonLdSidecar": "https://example.com/brands/abc-example-inc/reports/workflow-automation-market-review-2026.json",
+  "brando:properties": {
+    "brand": "ABC Example Inc",
+    "dataSource": "Analyst desk research and approved internal notes"
+  },
+  "brando:controls": {
+    "required": ["Cite approved market sources only"]
+  }
 }
 ```
 
----
+### 2. Store the triad as files
 
-## From vocabulary to running Brand OS
+The document body, frontmatter, and sidecar can live in a version-controlled repository. That keeps authorship, review, and publishing portable and implementation-agnostic.
 
-1. Tokenise brand intelligence with Brando
-2. Build a Brand Knowledge Graph
-3. Derive Policy Graphs
-4. Execute at runtime
-5. Monitor and evolve under IBOM
+### 3. Serve the structured content to systems
 
----
+Organisations can expose these files through retrieval layers such as:
 
-## Versioning and licensing
+- RAG pipelines
+- MCP servers
+- APIs
+- CMS and publishing workflows
 
-* **Vocabulary:** Brando Schema v1.3
-* **Ontology version:** 1.4
-* **Publisher:** Advanced Analytica
-* **License:** CC BY 4.0
+### 4. Retrieve and apply at runtime
 
----
+LLMs, agents, and content workflows can retrieve the structured entity data and apply:
 
-## Stewardship
+- properties
+- relationships
+- controls
+- references
 
-Brando is originated and stewarded by **Advanced Analytica**.
+No vendor lock-in. The schema is open. The files are portable. Implementation is up to you.
 
----
+## What Brando Is Not
 
-## Implementation support
+- Not a platform, it's a data vocabulary
+- Not software, it's a schema specification
+- Not a service, it's a standard anyone can implement
+- Not proprietary, it's CC BY 4.0 open source
 
-Advanced Analytica offers a **Brando Implementation Service** for full Brand OS delivery.
+Think of it like:
 
-<div style="margin: 2rem 0;">
-  <a href="#" class="button primary" data-modal-target="#talk">Talk to us about implementation</a>
-</div>
+- Schema.org for product data
+- OpenAPI for API specifications
+- BPMN for process diagrams
 
----
+Brando is for brand policies.
 
-## Next steps
+## Implementation
 
-* Read **Getting Started**
-* Explore **Brand tokenisation**
-* Model your first brand
-* Plan Brand OS integration
+Organisations implement Brando-structured brand data in different ways.
 
+Common patterns:
 
-<!-- Talk to Us Modal -->
+- File-based RAG retrieval with Markdown and YAML policies in Git
+- MCP servers exposing brand policies to Claude or ChatGPT
+- Custom APIs serving JSON-LD brand data to applications
+- CMS integrations for content governance
 
-<div class="modal fade bg-white" id="talk" tabindex="-1" role="dialog" aria-hidden="true" style="position:fixed; inset:0; background:rgba(0,0,0,0.3); z-index:1000;">
-  <div class="modal-dialog" style="max-width: 80vw; margin: 5vh auto; position: relative;">
-    <div class="modal-content bg-white text-dark" style="border:none; border-radius:0;">
-      <button class="btn-close" style="position:absolute; top:1rem; right:1rem; font-size:1.5rem;">&times;</button>
-      <div class="modal-header">
-        <h2>Talk to Us</h2>
-      </div>
-      <div class="modal-body">
-        <div data-tf-live="01JF4TXRZV12FSXM9XW8J9A9VF"></div>
-        <script src="https://embed.typeform.com/next/embed.js"></script>
-      </div>
-    </div>
-  </div>
-</div>
+Infrastructure choices:
+
+- Self-hosted with DigitalOcean, AWS, Azure, or on-prem
+- Managed services using any RAG platform, vector database, or CMS
+- Hybrid setups such as Git plus CDN for static policies
+
+Brando is infrastructure-agnostic, use whatever stack works for you.
+
+[Talk to us about implementation](partner.md)
+
+## The IBOM Methodology
+
+Intelligent Brand Operating Model (IBOM) is Advanced Analytica's proprietary consulting methodology for applying Brando Schema to client brand systems.
+
+IBOM covers:
+
+- Brand discovery and assessment
+- Policy codification and structured data engineering
+- Implementation architecture and deployment
+- Governance frameworks and assurance
+
+IBOM does not equal Brando Schema.
+
+- The schema is open source
+- The methodology is Advanced Analytica's consulting IP
+
+Organisations can:
+
+- Use Brando Schema without IBOM through self-implementation
+- Engage Advanced Analytica for IBOM consulting services
+- Build their own methodologies around the open schema
+
+[Learn more about IBOM consulting](partner.md)
+
+## Contributing
+
+Brando is developed through an open contribution process. New properties are proposed and reviewed by contributors including brand strategists, AI governance practitioners, and semantic web architects.
+
+See [GitHub Issues](https://github.com/JonathanBowker/brandoschema/issues) for proposal and review discussions.
+
+## Licence & Trade Marks
+
+Schema licence:
+
+- Creative Commons Attribution 4.0 International (CC BY 4.0)
+- W3C Royalty-Free Patent Policy
+
+Trade marks:
+
+- `Brando`, `IBOM`, and `QWIKI` are trade marks of Advanced Analytica Limited
+- Schema licence does not grant trade mark rights
+- See [Terms](terms.md) for complete details
+
+## Getting Started
+
+- [Properties Reference](properties/index.md)
+- [Entity Types and examples](entity-types/index.md)
+- [JSON Quickstart](getting-started-jsonld.md)
+- [YAML Profile Guide](getting-started-yaml.md)
+- [Markdown Quickstart](getting-started-markdown.md)

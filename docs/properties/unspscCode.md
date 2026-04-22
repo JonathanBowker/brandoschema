@@ -27,7 +27,7 @@ UNSPSC (United Nations Standard Products and Services Code) associated with this
 
 ## Used on these types
 
-* [brando:BrandedCategory](../types/branded-category.md)
+* `brando:BrandedCategory`
 
 ---
 

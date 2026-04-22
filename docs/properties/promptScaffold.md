@@ -27,7 +27,7 @@ Reusable instruction block or template for priming language models.
 
 ## Used on these types
 
-* [brando:VerbalToken](../types/verbal-token.md)
+* `brando:VerbalToken`
 
 ---
 

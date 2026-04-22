@@ -27,7 +27,7 @@ The aspirational future state the brand is working toward.
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

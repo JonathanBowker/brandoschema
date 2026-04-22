@@ -27,7 +27,7 @@ Standardised pronunciation notes (e.g. IPA or phonetic spelling) for brand names
 
 ## Used on these types
 
-* [brando:AudioToken](../types/audio-token.md)
+* `brando:AudioToken`
 
 ---
 

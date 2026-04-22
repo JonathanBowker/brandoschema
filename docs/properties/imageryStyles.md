@@ -27,7 +27,7 @@ Guidance on photography, illustration, and composition style.
 
 ## Used on these types
 
-* [brando:VisualToken](../types/visual-token.md)
+* `brando:VisualToken`
 
 ---
 

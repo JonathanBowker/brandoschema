@@ -27,7 +27,7 @@ Known edge cases and misuse patterns requiring caution or escalation.
 
 ## Used on these types
 
-* [brando:Policy](../types/policy.md)
+* `brando:Policy`
 
 ---
 

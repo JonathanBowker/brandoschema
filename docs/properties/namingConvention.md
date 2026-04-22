@@ -27,7 +27,7 @@ Rules for how products, features, dates, and other entities are named and format
 
 ## Used on these types
 
-* [brando:VerbalToken](../types/verbal-token.md)
+* `brando:VerbalToken`
 
 ---
 

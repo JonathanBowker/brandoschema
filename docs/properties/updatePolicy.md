@@ -27,7 +27,7 @@ Rules for how often, by whom, and under what process policies are updated.
 
 ## Used on these types
 
-* [brando:Policy](../types/policy.md)
+* `brando:Policy`
 
 ---
 

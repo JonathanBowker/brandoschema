@@ -27,7 +27,7 @@ Indicates whether a sub-brand inherits governance policies from its parent brand
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

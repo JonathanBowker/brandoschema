@@ -27,7 +27,7 @@ Governance precedence for this policy when multiple rules could apply.
 
 ## Used on these types
 
-* [brando:Policy](../types/policy.md)
+* `brando:Policy`
 
 ---
 

@@ -27,7 +27,7 @@ Structured JSON describing actions taken when trigger conditions are met.
 
 ## Used on these types
 
-* [brando:AutomationRule](../types/automation-rule.md)
+* `brando:AutomationRule`
 
 ---
 

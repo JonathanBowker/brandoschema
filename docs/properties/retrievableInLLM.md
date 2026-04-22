@@ -27,7 +27,7 @@ Boolean flag indicating whether this policy may be indexed or retrieved by langu
 
 ## Used on these types
 
-* [brando:Policy](../types/policy.md)
+* `brando:Policy`
 
 ---
 

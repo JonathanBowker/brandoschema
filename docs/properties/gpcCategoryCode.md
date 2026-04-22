@@ -27,7 +27,7 @@ GS1 Global Product Classification (GPC) brick code associated with this branded 
 
 ## Used on these types
 
-* [brando:BrandedCategory](../types/branded-category.md)
+* `brando:BrandedCategory`
 
 ---
 

@@ -27,7 +27,7 @@ Guidance on rhythm, pacing, pausing, and expressiveness for spoken output.
 
 ## Used on these types
 
-* [brando:AudioToken](../types/audio-token.md)
+* `brando:AudioToken`
 
 ---
 

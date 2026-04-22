@@ -29,8 +29,8 @@ Links a brand or branded product/service category to one or more individually id
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
-* [brando:BrandedCategory](../types/branded-category.md)
+* `brando:Brand`
+* `brando:BrandedCategory`
 
 ---
 

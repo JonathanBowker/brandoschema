@@ -27,7 +27,7 @@ Central message or creative theme for the campaign.
 
 ## Used on these types
 
-* [brando:Campaign](../types/campaign.md)
+* `brando:Campaign`
 
 ---
 

@@ -27,7 +27,7 @@ Description of the desired voice profile for TTS or voice agents.
 
 ## Used on these types
 
-* [brando:AudioToken](../types/audio-token.md)
+* `brando:AudioToken`
 
 ---
 

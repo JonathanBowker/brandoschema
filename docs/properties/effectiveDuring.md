@@ -27,9 +27,9 @@ Time window or schedule when this context, campaign, or policy is active, expres
 
 ## Used on these types
 
-* [brando:Context](../types/context.md)
-* [brando:Campaign](../types/campaign.md)
-* [brando:Policy](../types/policy.md)
+* `brando:Context`
+* `brando:Campaign`
+* `brando:Policy`
 
 ---
 

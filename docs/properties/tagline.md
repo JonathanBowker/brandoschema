@@ -27,7 +27,7 @@ Primary tagline plus any sanctioned variants for this verbal token.
 
 ## Used on these types
 
-* [brando:VerbalToken](../types/verbal-token.md)
+* `brando:VerbalToken`
 
 ---
 

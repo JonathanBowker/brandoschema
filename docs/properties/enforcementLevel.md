@@ -27,8 +27,8 @@ Indicates how strongly a policy or automation rule must be applied at runtime. T
 
 ## Used on these types
 
-* [brando:Policy](../types/policy.md)
-* [brando:AutomationRule](../types/automation-rule.md)
+* `brando:Policy`
+* `brando:AutomationRule`
 
 ---
 

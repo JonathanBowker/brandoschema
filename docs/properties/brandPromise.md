@@ -27,7 +27,7 @@ The core commitment or experience the brand guarantees to deliver.
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

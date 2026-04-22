@@ -27,7 +27,7 @@ Structured definition of which expression tokens (verbal, visual, audio) are inh
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 

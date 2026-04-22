@@ -17,7 +17,7 @@ Properties in this section: **3**
 | --- | --- |
 | Description | Persona-style archetypes representing typical users in this context. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:Context](../types/context.md) |
+| Used on | `brando:Context` |
 | Vocabulary path | Brand > Property > Context :: audiencePersona |
 | Canonical URL | [`https://brandoschema.com/properties/audiencePersona`](https://brandoschema.com/properties/audiencePersona) |
 
@@ -27,7 +27,7 @@ Properties in this section: **3**
 | --- | --- |
 | Description | Strategic grouping of individuals who share needs or characteristics relevant to this context. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:Context](../types/context.md) |
+| Used on | `brando:Context` |
 | Vocabulary path | Brand > Property > Context :: audienceSegment |
 | Canonical URL | [`https://brandoschema.com/properties/audienceSegment`](https://brandoschema.com/properties/audienceSegment) |
 
@@ -37,6 +37,6 @@ Properties in this section: **3**
 | --- | --- |
 | Description | Operational, legal, channel, regional, and use-case conditions encoded as a structured JSON payload. |
 | Values expected | **Text**<br>**List of Text values** |
-| Used on | [brando:Context](../types/context.md) |
+| Used on | `brando:Context` |
 | Vocabulary path | Brand > Property > Context :: domainContext |
 | Canonical URL | [`https://brandoschema.com/properties/domainContext`](https://brandoschema.com/properties/domainContext) |

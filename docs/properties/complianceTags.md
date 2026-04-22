@@ -27,7 +27,7 @@ Regulatory or legal tags such as GDPR, HIPAA, or FCA.
 
 ## Used on these types
 
-* [brando:Policy](../types/policy.md)
+* `brando:Policy`
 
 ---
 

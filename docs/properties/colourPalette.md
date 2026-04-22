@@ -27,7 +27,7 @@ Structured description of the brand's colour system, including roles and values.
 
 ## Used on these types
 
-* [brando:VisualToken](../types/visual-token.md)
+* `brando:VisualToken`
 
 ---
 

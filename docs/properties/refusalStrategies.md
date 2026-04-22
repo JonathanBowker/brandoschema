@@ -27,7 +27,7 @@ Preferred patterns for declining or redirecting unsafe or out-of-scope requests.
 
 ## Used on these types
 
-* [brando:Policy](../types/policy.md)
+* `brando:Policy`
 
 ---
 

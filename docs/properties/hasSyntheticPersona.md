@@ -27,7 +27,7 @@ Links a brand to its branded product or service category taxonomy nodes.
 
 ## Used on these types
 
-* [brando:Brand](../types/brand.md)
+* `brando:Brand`
 
 ---
 
