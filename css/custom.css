@@ -213,22 +213,48 @@ h1 {
    Table Styling
 --------------------------------------------- */
 .md-typeset table {
-  width: 100%;
-  max-width: 800px;
-  table-layout: fixed;
+  width: max-content;
+  min-width: 100%;
+  max-width: none;
+  table-layout: auto;
   margin: 1em auto;
   border-collapse: collapse;
 }
+
+.md-typeset__table {
+  overflow-x: auto;
+}
+
 .md-typeset table th,
 .md-typeset table td {
-  word-wrap: break-word;
-  word-break: break-word;
+  word-wrap: normal;
+  word-break: normal;
   padding: 0.6em;
   vertical-align: top;
 }
 .md-typeset table th {
   font-weight: 600;
   background-color: #f9f9f9;
+}
+
+.md-typeset table th:first-child,
+.md-typeset table td:first-child {
+  white-space: nowrap;
+  width: 1%;
+}
+
+.md-typeset table th:last-child,
+.md-typeset table td:last-child {
+  white-space: nowrap;
+  width: 1%;
+}
+
+.md-typeset table td code,
+.md-typeset table th code,
+.md-typeset table td a code,
+.md-typeset table th a code {
+  white-space: nowrap;
+  word-break: normal;
 }
 
 
