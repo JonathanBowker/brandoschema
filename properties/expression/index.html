@@ -684,6 +684,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../entity-types/strategy-and-planning/persona-card/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Persona card
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../entity-types/strategy-and-planning/benchmark-example/" class="md-nav__link">
         
   
@@ -1876,7 +1904,7 @@
 </tr>
 <tr>
 <td><a href="../verbal-identity/">Verbal identity properties</a></td>
-<td style="text-align: right;">12</td>
+<td style="text-align: right;">11</td>
 <td>Tone, voice, vocabulary, messaging, prompt, and writing-style properties.</td>
 </tr>
 <tr>
@@ -1898,7 +1926,7 @@
 <thead>
 <tr>
 <th>Property</th>
-<th>Description</th>
+<th>Definition</th>
 <th>Values</th>
 <th>Used on</th>
 </tr>
@@ -1906,13 +1934,13 @@
 <tbody>
 <tr>
 <td><a href="../assetPreview/"><code>brando:assetPreview</code></a></td>
-<td>Preview-friendly URL or data reference for displaying this token's associated asset.</td>
+<td>Preview asset or preview URL used to visually represent the associated asset.</td>
 <td><strong>URL</strong><br><strong>List of URL values</strong></td>
 <td><code>brando:BrandExpressionToken</code></td>
 </tr>
 <tr>
 <td><a href="../assetURL/"><code>brando:assetURL</code></a></td>
-<td>Canonical source URL for an asset associated with this expression token (e.g. avatar, badge, waveform).</td>
+<td>Canonical URL of the associated asset file.</td>
 <td><strong>URL</strong><br><strong>List of URL values</strong></td>
 <td><code>brando:BrandExpressionToken</code></td>
 </tr>
@@ -1924,7 +1952,7 @@
 <thead>
 <tr>
 <th>Property</th>
-<th>Description</th>
+<th>Definition</th>
 <th>Values</th>
 <th>Used on</th>
 </tr>
@@ -1932,19 +1960,19 @@
 <tbody>
 <tr>
 <td><a href="../approvedTerms/"><code>brando:approvedTerms</code></a></td>
-<td>Words and phrases that are encouraged in this verbal token.</td>
+<td>Terms that are explicitly approved for use in this verbal token.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VerbalToken</code></td>
 </tr>
 <tr>
 <td><a href="../dialogueStyle/"><code>brando:dialogueStyle</code></a></td>
-<td>Guidance on conversational patterns, pacing, and pronoun usage.</td>
+<td>Rules for conversational pattern, pacing, and pronoun use.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VerbalToken</code></td>
 </tr>
 <tr>
 <td><a href="../keyMessages/"><code>brando:keyMessages</code></a></td>
-<td>Core value propositions and ideas that should recur across outputs.</td>
+<td>Core messages that should be repeated consistently in outputs.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VerbalToken</code></td>
 </tr>
@@ -1962,43 +1990,37 @@
 </tr>
 <tr>
 <td><a href="../namingConvention/"><code>brando:namingConvention</code></a></td>
-<td>Rules for how products, features, dates, and other entities are named and formatted.</td>
-<td><strong>Text</strong><br><strong>List of Text values</strong></td>
-<td><code>brando:VerbalToken</code></td>
-</tr>
-<tr>
-<td><a href="../personaCard/"><code>brando:personaCard</code></a></td>
-<td>Humanised brand-as-a-person description used to guide tone and behaviour.</td>
+<td>Rules for naming and formatting products, features, dates, and other entities.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VerbalToken</code></td>
 </tr>
 <tr>
 <td><a href="../prohibitedTerms/"><code>brando:prohibitedTerms</code></a></td>
-<td>Words and phrases that must not be used in this verbal token.</td>
+<td>Terms that are explicitly prohibited in this verbal token.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VerbalToken</code></td>
 </tr>
 <tr>
 <td><a href="../promptScaffold/"><code>brando:promptScaffold</code></a></td>
-<td>Reusable instruction block or template for priming language models.</td>
+<td>Reusable prompt structure intended to prime or constrain model behaviour.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VerbalToken</code></td>
 </tr>
 <tr>
 <td><a href="../tagline/"><code>brando:tagline</code></a></td>
-<td>Primary tagline plus any sanctioned variants for this verbal token.</td>
+<td>Approved tagline or sanctioned tagline variants.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VerbalToken</code></td>
 </tr>
 <tr>
 <td><a href="../toneOfVoice/"><code>brando:toneOfVoice</code></a></td>
-<td>Emotional texture and attitude of the brand's voice in this token.</td>
+<td>Defined tonal qualities and attitude the brand should express.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VerbalToken</code></td>
 </tr>
 <tr>
 <td><a href="../writingStyle/"><code>brando:writingStyle</code></a></td>
-<td>Preferences for grammar, sentence structure, and clarity.</td>
+<td>Rules for grammar, sentence construction, and clarity.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VerbalToken</code></td>
 </tr>
@@ -2010,7 +2032,7 @@
 <thead>
 <tr>
 <th>Property</th>
-<th>Description</th>
+<th>Definition</th>
 <th>Values</th>
 <th>Used on</th>
 </tr>
@@ -2018,55 +2040,55 @@
 <tbody>
 <tr>
 <td><a href="../brandName/"><code>brando:brandName</code></a></td>
-<td>Display name of the brand as it should appear in visual treatments.</td>
+<td>Approved display name of the brand for visual use.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VisualToken</code></td>
 </tr>
 <tr>
 <td><a href="../colourPalette/"><code>brando:colourPalette</code></a></td>
-<td>Structured description of the brand's colour system, including roles and values.</td>
+<td>Defined set of colours, roles, and values used by the brand.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VisualToken</code></td>
 </tr>
 <tr>
 <td><a href="../imageryStyles/"><code>brando:imageryStyles</code></a></td>
-<td>Guidance on photography, illustration, and composition style.</td>
+<td>Rules or descriptors for approved photography, illustration, and composition styles.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VisualToken</code></td>
 </tr>
 <tr>
 <td><a href="../logo/"><code>brando:logo</code></a></td>
-<td>Canonical reference URL to the primary logo asset or logo set.</td>
+<td>Canonical URL of the approved logo asset or logo set.</td>
 <td><strong>URL</strong><br><strong>List of URL values</strong></td>
 <td><code>brando:VisualToken</code></td>
 </tr>
 <tr>
 <td><a href="../motionRules/"><code>brando:motionRules</code></a></td>
-<td>Principles for animation, transitions, and micro-interactions.</td>
+<td>Rules for approved motion, animation, and transition behaviour.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VisualToken</code></td>
 </tr>
 <tr>
 <td><a href="../typography/"><code>brando:typography</code></a></td>
-<td>Typographic system including font families, weights, sizes, and hierarchy.</td>
+<td>Defined typographic system, including fonts, hierarchy, and usage rules.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VisualToken</code></td>
 </tr>
 <tr>
 <td><a href="../visualToken/"><code>brando:visualToken</code></a></td>
-<td>Core design tokens such as spacing, radius, and elevation.</td>
+<td>Set of reusable visual tokens such as spacing, radius, elevation, or similar design values.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VisualToken</code></td>
 </tr>
 <tr>
 <td><a href="../visualReferenceLink/"><code>brando:visualReferenceLink</code></a></td>
-<td>URL pointing to full visual identity guidelines or design system documentation.</td>
+<td>Reference URL for visual guidelines or design system documentation.</td>
 <td><strong>URL</strong><br><strong>List of URL values</strong></td>
 <td><code>brando:VisualToken</code></td>
 </tr>
 <tr>
 <td><a href="../visualUsageGuidelines/"><code>brando:visualUsageGuidelines</code></a></td>
-<td>Do's and don'ts for applying logos, colours, typography, and imagery.</td>
+<td>Rules governing how visual identity elements may and may not be used.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:VisualToken</code></td>
 </tr>
@@ -2078,7 +2100,7 @@
 <thead>
 <tr>
 <th>Property</th>
-<th>Description</th>
+<th>Definition</th>
 <th>Values</th>
 <th>Used on</th>
 </tr>
@@ -2086,43 +2108,43 @@
 <tbody>
 <tr>
 <td><a href="../audioCue/"><code>brando:audioCue</code></a></td>
-<td>Definitions of short sound cues used as confirmations, alerts, or transitions.</td>
+<td>Named short-form audio cue used for states, actions, or transitions.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:AudioToken</code></td>
 </tr>
 <tr>
 <td><a href="../audioLogo/"><code>brando:audioLogo</code></a></td>
-<td>URI pointing to the brand's sonic logo or audio mark.</td>
+<td>Canonical URL of the brand's sonic logo or audio mark.</td>
 <td><strong>URL</strong><br><strong>List of URL values</strong></td>
 <td><code>brando:AudioToken</code></td>
 </tr>
 <tr>
 <td><a href="../audioReferenceLink/"><code>brando:audioReferenceLink</code></a></td>
-<td>URL pointing to canonical audio repositories or style guides.</td>
+<td>Reference URL for audio guidelines, repositories, or source materials.</td>
 <td><strong>URL</strong><br><strong>List of URL values</strong></td>
 <td><code>brando:AudioToken</code></td>
 </tr>
 <tr>
 <td><a href="../audioUsageGuidelines/"><code>brando:audioUsageGuidelines</code></a></td>
-<td>Do's and don'ts for when and how branded audio should be used.</td>
+<td>Rules governing when and how branded audio may be used.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:AudioToken</code></td>
 </tr>
 <tr>
 <td><a href="../pronunciationGuide/"><code>brando:pronunciationGuide</code></a></td>
-<td>Standardised pronunciation notes (e.g. IPA or phonetic spelling) for brand names and key terms.</td>
+<td>Pronunciation rules or phonetic guidance for brand names and key terms.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:AudioToken</code></td>
 </tr>
 <tr>
 <td><a href="../speechStyle/"><code>brando:speechStyle</code></a></td>
-<td>Guidance on rhythm, pacing, pausing, and expressiveness for spoken output.</td>
+<td>Rules for rhythm, pacing, pausing, and expressiveness in spoken output.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:AudioToken</code></td>
 </tr>
 <tr>
 <td><a href="../voiceSignature/"><code>brando:voiceSignature</code></a></td>
-<td>Description of the desired voice profile for TTS or voice agents.</td>
+<td>Description of the characteristic voice profile the brand should use.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:AudioToken</code></td>
 </tr>

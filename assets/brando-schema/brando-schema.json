@@ -32,12 +32,6 @@
                     "url": "https://brandoschema.com/properties/#namingConvention"
                 },
                 {
-                    "name": "personaCard",
-                    "definition": "A detailed profile representing the brand's archetype, including attributes, behaviors, and communication preferences.",
-                    "type": "url",
-                    "url": "https://brandoschema.com/properties/#personaCard"
-                },
-                {
                     "name": "approvedTerm",
                     "definition": "A curated list of words and phrases that are sanctioned for use in brand communications.",
                     "type": "url",

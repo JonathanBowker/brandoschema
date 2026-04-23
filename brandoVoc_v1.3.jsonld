@@ -46,7 +46,7 @@
       },
       "vann:preferredNamespacePrefix": "brando",
       "vann:preferredNamespaceUri": "https://brandoschema.com/",
-      "owl:versionInfo": "1.4",
+      "owl:versionInfo": "1.3",
       "dcterms:created": "2025-11-22",
       "dcterms:modified": "2025-11-22"
     },
@@ -1024,31 +1024,6 @@
       "rdfs:comment": {
         "@language": "en",
         "@value": "Rules for how products, features, dates, and other entities are named and formatted."
-      },
-      "rdfs:isDefinedBy": {
-        "@id": "brando:"
-      },
-      "rdfs:domain": {
-        "@id": "brando:VerbalToken"
-      },
-      "rdfs:range": {
-        "@id": "xsd:string"
-      }
-    },
-    {
-      "@id": "brando:personaCard",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Persona Card"
-      },
-      "skos:prefLabel": {
-        "@language": "en",
-        "@value": "Persona Card"
-      },
-      "rdfs:comment": {
-        "@language": "en",
-        "@value": "Humanised brand-as-a-person description used to guide tone and behaviour."
       },
       "rdfs:isDefinedBy": {
         "@id": "brando:"

@@ -684,6 +684,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../entity-types/strategy-and-planning/persona-card/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Persona card
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../entity-types/strategy-and-planning/benchmark-example/" class="md-nav__link">
         
   
@@ -1817,7 +1845,7 @@
 <thead>
 <tr>
 <th>Property</th>
-<th>Description</th>
+<th>Definition</th>
 <th>Values</th>
 <th>Used on</th>
 </tr>
@@ -1825,61 +1853,61 @@
 <tbody>
 <tr>
 <td><a href="../complianceTags/"><code>brando:complianceTags</code></a></td>
-<td>Regulatory or legal tags such as GDPR, HIPAA, or FCA.</td>
+<td>Tags identifying legal, regulatory, or standards frameworks relevant to the policy.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Policy</code></td>
 </tr>
 <tr>
 <td><a href="../embeddingQuality/"><code>brando:embeddingQuality</code></a></td>
-<td>Qualitative or scored assessment of how well this content performs in vector search or RAG.</td>
+<td>Assessment of how suitable the content is for embedding and retrieval.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Policy</code></td>
 </tr>
 <tr>
 <td><a href="../guardRails/"><code>brando:guardRails</code></a></td>
-<td>Non-negotiable boundaries that AI systems must not cross.</td>
+<td>Non-negotiable constraints that the system must not violate.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Policy</code></td>
 </tr>
 <tr>
 <td><a href="../priority/"><code>brando:priority</code></a></td>
-<td>Governance precedence for this policy when multiple rules could apply.</td>
+<td>Numeric precedence used to resolve conflicts when multiple policies apply.</td>
 <td><strong>Integer</strong><br><strong>List of Integer values</strong></td>
 <td><code>brando:Policy</code></td>
 </tr>
 <tr>
 <td><a href="../refusalStrategies/"><code>brando:refusalStrategies</code></a></td>
-<td>Preferred patterns for declining or redirecting unsafe or out-of-scope requests.</td>
+<td>Approved refusal or redirection patterns for unsafe, disallowed, or out-of-scope requests.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Policy</code></td>
 </tr>
 <tr>
 <td><a href="../retrievableInLLM/"><code>brando:retrievableInLLM</code></a></td>
-<td>Boolean flag indicating whether this policy may be indexed or retrieved by language models.</td>
+<td>Indicates whether the content may be indexed or retrieved for language-model use.</td>
 <td><strong>Boolean</strong><br><strong>List of Boolean values</strong></td>
 <td><code>brando:Policy</code></td>
 </tr>
 <tr>
 <td><a href="../reviewWorkflow/"><code>brando:reviewWorkflow</code></a></td>
-<td>Description of human and/or automated steps for reviewing content and policy changes.</td>
+<td>Defined review and approval process that must be followed for the entity or policy.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Policy</code></td>
 </tr>
 <tr>
 <td><a href="../riskScenarios/"><code>brando:riskScenarios</code></a></td>
-<td>Known edge cases and misuse patterns requiring caution or escalation.</td>
+<td>Known risk cases or misuse scenarios that require caution or escalation.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Policy</code></td>
 </tr>
 <tr>
 <td><a href="../updatePolicy/"><code>brando:updatePolicy</code></a></td>
-<td>Rules for how often, by whom, and under what process policies are updated.</td>
+<td>Rules governing how and when the policy is updated.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Policy</code></td>
 </tr>
 <tr>
 <td><a href="../visibilityRating/"><code>brando:visibilityRating</code></a></td>
-<td>Qualitative indicator of how easily this policy should be discoverable by AI systems.</td>
+<td>Rating that indicates how discoverable the policy should be to AI retrieval systems.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Policy</code></td>
 </tr>

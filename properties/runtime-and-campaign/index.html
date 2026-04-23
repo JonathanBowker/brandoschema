@@ -684,6 +684,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../entity-types/strategy-and-planning/persona-card/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Persona card
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../entity-types/strategy-and-planning/benchmark-example/" class="md-nav__link">
         
   
@@ -1844,7 +1872,7 @@
 <thead>
 <tr>
 <th>Property</th>
-<th>Description</th>
+<th>Definition</th>
 <th>Values</th>
 <th>Used on</th>
 </tr>
@@ -1852,19 +1880,19 @@
 <tbody>
 <tr>
 <td><a href="../campaignName/"><code>brando:campaignName</code></a></td>
-<td>Human-readable name of a marketing or communications campaign.</td>
+<td>Official name of the campaign.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Campaign</code></td>
 </tr>
 <tr>
 <td><a href="../campaignTheme/"><code>brando:campaignTheme</code></a></td>
-<td>Central message or creative theme for the campaign.</td>
+<td>Primary message or creative theme of the campaign.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Campaign</code></td>
 </tr>
 <tr>
 <td><a href="../temporaryOverrides/"><code>brando:temporaryOverrides</code></a></td>
-<td>Structured JSON describing temporary modifications to brand rules during this campaign.</td>
+<td>Temporary rule changes that apply only during the campaign period.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Campaign</code></td>
 </tr>
@@ -1876,7 +1904,7 @@
 <thead>
 <tr>
 <th>Property</th>
-<th>Description</th>
+<th>Definition</th>
 <th>Values</th>
 <th>Used on</th>
 </tr>
@@ -1884,25 +1912,25 @@
 <tbody>
 <tr>
 <td><a href="../automationAction/"><code>brando:automationAction</code></a></td>
-<td>Structured JSON describing actions taken when trigger conditions are met.</td>
+<td>Action definition executed when the automation rule is triggered.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:AutomationRule</code></td>
 </tr>
 <tr>
 <td><a href="../dataSource/"><code>brando:dataSource</code></a></td>
-<td>API endpoint or data source providing metrics or signals.</td>
+<td>Approved source from which the entity's content, evidence, or signals are derived.</td>
 <td><strong>URL</strong><br><strong>List of URL values</strong></td>
 <td><code>brando:AutomationRule</code></td>
 </tr>
 <tr>
 <td><a href="../monitoredMetric/"><code>brando:monitoredMetric</code></a></td>
-<td>Structured JSON describing the metric being monitored, thresholds, and operators.</td>
+<td>Metric definition monitored by the automation rule, including thresholds or conditions.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:AutomationRule</code></td>
 </tr>
 <tr>
 <td><a href="../triggerType/"><code>brando:triggerType</code></a></td>
-<td>Type of event or condition that activates this automation rule.</td>
+<td>Event or condition that triggers the automation rule.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:AutomationRule</code></td>
 </tr>

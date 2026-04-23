@@ -684,6 +684,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../entity-types/strategy-and-planning/persona-card/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Persona card
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../entity-types/strategy-and-planning/benchmark-example/" class="md-nav__link">
         
   
@@ -1844,7 +1872,7 @@
 <thead>
 <tr>
 <th>Property</th>
-<th>Description</th>
+<th>Definition</th>
 <th>Values</th>
 <th>Used on</th>
 </tr>
@@ -1852,103 +1880,103 @@
 <tbody>
 <tr>
 <td><a href="../brandArchitectureRole/"><code>brando:brandArchitectureRole</code></a></td>
-<td>The role this brand plays in the broader brand architecture (e.g. master brand, endorsed brand, sub-brand).</td>
+<td>Role of the brand within the wider brand architecture.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../brandNarrative/"><code>brando:brandNarrative</code></a></td>
-<td>Longer-form narrative that explains the brand's origin, evolution, and purpose.</td>
+<td>Long-form narrative that explains the brand's origin, purpose, and story.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../brandPromise/"><code>brando:brandPromise</code></a></td>
-<td>The core commitment or experience the brand guarantees to deliver.</td>
+<td>Core commitment the brand is expected to deliver.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../competitorContext/"><code>brando:competitorContext</code></a></td>
-<td>Summary of competitors, adjacent solutions, and how the brand differentiates.</td>
+<td>Summary of relevant competitors, alternatives, and points of differentiation.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../coreValues/"><code>brando:coreValues</code></a></td>
-<td>Foundational principles and beliefs that guide brand decisions and behaviours.</td>
+<td>Foundational principles the brand is expected to uphold.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../governanceModel/"><code>brando:governanceModel</code></a></td>
-<td>Description of how the brand is governed (e.g. centralised, federated, hybrid) for decision-making and approvals.</td>
+<td>Operating model that defines how brand decisions and approvals are governed.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../hasAutomationRule/"><code>brando:hasAutomationRule</code></a></td>
-<td>Links a brand to automated governance rules and triggers.</td>
+<td>Links the node to an automation rule that governs runtime behaviour.</td>
 <td><strong>brando:AutomationRule</strong><br><strong>List of brando:AutomationRule values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../hasCampaign/"><code>brando:hasCampaign</code></a></td>
-<td>Links a brand to time-bound campaigns that may temporarily adjust rules and tokens.</td>
+<td>Links the node to a campaign that affects or contextualises it.</td>
 <td><strong>brando:Campaign</strong><br><strong>List of brando:Campaign values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../hasContext/"><code>brando:hasContext</code></a></td>
-<td>Links a brand to one or more activation contexts in which it operates.</td>
+<td>Links the node to a context in which it is used or governed.</td>
 <td><strong>brando:Context</strong><br><strong>List of brando:Context values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../hasProductCategory/"><code>brando:hasProductCategory</code></a></td>
-<td>Links a brand to its branded product or service category taxonomy nodes.</td>
+<td>Links the brand to one or more branded product or service categories.</td>
 <td><strong>brando:BrandedCategory</strong><br><strong>List of brando:BrandedCategory values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../hasProductPersona/"><code>brando:hasProductPersona</code></a></td>
-<td>Links a brand to its branded product or service category taxonomy nodes.</td>
-<td><strong>brando:BrandedCategory</strong><br><strong>List of brando:BrandedCategory values</strong></td>
+<td>Links the node to one or more persona-card entities associated with its offer portfolio.</td>
+<td><strong>brando:PersonaCard</strong><br><strong>List of brando:PersonaCard values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../hasSyntheticPersona/"><code>brando:hasSyntheticPersona</code></a></td>
-<td>Links a brand to its branded product or service category taxonomy nodes.</td>
-<td><strong>brando:BrandedCategory</strong><br><strong>List of brando:BrandedCategory values</strong></td>
+<td>Links the node to one or more synthetic-persona entities used for testing, simulation, or controlled generation.</td>
+<td><strong>brando:SyntheticPersona</strong><br><strong>List of brando:SyntheticPersona values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../inheritsPolicies/"><code>brando:inheritsPolicies</code></a></td>
-<td>Indicates whether a sub-brand inherits governance policies from its parent brand.</td>
+<td>Indicates whether the node inherits policies from its parent brand or parent scope.</td>
 <td><strong>Boolean</strong><br><strong>List of Boolean values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../inheritsTokens/"><code>brando:inheritsTokens</code></a></td>
-<td>Structured definition of which expression tokens (verbal, visual, audio) are inherited and how.</td>
+<td>Specifies which expression tokens are inherited and how inheritance is applied.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../marketPosition/"><code>brando:marketPosition</code></a></td>
-<td>How the brand positions itself in its category relative to alternatives and peers.</td>
+<td>Statement of the brand's position relative to competitors and category alternatives.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../missionStatement/"><code>brando:missionStatement</code></a></td>
-<td>The brand's core purpose and day-to-day reason for existing.</td>
+<td>Statement of the brand's current purpose and reason for operating.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
 <tr>
 <td><a href="../visionStatement/"><code>brando:visionStatement</code></a></td>
-<td>The aspirational future state the brand is working toward.</td>
+<td>Statement of the future state the brand aims to achieve.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Brand</code></td>
 </tr>
@@ -1960,7 +1988,7 @@
 <thead>
 <tr>
 <th>Property</th>
-<th>Description</th>
+<th>Definition</th>
 <th>Values</th>
 <th>Used on</th>
 </tr>
@@ -1968,19 +1996,19 @@
 <tbody>
 <tr>
 <td><a href="../audiencePersona/"><code>brando:audiencePersona</code></a></td>
-<td>Persona-style archetypes representing typical users in this context.</td>
+<td>Persona archetype representing a typical audience member in the context.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Context</code></td>
 </tr>
 <tr>
 <td><a href="../audienceSegment/"><code>brando:audienceSegment</code></a></td>
-<td>Strategic grouping of individuals who share needs or characteristics relevant to this context.</td>
+<td>Audience segment or customer grouping to which the context applies.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Context</code></td>
 </tr>
 <tr>
 <td><a href="../domainContext/"><code>brando:domainContext</code></a></td>
-<td>Operational, legal, channel, regional, and use-case conditions encoded as a structured JSON payload.</td>
+<td>Structured description of the operating conditions, domain constraints, and use-case context.</td>
 <td><strong>Text</strong><br><strong>List of Text values</strong></td>
 <td><code>brando:Context</code></td>
 </tr>
