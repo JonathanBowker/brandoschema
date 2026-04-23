@@ -8,7 +8,7 @@ description: Brando is an open-source vocabulary for structuring brand identity,
 
 <img src="/assets/images/4x/brando-schema@4x.webp" alt="Brando Schema: open vocabulary for brand identity, governance, and content guidelines" style="width: 100%; max-width: 960px; display: block; margin: 2rem auto;" />
 
-Brando is an open-source vocabulary for structuring brand identity, governance policies, and content guidelines in machine-readable formats. It enables AI systems and Large Language Models to retrieve and apply brand rules consistently across automated workflows.
+Brando is an open-source vocabulary for structuring brand identity, governance policies, and content guidelines in machine-readable formats. Using Brando Schema, brands can codify guidelines, policies, assets, and controls as machine-readable entities, then distribute them as portable BGML (Brand Governance Markup Language) knowledge packs: structured bundles of brand governance data that can move across systems. It enables AI systems and Large Language Models to retrieve and apply brand rules consistently across automated workflows.
 
 Published under Creative Commons Attribution 4.0 (CC BY 4.0) with W3C Royalty-Free Patent Policy protections, Brando extends Schema.org's Brand vocabulary to support structured brand representation across verbal identity, visual identity, audio branding, strategic positioning, governance, and approved assets.
 

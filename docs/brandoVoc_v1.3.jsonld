@@ -46,7 +46,7 @@
       },
       "vann:preferredNamespacePrefix": "brando",
       "vann:preferredNamespaceUri": "https://brandoschema.com/",
-      "owl:versionInfo": "1.4",
+      "owl:versionInfo": "1.3",
       "dcterms:created": "2025-11-22",
       "dcterms:modified": "2025-11-22"
     },

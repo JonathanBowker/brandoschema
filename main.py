@@ -1,2 +1,2 @@
 def define_env(env):
-    env.variables['version'] = "1.5"
+    env.variables['version'] = "1.3"
